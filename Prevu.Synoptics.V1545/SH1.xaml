@@ -1,0 +1,95 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+             xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             x:Class="Prevu.Synoptics.SH1" mc:Ignorable="d" 
+             Height="840" Width="1540" d:Background="{DynamicResource MaterialDesignPaper}">
+  <Grid>
+
+    <Labels:Pipe HorizontalAlignment="Left" 
+                 Margin="826,248,0,0" 
+                 VerticalAlignment="Top" 
+                 StatusComponent="232-01-MA1" 
+                 VisibilityComponent="" 
+                 VisibilitySignal="" RenderTransformOrigin="0.5,0.5" PipeHeight="Big">
+      <Labels:Pipe.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform Angle="90"/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </Labels:Pipe.RenderTransform>
+    </Labels:Pipe>
+    <Labels:Pipe HorizontalAlignment="Left" 
+      Margin="457,254,0,0" 
+      VerticalAlignment="Top" 
+      StatusComponent="209-01-MA1" 
+      VisibilityComponent="" 
+      VisibilitySignal="" RenderTransformOrigin="0.5,0.5" PipeHeight="Big">
+      <Labels:Pipe.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform Angle="90"/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </Labels:Pipe.RenderTransform>
+    </Labels:Pipe>
+    <Labels:JumpLabel HorizontalAlignment="Left" 
+                      Margin="462,170,0,0" 
+                      VerticalAlignment="Top" 
+                      JumpFromLabel="246-01-MA1" 
+                      JumpToLabel="209-01-MA1"/>
+    <Labels:JumpLabel HorizontalAlignment="Left" 
+      Margin="831,170,0,0" 
+      VerticalAlignment="Top" 
+      JumpFromLabel="250-01-MA1" 
+      JumpToLabel="232-01-MA1"/>
+    <Labels:Pipe HorizontalAlignment="Left" 
+      Margin="459,511,0,0" 
+      VerticalAlignment="Top" 
+      StatusComponent="246-01-MA1" 
+      VisibilityComponent="" 
+      VisibilitySignal="" RenderTransformOrigin="0.5,0.5" Color="ByProduct" PipeHeight="Medium" Width="172">
+      <Labels:Pipe.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform Angle="90"/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </Labels:Pipe.RenderTransform>
+    </Labels:Pipe>
+    <Labels:Pipe HorizontalAlignment="Left" 
+      Margin="828,511,0,0" 
+      VerticalAlignment="Top" 
+      StatusComponent="250-01-MA1" 
+      VisibilityComponent="" 
+      VisibilitySignal="" RenderTransformOrigin="0.5,0.5" Color="ByProduct" PipeHeight="Medium" Width="172">
+      <Labels:Pipe.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform Angle="90"/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </Labels:Pipe.RenderTransform>
+    </Labels:Pipe>
+    <Machines:Waste HorizontalAlignment="Left" Margin="496,565,0,0" VerticalAlignment="Top"/>
+    <Machines:Waste HorizontalAlignment="Left" Margin="864,565,0,0" VerticalAlignment="Top"/>
+    <Machines:WCE_WashingCentrifuge HorizontalAlignment="Left" Margin="489,286,0,0" VerticalAlignment="Top" Height="200" Width="199"/>
+    <Machines:WCE_WashingCentrifuge HorizontalAlignment="Left" Margin="858,286,0,0" VerticalAlignment="Top" Height="200" Width="200"/>
+    <Labels:DeviceLabel HorizontalAlignment="Left" 
+                        Margin="394,336,0,0" 
+                        VerticalAlignment="Top" 
+                        ComponentName="246-01-MA1"/>
+    <Labels:DeviceLabel HorizontalAlignment="Left" 
+      Margin="1063,336,0,0" 
+      VerticalAlignment="Top" 
+      ComponentName="250-01-MA1"/>
+  </Grid>
+</UserControl>

@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Prevu.Synoptics</AssemblyName>
+    <RootNamespace>Prevu.Synoptics</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="2.0.3" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.2.1" />
+    <PackageReference Include="Prevu.UIComponents" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Prevu.Drawings\Prevu.Drawings.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="SH1.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="mongofiles --uri &quot;mongodb://lt-stefanor2:27017/&quot; -r -l $(TargetPath) -d V6666 put Prevu.Synoptics.dll" />
+  </Target>
+
+</Project>
