@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="mongofiles --uri=&quot;mongodb://lt-stefanor2:27017/&quot; -r -l &quot;$(TargetDir)\Prevu.Localization.dll&quot; -d V6666 put Prevu.Localization.dll&#xD;&#xA;mongofiles --uri &quot;mongodb://lt-stefanor2:27017/&quot; -r -l &quot;$(TargetDir)\en\Prevu.Localization.resources.dll&quot; -d V6666 put Prevu.Localization.resources.en&#xD;&#xA;mongofiles --uri &quot;mongodb://lt-stefanor2:27017/&quot; -r -l &quot;$(TargetDir)\it\Prevu.Localization.resources.dll&quot; -d V6666 put Prevu.Localization.resources.it&#xD;&#xA;mongofiles --uri &quot;mongodb://lt-stefanor2:27017/&quot; -r -l &quot;$(TargetDir)\de\Prevu.Localization.resources.dll&quot; -d V6666 put Prevu.Localization.resources.de&#xD;&#xA;mongofiles --uri &quot;mongodb://lt-stefanor2:27017/&quot; -r -l &quot;$(TargetDir)\ar\Prevu.Localization.resources.dll&quot; -d V6666 put Prevu.Localization.resources.ar&#xD;&#xA;mongofiles --uri &quot;mongodb://lt-stefanor2:27017/&quot; -r -l &quot;$(TargetDir)\zh\Prevu.Localization.resources.dll&quot; -d V6666 put Prevu.Localization.resources.zh" />
+  </Target>
+
+</Project>
