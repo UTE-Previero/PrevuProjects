@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="Prevu.Drawings.Machines.SCW_ScrewConveyor_straight"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Drawings.Machines"
+             mc:Ignorable="d" MinHeight="20" MaxHeight="20"
+             Width="150">
+  
+  <UserControl.Resources>
+    <VisualBrush 
+      x:Key="ScrewBrush" 
+      TileMode="Tile" Viewport="0,0,16,16" 
+      ViewportUnits="Absolute" Viewbox="0,0,16,16"    
+      ViewboxUnits="Absolute">
+      <VisualBrush.Visual>
+        <Canvas>
+          <Rectangle Fill="#FFBDBDBD" Width="24" Height="16" />
+          <Path Stroke="#FF424242" Data="M 0 16 L 8 0"  StrokeThickness="2" />
+          <Path Stroke="#FF424242" Data="M 8 -1 L 16 16" StrokeThickness="2"/>
+        </Canvas>
+      </VisualBrush.Visual>
+    </VisualBrush>
+  </UserControl.Resources>
+
+  <Grid>
+    <Rectangle Width="auto" Height="16" Fill="{StaticResource ScrewBrush}" RadiusX="1" RadiusY="1" />
+    <Border BorderThickness="0 2 0 2" BorderBrush="#FFBDBDBD" CornerRadius="2" Effect="{DynamicResource MaterialDesignShadowDepth1}"/>
+
+  </Grid>
+
+  
+
+
+</UserControl>
