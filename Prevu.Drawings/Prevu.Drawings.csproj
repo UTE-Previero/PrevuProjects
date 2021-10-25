@@ -10,8 +10,12 @@
     <PackageReference Include="MaterialDesignThemes" Version="4.2.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Prevu.Localization\Prevu.Localization.csproj" />
+  </ItemGroup>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="mongofiles --uri &quot;mongodb://lt-stefanor2:27017/&quot; -r -l $(TargetPath) -d V6666 put Prevu.Drawings.dll" />
+    <Exec Command="mongofiles --uri &quot;mongodb://lt-stefanor2:27017/&quot; -r -l $(TargetPath) -d P1010 put Prevu.Drawings.dll" />
   </Target>
 
 </Project>

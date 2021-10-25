@@ -5,8 +5,8 @@
              xmlns:local="clr-namespace:Prevu.Synoptics"
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             x:Class="Prevu.Synoptics.GR1" mc:Ignorable="d" 
-             Height="730" Width="1600" d:Background="{DynamicResource MaterialDesignPaper}">
+             x:Class="Prevu.Synoptics.GR1" mc:Ignorable="d" CacheMode="BitmapCache"
+             Height="840" Width="1420" d:Background="{DynamicResource MaterialDesignPaper}">
   <Grid>
     <Labels:DeviceLabel HorizontalAlignment="Left" 
                         Margin="59,35,0,0" 
@@ -23,9 +23,7 @@
                  Margin="54,177,0,0" 
                  VerticalAlignment="Top" 
                  Icon="Right" 
-                 StatusComponent="230-01-MA1" 
-                 VisibilityComponent="230-01-MA1" 
-                 VisibilitySignal="230-01-ZS1"/>
+                 StatusComponent="230-01-MA1" />
 
     <Labels:SignalLabel HorizontalAlignment="Left" 
                         Margin="30,231,0,0" 

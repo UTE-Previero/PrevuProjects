@@ -61,11 +61,155 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to _SYS_24VPWR_CAB_OFF.
+        ///   Looks up a localized string similar to 1 Hour.
         /// </summary>
-        internal static string _SYS_24VPWR_CAB_OFF {
+        internal static string _1_HOUR {
             get {
-                return ResourceManager.GetString("_SYS_24VPWR_CAB_OFF", resourceCulture);
+                return ResourceManager.GetString("1 HOUR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 12 Hours.
+        /// </summary>
+        internal static string _12_HOURS {
+            get {
+                return ResourceManager.GetString("12 HOURS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 15 Minutes.
+        /// </summary>
+        internal static string _15_MINUTES {
+            get {
+                return ResourceManager.GetString("15 MINUTES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 Hours.
+        /// </summary>
+        internal static string _2_HOURS {
+            get {
+                return ResourceManager.GetString("2 HOURS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 24 Hours.
+        /// </summary>
+        internal static string _24_HOURS {
+            get {
+                return ResourceManager.GetString("24 HOURS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 30 Minutes.
+        /// </summary>
+        internal static string _30_MINUTES {
+            get {
+                return ResourceManager.GetString("30 MINUTES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4 Hours.
+        /// </summary>
+        internal static string _4_HOURS {
+            get {
+                return ResourceManager.GetString("4 HOURS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5 Minuts.
+        /// </summary>
+        internal static string _5_MINUTES {
+            get {
+                return ResourceManager.GetString("5 MINUTES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 8 Hours.
+        /// </summary>
+        internal static string _8_HOURS {
+            get {
+                return ResourceManager.GetString("8 HOURS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Automatic Mode.
+        /// </summary>
+        internal static string _AUTOMATIC_MODE {
+            get {
+                return ResourceManager.GetString("_AUTOMATIC_MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disabled Mode.
+        /// </summary>
+        internal static string _DISABLED_MODE {
+            get {
+                return ResourceManager.GetString("_DISABLED_MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Estop Not Ok.
+        /// </summary>
+        internal static string _ESTOP_OK {
+            get {
+                return ResourceManager.GetString("_ESTOP_OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maintenance Mode.
+        /// </summary>
+        internal static string _MAINTENANCE_MODE {
+            get {
+                return ResourceManager.GetString("_MAINTENANCE_MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Production Cycle.
+        /// </summary>
+        internal static string _PRODUCTION_CYCLE {
+            get {
+                return ResourceManager.GetString("_PRODUCTION_CYCLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop Cycle.
+        /// </summary>
+        internal static string _STOP_CYCLE_ON {
+            get {
+                return ResourceManager.GetString("_STOP_CYCLE_ON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop Cycle Pending.
+        /// </summary>
+        internal static string _STOP_CYCLE_PENDING {
+            get {
+                return ResourceManager.GetString("_STOP_CYCLE_PENDING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zone Prepared.
+        /// </summary>
+        internal static string _ZONE_PREPARED {
+            get {
+                return ResourceManager.GetString("_ZONE_PREPARED", resourceCulture);
             }
         }
         
@@ -97,6 +241,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Active Events.
+        /// </summary>
+        internal static string ACTIVE_EVENTS {
+            get {
+                return ResourceManager.GetString("ACTIVE EVENTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Actual.
         /// </summary>
         internal static string ACTUAL {
@@ -106,11 +259,65 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Actual Current.
+        /// </summary>
+        internal static string ACTUAL_CURRENT {
+            get {
+                return ResourceManager.GetString("ACTUAL CURRENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Actual Level.
+        /// </summary>
+        internal static string ACTUAL_LEVEL {
+            get {
+                return ResourceManager.GetString("ACTUAL LEVEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Actual Speed.
+        /// </summary>
+        internal static string ACTUAL_SPEED {
+            get {
+                return ResourceManager.GetString("ACTUAL SPEED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Actual Temperature.
+        /// </summary>
+        internal static string ACTUAL_TEMPERATURE {
+            get {
+                return ResourceManager.GetString("ACTUAL TEMPERATURE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add.
         /// </summary>
         internal static string ADD {
             get {
                 return ResourceManager.GetString("ADD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        internal static string BACK {
+            get {
+                return ResourceManager.GetString("BACK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cabinet.
+        /// </summary>
+        internal static string CABINET {
+            get {
+                return ResourceManager.GetString("CABINET", resourceCulture);
             }
         }
         
@@ -169,6 +376,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Clear PET.
+        /// </summary>
+        internal static string CLEAR_PET {
+            get {
+                return ResourceManager.GetString("CLEAR PET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Commands.
         /// </summary>
         internal static string COMMANDS {
@@ -183,6 +399,15 @@ namespace Prevu.Localization.Properties {
         internal static string COMPONENT_NAME {
             get {
                 return ResourceManager.GetString("COMPONENT NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Component Search.
+        /// </summary>
+        internal static string COMPONENT_SEARCH {
+            get {
+                return ResourceManager.GetString("COMPONENT SEARCH", resourceCulture);
             }
         }
         
@@ -205,6 +430,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Copy From Group.
+        /// </summary>
+        internal static string COPY_FROM_GROUP {
+            get {
+                return ResourceManager.GetString("COPY FROM GROUP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Copy from User.
         /// </summary>
         internal static string COPY_FROM_USER {
@@ -214,11 +448,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create New Group.
+        /// </summary>
+        internal static string CREATE_NEW_GROUP {
+            get {
+                return ResourceManager.GetString("CREATE NEW GROUP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create New User.
         /// </summary>
         internal static string CREATE_NEW_USER {
             get {
                 return ResourceManager.GetString("CREATE NEW USER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current.
+        /// </summary>
+        internal static string CURRENT {
+            get {
+                return ResourceManager.GetString("CURRENT", resourceCulture);
             }
         }
         
@@ -250,6 +502,33 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Delete current group?.
+        /// </summary>
+        internal static string DELETE_CURRENT_GROUP_ {
+            get {
+                return ResourceManager.GetString("DELETE CURRENT GROUP?", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete current user?.
+        /// </summary>
+        internal static string DELETE_CURRENT_USER_ {
+            get {
+                return ResourceManager.GetString("DELETE CURRENT USER?", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete Group.
+        /// </summary>
+        internal static string DELETE_GROUP {
+            get {
+                return ResourceManager.GetString("DELETE GROUP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete User.
         /// </summary>
         internal static string DELETE_USER {
@@ -264,6 +543,24 @@ namespace Prevu.Localization.Properties {
         internal static string DISABLE {
             get {
                 return ResourceManager.GetString("DISABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Do you Confirm?.
+        /// </summary>
+        internal static string DO_YOU_CONFIRM_ {
+            get {
+                return ResourceManager.GetString("DO YOU CONFIRM?", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dryers.
+        /// </summary>
+        internal static string DRYERS {
+            get {
+                return ResourceManager.GetString("DRYERS", resourceCulture);
             }
         }
         
@@ -313,6 +610,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Faults and Messages.
+        /// </summary>
+        internal static string FAULTS_AND_MESSAGES {
+            get {
+                return ResourceManager.GetString("FAULTS AND MESSAGES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Full Name.
         /// </summary>
         internal static string FULL_NAME {
@@ -327,6 +633,24 @@ namespace Prevu.Localization.Properties {
         internal static string GRINDING {
             get {
                 return ResourceManager.GetString("GRINDING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Group.
+        /// </summary>
+        internal static string GROUP {
+            get {
+                return ResourceManager.GetString("GROUP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Group Name.
+        /// </summary>
+        internal static string GROUP_NAME {
+            get {
+                return ResourceManager.GetString("GROUP NAME", resourceCulture);
             }
         }
         
@@ -349,11 +673,1739 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Check The Amperage Control Sensor Signal And Its Wiring In The Electrical Cabinet.
+        /// </summary>
+        internal static string INFO_AMP_1 {
+            get {
+                return ResourceManager.GetString("INFO_AMP_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Filter Press Working Conditions And Process Settings.
+        /// </summary>
+        internal static string INFO_AMP_10 {
+            get {
+                return ResourceManager.GetString("INFO_AMP_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Blower For Material Blockage Or Obstruction - Set The Correct Minimum Current Limit.
+        /// </summary>
+        internal static string INFO_AMP_11 {
+            get {
+                return ResourceManager.GetString("INFO_AMP_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minimum Current Is Not Reached ! Check The Main Line Fuses, Local Disconnetor And And The Motor Wiring.
+        /// </summary>
+        internal static string INFO_AMP_2 {
+            get {
+                return ResourceManager.GetString("INFO_AMP_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maximum Current Exceeded (&gt;115% For 15 Sec) ! Check The Machine, Transmition And A Possible Blockage..
+        /// </summary>
+        internal static string INFO_AMP_3 {
+            get {
+                return ResourceManager.GetString("INFO_AMP_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Current Sensor Wiring And Signal. Make Sure The Device Main Contactor Is Not Closed (Blocked).
+        /// </summary>
+        internal static string INFO_AMP_4 {
+            get {
+                return ResourceManager.GetString("INFO_AMP_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Persistent Current Over The Minimum With No Incoming Material - Check The Grinder ( Bearing, Rotor … ).
+        /// </summary>
+        internal static string INFO_AMP_5 {
+            get {
+                return ResourceManager.GetString("INFO_AMP_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Motor Process Conditions And The Suitable Setup Of The Maximum Limit.
+        /// </summary>
+        internal static string INFO_AMP_6 {
+            get {
+                return ResourceManager.GetString("INFO_AMP_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Motor Process Conditions And Suitable Limit Setup. If Water Pump Type, Check For Cavitation.
+        /// </summary>
+        internal static string INFO_AMP_7 {
+            get {
+                return ResourceManager.GetString("INFO_AMP_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Regulation Of The Process Since The Centrifuge Is Working In Heavy Load Conditions.
+        /// </summary>
+        internal static string INFO_AMP_8 {
+            get {
+                return ResourceManager.GetString("INFO_AMP_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Pump And The Circuit For A Possible Material Blockage Occured (No Material Downstream).
+        /// </summary>
+        internal static string INFO_AMP_9 {
+            get {
+                return ResourceManager.GetString("INFO_AMP_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Big Bag Is Full. It Needs To Be Changed..
+        /// </summary>
+        internal static string INFO_BAG_1 {
+            get {
+                return ResourceManager.GetString("INFO_BAG_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Big Bag Is No More Present. Check In The Field The Sensor And The Placement Of Big Bag.
+        /// </summary>
+        internal static string INFO_BAG_2 {
+            get {
+                return ResourceManager.GetString("INFO_BAG_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset Safety Barriers Of Big Bag Station To Enable Shaking Of Bags During The Filling Cycle.
+        /// </summary>
+        internal static string INFO_BAG_3 {
+            get {
+                return ResourceManager.GetString("INFO_BAG_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Conveyor Chain Mechanical Conditions And Its Tensioning..
+        /// </summary>
+        internal static string INFO_CHAIN_1 {
+            get {
+                return ResourceManager.GetString("INFO_CHAIN_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Label Separator For A Possible Material Blockage And/Or The Position Of Clutch Limit Switches.
+        /// </summary>
+        internal static string INFO_CLUTCH_1 {
+            get {
+                return ResourceManager.GetString("INFO_CLUTCH_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open The Cooling Valve Or The System Will Stop The Device To Be Cooled In Few Minutes.
+        /// </summary>
+        internal static string INFO_COOL_1 {
+            get {
+                return ResourceManager.GetString("INFO_COOL_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open The Cooling Valve To Allow Its Related Device To Run Continuously.
+        /// </summary>
+        internal static string INFO_COOL_2 {
+            get {
+                return ResourceManager.GetString("INFO_COOL_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Instrument/Device Status And Local Alarm Or Warnings If Present.
+        /// </summary>
+        internal static string INFO_DEVICE_1 {
+            get {
+                return ResourceManager.GetString("INFO_DEVICE_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Switch On The Eddy Current Device In The Field.
+        /// </summary>
+        internal static string INFO_EDDY_1 {
+            get {
+                return ResourceManager.GetString("INFO_EDDY_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Eddy Current Device In The Field.
+        /// </summary>
+        internal static string INFO_EDDY_2 {
+            get {
+                return ResourceManager.GetString("INFO_EDDY_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Put The Eddy Current Device In Remote Mode (Local Setting).
+        /// </summary>
+        internal static string INFO_EDDY_3 {
+            get {
+                return ResourceManager.GetString("INFO_EDDY_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Eddy Current Device In The Field.
+        /// </summary>
+        internal static string INFO_EDDY_4 {
+            get {
+                return ResourceManager.GetString("INFO_EDDY_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset Device Local Estop.
+        /// </summary>
+        internal static string INFO_EDDY_5 {
+            get {
+                return ResourceManager.GetString("INFO_EDDY_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Filter Device, Its Cleaning And Its Wiring..
+        /// </summary>
+        internal static string INFO_FILT_1 {
+            get {
+                return ResourceManager.GetString("INFO_FILT_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Filter Device, Safety Isolation Valve Is Out Of Position !.
+        /// </summary>
+        internal static string INFO_FILT_2 {
+            get {
+                return ResourceManager.GetString("INFO_FILT_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Flowrate Sensor, Its Wiring In The Field And Its Signal Feedback In The Electrical Cabinet.
+        /// </summary>
+        internal static string INFO_FLW_1 {
+            get {
+                return ResourceManager.GetString("INFO_FLW_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Flowrate Sensor And The Incoming Water.
+        /// </summary>
+        internal static string INFO_FLW_2 {
+            get {
+                return ResourceManager.GetString("INFO_FLW_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Flowrate Sensor, The Incoming Water And Possible Circuit Leakege.
+        /// </summary>
+        internal static string INFO_FLW_3 {
+            get {
+                return ResourceManager.GetString("INFO_FLW_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refill The Greasing Unit Over The Minimum Level With The Proper Grease Type (See User Manual).
+        /// </summary>
+        internal static string INFO_GREASE_1 {
+            get {
+                return ResourceManager.GetString("INFO_GREASE_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Air Pressure At The Greasing Unit And Verify The Grease Is Actually Going To Designed Target.
+        /// </summary>
+        internal static string INFO_GREASE_2 {
+            get {
+                return ResourceManager.GetString("INFO_GREASE_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable The Greasing Valve During The Production.
+        /// </summary>
+        internal static string INFO_GREASE_3 {
+            get {
+                return ResourceManager.GetString("INFO_GREASE_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Fault Code Of The Inverter (On Its Display) In The Electrical Cabinet And Reset The Unit.
+        /// </summary>
+        internal static string INFO_INV_1 {
+            get {
+                return ResourceManager.GetString("INFO_INV_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Make Sure Inverter Is Operating In Remote Mode ! Check The &quot;Run&quot; Feedback Signal From Inverter.
+        /// </summary>
+        internal static string INFO_INV_2 {
+            get {
+                return ResourceManager.GetString("INFO_INV_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Safety Key Position In The Lock And The Status Of The Unlock Request Operated In The Pc Panel.
+        /// </summary>
+        internal static string INFO_KEY_1 {
+            get {
+                return ResourceManager.GetString("INFO_KEY_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Integrity Of Pump Internal Pipe  (See User Manual).
+        /// </summary>
+        internal static string INFO_LEAK_1 {
+            get {
+                return ResourceManager.GetString("INFO_LEAK_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Level Sensor, Its Wiring In The Field And Its Signal Feedback In The Electrical Cabinet.
+        /// </summary>
+        internal static string INFO_LEVEL_1 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Microfilter Conditions And The Water Loop Regulation.
+        /// </summary>
+        internal static string INFO_LEVEL_10 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Big Bag Full ! Check And Replace It..
+        /// </summary>
+        internal static string INFO_LEVEL_11 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Silo Filling, Process Conditions And, If Needed, The Regulation Of Setups.
+        /// </summary>
+        internal static string INFO_LEVEL_12 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maximum Level Not Reached ! Check Local Filling And Process Conditions.
+        /// </summary>
+        internal static string INFO_LEVEL_13 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minimum Level Not Ok ! Check Process Local Conditions And Setups Since No Minimum Level Is Detected.
+        /// </summary>
+        internal static string INFO_LEVEL_14 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minimum Level Not Ok ! Tank Has To Be Refilled..
+        /// </summary>
+        internal static string INFO_LEVEL_15 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filter Is Dirty And Needs To Be Cleaned (The Water Level Remains Too High)..
+        /// </summary>
+        internal static string INFO_LEVEL_16 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Hopper. Ensure No Blockage Is Present And/Or Verify The Regulation Of The Process.
+        /// </summary>
+        internal static string INFO_LEVEL_2 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Tank Working Conditions And The Water Loop Regulation (Discharge).
+        /// </summary>
+        internal static string INFO_LEVEL_3 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Tank Working Conditions And The Water Loop Regulation (Filling).
+        /// </summary>
+        internal static string INFO_LEVEL_4 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Tank Working Conditions. A Possible Material Blockage Is Occured..
+        /// </summary>
+        internal static string INFO_LEVEL_5 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Tank Working Conditions And The Water Loop Regulation (Filling).
+        /// </summary>
+        internal static string INFO_LEVEL_6 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level Sensors Incongruency. Check For A Possible Bridge Or A (Single) Level Mulfunction..
+        /// </summary>
+        internal static string INFO_LEVEL_7 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Hopper Is Empty ! Check The Upstream Feeding Circuit, Process Regulation Or Stopping Events.
+        /// </summary>
+        internal static string INFO_LEVEL_8 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Microfilter Net For Cleaning.
+        /// </summary>
+        internal static string INFO_LEVEL_9 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Belt Alignment. Make Sure That Alignment Switches Are Working Correctly.
+        /// </summary>
+        internal static string INFO_LS_1 {
+            get {
+                return ResourceManager.GetString("INFO_LS_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Door Safety Limit Switch In The Field.
+        /// </summary>
+        internal static string INFO_LS_10 {
+            get {
+                return ResourceManager.GetString("INFO_LS_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Footboard Position In The Field. Move It To Uper Position..
+        /// </summary>
+        internal static string INFO_LS_11 {
+            get {
+                return ResourceManager.GetString("INFO_LS_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Position Of The Grinder Grill. Make Sure That Its Position Switch Is Working Correctly.
+        /// </summary>
+        internal static string INFO_LS_2 {
+            get {
+                return ResourceManager.GetString("INFO_LS_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Valve Position, The Signals Of Both Position Limit Switche(S) And Pressure In The Pipes.
+        /// </summary>
+        internal static string INFO_LS_3 {
+            get {
+                return ResourceManager.GetString("INFO_LS_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Device (If May Blocked) And The Signals Of Both Position Limit Switches.
+        /// </summary>
+        internal static string INFO_LS_4 {
+            get {
+                return ResourceManager.GetString("INFO_LS_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open The Indicated Manual Valve Installed On The Machine.
+        /// </summary>
+        internal static string INFO_LS_5 {
+            get {
+                return ResourceManager.GetString("INFO_LS_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Diverter Centering Cycle Maximum Timeout ! Check The Diverter And The Center Position Limit Switch.
+        /// </summary>
+        internal static string INFO_LS_6 {
+            get {
+                return ResourceManager.GetString("INFO_LS_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Label Separator. Make Sure No Material Blockage Is Present.
+        /// </summary>
+        internal static string INFO_LS_7 {
+            get {
+                return ResourceManager.GetString("INFO_LS_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Pressure On Pipes And Possible Blockages Of The Valve.
+        /// </summary>
+        internal static string INFO_LS_8 {
+            get {
+                return ResourceManager.GetString("INFO_LS_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Belt Tensioning (Mechanical Regulation) And/Or Slipping Sensor Positioning And Wiring.
+        /// </summary>
+        internal static string INFO_LS_9 {
+            get {
+                return ResourceManager.GetString("INFO_LS_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conditions For Machine Open Are No More Ok. Restore All Safety Conditions For Machine Maintenace !.
+        /// </summary>
+        internal static string INFO_MAINT_1 {
+            get {
+                return ResourceManager.GetString("INFO_MAINT_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Metal Detector On Plant And /Or Its Electrical Connections (See Electrical Diagram).
+        /// </summary>
+        internal static string INFO_METDET_1 {
+            get {
+                return ResourceManager.GetString("INFO_METDET_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Metal Detector On Plant And /Or Its Electrical Connections (See Electrical Diagram).
+        /// </summary>
+        internal static string INFO_METDET_2 {
+            get {
+                return ResourceManager.GetString("INFO_METDET_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Chemical Concentration Sensor, Its Wiring In The Field And Its Signal Feedback In The Electrical Cabinet.
+        /// </summary>
+        internal static string INFO_OHM_1 {
+            get {
+                return ResourceManager.GetString("INFO_OHM_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maximum Chemical Concentration ! Check The Chemical Pump, Process Conditions And, If Needed, The Regulation Of Setups.
+        /// </summary>
+        internal static string INFO_OHM_2 {
+            get {
+                return ResourceManager.GetString("INFO_OHM_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minimum Chemical Concentration ! Check The Chemical Pump, Process Conditions And, If Needed, The Regulation Of Setups.
+        /// </summary>
+        internal static string INFO_OHM_3 {
+            get {
+                return ResourceManager.GetString("INFO_OHM_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Replace The Oil Filter (Or Clean It If May Possible). Check Also The Electrical Wiring.
+        /// </summary>
+        internal static string INFO_OIL_1 {
+            get {
+                return ResourceManager.GetString("INFO_OIL_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Oil Temperature In The Hydraulic Unit And Make Sure The Cooling Circuit Is Operating Correctly.
+        /// </summary>
+        internal static string INFO_OIL_2 {
+            get {
+                return ResourceManager.GetString("INFO_OIL_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hydraulic Oil Is Too Chilly To Run The Unit. Wait For The Heater To Warm Up It At The Minimum Required.
+        /// </summary>
+        internal static string INFO_OIL_3 {
+            get {
+                return ResourceManager.GetString("INFO_OIL_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refill The Hydraulic Unit Over The Minimum Level (Glass Indicator) With The Proper Oil Type (See User Manual).
+        /// </summary>
+        internal static string INFO_OIL_4 {
+            get {
+                return ResourceManager.GetString("INFO_OIL_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Take Out Some Hydraulic Unit From The Tank Since The Level Is Below The Maximum Limit (Glass Indicator).
+        /// </summary>
+        internal static string INFO_OIL_5 {
+            get {
+                return ResourceManager.GetString("INFO_OIL_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minimum Oil Pressure Not Reached ! Check Hydraulic Unit, Manual And Electrical Vavles (See User Manual).
+        /// </summary>
+        internal static string INFO_OIL_6 {
+            get {
+                return ResourceManager.GetString("INFO_OIL_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Shaft Oil Sealing System Or Motor Will Be Stopped Within One Hour.
+        /// </summary>
+        internal static string INFO_OIL_SEAL_1 {
+            get {
+                return ResourceManager.GetString("INFO_OIL_SEAL_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Shaft Oil Sealing System And Restart The Motor.
+        /// </summary>
+        internal static string INFO_OIL_SEAL_2 {
+            get {
+                return ResourceManager.GetString("INFO_OIL_SEAL_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refill The Sealing Oil Or Motor Will Be Stopped Within One Hour.
+        /// </summary>
+        internal static string INFO_OIL_SEAL_3 {
+            get {
+                return ResourceManager.GetString("INFO_OIL_SEAL_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Shaft Oil Sealing System  And Restart The Motor.
+        /// </summary>
+        internal static string INFO_OIL_SEAL_4 {
+            get {
+                return ResourceManager.GetString("INFO_OIL_SEAL_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Wiring To Identify A Possible Short Circuit. Reset The Circuit Breaker In The Electrical Cabinet..
+        /// </summary>
+        internal static string INFO_OVL_1 {
+            get {
+                return ResourceManager.GetString("INFO_OVL_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Machine, Clean It If Jammed.  Wait For 3 Minutes  ! -  Reset The Overload Relay In The Electrical Cabinet.
+        /// </summary>
+        internal static string INFO_OVL_2 {
+            get {
+                return ResourceManager.GetString("INFO_OVL_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Device. Reset The Tripped Circuit Breaker In The Electrical Cabinet.
+        /// </summary>
+        internal static string INFO_OVL_3 {
+            get {
+                return ResourceManager.GetString("INFO_OVL_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Motor Cooling Fan.   Wait For 3 Minutes  !  -  Reset The Overload Relay In The Electrical Cabinet.
+        /// </summary>
+        internal static string INFO_OVL_4 {
+            get {
+                return ResourceManager.GetString("INFO_OVL_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Motor Brake.   Wait For 3 Minutes  !  - Reset The Overload Relay In The Electrical Cabinet.
+        /// </summary>
+        internal static string INFO_OVL_5 {
+            get {
+                return ResourceManager.GetString("INFO_OVL_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Machine !  Make Sure That Mechanical Overload Switch Is Working Correctly.
+        /// </summary>
+        internal static string INFO_OVL_6 {
+            get {
+                return ResourceManager.GetString("INFO_OVL_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Resistor. Reset The Overload Relay In The Electrical Cabinet If Resistor Is Ok.
+        /// </summary>
+        internal static string INFO_OVL_7 {
+            get {
+                return ResourceManager.GetString("INFO_OVL_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Level Sensors. Reset The Overload Relay In The Electrical Cabinet If Level Sensors Are Ok.
+        /// </summary>
+        internal static string INFO_OVL_8 {
+            get {
+                return ResourceManager.GetString("INFO_OVL_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter General Alarm ! Check Pellenc Sorter At Its Local Panel And/Or The Interface Wiring..
+        /// </summary>
+        internal static string INFO_PELLENC_1 {
+            get {
+                return ResourceManager.GetString("INFO_PELLENC_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter Not On! Check Pellenc Sorter Locally.
+        /// </summary>
+        internal static string INFO_PELLENC_2 {
+            get {
+                return ResourceManager.GetString("INFO_PELLENC_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter Is Not Operating ! Check The Sorter At Its Local Panel And/Or The Interface Wiring..
+        /// </summary>
+        internal static string INFO_PELLENC_3 {
+            get {
+                return ResourceManager.GetString("INFO_PELLENC_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter Is Not In Remote Mode ! Switch Pellenc Sorter To Remote Mote.
+        /// </summary>
+        internal static string INFO_PELLENC_4 {
+            get {
+                return ResourceManager.GetString("INFO_PELLENC_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter Local Estop Push Button Is Pressed. Release The Button On The Sorter Local Panel.
+        /// </summary>
+        internal static string INFO_PELLENC_5 {
+            get {
+                return ResourceManager.GetString("INFO_PELLENC_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Ph Acidity Sensor, Its Wiring In The Field And Its Signal Feedback In The Electrical Cabinet.
+        /// </summary>
+        internal static string INFO_PH_1 {
+            get {
+                return ResourceManager.GetString("INFO_PH_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maximum Ph - Caustic  ! Check The Process Conditions And, If Needed, The Regulation Of Setups.
+        /// </summary>
+        internal static string INFO_PH_2 {
+            get {
+                return ResourceManager.GetString("INFO_PH_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minimum Ph  - Acid  ! Check The  Process Conditions And, If Needed, The Regulation Of Setups.
+        /// </summary>
+        internal static string INFO_PH_3 {
+            get {
+                return ResourceManager.GetString("INFO_PH_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lock The Safety Pins Of The Mobile Hopper !.
+        /// </summary>
+        internal static string INFO_PIN_1 {
+            get {
+                return ResourceManager.GetString("INFO_PIN_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Position Sensor, Its Wiring In The Field And Its Signal Feedback In The Electrical Cabinet.
+        /// </summary>
+        internal static string INFO_POS_1 {
+            get {
+                return ResourceManager.GetString("INFO_POS_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Persistent High Pressure ! Check The Material In The Hopper And The Efficiency Of The Rotor And Blades..
+        /// </summary>
+        internal static string INFO_PRES_1 {
+            get {
+                return ResourceManager.GetString("INFO_PRES_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to High Number Of Rotor Reverse ! Check The Material In The Hopper And The Efficiency Of The Rotor And Blades..
+        /// </summary>
+        internal static string INFO_PRES_2 {
+            get {
+                return ResourceManager.GetString("INFO_PRES_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minimum Air Pressure Not Present ! Check Compressed Air Circuit.
+        /// </summary>
+        internal static string INFO_PRES_3 {
+            get {
+                return ResourceManager.GetString("INFO_PRES_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Pressure Sensor, Its Wiring In The Field And Its Signal In The Electrical Cabinet.
+        /// </summary>
+        internal static string INFO_PRES_4 {
+            get {
+                return ResourceManager.GetString("INFO_PRES_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Air Filter Blocked ! Air Filter Has To Be Cleaned Or Changed.
+        /// </summary>
+        internal static string INFO_PRES_5 {
+            get {
+                return ResourceManager.GetString("INFO_PRES_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maximum Air Pressure, Check The Air Circuit (Blockage).
+        /// </summary>
+        internal static string INFO_PRES_6 {
+            get {
+                return ResourceManager.GetString("INFO_PRES_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maximum Air Pressure, Check The Air Circuit (Leakage).
+        /// </summary>
+        internal static string INFO_PRES_7 {
+            get {
+                return ResourceManager.GetString("INFO_PRES_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maximum Pressure Reached ! Check The Circuit, Process Conditions And, If Needed, Configuration Of Setups.
+        /// </summary>
+        internal static string INFO_PRES_8 {
+            get {
+                return ResourceManager.GetString("INFO_PRES_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minimum Pressure Not Reached ! Check The Circuit, Process Conditions And, If Needed, Configuration Of Setups.
+        /// </summary>
+        internal static string INFO_PRES_9 {
+            get {
+                return ResourceManager.GetString("INFO_PRES_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Motor Cooling And/Or The Electrical Connection Of The Thermistor Sensor.
+        /// </summary>
+        internal static string INFO_PTC_1 {
+            get {
+                return ResourceManager.GetString("INFO_PTC_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Water Pressure, Valve, Pipes And Tank Below. Possible Leakage Or Lack Of Water..
+        /// </summary>
+        internal static string INFO_REFILL_1 {
+            get {
+                return ResourceManager.GetString("INFO_REFILL_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Safety Thermistor Tripped ! Check The Dryer For Any Possible Material Blockage, Thermoregualtion, Air Filter….
+        /// </summary>
+        internal static string INFO_RES_1 {
+            get {
+                return ResourceManager.GetString("INFO_RES_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restart The Blower Quickly To Prevent The Heating System Overheat.
+        /// </summary>
+        internal static string INFO_RES_2 {
+            get {
+                return ResourceManager.GetString("INFO_RES_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resistor Low Current ! Check The Wiring And Replace The Resistor If May Need !!! Skilled Personnel Authorized Only !!!.
+        /// </summary>
+        internal static string INFO_RES_3 {
+            get {
+                return ResourceManager.GetString("INFO_RES_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rotor Rotation Detected Without Command ! - Reset The Alarm To Restart. Check The Wiring If Persistent Fault.
+        /// </summary>
+        internal static string INFO_ROT_1 {
+            get {
+                return ResourceManager.GetString("INFO_ROT_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No Rotation Detected. Check The Device In The Field For A Possible Blockage..
+        /// </summary>
+        internal static string INFO_ROT_2 {
+            get {
+                return ResourceManager.GetString("INFO_ROT_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disc Saparator Tryed Many Cleaning Cycles Since It Is Almost Blocked. Check And Clean It..
+        /// </summary>
+        internal static string INFO_SAB_1 {
+            get {
+                return ResourceManager.GetString("INFO_SAB_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Safety Key Lock.
+        /// </summary>
+        internal static string INFO_SAFETY_1 {
+            get {
+                return ResourceManager.GetString("INFO_SAFETY_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Status Of The Safety Limit Switch In The Field.
+        /// </summary>
+        internal static string INFO_SAFETY_2 {
+            get {
+                return ResourceManager.GetString("INFO_SAFETY_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset The Pull-Cord Safety Switches In The Field.
+        /// </summary>
+        internal static string INFO_SAFETY_3 {
+            get {
+                return ResourceManager.GetString("INFO_SAFETY_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter General Alarm ! Check Sea Sorter At Its Local Panel And/Or The Interface Wiring..
+        /// </summary>
+        internal static string INFO_SEA_1 {
+            get {
+                return ResourceManager.GetString("INFO_SEA_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conveying Vibrator(S) Or Sorting Unit Are Not Running ! Check Locally..
+        /// </summary>
+        internal static string INFO_SEA_2 {
+            get {
+                return ResourceManager.GetString("INFO_SEA_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Load Of The Motor For Possible Blockage And Check The Softstart Unit In The Electrical Cabinet.
+        /// </summary>
+        internal static string INFO_SFTSTR_1 {
+            get {
+                return ResourceManager.GetString("INFO_SFTSTR_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Fault Code Of The Softstarter (On Its Display) In The Electrical Cabinet And Reset The Unit.
+        /// </summary>
+        internal static string INFO_SFTSTR_2 {
+            get {
+                return ResourceManager.GetString("INFO_SFTSTR_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Make Sure Softstarter Is Operating In Remote Mode ! Check The &quot;Run&quot; Feedback Signal From Softstarter.
+        /// </summary>
+        internal static string INFO_SFTSTR_3 {
+            get {
+                return ResourceManager.GetString("INFO_SFTSTR_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter Not Ready For Process ! Check Sorter Main Power, Its Local Panel And/Or The Interface Wiring..
+        /// </summary>
+        internal static string INFO_SORTEX_1 {
+            get {
+                return ResourceManager.GetString("INFO_SORTEX_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter General Alarm ! Check Buhler Sorter At Its Local Panel And/Or The Interface Wiring..
+        /// </summary>
+        internal static string INFO_SORTEX_2 {
+            get {
+                return ResourceManager.GetString("INFO_SORTEX_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string INFO_SYS_1 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Second. Transf - Check The Electrical Cabinet &amp; Reset The Tripped Circuit Breaker. ! Skilled Personnel Authorized Only !.
+        /// </summary>
+        internal static string INFO_SYS_10 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string INFO_SYS_11 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Digital Input - Check The Electrical Cabinet &amp; Reset The Tripped Circuit Breaker. ! Skilled Personnel Authorized Only !.
+        /// </summary>
+        internal static string INFO_SYS_12 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Digital Output - Check The Electrical Cabinet &amp; Reset The Tripped Circuit Breaker. ! Skilled Personnel Authorized Only !.
+        /// </summary>
+        internal static string INFO_SYS_13 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Analog In - Check The Electrical Cabinet &amp; Reset The Tripped Circuit Breaker. ! Skilled Personnel Authorized Only !.
+        /// </summary>
+        internal static string INFO_SYS_14 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Analog Out - Check The Electrical Cabinet &amp; Reset The Tripped Circuit Breaker. ! Skilled Personnel Authorized Only !.
+        /// </summary>
+        internal static string INFO_SYS_15 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 24V Estop - Check The Electrical Cabinet &amp; Reset The Tripped Circuit Breaker. ! Skilled Personnel Authorized Only !.
+        /// </summary>
+        internal static string INFO_SYS_16 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 24V Tower - Check The Electrical Cabinet &amp; Reset The Tripped Circuit Breaker. ! Skilled Personnel Authorized Only !.
+        /// </summary>
+        internal static string INFO_SYS_17 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Plc Signal Ok - Check The Electrical Cabinet On The Indicated Contact Relay.      ! Skilled Personnel Authorized Only !.
+        /// </summary>
+        internal static string INFO_SYS_18 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 24V Internal - Check The Electrical Cabinet &amp; Reset The Tripped Circuit Breaker. ! Skilled Personnel Authorized Only !.
+        /// </summary>
+        internal static string INFO_SYS_19 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string INFO_SYS_2 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 24V Exernal - Check The Electrical Cabinet &amp; Reset The Tripped Circuit Breaker. ! Skilled Personnel Authorized Only !.
+        /// </summary>
+        internal static string INFO_SYS_20 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cabinet Cooling - Check The Electrical Cabinet &amp; Reset The Tripped Circuit Breaker ! Skilled Personnel Authorized Only !.
+        /// </summary>
+        internal static string INFO_SYS_21 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_21", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 24V Inverters - Check The Electrical Cabinet &amp; Reset The Tripped Circuit Breaker. ! Skilled Personnel Authorized Only !.
+        /// </summary>
+        internal static string INFO_SYS_22 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_22", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string INFO_SYS_23 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_23", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string INFO_SYS_24 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_24", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Estop - Check The Electrical Cabinet &amp; Reset The Tripped Circuit Breaker. ! Skilled Personnel Authorized Only !.
+        /// </summary>
+        internal static string INFO_SYS_25 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_25", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Estop Contactor - Check The Electrical Cabinet  ! Skilled Personnel Authorized Only !.
+        /// </summary>
+        internal static string INFO_SYS_26 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_26", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check For Estop Pushbutton Pressed. Select A Process Mode With Operator Panel (Prevu - Plant Control Page).
+        /// </summary>
+        internal static string INFO_SYS_27 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_27", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unlock The Emergency Stop Knob Push-Button On The Cabinet Door (Clockwise Rotation).
+        /// </summary>
+        internal static string INFO_SYS_28 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_28", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unlock The Emergency Stop Knob Push-Button In The Plant (Clockwise Rotation).
+        /// </summary>
+        internal static string INFO_SYS_29 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_29", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please Call Previero/Sorema Assistance Service !.
+        /// </summary>
+        internal static string INFO_SYS_3 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unlock The Emergency Stop Knob Push-Button In The Plant (Clockwise Rotation).
+        /// </summary>
+        internal static string INFO_SYS_30 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_30", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Cicuits And Controls Of Estop Area Collecting Estop-Buttons.
+        /// </summary>
+        internal static string INFO_SYS_31 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_31", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string INFO_SYS_32 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_32", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string INFO_SYS_4 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string INFO_SYS_5 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string INFO_SYS_6 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string INFO_SYS_7 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Switch On The Electrical Cabinet !   -  Reset The Indicated Circuit Breaker If Necessary (Main 24V Power Supply).
+        /// </summary>
+        internal static string INFO_SYS_8 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Primary Transf - Check The Electrical Cabinet &amp; Reset The Tripped Circuit Breaker. ! Skilled Personnel Authorized Only !.
+        /// </summary>
+        internal static string INFO_SYS_9 {
+            get {
+                return ResourceManager.GetString("INFO_SYS_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Temperature Sensor, Its Wiring In The Field And Its Signal In The Electrical Cabinet.
+        /// </summary>
+        internal static string INFO_TEMPER_1 {
+            get {
+                return ResourceManager.GetString("INFO_TEMPER_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Temperature Sensor, Its Wiring In The Field And Heating System.
+        /// </summary>
+        internal static string INFO_TEMPER_10 {
+            get {
+                return ResourceManager.GetString("INFO_TEMPER_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Temperature Sensor, Its Wiring In The Field, Heating System And Temperature Regualtion.
+        /// </summary>
+        internal static string INFO_TEMPER_11 {
+            get {
+                return ResourceManager.GetString("INFO_TEMPER_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Hydraulic Motor And The Maximum Temperature Limit Set.
+        /// </summary>
+        internal static string INFO_TEMPER_2 {
+            get {
+                return ResourceManager.GetString("INFO_TEMPER_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Heating System For Any Possible Material Blockage And Temperature Regualtion.
+        /// </summary>
+        internal static string INFO_TEMPER_3 {
+            get {
+                return ResourceManager.GetString("INFO_TEMPER_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Heating System, The Thermal Sensor Position And Temperature Regualtion.
+        /// </summary>
+        internal static string INFO_TEMPER_4 {
+            get {
+                return ResourceManager.GetString("INFO_TEMPER_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Heating System Since No Temperature Is Increasing Even If Heating System Is On.
+        /// </summary>
+        internal static string INFO_TEMPER_5 {
+            get {
+                return ResourceManager.GetString("INFO_TEMPER_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Proportional Valve Or Heating Exchanger And Temperature Regualtion Setup.
+        /// </summary>
+        internal static string INFO_TEMPER_6 {
+            get {
+                return ResourceManager.GetString("INFO_TEMPER_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Prop. Valve, Steam Or Hot Water Supply, The Thermal Sensor Position And Temperature Regualtion.
+        /// </summary>
+        internal static string INFO_TEMPER_7 {
+            get {
+                return ResourceManager.GetString("INFO_TEMPER_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grinder Exit Probably Blocked And/Or No Antiscticking Incoming Into Cutting Chamber..
+        /// </summary>
+        internal static string INFO_TEMPER_8 {
+            get {
+                return ResourceManager.GetString("INFO_TEMPER_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Safety Thermistor Tripped ! Remove The Causes Of System Overheating (E.G. Check Air Filters...).
+        /// </summary>
+        internal static string INFO_TEMPER_9 {
+            get {
+                return ResourceManager.GetString("INFO_TEMPER_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter Not Ready For Process ! Check Titech Sorter Main Power, Its Local Panel And/Or The Interface Wiring..
+        /// </summary>
+        internal static string INFO_TITECH_1 {
+            get {
+                return ResourceManager.GetString("INFO_TITECH_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter Lights To Be Placed In Automatic ! Check Titech Sorter Display Panel..
+        /// </summary>
+        internal static string INFO_TITECH_10 {
+            get {
+                return ResourceManager.GetString("INFO_TITECH_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter General Alarm ! Check Titech Sorter At Its Local Panel And/Or The Interface Wiring..
+        /// </summary>
+        internal static string INFO_TITECH_2 {
+            get {
+                return ResourceManager.GetString("INFO_TITECH_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Air Pressure Available At The Titech Sorter And/Or The Interface Wiring..
+        /// </summary>
+        internal static string INFO_TITECH_3 {
+            get {
+                return ResourceManager.GetString("INFO_TITECH_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Sorter At Its Local Panel, Replace The Valve (If May Need) And/Or Check The Interface Wiring..
+        /// </summary>
+        internal static string INFO_TITECH_4 {
+            get {
+                return ResourceManager.GetString("INFO_TITECH_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter Is Not Operating ! Check The Sorter At Its Local Panel And/Or The Interface Wiring..
+        /// </summary>
+        internal static string INFO_TITECH_5 {
+            get {
+                return ResourceManager.GetString("INFO_TITECH_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Sorter Valve Block, Move It To The Process Position And/Or Check The Interface Wiring..
+        /// </summary>
+        internal static string INFO_TITECH_6 {
+            get {
+                return ResourceManager.GetString("INFO_TITECH_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter Warning Present ! Check Titech Sorter Display Panel..
+        /// </summary>
+        internal static string INFO_TITECH_7 {
+            get {
+                return ResourceManager.GetString("INFO_TITECH_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter Low Temperature Present ! Check Titech Sorter Display Panel..
+        /// </summary>
+        internal static string INFO_TITECH_8 {
+            get {
+                return ResourceManager.GetString("INFO_TITECH_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter Estop Pushbutton Pressed ! Check Titech Sorter Display Panel..
+        /// </summary>
+        internal static string INFO_TITECH_9 {
+            get {
+                return ResourceManager.GetString("INFO_TITECH_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter Is Not Operating ! Check The Sorter At Its Local Panel And/Or The Interface Wiring..
+        /// </summary>
+        internal static string INFO_UNISENSOR_1 {
+            get {
+                return ResourceManager.GetString("INFO_UNISENSOR_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter General Alarm ! Check Unisensor Sorter At Its Local Panel And/Or The Interface Wiring..
+        /// </summary>
+        internal static string INFO_UNISENSOR_2 {
+            get {
+                return ResourceManager.GetString("INFO_UNISENSOR_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Sorter Inlet And Feeding Condition.
+        /// </summary>
+        internal static string INFO_UNISENSOR_3 {
+            get {
+                return ResourceManager.GetString("INFO_UNISENSOR_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Sorter Outlet And Downstream Devices Condition.
+        /// </summary>
+        internal static string INFO_UNISENSOR_4 {
+            get {
+                return ResourceManager.GetString("INFO_UNISENSOR_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Valve Block In The Field - Reset The Overload Relay In The Electrical Cabinet.
+        /// </summary>
+        internal static string INFO_VLV_BLOCK_1 {
+            get {
+                return ResourceManager.GetString("INFO_VLV_BLOCK_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Valve Block In The Field.
+        /// </summary>
+        internal static string INFO_VLV_BLOCK_2 {
+            get {
+                return ResourceManager.GetString("INFO_VLV_BLOCK_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Weight Sensor, Its Wiring In The Field And Its Signal Feedback In The Electrical Cabinet.
+        /// </summary>
+        internal static string INFO_WEIGHT_1 {
+            get {
+                return ResourceManager.GetString("INFO_WEIGHT_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Weight Sensor, Process Conditions And, If Needed, The Regulation Of Setups.
+        /// </summary>
+        internal static string INFO_WEIGHT_2 {
+            get {
+                return ResourceManager.GetString("INFO_WEIGHT_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Zero Calibration Of The Weight Sensor Is Not Possible Since The Weighted System Is Not Empty..
+        /// </summary>
+        internal static string INFO_WEIGHT_3 {
+            get {
+                return ResourceManager.GetString("INFO_WEIGHT_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The In-Ine Scale In The Field.
+        /// </summary>
+        internal static string INFO_WEIGHT_4 {
+            get {
+                return ResourceManager.GetString("INFO_WEIGHT_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The In-Ine Scale In The Field.
+        /// </summary>
+        internal static string INFO_WEIGHT_5 {
+            get {
+                return ResourceManager.GetString("INFO_WEIGHT_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level.
+        /// </summary>
+        internal static string LEVEL {
+            get {
+                return ResourceManager.GetString("LEVEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limits.
+        /// </summary>
+        internal static string LIMITS {
+            get {
+                return ResourceManager.GetString("LIMITS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Line.
+        /// </summary>
+        internal static string LINE {
+            get {
+                return ResourceManager.GetString("LINE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Logged.
         /// </summary>
         internal static string LOGGED {
             get {
                 return ResourceManager.GetString("LOGGED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Logged Events.
+        /// </summary>
+        internal static string LOGGED_EVENTS {
+            get {
+                return ResourceManager.GetString("LOGGED EVENTS", resourceCulture);
             }
         }
         
@@ -376,11 +2428,38 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Manage Group.
+        /// </summary>
+        internal static string MANAGE_GROUP {
+            get {
+                return ResourceManager.GetString("MANAGE GROUP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage Parameters.
+        /// </summary>
+        internal static string MANAGE_PARAMETERS {
+            get {
+                return ResourceManager.GetString("MANAGE PARAMETERS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Manage User.
         /// </summary>
         internal static string MANAGE_USER {
             get {
                 return ResourceManager.GetString("MANAGE USER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Max Value.
+        /// </summary>
+        internal static string MAX_VALUE {
+            get {
+                return ResourceManager.GetString("MAX VALUE", resourceCulture);
             }
         }
         
@@ -394,6 +2473,24 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Min Value.
+        /// </summary>
+        internal static string MIN_VALUE {
+            get {
+                return ResourceManager.GetString("MIN VALUE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        internal static string NO {
+            get {
+                return ResourceManager.GetString("NO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to No Alarms or Messages.
         /// </summary>
         internal static string NO_ALARMS_OR_MESSAGES {
@@ -403,11 +2500,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Off.
+        /// </summary>
+        internal static string OFF {
+            get {
+                return ResourceManager.GetString("OFF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ok.
         /// </summary>
         internal static string OK {
             get {
                 return ResourceManager.GetString("OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to On.
+        /// </summary>
+        internal static string ON {
+            get {
+                return ResourceManager.GetString("ON", resourceCulture);
             }
         }
         
@@ -439,15 +2554,6 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Clear PET.
-        /// </summary>
-        internal static string PET_CLEAR {
-            get {
-                return ResourceManager.GetString("PET_CLEAR", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Phone Number.
         /// </summary>
         internal static string PHONE_NUMBER {
@@ -466,6 +2572,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Plant.
+        /// </summary>
+        internal static string PLANT {
+            get {
+                return ResourceManager.GetString("PLANT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Plant Control.
         /// </summary>
         internal static string PLANT_CONTROL {
@@ -475,11 +2590,11 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Plant Line 2.
+        ///   Looks up a localized string similar to Plant Line.
         /// </summary>
-        internal static string PLANT_LINE_2 {
+        internal static string PLANT_LINE {
             get {
-                return ResourceManager.GetString("PLANT LINE 2", resourceCulture);
+                return ResourceManager.GetString("PLANT LINE", resourceCulture);
             }
         }
         
@@ -556,6 +2671,42 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select Trends.
+        /// </summary>
+        internal static string SELECT_TRENDS {
+            get {
+                return ResourceManager.GetString("SELECT TRENDS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string SETTINGS {
+            get {
+                return ResourceManager.GetString("SETTINGS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Signals.
+        /// </summary>
+        internal static string SIGNALS {
+            get {
+                return ResourceManager.GetString("SIGNALS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Speed.
+        /// </summary>
+        internal static string SPEED {
+            get {
+                return ResourceManager.GetString("SPEED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Start.
         /// </summary>
         internal static string START {
@@ -592,6 +2743,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Subzone.
+        /// </summary>
+        internal static string SUBZONE {
+            get {
+                return ResourceManager.GetString("SUBZONE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Switch View.
         /// </summary>
         internal static string SWITCH_VIEW {
@@ -615,6 +2775,51 @@ namespace Prevu.Localization.Properties {
         internal static string SYSTEM_PERMISSIONS {
             get {
                 return ResourceManager.GetString("SYSTEM PERMISSIONS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Temperature.
+        /// </summary>
+        internal static string TEMPERATURE {
+            get {
+                return ResourceManager.GetString("TEMPERATURE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This action is cannot be undone.
+        /// </summary>
+        internal static string THIS_ACTION_CANNOT_BE_UNDONE {
+            get {
+                return ResourceManager.GetString("THIS ACTION CANNOT BE UNDONE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This group will be deleted from all machines..
+        /// </summary>
+        internal static string THIS_GROUP_WILL_BE_DELETED_FROM_ALL_MACHINES_ {
+            get {
+                return ResourceManager.GetString("THIS GROUP WILL BE DELETED FROM ALL MACHINES.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This user will be deleted from all machines..
+        /// </summary>
+        internal static string THIS_USER_WILL_BE_DELETED_FROM_ALL_MACHINES_ {
+            get {
+                return ResourceManager.GetString("THIS USER WILL BE DELETED FROM ALL MACHINES.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trend.
+        /// </summary>
+        internal static string TREND {
+            get {
+                return ResourceManager.GetString("TREND", resourceCulture);
             }
         }
         
@@ -678,6 +2883,33 @@ namespace Prevu.Localization.Properties {
         internal static string WIRELESS_CARD {
             get {
                 return ResourceManager.GetString("WIRELESS CARD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        internal static string YES {
+            get {
+                return ResourceManager.GetString("YES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zone.
+        /// </summary>
+        internal static string ZONE {
+            get {
+                return ResourceManager.GetString("ZONE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zone View.
+        /// </summary>
+        internal static string ZONE_VIEW {
+            get {
+                return ResourceManager.GetString("ZONE VIEW", resourceCulture);
             }
         }
     }

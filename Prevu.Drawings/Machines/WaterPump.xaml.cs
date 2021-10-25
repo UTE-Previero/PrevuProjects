@@ -35,6 +35,12 @@ namespace Prevu.Drawings.Machines
       InitializeComponent();
     }
 
+    public override void OnApplyTemplate()
+    {
+      base.OnApplyTemplate();
+      Update();
+    }
+
     private void Update()
     {
       ColorSide.Fill = new SolidColorBrush { Color = Dictionaries.MaterialColors[this.Color] };
