@@ -1,8 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
     <UseWPF>true</UseWPF>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,7 +16,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="mongofiles --uri &quot;mongodb://lt-stefanor2:27017/&quot; -r -l $(TargetPath) -d P1010 put Prevu.Drawings.dll" />
+    <Exec Command="mongofiles --uri &quot;mongodb://lt-gregm2:27017/?readPreference=primaryPreferred&quot; -r -l $(TargetPath) -d P1010 put Prevu.Drawings.dll" />
   </Target>
 
 </Project>
