@@ -1,0 +1,35 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+             xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             x:Class="Prevu.Synoptics.GR1" mc:Ignorable="d" CacheMode="BitmapCache"
+             Height="840" Width="1420" d:Background="{DynamicResource MaterialDesignPaper}">
+    <Grid>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+                        Margin="59,35,0,0" 
+                        VerticalAlignment="Top" 
+                        ComponentName="230-01-MA1"/>
+
+        <Labels:JumpLabel HorizontalAlignment="Left" 
+                      Margin="59,103,0,0" 
+                      VerticalAlignment="Top" 
+                      JumpFromLabel="230-01-MA1" 
+                      JumpToLabel="230-01-MA1"/>
+
+        <Labels:Pipe HorizontalAlignment="Left" 
+                 Margin="54,177,0,0" 
+                 VerticalAlignment="Top" 
+                 Icon="Right" 
+                 StatusComponent="230-01-MA1" />
+
+        <Labels:SignalLabel HorizontalAlignment="Left" 
+                        Margin="30,231,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="148" 
+                        ComponentName="230-01-MA1" 
+                        SignalName="230-01-ZS1"/>
+    </Grid>
+</UserControl>
