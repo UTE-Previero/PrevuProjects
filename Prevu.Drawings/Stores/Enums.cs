@@ -13,6 +13,7 @@ namespace Prevu.Drawings.Stores
 
   public enum MaterialColor
   {
+    None,
     Material,
     Water,
     Air,

@@ -16,7 +16,7 @@ namespace Prevu.Drawings.Machines
 
     public static readonly DependencyProperty ColorProperty =
     DependencyProperty.Register(nameof(Color), typeof(MaterialColor), typeof(CV_Valve_002),
-      new FrameworkPropertyMetadata(MaterialColor.Material, FrameworkPropertyMetadataOptions.AffectsRender, PipeColorChanged));
+      new FrameworkPropertyMetadata(MaterialColor.None, FrameworkPropertyMetadataOptions.AffectsRender, PipeColorChanged));
 
     private static void PipeColorChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e)
       => ((CV_Valve_002)dependencyObject).Update();
@@ -43,6 +43,7 @@ namespace Prevu.Drawings.Machines
 
     private void Update()
     {
+      //ColorSide.Visibility = (Color == MaterialColor.None) ? Visibility.Visible : Visibility.Hidden;
       ColorSide.Fill = new SolidColorBrush { Color = Dictionaries.MaterialColors[this.Color] };
       ColorSide.Stroke = new SolidColorBrush { Color = Dictionaries.MaterialColors[this.Color] };
     }
