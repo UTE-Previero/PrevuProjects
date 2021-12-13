@@ -5,15 +5,21 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Drawings.Machines"
              mc:Ignorable="d" Width="100" Height="100">
-    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
-        <Canvas Name="svg4" Width="100" Height="100">
+
+    <Viewbox Stretch="Uniform">
+        <Canvas Name="svg6" Width="100" Height="100">
             <Canvas.RenderTransform>
                 <TranslateTransform X="0" Y="0"/>
             </Canvas.RenderTransform>
             <Canvas.Resources/>
-            <Path Name="path2" Fill="#FFC4C4C4" Stroke="#FFC4C4C4">
+            <Path Name="ColorSide" Fill="#FF8FD8FC" Stroke="#FF8FD8FC">
                 <Path.Data>
-                    <PathGeometry Figures="M10.9856 24.8254C10.3191 24.4551 9.5 24.937 9.5 25.6995V73.1506C9.5 73.9454 10.3824 74.4226 11.0475 73.9874L49.4525 48.8583C49.7851 48.6406 50.2149 48.6406 50.5475 48.8583L88.9525 73.9874C89.6176 74.4226 90.5 73.9454 90.5 73.1506V49.5V25.6995C90.5 24.937 89.6809 24.4551 89.0144 24.8254L50.4856 46.2302C50.1836 46.398 49.8164 46.398 49.5144 46.2302L10.9856 24.8254Z" FillRule="NonZero"/>
+                    <PathGeometry Figures="M82.1081 26.6009C86.2202 26.9385 90.1676 29.4486 93.1633 33.7697C96.4007 38.4393 98.54 44.7864 98.54 51.4058C98.54 58.0253 96.4007 64.3724 93.1633 69.042C90.1676 73.3631 86.2202 75.8732 82.1081 76.2107C81.8762 76.2298 81.65 76.0381 81.65 75.75L81.65 51.4058V27.0617C81.65 26.7736 81.8762 26.5819 82.1081 26.6009Z" FillRule="NonZero"/>
+                </Path.Data>
+            </Path>
+            <Path Name="path4" Fill="#FFC4C4C4" Stroke="#FFC4C4C4">
+                <Path.Data>
+                    <PathGeometry Figures="M3.48564 26.8254C2.81911 26.4551 2 26.937 2 27.6995V75.1506C2 75.9454 2.88244 76.4226 3.54753 75.9874L41.9525 50.8583C42.2851 50.6406 42.7149 50.6406 43.0475 50.8583L81.4525 75.9874C82.1176 76.4226 83 75.9454 83 75.1506V51.5V27.6995C83 26.937 82.1809 26.4551 81.5144 26.8254L42.9856 48.2302C42.6836 48.398 42.3164 48.398 42.0144 48.2302L3.48564 26.8254Z" FillRule="NonZero"/>
                 </Path.Data>
             </Path>
         </Canvas>
