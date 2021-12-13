@@ -16,6 +16,7 @@ namespace Prevu.Drawings.Stores
     Material,
     Water,
     Air,
+    Steam,
     ByProduct
   }
 
