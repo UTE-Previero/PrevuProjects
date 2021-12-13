@@ -15,6 +15,19 @@
     <ProjectReference Include="..\Prevu.Localization\Prevu.Localization.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Update="Machines\GR_001.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Machines\NASTRO.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Machines\GR_TEST.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+  </ItemGroup>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="mongofiles --uri &quot;mongodb://lt-gregm2:27017/?readPreference=primaryPreferred&quot; -r -l $(TargetPath) -d P1010 put Prevu.Drawings.dll" />
   </Target>

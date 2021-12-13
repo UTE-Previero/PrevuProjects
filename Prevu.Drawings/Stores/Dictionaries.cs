@@ -14,7 +14,8 @@ namespace Prevu.Drawings.Stores
       {MaterialColor.Material,  BlueSwatch.BlueA400 },
       {MaterialColor.Water,     CyanSwatch.CyanA200 },
       {MaterialColor.Air,       AmberSwatch.AmberA400 },
-      {MaterialColor.ByProduct, BrownSwatch.Brown500 }
+      {MaterialColor.ByProduct, BrownSwatch.Brown500 },
+      {MaterialColor.Chemicals, PurpleSwatch.Purple500 },
     };
 
     public static IDictionary<PipeIconKind, PackIconKind> PipeIcons { get; } = new Dictionary<PipeIconKind, PackIconKind>

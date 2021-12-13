@@ -16,7 +16,8 @@ namespace Prevu.Drawings.Stores
     Material,
     Water,
     Air,
-    ByProduct
+    ByProduct,
+    Chemicals
   }
 
   public enum PipeIconKind
