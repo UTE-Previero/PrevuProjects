@@ -11,9 +11,12 @@ namespace Prevu.Drawings.Stores
   {
     public static IDictionary<MaterialColor, Color> MaterialColors { get; } = new Dictionary<MaterialColor, Color>
     {
+      {MaterialColor.None, Brushes.Transparent.Color},
       {MaterialColor.Material,  BlueSwatch.BlueA400 },
       {MaterialColor.Water,     CyanSwatch.CyanA200 },
       {MaterialColor.Air,       AmberSwatch.AmberA400 },
+      {MaterialColor.Steam,     RedSwatch.Red800 },
+      {MaterialColor.ByProduct, BrownSwatch.Brown500 }
       {MaterialColor.ByProduct, BrownSwatch.Brown500 },
       {MaterialColor.Chemicals, PurpleSwatch.Purple500 },
     };

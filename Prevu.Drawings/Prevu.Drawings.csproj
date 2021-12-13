@@ -28,6 +28,15 @@
     </Page>
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Update="Machines\CV_Valve_001.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Machines\MU_Grinder_001.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+  </ItemGroup>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="mongofiles --uri &quot;mongodb://lt-gregm2:27017/?readPreference=primaryPreferred&quot; -r -l $(TargetPath) -d P1010 put Prevu.Drawings.dll" />
   </Target>
