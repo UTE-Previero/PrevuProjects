@@ -11,7 +11,7 @@
   <ItemGroup>
     <PackageReference Include="MaterialDesignColors" Version="2.0.3" />
     <PackageReference Include="MaterialDesignThemes" Version="4.2.1" />
-    <PackageReference Include="Prevu.UIComponents" Version="1.0.0" />
+    <PackageReference Include="Prevu.UIComponents" Version="1.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="CH1.xaml">
+    <Page Update="HW2.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
@@ -28,9 +28,5 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="mongofiles --uri &quot;mongodb://lt-gregm2:27017/?readPreference=primaryPreferred&quot; -r -l $(TargetPath) -d P1023 put Prevu.Synoptics.dll" />
-  </Target>
 
 </Project>
