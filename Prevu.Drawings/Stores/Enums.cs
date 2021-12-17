@@ -18,7 +18,6 @@ namespace Prevu.Drawings.Stores
     Water,
     Air,
     Steam,
-    ByProduct
     ByProduct,
     Chemicals
   }
