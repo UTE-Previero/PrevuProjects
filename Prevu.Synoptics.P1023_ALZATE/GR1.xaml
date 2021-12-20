@@ -8,6 +8,7 @@
              x:Class="Prevu.Synoptics.GR1" mc:Ignorable="d" CacheMode="BitmapCache"
              Height="840" Width="1420" d:Background="{DynamicResource MaterialDesignPaper}">
     <Grid>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="808,518,0,0" VerticalAlignment="Top" Color="ByProduct" Width="68" StatusComponent="286-01-MA1"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
                         Margin="117,175,0,0" 
                         VerticalAlignment="Top" 
@@ -145,7 +146,6 @@
         </Labels:Pipe>
         <Labels:Pipe HorizontalAlignment="Left" Margin="501,704,0,0" VerticalAlignment="Top" Color="Water" Width="115" StatusComponent="282-01-MA1"/>
         <Labels:Pipe HorizontalAlignment="Left" Margin="394,704,0,0" VerticalAlignment="Top" Color="Water" Width="106"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="810,518,0,0" VerticalAlignment="Top" Color="ByProduct" Width="60" StatusComponent="286-01-MA1"/>
         <Labels:Pipe HorizontalAlignment="Left" Margin="799,529,0,0" VerticalAlignment="Top" Color="ByProduct" Width="24" RenderTransformOrigin="0.5,0.5" StatusComponent="286-01-MA1">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -281,16 +281,6 @@
                 </TransformGroup>
             </Machines:WaterPump.RenderTransform>
         </Machines:WaterPump>
-        <Machines:RTF_Microfilter HorizontalAlignment="Left" Margin="833,477,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="158" Height="109">
-            <Machines:RTF_Microfilter.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Machines:RTF_Microfilter.RenderTransform>
-        </Machines:RTF_Microfilter>
         <Labels:Pipe HorizontalAlignment="Left" Margin="764,601,0,0" VerticalAlignment="Top" Color="Water" Width="156" StatusComponent="286-01-MA1"/>
         <Machines:VRC_WaterCollectingTank HorizontalAlignment="Left" Margin="512,595,0,0" VerticalAlignment="Top" Height="222" Width="374"/>
         <Machines:CV_Valve_001 HorizontalAlignment="Left" Margin="431,554,0,0" VerticalAlignment="Top" Height="100" Width="100" Color="Water" RenderTransformOrigin="0.5,0.5">
@@ -338,5 +328,15 @@
                 </TransformGroup>
             </Machines:CV_Valve_001.RenderTransform>
         </Machines:CV_Valve_001>
+        <Machines:RTF_Microfilter HorizontalAlignment="Left" Margin="833,477,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="158" Height="109">
+            <Machines:RTF_Microfilter.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Machines:RTF_Microfilter.RenderTransform>
+        </Machines:RTF_Microfilter>
     </Grid>
 </UserControl>
