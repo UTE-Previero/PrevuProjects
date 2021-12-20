@@ -19,7 +19,7 @@ namespace Prevu.Localization.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -142,78 +142,6 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Automatic Mode.
-        /// </summary>
-        internal static string _AUTOMATIC_MODE {
-            get {
-                return ResourceManager.GetString("_AUTOMATIC_MODE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Disabled Mode.
-        /// </summary>
-        internal static string _DISABLED_MODE {
-            get {
-                return ResourceManager.GetString("_DISABLED_MODE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Estop Not Ok.
-        /// </summary>
-        internal static string _ESTOP_OK {
-            get {
-                return ResourceManager.GetString("_ESTOP_OK", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Maintenance Mode.
-        /// </summary>
-        internal static string _MAINTENANCE_MODE {
-            get {
-                return ResourceManager.GetString("_MAINTENANCE_MODE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Production Cycle.
-        /// </summary>
-        internal static string _PRODUCTION_CYCLE {
-            get {
-                return ResourceManager.GetString("_PRODUCTION_CYCLE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Stop Cycle.
-        /// </summary>
-        internal static string _STOP_CYCLE_ON {
-            get {
-                return ResourceManager.GetString("_STOP_CYCLE_ON", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Stop Cycle Pending.
-        /// </summary>
-        internal static string _STOP_CYCLE_PENDING {
-            get {
-                return ResourceManager.GetString("_STOP_CYCLE_PENDING", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Zone Prepared.
-        /// </summary>
-        internal static string _ZONE_PREPARED {
-            get {
-                return ResourceManager.GetString("_ZONE_PREPARED", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Acknowledge.
         /// </summary>
         internal static string ACKNOWLEDGE {
@@ -300,6 +228,15 @@ namespace Prevu.Localization.Properties {
         internal static string ADD {
             get {
                 return ResourceManager.GetString("ADD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Automatic Mode.
+        /// </summary>
+        internal static string AUTOMATIC_MODE {
+            get {
+                return ResourceManager.GetString("AUTOMATIC MODE", resourceCulture);
             }
         }
         
@@ -547,6 +484,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Disabled Mode.
+        /// </summary>
+        internal static string DISABLED_MODE {
+            get {
+                return ResourceManager.GetString("DISABLED MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Do you Confirm?.
         /// </summary>
         internal static string DO_YOU_CONFIRM_ {
@@ -588,6 +534,24 @@ namespace Prevu.Localization.Properties {
         internal static string END_TIME {
             get {
                 return ResourceManager.GetString("END TIME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Estop Not Ok.
+        /// </summary>
+        internal static string ESTOP_NOT_OK {
+            get {
+                return ResourceManager.GetString("ESTOP NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Estop Ok.
+        /// </summary>
+        internal static string ESTOP_OK {
+            get {
+                return ResourceManager.GetString("ESTOP OK", resourceCulture);
             }
         }
         
@@ -1645,7 +1609,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Safety Thermistor Tripped ! Check The Dryer For Any Possible Material Blockage, Thermoregualtion, Air Filter….
+        ///   Looks up a localized string similar to Safety Thermistor Tripped ! Check The Dryer For Any Possible Material Blockage, Thermoregualtion, Air Filter....
         /// </summary>
         internal static string INFO_RES_1 {
             get {
@@ -2428,6 +2392,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Maintenance Mode.
+        /// </summary>
+        internal static string MAINTENANCE_MODE {
+            get {
+                return ResourceManager.GetString("MAINTENANCE MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Manage Group.
         /// </summary>
         internal static string MANAGE_GROUP {
@@ -2617,6 +2590,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Production Cycle.
+        /// </summary>
+        internal static string PRODUCTION_CYCLE {
+            get {
+                return ResourceManager.GetString("PRODUCTION CYCLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Production Line.
         /// </summary>
         internal static string PRODUCTION_LINE {
@@ -2739,6 +2721,24 @@ namespace Prevu.Localization.Properties {
         internal static string STOP {
             get {
                 return ResourceManager.GetString("STOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop Cycle.
+        /// </summary>
+        internal static string STOP_CYCLE_ON {
+            get {
+                return ResourceManager.GetString("STOP CYCLE ON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop Cycle Pending.
+        /// </summary>
+        internal static string STOP_CYCLE_PENDING {
+            get {
+                return ResourceManager.GetString("STOP CYCLE PENDING", resourceCulture);
             }
         }
         
@@ -2901,6 +2901,15 @@ namespace Prevu.Localization.Properties {
         internal static string ZONE {
             get {
                 return ResourceManager.GetString("ZONE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zone Prepared.
+        /// </summary>
+        internal static string ZONE_PREPARED {
+            get {
+                return ResourceManager.GetString("ZONE PREPARED", resourceCulture);
             }
         }
         
