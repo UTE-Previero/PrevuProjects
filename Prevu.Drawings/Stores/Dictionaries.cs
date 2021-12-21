@@ -16,7 +16,6 @@ namespace Prevu.Drawings.Stores
       {MaterialColor.Water,     CyanSwatch.CyanA200 },
       {MaterialColor.Air,       AmberSwatch.AmberA400 },
       {MaterialColor.Steam,     RedSwatch.Red800 },
-      {MaterialColor.ByProduct, BrownSwatch.Brown500 }
       {MaterialColor.ByProduct, BrownSwatch.Brown500 },
       {MaterialColor.Chemicals, PurpleSwatch.Purple500 },
     };
