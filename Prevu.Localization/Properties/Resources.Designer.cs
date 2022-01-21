@@ -19,7 +19,7 @@ namespace Prevu.Localization.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -2811,6 +2811,24 @@ namespace Prevu.Localization.Properties {
         internal static string THIS_USER_WILL_BE_DELETED_FROM_ALL_MACHINES_ {
             get {
                 return ResourceManager.GetString("THIS USER WILL BE DELETED FROM ALL MACHINES.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To Bag.
+        /// </summary>
+        internal static string TO_BAG {
+            get {
+                return ResourceManager.GetString("TO BAG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To External.
+        /// </summary>
+        internal static string TO_EXTERNAL {
+            get {
+                return ResourceManager.GetString("TO EXTERNAL", resourceCulture);
             }
         }
         
