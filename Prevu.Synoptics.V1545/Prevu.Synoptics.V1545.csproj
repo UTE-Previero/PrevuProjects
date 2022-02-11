@@ -25,8 +25,4 @@
     </Page>
   </ItemGroup>
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="mongofiles --uri &quot;mongodb://lt-stefanor2:27017/&quot; -r -l $(TargetPath) -d V6666 put Prevu.Synoptics.dll" />
-  </Target>
-
 </Project>
