@@ -13,12 +13,12 @@ using System.Windows.Shapes;
 
 namespace Prevu.Drawings.Machines
 {
-  /// <summary>
-  /// Interaction logic for Agitator.xaml
-  /// </summary>
-  public partial class Agitator : UserControl
+    /// <summary>
+    /// Interaction logic for GR_001.xaml
+    /// </summary>
+    public partial class MU_Grinder_001 : UserControl
   {
-    public Agitator()
+    public MU_Grinder_001()
     {
       InitializeComponent();
     }

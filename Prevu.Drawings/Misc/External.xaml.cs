@@ -11,7 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Drawings.Machines
+namespace Prevu.Drawings.Misc
 {
   /// <summary>
   /// Interaction logic for External.xaml

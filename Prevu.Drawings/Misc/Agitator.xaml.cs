@@ -11,14 +11,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Drawings.Machines
+namespace Prevu.Drawings.Misc
 {
   /// <summary>
-  /// Interaction logic for MaterialInletOutlet.xaml
+  /// Interaction logic for Agitator.xaml
   /// </summary>
-  public partial class MaterialInletOutlet : UserControl
+  public partial class Agitator : UserControl
   {
-    public MaterialInletOutlet()
+    public Agitator()
     {
       InitializeComponent();
     }

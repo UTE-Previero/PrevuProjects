@@ -11,14 +11,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Drawings.Machines
+namespace Prevu.Drawings.Misc
 {
   /// <summary>
-  /// Interaction logic for SeparationPaddle.xaml
+  /// Interaction logic for Waste.xaml
   /// </summary>
-  public partial class SeparationPaddle : UserControl
+  public partial class Waste : UserControl
   {
-    public SeparationPaddle()
+    public Waste()
     {
       InitializeComponent();
     }

@@ -11,14 +11,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Drawings.Machines
+namespace Prevu.Drawings.Misc
 {
-    /// <summary>
-    /// Interaction logic for GR_001.xaml
-    /// </summary>
-    public partial class GR_001 : UserControl
+  /// <summary>
+  /// Interaction logic for MaterialInletOutlet.xaml
+  /// </summary>
+  public partial class MaterialInletOutlet : UserControl
   {
-    public GR_001()
+    public MaterialInletOutlet()
     {
       InitializeComponent();
     }
