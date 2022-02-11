@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -11,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Synoptics
+namespace Prevu.Drawings.Machines
 {
   /// <summary>
-  /// Interaction logic for SH1.xaml
+  /// Interaction logic for QX_ShortElectricalCabinet.xaml
   /// </summary>
-  public partial class SH1 : UserControl
+  public partial class QX_ShortElectricalCabinet : UserControl
   {
-    public SH1()
+    public QX_ShortElectricalCabinet()
     {
       InitializeComponent();
     }

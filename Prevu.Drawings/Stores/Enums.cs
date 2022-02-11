@@ -13,10 +13,13 @@ namespace Prevu.Drawings.Stores
 
   public enum MaterialColor
   {
+    None,
     Material,
     Water,
     Air,
-    ByProduct
+    Steam,
+    ByProduct,
+    Chemicals
   }
 
   public enum PipeIconKind

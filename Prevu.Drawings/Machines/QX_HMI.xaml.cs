@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Prevu.Drawings.Machines
 {
   /// <summary>
-  /// Logica di interazione per MU_Grinder.xaml
+  /// Logica di interazione per QX_HMI.xaml
   /// </summary>
-  public partial class MU_Grinder : UserControl
+  public partial class QX_HMI : UserControl
   {
-    public MU_Grinder()
+    public QX_HMI()
     {
       InitializeComponent();
     }

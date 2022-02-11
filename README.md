@@ -16,3 +16,4 @@
 - In Test project right click on Dependencies, Add Project Reference and select only the new project
 - Run Test application, then close it
 - Now you can start creating Synoptic Pages.
+
