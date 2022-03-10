@@ -16,11 +16,16 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for GR1.xaml
     /// </summary>
-    public partial class GR1 : UserControl
+    public partial class CH : UserControl
     {
-        public GR1()
+        public CH()
         {
             InitializeComponent();
+        }
+
+        private void Pipe_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
