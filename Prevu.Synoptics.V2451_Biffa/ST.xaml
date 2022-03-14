@@ -8,16 +8,6 @@
              x:Class="Prevu.Synoptics.ST" mc:Ignorable="d"
              Height="840" Width="1420" d:Background="{DynamicResource MaterialDesignPaper}">
     <Grid>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="863,661,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="70" StatusComponent="812-01-MA1" PipeHeight="Medium">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
         <Labels:Pipe HorizontalAlignment="Left" Margin="771,575,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="94" StatusComponent="810-01-MA1" PipeHeight="Medium">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -28,7 +18,6 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="756,256,0,0" VerticalAlignment="Top" Width="67" StatusComponent="480-01-MA1" PipeHeight="Medium"/>
         <Labels:Pipe HorizontalAlignment="Left" Margin="760,310,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="116" StatusComponent="480-01-MA1" PipeHeight="Medium">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -39,6 +28,19 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
+        <Machines:Storage_silo HorizontalAlignment="Left" Margin="754,363,0,0" VerticalAlignment="Top" Height="186" Width="128"/>
+        <Machines:Radar HorizontalAlignment="Left" Margin="838,332,0,0" VerticalAlignment="Top" Height="49" Width="30"/>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="863,661,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="70" StatusComponent="812-01-MA1" PipeHeight="Medium">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="756,256,0,0" VerticalAlignment="Top" Width="67" StatusComponent="480-01-MA1" PipeHeight="Medium"/>
         <Labels:Pipe HorizontalAlignment="Left" Margin="215,297,0,0" VerticalAlignment="Top" Width="111" StatusComponent="463-01-MA1" PipeHeight="Medium"/>
         <Labels:JumpLabel HorizontalAlignment="Left" 
           Margin="141,277,0,0" 
@@ -49,7 +51,6 @@
           Margin="390,168,0,0" 
           VerticalAlignment="Top" 
           ComponentName="480-01-MA1"/>
-        <Rectangle HorizontalAlignment="Left" Height="182" Margin="774,361,0,0" Stroke="Black" VerticalAlignment="Top" Width="88" Fill="#FFBDBDBD"/>
         <Rectangle HorizontalAlignment="Left" Height="2" Margin="878,699,0,0" Stroke="Black" VerticalAlignment="Top" Width="129"/>
         <Machines:External HorizontalAlignment="Left" Margin="1001,669,0,0" VerticalAlignment="Top" Height="61" Width="57" RenderTransformOrigin="0.5,0.5">
             <Machines:External.RenderTransform>
@@ -77,13 +78,12 @@
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
         <Machines:VT_BlowerCentrifuge_down HorizontalAlignment="Left" Margin="697,206,0,0" VerticalAlignment="Top" Height="76" Width="72"/>
-        <Rectangle HorizontalAlignment="Left" Height="47" Margin="865,309,0,0" Stroke="Black" VerticalAlignment="Top" Width="22" Fill="#FFBDBDBD"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
             Margin="892,307,0,0" 
             VerticalAlignment="Top" 
             ComponentName="810-41-LT1"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="773,417,0,0" 
+            Margin="773,406,0,0" 
             VerticalAlignment="Top" 
             ComponentName="810-01-MA1"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 

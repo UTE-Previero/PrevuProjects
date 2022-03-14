@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -11,31 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Synoptics
+namespace Prevu.Drawings.Machines
 {
     /// <summary>
-    /// Interaction logic for GR1.xaml
+    /// Interaction logic for Manual_Selection.xaml
     /// </summary>
-    public partial class CH : UserControl
+    public partial class STR_Washing_reactor_B : UserControl
     {
-        public CH()
+        public STR_Washing_reactor_B()
         {
             InitializeComponent();
-        }
-
-        private void Pipe_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Manual_Selection_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Radar_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
