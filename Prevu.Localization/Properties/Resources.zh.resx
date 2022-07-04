@@ -823,7 +823,7 @@
     <value>过滤器脏污，需要清洁（水位仍然太高）。</value>
   </data>
   <data name="INFO_RES_1" xml:space="preserve">
-    <value>安全热敏电阻绊倒！检查烘干机是否有任何可能的材料堵塞，温度，空气过滤器...</value>
+    <value>安全热敏电阻绊倒！检查烘干机是否有任何可能的材料堵塞，温度，空气过滤器</value>
   </data>
   <data name="INFO_RES_2" xml:space="preserve">
     <value>快速重启鼓风机以防止加热系统过热</value>
@@ -980,9 +980,6 @@
   </data>
   <data name="INFO_OIL_SEAL_2" xml:space="preserve">
     <value>检查轴油封系统并重新启动电机</value>
-  </data>
-  <data name="INFO_OIL_SEAL_3" xml:space="preserve">
-    <value>重新填充密封油或电机将在一小时内停止</value>
   </data>
   <data name="INFO_OIL_SEAL_4" xml:space="preserve">
     <value>检查轴油封系统并重新启动电机</value>
@@ -1415,5 +1412,725 @@
   </data>
   <data name="CRITICAL FAULT IN THE ELECTRICAL CABINET" xml:space="preserve">
     <value>电气柜中的严重故障</value>
+  </data>
+  <data name="NO DATA" xml:space="preserve">
+    <value>没有数据</value>
+  </data>
+  <data name="WASHING TANK OVER MINIMUM TEMPERATURE" xml:space="preserve">
+    <value>洗涤槽超过最低温度</value>
+  </data>
+  <data name="TIME_CYCLE" xml:space="preserve">
+    <value>时间周期</value>
+  </data>
+  <data name="FIELD_ADJUST" xml:space="preserve">
+    <value>现场调整</value>
+  </data>
+  <data name="MANUAL START REQUIRED" xml:space="preserve">
+    <value>需要手动启动</value>
+  </data>
+  <data name="POWER DISCONNECT (ON THE CABINET)" xml:space="preserve">
+    <value>电源断开（在机柜上）</value>
+  </data>
+  <data name="GRILL POSITION CLOSED" xml:space="preserve">
+    <value>烧烤位置关闭</value>
+  </data>
+  <data name="ROTATION STOPPED" xml:space="preserve">
+    <value>旋转停止</value>
+  </data>
+  <data name="COMMAND STANDSTILL RELAY RESET" xml:space="preserve">
+    <value>命令停止继电器复位</value>
+  </data>
+  <data name="GRILL POSITION OK" xml:space="preserve">
+    <value>烤架位置确定</value>
+  </data>
+  <data name="AUXILIARY HYDRAULIC UNIT OFF" xml:space="preserve">
+    <value>辅助液压装置关闭</value>
+  </data>
+  <data name="SAFETY KEY UNLOCK COMMAND OFF" xml:space="preserve">
+    <value>安全钥匙解锁命令关闭</value>
+  </data>
+  <data name="SAFETY KEY NOT EXTRACTED" xml:space="preserve">
+    <value>未提取安全密钥</value>
+  </data>
+  <data name="SAFETY CONDITIONS NOT OK TO UNLOCK" xml:space="preserve">
+    <value>安全条件不好解锁</value>
+  </data>
+  <data name="GRINDER OPEN CYCLE" xml:space="preserve">
+    <value>磨床开环</value>
+  </data>
+  <data name="SAFETY KEY RELEASED" xml:space="preserve">
+    <value>安全钥匙已释放</value>
+  </data>
+  <data name="COMMAND RELEASE" xml:space="preserve">
+    <value>命令释放</value>
+  </data>
+  <data name="ALL CONDITIONS TO UNLOCK" xml:space="preserve">
+    <value>解锁所有条件</value>
+  </data>
+  <data name="LOCAL DISCONNECT OPEN" xml:space="preserve">
+    <value>本地断开打开</value>
+  </data>
+  <data name="HOPPER EMPTY" xml:space="preserve">
+    <value>料斗空</value>
+  </data>
+  <data name="MINIMUM LEVEL" xml:space="preserve">
+    <value>最低等级</value>
+  </data>
+  <data name="OK FOR PROCESS - SCREW ON" xml:space="preserve">
+    <value>确定工艺拧上</value>
+  </data>
+  <data name="OK FOR PROCESS - MAX LEVEL" xml:space="preserve">
+    <value>确定进程最大级别</value>
+  </data>
+  <data name="OK FOR PROCESS - EMPTYING" xml:space="preserve">
+    <value>确定进程清空</value>
+  </data>
+  <data name="MIXER WASHING PHASE" xml:space="preserve">
+    <value>搅拌机洗涤阶段</value>
+  </data>
+  <data name="MIXER DISCHARGE PHASE" xml:space="preserve">
+    <value>混合器放电阶段</value>
+  </data>
+  <data name="WATER LOW TEMPERATURE SETTING" xml:space="preserve">
+    <value>水低温设定</value>
+  </data>
+  <data name="WATER PUMP IS NOT FULL RUNNING" xml:space="preserve">
+    <value>水泵未满运行</value>
+  </data>
+  <data name="DESTINATION NOT OK" xml:space="preserve">
+    <value>目的地不好</value>
+  </data>
+  <data name="WASHING TANK LEVEL" xml:space="preserve">
+    <value>洗涤槽液位</value>
+  </data>
+  <data name="TANK LEVEL" xml:space="preserve">
+    <value>油箱液位</value>
+  </data>
+  <data name="MIXER TEMPERATURE" xml:space="preserve">
+    <value>搅拌机温度</value>
+  </data>
+  <data name="MIXER WAITING" xml:space="preserve">
+    <value>混音器等待</value>
+  </data>
+  <data name="WASHING MIXER - EMPTY CYCLE" xml:space="preserve">
+    <value>洗涤混合器 - 空循环</value>
+  </data>
+  <data name="WASHING MIXER - PREPARATION CYCLE" xml:space="preserve">
+    <value>洗涤混合器 - 准备周期</value>
+  </data>
+  <data name="WASHING MIXER - WASHING CYCLE" xml:space="preserve">
+    <value>洗涤混合器 - 洗涤循环</value>
+  </data>
+  <data name="MIXER ENABLED" xml:space="preserve">
+    <value>混音器已启用</value>
+  </data>
+  <data name="MIXER PREPARED" xml:space="preserve">
+    <value>准备好搅拌机</value>
+  </data>
+  <data name="ALL DEVICES READY" xml:space="preserve">
+    <value>所有设备就绪</value>
+  </data>
+  <data name="MATERIAL LOADING ENABLED" xml:space="preserve">
+    <value>启用材料加载</value>
+  </data>
+  <data name="MATERIAL LOADING ENABLED (ALL MIXERS)" xml:space="preserve">
+    <value>启用材料加载（所有混合器）</value>
+  </data>
+  <data name="WASHING TANK TEMPERATURE OK" xml:space="preserve">
+    <value>洗涤槽温度正常</value>
+  </data>
+  <data name="MIXER IN AUTO MODE" xml:space="preserve">
+    <value>自动模式下的混音器</value>
+  </data>
+  <data name="NEAR DOWNSTREAM OK FOR START WASHING" xml:space="preserve">
+    <value>靠近下游 OK 开始洗涤</value>
+  </data>
+  <data name="FAR DOWNSTREAM OK FOR START WASHING" xml:space="preserve">
+    <value>远下游可以开始洗涤</value>
+  </data>
+  <data name="MATERIAL LOADING DVICES READY" xml:space="preserve">
+    <value>材料装载设备就绪</value>
+  </data>
+  <data name="UPSTREAM SILO MINIMUM LEVEL PRESENT" xml:space="preserve">
+    <value>上游筒仓最低水平存在</value>
+  </data>
+  <data name="AGITATOR CURRENT OK" xml:space="preserve">
+    <value>搅拌器电流正常</value>
+  </data>
+  <data name="DISCHARGE PUMP READY IN PRODUCTION" xml:space="preserve">
+    <value>排放泵已投入生产</value>
+  </data>
+  <data name="NO OTHER MIXERS ARE DISCHARGING" xml:space="preserve">
+    <value>没有其他搅拌机正在卸料</value>
+  </data>
+  <data name="UPSTREAM VALVE CLOSED" xml:space="preserve">
+    <value>上游阀门关闭</value>
+  </data>
+  <data name="UPSTREAM VALVE OPEN" xml:space="preserve">
+    <value>上游阀门打开</value>
+  </data>
+  <data name="OK FOR PROCESS MIN LEVEL" xml:space="preserve">
+    <value>确定流程最低级别</value>
+  </data>
+  <data name="LOADING TIME OK" xml:space="preserve">
+    <value>加载时间确定</value>
+  </data>
+  <data name="WASHING TIME OK" xml:space="preserve">
+    <value>洗涤时间OK</value>
+  </data>
+  <data name="START CONDITIONS" xml:space="preserve">
+    <value>开始条件</value>
+  </data>
+  <data name="SEPARATION TANK LEVEL" xml:space="preserve">
+    <value>分离罐液位</value>
+  </data>
+  <data name="BLOWER NOT RUNNING" xml:space="preserve">
+    <value>鼓风机不运转</value>
+  </data>
+  <data name="OPERATION" xml:space="preserve">
+    <value>手术</value>
+  </data>
+  <data name="THERMOREGULATION ADVANCED" xml:space="preserve">
+    <value>体温调节高级</value>
+  </data>
+  <data name="THERMISTOR PROTECTION" xml:space="preserve">
+    <value>热敏电阻保护</value>
+  </data>
+  <data name="RESISTOR CURRENT" xml:space="preserve">
+    <value>电阻电流</value>
+  </data>
+  <data name="BLOWER RUNNING OK" xml:space="preserve">
+    <value>鼓风机运行正常</value>
+  </data>
+  <data name="RESISTOR ENABLED IN PROCESS" xml:space="preserve">
+    <value>电阻器启用过程中</value>
+  </data>
+  <data name="DRYER GROUP ENABLED IN PROCESS" xml:space="preserve">
+    <value>烘干机组启用过程中</value>
+  </data>
+  <data name="HEATING INTERLOCKS" xml:space="preserve">
+    <value>加热联锁</value>
+  </data>
+  <data name="DISABLE FULL DRYER GROUP" xml:space="preserve">
+    <value>禁用完整的烘干机组</value>
+  </data>
+  <data name="DRYER TEMPERATURE" xml:space="preserve">
+    <value>烘干机温度</value>
+  </data>
+  <data name="EXTERNAL" xml:space="preserve">
+    <value>外部的</value>
+  </data>
+  <data name="DOWNSTREAM OK" xml:space="preserve">
+    <value>下游确定</value>
+  </data>
+  <data name="ONLY" xml:space="preserve">
+    <value>仅有的</value>
+  </data>
+  <data name="CURRENT VALUE" xml:space="preserve">
+    <value>当前值</value>
+  </data>
+  <data name="BIG-BAG FULL" xml:space="preserve">
+    <value>大袋装满</value>
+  </data>
+  <data name="CHEMICAL DOSING CYCLE BY WEIGHT" xml:space="preserve">
+    <value>按重量计算的化学计量周期</value>
+  </data>
+  <data name="CHEMICAL DOSING CYCLE BY TIME" xml:space="preserve">
+    <value>化学计量周期按时间</value>
+  </data>
+  <data name="EMPTYING_TIME" xml:space="preserve">
+    <value>清空时间</value>
+  </data>
+  <data name="DISABLING" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="WATER_EXCHANGE" xml:space="preserve">
+    <value>换水</value>
+  </data>
+  <data name="MINIMUM TIME OK TO CHANGE IN POSITION" xml:space="preserve">
+    <value>改变位置的最短时间</value>
+  </data>
+  <data name="OK FOR PROCESS - MIN LEVEL" xml:space="preserve">
+    <value>流程确定 - 最低级别</value>
+  </data>
+  <data name="MINIMUM TEMPERATURE OK TO STOP" xml:space="preserve">
+    <value>最低温度 可以停止</value>
+  </data>
+  <data name="COMMAND" xml:space="preserve">
+    <value>命令</value>
+  </data>
+  <data name="MIXER" xml:space="preserve">
+    <value>混合器</value>
+  </data>
+  <data name="CABINET ON" xml:space="preserve">
+    <value>机柜开启</value>
+  </data>
+  <data name="ANALOG INPUTS PROTECTION" xml:space="preserve">
+    <value>模拟输入保护</value>
+  </data>
+  <data name="ANALOG OUTPUTS PROTECTION" xml:space="preserve">
+    <value>模拟输出保护</value>
+  </data>
+  <data name="24V UNDER ESTOP PROTECTION" xml:space="preserve">
+    <value>24V 紧急停止保护</value>
+  </data>
+  <data name="INVERTER SAFETY CIRCUITS" xml:space="preserve">
+    <value>逆变器安全电路</value>
+  </data>
+  <data name="HYDRAULIC VALVES PROTECTION" xml:space="preserve">
+    <value>液压阀保护</value>
+  </data>
+  <data name="AUXILIARY TRANSFORMER PRIMARY PROTECTION" xml:space="preserve">
+    <value>辅助变压器初级保护</value>
+  </data>
+  <data name="AUXILIARY TRANSFORMER SECONDARY PROTECTION" xml:space="preserve">
+    <value>辅助变压器二次保护</value>
+  </data>
+  <data name="COOLING SYSTEM OVERLOAD PROTECTION" xml:space="preserve">
+    <value>冷却系统过载保护</value>
+  </data>
+  <data name="COOLING SYSTEM HEALTHY" xml:space="preserve">
+    <value>冷却系统健康</value>
+  </data>
+  <data name="ESTOP" xml:space="preserve">
+    <value>爱仕得</value>
+  </data>
+  <data name="ESTOP CHANNEL" xml:space="preserve">
+    <value>爱仕得频道</value>
+  </data>
+  <data name="EMERGENCY PUSH BUTTON ON CABINET" xml:space="preserve">
+    <value>机柜上的紧急按钮</value>
+  </data>
+  <data name="EMERGENCY PUSH BUTTON IN FIELD" xml:space="preserve">
+    <value>现场紧急按钮</value>
+  </data>
+  <data name="COMMAND ESTOP ENABLE" xml:space="preserve">
+    <value>命令停止启用</value>
+  </data>
+  <data name="COMMAND ESTOP RESET" xml:space="preserve">
+    <value>命令急停复位</value>
+  </data>
+  <data name="LAMP PRODUCTION" xml:space="preserve">
+    <value>灯具生产</value>
+  </data>
+  <data name="LAMP WARNING" xml:space="preserve">
+    <value>灯警告</value>
+  </data>
+  <data name="LAMP ALARM" xml:space="preserve">
+    <value>灯报警</value>
+  </data>
+  <data name="CABINET NO CRITICAL FAULTS PRESENT" xml:space="preserve">
+    <value>机柜不存在严重故障</value>
+  </data>
+  <data name="ESTOP PUSH BUTTONS NOT PRESSED" xml:space="preserve">
+    <value>急停按钮未按下</value>
+  </data>
+  <data name="STOP MATERIAL" xml:space="preserve">
+    <value>停止材料</value>
+  </data>
+  <data name="HYSTERESIS" xml:space="preserve">
+    <value>滞后</value>
+  </data>
+  <data name="START MATERIAL" xml:space="preserve">
+    <value>起始材料</value>
+  </data>
+  <data name="OBSTRUCTION MINIMUM CURRENT" xml:space="preserve">
+    <value>阻塞最小电流</value>
+  </data>
+  <data name="PRODUCTION SPEED" xml:space="preserve">
+    <value>生产速度</value>
+  </data>
+  <data name="MAINTENANCE SPEED" xml:space="preserve">
+    <value>维护速度</value>
+  </data>
+  <data name="SETPOINT" xml:space="preserve">
+    <value>设定点</value>
+  </data>
+  <data name="START TANK REFILL (UP TO SETPOINT)" xml:space="preserve">
+    <value>开始水箱加注（达到设定点）</value>
+  </data>
+  <data name="MINIMUM LEVEL FOR DISCHARGING" xml:space="preserve">
+    <value>最低排放量</value>
+  </data>
+  <data name="MAXIMUM" xml:space="preserve">
+    <value>最大</value>
+  </data>
+  <data name="NEW VALUE" xml:space="preserve">
+    <value>新价值</value>
+  </data>
+  <data name="DIVERTING MODE" xml:space="preserve">
+    <value>分流模式</value>
+  </data>
+  <data name="TO EXTERNAL" xml:space="preserve">
+    <value>到外部</value>
+  </data>
+  <data name="TO BAG" xml:space="preserve">
+    <value>装袋</value>
+  </data>
+  <data name="RELEASE" xml:space="preserve">
+    <value>发布</value>
+  </data>
+  <data name="LOCK" xml:space="preserve">
+    <value>锁</value>
+  </data>
+  <data name="TREND PAGE" xml:space="preserve">
+    <value>趋势页面</value>
+  </data>
+  <data name="MISSING SYNOPTIC" xml:space="preserve">
+    <value>缺少概要</value>
+  </data>
+  <data name="NOW" xml:space="preserve">
+    <value>现在</value>
+  </data>
+  <data name="CYCLES" xml:space="preserve">
+    <value>循环</value>
+  </data>
+  <data name="OPEN" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="CYCLE STEPS" xml:space="preserve">
+    <value>循环步骤</value>
+  </data>
+  <data name="DATA" xml:space="preserve">
+    <value>数据</value>
+  </data>
+  <data name="INTERLOCKS" xml:space="preserve">
+    <value>联锁</value>
+  </data>
+  <data name="_ESTOP_NOT_OK" xml:space="preserve">
+    <value>Estop 不好</value>
+  </data>
+  <data name="_PREPARED" xml:space="preserve">
+    <value>准备好的</value>
+  </data>
+  <data name="_PROD_CYCLE_PENDING" xml:space="preserve">
+    <value>生产周期待定</value>
+  </data>
+  <data name="_LD" xml:space="preserve">
+    <value>本地断开</value>
+  </data>
+  <data name="_NOT_OK" xml:space="preserve">
+    <value>不好</value>
+  </data>
+  <data name="_START_DISABLED" xml:space="preserve">
+    <value>开始禁用</value>
+  </data>
+  <data name="_READY" xml:space="preserve">
+    <value>准备好</value>
+  </data>
+  <data name="_CMD_ON" xml:space="preserve">
+    <value>命令开启</value>
+  </data>
+  <data name="_RUNNING" xml:space="preserve">
+    <value>跑步</value>
+  </data>
+  <data name="_ALARM_CRITICAL" xml:space="preserve">
+    <value>紧急警报</value>
+  </data>
+  <data name="_ALARM_NON_CRITICAL" xml:space="preserve">
+    <value>非关键警报</value>
+  </data>
+  <data name="_MESSAGE" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="_NEW_ALARM" xml:space="preserve">
+    <value>新警报</value>
+  </data>
+  <data name="PLANT VIEW" xml:space="preserve">
+    <value>工厂视图</value>
+  </data>
+  <data name="KEY UNLOCKED WITHOUT UNLOCK COMMAND" xml:space="preserve">
+    <value>没有解锁命令的钥匙解锁</value>
+  </data>
+  <data name="PERSISTENT CURRENT (&gt;3 MIN) ABOVE MINIMUM WITH NO INCOMING MATERIAL" xml:space="preserve">
+    <value>持续电流（&gt;3 分钟）高于最小值且无进料</value>
+  </data>
+  <data name="LINE BLOCKED CONTACTOR (AMP &gt;5% OF NOMINAL AMP 5 SEC AFTER MOTOR OFF)" xml:space="preserve">
+    <value>线路阻塞接触器（电机关闭后 5 秒安培 &gt; 标称安培的 5%）</value>
+  </data>
+  <data name="MOTOR MAXIMUM AMPERAGE EXCEEDED (&gt;115% OF NOMINAL AMP FOR 15 SEC)" xml:space="preserve">
+    <value>超过电机最大电流（&gt; 115% 的标称电流，持续 15 秒）</value>
+  </data>
+  <data name="MOTOR MINIMUM AMPERAGE NOT REACHED (5% OF NOMINAL AMP)" xml:space="preserve">
+    <value>未达到电机最小安培数（额定安培数的 5%）</value>
+  </data>
+  <data name="GRILL POSITION NOT OK FOR RUNNING" xml:space="preserve">
+    <value>烧烤位置不适合跑步</value>
+  </data>
+  <data name="SAFETIES NOT OK" xml:space="preserve">
+    <value>安全性不好</value>
+  </data>
+  <data name="MOTOR OVERHEAT" xml:space="preserve">
+    <value>电机过热</value>
+  </data>
+  <data name="THERMAL OVERLOAD" xml:space="preserve">
+    <value>热过载</value>
+  </data>
+  <data name="MOTOR CURRENT TRANSDUCER BROKEN WIRE" xml:space="preserve">
+    <value>电机电流传感器断线</value>
+  </data>
+  <data name="PULL-CORD SAFETY NOT OK" xml:space="preserve">
+    <value>拉线安全不好</value>
+  </data>
+  <data name="ETHERNET SWITCH NOT OK" xml:space="preserve">
+    <value>以太网交换机不正常</value>
+  </data>
+  <data name="OVERLOAD" xml:space="preserve">
+    <value>超载</value>
+  </data>
+  <data name="LOSS OF SAFETY CONDITIONS" xml:space="preserve">
+    <value>失去安全条件</value>
+  </data>
+  <data name="INVERTER GENERAL ALARM" xml:space="preserve">
+    <value>逆变器通用报警</value>
+  </data>
+  <data name="FAN OBSTRUCTION (CURRENT DROPPED BELOW MINIMUM)" xml:space="preserve">
+    <value>风扇阻塞（电流低于最小值）</value>
+  </data>
+  <data name="FAULTY STATUS (INVERTER NOT RUNNING OK OR INVERTER IN LOCAL MODE)" xml:space="preserve">
+    <value>故障状态（逆变器未正常运行或逆变器处于本地模式）</value>
+  </data>
+  <data name="MINIMUM LEVEL NOT OK" xml:space="preserve">
+    <value>最低水平不好</value>
+  </data>
+  <data name="MAXIMUM LEVEL REACHED" xml:space="preserve">
+    <value>达到最高水平</value>
+  </data>
+  <data name="LEVEL TRANSDUCER NOT OK" xml:space="preserve">
+    <value>液位传感器不正常</value>
+  </data>
+  <data name="LEVEL OVERLOAD" xml:space="preserve">
+    <value>电平过载</value>
+  </data>
+  <data name="LEVELS INCONGRUENCY" xml:space="preserve">
+    <value>级别不一致</value>
+  </data>
+  <data name="MAXIMUM EMPTYING TIME" xml:space="preserve">
+    <value>最大排空时间</value>
+  </data>
+  <data name="MOTOR CURRENT OVER MAXIMUM RANGE LIMIT" xml:space="preserve">
+    <value>电机电流超过最大范围限制</value>
+  </data>
+  <data name="MOTOR CURRENT BELOW MINIMUM RANGE LIMIT (POSSIBLE CAVITATION)" xml:space="preserve">
+    <value>电机电流低于最小范围限制（可能存在气蚀）</value>
+  </data>
+  <data name="OPEN POSITION NOT OK" xml:space="preserve">
+    <value>未平仓头寸不好</value>
+  </data>
+  <data name="CLOSED POSITION NOT OK" xml:space="preserve">
+    <value>平仓位置不好</value>
+  </data>
+  <data name="BOTH POSITIONS" xml:space="preserve">
+    <value>两个职位</value>
+  </data>
+  <data name="NO POSITION" xml:space="preserve">
+    <value>无职位</value>
+  </data>
+  <data name="MAXIMUM TEMPERATURE REACHED" xml:space="preserve">
+    <value>达到的最高温度</value>
+  </data>
+  <data name="TEMPERATURE TRANSDUCER NOT OK" xml:space="preserve">
+    <value>温度传感器不正常</value>
+  </data>
+  <data name="MINIMUM TEMPERATURE NOT OK" xml:space="preserve">
+    <value>最低温度不正常</value>
+  </data>
+  <data name="MIXER MAXIMUM FILLING TIME" xml:space="preserve">
+    <value>搅拌机最长灌装时间</value>
+  </data>
+  <data name="AGITATOR MAXIMUM CURRENT (MIXER OVERLOADED?)" xml:space="preserve">
+    <value>搅拌器最大电流（搅拌器过载？）</value>
+  </data>
+  <data name="MIXER MAXIMUM DISCHARGE TIME" xml:space="preserve">
+    <value>搅拌机最大放电时间</value>
+  </data>
+  <data name="MAXIMUM LOADING TIME" xml:space="preserve">
+    <value>最长加载时间</value>
+  </data>
+  <data name="VALVE IS NOT MOVING" xml:space="preserve">
+    <value>阀门不动</value>
+  </data>
+  <data name="PRESSURE TRANSDUCER NOT OK" xml:space="preserve">
+    <value>压力传感器不正常</value>
+  </data>
+  <data name="MAXIMUM PRESSURE REACHED" xml:space="preserve">
+    <value>达到的最大压力</value>
+  </data>
+  <data name="MINIMUM PRESSURE NOT OK" xml:space="preserve">
+    <value>最小压力不好</value>
+  </data>
+  <data name="FREQUENT TANK OVERFLOW" xml:space="preserve">
+    <value>频繁的坦克溢出</value>
+  </data>
+  <data name="THERMAL OVERLOAD MOTOR" xml:space="preserve">
+    <value>热过载电机</value>
+  </data>
+  <data name="RESISTOR CURRENT TRANSDUCER BROKEN WIRE" xml:space="preserve">
+    <value>电阻式电流传感器断线</value>
+  </data>
+  <data name="RESISTOR MAXIMUM TEMPERATURE (THERMISTOR)" xml:space="preserve">
+    <value>电阻器最高温度（热敏电阻）</value>
+  </data>
+  <data name="RESISTOR MINIMUM AMPERAGE NOT REACHED (5% OF NOMINAL AMP)" xml:space="preserve">
+    <value>未达到电阻器最小安培数（标称安培数的 5%）</value>
+  </data>
+  <data name="RESISTOR MINIMUM CURRENT (FAULTY RESISTOR)" xml:space="preserve">
+    <value>电阻器最小电流（故障电阻器）</value>
+  </data>
+  <data name="LINE BLOCKED CONTACTOR (AMP &gt;5% OF NOMINAL AMP 5 SEC AFTER RESISTOR OFF)" xml:space="preserve">
+    <value>线路阻塞接触器（电阻器关闭后 5 秒安培 &gt; 标称安培的 5%）</value>
+  </data>
+  <data name="BLOWER OFF WITH HIGH TEMPERATURE" xml:space="preserve">
+    <value>高温吹气</value>
+  </data>
+  <data name="POSITION NOT OK" xml:space="preserve">
+    <value>位置不对</value>
+  </data>
+  <data name="BOTH VALVES ARE NOT FULLY CLOSED - TANK EMPTIYNG!" xml:space="preserve">
+    <value>两个阀门都没有完全关闭 - 油箱清空！</value>
+  </data>
+  <data name="DISCHARGE CYCLE STALL" xml:space="preserve">
+    <value>放电循环失速</value>
+  </data>
+  <data name="POSITION CLOSED NOT OK" xml:space="preserve">
+    <value>头寸关闭不好</value>
+  </data>
+  <data name="POSITION OPEN NOT OK" xml:space="preserve">
+    <value>未平仓头寸</value>
+  </data>
+  <data name="CAUSTIC ADDITIVE - MAXIMUM INJECTION TIME" xml:space="preserve">
+    <value>苛性添加剂 - 最长注射时间</value>
+  </data>
+  <data name="DETERGENT ADDITIVE - MAXIMUM INJECTION TIME" xml:space="preserve">
+    <value>洗涤剂添加剂 - 最长注射时间</value>
+  </data>
+  <data name="GAP WATER - MAXIMUM INJECTION TIME" xml:space="preserve">
+    <value>间隙水 - 最大注入时间</value>
+  </data>
+  <data name="FINAL WATER - MAXIMUM INJECTION TIME" xml:space="preserve">
+    <value>最终水 - 最大注入时间</value>
+  </data>
+  <data name="CHEMICALS DOSING CYCLE MAXIMUM TIME" xml:space="preserve">
+    <value>化学品投加周期最长时间</value>
+  </data>
+  <data name="CHEMICALS BOWL PREMATURE DISCHARGE" xml:space="preserve">
+    <value>化学品碗过早放电</value>
+  </data>
+  <data name="FLOWMETER OVERLOAD" xml:space="preserve">
+    <value>流量计过载</value>
+  </data>
+  <data name="PLC OK CONTACT NOT OK" xml:space="preserve">
+    <value>Plc 好的 联系不好</value>
+  </data>
+  <data name="CABINET COOLING NOT OK" xml:space="preserve">
+    <value>机柜散热不好</value>
+  </data>
+  <data name="ESTOP CONTACTORS NOT OK" xml:space="preserve">
+    <value>急停接触器不正常</value>
+  </data>
+  <data name="ESTOP NOT RESET" xml:space="preserve">
+    <value>Estop 未重置</value>
+  </data>
+  <data name="MINIMUM FLOWRATE" xml:space="preserve">
+    <value>最小流量</value>
+  </data>
+  <data name="FLOWRATE TRANSDUCER NOT OK" xml:space="preserve">
+    <value>流量传感器不正常</value>
+  </data>
+  <data name="TARE CALIBRATION NOT POSSIBLE FOR MAXIMUM WEIGHT" xml:space="preserve">
+    <value>无法对最大重量进行皮重校准</value>
+  </data>
+  <data name="WEIGHT TRANSDUCER NOT OK" xml:space="preserve">
+    <value>体重传感器不好</value>
+  </data>
+  <data name="WEIGHT SENSOR CARD OVERLOAD" xml:space="preserve">
+    <value>重量传感器卡过载</value>
+  </data>
+  <data name="CABINET OFF" xml:space="preserve">
+    <value>机柜关闭</value>
+  </data>
+  <data name="ESTOP PRESSED (ON PLANT)" xml:space="preserve">
+    <value>Estop Pressed（在工厂）</value>
+  </data>
+  <data name="ESTOP PRESSED (CABINET DOOR)" xml:space="preserve">
+    <value>Estop Pressed（柜门）</value>
+  </data>
+  <data name="(4-20MA)" xml:space="preserve">
+    <value>(4-20Ma)</value>
+  </data>
+  <data name="(1=OK)" xml:space="preserve">
+    <value>（1=好的）</value>
+  </data>
+  <data name="(0=OK)" xml:space="preserve">
+    <value>（0=好的）</value>
+  </data>
+  <data name="(1=CLOSED)" xml:space="preserve">
+    <value>（1=关闭）</value>
+  </data>
+  <data name="(1=RELEASED, 0=TRAPPED)" xml:space="preserve">
+    <value>（1=释放，0=被困）</value>
+  </data>
+  <data name="(1=RUNNING)" xml:space="preserve">
+    <value>（1=跑步）</value>
+  </data>
+  <data name="(1=&gt;MIN)" xml:space="preserve">
+    <value>(1=&gt;最小值)</value>
+  </data>
+  <data name="(1=&lt;MAX)" xml:space="preserve">
+    <value>(1=&lt;最大值)</value>
+  </data>
+  <data name="(1=OPEN)" xml:space="preserve">
+    <value>（1=打开）</value>
+  </data>
+  <data name="(1=ON)" xml:space="preserve">
+    <value>（1=开）</value>
+  </data>
+  <data name="(PT100)" xml:space="preserve">
+    <value>(Pt100)</value>
+  </data>
+  <data name="(1=ENABLED)" xml:space="preserve">
+    <value>（1=启用）</value>
+  </data>
+  <data name="(1=NO ALARMS)" xml:space="preserve">
+    <value>（1=无警报）</value>
+  </data>
+  <data name="(1=NOT PUSHED)" xml:space="preserve">
+    <value>（1=未推送）</value>
+  </data>
+  <data name="COMPONENT DISABLED" xml:space="preserve">
+    <value>组件已禁用</value>
+  </data>
+  <data name="LOCAL ENABLE SELECTOR NOT OK" xml:space="preserve">
+    <value>本地启用选择器不正常</value>
+  </data>
+  <data name="MOTOR CURRENT NOT OK FOR MATERIAL" xml:space="preserve">
+    <value>电机电流不适合材料</value>
+  </data>
+  <data name="SENSOR DISABLED" xml:space="preserve">
+    <value>传感器禁用</value>
+  </data>
+  <data name="LOW TEMPERATURE WARNING" xml:space="preserve">
+    <value>低温警告</value>
+  </data>
+  <data name="LOW TEMPERATURE - STOP MATERIAL" xml:space="preserve">
+    <value>低温-停止材料</value>
+  </data>
+  <data name="MIXER NOT ENABLED" xml:space="preserve">
+    <value>混音器未启用</value>
+  </data>
+  <data name="MIXER DEVICES IN SEMIAUTO MODE" xml:space="preserve">
+    <value>半自动模式下的混音器设备</value>
+  </data>
+  <data name="LEVEL NOT OK FOR PROCESS" xml:space="preserve">
+    <value>级别不适合流程</value>
+  </data>
+  <data name="HIGH TEMPERATURE WARNING" xml:space="preserve">
+    <value>高温警告</value>
+  </data>
+  <data name="LEVELS NOT OK FOR PROCESS" xml:space="preserve">
+    <value>水平不适合过程</value>
+  </data>
+  <data name="DOWNSTREAM NOT OK" xml:space="preserve">
+    <value>下游不行</value>
   </data>
 </root>

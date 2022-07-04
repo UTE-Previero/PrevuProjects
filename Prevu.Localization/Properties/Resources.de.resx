@@ -802,7 +802,7 @@
     <value>Filter ist verschmutzt und muss gereinigt werden (der Wasserstand bleibt zu hoch).</value>
   </data>
   <data name="INFO_RES_1" xml:space="preserve">
-    <value>Sicherheitsthermistor ausgelöst! Überprüfen Sie den Trockner auf mögliche Materialverbläße, Thermoregution, Luftfilter…</value>
+    <value>Sicherheitsthermistor ausgelöst! Überprüfen Sie den Trockner auf mögliche Materialverbläße, Thermoregution, Luftfilte</value>
   </data>
   <data name="INFO_RES_2" xml:space="preserve">
     <value>Starten Sie das Gebläse schnell neu, um zu verhindern, dass das Heizsystem überhitzt</value>
@@ -959,9 +959,6 @@
   </data>
   <data name="INFO_OIL_SEAL_2" xml:space="preserve">
     <value>Überprüfen Sie das Wellenöldichtungssystem und starten Sie den Motor neu</value>
-  </data>
-  <data name="INFO_OIL_SEAL_3" xml:space="preserve">
-    <value>Die Nachfüllung des Dichtungsöls oder des Motors wird innerhalb einer Stunde gestoppt</value>
   </data>
   <data name="INFO_OIL_SEAL_4" xml:space="preserve">
     <value>Überprüfen Sie das Wellenöldichtungssystem und starten Sie den Motor neu</value>
@@ -1415,5 +1412,725 @@
   </data>
   <data name="CRITICAL FAULT IN THE ELECTRICAL CABINET" xml:space="preserve">
     <value>Kritischer Fehler im Schaltschrank</value>
+  </data>
+  <data name="NO DATA" xml:space="preserve">
+    <value>Keine Daten</value>
+  </data>
+  <data name="WASHING TANK OVER MINIMUM TEMPERATURE" xml:space="preserve">
+    <value>Waschtank über Mindesttemperatur</value>
+  </data>
+  <data name="TIME_CYCLE" xml:space="preserve">
+    <value>Zeitzyklus</value>
+  </data>
+  <data name="FIELD_ADJUST" xml:space="preserve">
+    <value>Feldanpassung</value>
+  </data>
+  <data name="MANUAL START REQUIRED" xml:space="preserve">
+    <value>Manueller Start erforderlich</value>
+  </data>
+  <data name="POWER DISCONNECT (ON THE CABINET)" xml:space="preserve">
+    <value>Netztrennschalter (am Schrank)</value>
+  </data>
+  <data name="GRILL POSITION CLOSED" xml:space="preserve">
+    <value>Grillposition geschlossen</value>
+  </data>
+  <data name="ROTATION STOPPED" xml:space="preserve">
+    <value>Drehung gestoppt</value>
+  </data>
+  <data name="COMMAND STANDSTILL RELAY RESET" xml:space="preserve">
+    <value>Befehl zum Zurücksetzen des Stillstandsrelais</value>
+  </data>
+  <data name="GRILL POSITION OK" xml:space="preserve">
+    <value>Grillposition Ok</value>
+  </data>
+  <data name="AUXILIARY HYDRAULIC UNIT OFF" xml:space="preserve">
+    <value>Hilfshydraulikeinheit aus</value>
+  </data>
+  <data name="SAFETY KEY UNLOCK COMMAND OFF" xml:space="preserve">
+    <value>Befehl zum Entsperren des Sicherheitsschlüssels aus</value>
+  </data>
+  <data name="SAFETY KEY NOT EXTRACTED" xml:space="preserve">
+    <value>Sicherheitsschlüssel nicht herausgezogen</value>
+  </data>
+  <data name="SAFETY CONDITIONS NOT OK TO UNLOCK" xml:space="preserve">
+    <value>Sicherheitsbedingungen zum Entsperren nicht in Ordnung</value>
+  </data>
+  <data name="GRINDER OPEN CYCLE" xml:space="preserve">
+    <value>Schleifer offener Zyklus</value>
+  </data>
+  <data name="SAFETY KEY RELEASED" xml:space="preserve">
+    <value>Sicherheitsschlüssel freigegeben</value>
+  </data>
+  <data name="COMMAND RELEASE" xml:space="preserve">
+    <value>Befehlsfreigabe</value>
+  </data>
+  <data name="ALL CONDITIONS TO UNLOCK" xml:space="preserve">
+    <value>Alle Bedingungen zum Freischalten</value>
+  </data>
+  <data name="LOCAL DISCONNECT OPEN" xml:space="preserve">
+    <value>Lokale Trennung geöffnet</value>
+  </data>
+  <data name="HOPPER EMPTY" xml:space="preserve">
+    <value>Trichter leer</value>
+  </data>
+  <data name="MINIMUM LEVEL" xml:space="preserve">
+    <value>Mindestniveau</value>
+  </data>
+  <data name="OK FOR PROCESS - SCREW ON" xml:space="preserve">
+    <value>Ok für Prozessschraube an</value>
+  </data>
+  <data name="OK FOR PROCESS - MAX LEVEL" xml:space="preserve">
+    <value>Ok für Process Max Level</value>
+  </data>
+  <data name="OK FOR PROCESS - EMPTYING" xml:space="preserve">
+    <value>Ok zum Leeren des Prozesses</value>
+  </data>
+  <data name="MIXER WASHING PHASE" xml:space="preserve">
+    <value>Mischer-Waschphase</value>
+  </data>
+  <data name="MIXER DISCHARGE PHASE" xml:space="preserve">
+    <value>Entladephase des Mischers</value>
+  </data>
+  <data name="WATER LOW TEMPERATURE SETTING" xml:space="preserve">
+    <value>Einstellung für niedrige Wassertemperatur</value>
+  </data>
+  <data name="WATER PUMP IS NOT FULL RUNNING" xml:space="preserve">
+    <value>Wasserpumpe läuft nicht voll</value>
+  </data>
+  <data name="DESTINATION NOT OK" xml:space="preserve">
+    <value>Ziel nicht in Ordnung</value>
+  </data>
+  <data name="WASHING TANK LEVEL" xml:space="preserve">
+    <value>Füllstand des Waschtanks</value>
+  </data>
+  <data name="TANK LEVEL" xml:space="preserve">
+    <value>Tankfüllstand</value>
+  </data>
+  <data name="MIXER TEMPERATURE" xml:space="preserve">
+    <value>Mischertemperatur</value>
+  </data>
+  <data name="MIXER WAITING" xml:space="preserve">
+    <value>Mischer wartet</value>
+  </data>
+  <data name="WASHING MIXER - EMPTY CYCLE" xml:space="preserve">
+    <value>Waschmischer - Leerzyklus</value>
+  </data>
+  <data name="WASHING MIXER - PREPARATION CYCLE" xml:space="preserve">
+    <value>Waschmischer - Vorbereitungszyklus</value>
+  </data>
+  <data name="WASHING MIXER - WASHING CYCLE" xml:space="preserve">
+    <value>Waschmischer - Waschzyklus</value>
+  </data>
+  <data name="MIXER ENABLED" xml:space="preserve">
+    <value>Mischer aktiviert</value>
+  </data>
+  <data name="MIXER PREPARED" xml:space="preserve">
+    <value>Mixer vorbereitet</value>
+  </data>
+  <data name="ALL DEVICES READY" xml:space="preserve">
+    <value>Alle Geräte bereit</value>
+  </data>
+  <data name="MATERIAL LOADING ENABLED" xml:space="preserve">
+    <value>Materialladen aktiviert</value>
+  </data>
+  <data name="MATERIAL LOADING ENABLED (ALL MIXERS)" xml:space="preserve">
+    <value>Materialbeladung aktiviert (alle Mischer)</value>
+  </data>
+  <data name="WASHING TANK TEMPERATURE OK" xml:space="preserve">
+    <value>Waschtanktemperatur Ok</value>
+  </data>
+  <data name="MIXER IN AUTO MODE" xml:space="preserve">
+    <value>Mixer im Auto-Modus</value>
+  </data>
+  <data name="NEAR DOWNSTREAM OK FOR START WASHING" xml:space="preserve">
+    <value>Nahe stromabwärts Ok für Start der Reinigung</value>
+  </data>
+  <data name="FAR DOWNSTREAM OK FOR START WASHING" xml:space="preserve">
+    <value>Weit stromabwärts Ok für den Start des Waschens</value>
+  </data>
+  <data name="MATERIAL LOADING DVICES READY" xml:space="preserve">
+    <value>Materialladegeräte bereit</value>
+  </data>
+  <data name="UPSTREAM SILO MINIMUM LEVEL PRESENT" xml:space="preserve">
+    <value>Vorgelagerter Silo-Mindestfüllstand vorhanden</value>
+  </data>
+  <data name="AGITATOR CURRENT OK" xml:space="preserve">
+    <value>Rührwerksstrom Ok</value>
+  </data>
+  <data name="DISCHARGE PUMP READY IN PRODUCTION" xml:space="preserve">
+    <value>Förderpumpe produktionsbereit</value>
+  </data>
+  <data name="NO OTHER MIXERS ARE DISCHARGING" xml:space="preserve">
+    <value>Keine anderen Mischer entladen</value>
+  </data>
+  <data name="UPSTREAM VALVE CLOSED" xml:space="preserve">
+    <value>Vorgeschaltetes Ventil geschlossen</value>
+  </data>
+  <data name="UPSTREAM VALVE OPEN" xml:space="preserve">
+    <value>Vorgeschaltetes Ventil offen</value>
+  </data>
+  <data name="OK FOR PROCESS MIN LEVEL" xml:space="preserve">
+    <value>Ok für Process Min Level</value>
+  </data>
+  <data name="LOADING TIME OK" xml:space="preserve">
+    <value>Ladezeit Ok</value>
+  </data>
+  <data name="WASHING TIME OK" xml:space="preserve">
+    <value>Waschzeit Ok</value>
+  </data>
+  <data name="START CONDITIONS" xml:space="preserve">
+    <value>Startbedingungen</value>
+  </data>
+  <data name="SEPARATION TANK LEVEL" xml:space="preserve">
+    <value>Füllstand des Trenntanks</value>
+  </data>
+  <data name="BLOWER NOT RUNNING" xml:space="preserve">
+    <value>Gebläse läuft nicht</value>
+  </data>
+  <data name="OPERATION" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="THERMOREGULATION ADVANCED" xml:space="preserve">
+    <value>Erweiterte Thermoregulierung</value>
+  </data>
+  <data name="THERMISTOR PROTECTION" xml:space="preserve">
+    <value>Thermistorschutz</value>
+  </data>
+  <data name="RESISTOR CURRENT" xml:space="preserve">
+    <value>Widerstandsstrom</value>
+  </data>
+  <data name="BLOWER RUNNING OK" xml:space="preserve">
+    <value>Gebläse läuft ok</value>
+  </data>
+  <data name="RESISTOR ENABLED IN PROCESS" xml:space="preserve">
+    <value>Widerstand im Prozess aktiviert</value>
+  </data>
+  <data name="DRYER GROUP ENABLED IN PROCESS" xml:space="preserve">
+    <value>Trocknergruppe in Bearbeitung aktiviert</value>
+  </data>
+  <data name="HEATING INTERLOCKS" xml:space="preserve">
+    <value>Heizungsverriegelungen</value>
+  </data>
+  <data name="DISABLE FULL DRYER GROUP" xml:space="preserve">
+    <value>Vollständige Trocknergruppe deaktivieren</value>
+  </data>
+  <data name="DRYER TEMPERATURE" xml:space="preserve">
+    <value>Trocknertemperatur</value>
+  </data>
+  <data name="EXTERNAL" xml:space="preserve">
+    <value>Extern</value>
+  </data>
+  <data name="DOWNSTREAM OK" xml:space="preserve">
+    <value>Stromabwärts Okay</value>
+  </data>
+  <data name="ONLY" xml:space="preserve">
+    <value>Nur</value>
+  </data>
+  <data name="CURRENT VALUE" xml:space="preserve">
+    <value>Aktueller Wert</value>
+  </data>
+  <data name="BIG-BAG FULL" xml:space="preserve">
+    <value>Big-Bag voll</value>
+  </data>
+  <data name="CHEMICAL DOSING CYCLE BY WEIGHT" xml:space="preserve">
+    <value>Chemischer Dosierzyklus nach Gewicht</value>
+  </data>
+  <data name="CHEMICAL DOSING CYCLE BY TIME" xml:space="preserve">
+    <value>Chemischer Dosierzyklus nach Zeit</value>
+  </data>
+  <data name="EMPTYING_TIME" xml:space="preserve">
+    <value>Entleerungszeit</value>
+  </data>
+  <data name="DISABLING" xml:space="preserve">
+    <value>Deaktivieren</value>
+  </data>
+  <data name="WATER_EXCHANGE" xml:space="preserve">
+    <value>Wasseraustausch</value>
+  </data>
+  <data name="MINIMUM TIME OK TO CHANGE IN POSITION" xml:space="preserve">
+    <value>Mindestzeit, um die Position zu ändern</value>
+  </data>
+  <data name="OK FOR PROCESS - MIN LEVEL" xml:space="preserve">
+    <value>Ok für Prozess - Mindeststufe</value>
+  </data>
+  <data name="MINIMUM TEMPERATURE OK TO STOP" xml:space="preserve">
+    <value>Mindesttemperatur zum Stoppen OK</value>
+  </data>
+  <data name="COMMAND" xml:space="preserve">
+    <value>Befehl</value>
+  </data>
+  <data name="MIXER" xml:space="preserve">
+    <value>Rührgerät</value>
+  </data>
+  <data name="CABINET ON" xml:space="preserve">
+    <value>Kabinett an</value>
+  </data>
+  <data name="ANALOG INPUTS PROTECTION" xml:space="preserve">
+    <value>Schutz der analogen Eingänge</value>
+  </data>
+  <data name="ANALOG OUTPUTS PROTECTION" xml:space="preserve">
+    <value>Schutz der analogen Ausgänge</value>
+  </data>
+  <data name="24V UNDER ESTOP PROTECTION" xml:space="preserve">
+    <value>24 V unter Estop-Schutz</value>
+  </data>
+  <data name="INVERTER SAFETY CIRCUITS" xml:space="preserve">
+    <value>Wechselrichter-Sicherheitsschaltkreise</value>
+  </data>
+  <data name="HYDRAULIC VALVES PROTECTION" xml:space="preserve">
+    <value>Schutz der Hydraulikventile</value>
+  </data>
+  <data name="AUXILIARY TRANSFORMER PRIMARY PROTECTION" xml:space="preserve">
+    <value>Hilfstransformator-Primärschutz</value>
+  </data>
+  <data name="AUXILIARY TRANSFORMER SECONDARY PROTECTION" xml:space="preserve">
+    <value>Hilfstransformator-Sekundärschutz</value>
+  </data>
+  <data name="COOLING SYSTEM OVERLOAD PROTECTION" xml:space="preserve">
+    <value>Überlastungsschutz des Kühlsystems</value>
+  </data>
+  <data name="COOLING SYSTEM HEALTHY" xml:space="preserve">
+    <value>Kühlsystem Gesund</value>
+  </data>
+  <data name="ESTOP" xml:space="preserve">
+    <value>Aufhören</value>
+  </data>
+  <data name="ESTOP CHANNEL" xml:space="preserve">
+    <value>Estop-Kanal</value>
+  </data>
+  <data name="EMERGENCY PUSH BUTTON ON CABINET" xml:space="preserve">
+    <value>Notfall-Druckknopf am Schrank</value>
+  </data>
+  <data name="EMERGENCY PUSH BUTTON IN FIELD" xml:space="preserve">
+    <value>Notdruckknopf im Feld</value>
+  </data>
+  <data name="COMMAND ESTOP ENABLE" xml:space="preserve">
+    <value>Befehl Estop aktivieren</value>
+  </data>
+  <data name="COMMAND ESTOP RESET" xml:space="preserve">
+    <value>Befehl Estop Reset</value>
+  </data>
+  <data name="LAMP PRODUCTION" xml:space="preserve">
+    <value>Lampenproduktion</value>
+  </data>
+  <data name="LAMP WARNING" xml:space="preserve">
+    <value>Lampenwarnung</value>
+  </data>
+  <data name="LAMP ALARM" xml:space="preserve">
+    <value>Lampenalarm</value>
+  </data>
+  <data name="CABINET NO CRITICAL FAULTS PRESENT" xml:space="preserve">
+    <value>Kabinett Keine kritischen Fehler vorhanden</value>
+  </data>
+  <data name="ESTOP PUSH BUTTONS NOT PRESSED" xml:space="preserve">
+    <value>E-Stop-Drucktasten nicht gedrückt</value>
+  </data>
+  <data name="STOP MATERIAL" xml:space="preserve">
+    <value>Material stoppen</value>
+  </data>
+  <data name="HYSTERESIS" xml:space="preserve">
+    <value>Hysterese</value>
+  </data>
+  <data name="START MATERIAL" xml:space="preserve">
+    <value>Material starten</value>
+  </data>
+  <data name="OBSTRUCTION MINIMUM CURRENT" xml:space="preserve">
+    <value>Hindernis-Mindeststrom</value>
+  </data>
+  <data name="PRODUCTION SPEED" xml:space="preserve">
+    <value>Produktionsgeschwindigkeit</value>
+  </data>
+  <data name="MAINTENANCE SPEED" xml:space="preserve">
+    <value>Wartungsgeschwindigkeit</value>
+  </data>
+  <data name="SETPOINT" xml:space="preserve">
+    <value>Sollwert</value>
+  </data>
+  <data name="START TANK REFILL (UP TO SETPOINT)" xml:space="preserve">
+    <value>Tanknachfüllung starten (bis zum Sollwert)</value>
+  </data>
+  <data name="MINIMUM LEVEL FOR DISCHARGING" xml:space="preserve">
+    <value>Mindestfüllstand zum Entladen</value>
+  </data>
+  <data name="MAXIMUM" xml:space="preserve">
+    <value>Maximal</value>
+  </data>
+  <data name="NEW VALUE" xml:space="preserve">
+    <value>Neuer Wert</value>
+  </data>
+  <data name="DIVERTING MODE" xml:space="preserve">
+    <value>Umleitungsmodus</value>
+  </data>
+  <data name="TO EXTERNAL" xml:space="preserve">
+    <value>Nach Extern</value>
+  </data>
+  <data name="TO BAG" xml:space="preserve">
+    <value>Eintüten</value>
+  </data>
+  <data name="RELEASE" xml:space="preserve">
+    <value>Freisetzung</value>
+  </data>
+  <data name="LOCK" xml:space="preserve">
+    <value>Sperren</value>
+  </data>
+  <data name="TREND PAGE" xml:space="preserve">
+    <value>Trendseite</value>
+  </data>
+  <data name="MISSING SYNOPTIC" xml:space="preserve">
+    <value>Fehlende Synoptik</value>
+  </data>
+  <data name="NOW" xml:space="preserve">
+    <value>Jetzt</value>
+  </data>
+  <data name="CYCLES" xml:space="preserve">
+    <value>Fahrräder</value>
+  </data>
+  <data name="OPEN" xml:space="preserve">
+    <value>Offen</value>
+  </data>
+  <data name="CYCLE STEPS" xml:space="preserve">
+    <value>Zyklusschritte</value>
+  </data>
+  <data name="DATA" xml:space="preserve">
+    <value>Daten</value>
+  </data>
+  <data name="INTERLOCKS" xml:space="preserve">
+    <value>Verriegelungen</value>
+  </data>
+  <data name="_ESTOP_NOT_OK" xml:space="preserve">
+    <value>Stopp nicht ok</value>
+  </data>
+  <data name="_PREPARED" xml:space="preserve">
+    <value>Bereit</value>
+  </data>
+  <data name="_PROD_CYCLE_PENDING" xml:space="preserve">
+    <value>Produktionszyklus ausstehend</value>
+  </data>
+  <data name="_LD" xml:space="preserve">
+    <value>Lokale Trennung</value>
+  </data>
+  <data name="_NOT_OK" xml:space="preserve">
+    <value>Nicht ok</value>
+  </data>
+  <data name="_START_DISABLED" xml:space="preserve">
+    <value>Start deaktiviert</value>
+  </data>
+  <data name="_READY" xml:space="preserve">
+    <value>Bereit</value>
+  </data>
+  <data name="_CMD_ON" xml:space="preserve">
+    <value>Befehl EIN</value>
+  </data>
+  <data name="_RUNNING" xml:space="preserve">
+    <value>Laufen</value>
+  </data>
+  <data name="_ALARM_CRITICAL" xml:space="preserve">
+    <value>Kritischer Alarm</value>
+  </data>
+  <data name="_ALARM_NON_CRITICAL" xml:space="preserve">
+    <value>Nicht kritischer Alarm</value>
+  </data>
+  <data name="_MESSAGE" xml:space="preserve">
+    <value>Nachricht</value>
+  </data>
+  <data name="_NEW_ALARM" xml:space="preserve">
+    <value>Neuer Wecker</value>
+  </data>
+  <data name="PLANT VIEW" xml:space="preserve">
+    <value>Anlagenansicht</value>
+  </data>
+  <data name="KEY UNLOCKED WITHOUT UNLOCK COMMAND" xml:space="preserve">
+    <value>Schlüssel entsperrt ohne Entsperrbefehl</value>
+  </data>
+  <data name="PERSISTENT CURRENT (&gt;3 MIN) ABOVE MINIMUM WITH NO INCOMING MATERIAL" xml:space="preserve">
+    <value>Dauerstrom (&gt;3 Min.) über dem Minimum ohne eingehendes Material</value>
+  </data>
+  <data name="LINE BLOCKED CONTACTOR (AMP &gt;5% OF NOMINAL AMP 5 SEC AFTER MOTOR OFF)" xml:space="preserve">
+    <value>Leitung blockiert Schütz (Ampere &gt;5 % des Nennstroms 5 Sek. nach Motor-Aus)</value>
+  </data>
+  <data name="MOTOR MAXIMUM AMPERAGE EXCEEDED (&gt;115% OF NOMINAL AMP FOR 15 SEC)" xml:space="preserve">
+    <value>Maximale Motorstromstärke überschritten (&gt;115 % der Nennstromstärke für 15 Sek.)</value>
+  </data>
+  <data name="MOTOR MINIMUM AMPERAGE NOT REACHED (5% OF NOMINAL AMP)" xml:space="preserve">
+    <value>Mindeststromstärke des Motors nicht erreicht (5 % der Nennstromstärke)</value>
+  </data>
+  <data name="GRILL POSITION NOT OK FOR RUNNING" xml:space="preserve">
+    <value>Grillposition zum Laufen nicht in Ordnung</value>
+  </data>
+  <data name="SAFETIES NOT OK" xml:space="preserve">
+    <value>Sicherheiten nicht ok</value>
+  </data>
+  <data name="MOTOR OVERHEAT" xml:space="preserve">
+    <value>Motorüberhitzung</value>
+  </data>
+  <data name="THERMAL OVERLOAD" xml:space="preserve">
+    <value>Thermische Überlastung</value>
+  </data>
+  <data name="MOTOR CURRENT TRANSDUCER BROKEN WIRE" xml:space="preserve">
+    <value>Kabelbruch des Motorstromwandlers</value>
+  </data>
+  <data name="PULL-CORD SAFETY NOT OK" xml:space="preserve">
+    <value>Zugschnursicherung nicht ok</value>
+  </data>
+  <data name="ETHERNET SWITCH NOT OK" xml:space="preserve">
+    <value>Ethernet-Switch nicht in Ordnung</value>
+  </data>
+  <data name="OVERLOAD" xml:space="preserve">
+    <value>Überlast</value>
+  </data>
+  <data name="LOSS OF SAFETY CONDITIONS" xml:space="preserve">
+    <value>Verlust der Sicherheitsbedingungen</value>
+  </data>
+  <data name="INVERTER GENERAL ALARM" xml:space="preserve">
+    <value>Allgemeiner Wechselrichteralarm</value>
+  </data>
+  <data name="FAN OBSTRUCTION (CURRENT DROPPED BELOW MINIMUM)" xml:space="preserve">
+    <value>Lüfterblockade (Strom unter Minimum gefallen)</value>
+  </data>
+  <data name="FAULTY STATUS (INVERTER NOT RUNNING OK OR INVERTER IN LOCAL MODE)" xml:space="preserve">
+    <value>Fehlerhafter Status (Wechselrichter läuft nicht in Ordnung oder Wechselrichter im lokalen Modus)</value>
+  </data>
+  <data name="MINIMUM LEVEL NOT OK" xml:space="preserve">
+    <value>Mindestfüllstand nicht ok</value>
+  </data>
+  <data name="MAXIMUM LEVEL REACHED" xml:space="preserve">
+    <value>Maximale Stufe erreicht</value>
+  </data>
+  <data name="LEVEL TRANSDUCER NOT OK" xml:space="preserve">
+    <value>Füllstandssensor nicht in Ordnung</value>
+  </data>
+  <data name="LEVEL OVERLOAD" xml:space="preserve">
+    <value>Level-Überlastung</value>
+  </data>
+  <data name="LEVELS INCONGRUENCY" xml:space="preserve">
+    <value>Ebenen Inkongruenz</value>
+  </data>
+  <data name="MAXIMUM EMPTYING TIME" xml:space="preserve">
+    <value>Maximale Entleerungszeit</value>
+  </data>
+  <data name="MOTOR CURRENT OVER MAXIMUM RANGE LIMIT" xml:space="preserve">
+    <value>Motorstrom über der maximalen Bereichsgrenze</value>
+  </data>
+  <data name="MOTOR CURRENT BELOW MINIMUM RANGE LIMIT (POSSIBLE CAVITATION)" xml:space="preserve">
+    <value>Motorstrom unterhalb der minimalen Bereichsgrenze (mögliche Kavitation)</value>
+  </data>
+  <data name="OPEN POSITION NOT OK" xml:space="preserve">
+    <value>Offene Position nicht in Ordnung</value>
+  </data>
+  <data name="CLOSED POSITION NOT OK" xml:space="preserve">
+    <value>Geschlossene Position nicht ok</value>
+  </data>
+  <data name="BOTH POSITIONS" xml:space="preserve">
+    <value>Beide Positionen</value>
+  </data>
+  <data name="NO POSITION" xml:space="preserve">
+    <value>Keine Stellung</value>
+  </data>
+  <data name="MAXIMUM TEMPERATURE REACHED" xml:space="preserve">
+    <value>Maximale Temperatur erreicht</value>
+  </data>
+  <data name="TEMPERATURE TRANSDUCER NOT OK" xml:space="preserve">
+    <value>Temperaturwandler nicht in Ordnung</value>
+  </data>
+  <data name="MINIMUM TEMPERATURE NOT OK" xml:space="preserve">
+    <value>Mindesttemperatur nicht in Ordnung</value>
+  </data>
+  <data name="MIXER MAXIMUM FILLING TIME" xml:space="preserve">
+    <value>Maximale Füllzeit des Mischers</value>
+  </data>
+  <data name="AGITATOR MAXIMUM CURRENT (MIXER OVERLOADED?)" xml:space="preserve">
+    <value>Maximaler Rührerstrom (Mischer überlastet?)</value>
+  </data>
+  <data name="MIXER MAXIMUM DISCHARGE TIME" xml:space="preserve">
+    <value>Maximale Entladezeit des Mischers</value>
+  </data>
+  <data name="MAXIMUM LOADING TIME" xml:space="preserve">
+    <value>Maximale Ladezeit</value>
+  </data>
+  <data name="VALVE IS NOT MOVING" xml:space="preserve">
+    <value>Ventil bewegt sich nicht</value>
+  </data>
+  <data name="PRESSURE TRANSDUCER NOT OK" xml:space="preserve">
+    <value>Druckaufnehmer nicht ok</value>
+  </data>
+  <data name="MAXIMUM PRESSURE REACHED" xml:space="preserve">
+    <value>Maximaldruck erreicht</value>
+  </data>
+  <data name="MINIMUM PRESSURE NOT OK" xml:space="preserve">
+    <value>Mindestdruck nicht ok</value>
+  </data>
+  <data name="FREQUENT TANK OVERFLOW" xml:space="preserve">
+    <value>Häufiger Tanküberlauf</value>
+  </data>
+  <data name="THERMAL OVERLOAD MOTOR" xml:space="preserve">
+    <value>Thermische Überlastung des Motors</value>
+  </data>
+  <data name="RESISTOR CURRENT TRANSDUCER BROKEN WIRE" xml:space="preserve">
+    <value>Widerstand Stromwandler Kabelbruch</value>
+  </data>
+  <data name="RESISTOR MAXIMUM TEMPERATURE (THERMISTOR)" xml:space="preserve">
+    <value>Maximale Widerstandstemperatur (Thermistor)</value>
+  </data>
+  <data name="RESISTOR MINIMUM AMPERAGE NOT REACHED (5% OF NOMINAL AMP)" xml:space="preserve">
+    <value>Mindeststromstärke des Widerstands nicht erreicht (5 % der Nennstromstärke)</value>
+  </data>
+  <data name="RESISTOR MINIMUM CURRENT (FAULTY RESISTOR)" xml:space="preserve">
+    <value>Mindeststrom des Widerstands (Fehlerhafter Widerstand)</value>
+  </data>
+  <data name="LINE BLOCKED CONTACTOR (AMP &gt;5% OF NOMINAL AMP 5 SEC AFTER RESISTOR OFF)" xml:space="preserve">
+    <value>Leitung blockiert Schütz (Ampere &gt;5 % des Nennstroms 5 Sek. nach dem Ausschalten des Widerstands)</value>
+  </data>
+  <data name="BLOWER OFF WITH HIGH TEMPERATURE" xml:space="preserve">
+    <value>Gebläse aus mit hoher Temperatur</value>
+  </data>
+  <data name="POSITION NOT OK" xml:space="preserve">
+    <value>Position nicht in Ordnung</value>
+  </data>
+  <data name="BOTH VALVES ARE NOT FULLY CLOSED - TANK EMPTIYNG!" xml:space="preserve">
+    <value>Beide Ventile sind nicht vollständig geschlossen - Tankentleerung!</value>
+  </data>
+  <data name="DISCHARGE CYCLE STALL" xml:space="preserve">
+    <value>Entladungszyklus blockiert</value>
+  </data>
+  <data name="POSITION CLOSED NOT OK" xml:space="preserve">
+    <value>Position geschlossen nicht ok</value>
+  </data>
+  <data name="POSITION OPEN NOT OK" xml:space="preserve">
+    <value>Position offen nicht ok</value>
+  </data>
+  <data name="CAUSTIC ADDITIVE - MAXIMUM INJECTION TIME" xml:space="preserve">
+    <value>Ätzendes Additiv - Maximale Injektionszeit</value>
+  </data>
+  <data name="DETERGENT ADDITIVE - MAXIMUM INJECTION TIME" xml:space="preserve">
+    <value>Waschmittelzusatz - Maximale Einspritzzeit</value>
+  </data>
+  <data name="GAP WATER - MAXIMUM INJECTION TIME" xml:space="preserve">
+    <value>Lückenwasser - Maximale Injektionszeit</value>
+  </data>
+  <data name="FINAL WATER - MAXIMUM INJECTION TIME" xml:space="preserve">
+    <value>Endgültiges Wasser - Maximale Injektionszeit</value>
+  </data>
+  <data name="CHEMICALS DOSING CYCLE MAXIMUM TIME" xml:space="preserve">
+    <value>Maximale Zeit des Chemikaliendosierungszyklus</value>
+  </data>
+  <data name="CHEMICALS BOWL PREMATURE DISCHARGE" xml:space="preserve">
+    <value>Vorzeitige Entladung des Chemikalienbehälters</value>
+  </data>
+  <data name="FLOWMETER OVERLOAD" xml:space="preserve">
+    <value>Überlastung des Durchflussmessers</value>
+  </data>
+  <data name="PLC OK CONTACT NOT OK" xml:space="preserve">
+    <value>SPS ok Kontakt nicht ok</value>
+  </data>
+  <data name="CABINET COOLING NOT OK" xml:space="preserve">
+    <value>Schrankkühlung nicht in Ordnung</value>
+  </data>
+  <data name="ESTOP CONTACTORS NOT OK" xml:space="preserve">
+    <value>Stoppschütze nicht in Ordnung</value>
+  </data>
+  <data name="ESTOP NOT RESET" xml:space="preserve">
+    <value>Estop nicht zurückgesetzt</value>
+  </data>
+  <data name="MINIMUM FLOWRATE" xml:space="preserve">
+    <value>Mindestdurchfluss</value>
+  </data>
+  <data name="FLOWRATE TRANSDUCER NOT OK" xml:space="preserve">
+    <value>Durchflusssensor nicht in Ordnung</value>
+  </data>
+  <data name="TARE CALIBRATION NOT POSSIBLE FOR MAXIMUM WEIGHT" xml:space="preserve">
+    <value>Tara-Kalibrierung für Maximalgewicht nicht möglich</value>
+  </data>
+  <data name="WEIGHT TRANSDUCER NOT OK" xml:space="preserve">
+    <value>Gewichtswandler nicht in Ordnung</value>
+  </data>
+  <data name="WEIGHT SENSOR CARD OVERLOAD" xml:space="preserve">
+    <value>Überlastung der Gewichtssensorkarte</value>
+  </data>
+  <data name="CABINET OFF" xml:space="preserve">
+    <value>Kabinett aus</value>
+  </data>
+  <data name="ESTOP PRESSED (ON PLANT)" xml:space="preserve">
+    <value>Estop gedrückt (auf der Anlage)</value>
+  </data>
+  <data name="ESTOP PRESSED (CABINET DOOR)" xml:space="preserve">
+    <value>Anschlag gedrückt (Schranktür)</value>
+  </data>
+  <data name="(4-20MA)" xml:space="preserve">
+    <value>(4-20 Ma)</value>
+  </data>
+  <data name="(1=OK)" xml:space="preserve">
+    <value>(1=Okay)</value>
+  </data>
+  <data name="(0=OK)" xml:space="preserve">
+    <value>(0=Okay)</value>
+  </data>
+  <data name="(1=CLOSED)" xml:space="preserve">
+    <value>(1=Geschlossen)</value>
+  </data>
+  <data name="(1=RELEASED, 0=TRAPPED)" xml:space="preserve">
+    <value>(1=freigegeben, 0=gefangen)</value>
+  </data>
+  <data name="(1=RUNNING)" xml:space="preserve">
+    <value>(1=Läuft)</value>
+  </data>
+  <data name="(1=&gt;MIN)" xml:space="preserve">
+    <value>(1=&gt;Minute)</value>
+  </data>
+  <data name="(1=&lt;MAX)" xml:space="preserve">
+    <value>(1=&lt;Max)</value>
+  </data>
+  <data name="(1=OPEN)" xml:space="preserve">
+    <value>(1=offen)</value>
+  </data>
+  <data name="(1=ON)" xml:space="preserve">
+    <value>(1=Ein)</value>
+  </data>
+  <data name="(PT100)" xml:space="preserve">
+    <value>(Pt100)</value>
+  </data>
+  <data name="(1=ENABLED)" xml:space="preserve">
+    <value>(1=Aktiviert)</value>
+  </data>
+  <data name="(1=NO ALARMS)" xml:space="preserve">
+    <value>(1=Keine Alarme)</value>
+  </data>
+  <data name="(1=NOT PUSHED)" xml:space="preserve">
+    <value>(1=nicht gedrückt)</value>
+  </data>
+  <data name="COMPONENT DISABLED" xml:space="preserve">
+    <value>Komponente deaktiviert</value>
+  </data>
+  <data name="LOCAL ENABLE SELECTOR NOT OK" xml:space="preserve">
+    <value>Local Enable Selector nicht in Ordnung</value>
+  </data>
+  <data name="MOTOR CURRENT NOT OK FOR MATERIAL" xml:space="preserve">
+    <value>Motorstrom für Material nicht ok</value>
+  </data>
+  <data name="SENSOR DISABLED" xml:space="preserve">
+    <value>Sensor deaktiviert</value>
+  </data>
+  <data name="LOW TEMPERATURE WARNING" xml:space="preserve">
+    <value>Warnung vor niedriger Temperatur</value>
+  </data>
+  <data name="LOW TEMPERATURE - STOP MATERIAL" xml:space="preserve">
+    <value>Niedrige Temperatur – Stoppmaterial</value>
+  </data>
+  <data name="MIXER NOT ENABLED" xml:space="preserve">
+    <value>Mischer nicht aktiviert</value>
+  </data>
+  <data name="MIXER DEVICES IN SEMIAUTO MODE" xml:space="preserve">
+    <value>Mixer-Geräte im halbautomatischen Modus</value>
+  </data>
+  <data name="LEVEL NOT OK FOR PROCESS" xml:space="preserve">
+    <value>Stufe für Prozess nicht ok</value>
+  </data>
+  <data name="HIGH TEMPERATURE WARNING" xml:space="preserve">
+    <value>Warnung vor hoher Temperatur</value>
+  </data>
+  <data name="LEVELS NOT OK FOR PROCESS" xml:space="preserve">
+    <value>Ebenen für den Prozess nicht in Ordnung</value>
+  </data>
+  <data name="DOWNSTREAM NOT OK" xml:space="preserve">
+    <value>Downstream nicht in Ordnung</value>
   </data>
 </root>
