@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -11,16 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Synoptics
+namespace Prevu.Synoptics;
+/// <summary>
+/// Interaction logic for WH3.xaml
+/// </summary>
+public partial class WH3 : UserControl
 {
-    /// <summary>
-    /// Interaction logic for WH2.xaml
-    /// </summary>
-    public partial class WH2 : UserControl
-    {
-        public WH2()
-        {
-            InitializeComponent();
-        }
-    }
+  public WH3()
+  {
+    InitializeComponent();
+  }
 }

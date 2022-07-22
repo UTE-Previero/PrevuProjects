@@ -10,19 +10,25 @@
              d:Height="840" d:Width="1700" d:Background="{DynamicResource MaterialDesignPaper}">
 
 
-    <Grid Width="1700" Height="840" VerticalAlignment="Top" HorizontalAlignment="Left">
-        <Machines:QX_HMI_ElectricalCabinet HorizontalAlignment="Left" Margin="455,140,0,0" VerticalAlignment="Top" Height="116" Width="395"/>
-        <Labels:DeviceLabel x:Name="Q11" HorizontalAlignment="Left" Margin="615,55,0,0" VerticalAlignment="Top" ComponentName="Q11"/>
-        <Labels:DeviceLabel x:Name="S110" HorizontalAlignment="Left" Margin="615,291,0,0" VerticalAlignment="Top" ComponentName="S110"/>
-        <Machines:QX_ElectricalCabinet HorizontalAlignment="Left" Margin="900,140,0,0" VerticalAlignment="Top" Height="116" Width="400"/>
-        <Machines:QX_HMI HorizontalAlignment="Left" Margin="1340,140,0,0" VerticalAlignment="Top" Height="116" Width="400"/>
-        <Labels:DeviceLabel x:Name="HMI_01" HorizontalAlignment="Left" Margin="1495,55,0,0" VerticalAlignment="Top" ComponentName="HMI-01"/>
-        <Labels:DeviceLabel x:Name="Q21_Copy" HorizontalAlignment="Left" Margin="175,55,0,0" VerticalAlignment="Top" ComponentName="Q01"/>
-        <Rectangle HorizontalAlignment="Left" Height="1913" Margin="420,37,0,0" Stroke="Black" VerticalAlignment="Top" Width="1"/>
-        <Rectangle HorizontalAlignment="Left" Height="1913" Margin="884,37,0,0" Stroke="Black" VerticalAlignment="Top" Width="1"/>
-        <Rectangle HorizontalAlignment="Left" Height="1913" Margin="1348,37,0,0" Stroke="Black" VerticalAlignment="Top" Width="1"/>
-        <Rectangle HorizontalAlignment="Left" Height="1913" Margin="1748,37,0,0" Stroke="Black" VerticalAlignment="Top" Width="1"/>
-        <Machines:QX_ShortElectricalCabinet HorizontalAlignment="Left" Margin="96,140,0,0" VerticalAlignment="Top" Width="248" Height="116"/>
+	<Grid Width="1700" Height="840" VerticalAlignment="Top" HorizontalAlignment="Left">
+		<Rectangle HorizontalAlignment="Left" Height="645" Margin="450,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="825" RadiusX="15" RadiusY="15" StrokeThickness="6" StrokeDashArray="2 2" d:IsLocked="True"/>
 
-    </Grid>
+		<Labels:DeviceLabel x:Name="Q11" HorizontalAlignment="Left" Margin="802,201,0,0" VerticalAlignment="Top" ComponentName="Q11"/>
+		<Labels:DeviceLabel x:Name="S110" HorizontalAlignment="Left" Margin="742,430,0,0" VerticalAlignment="Top" ComponentName="S110"/>
+		<Machines:QX_ElectricalCabinet Margin="743,276,749,428" Height="Auto" Width="Auto"/>
+		<Machines:QX_HMI HorizontalAlignment="Left" Margin="1062,276,0,0" VerticalAlignment="Top" Height="136" Width="125"/>
+		<Labels:DeviceLabel x:Name="HMI_01" HorizontalAlignment="Left" Margin="1079,201,0,0" VerticalAlignment="Top" ComponentName="HMI-01"/>
+		<Labels:DeviceLabel x:Name="Q21_Copy" HorizontalAlignment="Left" Margin="522,202,0,0" VerticalAlignment="Top" ComponentName="Q01"/>
+		<Rectangle HorizontalAlignment="Left" Height="1913" Margin="1748,37,0,0" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+		<Machines:QX_ShortElectricalCabinet HorizontalAlignment="Left" Margin="510,276,0,0" VerticalAlignment="Top" Width="114" Height="136"/>
+		<Labels:GroupLabel HorizontalAlignment="Left" Margin="755,525,0,0" VerticalAlignment="Top" GroupName="CH"/>
+		<Labels:GroupLabel HorizontalAlignment="Left" Margin="847,525,0,0" VerticalAlignment="Top" GroupName="ST1"/>
+		<Labels:GroupLabel HorizontalAlignment="Left" Margin="912,525,0,0" VerticalAlignment="Top" GroupName="WH1"/>
+		<Labels:GroupLabel HorizontalAlignment="Left" Margin="912,595,0,0" VerticalAlignment="Top" GroupName="WH2"/>
+		<Labels:GroupLabel HorizontalAlignment="Left" Margin="912,665,0,0" VerticalAlignment="Top" GroupName="WH3"/>
+		<Labels:DeviceLabel x:Name="Q21_Copy1" HorizontalAlignment="Left" Margin="347,120,0,0" VerticalAlignment="Top" ComponentName="ESTOP-AREA-01"/>
+		<Labels:DeviceLabel x:Name="S110_Copy" HorizontalAlignment="Left" Margin="867,431,0,0" VerticalAlignment="Top" ComponentName="S110"/>
+		<Labels:GroupLabel HorizontalAlignment="Left" Margin="847,595,0,0" VerticalAlignment="Top" GroupName="ST2"/>
+
+	</Grid>
 </UserControl>
