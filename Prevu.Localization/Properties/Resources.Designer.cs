@@ -871,6 +871,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Communication Error.
+        /// </summary>
+        internal static string COMMUNICATION_ERROR {
+            get {
+                return ResourceManager.GetString("COMMUNICATION ERROR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Component Disabled.
         /// </summary>
         internal static string COMPONENT_DISABLED {
@@ -1312,6 +1321,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Device Labels.
+        /// </summary>
+        internal static string DEVICE_LABELS {
+            get {
+                return ResourceManager.GetString("DEVICE LABELS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Digital Inputs Protection.
         /// </summary>
         internal static string DIGITAL_INPUTS_PROTECTION {
@@ -1344,6 +1362,15 @@ namespace Prevu.Localization.Properties {
         internal static string DISABLE_SENSOR {
             get {
                 return ResourceManager.GetString("DISABLE SENSOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disabled.
+        /// </summary>
+        internal static string DISABLED {
+            get {
+                return ResourceManager.GetString("DISABLED", resourceCulture);
             }
         }
         
@@ -1915,6 +1942,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Group Labels.
+        /// </summary>
+        internal static string GROUP_LABELS {
+            get {
+                return ResourceManager.GetString("GROUP LABELS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Group Name.
         /// </summary>
         internal static string GROUP_NAME {
@@ -2010,6 +2046,15 @@ namespace Prevu.Localization.Properties {
         internal static string IMAGE_NAME {
             get {
                 return ResourceManager.GetString("IMAGE NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In Preparation.
+        /// </summary>
+        internal static string IN_PREPARATION {
+            get {
+                return ResourceManager.GetString("IN PREPARATION", resourceCulture);
             }
         }
         
@@ -4057,6 +4102,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Jump Label.
+        /// </summary>
+        internal static string JUMP_LABEL {
+            get {
+                return ResourceManager.GetString("JUMP LABEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Keep The Valves On In Final Position.
         /// </summary>
         internal static string KEEP_THE_VALVES_ON_IN_FINAL_POSITION {
@@ -4336,6 +4390,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Maintenance With Components Running.
+        /// </summary>
+        internal static string MAINTENANCE_WITH_COMPONENTS_RUNNING {
+            get {
+                return ResourceManager.GetString("MAINTENANCE WITH COMPONENTS RUNNING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Manage Group.
         /// </summary>
         internal static string MANAGE_GROUP {
@@ -4377,6 +4440,15 @@ namespace Prevu.Localization.Properties {
         internal static string MASTER_ESTOP {
             get {
                 return ResourceManager.GetString("MASTER ESTOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Material.
+        /// </summary>
+        internal static string MATERIAL {
+            get {
+                return ResourceManager.GetString("MATERIAL", resourceCulture);
             }
         }
         
@@ -5146,6 +5218,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Pipes.
+        /// </summary>
+        internal static string PIPES {
+            get {
+                return ResourceManager.GetString("PIPES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Place the New Card on the Reader.
         /// </summary>
         internal static string PLACE_THE_NEW_CARD_ON_THE_READER {
@@ -5317,6 +5398,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Preparation.
+        /// </summary>
+        internal static string PREPARATION {
+            get {
+                return ResourceManager.GetString("PREPARATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Presets.
         /// </summary>
         internal static string PRESETS {
@@ -5461,6 +5551,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ready.
+        /// </summary>
+        internal static string READY {
+            get {
+                return ResourceManager.GetString("READY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Reamining  Pause Time.
         /// </summary>
         internal static string REAMINING__PAUSE_TIME {
@@ -5560,6 +5659,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Running.
+        /// </summary>
+        internal static string RUNNING {
+            get {
+                return ResourceManager.GetString("RUNNING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Safeties Not Ok.
         /// </summary>
         internal static string SAFETIES_NOT_OK {
@@ -5619,6 +5727,15 @@ namespace Prevu.Localization.Properties {
         internal static string SEARCH_COMPONENTS {
             get {
                 return ResourceManager.GetString("SEARCH COMPONENTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Secondary.
+        /// </summary>
+        internal static string SECONDARY {
+            get {
+                return ResourceManager.GetString("SECONDARY", resourceCulture);
             }
         }
         
@@ -5938,6 +6055,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Starting.
+        /// </summary>
+        internal static string STARTING {
+            get {
+                return ResourceManager.GetString("STARTING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Stop.
         /// </summary>
         internal static string STOP {
@@ -5965,11 +6091,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Stop In Progress.
+        /// </summary>
+        internal static string STOP_IN_PROGRESS {
+            get {
+                return ResourceManager.GetString("STOP IN PROGRESS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Stop Material.
         /// </summary>
         internal static string STOP_MATERIAL {
             get {
                 return ResourceManager.GetString("STOP MATERIAL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop Pending.
+        /// </summary>
+        internal static string STOP_PENDING {
+            get {
+                return ResourceManager.GetString("STOP PENDING", resourceCulture);
             }
         }
         
@@ -5988,6 +6132,15 @@ namespace Prevu.Localization.Properties {
         internal static string SUBZONE {
             get {
                 return ResourceManager.GetString("SUBZONE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subzone Labels.
+        /// </summary>
+        internal static string SUBZONE_LABELS {
+            get {
+                return ResourceManager.GetString("SUBZONE LABELS", resourceCulture);
             }
         }
         
@@ -6388,6 +6541,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Waiting.
+        /// </summary>
+        internal static string WAITING {
+            get {
+                return ResourceManager.GetString("WAITING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Washing 1.
         /// </summary>
         internal static string WASHING_1 {
@@ -6447,6 +6609,15 @@ namespace Prevu.Localization.Properties {
         internal static string WASHING_TEMPERATURE_OVER_MINIMUM_TEMPERATURE {
             get {
                 return ResourceManager.GetString("WASHING TEMPERATURE OVER MINIMUM TEMPERATURE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Water.
+        /// </summary>
+        internal static string WATER {
+            get {
+                return ResourceManager.GetString("WATER", resourceCulture);
             }
         }
         
@@ -6537,6 +6708,42 @@ namespace Prevu.Localization.Properties {
         internal static string WIRELESS_CARD {
             get {
                 return ResourceManager.GetString("WIRELESS CARD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to With Critical Alarm.
+        /// </summary>
+        internal static string WITH_CRITICAL_ALARM {
+            get {
+                return ResourceManager.GetString("WITH CRITICAL ALARM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to With Direction.
+        /// </summary>
+        internal static string WITH_DIRECTION {
+            get {
+                return ResourceManager.GetString("WITH DIRECTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to With Message.
+        /// </summary>
+        internal static string WITH_MESSAGE {
+            get {
+                return ResourceManager.GetString("WITH MESSAGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to With Minor Alarm.
+        /// </summary>
+        internal static string WITH_MINOR_ALARM {
+            get {
+                return ResourceManager.GetString("WITH MINOR ALARM", resourceCulture);
             }
         }
         
