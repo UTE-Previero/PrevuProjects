@@ -2005,6 +2005,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to High Speed.
+        /// </summary>
+        internal static string HIGH_SPEED {
+            get {
+                return ResourceManager.GetString("HIGH SPEED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Holding Tank Level.
         /// </summary>
         internal static string HOLDING_TANK_LEVEL {
@@ -4332,6 +4341,15 @@ namespace Prevu.Localization.Properties {
         internal static string LOW_CONCENTRATION_WARNING {
             get {
                 return ResourceManager.GetString("LOW CONCENTRATION WARNING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Low Speed.
+        /// </summary>
+        internal static string LOW_SPEED {
+            get {
+                return ResourceManager.GetString("LOW SPEED", resourceCulture);
             }
         }
         
