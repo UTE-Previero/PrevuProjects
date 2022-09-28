@@ -11,16 +11,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Synoptics
+namespace Prevu.Drawings.Machines
 {
     /// <summary>
-    /// Interaction logic for WH2.xaml
+    /// Interaction logic for GR_001.xaml
     /// </summary>
-    public partial class WH2 : UserControl
+    public partial class GR_002 : UserControl
+  {
+    public GR_002()
     {
-        public WH2()
-        {
-            InitializeComponent();
-        }
+      InitializeComponent();
     }
+  }
 }
