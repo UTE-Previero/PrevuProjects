@@ -1,20 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
     <UseWPF>true</UseWPF>
+    <RootNamespace>Prevu.Synoptics</RootNamespace>
     <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+	    <AssemblyName>Prevu.Synoptics</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="4.5.0" />
+    <PackageReference Include="Prevu.UIComponents" Version="1.1.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Prevu.Drawings\Prevu.Drawings.csproj" />
-    <ProjectReference Include="..\Prevu.Localization\Prevu.Localization.csproj" />
-    <ProjectReference Include="..\Prevu.Synoptics.V2048-ReCiclar_CMF\Prevu.Synoptics.V2048-ReCiclar_CMF.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="WH1.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 
 </Project>
