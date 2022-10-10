@@ -22,15 +22,5 @@ namespace Prevu.Synoptics
         {
             InitializeComponent();
         }
-
-        private void SignalLabel_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void MU_Grinder_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

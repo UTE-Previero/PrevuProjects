@@ -14,23 +14,13 @@ using System.Windows.Shapes;
 namespace Prevu.Synoptics
 {
     /// <summary>
-    /// Interaction logic for GR1.xaml
+    /// Interaction logic for WH2.xaml
     /// </summary>
-    public partial class GR1 : UserControl
+    public partial class WH2 : UserControl
     {
-        public GR1()
+        public WH2()
         {
             InitializeComponent();
-        }
-
-        private void SignalLabel_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void MU_Grinder_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
