@@ -5,9 +5,9 @@
              xmlns:local="clr-namespace:Prevu.Synoptics"
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             x:Class="Prevu.Synoptics.420" mc:Ignorable="d" 
+             x:Class="Prevu.Synoptics.S420" mc:Ignorable="d" 
              Height="840" Width="1420" d:Background="{DynamicResource MaterialDesignPaper}">
-    <Grid Margin="-4,5,4,-5">
+    <Grid>
         <Labels:Pipe HorizontalAlignment="Left" Margin="792,401,0,0" VerticalAlignment="Top" Width="90" StatusComponent="440-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -79,7 +79,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="274,144,0,0" VerticalAlignment="Top" Width="60" StatusComponent="420-01-MA1" PipeHeight="Medium"/>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="274,144,0,0" VerticalAlignment="Top" Width="71" StatusComponent="420-01-MA1" PipeHeight="Medium"/>
         <Labels:Pipe HorizontalAlignment="Left" Margin="690,190,0,0" VerticalAlignment="Top" Width="100" Color="Water" RenderTransformOrigin="0.5,0.5" StatusComponent="430-01-MA1">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -233,7 +233,7 @@
                 </TransformGroup>
             </Machines:WaterPump.RenderTransform>
         </Machines:WaterPump>
-        <Machines:VRC_WaterCollectingTank HorizontalAlignment="Left" Margin="458,610,0,0" VerticalAlignment="Top" Height="211" Width="344"/>
+        <Machines:VRC_WaterCollectingTank HorizontalAlignment="Left" Margin="526,655,0,0" VerticalAlignment="Top" Height="120" Width="209"/>
         <Machines:CV_Valve_001 HorizontalAlignment="Left" Margin="454,587,0,0" VerticalAlignment="Top" Height="100" Width="100" Color="Steam" RenderTransformOrigin="0.51,0.539">
             <Machines:CV_Valve_001.RenderTransform>
                 <TransformGroup>
@@ -254,7 +254,7 @@
                 </TransformGroup>
             </Machines:WaterPump.RenderTransform>
         </Machines:WaterPump>
-        <Machines:DCE_DryingCentrifuge HorizontalAlignment="Left" Margin="877,43,0,0" VerticalAlignment="Top" Height="204" Width="150" RenderTransformOrigin="0.5,0.5">
+        <Machines:DCE_DryingCentrifuge HorizontalAlignment="Left" Margin="894,90,0,0" VerticalAlignment="Top" Height="136" Width="114" RenderTransformOrigin="0.5,0.5">
             <Machines:DCE_DryingCentrifuge.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -275,7 +275,7 @@
             </Machines:WaterPump.RenderTransform>
         </Machines:WaterPump>
         <Machines:STR_Washing_reactor_A HorizontalAlignment="Left" Margin="197,83,0,0" VerticalAlignment="Top" Height="162" Width="104"/>
-        <Machines:VSP_SeparationTank HorizontalAlignment="Left" Margin="308,90,0,0" VerticalAlignment="Top" Height="216" Width="298"/>
+        <Machines:VSP_SeparationTank HorizontalAlignment="Left" Margin="335,93,0,0" VerticalAlignment="Top" Height="206" Width="275"/>
         <Machines:SeparationPaddle HorizontalAlignment="Left" Margin="350,135,0,0" VerticalAlignment="Top" Height="39" Width="30"/>
         <Machines:SeparationPaddle HorizontalAlignment="Left" Margin="400,135,0,0" VerticalAlignment="Top" Height="39" Width="30"/>
         <Machines:SeparationPaddle HorizontalAlignment="Left" Margin="452,135,0,0" VerticalAlignment="Top" Height="39" Width="30"/>
@@ -310,7 +310,7 @@
                 </TransformGroup>
             </Machines:SCW_ScrewConveyor_straight.RenderTransform>
         </Machines:SCW_ScrewConveyor_straight>
-        <Machines:DCE_DryingCentrifuge HorizontalAlignment="Left" Margin="922,362,0,0" VerticalAlignment="Top" Height="168" Width="133" RenderTransformOrigin="0.5,0.5">
+        <Machines:DCE_DryingCentrifuge HorizontalAlignment="Left" Margin="951,376,0,0" VerticalAlignment="Top" Height="143" Width="94" RenderTransformOrigin="0.5,0.5">
             <Machines:DCE_DryingCentrifuge.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -320,7 +320,7 @@
                 </TransformGroup>
             </Machines:DCE_DryingCentrifuge.RenderTransform>
         </Machines:DCE_DryingCentrifuge>
-        <Machines:VT_BlowerCentrifuge_down HorizontalAlignment="Left" Margin="922,341,0,0" VerticalAlignment="Top" Height="40" Width="45"/>
+        <Machines:VT_BlowerCentrifuge_down HorizontalAlignment="Left" Margin="922,341,0,0" VerticalAlignment="Top" Height="35" Width="40"/>
         <Machines:BBF_BigBagFilling HorizontalAlignment="Left" Margin="1130,542,0,0" VerticalAlignment="Top"/>
         <Labels:JumpLabel HorizontalAlignment="Left" 
             Margin="918,702,0,0" 
@@ -384,7 +384,7 @@
             VerticalAlignment="Top" 
             ComponentName="443-01-MA1"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="914,295,0,0" 
+            Margin="914,290,0,0" 
             VerticalAlignment="Top" 
             ComponentName="443-02-MA1"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 

@@ -5,7 +5,7 @@
              xmlns:local="clr-namespace:Prevu.Synoptics"
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             x:Class="Prevu.Synoptics.018" mc:Ignorable="d"
+             x:Class="Prevu.Synoptics.S018" mc:Ignorable="d"
              Height="840" Width="1420" d:Background="{DynamicResource MaterialDesignPaper}">
     <Grid RenderTransformOrigin="0.5,0.5">
         <Grid.RenderTransform>
@@ -110,16 +110,6 @@
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
         <Labels:Pipe HorizontalAlignment="Left" Margin="1230,438,0,0" VerticalAlignment="Top" Width="120" StatusComponent="031-01-MA1" PipeHeight="Medium"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="918,472,0,0" VerticalAlignment="Top" Width="36" StatusComponent="030-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
         <Labels:Pipe HorizontalAlignment="Left" Margin="508,672,0,0" VerticalAlignment="Top" Width="238" StatusComponent="031-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Loaded="Pipe_Loaded" Height="10">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -325,7 +315,6 @@
         <Machines:Manual_selection HorizontalAlignment="Left" Margin="1106,364,0,0" VerticalAlignment="Top" Height="80" Width="38"/>
         <Machines:Buffer_belt HorizontalAlignment="Left" Margin="584,741,0,0" VerticalAlignment="Top" Height="70" Width="192"/>
         <Rectangle HorizontalAlignment="Left" Height="95" Margin="841,376,0,0" VerticalAlignment="Top" Width="196" Fill="Gray" RadiusX="15" RadiusY="15"/>
-        <Machines:Waste HorizontalAlignment="Left" Margin="914,475,0,0" VerticalAlignment="Top" Height="46" Width="44"/>
         <Machines:Radar HorizontalAlignment="Left" Margin="378,257,0,0" VerticalAlignment="Top" Height="36" Width="31"/>
         <Rectangle HorizontalAlignment="Left" Height="70" Margin="345,557,0,0" VerticalAlignment="Top" Width="47" Fill="Gray" RadiusX="15" RadiusY="15"/>
         <Machines:WaterPump HorizontalAlignment="Left" Margin="296,498,0,0" VerticalAlignment="Top" Height="70" Width="50" RenderTransformOrigin="0.5,0.5" Color="Water">
@@ -445,5 +434,10 @@
             Margin="276,458,0,0" 
             VerticalAlignment="Top" 
             ComponentName="020-02-MA1"/>
+        <Machines:Radar HorizontalAlignment="Left" Margin="588,689,0,0" VerticalAlignment="Top" Height="36" Width="31"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+            Margin="500,650,0,0" 
+            VerticalAlignment="Top" 
+            ComponentName="032-41-LT1"/>
     </Grid>
 </UserControl>
