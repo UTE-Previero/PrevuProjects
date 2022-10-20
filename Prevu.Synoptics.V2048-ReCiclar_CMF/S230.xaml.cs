@@ -16,21 +16,11 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for GR1.xaml
     /// </summary>
-    public partial class GR1 : UserControl
+    public partial class S230 : UserControl
     {
-        public GR1()
+        public S230()
         {
             InitializeComponent();
-        }
-
-        private void SignalLabel_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void MU_Grinder_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

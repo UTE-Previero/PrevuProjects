@@ -17,9 +17,9 @@ namespace Prevu.Synoptics;
 /// <summary>
 /// Interaction logic for WH3.xaml
 /// </summary>
-public partial class WH3 : UserControl
+public partial class S371 : UserControl
 {
-  public WH3()
+  public S371()
   {
     InitializeComponent();
   }

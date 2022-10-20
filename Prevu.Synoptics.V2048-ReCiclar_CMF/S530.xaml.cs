@@ -16,9 +16,9 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for WH2.xaml
     /// </summary>
-    public partial class WH2 : UserControl
+    public partial class S530 : UserControl
     {
-        public WH2()
+        public S530()
         {
             InitializeComponent();
         }
