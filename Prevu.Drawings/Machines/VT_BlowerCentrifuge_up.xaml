@@ -4,15 +4,24 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Drawings.Machines"
-             mc:Ignorable="d" Width="100" Height="100">
-  <Viewbox  Stretch="Uniform">
-    <Canvas Name="svg6" Width="100" Height="100">
-      <Path  Name="path2" Fill="Gray" Effect="{DynamicResource MaterialDesignShadowDepth1}">
-        <Path.Data>
-          <PathGeometry Figures="M80 50C80 59.7511 76.0124 68.5709 69.5788 74.9175C69.1478 75.3427 69.1667 76.0507 69.6335 76.4363L77.8562 83.229C78.5789 83.8261 78.1568 85 77.2193 85H11C10.4477 85 10 84.5523 10 84V82C10 81.4477 9.55228 81 9 81C8.44772 81 8 80.5523 8 80V79C8 78.4477 7.55228 78 7 78H6C5.44772 78 5 77.5523 5 77V44C5 43.4477 5.44772 43 6 43H7C7.55228 43 8 42.5523 8 42V41C8 40.4477 8.44772 40 9 40H10.7037C11.1461 40 11.5347 39.708 11.67 39.2868C16.1953 25.1971 29.4068 15 45 15H96C96.5523 15 97 15.4477 97 16V30.237C97 30.6876 96.6986 31.0825 96.264 31.2015L78.3622 36.1023C77.779 36.2619 77.4709 36.8981 77.6875 37.4626C79.1814 41.3549 80 45.5819 80 50Z" FillRule="NonZero"/>
-        </Path.Data>
-      </Path>
-      <Ellipse  Canvas.Left="22" Canvas.Top="28" Width="45" Height="45" Name="circle4" Fill="#FF607D8B" Effect="{DynamicResource MaterialDesignShadowDepth1}"/>
-    </Canvas>
-  </Viewbox>
+             mc:Ignorable="d" Width="100" Height="100" Effect="{DynamicResource MaterialDesignShadowDepth1}">
+	<Viewbox Stretch="Uniform">
+		<Canvas Name="svg13" Width="100" Height="77">
+			<Canvas.RenderTransform>
+				<TranslateTransform X="0" Y="0"/>
+			</Canvas.RenderTransform>
+			<Canvas.Resources>
+				<RectangleGeometry x:Key="clip0_17_8" Rect="0, 0, 100, 76.087"/>
+			</Canvas.Resources>
+			<Canvas Name="g6" Clip="{StaticResource clip0_17_8}">
+				<Path Name="path2" Fill="#FF808080">
+					<Path.Data>
+						<PathGeometry Figures="M78.6949 55.6521C77.9525 55.546 77.5376 54.7373 77.8598 54.06C80.1853 49.1712 81.5217 43.84 81.5217 38.0435C81.5217 17.0326 64.4891 0 43.4783 0C26.5291 0 12.1688 11.0838 7.25003 26.3987C7.10298 26.8565 6.68052 27.1739 6.19963 27.1739H4.34783C3.74752 27.1739 3.26087 27.6606 3.26087 28.2609V29.3478C3.26087 29.9481 2.77422 30.4348 2.17391 30.4348H1.08696C0.486647 30.4348 0 30.9214 0 31.5217V67.3913C0 67.9916 0.486646 68.4783 1.08696 68.4783H2.17391C2.77422 68.4783 3.26087 68.9649 3.26087 69.5652V70.6522C3.26087 71.2525 3.74752 71.7391 4.34783 71.7391V71.7391C4.94814 71.7391 5.43478 72.2258 5.43478 72.8261V75C5.43478 75.6003 5.92143 76.087 6.52174 76.087H98.913C99.5134 76.087 100 75.6003 100 75V59.6384C100 59.0974 99.6022 58.6388 99.0668 58.5623L78.6949 55.6521Z" FillRule="NonZero"/>
+					</Path.Data>
+				</Path>
+				<Ellipse Canvas.Left="18.5" Canvas.Top="14.1" Width="48.9" Height="48.9" Name="circle4" Fill="#FF607D8B"
+								  Effect="{DynamicResource MaterialDesignShadowDepth1}"/>
+			</Canvas>
+		</Canvas>
+	</Viewbox>
 </UserControl>
