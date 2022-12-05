@@ -628,7 +628,7 @@
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_SYS_32" xml:space="preserve">
-    <value></value>
+    <value>Hardware Fault On Plc-Safty Input Card. Ensure No Short Circuits Are Present In Field On Estop Channels Or Bad Connections On Estop Knobs. Check The Safety Plc Input Module, Reset The Alarm And/Or Reboot The Plc Module</value>
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_OVL_1" xml:space="preserve">
@@ -980,7 +980,7 @@
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_RES_1" xml:space="preserve">
-    <value>Safety Thermistor Tripped ! Check The Dryer For Any Possible Material Blockage, Thermoregualtion, Air Filter…</value>
+    <value>Safety Thermistor Tripped ! Check The Dryer For Any Possible Material Blockage, Thermoregulation Air Filter</value>
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_RES_2" xml:space="preserve">
@@ -1348,8 +1348,8 @@
     <value>New Alarm</value>
     <comment>Component Status</comment>
   </data>
-  <data name="PLANT VIEW" xml:space="preserve">
-    <value>Plant View</value>
+  <data name="PLANT OVERVIEW" xml:space="preserve">
+    <value>Plant Overview</value>
   </data>
   <data name="PRODUCTION CYCLE" xml:space="preserve">
     <value>Prodution Line</value>
@@ -1973,7 +1973,7 @@
     <value>To Page</value>
   </data>
   <data name="INFO_INV_6" xml:space="preserve">
-    <value></value>
+    <value>Check Profinet Cable Connection And The Power Supply Of Inverter Communication Card</value>
     <comment>InfoText Fault</comment>
   </data>
   <data name="MINOR FAULT PRESENT" xml:space="preserve">
@@ -2170,11 +2170,11 @@
     <value>Inverter In Local Mode</value>
   </data>
   <data name="INFO_INV_4" xml:space="preserve">
-    <value></value>
+    <value>Set Inverter In Remote Mode To Allow Any Further Operation On It From Pc Station.</value>
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_ETHERNET_1" xml:space="preserve">
-    <value></value>
+    <value>Check The Ethernet Switch, Its Supply And Connections</value>
     <comment>InfoText Fault</comment>
   </data>
   <data name="(1=NOT PUSHED)" xml:space="preserve">
@@ -2214,7 +2214,7 @@
     <value>Position Closed Not Ok</value>
   </data>
   <data name="INFO_LS_15" xml:space="preserve">
-    <value></value>
+    <value>Check The Valve Position, Pressure In The Pipes And Limit Switch Position</value>
     <comment>InfoText Fault</comment>
   </data>
   <data name="MOTOR OVERHEAT" xml:space="preserve">
@@ -2231,16 +2231,12 @@
     <value>Both Valves Are Not Fully Closed - Tank Emptiyng!</value>
   </data>
   <data name="INFO_GT_VALVES_1" xml:space="preserve">
-    <value></value>
+    <value>Close At Least One Of The Discharge Valves To Prevent Tank Complete Emptying. Check The Valves In The Field.</value>
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_INV_7" xml:space="preserve">
-    <value></value>
+    <value>Check Inverter Status In The Cabinet</value>
     <comment>InfoText Fault</comment>
-  </data>
-  <data name="DB_INIT" xml:space="preserve">
-    <value></value>
-    <comment>???</comment>
   </data>
   <data name="RETURN VALUE" xml:space="preserve">
     <value>Return Value</value>
@@ -2496,11 +2492,11 @@
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_INV_5" xml:space="preserve">
-    <value></value>
+    <value>Alarm Is Present On Inverter Display. Please Check It For The Actions To Be Done Reffering To The Inverter User Manual.</value>
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_INV_3" xml:space="preserve">
-    <value></value>
+    <value>Check For Mechanical Blockage Or Too Much Heavy Load Occured To The Motor.</value>
     <comment>InfoText Fault</comment>
   </data>
   <data name="CONCENTRATION SENSOR OVERLOAD" xml:space="preserve">
@@ -2525,7 +2521,7 @@
     <value>Minimum Concentration Not Ok</value>
   </data>
   <data name="INFO_LS_14" xml:space="preserve">
-    <value></value>
+    <value>Check The Valve Position Limit Switches, Their Position And Wiring</value>
     <comment>InfoText Fault</comment>
   </data>
   <data name="(1=&lt;MAX)" xml:space="preserve">
@@ -2550,7 +2546,7 @@
     <value>Inaccurate Sensor Reading (Sensor To Be Cleaned?)</value>
   </data>
   <data name="INFO_SENSOR_READ_1" xml:space="preserve">
-    <value></value>
+    <value>Check The Sensor In The Field And Clean It</value>
     <comment>InfoText Fault</comment>
   </data>
   <data name="(1=BRT IN AUTO MODE)" xml:space="preserve">
@@ -3070,5 +3066,121 @@
   </data>
   <data name="CRITICAL ALARM PRESENT    (IF  FALSE --&gt; NO  PROD START)" xml:space="preserve">
     <value>Critical Alarm Present    (If  False --&gt; No  Prod Start)</value>
+  </data>
+  <data name="INFO_PRES_10" xml:space="preserve">
+    <value>Check For A Possible Blockage Of Heat Exchanger And Configuration Of Setups</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_PRES_11" xml:space="preserve">
+    <value>Check For A Possible Leakage Of Heat Exchanger/Pipes And Configuration Of Setups</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_MIXER_1" xml:space="preserve">
+    <value>Check Water Circuit, Refill Valve, Pipes And Water Pump. Possible Leakage Or Lack Of Water.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_MIXER_2" xml:space="preserve">
+    <value>Check For A Possible Blockage At The Dicharge Valve Of The Mixer, Valve Air Pressure And Discharge Pump.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_MIXER_3" xml:space="preserve">
+    <value>Check The Mixer Filling And Contact Online Assistance Of Manufacturer -Mixer Is Automatically Disabled</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_LEVEL_18" xml:space="preserve">
+    <value>Check Levels Parameter In The Water Loop Circuit</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_MIXER_4" xml:space="preserve">
+    <value>Check For Mixer Overload Of Material Or Mixer Current Control Settings</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_GT_VALVES_2" xml:space="preserve">
+    <value>Discharge Cycle Cannot Go On. Check The Valve Position Ls Are Working And Placed  In The Right Position And No Valve Blockage Is Occured.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_PST_1" xml:space="preserve">
+    <value>Check The Levels Of The Chemical Additives In The Tanks And Dosing System For A Leakage Or A Lack Of Air Pressure</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_PST_2" xml:space="preserve">
+    <value>Check The Water Pressure And Dosing System For A Possible Leakage Or A Lack Of Air Pressure</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_PST_3" xml:space="preserve">
+    <value>Check The Bowl Position Sensor</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_PST_4" xml:space="preserve">
+    <value>Check The Levels Of The Chemical Additives In The Tanks, The Water Pressure And Dosing System For A Leakage Or A Lack Of Air Pressure</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_TEMPER_12" xml:space="preserve">
+    <value>Gearbox Is Overheated: Check Cooling System. If Temperature Increases Again, Main Motor Will Be Stopped.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_TEMPER_13" xml:space="preserve">
+    <value>Gearbox Is Highly Overheated. Main Motor Is Stopped. Check The Whole Gearbox, Its Cooling, And Do The Needed Maintenance.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_PRES_12" xml:space="preserve">
+    <value>Check Inlet Steam System - Pressure Is Too High - Pressure Fluctuations May Cause Desease On Thermal Regulation</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_PRES_13" xml:space="preserve">
+    <value>Check Inlet Steam System - Pressure Is Too Low - Pressure Fluctuations May Cause Desease On Thermal Regulation</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="UserManagement" xml:space="preserve">
+    <value>Users Management</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="ResetFaults" xml:space="preserve">
+    <value>Reset Faults</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="OperatingSystemAccess" xml:space="preserve">
+    <value>Operating System Access</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="InfoPanel" xml:space="preserve">
+    <value>Info Panel</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="TrendLogs" xml:space="preserve">
+    <value>Trends Page</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="TrendExport" xml:space="preserve">
+    <value>Trends Export</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="EventLogs" xml:space="preserve">
+    <value>Events Logged</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="CyclesPanel" xml:space="preserve">
+    <value>Cycles Panel</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="SignalsPanel" xml:space="preserve">
+    <value>Signals Panel</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="ParameterManagement" xml:space="preserve">
+    <value>Parameter Management Page</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="PlcPage" xml:space="preserve">
+    <value>PLC Rack Page</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="ElectricalDrawing" xml:space="preserve">
+    <value>Electrical Drawing Page</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="PlantOverview" xml:space="preserve">
+    <value>Plant Overview</value>
+    <comment>SystemPermissions</comment>
   </data>
 </root>
