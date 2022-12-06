@@ -4,14 +4,27 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Drawings.Machines"
-             mc:Ignorable="d" Width="100" Height="100">
-  <Viewbox  Stretch="Uniform">
-    <Canvas Name="svg4" Width="84" Height="42">
-      <Path  Name="path2" Fill="#FFBDBDBD" Effect="{DynamicResource MaterialDesignShadowDepth1}" Height="38" Stretch="Fill" Canvas.Left="2" Canvas.Top="2">
-        <Path.Data>
-          <PathGeometry Figures="M90 33C90 31.8954 89.1046 31 88 31H12C10.8954 31 10 31.8954 10 33V50.9843C10 51.4109 10.1364 51.8263 10.3893 52.1699L22.1783 68.1856C22.5552 68.6977 23.1532 69 23.789 69H59.3993C59.8597 69 60.306 68.8412 60.6628 68.5503L89.2635 45.2413C89.7295 44.8614 90 44.2921 90 43.6909V33Z" FillRule="NonZero"/>
-        </Path.Data>
-      </Path>
-    </Canvas>
-  </Viewbox>
+             mc:Ignorable="d" Width="100" Height="100" Effect="{DynamicResource MaterialDesignShadowDepth1}">
+	<Viewbox Stretch="Uniform">
+		<Canvas Name="svg11" Width="100" Height="49">
+			<Canvas.RenderTransform>
+				<TranslateTransform X="0" Y="0"/>
+			</Canvas.RenderTransform>
+			<Canvas.Resources>
+				<RectangleGeometry x:Key="clip0_10_0" Rect="0, 0, 100, 47.5">
+					<RectangleGeometry.Transform>
+						<TranslateTransform X="0" Y="0.75"/>
+					</RectangleGeometry.Transform>
+				</RectangleGeometry>
+			</Canvas.Resources>
+			<Canvas Name="g4" Clip="{StaticResource clip0_10_0}">
+				<Path Name="path2" Fill="#FF808080">
+					<Path.Data>
+						<PathGeometry Figures="M100 3.25C100 1.86929 98.8807 0.75 97.5 0.75H2.5C1.11929 0.75 0 1.86929 0 3.25V25.7304C0 26.2636 0.170516 26.7829 0.486638 27.2124L15.2229 47.232C15.694 47.8721 16.4415 48.25 17.2363 48.25H61.7492C62.3246 48.25 62.8825 48.0515 63.3286 47.6879L99.0794 18.5516C99.6619 18.0768 100 17.3652 100 16.6136V3.25Z" FillRule="NonZero"/>
+					</Path.Data>
+				</Path>
+			</Canvas>
+		</Canvas>
+	</Viewbox>
+
 </UserControl>

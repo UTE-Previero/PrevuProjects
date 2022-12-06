@@ -3,44 +3,49 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Prevu.Drawings.Machines"
+             xmlns:local="clr-namespace:Prevu.Drawings.Machines" 
+						 Effect="{StaticResource MaterialDesignShadowDepth1}"
              mc:Ignorable="d" Width="100" Height="100">
-  
-  <Viewbox  Stretch="Uniform">
-    <Canvas Name="svg18" Width="100" Height="100">
-      <Rectangle  Canvas.Left="37" Canvas.Top="7" Width="3" Height="8" Name="rect4" Fill="#FF757575" Effect="{DynamicResource MaterialDesignShadowDepth1}"/>
-      <Rectangle  Canvas.Left="60" Canvas.Top="7" Width="3" Height="8" Name="rect6" Fill="#FF757575" Effect="{DynamicResource MaterialDesignShadowDepth1}"/>
-      <Rectangle  Canvas.Left="30" Canvas.Top="15" Width="40" Height="69" RadiusX="7" RadiusY="7" Name="rect2" Fill="#FFBDBDBD" Effect="{DynamicResource MaterialDesignShadowDepth2}"/>
-      <Grid Effect="{DynamicResource MaterialDesignShadowDepth1}">
-        <Path  Name="path8" Fill="#FF607D8B" >
-          <Path.Data>
-            <PathGeometry Figures="M88 6C88 4.89543 87.1046 4 86 4H14C12.8954 4 12 4.89543 12 6V7V85.5C12 86.3284 12.6716 87 13.5 87C14.3284 87 15 86.3284 15 85.5V9C15 7.89543 15.8954 7 17 7H83C84.1046 7 85 7.89543 85 9V85.5C85 86.3284 85.6716 87 86.5 87C87.3284 87 88 86.3284 88 85.5V7V6Z" FillRule="EvenOdd"/>
-          </Path.Data>
-        </Path>
-        <Path  Name="path10" Fill="#FF607D8B">
-          <Path.Data>
-            <PathGeometry Figures="M11.7236 84.5528C11.893 84.214 12.2393 84 12.618 84H14.382C14.7607 84 15.107 84.214 15.2764 84.5528L18.2764 90.5528C18.6088 91.2177 18.1253 92 17.382 92H9.61803C8.87465 92 8.39116 91.2177 8.72361 90.5528L11.7236 84.5528Z" FillRule="NonZero"/>
-          </Path.Data>
-        </Path>
-        <Path  Name="path14" Fill="#FF607D8B">
-          <Path.Data>
-            <PathGeometry Figures="M84.7236 84.5528C84.893 84.214 85.2393 84 85.618 84H87.382C87.7607 84 88.107 84.214 88.2764 84.5528L91.2764 90.5528C91.6088 91.2177 91.1253 92 90.382 92H82.618C81.8747 92 81.3912 91.2177 81.7236 90.5528L84.7236 84.5528Z" FillRule="NonZero"/>
-          </Path.Data>
-        </Path>
-      </Grid>
 
-      <Path  Name="path12" Fill="#FF455A64" Effect="{DynamicResource MaterialDesignShadowDepth1}">
-        <Path.Data>
-          <PathGeometry Figures="M13.5 84L14 92H13L13.5 84Z" FillRule="NonZero"/>
-        </Path.Data>
-      </Path>
-
-      <Path  Name="path16" Fill="#FF455A64" Effect="{DynamicResource MaterialDesignShadowDepth1}">
-        <Path.Data>
-          <PathGeometry Figures="M86.5 84L87 92H86L86.5 84Z" FillRule="NonZero"/>
-        </Path.Data>
-      </Path>
-    </Canvas>
-  </Viewbox>
+	<Viewbox Stretch="Uniform">
+		<Canvas Name="svg25" Width="84" Height="88">
+			<Canvas.RenderTransform>
+				<TranslateTransform X="0" Y="0"/>
+			</Canvas.RenderTransform>
+			<Canvas.Resources>
+				<RectangleGeometry x:Key="clip0_17_62" Rect="0, 0, 84, 88"/>
+			</Canvas.Resources>
+			<Canvas Name="g18" Clip="{StaticResource clip0_17_62}">
+				<Rectangle Canvas.Left="22" Canvas.Top="11" Width="40" Height="69" RadiusX="7" RadiusY="7" Name="rect2" Fill="#FF808080"/>
+				<Rectangle Canvas.Left="29" Canvas.Top="3" Width="3" Height="8" Name="rect4" Fill="#000000"/>
+				<Rectangle Canvas.Left="52" Canvas.Top="3" Width="3" Height="8" Name="rect6" Fill="#000000"/>
+				<Path Name="path8" Fill="#FF607D8B">
+					<Path.Data>
+						<PathGeometry Figures="M80 2C80 0.895431 79.1046 0 78 0H6C4.89543 0 4 0.895431 4 2V3V81.5C4 82.3284 4.67157 83 5.5 83C6.32843 83 7 82.3284 7 81.5V5C7 3.89543 7.89543 3 9 3H75C76.1046 3 77 3.89543 77 5V81.5C77 82.3284 77.6716 83 78.5 83C79.3284 83 80 82.3284 80 81.5V3V2Z" FillRule="EvenOdd"/>
+					</Path.Data>
+				</Path>
+				<Path Name="path10" Fill="#FF607D8B">
+					<Path.Data>
+						<PathGeometry Figures="M3.72361 80.5528C3.893 80.214 4.23926 80 4.61803 80H6.38197C6.76074 80 7.107 80.214 7.27639 80.5528L10.2764 86.5528C10.6088 87.2177 10.1253 88 9.38197 88H1.61803C0.874652 88 0.391156 87.2177 0.723607 86.5528L3.72361 80.5528Z" FillRule="NonZero"/>
+					</Path.Data>
+				</Path>
+				<Path Name="path12" Fill="#FF455A64">
+					<Path.Data>
+						<PathGeometry Figures="M5.5 80L6 88H5L5.5 80Z" FillRule="NonZero"/>
+					</Path.Data>
+				</Path>
+				<Path Name="path14" Fill="#FF607D8B">
+					<Path.Data>
+						<PathGeometry Figures="M76.7236 80.5528C76.893 80.214 77.2393 80 77.618 80H79.382C79.7607 80 80.107 80.214 80.2764 80.5528L83.2764 86.5528C83.6088 87.2177 83.1253 88 82.382 88H74.618C73.8747 88 73.3912 87.2177 73.7236 86.5528L76.7236 80.5528Z" FillRule="NonZero"/>
+					</Path.Data>
+				</Path>
+				<Path Name="path16" Fill="#FF455A64">
+					<Path.Data>
+						<PathGeometry Figures="M78.5 80L79 88H78L78.5 80Z" FillRule="NonZero"/>
+					</Path.Data>
+				</Path>
+			</Canvas>
+		</Canvas>
+	</Viewbox>
 
 </UserControl>

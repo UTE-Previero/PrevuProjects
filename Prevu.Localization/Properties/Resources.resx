@@ -628,7 +628,7 @@
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_SYS_32" xml:space="preserve">
-    <value></value>
+    <value>Hardware Fault On Plc-Safty Input Card. Ensure No Short Circuits Are Present In Field On Estop Channels Or Bad Connections On Estop Knobs. Check The Safety Plc Input Module, Reset The Alarm And/Or Reboot The Plc Module</value>
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_OVL_1" xml:space="preserve">
@@ -980,7 +980,7 @@
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_RES_1" xml:space="preserve">
-    <value>Safety Thermistor Tripped ! Check The Dryer For Any Possible Material Blockage, Thermoregualtion, Air Filter…</value>
+    <value>Safety Thermistor Tripped ! Check The Dryer For Any Possible Material Blockage, Thermoregulation Air Filter</value>
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_RES_2" xml:space="preserve">
@@ -1348,7 +1348,1839 @@
     <value>New Alarm</value>
     <comment>Component Status</comment>
   </data>
-  <data name="" xml:space="preserve">
+  <data name="PLANT OVERVIEW" xml:space="preserve">
+    <value>Plant Overview</value>
+  </data>
+  <data name="PRODUCTION CYCLE" xml:space="preserve">
+    <value>Prodution Line</value>
+  </data>
+  <data name="STOP CYCLE ON" xml:space="preserve">
+    <value>Stop Cycle ON</value>
+  </data>
+  <data name="STOP CYCLE PENDING" xml:space="preserve">
+    <value>Stop Cycle Pending</value>
+  </data>
+  <data name="ZONE PREPARED" xml:space="preserve">
+    <value>Zone Prepared</value>
+  </data>
+  <data name="MAINTENANCE MODE" xml:space="preserve">
+    <value>Maintenance Mode</value>
+  </data>
+  <data name="DISABLED MODE" xml:space="preserve">
+    <value>Disabled Mode</value>
+  </data>
+  <data name="ESTOP NOT OK" xml:space="preserve">
+    <value>Estop Not OK</value>
+  </data>
+  <data name="ESTOP OK" xml:space="preserve">
+    <value>Estop OK</value>
+  </data>
+  <data name="AUTOMATIC MODE" xml:space="preserve">
+    <value>Automatic Mode</value>
+  </data>
+  <data name="DETAILS" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="CREATE NEW USER GROUP" xml:space="preserve">
+    <value>Create New User Group</value>
+  </data>
+  <data name="PASSWORD" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="SAVE ALL" xml:space="preserve">
+    <value>Save All</value>
+  </data>
+  <data name="ELECTRICAL DRAWING" xml:space="preserve">
+    <value>Electrical Drawing</value>
+  </data>
+  <data name="LOADING" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="PROGRESS" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="WEIGHT" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="FLOWRATE" xml:space="preserve">
+    <value>Flowrate</value>
+  </data>
+  <data name="REFERENCE" xml:space="preserve">
+    <value>Reference</value>
+  </data>
+  <data name="PRESSURE" xml:space="preserve">
+    <value>Pressure</value>
+  </data>
+  <data name="EVENT PAGE" xml:space="preserve">
+    <value>Event Page</value>
+  </data>
+  <data name="CRITICAL ALARM!" xml:space="preserve">
+    <value>Critical Alarm!</value>
+  </data>
+  <data name="CRITICAL FAULT PRESENT" xml:space="preserve">
+    <value>Critical Fault Present</value>
+  </data>
+  <data name="FULL RANGE ADJUST" xml:space="preserve">
+    <value>Full Range Adjust</value>
+  </data>
+  <data name="MOTOR CURRENT" xml:space="preserve">
+    <value>Motor Current</value>
+  </data>
+  <data name="SENSOR ID" xml:space="preserve">
+    <value>Sensor ID</value>
+  </data>
+  <data name="ELECTRICAL ID" xml:space="preserve">
+    <value>Electrical ID</value>
+  </data>
+  <data name="OK STATUS" xml:space="preserve">
+    <value>Ok Status</value>
+  </data>
+  <data name="EL. DRAWING" xml:space="preserve">
+    <value>El. Drawing</value>
+  </data>
+  <data name="MOTOR TEMPERATURE" xml:space="preserve">
+    <value>Motor Temperature</value>
+  </data>
+  <data name="OVERLOAD PROTECTION" xml:space="preserve">
+    <value>Overload Protection</value>
+  </data>
+  <data name="COMMAND ON" xml:space="preserve">
+    <value>Command ON</value>
+  </data>
+  <data name="NO CRITICAL FAULT" xml:space="preserve">
+    <value>No Critical Fault</value>
+  </data>
+  <data name="NO MINOR FAULT" xml:space="preserve">
+    <value>No Minor Fault</value>
+  </data>
+  <data name="LOCAL DISCONNECT" xml:space="preserve">
+    <value>Local Disconnect</value>
+  </data>
+  <data name="COMPONENT ENABLED" xml:space="preserve">
+    <value>Component Enabled</value>
+  </data>
+  <data name="RUN AUTO INTERLOCKS" xml:space="preserve">
+    <value>Run Auto Interlocks</value>
+  </data>
+  <data name="START AUTO INTERLOCKS" xml:space="preserve">
+    <value>Start Auto Interlocks</value>
+  </data>
+  <data name="NO-STOP AUTO INTERLOCKS" xml:space="preserve">
+    <value>Auto Interlocks - No Stop</value>
+  </data>
+  <data name="OVERLOAD MINIMUM TIME EXPIRED" xml:space="preserve">
+    <value>Overload Minimum Temperature Expired</value>
+  </data>
+  <data name="UPSTREAM SAFETY" xml:space="preserve">
+    <value>Upsream Safety</value>
+  </data>
+  <data name="DOWNSTREAM SAFETY" xml:space="preserve">
+    <value>Downstream Safety</value>
+  </data>
+  <data name="MINIMUM RESTART TIME" xml:space="preserve">
+    <value>Minimum Restart Time</value>
+  </data>
+  <data name="CURRENT OK FOR MATERIAL" xml:space="preserve">
+    <value>Current OK for material</value>
+  </data>
+  <data name="PLC CONNECTION LOST!" xml:space="preserve">
+    <value>PLC Connection Lost!</value>
+  </data>
+  <data name="SERVER CONNECTION LOST!" xml:space="preserve">
+    <value>Server Connection Lost!</value>
+  </data>
+  <data name="PLC SIMULATION" xml:space="preserve">
+    <value>PLC Simulation</value>
+  </data>
+  <data name="TIME CYCLE" xml:space="preserve">
+    <value>Time Cycle</value>
+  </data>
+  <data name="COMMAND OPEN" xml:space="preserve">
+    <value>Command Open</value>
+  </data>
+  <data name="UPSTREAM SAFETY (FALSE --&gt; RESET ENABLE)" xml:space="preserve">
+    <value>Upstream Safety (False --&gt; Reset Enable)</value>
+  </data>
+  <data name="DOWNSTREAM SAFETY (FALSE --&gt; RESET ENABLE)" xml:space="preserve">
+    <value>Downstream Safety (False --&gt; Reset Enable)</value>
+  </data>
+  <data name="MINIMUM OFF TIME OK FOR VALVE RESTART" xml:space="preserve">
+    <value>Minimum Off Time Ok For Valve Restart</value>
+  </data>
+  <data name="ON TIME ABOVE ZERO" xml:space="preserve">
+    <value>On Time Above Zero</value>
+  </data>
+  <data name="PAUSE TIME ENABLED" xml:space="preserve">
+    <value>Pause Time Enabled</value>
+  </data>
+  <data name="NOT IN PAUSE PHASE" xml:space="preserve">
+    <value>Not in Pause Phase</value>
+  </data>
+  <data name="COMMAND LINE" xml:space="preserve">
+    <value>Command Line</value>
+  </data>
+  <data name="COMMAND STAR" xml:space="preserve">
+    <value>Command Star</value>
+  </data>
+  <data name="COMMAND DELTA" xml:space="preserve">
+    <value>Command Delta</value>
+  </data>
+  <data name="NO DECELERATION" xml:space="preserve">
+    <value>No Deceleration</value>
+  </data>
+  <data name="SPEED SETPOINT" xml:space="preserve">
+    <value>Speed Setpoint</value>
+  </data>
+  <data name="INVERTER STATUS" xml:space="preserve">
+    <value>Inverter Status</value>
+  </data>
+  <data name="INVERTER RUNNING" xml:space="preserve">
+    <value>Inverter Running</value>
+  </data>
+  <data name="SAFETY" xml:space="preserve">
+    <value>Safety</value>
+  </data>
+  <data name="INVERTER POWER UP" xml:space="preserve">
+    <value>Inverter Power Up</value>
+  </data>
+  <data name="TEACH" xml:space="preserve">
+    <value>Teach</value>
+  </data>
+  <data name="EMPTY" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="MEASURE CONTROL" xml:space="preserve">
+    <value>Measure Control</value>
+  </data>
+  <data name="HOPPER LEVEL" xml:space="preserve">
+    <value>Hopper Level</value>
+  </data>
+  <data name="OK FOR PROCESS" xml:space="preserve">
+    <value>Ok For Process</value>
+  </data>
+  <data name="_OK_FOR_PROCESS" xml:space="preserve">
+    <value>Ok For Process</value>
+  </data>
+  <data name="GREASE MINIMUM LEVEL" xml:space="preserve">
+    <value>Grease Minimum Level</value>
+  </data>
+  <data name="PULL-CORD SAFETY" xml:space="preserve">
+    <value>Pull-Cord Safety</value>
+  </data>
+  <data name="COOLING OVERLOAD PROTECTION" xml:space="preserve">
+    <value>Cooling Overload Protection</value>
+  </data>
+  <data name="MECHANICAL OVERLOAD (REACTION ARM)" xml:space="preserve">
+    <value>Mechanical Overload (Reaction Arm)</value>
+  </data>
+  <data name="COMMAND RUN" xml:space="preserve">
+    <value>Command Run</value>
+  </data>
+  <data name="COOLING COMMAND ON" xml:space="preserve">
+    <value>Cooling Command On</value>
+  </data>
+  <data name="LOCAL SELECTOR" xml:space="preserve">
+    <value>Local Selector</value>
+  </data>
+  <data name="LAMP GREEN" xml:space="preserve">
+    <value>Lamp Green</value>
+  </data>
+  <data name="LAMP RED" xml:space="preserve">
+    <value>Lamp Red</value>
+  </data>
+  <data name="LOCAL ENABLE SELECTOR" xml:space="preserve">
+    <value>Local Enable Selector</value>
+  </data>
+  <data name="MAXIMUM LEVEL" xml:space="preserve">
+    <value>Maximum Level</value>
+  </data>
+  <data name="SEMIAUTO MODE" xml:space="preserve">
+    <value>Semiauto Mode</value>
+  </data>
+  <data name="SILO LEVEL" xml:space="preserve">
+    <value>Silo Level</value>
+  </data>
+  <data name="MATERIAL IN THE PROCESS" xml:space="preserve">
+    <value>Material In The Process</value>
+  </data>
+  <data name="CLOSE" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="POSITION" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="POSITION OPEN" xml:space="preserve">
+    <value>Position Open</value>
+  </data>
+  <data name="POSITION CLOSED" xml:space="preserve">
+    <value>Position Closed</value>
+  </data>
+  <data name="COMMAND CLOSE" xml:space="preserve">
+    <value>Command Close</value>
+  </data>
+  <data name="OPPOSITE VALVE OK TO OPEN" xml:space="preserve">
+    <value>Opposite Valve Ok To Open</value>
+  </data>
+  <data name="VALVE FULLY CLOSED" xml:space="preserve">
+    <value>Valve Fully Closed</value>
+  </data>
+  <data name="CYLINDER PRESSURE AVAILABLE" xml:space="preserve">
+    <value>Cylinder Pressure Available</value>
+  </data>
+  <data name="MINIMUM LEVEL OK FOR PUMPING" xml:space="preserve">
+    <value>Minimum Level Ok For Pumping</value>
+  </data>
+  <data name="DOWNSTREAM DESTINATION OK/READY TO RECEIVE" xml:space="preserve">
+    <value>Downstream Destination Ok/Ready To Receive</value>
+  </data>
+  <data name="WEIGHT CONTROL" xml:space="preserve">
+    <value>Weight Control</value>
+  </data>
+  <data name="BOWL WEIGHT" xml:space="preserve">
+    <value>Bowl Weight</value>
+  </data>
+  <data name="BOWL FILLING POSITION" xml:space="preserve">
+    <value>Bowl Filling Position</value>
+  </data>
+  <data name="ACS - DOSING CYCLE BY WEIGHT" xml:space="preserve">
+    <value>ACS - Dosing Cycle By Weight</value>
+  </data>
+  <data name="ACS - DOSING CYCLE BY TIME" xml:space="preserve">
+    <value>ACS - Dosing Cycle By Time</value>
+  </data>
+  <data name="DOSING" xml:space="preserve">
+    <value>Dosing</value>
+  </data>
+  <data name="TARGETS" xml:space="preserve">
+    <value>Targets</value>
+  </data>
+  <data name="BOWL IN FILLING POSITION" xml:space="preserve">
+    <value>Bowl In Filling Position</value>
+  </data>
+  <data name="WASHING TANK BELOW MAXIMUM LEVEL" xml:space="preserve">
+    <value>Washing Tank Below Maximum Level</value>
+  </data>
+  <data name="WASHING TEMPERATURE OVER MINIMUM TEMPERATURE" xml:space="preserve">
+    <value>Washing Temperature Over Minimum Temperature</value>
+  </data>
+  <data name="WEIGHT SENSOR OK" xml:space="preserve">
+    <value>Weight Sensor Ok</value>
+  </data>
+  <data name="CAUSTIC VALVE READY" xml:space="preserve">
+    <value>Caustic Valve Ready</value>
+  </data>
+  <data name="DETERGENT VALVE READY" xml:space="preserve">
+    <value>Detergent Valve Ready</value>
+  </data>
+  <data name="WATER VALVE READY" xml:space="preserve">
+    <value>Water Valve Ready</value>
+  </data>
+  <data name="DOSING CYCLE OFF" xml:space="preserve">
+    <value>Dosing Cycle Off</value>
+  </data>
+  <data name="WATER EXCHANGE" xml:space="preserve">
+    <value>Water Exchange</value>
+  </data>
+  <data name="HOLDING TANK LEVEL" xml:space="preserve">
+    <value>Holding Tank Level</value>
+  </data>
+  <data name="ACTUAL FLOWRATE" xml:space="preserve">
+    <value>Actual Flowrate</value>
+  </data>
+  <data name="TOTALIZED" xml:space="preserve">
+    <value>Totalized</value>
+  </data>
+  <data name="FLOWRATE TOTALIZED PULSE" xml:space="preserve">
+    <value>Flowrate Totalized Pulse</value>
+  </data>
+  <data name="REFILL" xml:space="preserve">
+    <value>Refill</value>
+  </data>
+  <data name="ACTUAL PRESSURE" xml:space="preserve">
+    <value>Actual Pressure</value>
+  </data>
+  <data name="WATER PRESSURE" xml:space="preserve">
+    <value>Water Pressure</value>
+  </data>
+  <data name="HEAT EXCHANGER TEMPERATURE" xml:space="preserve">
+    <value>Heat Exchanger Temperature</value>
+  </data>
+  <data name="ACTUAL POSITION" xml:space="preserve">
+    <value>Actual Position</value>
+  </data>
+  <data name="THERMOREGULATION" xml:space="preserve">
+    <value>Thermoregulation</value>
+  </data>
+  <data name="MODULATION CONTROL" xml:space="preserve">
+    <value>Modulation Control</value>
+  </data>
+  <data name="VALVE OPEN SETPOINT" xml:space="preserve">
+    <value>Valve Open Setpoint</value>
+  </data>
+  <data name="WATER PUMP FULL RUNNING" xml:space="preserve">
+    <value>Water Pump Full Running</value>
+  </data>
+  <data name="INLET WATER PRESSURE" xml:space="preserve">
+    <value>Inlet Water Pressure</value>
+  </data>
+  <data name="DIGITAL INPUTS PROTECTION" xml:space="preserve">
+    <value>Digital Inputs Protection</value>
+  </data>
+  <data name="DIGITAL OUTPUTS PROTECTION" xml:space="preserve">
+    <value>Digital Outputs Protection</value>
+  </data>
+  <data name="INTERNAL DEVICES PROTECTION" xml:space="preserve">
+    <value>Internal Devices Protection</value>
+  </data>
+  <data name="EXTERNAL DEVICES PROTECTION" xml:space="preserve">
+    <value>External Devices Protection</value>
+  </data>
+  <data name="BEACON PROTECTION" xml:space="preserve">
+    <value>Beacon Protection</value>
+  </data>
+  <data name="MASTER ESTOP" xml:space="preserve">
+    <value>Master Estop</value>
+  </data>
+  <data name="ETHERNET SWITCH" xml:space="preserve">
+    <value>Ethernet Switch</value>
+  </data>
+  <data name="SIREN" xml:space="preserve">
+    <value>Siren</value>
+  </data>
+  <data name="EXTERNAL SIREN" xml:space="preserve">
+    <value>External Siren</value>
+  </data>
+  <data name="CRITICAL FAULT IN THE ELECTRICAL CABINET" xml:space="preserve">
+    <value>Critical Fault In The Electrical Cabinet</value>
+  </data>
+  <data name="NO DATA" xml:space="preserve">
+    <value>No Data</value>
+  </data>
+  <data name="WASHING TANK OVER MINIMUM TEMPERATURE" xml:space="preserve">
+    <value>Washing Tank Over Minimum Temperature</value>
+  </data>
+  <data name="TIME_CYCLE" xml:space="preserve">
+    <value>Time Cycle</value>
+  </data>
+  <data name="FIELD_ADJUST" xml:space="preserve">
+    <value>Field Adjust</value>
+  </data>
+  <data name="SWIPE CARD TO LOG IN" xml:space="preserve">
+    <value>Swipe Card To Log In</value>
+  </data>
+  <data name="SEARCH COMPONENTS" xml:space="preserve">
+    <value>Search Components</value>
+  </data>
+  <data name="OPEN VIRTUAL KEYBOARD" xml:space="preserve">
+    <value>Open Virtual Keyboard</value>
+  </data>
+  <data name="NO POSITION" xml:space="preserve">
+    <value>No Position</value>
+  </data>
+  <data name="LEVELS NOT OK FOR PROCESS" xml:space="preserve">
+    <value>Levels Not Ok For Process</value>
+  </data>
+  <data name="GREASE MINIMUM LEVEL NOT OK" xml:space="preserve">
+    <value>Grease Minimum Level Not Ok</value>
+  </data>
+  <data name="LOCAL ENABLE SELECTOR NOT OK" xml:space="preserve">
+    <value>Local Enable Selector Not Ok</value>
+  </data>
+  <data name="INVERTER PROFINET COMMUNICATION NOT OK" xml:space="preserve">
+    <value>Inverter Profinet Communication Not Ok</value>
+  </data>
+  <data name="COMPONENT DISABLED" xml:space="preserve">
+    <value>Component Disabled</value>
+  </data>
+  <data name="USER" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="DEBALER NOT IN AUTO MODE" xml:space="preserve">
+    <value>Debaler Not In Auto Mode</value>
+  </data>
+  <data name="OVERLOAD" xml:space="preserve">
+    <value>Overload</value>
+  </data>
+  <data name="CHARGING" xml:space="preserve">
+    <value>Charging</value>
+  </data>
+  <data name="SPEED_ACTUAL" xml:space="preserve">
+    <value>Actual Speed</value>
+  </data>
+  <data name="FINAL SILO" xml:space="preserve">
+    <value>Final Silo</value>
+  </data>
+  <data name="WASHING 2" xml:space="preserve">
+    <value>Washing 2</value>
+  </data>
+  <data name="CONCENTRATION" xml:space="preserve">
+    <value>Concentration</value>
+  </data>
+  <data name="HYSTERESIS" xml:space="preserve">
+    <value>Hysteresis</value>
+  </data>
+  <data name="SETPOINT" xml:space="preserve">
+    <value>Setpoint</value>
+  </data>
+  <data name="START TANK REFILL (UP TO SETPOINT)" xml:space="preserve">
+    <value>Start Tank Refill (Up To Setpoint)</value>
+  </data>
+  <data name="MINIMUM LEVEL FOR DISCHARGING" xml:space="preserve">
+    <value>Minimum Level For Discharging</value>
+  </data>
+  <data name="MAXIMUM TEMPERATURE" xml:space="preserve">
+    <value>Maximum Temperature</value>
+  </data>
+  <data name="LOW TEMPERATURE WARNING" xml:space="preserve">
+    <value>Low Temperature Warning</value>
+  </data>
+  <data name="MINIMUM TEMPERATURE" xml:space="preserve">
+    <value>Minimum Temperature</value>
+  </data>
+  <data name="PARAMETER MANAGEMENT" xml:space="preserve">
+    <value>Parameter Management</value>
+  </data>
+  <data name="SKIP PREPARATION" xml:space="preserve">
+    <value>Skip Preparation</value>
+  </data>
+  <data name="SELECTED TRENDS" xml:space="preserve">
+    <value>Selected Trends</value>
+  </data>
+  <data name="DELETE SELECTED PRESET?" xml:space="preserve">
+    <value>Delete Selected Preset?</value>
+  </data>
+  <data name="THIS PRESET WILL BE DELETED FROM ALL MACHINES." xml:space="preserve">
+    <value>This Preset Will Be Deleted From All Machines.</value>
+  </data>
+  <data name="ADVANCED VIEW" xml:space="preserve">
+    <value>Advanced View</value>
+  </data>
+  <data name="ADD NEW" xml:space="preserve">
+    <value>Add New</value>
+  </data>
+  <data name="PRESETS" xml:space="preserve">
+    <value>Presets</value>
+  </data>
+  <data name="IMAGE NAME" xml:space="preserve">
+    <value>Image Name</value>
+  </data>
+  <data name="CREATION DATE" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+  <data name="TYPE" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="CURRENT VALUE" xml:space="preserve">
+    <value>Current Value</value>
+  </data>
+  <data name="LOGGED VALUE" xml:space="preserve">
+    <value>Logged Value</value>
+  </data>
+  <data name="ONLY SHOW DIFFERENCES" xml:space="preserve">
+    <value>Only Show Differences</value>
+  </data>
+  <data name="SEND IMAGE TO PLC" xml:space="preserve">
+    <value>Send Image To Plc</value>
+  </data>
+  <data name="OPEN IMAGE" xml:space="preserve">
+    <value>Open Image</value>
+  </data>
+  <data name="DELETE IMAGE" xml:space="preserve">
+    <value>Delete Image</value>
+  </data>
+  <data name="CREATE NEW IMAGE" xml:space="preserve">
+    <value>Create New Image</value>
+  </data>
+  <data name="NO DIFFERENCES FOUND" xml:space="preserve">
+    <value>No Differences Found</value>
+  </data>
+  <data name="CRATED BY" xml:space="preserve">
+    <value>Crated By</value>
+  </data>
+  <data name="SELECT PROCESS IMAGE" xml:space="preserve">
+    <value>Select Process Image</value>
+  </data>
+  <data name="PROCESS IMAGE" xml:space="preserve">
+    <value>Process Image</value>
+  </data>
+  <data name="PARAMETER LIST" xml:space="preserve">
+    <value>Parameter List</value>
+  </data>
+  <data name="WASHING SILO" xml:space="preserve">
+    <value>Washing Silo</value>
+  </data>
+  <data name="INVERTER NOT READY" xml:space="preserve">
+    <value>Inverter Not Ready</value>
+  </data>
+  <data name="INVERTER WARNING PRESENT" xml:space="preserve">
+    <value>Inverter Warning Present</value>
+  </data>
+  <data name="WASHING 1" xml:space="preserve">
+    <value>Washing 1</value>
+  </data>
+  <data name="LOCAL SAFETY" xml:space="preserve">
+    <value>Local Safety</value>
+  </data>
+  <data name="(1=CLOSED)" xml:space="preserve">
+    <value>(1=Closed)</value>
+  </data>
+  <data name="CHANGE VALUE" xml:space="preserve">
+    <value>Change Value</value>
+  </data>
+  <data name="PLC PAGE" xml:space="preserve">
+    <value>Plc Page</value>
+  </data>
+  <data name="EMERGENCY" xml:space="preserve">
+    <value>Emergency</value>
+  </data>
+  <data name="ESTOP PRESSED (ON PLANT)" xml:space="preserve">
+    <value>Estop Pressed (On Plant)</value>
+  </data>
+  <data name="ESTOP PRESSED (CABINET DOOR)" xml:space="preserve">
+    <value>Estop Pressed (Cabinet Door)</value>
+  </data>
+  <data name="CABINET OFF" xml:space="preserve">
+    <value>Cabinet Off</value>
+  </data>
+  <data name="ETHERNET SWITCH NOT OK" xml:space="preserve">
+    <value>Ethernet Switch Not Ok</value>
+  </data>
+  <data name="UPSTREAM SAFETY NOT OK" xml:space="preserve">
+    <value>Upstream Safety Not Ok</value>
+  </data>
+  <data name="MANUAL START REQUIRED" xml:space="preserve">
+    <value>Manual Start Required</value>
+  </data>
+  <data name="FAULT" xml:space="preserve">
+    <value>Fault</value>
+  </data>
+  <data name="PLC ADDRESS" xml:space="preserve">
+    <value>Plc Address</value>
+  </data>
+  <data name="TIME IN" xml:space="preserve">
+    <value>Time In</value>
+  </data>
+  <data name="TIME ACKNOWLEDGE" xml:space="preserve">
+    <value>Time Acknowledge</value>
+  </data>
+  <data name="TIME OUT" xml:space="preserve">
+    <value>Time Out</value>
+  </data>
+  <data name="TO PAGE" xml:space="preserve">
+    <value>To Page</value>
+  </data>
+  <data name="INFO_INV_6" xml:space="preserve">
+    <value>Check Profinet Cable Connection And The Power Supply Of Inverter Communication Card</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="MINOR FAULT PRESENT" xml:space="preserve">
+    <value>Minor Fault Present</value>
+  </data>
+  <data name="MOTOR CURRENT BELOW MINIMUM RANGE LIMIT (POSSIBLE CAVITATION)" xml:space="preserve">
+    <value>Motor Current Below Minimum Range Limit (Possible Cavitation)</value>
+  </data>
+  <data name="SPEED REQUEST" xml:space="preserve">
+    <value>Speed Request</value>
+  </data>
+  <data name="MAXIMUM CURRENT" xml:space="preserve">
+    <value>Maximum Current</value>
+  </data>
+  <data name="MINIMUM CURRENT" xml:space="preserve">
+    <value>Minimum Current</value>
+  </data>
+  <data name="NOMINAL MOTOR CURRENT" xml:space="preserve">
+    <value>Nominal Motor Current</value>
+  </data>
+  <data name="HIGH RESTART SPEED" xml:space="preserve">
+    <value>High Restart Speed</value>
+  </data>
+  <data name="DURATION" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="PRODUCTION SPEED" xml:space="preserve">
+    <value>Production Speed</value>
+  </data>
+  <data name="MAINTENANCE SPEED" xml:space="preserve">
+    <value>Maintenance Speed</value>
+  </data>
+  <data name="MINIMUM" xml:space="preserve">
+    <value>Minimum</value>
+  </data>
+  <data name="MAXIMUM" xml:space="preserve">
+    <value>Maximum</value>
+  </data>
+  <data name="NEW VALUE" xml:space="preserve">
+    <value>New Value</value>
+  </data>
+  <data name="SEND THE FOLLOWING IMAGE TO PLC?" xml:space="preserve">
+    <value>Send The Following Image To Plc?</value>
+  </data>
+  <data name="DELETE THE FOLLOWING IMAGE?" xml:space="preserve">
+    <value>Delete The Following Image?</value>
+  </data>
+  <data name="SAVE NEW PROCESS IMAGE" xml:space="preserve">
+    <value>Save New Process Image</value>
+  </data>
+  <data name="NAME" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="INFO_OIL_SEAL_3" xml:space="preserve">
     <value></value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="PRESSURE TRANSDUCER NOT OK" xml:space="preserve">
+    <value>Pressure Transducer Not Ok</value>
+  </data>
+  <data name="MINIMUM FLOWRATE" xml:space="preserve">
+    <value>Minimum Flowrate</value>
+  </data>
+  <data name="FLOWRATE TRANSDUCER NOT OK" xml:space="preserve">
+    <value>Flowrate Transducer Not Ok</value>
+  </data>
+  <data name="LEVEL NOT OK FOR PROCESS" xml:space="preserve">
+    <value>Level Not Ok For Process</value>
+  </data>
+  <data name="SENSOR DISABLED" xml:space="preserve">
+    <value>Sensor Disabled</value>
+  </data>
+  <data name="EXTERNAL PLANT IS NOT OK TO GIVE MATERIAL" xml:space="preserve">
+    <value>External Plant Is Not Ok To Give Material</value>
+  </data>
+  <data name="DOWNSTREAM NOT OK TO RECEIVE MATERIAL" xml:space="preserve">
+    <value>Downstream Not Ok To Receive Material</value>
+  </data>
+  <data name="MAINTENANCE REFERENCE" xml:space="preserve">
+    <value>Maintenance Reference</value>
+  </data>
+  <data name="MAXIMUM PRESSURE" xml:space="preserve">
+    <value>Maximum Pressure</value>
+  </data>
+  <data name="MINIMUM PRESSURE" xml:space="preserve">
+    <value>Minimum Pressure</value>
+  </data>
+  <data name="PROPORTIONAL GAIN" xml:space="preserve">
+    <value>Proportional Gain</value>
+  </data>
+  <data name="INTEGRAL SAMPLE TIME" xml:space="preserve">
+    <value>Integral Sample Time</value>
+  </data>
+  <data name="INTEGRAL GAIN (0=DISABLE INTEGRAL)" xml:space="preserve">
+    <value>Integral Gain (0=Disable Integral)</value>
+  </data>
+  <data name="MINIMUM OUTPUT OF REGULATION" xml:space="preserve">
+    <value>Minimum Output Of Regulation</value>
+  </data>
+  <data name="MAXIMUM CONTRIBUTION OF PROPORTIONAL" xml:space="preserve">
+    <value>Maximum Contribution Of Proportional</value>
+  </data>
+  <data name="MAXIMUM CONTRIBUTION OF INTEGRAL" xml:space="preserve">
+    <value>Maximum Contribution Of Integral</value>
+  </data>
+  <data name="DELTA OVER SETPOINT TO STOP HEATING" xml:space="preserve">
+    <value>Delta Over Setpoint To Stop Heating</value>
+  </data>
+  <data name="DELTA BELOW SETPOINT TO MAXIMIZE HEATING" xml:space="preserve">
+    <value>Delta Below Setpoint To Maximize Heating</value>
+  </data>
+  <data name="POSITION IN PRODUCTION (IN CONSTANT MODE)" xml:space="preserve">
+    <value>Position In Production (In Constant Mode)</value>
+  </data>
+  <data name="POSITION IN MAINTENANCE" xml:space="preserve">
+    <value>Position In Maintenance</value>
+  </data>
+  <data name="MINIMUM FLOWRATE FOR ALARM" xml:space="preserve">
+    <value>Minimum Flowrate For Alarm</value>
+  </data>
+  <data name="ACTUAL CONCENTRATION" xml:space="preserve">
+    <value>Actual Concentration</value>
+  </data>
+  <data name="MAXIMUM CONCENTRATION" xml:space="preserve">
+    <value>Maximum Concentration</value>
+  </data>
+  <data name="HIGH CONCENTRATION WARNING" xml:space="preserve">
+    <value>High Concentration Warning</value>
+  </data>
+  <data name="LOW CONCENTRATION WARNING" xml:space="preserve">
+    <value>Low Concentration Warning</value>
+  </data>
+  <data name="MINIMUM CONCENTRATION" xml:space="preserve">
+    <value>Minimum Concentration</value>
+  </data>
+  <data name="TANK DISCHARGE TIME" xml:space="preserve">
+    <value>Tank Discharge Time</value>
+  </data>
+  <data name="TANK HEIGHT" xml:space="preserve">
+    <value>Tank Height</value>
+  </data>
+  <data name="MAXIMUM FILLING TIME (0 = CONTROL BYPASS)" xml:space="preserve">
+    <value>Maximum Filling Time (0 = Control Bypass)</value>
+  </data>
+  <data name="SEMIAUTO PUMPING TIME" xml:space="preserve">
+    <value>Semiauto Pumping Time</value>
+  </data>
+  <data name="DISCHARGE" xml:space="preserve">
+    <value>Discharge</value>
+  </data>
+  <data name="MAXIMUM PAUSE TIME (0=DISCHARGE DISABLED)" xml:space="preserve">
+    <value>Maximum Pause Time (0=Discharge Disabled)</value>
+  </data>
+  <data name="MINIMUM PAUSE TIME" xml:space="preserve">
+    <value>Minimum Pause Time</value>
+  </data>
+  <data name="FULLY CLOSED POSITION DELAY" xml:space="preserve">
+    <value>Fully Closed Position Delay</value>
+  </data>
+  <data name="MOTOR STALLED OR SPEED LOSS" xml:space="preserve">
+    <value>Motor Stalled Or Speed Loss</value>
+  </data>
+  <data name="RESET FAULTS" xml:space="preserve">
+    <value>Reset Faults</value>
+  </data>
+  <data name="ACKNOWLEDGED FAULTS" xml:space="preserve">
+    <value>Acknowledged Faults</value>
+  </data>
+  <data name="PRODUCTION MODE" xml:space="preserve">
+    <value>Production Mode</value>
+  </data>
+  <data name="MESSAGE" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="(4-20MA)" xml:space="preserve">
+    <value>(4-20Ma)</value>
+  </data>
+  <data name="MOTOR MAXIMUM AMPERAGE EXCEEDED (&gt;115% OF NOMINAL AMP FOR 15 SEC)" xml:space="preserve">
+    <value>Motor Maximum Amperage Exceeded (&gt;115% Of Nominal Amp For 15 Sec)</value>
+  </data>
+  <data name="(1=ENABLED)" xml:space="preserve">
+    <value>(1=Enabled)</value>
+  </data>
+  <data name="SIMULATION" xml:space="preserve">
+    <value>Simulation</value>
+  </data>
+  <data name="WASHING 3" xml:space="preserve">
+    <value>Washing 3</value>
+  </data>
+  <data name="START CONDITIONS" xml:space="preserve">
+    <value>Start Conditions</value>
+  </data>
+  <data name="INVERTER IN LOCAL MODE" xml:space="preserve">
+    <value>Inverter In Local Mode</value>
+  </data>
+  <data name="INFO_INV_4" xml:space="preserve">
+    <value>Set Inverter In Remote Mode To Allow Any Further Operation On It From Pc Station.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_ETHERNET_1" xml:space="preserve">
+    <value>Check The Ethernet Switch, Its Supply And Connections</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="(1=NOT PUSHED)" xml:space="preserve">
+    <value>(1=Not Pushed)</value>
+  </data>
+  <data name="MOTOR CURRENT OVER MAXIMUM RANGE LIMIT" xml:space="preserve">
+    <value>Motor Current Over Maximum Range Limit</value>
+  </data>
+  <data name="REACTION ARM MECHANICAL OVERLOAD" xml:space="preserve">
+    <value>Reaction Arm Mechanical Overload</value>
+  </data>
+  <data name="ESTOP CONTACTORS NOT OK" xml:space="preserve">
+    <value>Estop Contactors Not Ok</value>
+  </data>
+  <data name="MOTOR CURRENT TRANSDUCER BROKEN WIRE" xml:space="preserve">
+    <value>Motor Current Transducer Broken Wire</value>
+  </data>
+  <data name="TARE CALIBRATION NOT POSSIBLE FOR MAXIMUM WEIGHT" xml:space="preserve">
+    <value>Tare Calibration Not Possible For Maximum Weight</value>
+  </data>
+  <data name="WEIGHT TRANSDUCER NOT OK" xml:space="preserve">
+    <value>Weight Transducer Not Ok</value>
+  </data>
+  <data name="MAXIMUM REFILL TIME" xml:space="preserve">
+    <value>Maximum Refill Time</value>
+  </data>
+  <data name="MOTOR MINIMUM AMPERAGE NOT REACHED (5% OF NOMINAL AMP)" xml:space="preserve">
+    <value>Motor Minimum Amperage Not Reached (5% Of Nominal Amp)</value>
+  </data>
+  <data name="SAFETIES NOT OK" xml:space="preserve">
+    <value>Safeties Not Ok</value>
+  </data>
+  <data name="POSITION OPEN NOT OK" xml:space="preserve">
+    <value>Position Open Not Ok</value>
+  </data>
+  <data name="POSITION CLOSED NOT OK" xml:space="preserve">
+    <value>Position Closed Not Ok</value>
+  </data>
+  <data name="INFO_LS_15" xml:space="preserve">
+    <value>Check The Valve Position, Pressure In The Pipes And Limit Switch Position</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="MOTOR OVERHEAT" xml:space="preserve">
+    <value>Motor Overheat</value>
+  </data>
+  <data name="CLOSED POSITION NOT OK" xml:space="preserve">
+    <value>Closed Position Not Ok</value>
+  </data>
+  <data name="INFO_LS_13" xml:space="preserve">
+    <value></value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="BOTH VALVES ARE NOT FULLY CLOSED - TANK EMPTIYNG!" xml:space="preserve">
+    <value>Both Valves Are Not Fully Closed - Tank Emptiyng!</value>
+  </data>
+  <data name="INFO_GT_VALVES_1" xml:space="preserve">
+    <value>Close At Least One Of The Discharge Valves To Prevent Tank Complete Emptying. Check The Valves In The Field.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_INV_7" xml:space="preserve">
+    <value>Check Inverter Status In The Cabinet</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="RETURN VALUE" xml:space="preserve">
+    <value>Return Value</value>
+  </data>
+  <data name="COMMAND" xml:space="preserve">
+    <value>Command</value>
+  </data>
+  <data name="DISABLE SENSOR" xml:space="preserve">
+    <value>Disable Sensor</value>
+  </data>
+  <data name="DELAY FOR MESSAGE 'NO MATERIAL' (0=NO MESSAGE)" xml:space="preserve">
+    <value>Delay For Message 'No Material' (0=No Message)</value>
+  </data>
+  <data name="SET MAXIMUM LEVEL" xml:space="preserve">
+    <value>Set Maximum Level</value>
+  </data>
+  <data name="SET MINIMUM LEVEL" xml:space="preserve">
+    <value>Set Minimum Level</value>
+  </data>
+  <data name="WATER TO COMPENSATE WITH A FULL BATCH" xml:space="preserve">
+    <value>Water To Compensate With A Full Batch</value>
+  </data>
+  <data name="CAUSTIC - TARGET" xml:space="preserve">
+    <value>Caustic - Target</value>
+  </data>
+  <data name="LATEST ADDITION" xml:space="preserve">
+    <value>Latest Addition</value>
+  </data>
+  <data name="GAP WATER - TARGET" xml:space="preserve">
+    <value>Gap Water - Target</value>
+  </data>
+  <data name="DETERGENT - TARGET" xml:space="preserve">
+    <value>Detergent - Target</value>
+  </data>
+  <data name="FINAL WATER LATEST ADDITION" xml:space="preserve">
+    <value>Final Water Latest Addition</value>
+  </data>
+  <data name="ENABLE DOSING BY TIME" xml:space="preserve">
+    <value>Enable Dosing By Time</value>
+  </data>
+  <data name="TARE CALIBRATION REQUEST" xml:space="preserve">
+    <value>Tare Calibration Request</value>
+  </data>
+  <data name="INTERLOCK TO UPSTREAM" xml:space="preserve">
+    <value>Interlock To Upstream</value>
+  </data>
+  <data name="DISABLED IN PRODUCTION (CONSTANT MODE ON)" xml:space="preserve">
+    <value>Disabled In Production (Constant Mode On)</value>
+  </data>
+  <data name="ACTUAL P-I REGULATION OUTPUT" xml:space="preserve">
+    <value>Actual P-I Regulation Output</value>
+  </data>
+  <data name="ENABLE IN MAINTENANCE" xml:space="preserve">
+    <value>Enable In Maintenance</value>
+  </data>
+  <data name="TOTALIZED FLOWRATE" xml:space="preserve">
+    <value>Totalized Flowrate</value>
+  </data>
+  <data name="RESET TOTALIZER" xml:space="preserve">
+    <value>Reset Totalizer</value>
+  </data>
+  <data name="VIEW MESSAGE" xml:space="preserve">
+    <value>View Message</value>
+  </data>
+  <data name="ALARM VIEW" xml:space="preserve">
+    <value>Alarm View</value>
+  </data>
+  <data name="ENABLE HIGH RESTART SPEED" xml:space="preserve">
+    <value>Enable High Restart Speed</value>
+  </data>
+  <data name="ENABLE SEMIAUTO PUMPING MODE" xml:space="preserve">
+    <value>Enable Semiauto Pumping Mode</value>
+  </data>
+  <data name="REMAINING PUMPING TIME" xml:space="preserve">
+    <value>Remaining Pumping Time</value>
+  </data>
+  <data name="REAMINING  PAUSE TIME" xml:space="preserve">
+    <value>Reamining  Pause Time</value>
+  </data>
+  <data name="LEAVE TOP VALVE OPEN DURING PAUSE TIME" xml:space="preserve">
+    <value>Leave Top Valve Open During Pause Time</value>
+  </data>
+  <data name="SINGLE CYCLE REQUEST (IN PRODUCTION MODE)" xml:space="preserve">
+    <value>Single Cycle Request (In Production Mode)</value>
+  </data>
+  <data name="KEEP THE VALVES ON IN FINAL POSITION" xml:space="preserve">
+    <value>Keep The Valves On In Final Position</value>
+  </data>
+  <data name="ENABLE LATCH OF CLOSED POSITION" xml:space="preserve">
+    <value>Enable Latch Of Closed Position</value>
+  </data>
+  <data name="BYPASS DEVICE" xml:space="preserve">
+    <value>Bypass Device</value>
+  </data>
+  <data name="PLC IN SIMULATION" xml:space="preserve">
+    <value>Plc In Simulation</value>
+  </data>
+  <data name="HOPPER EMPTY" xml:space="preserve">
+    <value>Hopper Empty</value>
+  </data>
+  <data name="INVERTER GENERAL ALARM" xml:space="preserve">
+    <value>Inverter General Alarm</value>
+  </data>
+  <data name="INVERTER ALARM PRESENT" xml:space="preserve">
+    <value>Inverter Alarm Present</value>
+  </data>
+  <data name="THERMAL OVERLOAD" xml:space="preserve">
+    <value>Thermal Overload</value>
+  </data>
+  <data name="MAXIMUM LEVEL REACHED" xml:space="preserve">
+    <value>Maximum Level Reached</value>
+  </data>
+  <data name="LEVEL TRANSDUCER NOT OK" xml:space="preserve">
+    <value>Level Transducer Not Ok</value>
+  </data>
+  <data name="VALVE IS NOT MOVING" xml:space="preserve">
+    <value>Valve Is Not Moving</value>
+  </data>
+  <data name="PLC OK CONTACT NOT OK" xml:space="preserve">
+    <value>Plc Ok Contact Not Ok</value>
+  </data>
+  <data name="MAXIMUM CONCENTRATION REACHED" xml:space="preserve">
+    <value>Maximum Concentration Reached</value>
+  </data>
+  <data name="VALVE CLOSED" xml:space="preserve">
+    <value>Valve Closed</value>
+  </data>
+  <data name="INFO PANEL" xml:space="preserve">
+    <value>Info Panel</value>
+  </data>
+  <data name="PROTECTED IMAGE" xml:space="preserve">
+    <value>Protected Image</value>
+  </data>
+  <data name="PAUSE TIME (0 = ALWAYS ON)" xml:space="preserve">
+    <value>Pause Time (0 = Always On)</value>
+  </data>
+  <data name="ON TIME (0 = ALWAYS OFF)" xml:space="preserve">
+    <value>On Time (0 = Always Off)</value>
+  </data>
+  <data name="DEVICE CONTROL" xml:space="preserve">
+    <value>Device Control</value>
+  </data>
+  <data name="ACTUAL NON-COMPENSATED WATER" xml:space="preserve">
+    <value>Actual Non-Compensated Water</value>
+  </data>
+  <data name="DRY CAUSTIC CONCENTRATION" xml:space="preserve">
+    <value>Dry Caustic Concentration</value>
+  </data>
+  <data name="DRY CAUSTIC CONCENTRATION OFFSET ADJUST" xml:space="preserve">
+    <value>Dry Caustic Concentration Offset Adjust</value>
+  </data>
+  <data name="CAUSTIC ADDITIVE DILUTION" xml:space="preserve">
+    <value>Caustic Additive Dilution</value>
+  </data>
+  <data name="DETERGENT CONCENTRATION" xml:space="preserve">
+    <value>Detergent Concentration</value>
+  </data>
+  <data name="DOSING BY TIME - CAUSTIC INJECTION TIME" xml:space="preserve">
+    <value>Dosing By Time - Caustic Injection Time</value>
+  </data>
+  <data name="DOSING BY TIME - GAP WATER INJECTION TIME" xml:space="preserve">
+    <value>Dosing By Time - Gap Water Injection Time</value>
+  </data>
+  <data name="DOSING BY TIME - DETERGENT INJECTION TIME" xml:space="preserve">
+    <value>Dosing By Time - Detergent Injection Time</value>
+  </data>
+  <data name="MAXIMUM LEVEL VALUE" xml:space="preserve">
+    <value>Maximum Level Value</value>
+  </data>
+  <data name="MINIMUM LEVEL VALUE" xml:space="preserve">
+    <value>Minimum Level Value</value>
+  </data>
+  <data name="STOP SILO FILLING" xml:space="preserve">
+    <value>Stop Silo Filling</value>
+  </data>
+  <data name="RESTART SILO FILLING" xml:space="preserve">
+    <value>Restart Silo Filling</value>
+  </data>
+  <data name="EMPTY SILO" xml:space="preserve">
+    <value>Empty Silo</value>
+  </data>
+  <data name="STOP MATERIAL" xml:space="preserve">
+    <value>Stop Material</value>
+  </data>
+  <data name="START MATERIAL" xml:space="preserve">
+    <value>Start Material</value>
+  </data>
+  <data name="OBSTRUCTION MINIMUM CURRENT" xml:space="preserve">
+    <value>Obstruction Minimum Current</value>
+  </data>
+  <data name="EMPTYING TIME BELOW MINIMUM LEVEL" xml:space="preserve">
+    <value>Emptying Time Below Minimum Level</value>
+  </data>
+  <data name="ACTUAL REFERENCE" xml:space="preserve">
+    <value>Actual Reference</value>
+  </data>
+  <data name="PRODUCTION REFERENCE" xml:space="preserve">
+    <value>Production Reference</value>
+  </data>
+  <data name="SENSOR CALIBRATION REQUIRED BY PREVU PANEL" xml:space="preserve">
+    <value>Sensor Calibration Required By Prevu Panel</value>
+  </data>
+  <data name="NO MATERIAL PRESENT" xml:space="preserve">
+    <value>No Material Present</value>
+  </data>
+  <data name="INFO_DISAB_1" xml:space="preserve">
+    <value></value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="HIGH CHEMICAL CONCENTRATION WARNING" xml:space="preserve">
+    <value>High Chemical Concentration Warning</value>
+  </data>
+  <data name="INFO_CALIBRATION_1" xml:space="preserve">
+    <value></value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="LOCAL DISCONNECT OPEN" xml:space="preserve">
+    <value>Local Disconnect Open</value>
+  </data>
+  <data name="INFO_LD_1" xml:space="preserve">
+    <value></value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="(PT100)" xml:space="preserve">
+    <value>(Pt100)</value>
+  </data>
+  <data name="INFO_TEMP_2" xml:space="preserve">
+    <value></value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="LOW CHEMICAL CONCENTRATION WARNING" xml:space="preserve">
+    <value>Low Chemical Concentration Warning</value>
+  </data>
+  <data name="INFO_NO_MATERIAL" xml:space="preserve">
+    <value></value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="(1&gt;=MIN)" xml:space="preserve">
+    <value>(1&gt;=Min)</value>
+  </data>
+  <data name="(1=EXT UPSTREAM READY TO GIVE MATERIAL)" xml:space="preserve">
+    <value>(1=Ext Upstream Ready To Give Material)</value>
+  </data>
+  <data name="INFO_EXT_1" xml:space="preserve">
+    <value></value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="(1=DOWNSTREAM OK TO RECEIVE)" xml:space="preserve">
+    <value>(1=Downstream Ok To Receive)</value>
+  </data>
+  <data name="INFO_DOWNSTR_NOK" xml:space="preserve">
+    <value></value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_INV_5" xml:space="preserve">
+    <value>Alarm Is Present On Inverter Display. Please Check It For The Actions To Be Done Reffering To The Inverter User Manual.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_INV_3" xml:space="preserve">
+    <value>Check For Mechanical Blockage Or Too Much Heavy Load Occured To The Motor.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="CONCENTRATION SENSOR OVERLOAD" xml:space="preserve">
+    <value>Concentration Sensor Overload</value>
+  </data>
+  <data name="(1=OK)" xml:space="preserve">
+    <value>(1=Ok)</value>
+  </data>
+  <data name="(1=ENABLE)" xml:space="preserve">
+    <value>(1=Enable)</value>
+  </data>
+  <data name="(0=OK)" xml:space="preserve">
+    <value>(0=Ok)</value>
+  </data>
+  <data name="TEMPERATURE TRANSDUCER NOT OK" xml:space="preserve">
+    <value>Temperature Transducer Not Ok</value>
+  </data>
+  <data name="CONCENTRATION SENSOR STATUS NOT OK" xml:space="preserve">
+    <value>Concentration Sensor Status Not Ok</value>
+  </data>
+  <data name="MINIMUM CONCENTRATION NOT OK" xml:space="preserve">
+    <value>Minimum Concentration Not Ok</value>
+  </data>
+  <data name="INFO_LS_14" xml:space="preserve">
+    <value>Check The Valve Position Limit Switches, Their Position And Wiring</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="(1=&lt;MAX)" xml:space="preserve">
+    <value>(1=&lt;Max)</value>
+  </data>
+  <data name="LEVEL OVERLOAD" xml:space="preserve">
+    <value>Level Overload</value>
+  </data>
+  <data name="FAULTY STATUS (INVERTER NOT RUNNING OK)" xml:space="preserve">
+    <value>Faulty Status (Inverter Not Running Ok)</value>
+  </data>
+  <data name="PULL-CORD SAFETY NOT OK" xml:space="preserve">
+    <value>Pull-Cord Safety Not Ok</value>
+  </data>
+  <data name="MAXIMUM PRESSURE REACHED" xml:space="preserve">
+    <value>Maximum Pressure Reached</value>
+  </data>
+  <data name="INACCURATE SENSOR READING - CALIBRATION NOT POSSIBLE (SENSOR TO BE CLEANED?)" xml:space="preserve">
+    <value>Inaccurate Sensor Reading - Calibration Not Possible (Sensor To Be Cleaned?)</value>
+  </data>
+  <data name="INACCURATE SENSOR READING (SENSOR TO BE CLEANED?)" xml:space="preserve">
+    <value>Inaccurate Sensor Reading (Sensor To Be Cleaned?)</value>
+  </data>
+  <data name="INFO_SENSOR_READ_1" xml:space="preserve">
+    <value>Check The Sensor In The Field And Clean It</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="(1=BRT IN AUTO MODE)" xml:space="preserve">
+    <value>(1=Brt In Auto Mode)</value>
+  </data>
+  <data name="INFO_NOT_IN_AUTO" xml:space="preserve">
+    <value></value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_SEL_1" xml:space="preserve">
+    <value></value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="CHANGED" xml:space="preserve">
+    <value>Changed</value>
+  </data>
+  <data name="EXEC_OK" xml:space="preserve">
+    <value>Exec_Ok</value>
+  </data>
+  <data name="IN_PROGR" xml:space="preserve">
+    <value>In_Progr</value>
+  </data>
+  <data name="SELECT MODE" xml:space="preserve">
+    <value>Select Mode</value>
+  </data>
+  <data name="(1=OPEN)" xml:space="preserve">
+    <value>(1=Open)</value>
+  </data>
+  <data name="DEVICE LABELS" xml:space="preserve">
+    <value>Device Labels</value>
+  </data>
+  <data name="DISABLED" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="READY" xml:space="preserve">
+    <value>Ready</value>
+  </data>
+  <data name="STARTING" xml:space="preserve">
+    <value>Starting</value>
+  </data>
+  <data name="RUNNING" xml:space="preserve">
+    <value>Running</value>
+  </data>
+  <data name="WITH MINOR ALARM" xml:space="preserve">
+    <value>With Minor Alarm</value>
+  </data>
+  <data name="WITH CRITICAL ALARM" xml:space="preserve">
+    <value>With Critical Alarm</value>
+  </data>
+  <data name="WITH MESSAGE" xml:space="preserve">
+    <value>With Message</value>
+  </data>
+  <data name="IN PREPARATION" xml:space="preserve">
+    <value>In Preparation</value>
+  </data>
+  <data name="COMMUNICATION ERROR" xml:space="preserve">
+    <value>Communication Error</value>
+  </data>
+  <data name="JUMP LABEL" xml:space="preserve">
+    <value>Jump Label</value>
+  </data>
+  <data name="SUBZONE LABELS" xml:space="preserve">
+    <value>Subzone Labels</value>
+  </data>
+  <data name="STOP PENDING" xml:space="preserve">
+    <value>Stop Pending</value>
+  </data>
+  <data name="STOP IN PROGRESS" xml:space="preserve">
+    <value>Stop In Progress</value>
+  </data>
+  <data name="GROUP LABELS" xml:space="preserve">
+    <value>Group Labels</value>
+  </data>
+  <data name="WAITING" xml:space="preserve">
+    <value>Waiting</value>
+  </data>
+  <data name="MAINTENANCE WITH COMPONENTS RUNNING" xml:space="preserve">
+    <value>Maintenance With Components Running</value>
+  </data>
+  <data name="PREPARATION" xml:space="preserve">
+    <value>Preparation</value>
+  </data>
+  <data name="PIPES" xml:space="preserve">
+    <value>Pipes</value>
+  </data>
+  <data name="MATERIAL" xml:space="preserve">
+    <value>Material</value>
+  </data>
+  <data name="WATER" xml:space="preserve">
+    <value>Water</value>
+  </data>
+  <data name="SECONDARY" xml:space="preserve">
+    <value>Secondary</value>
+  </data>
+  <data name="WITH DIRECTION" xml:space="preserve">
+    <value>With Direction</value>
+  </data>
+  <data name="HIGH SPEED" xml:space="preserve">
+    <value>High Speed</value>
+  </data>
+  <data name="LOW SPEED" xml:space="preserve">
+    <value>Low Speed</value>
+  </data>
+  <data name="MENU" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="MORE" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="CHANGE LANGUAGE" xml:space="preserve">
+    <value>Change Language</value>
+  </data>
+  <data name="SWITCH THEME" xml:space="preserve">
+    <value>Switch Theme</value>
+  </data>
+  <data name="SWITCH DEVICE NAMES" xml:space="preserve">
+    <value>Switch Device Names</value>
+  </data>
+  <data name="DEBUG WINDOW" xml:space="preserve">
+    <value>Debug Window</value>
+  </data>
+  <data name="MINIMIZE PREVU" xml:space="preserve">
+    <value>Minimize Prevu</value>
+  </data>
+  <data name="CLOSE PREVU" xml:space="preserve">
+    <value>Close Prevu</value>
+  </data>
+  <data name="OVERWRITE THE FOLLOWING IMAGE?" xml:space="preserve">
+    <value>Overwrite The Following Image?</value>
+  </data>
+  <data name="SELECTED VALUES" xml:space="preserve">
+    <value>Selected Values</value>
+  </data>
+  <data name="DIFFERENT VALUES" xml:space="preserve">
+    <value>Different Values</value>
+  </data>
+  <data name="SAVE AS" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="LOAD IMAGE" xml:space="preserve">
+    <value>Load Image</value>
+  </data>
+  <data name="OPEN PROCESS IMAGE" xml:space="preserve">
+    <value>Open Process Image</value>
+  </data>
+  <data name="NO PARAMETERS FOUND WITH ACTIVE FILTERS" xml:space="preserve">
+    <value>No Parameters Found With Active Filters</value>
+  </data>
+  <data name="COLLAPSE ALL" xml:space="preserve">
+    <value>Collapse All</value>
+  </data>
+  <data name="TIMES" xml:space="preserve">
+    <value>Times</value>
+  </data>
+  <data name="FAILED TO SEND COMMAND. PLC NOT CONNECTED" xml:space="preserve">
+    <value>Failed To Send Command. Plc Not Connected</value>
+  </data>
+  <data name="ON COMMAND" xml:space="preserve">
+    <value>ON Command</value>
+  </data>
+  <data name="WASHING" xml:space="preserve">
+    <value>Washing</value>
+  </data>
+  <data name="(1=COOLING ON)" xml:space="preserve">
+    <value>(1=Cooling On)</value>
+  </data>
+  <data name="MOTORNOMINALPOWER" xml:space="preserve">
+    <value>Motornominalpower</value>
+  </data>
+  <data name="MOTORNOMINALCURRENT" xml:space="preserve">
+    <value>Motornominalcurrent</value>
+  </data>
+  <data name="INVERTERNOMINALOUTCURRENT" xml:space="preserve">
+    <value>Inverternominaloutcurrent</value>
+  </data>
+  <data name="INVERTERBRAND" xml:space="preserve">
+    <value>Inverterbrand</value>
+  </data>
+  <data name="MAIN FEEDING BELT" xml:space="preserve">
+    <value>Main Feeding Belt</value>
+  </data>
+  <data name="USAGE" xml:space="preserve">
+    <value>Usage</value>
+  </data>
+  <data name="HOURS" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="FAULTY STATUS (INVERTER NOT RUNNING OK OR INVERTER IN LOCAL MODE)" xml:space="preserve">
+    <value>Faulty Status (Inverter Not Running Ok Or Inverter In Local Mode)</value>
+  </data>
+  <data name="COOLING FAN OVERLOAD" xml:space="preserve">
+    <value>Cooling Fan Overload</value>
+  </data>
+  <data name="YOU HAVE UNSAVED CHANGES" xml:space="preserve">
+    <value>You Have Unsaved Changes</value>
+  </data>
+  <data name="WHAT DO YOU WANT TO DO?" xml:space="preserve">
+    <value>What Do You Want To Do?</value>
+  </data>
+  <data name="DISCARD CHANGES" xml:space="preserve">
+    <value>Discard Changes</value>
+  </data>
+  <data name="ESTOP PUSH-BUTTON PRESSED" xml:space="preserve">
+    <value>Estop Push-Button Pressed</value>
+  </data>
+  <data name="SUBZONE IN AUTOMATIC MODE" xml:space="preserve">
+    <value>Subzone In Automatic Mode</value>
+  </data>
+  <data name="SUBZONE IN MAINTENANCE MODE" xml:space="preserve">
+    <value>Subzone In Maintenance Mode</value>
+  </data>
+  <data name="SUBZONE IN DISABLED MODE" xml:space="preserve">
+    <value>Subzone In Disabled Mode</value>
+  </data>
+  <data name="SUBZONE IN E-STOP MODE" xml:space="preserve">
+    <value>Subzone In E-Stop Mode</value>
+  </data>
+  <data name="DISABLING" xml:space="preserve">
+    <value>Disabling</value>
+  </data>
+  <data name="SEMIAUTO" xml:space="preserve">
+    <value>Semiauto</value>
+  </data>
+  <data name="OIL VALVE" xml:space="preserve">
+    <value>Oil Valve</value>
+  </data>
+  <data name="DEBALER BRT STANDARD INTERFACE" xml:space="preserve">
+    <value>Debaler Brt Standard Interface</value>
+  </data>
+  <data name="PELLENC BOTTLE SORTER" xml:space="preserve">
+    <value>Pellenc Bottle Sorter</value>
+  </data>
+  <data name="DOWNSTREAM EXTERNAL MACHINE" xml:space="preserve">
+    <value>Downstream External Machine</value>
+  </data>
+  <data name="BELT" xml:space="preserve">
+    <value>Belt</value>
+  </data>
+  <data name="MANUAL SORTING" xml:space="preserve">
+    <value>Manual Sorting</value>
+  </data>
+  <data name="EXTERNAL GRINDER" xml:space="preserve">
+    <value>External Grinder</value>
+  </data>
+  <data name="WATCHDOG" xml:space="preserve">
+    <value>Watchdog</value>
+  </data>
+  <data name="INCREMENTAL WD COUNTER ( +1 EVERY 100 MS - ROLLOVER AT 30000 )" xml:space="preserve">
+    <value>Incremental Wd Counter ( +1 Every 100 Ms - Rollover At 30000 )</value>
+  </data>
+  <data name="TRUE= AT LEAST ONE I/O MODULE CONNECTION DETECTED, 0 =SIMULATION ALLOWED" xml:space="preserve">
+    <value>True= At Least One I/O Module Connection Detected, 0 =Simulation Allowed</value>
+  </data>
+  <data name="PLC PROGRAM SIMULATION ACTIVE" xml:space="preserve">
+    <value>Plc Program Simulation Active</value>
+  </data>
+  <data name="CABINET TEST ACTIVE" xml:space="preserve">
+    <value>Cabinet Test Active</value>
+  </data>
+  <data name="ESTOP AREA NOT RESET (WITH ALL ESTOP PBS OK)" xml:space="preserve">
+    <value>Estop Area Not Reset (With All Estop Pbs Ok)</value>
+  </data>
+  <data name="SYS - E-STOP - MASTER RELAY STATUS" xml:space="preserve">
+    <value>Sys - E-Stop - Master Relay Status</value>
+  </data>
+  <data name="OK FOR PROCESS (ESTOP AREA STATUS OK + NO ALARMS/MESSAGES)" xml:space="preserve">
+    <value>Ok For Process (Estop Area Status Ok + No Alarms/Messages)</value>
+  </data>
+  <data name="ALL AREA ESTOP PUSH BUTTON NOT PRESSED ( TRUE=OK)" xml:space="preserve">
+    <value>All Area Estop Push Button Not Pressed ( True=Ok)</value>
+  </data>
+  <data name="ALARM PRESENT" xml:space="preserve">
+    <value>Alarm Present</value>
+  </data>
+  <data name="NON-CRITICAL ALARM PRESENT" xml:space="preserve">
+    <value>Non-Critical Alarm Present</value>
+  </data>
+  <data name="MESSAGE PRESENT" xml:space="preserve">
+    <value>Message Present</value>
+  </data>
+  <data name="NEW ALARM PRESENT" xml:space="preserve">
+    <value>New Alarm Present</value>
+  </data>
+  <data name="EMERGENCY STOP RELAY RESET OK (DIRECT) (OF THIS ESTOP AREA)" xml:space="preserve">
+    <value>Emergency Stop Relay Reset Ok (Direct) (Of This Estop Area)</value>
+  </data>
+  <data name="SYS - DIGITAL INPUTS" xml:space="preserve">
+    <value>Sys - Digital Inputs</value>
+  </data>
+  <data name="SYS - DIGITAL OUTPUTS" xml:space="preserve">
+    <value>Sys - Digital Outputs</value>
+  </data>
+  <data name="SYS - INTERNAL DEVICES" xml:space="preserve">
+    <value>Sys - Internal Devices</value>
+  </data>
+  <data name="SYS - EXTERNAL DEVICES" xml:space="preserve">
+    <value>Sys - External Devices</value>
+  </data>
+  <data name="ETHERNET SWITCH OK" xml:space="preserve">
+    <value>Ethernet Switch Ok</value>
+  </data>
+  <data name="DIGITAL INPUTS OK     (IF  FALSE --&gt; ESTOP DOWN)" xml:space="preserve">
+    <value>Digital Inputs Ok     (If  False --&gt; Estop Down)</value>
+  </data>
+  <data name="DIGITAL OUTPUTS OK" xml:space="preserve">
+    <value>Digital Outputs Ok</value>
+  </data>
+  <data name="24 VOLTS INTERNAL OK     (IF  FALSE --&gt; ESTOP DOWN)" xml:space="preserve">
+    <value>24 Volts Internal Ok     (If  False --&gt; Estop Down)</value>
+  </data>
+  <data name="24 VOLTS EXTERNAL OK" xml:space="preserve">
+    <value>24 Volts External Ok</value>
+  </data>
+  <data name="OK FOR PROCESS (ESTOP OK + NO ALARMS/MESSAGES)" xml:space="preserve">
+    <value>Ok For Process (Estop Ok + No Alarms/Messages)</value>
+  </data>
+  <data name="ESTOP PRESSED (ON HMI)" xml:space="preserve">
+    <value>Estop Pressed (On Hmi)</value>
+  </data>
+  <data name="OK FOR PROCESS (EPB OK)" xml:space="preserve">
+    <value>Ok For Process (Epb Ok)</value>
+  </data>
+  <data name="PULL-CORD SAFETIES" xml:space="preserve">
+    <value>Pull-Cord Safeties</value>
+  </data>
+  <data name="LOCAL DISCONNECT OK   (IF ANY)" xml:space="preserve">
+    <value>Local Disconnect Ok   (If Any)</value>
+  </data>
+  <data name="LOCAL SAFETY OK   (IF ANY - E.G. STRAP L.S.)" xml:space="preserve">
+    <value>Local Safety Ok   (If Any - E.G. Strap L.S.)</value>
+  </data>
+  <data name="HIDE START BUTTON ON HMI  (0=SHOW START PB)" xml:space="preserve">
+    <value>Hide Start Button On Hmi  (0=Show Start Pb)</value>
+  </data>
+  <data name="COMPONENT ENABLED (NO MANUAL START REQUIRED)" xml:space="preserve">
+    <value>Component Enabled (No Manual Start Required)</value>
+  </data>
+  <data name="WAITING FOR PROCESS CONDITIONS" xml:space="preserve">
+    <value>Waiting For Process Conditions</value>
+  </data>
+  <data name="WAITING FOR PROCESS CONDITIONS TO START" xml:space="preserve">
+    <value>Waiting For Process Conditions To Start</value>
+  </data>
+  <data name="WAITING FOR EVACUATION TIME TO STOP" xml:space="preserve">
+    <value>Waiting For Evacuation Time To Stop</value>
+  </data>
+  <data name="ON TIME IS SET TO ZERO" xml:space="preserve">
+    <value>On Time Is Set To Zero</value>
+  </data>
+  <data name="COMMAND GREASE ON" xml:space="preserve">
+    <value>Command Grease On</value>
+  </data>
+  <data name="READY TO START" xml:space="preserve">
+    <value>Ready To Start</value>
+  </data>
+  <data name="FULL RUNNING (OK FOR PROCESS)" xml:space="preserve">
+    <value>Full Running (Ok For Process)</value>
+  </data>
+  <data name="CRITICAL ALARM PRESENT" xml:space="preserve">
+    <value>Critical Alarm Present</value>
+  </data>
+  <data name="DEBALER IN AUTO" xml:space="preserve">
+    <value>Debaler In Auto</value>
+  </data>
+  <data name="DEBALER NOT IN AUTO (EXTERNAL PLANT)" xml:space="preserve">
+    <value>Debaler Not In Auto (External Plant)</value>
+  </data>
+  <data name="DEBALER FAULTY STATUS" xml:space="preserve">
+    <value>Debaler Faulty Status</value>
+  </data>
+  <data name="DEBALER NOT RUNNING" xml:space="preserve">
+    <value>Debaler Not Running</value>
+  </data>
+  <data name="DEBALER STARTED AND ACTIVE (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Debaler Started And Active (External Signal)</value>
+  </data>
+  <data name="EXTERNAL INPUT" xml:space="preserve">
+    <value>External Input</value>
+  </data>
+  <data name="(1=STARTED AND ACTIVE)" xml:space="preserve">
+    <value>(1=Started And Active)</value>
+  </data>
+  <data name="DEBALER IN AUTO MODE (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Debaler In Auto Mode (External Signal)</value>
+  </data>
+  <data name="DEBALER STATUS OK (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Debaler Status Ok (External Signal)</value>
+  </data>
+  <data name="(1=NO FAULTS)" xml:space="preserve">
+    <value>(1=No Faults)</value>
+  </data>
+  <data name="DEBALER START REQUEST" xml:space="preserve">
+    <value>Debaler Start Request</value>
+  </data>
+  <data name="EXTERNAL OUTPUT" xml:space="preserve">
+    <value>External Output</value>
+  </data>
+  <data name="(1=START REQUEST)" xml:space="preserve">
+    <value>(1=Start Request)</value>
+  </data>
+  <data name="DEBALER START REQUEST CONFIRM" xml:space="preserve">
+    <value>Debaler Start Request Confirm</value>
+  </data>
+  <data name="(1=CONFIRM START)" xml:space="preserve">
+    <value>(1=Confirm Start)</value>
+  </data>
+  <data name="DEBALER AUTO MODE REQUEST" xml:space="preserve">
+    <value>Debaler Auto Mode Request</value>
+  </data>
+  <data name="(1=REQUEST AUTO MODE)" xml:space="preserve">
+    <value>(1=Request Auto Mode)</value>
+  </data>
+  <data name="CONTROL" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="SORTING UNIT DISABLED FOR PRODUCTION" xml:space="preserve">
+    <value>Sorting Unit Disabled For Production</value>
+  </data>
+  <data name="SORTER WARNING PRESENT" xml:space="preserve">
+    <value>Sorter Warning Present</value>
+  </data>
+  <data name="SORTING UNIT NOT SORTING OK" xml:space="preserve">
+    <value>Sorting Unit Not Sorting Ok</value>
+  </data>
+  <data name="SORTING UNIT  CONTROL ALARM" xml:space="preserve">
+    <value>Sorting Unit  Control Alarm</value>
+  </data>
+  <data name="SORTING UNIT IN LOCAL MODE CONTROL" xml:space="preserve">
+    <value>Sorting Unit In Local Mode Control</value>
+  </data>
+  <data name="SORTING UNIT NOT ON OK" xml:space="preserve">
+    <value>Sorting Unit Not On Ok</value>
+  </data>
+  <data name="SORTING UNIT - LOCAL ESTOP PUSHBUTTON NOT RESET (STOP BELT)" xml:space="preserve">
+    <value>Sorting Unit - Local Estop Pushbutton Not Reset (Stop Belt)</value>
+  </data>
+  <data name="SORTING" xml:space="preserve">
+    <value>Sorting</value>
+  </data>
+  <data name="SORTING IN PROGRESS" xml:space="preserve">
+    <value>Sorting In Progress</value>
+  </data>
+  <data name="(1=SORTING)" xml:space="preserve">
+    <value>(1=Sorting)</value>
+  </data>
+  <data name="SORTING STANDBY" xml:space="preserve">
+    <value>Sorting Standby</value>
+  </data>
+  <data name="(1=STANDBY)" xml:space="preserve">
+    <value>(1=Standby)</value>
+  </data>
+  <data name="NO FAULTS" xml:space="preserve">
+    <value>No Faults</value>
+  </data>
+  <data name="SORTER NO FAULTS" xml:space="preserve">
+    <value>Sorter No Faults</value>
+  </data>
+  <data name="WARNING PRESENT" xml:space="preserve">
+    <value>Warning Present</value>
+  </data>
+  <data name="SORTER WARNING" xml:space="preserve">
+    <value>Sorter Warning</value>
+  </data>
+  <data name="(1=WARNING)" xml:space="preserve">
+    <value>(1=Warning)</value>
+  </data>
+  <data name="REMOTE MODE" xml:space="preserve">
+    <value>Remote Mode</value>
+  </data>
+  <data name="SORTER IN REMOTE MODE" xml:space="preserve">
+    <value>Sorter In Remote Mode</value>
+  </data>
+  <data name="(1=REMOTE)" xml:space="preserve">
+    <value>(1=Remote)</value>
+  </data>
+  <data name="SORTER ON" xml:space="preserve">
+    <value>Sorter On</value>
+  </data>
+  <data name="(1=ON)" xml:space="preserve">
+    <value>(1=On)</value>
+  </data>
+  <data name="SORTER LOCAL ESTOP BUTTON" xml:space="preserve">
+    <value>Sorter Local Estop Button</value>
+  </data>
+  <data name="(0=ESTOP PRESSED)" xml:space="preserve">
+    <value>(0=Estop Pressed)</value>
+  </data>
+  <data name="DOWNSTREAM FAULTY STATUS" xml:space="preserve">
+    <value>Downstream Faulty Status</value>
+  </data>
+  <data name="INFO_DOWNSTR_STATUS" xml:space="preserve">
+    <value>Info_Downstr_Status</value>
+  </data>
+  <data name="DOWNSTREAM STATUS OK (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Downstream Status Ok (External Signal)</value>
+  </data>
+  <data name="(1=DOWNSTREAM STATUS OK)" xml:space="preserve">
+    <value>(1=Downstream Status Ok)</value>
+  </data>
+  <data name="DOWNSTREAM OK TO RECEIVE (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Downstream Ok To Receive (External Signal)</value>
+  </data>
+  <data name="LOCAL DISCONNECT NOT OK" xml:space="preserve">
+    <value>Local Disconnect Not Ok</value>
+  </data>
+  <data name="PAUSE_TIME" xml:space="preserve">
+    <value>Pause_Time</value>
+  </data>
+  <data name="ON_TIME" xml:space="preserve">
+    <value>On_Time</value>
+  </data>
+  <data name="BYPASS" xml:space="preserve">
+    <value>Bypass</value>
+  </data>
+  <data name="OK FOR PROCESS (PLC RUN, ESTOP OK + NO ALARMS/MESSAGES)" xml:space="preserve">
+    <value>Ok For Process (Plc Run, Estop Ok + No Alarms/Messages)</value>
+  </data>
+  <data name="CRITICAL ALARM PRESENT    (IF  FALSE --&gt; NO  PROD START)" xml:space="preserve">
+    <value>Critical Alarm Present    (If  False --&gt; No  Prod Start)</value>
+  </data>
+  <data name="INFO_PRES_10" xml:space="preserve">
+    <value>Check For A Possible Blockage Of Heat Exchanger And Configuration Of Setups</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_PRES_11" xml:space="preserve">
+    <value>Check For A Possible Leakage Of Heat Exchanger/Pipes And Configuration Of Setups</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_MIXER_1" xml:space="preserve">
+    <value>Check Water Circuit, Refill Valve, Pipes And Water Pump. Possible Leakage Or Lack Of Water.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_MIXER_2" xml:space="preserve">
+    <value>Check For A Possible Blockage At The Dicharge Valve Of The Mixer, Valve Air Pressure And Discharge Pump.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_MIXER_3" xml:space="preserve">
+    <value>Check The Mixer Filling And Contact Online Assistance Of Manufacturer -Mixer Is Automatically Disabled</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_LEVEL_18" xml:space="preserve">
+    <value>Check Levels Parameter In The Water Loop Circuit</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_MIXER_4" xml:space="preserve">
+    <value>Check For Mixer Overload Of Material Or Mixer Current Control Settings</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_GT_VALVES_2" xml:space="preserve">
+    <value>Discharge Cycle Cannot Go On. Check The Valve Position Ls Are Working And Placed  In The Right Position And No Valve Blockage Is Occured.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_PST_1" xml:space="preserve">
+    <value>Check The Levels Of The Chemical Additives In The Tanks And Dosing System For A Leakage Or A Lack Of Air Pressure</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_PST_2" xml:space="preserve">
+    <value>Check The Water Pressure And Dosing System For A Possible Leakage Or A Lack Of Air Pressure</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_PST_3" xml:space="preserve">
+    <value>Check The Bowl Position Sensor</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_PST_4" xml:space="preserve">
+    <value>Check The Levels Of The Chemical Additives In The Tanks, The Water Pressure And Dosing System For A Leakage Or A Lack Of Air Pressure</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_TEMPER_12" xml:space="preserve">
+    <value>Gearbox Is Overheated: Check Cooling System. If Temperature Increases Again, Main Motor Will Be Stopped.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_TEMPER_13" xml:space="preserve">
+    <value>Gearbox Is Highly Overheated. Main Motor Is Stopped. Check The Whole Gearbox, Its Cooling, And Do The Needed Maintenance.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_PRES_12" xml:space="preserve">
+    <value>Check Inlet Steam System - Pressure Is Too High - Pressure Fluctuations May Cause Desease On Thermal Regulation</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_PRES_13" xml:space="preserve">
+    <value>Check Inlet Steam System - Pressure Is Too Low - Pressure Fluctuations May Cause Desease On Thermal Regulation</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="UserManagement" xml:space="preserve">
+    <value>Users Management</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="ResetFaults" xml:space="preserve">
+    <value>Reset Faults</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="OperatingSystemAccess" xml:space="preserve">
+    <value>Operating System Access</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="InfoPanel" xml:space="preserve">
+    <value>Info Panel</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="TrendLogs" xml:space="preserve">
+    <value>Trends Page</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="TrendExport" xml:space="preserve">
+    <value>Trends Export</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="EventLogs" xml:space="preserve">
+    <value>Events Logged</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="CyclesPanel" xml:space="preserve">
+    <value>Cycles Panel</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="SignalsPanel" xml:space="preserve">
+    <value>Signals Panel</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="ParameterManagement" xml:space="preserve">
+    <value>Parameter Management Page</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="PlcPage" xml:space="preserve">
+    <value>PLC Rack Page</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="ElectricalDrawing" xml:space="preserve">
+    <value>Electrical Drawing Page</value>
+    <comment>SystemPermissions</comment>
+  </data>
+  <data name="PlantOverview" xml:space="preserve">
+    <value>Plant Overview</value>
+    <comment>SystemPermissions</comment>
   </data>
 </root>
