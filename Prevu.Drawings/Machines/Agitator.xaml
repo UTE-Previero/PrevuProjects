@@ -5,15 +5,24 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Drawings.Machines"
              mc:Ignorable="d" 
-             Width="100" Height="100">
+             >
 
-  <Viewbox  Stretch="Uniform">
-    <Canvas Name="svg4" Width="100" Height="100">
-      <Path  Name="path2" Fill="#FF616161">
-        <Path.Data>
-          <PathGeometry Figures="M1.37572 48.9473L1.0474 47.6473C0.359927 44.9252 0.359927 42.0748 1.0474 39.3527L1.37572 38.0527C2.70524 32.7883 6.82798 28.6852 12.0986 27.3809C15.6864 26.493 19.4769 26.989 22.7154 28.77L49.5 43.5L76.2846 28.77C79.5231 26.989 83.3136 26.493 86.9014 27.3809C92.172 28.6852 96.2948 32.7883 97.6243 38.0527L97.9526 39.3527C98.6401 42.0748 98.6401 44.9252 97.9526 47.6473L97.6243 48.9473C96.2948 54.2117 92.172 58.3148 86.9014 59.6191C83.3136 60.507 79.5231 60.011 76.2846 58.23L49.5 43.5L22.7154 58.23C19.4769 60.011 15.6864 60.507 12.0986 59.6191C6.82798 58.3148 2.70524 54.2117 1.37572 48.9473Z" FillRule="NonZero"/>
-        </Path.Data>
-      </Path>
-    </Canvas>
-  </Viewbox>
+    <Viewbox Stretch="Uniform">
+        <Canvas Name="svg11" Width="100" Height="36">
+            <Canvas.RenderTransform>
+                <TranslateTransform X="0" Y="0"/>
+            </Canvas.RenderTransform>
+            <Canvas.Resources>
+                <RectangleGeometry x:Key="clip0_10_45" Rect="0, 0, 100, 35.3535"/>
+            </Canvas.Resources>
+            <!--Unknown tag: sodipodi:namedview-->
+            <Canvas Name="g4" Clip="{StaticResource clip0_10_45}">
+                <Path Name="path2" Fill="#FF616161">
+                    <Path.Data>
+                        <PathGeometry Figures="M1.38962 23.1791L1.05798 21.8659C0.363563 19.1163 0.363562 16.2372 1.05798 13.4876L1.38961 12.1745C2.73257 6.8569 6.89694 2.71237 12.2209 1.39484C15.8448 0.498001 19.6736 0.998957 22.9449 2.79795L50 17.6768L77.0551 2.79795C80.3264 0.998957 84.1552 0.498001 87.7791 1.39484C93.1031 2.71237 97.2674 6.8569 98.6104 12.1745L98.942 13.4876C99.6364 16.2372 99.6364 19.1163 98.942 21.8659L98.6104 23.1791C97.2674 28.4966 93.1031 32.6412 87.7791 33.9587C84.1552 34.8555 80.3264 34.3546 77.0551 32.5556L50 17.6768L22.9449 32.5556C19.6736 34.3546 15.8448 34.8555 12.2209 33.9587C6.89694 32.6412 2.73257 28.4966 1.38962 23.1791Z" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+            </Canvas>
+        </Canvas>
+    </Viewbox>
 </UserControl>
