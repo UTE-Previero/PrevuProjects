@@ -13,34 +13,14 @@ using System.Windows.Shapes;
 
 namespace Prevu.Synoptics
 {
-    /// <summary>
-    /// Interaction logic for GR1.xaml
-    /// </summary>
-    public partial class G810 : UserControl
+  /// <summary>
+  /// Interaction logic for GR1.xaml
+  /// </summary>
+  public partial class G810 : UserControl
+  {
+    public G810()
     {
-        public G810()
-        {
-            InitializeComponent();
-        }
-
-        private void Pipe_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Manual_Selection_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Radar_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void DeviceLabel_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
+      InitializeComponent();
     }
+  }
 }
