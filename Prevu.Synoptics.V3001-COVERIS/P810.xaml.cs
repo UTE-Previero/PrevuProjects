@@ -13,19 +13,14 @@ using System.Windows.Shapes;
 
 namespace Prevu.Synoptics
 {
-    /// <summary>
-    /// Interaction logic for GR1.xaml
-    /// </summary>
-    public partial class G514 : UserControl
+  /// <summary>
+  /// Interaction logic for GR1.xaml
+  /// </summary>
+  public partial class P810 : UserControl
+  {
+    public P810()
     {
-        public G514()
-        {
-            InitializeComponent();
-        }
-
-        private void EXC_Air_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
+      InitializeComponent();
     }
+  }
 }
