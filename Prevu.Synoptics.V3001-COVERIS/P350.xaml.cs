@@ -16,11 +16,16 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for GR1.xaml
     /// </summary>
-    public partial class G230 : UserControl
+    public partial class P350 : UserControl
     {
-        public G230()
+        public P350()
         {
             InitializeComponent();
+        }
+
+        private void WaterPump_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

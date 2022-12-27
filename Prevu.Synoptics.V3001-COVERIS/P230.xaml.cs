@@ -16,16 +16,11 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for GR1.xaml
     /// </summary>
-    public partial class G514 : UserControl
+    public partial class P230 : UserControl
     {
-        public G514()
+        public P230()
         {
             InitializeComponent();
-        }
-
-        private void EXC_Air_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
