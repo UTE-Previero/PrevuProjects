@@ -7,12 +7,15 @@
 						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              mc:Ignorable="d" 
-             Height="315" Width="335" d:Background="{DynamicResource MaterialDesignPaper}">
+             Height="295" Width="300" d:Background="{DynamicResource MaterialDesignPaper}">
 	<Grid>
-		<Machines:SLX_Silo HorizontalAlignment="Left" Margin="74,47,0,0" VerticalAlignment="Top" Height="215" Width="166"/>
-		<Labels:SignalLabel HorizontalAlignment="Left" Margin="194,57,0,0" VerticalAlignment="Top" ComponentName="810-61-LEV" SignalName="LSHA"/>
+		<Machines:SLX_Silo HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="276" Width="213"/>
+		<Labels:SignalLabel HorizontalAlignment="Left" Margin="171,30,0,0" VerticalAlignment="Top" ComponentName="810-61-LEV" SignalName="CMD-Y"/>
+		<Labels:SignalLabel HorizontalAlignment="Left" Margin="170,74,0,0" VerticalAlignment="Top" ComponentName="810-61-LEV" SignalName="CMD-L" />
+		<Labels:SignalLabel HorizontalAlignment="Left" Margin="150,185,0,0" VerticalAlignment="Top" ComponentName="810-61-LEV" SignalName="CMD-D"/>
+		<!--<Labels:SignalLabel HorizontalAlignment="Left" Margin="194,57,0,0" VerticalAlignment="Top" ComponentName="810-61-LEV" SignalName="LSHA"/>
 		<Labels:SignalLabel HorizontalAlignment="Left" Margin="194,102,0,0" VerticalAlignment="Top" ComponentName="810-61-LEV" SignalName="LSH" />
-		<Labels:SignalLabel HorizontalAlignment="Left" Margin="170,187,0,0" VerticalAlignment="Top" ComponentName="810-61-LEV" SignalName="LSL"/>
+		<Labels:SignalLabel HorizontalAlignment="Left" Margin="170,187,0,0" VerticalAlignment="Top" ComponentName="810-61-LEV" SignalName="LSL"/>-->
 
 	</Grid>
 </UserControl>
