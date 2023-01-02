@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Prevu.Drawings.Machines.External"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Drawings.Machines"
+             mc:Ignorable="d" Width="100" Height="100"
+             d:DesignHeight="450" d:DesignWidth="800">
+  
+  <Viewbox Stretch="Uniform" >
+    <Canvas Name="svg13" Width="100" Height="100" Effect="{DynamicResource MaterialDesignElevationShadow1}">
+      <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="0"/>
+      </Canvas.RenderTransform>
+      <Canvas.Resources>
+        <RectangleGeometry x:Key="clip0_105:5" Rect="0, 0, 100, 100"/>
+      </Canvas.Resources>
+      <Canvas Name="g6" >
+				<Path Name="path2" Fill="Black" >
+          <Path.Data>
+            <PathGeometry Figures="M24 50L50 100V0L24 50Z" FillRule="NonZero"/>
+          </Path.Data>
+        </Path>
+				<Path Name="path4" Fill="Gray">
+          <Path.Data>
+            <PathGeometry Figures="M76 50L50 -2.27299e-06L50 100L76 50Z" FillRule="NonZero"/>
+          </Path.Data>
+        </Path>
+      </Canvas>
+    </Canvas>
+  </Viewbox>
+</UserControl>
