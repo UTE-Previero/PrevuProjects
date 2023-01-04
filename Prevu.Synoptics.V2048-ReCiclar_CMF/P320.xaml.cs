@@ -16,9 +16,9 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for GR1.xaml
     /// </summary>
-    public partial class S810 : UserControl
+    public partial class P320 : UserControl
     {
-        public S810()
+        public P320()
         {
             InitializeComponent();
         }

@@ -16,14 +16,29 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for GR1.xaml
     /// </summary>
-    public partial class S330 : UserControl
+    public partial class P810 : UserControl
     {
-        public S330()
+        public P810()
         {
             InitializeComponent();
         }
 
-        private void WaterPump_Loaded(object sender, RoutedEventArgs e)
+        private void Pipe_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Manual_Selection_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Radar_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DeviceLabel_Loaded(object sender, RoutedEventArgs e)
         {
 
         }

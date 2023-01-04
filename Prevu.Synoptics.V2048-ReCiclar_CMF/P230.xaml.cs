@@ -16,31 +16,11 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for GR1.xaml
     /// </summary>
-    public partial class S140 : UserControl
+    public partial class P230 : UserControl
     {
-        public S140()
+        public P230()
         {
             InitializeComponent();
-        }
-
-        private void Pipe_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Manual_Selection_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Radar_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void DeviceLabel_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

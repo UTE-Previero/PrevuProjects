@@ -14,31 +14,16 @@ using System.Windows.Shapes;
 namespace Prevu.Synoptics
 {
     /// <summary>
-    /// Interaction logic for GR1.xaml
+    /// Interaction logic for WH1.xaml
     /// </summary>
-    public partial class S018 : UserControl
+    public partial class P420 : UserControl
     {
-        public S018()
+        public P420()
         {
             InitializeComponent();
         }
 
-        private void Pipe_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Manual_Selection_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Radar_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void DeviceLabel_Loaded(object sender, RoutedEventArgs e)
+        private void WaterPump_Loaded(object sender, RoutedEventArgs e)
         {
 
         }
