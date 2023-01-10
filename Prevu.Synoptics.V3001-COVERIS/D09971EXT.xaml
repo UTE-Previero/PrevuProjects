@@ -9,20 +9,6 @@
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}" Height="450" MinWidth="450">
     <Grid>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-		Margin="200,44,0,0" 
-		VerticalAlignment="Top" 
-		ComponentName="099-71-ECS1"/>
-        <Rectangle HorizontalAlignment="Left" Height="271" Margin="260,-102,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5">
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>
         <Machines:External HorizontalAlignment="Left" Margin="60,-16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="70">
             <Machines:External.RenderTransform>
                 <TransformGroup>
@@ -33,6 +19,20 @@
                 </TransformGroup>
             </Machines:External.RenderTransform>
         </Machines:External>
+        <Rectangle HorizontalAlignment="Left" Height="271" Margin="260,-102,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+		Margin="200,44,0,0" 
+		VerticalAlignment="Top" 
+		ComponentName="099-71-ECS1"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
             Margin="304,67,0,0" 
             VerticalAlignment="Top" 
