@@ -228,6 +228,28 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="285,797,0,0" VerticalAlignment="Top" Color="Water" Width="587" StatusComponent="282-06-MA1"/>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="150,807,0,0" VerticalAlignment="Top" Color="Water" Width="913" StatusComponent="282-01-MA1"/>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="-122,535,0,0" VerticalAlignment="Top" Color="Water" Width="546" StatusComponent="282-01-MA1" RenderTransformOrigin="0.5,0.5">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="119,630,0,0" VerticalAlignment="Top" Color="Water" Width="336" StatusComponent="282-06-MA1" RenderTransformOrigin="0.5,0.5">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
         <Machines:MaterialInletOutlet HorizontalAlignment="Left" Margin="190,5,0,0" VerticalAlignment="Top" Width="115" Height="120" RenderTransformOrigin="0.5,0.5">
             <Machines:MaterialInletOutlet.RenderTransform>
                 <TransformGroup>
@@ -238,9 +260,6 @@
                 </TransformGroup>
             </Machines:MaterialInletOutlet.RenderTransform>
         </Machines:MaterialInletOutlet>
-        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="154,148,0,0" VerticalAlignment="Top" Width="152" />
-        <Machines:SCW_ScrewConveyor_inclined HorizontalAlignment="Left" Margin="956,110,0,0" VerticalAlignment="Top" Height="171" Width="203"/>
-        <Machines:VRC_WaterCollectingTank HorizontalAlignment="Left" Margin="832,554,0,0" VerticalAlignment="Top" Height="118" Width="261"/>
         <Machines:CV_Valve_001 HorizontalAlignment="Left" Margin="828,461,0,0" VerticalAlignment="Top" Height="100" Width="100" Color="Water" RenderTransformOrigin="0.5,0.5">
             <Machines:CV_Valve_001.RenderTransform>
                 <TransformGroup>
@@ -261,6 +280,17 @@
                 </TransformGroup>
             </Machines:CV_Valve_001.RenderTransform>
         </Machines:CV_Valve_001>
+        <Machines:CV_Valve_001 HorizontalAlignment="Left" Margin="1049,231,0,0" VerticalAlignment="Top" Height="100" Width="100" Color="Water" RenderTransformOrigin="0.51,0.539">
+            <Machines:CV_Valve_001.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.5" Y="-1.95"/>
+                </TransformGroup>
+            </Machines:CV_Valve_001.RenderTransform>
+        </Machines:CV_Valve_001>
+        <Machines:GR_001 HorizontalAlignment="Left" Margin="259,250,0,0" VerticalAlignment="Top" Height="161" Width="203"/>
         <Machines:RTF_Microfilter HorizontalAlignment="Left" Margin="920,287,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="138" Height="125">
             <Machines:RTF_Microfilter.RenderTransform>
                 <TransformGroup>
@@ -271,6 +301,7 @@
                 </TransformGroup>
             </Machines:RTF_Microfilter.RenderTransform>
         </Machines:RTF_Microfilter>
+        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="154,148,0,0" VerticalAlignment="Top" Width="152" />
         <Machines:DCE_DryingCentrifuge HorizontalAlignment="Left" Margin="343,388,0,0" VerticalAlignment="Top" Height="152" Width="124" RenderTransformOrigin="0.5,0.5">
             <Machines:DCE_DryingCentrifuge.RenderTransform>
                 <TransformGroup>
@@ -281,8 +312,9 @@
                 </TransformGroup>
             </Machines:DCE_DryingCentrifuge.RenderTransform>
         </Machines:DCE_DryingCentrifuge>
-        <Machines:GR_001 HorizontalAlignment="Left" Margin="259,250,0,0" VerticalAlignment="Top" Height="161" Width="203"/>
+        <Machines:SCW_ScrewConveyor_inclined HorizontalAlignment="Left" Margin="956,110,0,0" VerticalAlignment="Top" Height="171" Width="203"/>
         <Machines:VT_BlowerCentrifuge_down HorizontalAlignment="Left" Margin="501,565,0,0" VerticalAlignment="Top" Height="70" Width="64"/>
+        <Machines:VRC_WaterCollectingTank HorizontalAlignment="Left" Margin="832,554,0,0" VerticalAlignment="Top" Height="118" Width="261"/>
         <Machines:VRC_WaterCollectingTank HorizontalAlignment="Left" Margin="616,692,0,0" VerticalAlignment="Top" Height="78" Width="177"/>
         <Machines:WaterPump HorizontalAlignment="Left" Margin="742,686,0,0" VerticalAlignment="Top" Height="50" Width="50" RenderTransformOrigin="0.5,0.5" Color="Water" BorderBrush="Black">
             <Machines:WaterPump.RenderTransform>
@@ -294,16 +326,36 @@
                 </TransformGroup>
             </Machines:WaterPump.RenderTransform>
         </Machines:WaterPump>
-        <Machines:CV_Valve_001 HorizontalAlignment="Left" Margin="1049,231,0,0" VerticalAlignment="Top" Height="100" Width="100" Color="Water" RenderTransformOrigin="0.51,0.539">
-            <Machines:CV_Valve_001.RenderTransform>
+        <Machines:WaterPump HorizontalAlignment="Left" Margin="1036,714,0,0" VerticalAlignment="Top" Height="70" Width="56" RenderTransformOrigin="0.5,0.5" Color="Water">
+            <Machines:WaterPump.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+                    <ScaleTransform ScaleX="-1"/>
                     <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform X="-0.5" Y="-1.95"/>
+                    <RotateTransform Angle="270"/>
+                    <TranslateTransform/>
                 </TransformGroup>
-            </Machines:CV_Valve_001.RenderTransform>
-        </Machines:CV_Valve_001>
+            </Machines:WaterPump.RenderTransform>
+        </Machines:WaterPump>
+        <Machines:WaterPump HorizontalAlignment="Left" Margin="1146,563,0,0" VerticalAlignment="Top" Height="70" Width="56" RenderTransformOrigin="0.5,0.5" Color="Water">
+            <Machines:WaterPump.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Machines:WaterPump.RenderTransform>
+        </Machines:WaterPump>
+        <Machines:WaterPump HorizontalAlignment="Left" Margin="842,714,0,0" VerticalAlignment="Top" Height="70" Width="56" RenderTransformOrigin="0.5,0.5" Color="Water">
+            <Machines:WaterPump.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="270"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Machines:WaterPump.RenderTransform>
+        </Machines:WaterPump>
         <Rectangle HorizontalAlignment="Left" Height="164" Margin="294,32,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
@@ -325,26 +377,6 @@
             </Machines:External.RenderTransform>
         </Machines:External>
         <Machines:Waste HorizontalAlignment="Left" Margin="1097,195,0,0" VerticalAlignment="Top" Height="46" Width="44"/>
-        <Machines:WaterPump HorizontalAlignment="Left" Margin="1036,714,0,0" VerticalAlignment="Top" Height="70" Width="56" RenderTransformOrigin="0.5,0.5" Color="Water">
-            <Machines:WaterPump.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="270"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Machines:WaterPump.RenderTransform>
-        </Machines:WaterPump>
-        <Machines:WaterPump HorizontalAlignment="Left" Margin="1146,563,0,0" VerticalAlignment="Top" Height="70" Width="56" RenderTransformOrigin="0.5,0.5" Color="Water">
-            <Machines:WaterPump.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="180"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Machines:WaterPump.RenderTransform>
-        </Machines:WaterPump>
         <Labels:JumpLabel HorizontalAlignment="Left" 
                       Margin="917,29,0,0" 
                       VerticalAlignment="Top" 
@@ -442,38 +474,6 @@
             Margin="917,560,0,0" 
             VerticalAlignment="Top" 
             ComponentName="282-05-MA1"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="285,797,0,0" VerticalAlignment="Top" Color="Water" Width="587" StatusComponent="282-06-MA1"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="150,807,0,0" VerticalAlignment="Top" Color="Water" Width="913" StatusComponent="282-01-MA1"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="-122,535,0,0" VerticalAlignment="Top" Color="Water" Width="546" StatusComponent="282-01-MA1" RenderTransformOrigin="0.5,0.5">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="119,630,0,0" VerticalAlignment="Top" Color="Water" Width="336" StatusComponent="282-06-MA1" RenderTransformOrigin="0.5,0.5">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
-        <Machines:WaterPump HorizontalAlignment="Left" Margin="842,714,0,0" VerticalAlignment="Top" Height="70" Width="56" RenderTransformOrigin="0.5,0.5" Color="Water">
-            <Machines:WaterPump.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="270"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Machines:WaterPump.RenderTransform>
-        </Machines:WaterPump>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
       Margin="201,406,0,0" 
       VerticalAlignment="Top" 
