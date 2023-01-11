@@ -20,7 +20,7 @@ namespace Prevu.Synoptics
   /// </summary>
   public partial class D810_2 : UserControl
     {
-        public D810_2()
+        public D810_2 ()
         {
             InitializeComponent();
         }
