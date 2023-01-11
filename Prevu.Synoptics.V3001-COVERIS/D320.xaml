@@ -7,96 +7,15 @@
 						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              mc:Ignorable="d" 
-             d:Background="{DynamicResource MaterialDesignPaper}" Height="425" Width="490">
-    <Grid>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="164,175,0,0" VerticalAlignment="Top" Color="Oil" Width="158" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="514-23-CV1">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="0.859" ScaleY="1.164"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="127,110,0,0" VerticalAlignment="Top" Color="Oil" Width="127" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="320-01-MA1">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="0.859" ScaleY="1.164"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="321,264,0,0" VerticalAlignment="Top" Color="Oil" Width="58" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="320-01-MA1">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="0.859" ScaleY="1.164"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="110,264,0,0" VerticalAlignment="Top" Color="Oil" Width="58" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="320-01-MA1">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="0.859" ScaleY="1.164"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Center" Margin="0,242,0,0" VerticalAlignment="Top" Color="Oil" Width="246" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="320-01-MA1">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="0.859" ScaleY="1.164"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
-        <Rectangle HorizontalAlignment="Left" Height="2" Margin="114,89,0,0" Stroke="Black" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.5,0.5">
-            <d:Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </d:Rectangle.RenderTransform>
-        </Rectangle>
-        <Ellipse HorizontalAlignment="Left" Height="16" Margin="133,111,0,0" Stroke="#FFBDBDBD" VerticalAlignment="Top" Width="16" OpacityMask="#FFBDBDBD" Fill="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}"/>
-        <Machines:EXC_Air HorizontalAlignment="Left" Margin="276,239,0,0" VerticalAlignment="Top" Height="27" Width="60"/>
-        <Machines:VRC_WaterCollectingTank HorizontalAlignment="Center" Margin="0,295,0,0" VerticalAlignment="Top" Height="94" Width="254"/>
-        <Machines:WaterPump HorizontalAlignment="Left" Margin="159,219,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="66" Width="50" Color="Oil">
-            <Machines:WaterPump.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Machines:WaterPump.RenderTransform>
-        </Machines:WaterPump>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="96,40,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="320-41-PT1"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="261,173,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="320-02-MA1"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="139,173,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="320-01-MA1"/>
-        <Labels:DeviceLabel HorizontalAlignment="Center" 
-            Margin="0,317,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="320-42-TT1"/>
-    </Grid>
+             d:Background="{DynamicResource MaterialDesignPaper}" Height="450" MinWidth="380">
+	<Grid>
+		<Machines:SLX_Silo HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="430" Width="331"/>
+		<Labels:SignalLabel HorizontalAlignment="Left" Margin="280,40,0,0" VerticalAlignment="Top" ComponentName="320-61-LEV" SignalName="LSHA"/>
+		<Labels:SignalLabel HorizontalAlignment="Left" Margin="280,104,0,0" VerticalAlignment="Top" ComponentName="320-61-LEV" SignalName="LSH" />
+		<Labels:SignalLabel HorizontalAlignment="Left" Margin="257,275,0,0" VerticalAlignment="Top" ComponentName="320-61-LEV" SignalName="LSL"/>
+		<Labels:DeviceLabel HorizontalAlignment="Left" 
+		Margin="125,35,0,0" 
+		VerticalAlignment="Top" 
+		ComponentName="320-61-LEV"/>
+	</Grid>
 </UserControl>
