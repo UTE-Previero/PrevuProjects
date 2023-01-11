@@ -18,9 +18,9 @@ namespace Prevu.Synoptics
   /// <summary>
   /// Interaction logic for D09971EXT.xaml
   /// </summary>
-  public partial class D09971EXT : UserControl
+  public partial class D099 : UserControl
     {
-        public D09971EXT()
+        public D099()
         {
             InitializeComponent();
         }
