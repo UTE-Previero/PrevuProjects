@@ -25,5 +25,9 @@ namespace Prevu.Synoptics
       InitializeComponent();
     }
 
-  }
+        private void FKS_FlakesSorter_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+    }
 }

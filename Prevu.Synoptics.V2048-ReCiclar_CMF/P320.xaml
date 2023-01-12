@@ -5,6 +5,7 @@
              xmlns:local="clr-namespace:Prevu.Synoptics"
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" 
              x:Class="Prevu.Synoptics.P320" mc:Ignorable="d"
              Height="840" Width="1420" d:Background="{DynamicResource MaterialDesignPaper}">
     <Grid RenderTransformOrigin="0.5,0.5">
@@ -59,7 +60,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="325,367,0,0" VerticalAlignment="Top" Width="247" StatusComponent="269-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="6">
+        <Labels:Pipe HorizontalAlignment="Left" Margin="325,371,0,0" VerticalAlignment="Top" Width="247" StatusComponent="269-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="6">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -90,7 +91,7 @@
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
         <Labels:Pipe HorizontalAlignment="Left" Margin="625,344,0,0" VerticalAlignment="Top" Color="Air" Width="79" StatusComponent="269-01-MA1"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="576,467,0,0" VerticalAlignment="Top" Color="Air" Width="251" StatusComponent="269-01-MA1" RenderTransformOrigin="0.5,0.5">
+        <Labels:Pipe HorizontalAlignment="Left" Margin="587,456,0,0" VerticalAlignment="Top" Color="Air" Width="229" StatusComponent="269-01-MA1" RenderTransformOrigin="0.5,0.5">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -100,7 +101,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="329,591,0,0" VerticalAlignment="Top" Color="Air" Width="375" StatusComponent="269-01-MA1"/>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="329,568,0,0" VerticalAlignment="Top" Color="Air" Width="375" StatusComponent="269-01-MA1"/>
         <Labels:Pipe HorizontalAlignment="Left" Margin="215,752,0,0" VerticalAlignment="Top" Width="61" StatusComponent="292-01-MA1" RenderTransformOrigin="0.5,0.5" Color="Air" Height="6">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -163,7 +164,6 @@
                 </TransformGroup>
             </Machines:CV_Valve_001.RenderTransform>
         </Machines:CV_Valve_001>
-        <Rectangle HorizontalAlignment="Left" Height="269" Margin="247,345,0,0" VerticalAlignment="Top" Width="95" Fill="Gray" RadiusX="15" RadiusY="15"/>
         <Rectangle HorizontalAlignment="Left" Height="2" Margin="202,754,0,0" Stroke="Black" VerticalAlignment="Top" Width="28" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
@@ -231,5 +231,6 @@
             Margin="332,697,0,0" 
             VerticalAlignment="Top" 
             ComponentName="292-01-MA1"/>
+        <Separation:SA_Elutriator HorizontalAlignment="Left" Margin="248,340,0,235" Width="96"/>
     </Grid>
 </UserControl>
