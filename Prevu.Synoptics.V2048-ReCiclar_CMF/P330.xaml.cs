@@ -23,9 +23,6 @@ namespace Prevu.Synoptics
             InitializeComponent();
         }
 
-        private void WaterPump_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
     }
 }

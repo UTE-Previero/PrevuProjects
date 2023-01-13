@@ -23,24 +23,6 @@ namespace Prevu.Synoptics
             InitializeComponent();
         }
 
-        private void Pipe_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Manual_Selection_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Radar_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void DeviceLabel_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
     }
 }

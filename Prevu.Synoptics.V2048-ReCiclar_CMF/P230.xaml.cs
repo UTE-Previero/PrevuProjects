@@ -23,9 +23,6 @@ namespace Prevu.Synoptics
             InitializeComponent();
         }
 
-        private void VRC_WaterCollectingTank_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
     }
 }
