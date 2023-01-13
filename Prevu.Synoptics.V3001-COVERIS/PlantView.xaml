@@ -11,45 +11,37 @@
              lex:ResxLocalizationProvider.DefaultDictionary="Resources"             
              mc:Ignorable="d" 
              d:Height="840" d:Width="1700" d:Background="{DynamicResource MaterialDesignPaper}">
-    <Grid>
-        <Machines:QX_HMI HorizontalAlignment="Left" Margin="1410,260,0,0" VerticalAlignment="Top" Height="136" Width="125"/>
-        <Machines:QX_HMI HorizontalAlignment="Left" Margin="1410,510,0,0" VerticalAlignment="Top" Height="136" Width="125"/>
-        <Machines:QX_ShortElectricalCabinet HorizontalAlignment="Left" Margin="150,274,0,0" VerticalAlignment="Top" Width="114" Height="136"/>
-        <Machines:QX_ShortElectricalCabinet HorizontalAlignment="Left" Margin="388,274,0,0" VerticalAlignment="Top" Width="114" Height="136"/>
-        <Machines:QX_ShortElectricalCabinet HorizontalAlignment="Left" Margin="549,274,0,0" VerticalAlignment="Top" Width="114" Height="136"/>
-        <Machines:QX_ShortElectricalCabinet HorizontalAlignment="Left" Margin="703,274,0,0" VerticalAlignment="Top" Width="114" Height="136"/>
-        <Machines:QX_ShortElectricalCabinet HorizontalAlignment="Left" Margin="857,274,0,0" VerticalAlignment="Top" Width="114" Height="136"/>
-        <Machines:QX_ShortElectricalCabinet HorizontalAlignment="Left" Margin="1011,274,0,0" VerticalAlignment="Top" Width="114" Height="136"/>
-        <Machines:QX_ShortElectricalCabinet HorizontalAlignment="Left" Margin="1165,274,0,0" VerticalAlignment="Top" Width="114" Height="136"/>
-        <Labels:DeviceLabel x:Name="Q11" HorizontalAlignment="Left" Margin="402,215,0,0" VerticalAlignment="Top" ComponentName="Q21"/>
-        <Labels:DeviceLabel x:Name="Q11_Copy" HorizontalAlignment="Left" Margin="563,215,0,0" VerticalAlignment="Top" ComponentName="Q31"/>
-        <Labels:DeviceLabel x:Name="Q11_Copy1" HorizontalAlignment="Left" Margin="717,215,0,0" VerticalAlignment="Top" ComponentName="Q41"/>
-        <Labels:DeviceLabel x:Name="Q11_Copy2" HorizontalAlignment="Left" Margin="871,215,0,0" VerticalAlignment="Top" ComponentName="Q51"/>
-        <Labels:DeviceLabel x:Name="Q11_Copy3" HorizontalAlignment="Left" Margin="1025,215,0,0" VerticalAlignment="Top" ComponentName="Q61"/>
-        <Labels:DeviceLabel x:Name="Q11_Copy4" HorizontalAlignment="Left" Margin="1179,215,0,0" VerticalAlignment="Top" ComponentName="Q91"/>
-        <Labels:DeviceLabel x:Name="Q21_Copy" HorizontalAlignment="Left" Margin="162,200,0,0" VerticalAlignment="Top" ComponentName="Q01"/>
-        <Labels:DeviceLabel x:Name="Q21_Copy1" HorizontalAlignment="Left" Margin="115,53,0,0" VerticalAlignment="Top" ComponentName="ESTOP-AREA-01"/>
-        <Labels:DeviceLabel x:Name="HMI_01" HorizontalAlignment="Left" Margin="1427,185,0,0" VerticalAlignment="Top" ComponentName="HMI-01"/>
-        <Labels:DeviceLabel x:Name="HMI_01_Copy" HorizontalAlignment="Left" Margin="1427,435,0,0" VerticalAlignment="Top" ComponentName="HMI-02"/>
-        <Labels:DeviceLabel x:Name="S110" HorizontalAlignment="Left" Margin="402,431,0,0" VerticalAlignment="Top" ComponentName="S210"/>
-        <Labels:DeviceLabel x:Name="S110_Copy" HorizontalAlignment="Left" Margin="559,431,0,0" VerticalAlignment="Top" ComponentName="S310"/>
-        <Labels:DeviceLabel x:Name="S110_Copy1" HorizontalAlignment="Left" Margin="718,431,0,0" VerticalAlignment="Top" ComponentName="S410"/>
-        <Labels:DeviceLabel x:Name="S110_Copy2" HorizontalAlignment="Left" Margin="869,431,0,0" VerticalAlignment="Top" ComponentName="S510"/>
-        <Labels:DeviceLabel x:Name="S110_Copy3" HorizontalAlignment="Left" Margin="1025,431,0,0" VerticalAlignment="Top" ComponentName="S610"/>
-        <Labels:DeviceLabel x:Name="S110_Copy4" HorizontalAlignment="Left" Margin="1176,431,0,0" VerticalAlignment="Top" ComponentName="S910"/>
-        <Labels:GroupLabel HorizontalAlignment="Left" Margin="846,510,0,0" VerticalAlignment="Top" GroupName="320"/>
-        <Labels:GroupLabel HorizontalAlignment="Left" Margin="450,510,0,0" VerticalAlignment="Top" GroupName="050"/>
-        <Labels:GroupLabel HorizontalAlignment="Left" Margin="380,510,0,0" VerticalAlignment="Top" GroupName="018"/>
-        <Labels:GroupLabel HorizontalAlignment="Left" Margin="575,510,0,0" VerticalAlignment="Top" GroupName="140"/>
-        <Labels:GroupLabel HorizontalAlignment="Left" Margin="916,510,0,0" VerticalAlignment="Top" GroupName="330"/>
-        <Labels:GroupLabel HorizontalAlignment="Left" Margin="1005,510,0,0" VerticalAlignment="Top" GroupName="420"/>
-        <Labels:GroupLabel HorizontalAlignment="Left" Margin="1075,510,0,0" VerticalAlignment="Top" GroupName="530"/>
-        <Labels:GroupLabel HorizontalAlignment="Left" Margin="692,510,0,0" VerticalAlignment="Top" GroupName="230"/>
-        <Labels:GroupLabel HorizontalAlignment="Left" Margin="762,510,0,0" VerticalAlignment="Top" GroupName="268"/>
-        <Labels:GroupLabel HorizontalAlignment="Left" Margin="846,580,0,0" VerticalAlignment="Top" GroupName="350"/>
-        <Labels:GroupLabel HorizontalAlignment="Left" Margin="916,580,0,0" VerticalAlignment="Top" GroupName="371"/>
-        <Labels:GroupLabel HorizontalAlignment="Left" Margin="1159,510,0,0" VerticalAlignment="Top" GroupName="810"/>
-        <Labels:GroupLabel HorizontalAlignment="Left" Margin="1229,510,0,0" VerticalAlignment="Top" GroupName="880"/>
+    <Grid d:IsLocked="True">
+        <Rectangle HorizontalAlignment="Center" Height="600" Stroke="Black" VerticalAlignment="Center" Width="1470" RadiusX="15" RadiusY="15" StrokeThickness="6" StrokeDashArray="2 2" d:IsLocked="True"/>
+
+        <Machines:QX_HMI HorizontalAlignment="Left" Margin="1410,260,0,0" VerticalAlignment="Top" Height="136" Width="125" d:IsLocked="True"/>
+        <Machines:QX_HMI HorizontalAlignment="Left" Margin="1410,510,0,0" VerticalAlignment="Top" Height="136" Width="125" d:IsLocked="True"/>
+        <Machines:QX_ShortElectricalCabinet HorizontalAlignment="Left" Margin="150,274,0,0" VerticalAlignment="Top" Width="114" Height="136" d:IsLocked="True"/>
+        <Machines:QX_ShortElectricalCabinet HorizontalAlignment="Left" Margin="523,274,0,0" VerticalAlignment="Top" Width="114" Height="136" d:IsLocked="True"/>
+        <Machines:QX_ShortElectricalCabinet HorizontalAlignment="Left" Margin="684,274,0,0" VerticalAlignment="Top" Width="114" Height="136" d:IsLocked="True"/>
+        <Machines:QX_ShortElectricalCabinet HorizontalAlignment="Left" Margin="838,274,0,0" VerticalAlignment="Top" Width="114" Height="136" d:IsLocked="True"/>
+        <Machines:QX_ShortElectricalCabinet HorizontalAlignment="Left" Margin="992,274,0,0" VerticalAlignment="Top" Width="114" Height="136" d:IsLocked="True"/>
+        <Labels:DeviceLabel x:Name="Q41" HorizontalAlignment="Left" Margin="535,215,0,0" VerticalAlignment="Top" ComponentName="Q41" d:IsLocked="True"/>
+        <Labels:DeviceLabel x:Name="Q51" HorizontalAlignment="Left" Margin="696,215,0,0" VerticalAlignment="Top" ComponentName="Q51" d:IsLocked="True"/>
+        <Labels:DeviceLabel x:Name="Q61" HorizontalAlignment="Left" Margin="850,215,0,0" VerticalAlignment="Top" ComponentName="Q61" d:IsLocked="True"/>
+        <Labels:DeviceLabel x:Name="Q71" HorizontalAlignment="Left" Margin="1004,215,0,0" VerticalAlignment="Top" ComponentName="Q71" d:IsLocked="True"/>
+        <Labels:DeviceLabel x:Name="Q01" HorizontalAlignment="Left" Margin="162,200,0,0" VerticalAlignment="Top" ComponentName="Q01" d:IsLocked="True"/>
+        <Labels:DeviceLabel x:Name="ESTOP" HorizontalAlignment="Left" Margin="115,53,0,0" VerticalAlignment="Top" ComponentName="ESTOP-AREA-01" d:IsLocked="True"/>
+        <Labels:DeviceLabel x:Name="HMI_01" HorizontalAlignment="Left" Margin="1427,185,0,0" VerticalAlignment="Top" ComponentName="HMI-01" d:IsLocked="True"/>
+        <Labels:DeviceLabel x:Name="HMI_02" HorizontalAlignment="Left" Margin="1427,435,0,0" VerticalAlignment="Top" ComponentName="HMI-02" d:IsLocked="True"/>
+        <Labels:DeviceLabel x:Name="S410" HorizontalAlignment="Left" Margin="535,431,0,0" VerticalAlignment="Top" ComponentName="S410" d:IsLocked="True"/>
+        <Labels:DeviceLabel x:Name="S510" HorizontalAlignment="Left" Margin="696,431,0,0" VerticalAlignment="Top" ComponentName="S510" d:IsLocked="True"/>
+        <Labels:DeviceLabel x:Name="S610" HorizontalAlignment="Left" Margin="850,431,0,0" VerticalAlignment="Top" ComponentName="S610" d:IsLocked="True"/>
+        <Labels:DeviceLabel x:Name="S710" HorizontalAlignment="Left" Margin="1004,431,0,0" VerticalAlignment="Top" ComponentName="S710" d:IsLocked="True"/>
+        <Labels:GroupLabel HorizontalAlignment="Left" Margin="981,510,0,0" VerticalAlignment="Top" GroupName="520" d:IsLocked="True"/>
+        <Labels:GroupLabel HorizontalAlignment="Left" Margin="547,510,0,0" VerticalAlignment="Top" GroupName="230" d:IsLocked="True"/>
+        <Labels:GroupLabel HorizontalAlignment="Left" Margin="675,510,0,0" VerticalAlignment="Top" GroupName="330" d:IsLocked="True"/>
+        <Labels:GroupLabel HorizontalAlignment="Left" Margin="1051,510,0,0" VerticalAlignment="Top" GroupName="810" d:IsLocked="True"/>
+        <Labels:GroupLabel HorizontalAlignment="Left" Margin="827,510,0,0" VerticalAlignment="Top" GroupName="460" d:IsLocked="True"/>
+        <Labels:GroupLabel HorizontalAlignment="Left" Margin="897,510,0,0" VerticalAlignment="Top" GroupName="490" d:IsLocked="True"/>
+        <Labels:GroupLabel HorizontalAlignment="Left" Margin="745,510,0,0" VerticalAlignment="Top" GroupName="350" d:IsLocked="True"/>
+        <Labels:GroupLabel HorizontalAlignment="Left" Margin="675,585,0,0" VerticalAlignment="Top" GroupName="380" d:IsLocked="True"/>
+        <Labels:GroupLabel HorizontalAlignment="Left" Margin="827,585,0,0" VerticalAlignment="Top" GroupName="514" d:IsLocked="True"/>
 
     </Grid>
 </UserControl>
