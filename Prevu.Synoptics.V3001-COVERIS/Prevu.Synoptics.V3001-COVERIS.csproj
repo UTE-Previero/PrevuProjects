@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="2.0.9" />
     <PackageReference Include="MaterialDesignThemes" Version="4.6.1" />
     <PackageReference Include="Prevu.UIComponents" Version="1.2.4" />
   </ItemGroup>
@@ -24,6 +25,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="D099.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="D810_2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="D320_2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="D320.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="D810.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -34,6 +47,9 @@
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
     </Page>
     <Page Update="D520.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="D099.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
     </Page>
     <Page Update="P350.xaml">

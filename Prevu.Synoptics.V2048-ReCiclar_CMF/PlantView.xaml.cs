@@ -24,5 +24,10 @@ namespace Prevu.Synoptics
         {
             InitializeComponent();
         }
+
+        private void GroupLabel_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
