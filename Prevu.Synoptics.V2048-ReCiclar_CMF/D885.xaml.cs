@@ -29,5 +29,10 @@ namespace Prevu.Synoptics
         {
 
         }
+
+        private void SignalLabel_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

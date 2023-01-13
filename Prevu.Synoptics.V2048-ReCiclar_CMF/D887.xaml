@@ -6,16 +6,20 @@
              xmlns:local="clr-namespace:Prevu.Synoptics"
 						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D887" 
+             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" xmlns:Screws="clr-namespace:Prevu.Drawings.Machines.Screws;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D887" 
              mc:Ignorable="d" 
              Height="600" Width="600" d:Background="{DynamicResource MaterialDesignPaper}">
-    <Grid>
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="240,70,0,0" VerticalAlignment="Top" ComponentName="810-61-LEV" SignalName="LSHA"/>
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="240,134,0,0" VerticalAlignment="Top" ComponentName="810-61-LEV" SignalName="LSH" />
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="222,207,0,0" VerticalAlignment="Top" ComponentName="810-61-LEV" SignalName="LSL"/>
+    <Grid d:IsLocked="True">
+        <Screws:DETAIL_SCW_Flex_Verticale HorizontalAlignment="Center" Margin="0,82,0,38" Width="254" d:IsLocked="True"/>
+        <Labels:SignalLabel HorizontalAlignment="Left" Margin="135,406,0,0" VerticalAlignment="Top" ComponentName="887-61-LEV" SignalName="LSHA" FlowDirection="RightToLeft" d:IsLocked="True"/>
+        <Labels:SignalLabel HorizontalAlignment="Left" Margin="216,484,0,0" VerticalAlignment="Top" ComponentName="887-61-LEV" SignalName="LSL" FlowDirection="RightToLeft" d:IsLocked="True" />
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-         Margin="149,26,0,0" 
-         VerticalAlignment="Top" 
-         ComponentName="880-61-LEV"/>
+            Margin="330,498,0,0" 
+            VerticalAlignment="Top" 
+            ComponentName="887-61-LEV" d:IsLocked="True"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+            Margin="193,27,0,0" 
+            VerticalAlignment="Top" 
+            ComponentName="887-01-MA1" d:IsLocked="True"/>
     </Grid>
 </UserControl>

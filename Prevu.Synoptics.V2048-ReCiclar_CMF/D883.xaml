@@ -6,25 +6,20 @@
              xmlns:local="clr-namespace:Prevu.Synoptics"
 						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D883" 
+             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" xmlns:Screws="clr-namespace:Prevu.Drawings.Machines.Screws;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D883" 
              mc:Ignorable="d" 
              Height="600" Width="600" d:Background="{DynamicResource MaterialDesignPaper}">
-    <Grid>
-        <Machines:SCW_Flex_Verticale_DX HorizontalAlignment="Left" Margin="0,-350,0,220" RenderTransformOrigin="0.5,0.5" Width="606" Loaded="SCW_Flex_Verticale_DX_Loaded">
-            <Machines:SCW_Flex_Verticale_DX.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Machines:SCW_Flex_Verticale_DX.RenderTransform>
-        </Machines:SCW_Flex_Verticale_DX>
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="165,240,0,0" VerticalAlignment="Top" ComponentName="810-61-LEV" SignalName="LSHA" FlowDirection="RightToLeft"/>
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="234,304,0,0" VerticalAlignment="Top" ComponentName="810-61-LEV" SignalName="LSH" FlowDirection="RightToLeft" />
+    <Grid d:IsLocked="True">
+        <Screws:DETAIL_SCW_Flex_Verticale HorizontalAlignment="Center" Margin="0,82,0,38" Width="254" d:IsLocked="True"/>
+        <Labels:SignalLabel HorizontalAlignment="Left" Margin="135,406,0,0" VerticalAlignment="Top" ComponentName="883-61-LEV" SignalName="LSHA" FlowDirection="RightToLeft" d:IsLocked="True"/>
+        <Labels:SignalLabel HorizontalAlignment="Left" Margin="216,484,0,0" VerticalAlignment="Top" ComponentName="883-61-LEV" SignalName="LSL" FlowDirection="RightToLeft" d:IsLocked="True" />
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-         Margin="340,314,0,0" 
+         Margin="331,498,0,0" 
          VerticalAlignment="Top" 
-         ComponentName="883-61-LEV"/>
+         ComponentName="883-61-LEV" d:IsLocked="True"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+            Margin="193,27,0,0" 
+            VerticalAlignment="Top" 
+            ComponentName="883-01-MA1" d:IsLocked="True"/>
     </Grid>
 </UserControl>
