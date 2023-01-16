@@ -7,8 +7,13 @@
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents"              
              mc:Ignorable="d" 
-             d:Height="840" d:Width="1700" d:Background="{DynamicResource MaterialDesignPaper}">
+             Height="840" Width="1520" d:Background="{DynamicResource MaterialDesignPaper}">
+	<Grid>
+		<Machines:QX_HMI_ElectricalCabinet HorizontalAlignment="Left" Margin="583,300,0,0" VerticalAlignment="Top" Height="285" Width="427"/>
+		<Labels:DeviceLabel HorizontalAlignment="Left" Height="50" Margin="630,230,0,0" VerticalAlignment="Top" Width="90" ComponentName="Q01"/>
+		<Labels:DeviceLabel HorizontalAlignment="Left" Height="50" Margin="755,230,0,0" VerticalAlignment="Top" Width="90" ComponentName="Q21"/>
+		<Labels:DeviceLabel HorizontalAlignment="Left" Height="50" Margin="875,230,0,0" VerticalAlignment="Top" Width="90" ComponentName="S210"/>
+		<Labels:DeviceLabel HorizontalAlignment="Left" Height="50" Margin="475,300,0,0" VerticalAlignment="Top" Width="90" ComponentName="ESTOP-AREA-01"/>
 
-
-
+	</Grid>
 </UserControl>
