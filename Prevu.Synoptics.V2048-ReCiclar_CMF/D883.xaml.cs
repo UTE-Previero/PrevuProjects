@@ -25,14 +25,6 @@ namespace Prevu.Synoptics
       InitializeComponent();
     }
 
-        private void FKS_FlakesSorter_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void SCW_Flex_Verticale_DX_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
     }
 }
