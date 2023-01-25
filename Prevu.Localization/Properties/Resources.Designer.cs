@@ -8350,6 +8350,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Rotor Reverse (Floating Material).
+        /// </summary>
+        internal static string Rotor_Reverse__Floating_Material_ {
+            get {
+                return ResourceManager.GetString("Rotor Reverse (Floating Material)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rotor Reverse (Forward Timeout).
         /// </summary>
         internal static string ROTOR_REVERSE__FORWARD_TIMEOUT_ {
