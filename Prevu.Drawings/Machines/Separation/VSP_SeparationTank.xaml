@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="Prevu.Drawings.Machines.VSP_SeparationTank"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Drawings.Machines"
+             mc:Ignorable="d" Width="100" Height="100" Effect="{DynamicResource MaterialDesignElevationShadow1}">
+	<Viewbox Stretch="Uniform">
+		<Canvas Name="svg11" Width="100" Height="49">
+			<Canvas.RenderTransform>
+				<TranslateTransform X="0" Y="0"/>
+			</Canvas.RenderTransform>
+			<Canvas.Resources>
+				<RectangleGeometry x:Key="clip0_10_0" Rect="0, 0, 100, 47.5">
+					<RectangleGeometry.Transform>
+						<TranslateTransform X="0" Y="0.75"/>
+					</RectangleGeometry.Transform>
+				</RectangleGeometry>
+			</Canvas.Resources>
+			<Canvas Name="g4" Clip="{StaticResource clip0_10_0}">
+				<Path Name="path2" Fill="#FF808080">
+					<Path.Data>
+						<PathGeometry Figures="M100 3.25C100 1.86929 98.8807 0.75 97.5 0.75H2.5C1.11929 0.75 0 1.86929 0 3.25V25.7304C0 26.2636 0.170516 26.7829 0.486638 27.2124L15.2229 47.232C15.694 47.8721 16.4415 48.25 17.2363 48.25H61.7492C62.3246 48.25 62.8825 48.0515 63.3286 47.6879L99.0794 18.5516C99.6619 18.0768 100 17.3652 100 16.6136V3.25Z" FillRule="NonZero"/>
+					</Path.Data>
+				</Path>
+			</Canvas>
+		</Canvas>
+	</Viewbox>
+
+</UserControl>

@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MaterialDesignThemes" Version="4.5.0" />
+    <PackageReference Include="MaterialDesignColors" Version="2.0.9" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.6.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,30 +16,30 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Machines\STR_Washing_reactor_B.xaml.cs">
+    <Compile Update="Machines\Stirrer\STR_Washing_reactor_B.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Machines\GR_002.xaml">
+    <Page Update="Machines\Grinders\GR_002.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Update="Machines\GR_001.xaml">
+    <Page Update="Machines\Grinders\GR_001.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
     </Page>
-    <Page Update="Machines\NASTRO.xaml">
+    <Page Update="Machines\Belts\NASTRO.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Machines\CV_Valve_001.xaml">
+    <Page Update="Machines\Valves\CV_Valve_001.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
     </Page>
-    <Page Update="Machines\STR_Washing_reactor_B.xaml">
+    <Page Update="Machines\Stirrer\STR_Washing_reactor_B.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>

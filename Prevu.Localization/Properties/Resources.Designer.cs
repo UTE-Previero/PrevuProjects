@@ -61,6 +61,24 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to *** GROUP FULL PRODUCTION (DARK GREY COLOR) ***.
+        /// </summary>
+        internal static string ____GROUP_FULL_PRODUCTION__DARK_GREY_COLOR_____ {
+            get {
+                return ResourceManager.GetString("*** GROUP FULL PRODUCTION (DARK GREY COLOR) ***", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (0-10V).
+        /// </summary>
+        internal static string _0_10V_ {
+            get {
+                return ResourceManager.GetString("(0-10V)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 1 Hour.
         /// </summary>
         internal static string _1_HOUR {
@@ -106,6 +124,33 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 24 Volts External Ok.
+        /// </summary>
+        internal static string _24_VOLTS_EXTERNAL_OK {
+            get {
+                return ResourceManager.GetString("24 VOLTS EXTERNAL OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 24 Volts Internal Ok     (If  False --&gt; Estop Down).
+        /// </summary>
+        internal static string _24_VOLTS_INTERNAL_OK______IF__FALSE_____ESTOP_DOWN_ {
+            get {
+                return ResourceManager.GetString("24 VOLTS INTERNAL OK     (IF  FALSE --> ESTOP DOWN)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 24V Under Estop Protection.
+        /// </summary>
+        internal static string _24V_UNDER_ESTOP_PROTECTION {
+            get {
+                return ResourceManager.GetString("24V UNDER ESTOP PROTECTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 30 Minutes.
         /// </summary>
         internal static string _30_MINUTES {
@@ -115,7 +160,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to (4-20Ma).
+        ///   Looks up a localized string similar to (4-20mA).
         /// </summary>
         internal static string _4_20MA_ {
             get {
@@ -556,6 +601,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Alarm Present.
+        /// </summary>
+        internal static string ALARM_PRESENT {
+            get {
+                return ResourceManager.GetString("ALARM PRESENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Alarm View.
         /// </summary>
         internal static string ALARM_VIEW {
@@ -565,11 +619,83 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ALL CONDITIONS TO UNLOCK.
+        /// </summary>
+        internal static string ALL_CONDITIONS_TO_UNLOCK {
+            get {
+                return ResourceManager.GetString("ALL CONDITIONS TO UNLOCK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ALL DEVICES READY.
+        /// </summary>
+        internal static string ALL_DEVICES_READY {
+            get {
+                return ResourceManager.GetString("ALL DEVICES READY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ALL ESTOP PB NOT PRESSED (CUMULATIVE OF TO THE ONES THAT BELONG TO THIS CABINET).
+        /// </summary>
+        internal static string ALL_ESTOP_PB_NOT_PRESSED__CUMULATIVE_OF_TO_THE_ONES_THAT_BELONG_TO_THIS_CABINET_ {
+            get {
+                return ResourceManager.GetString("ALL ESTOP PB NOT PRESSED (CUMULATIVE OF TO THE ONES THAT BELONG TO THIS CABINET)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Analog Inputs Protection.
+        /// </summary>
+        internal static string ANALOG_INPUTS_PROTECTION {
+            get {
+                return ResourceManager.GetString("ANALOG INPUTS PROTECTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Analog Outputs Protection.
+        /// </summary>
+        internal static string ANALOG_OUTPUTS_PROTECTION {
+            get {
+                return ResourceManager.GetString("ANALOG OUTPUTS PROTECTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Autoclose.
+        /// </summary>
+        internal static string AUTOCLOSE {
+            get {
+                return ResourceManager.GetString("AUTOCLOSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Automatic Mode.
         /// </summary>
         internal static string AUTOMATIC_MODE {
             get {
                 return ResourceManager.GetString("AUTOMATIC MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auxiliary Transformer Primary Protection.
+        /// </summary>
+        internal static string AUXILIARY_TRANSFORMER_PRIMARY_PROTECTION {
+            get {
+                return ResourceManager.GetString("AUXILIARY TRANSFORMER PRIMARY PROTECTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auxiliary Transformer Secondary Protection.
+        /// </summary>
+        internal static string AUXILIARY_TRANSFORMER_SECONDARY_PROTECTION {
+            get {
+                return ResourceManager.GetString("AUXILIARY TRANSFORMER SECONDARY PROTECTION", resourceCulture);
             }
         }
         
@@ -588,6 +714,24 @@ namespace Prevu.Localization.Properties {
         internal static string BEACON_PROTECTION {
             get {
                 return ResourceManager.GetString("BEACON PROTECTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Belt.
+        /// </summary>
+        internal static string BELT {
+            get {
+                return ResourceManager.GetString("BELT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BOTH POSITIONS.
+        /// </summary>
+        internal static string BOTH_POSITIONS {
+            get {
+                return ResourceManager.GetString("BOTH POSITIONS", resourceCulture);
             }
         }
         
@@ -628,6 +772,51 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Buttons.
+        /// </summary>
+        internal static string BUTTONS {
+            get {
+                return ResourceManager.GetString("BUTTONS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Buttonspanel.
+        /// </summary>
+        internal static string BUTTONSPANEL {
+            get {
+                return ResourceManager.GetString("BUTTONSPANEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bypass.
+        /// </summary>
+        internal static string BYPASS {
+            get {
+                return ResourceManager.GetString("BYPASS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bypass - High Speed.
+        /// </summary>
+        internal static string BYPASS___HIGH_SPEED {
+            get {
+                return ResourceManager.GetString("BYPASS - HIGH SPEED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bypass - Low Speed.
+        /// </summary>
+        internal static string BYPASS___LOW_SPEED {
+            get {
+                return ResourceManager.GetString("BYPASS - LOW SPEED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bypass Device.
         /// </summary>
         internal static string BYPASS_DEVICE {
@@ -646,11 +835,65 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CABINET COOLING NOT OK.
+        /// </summary>
+        internal static string CABINET_COOLING_NOT_OK {
+            get {
+                return ResourceManager.GetString("CABINET COOLING NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CABINET NO CRITICAL FAULTS PRESENT.
+        /// </summary>
+        internal static string CABINET_NO_CRITICAL_FAULTS_PRESENT {
+            get {
+                return ResourceManager.GetString("CABINET NO CRITICAL FAULTS PRESENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CABINET NO MESSAGE PRESENT.
+        /// </summary>
+        internal static string CABINET_NO_MESSAGE_PRESENT {
+            get {
+                return ResourceManager.GetString("CABINET NO MESSAGE PRESENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CABINET NO MINOR FAULTS PRESENT.
+        /// </summary>
+        internal static string CABINET_NO_MINOR_FAULTS_PRESENT {
+            get {
+                return ResourceManager.GetString("CABINET NO MINOR FAULTS PRESENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cabinet Off.
         /// </summary>
         internal static string CABINET_OFF {
             get {
                 return ResourceManager.GetString("CABINET OFF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cabinet ON.
+        /// </summary>
+        internal static string CABINET_ON {
+            get {
+                return ResourceManager.GetString("CABINET ON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cabinet Test Active.
+        /// </summary>
+        internal static string CABINET_TEST_ACTIVE {
+            get {
+                return ResourceManager.GetString("CABINET TEST ACTIVE", resourceCulture);
             }
         }
         
@@ -687,6 +930,15 @@ namespace Prevu.Localization.Properties {
         internal static string CAUSTIC_VALVE_READY {
             get {
                 return ResourceManager.GetString("CAUSTIC VALVE READY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change Language.
+        /// </summary>
+        internal static string CHANGE_LANGUAGE {
+            get {
+                return ResourceManager.GetString("CHANGE LANGUAGE", resourceCulture);
             }
         }
         
@@ -781,11 +1033,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Close Prevu.
+        /// </summary>
+        internal static string CLOSE_PREVU {
+            get {
+                return ResourceManager.GetString("CLOSE PREVU", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Closed Position Not Ok.
         /// </summary>
         internal static string CLOSED_POSITION_NOT_OK {
             get {
                 return ResourceManager.GetString("CLOSED POSITION NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Collapse All.
+        /// </summary>
+        internal static string COLLAPSE_ALL {
+            get {
+                return ResourceManager.GetString("COLLAPSE ALL", resourceCulture);
             }
         }
         
@@ -817,6 +1087,33 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Command Estop Enable.
+        /// </summary>
+        internal static string COMMAND_ESTOP_ENABLE {
+            get {
+                return ResourceManager.GetString("COMMAND ESTOP ENABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Command Estop Reset.
+        /// </summary>
+        internal static string COMMAND_ESTOP_RESET {
+            get {
+                return ResourceManager.GetString("COMMAND ESTOP RESET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Command Grease On.
+        /// </summary>
+        internal static string COMMAND_GREASE_ON {
+            get {
+                return ResourceManager.GetString("COMMAND GREASE ON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Command Line.
         /// </summary>
         internal static string COMMAND_LINE {
@@ -844,11 +1141,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Command Release.
+        /// </summary>
+        internal static string COMMAND_RELEASE {
+            get {
+                return ResourceManager.GetString("COMMAND RELEASE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Command Run.
         /// </summary>
         internal static string COMMAND_RUN {
             get {
                 return ResourceManager.GetString("COMMAND RUN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Command Standstill Relay Reset.
+        /// </summary>
+        internal static string COMMAND_STANDSTILL_RELAY_RESET {
+            get {
+                return ResourceManager.GetString("COMMAND STANDSTILL RELAY RESET", resourceCulture);
             }
         }
         
@@ -898,6 +1213,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Component Enabled (No Manual Start Required).
+        /// </summary>
+        internal static string COMPONENT_ENABLED__NO_MANUAL_START_REQUIRED_ {
+            get {
+                return ResourceManager.GetString("COMPONENT ENABLED (NO MANUAL START REQUIRED)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Component Name.
         /// </summary>
         internal static string COMPONENT_NAME {
@@ -907,11 +1231,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to COMPONENT PREPARED OK FOR PRODUCTION.
+        /// </summary>
+        internal static string COMPONENT_PREPARED_OK_FOR_PRODUCTION {
+            get {
+                return ResourceManager.GetString("COMPONENT PREPARED OK FOR PRODUCTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Component Search.
         /// </summary>
         internal static string COMPONENT_SEARCH {
             get {
                 return ResourceManager.GetString("COMPONENT SEARCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COMPONENT STATUS STD BITMASK.
+        /// </summary>
+        internal static string COMPONENT_STATUS_STD_BITMASK {
+            get {
+                return ResourceManager.GetString("COMPONENT STATUS STD BITMASK", resourceCulture);
             }
         }
         
@@ -961,6 +1303,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Control.
+        /// </summary>
+        internal static string CONTROL {
+            get {
+                return ResourceManager.GetString("CONTROL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cooling Command On.
         /// </summary>
         internal static string COOLING_COMMAND_ON {
@@ -970,11 +1321,65 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cooling Fan Overload.
+        /// </summary>
+        internal static string COOLING_FAN_OVERLOAD {
+            get {
+                return ResourceManager.GetString("COOLING FAN OVERLOAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cooling Overload Protection.
         /// </summary>
         internal static string COOLING_OVERLOAD_PROTECTION {
             get {
                 return ResourceManager.GetString("COOLING OVERLOAD PROTECTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cooling System - Oil Recirc. Pump.
+        /// </summary>
+        internal static string COOLING_SYSTEM___OIL_RECIRC__PUMP {
+            get {
+                return ResourceManager.GetString("COOLING SYSTEM - OIL RECIRC. PUMP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cooling System Healty.
+        /// </summary>
+        internal static string COOLING_SYSTEM_HEALTY {
+            get {
+                return ResourceManager.GetString("COOLING SYSTEM HEALTY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cooling System Overload Protection.
+        /// </summary>
+        internal static string COOLING_SYSTEM_OVERLOAD_PROTECTION {
+            get {
+                return ResourceManager.GetString("COOLING SYSTEM OVERLOAD PROTECTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COOLING VALVE IS NOT ON (Rotor Stop).
+        /// </summary>
+        internal static string COOLING_VALVE_IS_NOT_ON__ROTOR_STOP_ {
+            get {
+                return ResourceManager.GetString("COOLING VALVE IS NOT ON (ROTOR STOP)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COOLING VALVE IS NOT ON (Rotor Will Be Stopped In a Short Time).
+        /// </summary>
+        internal static string COOLING_VALVE_IS_NOT_ON__ROTOR_WILL_BE_STOPPED_IN_A_SHORT_TIME_ {
+            get {
+                return ResourceManager.GetString("COOLING VALVE IS NOT ON (ROTOR WILL BE STOPPED IN A SHORT TIME)", resourceCulture);
             }
         }
         
@@ -993,6 +1398,33 @@ namespace Prevu.Localization.Properties {
         internal static string COPY_FROM_USER {
             get {
                 return ResourceManager.GetString("COPY FROM USER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not delete the User.
+        /// </summary>
+        internal static string COULD_NOT_DELETE_THE_USER {
+            get {
+                return ResourceManager.GetString("COULD NOT DELETE THE USER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not delete the User group.
+        /// </summary>
+        internal static string COULD_NOT_DELETE_THE_USER_GROUP {
+            get {
+                return ResourceManager.GetString("COULD NOT DELETE THE USER GROUP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not save the Parameters.
+        /// </summary>
+        internal static string COULD_NOT_SAVE_THE_PARAMETERS {
+            get {
+                return ResourceManager.GetString("COULD NOT SAVE THE PARAMETERS", resourceCulture);
             }
         }
         
@@ -1060,6 +1492,24 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Critical Alarm Present.
+        /// </summary>
+        internal static string CRITICAL_ALARM_PRESENT {
+            get {
+                return ResourceManager.GetString("CRITICAL ALARM PRESENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Critical Alarm Present    (If  False --&gt; No  Prod Start).
+        /// </summary>
+        internal static string CRITICAL_ALARM_PRESENT_____IF__FALSE_____NO__PROD_START_ {
+            get {
+                return ResourceManager.GetString("CRITICAL ALARM PRESENT    (IF  FALSE --> NO  PROD START)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Critical Fault In The Electrical Cabinet.
         /// </summary>
         internal static string CRITICAL_FAULT_IN_THE_ELECTRICAL_CABINET {
@@ -1074,6 +1524,60 @@ namespace Prevu.Localization.Properties {
         internal static string CRITICAL_FAULT_PRESENT {
             get {
                 return ResourceManager.GetString("CRITICAL FAULT PRESENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CUMULATIVE - AT LEAST ONE ACTUATOR ON (MTRs, VLVs...).
+        /// </summary>
+        internal static string CUMULATIVE___AT_LEAST_ONE_ACTUATOR_ON__MTRS__VLVS____ {
+            get {
+                return ResourceManager.GetString("CUMULATIVE - AT LEAST ONE ACTUATOR ON (MTRS, VLVS...)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CUMULATIVE - CRITICAL ALARM PRESENT.
+        /// </summary>
+        internal static string CUMULATIVE___CRITICAL_ALARM_PRESENT {
+            get {
+                return ResourceManager.GetString("CUMULATIVE - CRITICAL ALARM PRESENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CUMULATIVE - MESSAGE PRESENT.
+        /// </summary>
+        internal static string CUMULATIVE___MESSAGE_PRESENT {
+            get {
+                return ResourceManager.GetString("CUMULATIVE - MESSAGE PRESENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CUMULATIVE - NEW ALARM PRESENT.
+        /// </summary>
+        internal static string CUMULATIVE___NEW_ALARM_PRESENT {
+            get {
+                return ResourceManager.GetString("CUMULATIVE - NEW ALARM PRESENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CUMULATIVE - NON-CRITICAL ALARM PRESENT.
+        /// </summary>
+        internal static string CUMULATIVE___NON_CRITICAL_ALARM_PRESENT {
+            get {
+                return ResourceManager.GetString("CUMULATIVE - NON-CRITICAL ALARM PRESENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CUMULATIVE OK (OK FOR PROCESS).
+        /// </summary>
+        internal static string CUMULATIVE_OK__OK_FOR_PROCESS_ {
+            get {
+                return ResourceManager.GetString("CUMULATIVE OK (OK FOR PROCESS)", resourceCulture);
             }
         }
         
@@ -1114,6 +1618,24 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CYCLE IN PROGRESS.
+        /// </summary>
+        internal static string CYCLE_IN_PROGRESS {
+            get {
+                return ResourceManager.GetString("CYCLE IN PROGRESS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CYCLE INTERLOCKS.
+        /// </summary>
+        internal static string CYCLE_INTERLOCKS {
+            get {
+                return ResourceManager.GetString("CYCLE INTERLOCKS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cycle Steps.
         /// </summary>
         internal static string CYCLE_STEPS {
@@ -1128,6 +1650,15 @@ namespace Prevu.Localization.Properties {
         internal static string CYCLES {
             get {
                 return ResourceManager.GetString("CYCLES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cycles Panel.
+        /// </summary>
+        internal static string CyclesPanel {
+            get {
+                return ResourceManager.GetString("CyclesPanel", resourceCulture);
             }
         }
         
@@ -1159,11 +1690,56 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Debaler Auto Mode Request.
         /// </summary>
-        internal static string DB_INIT {
+        internal static string DEBALER_AUTO_MODE_REQUEST {
             get {
-                return ResourceManager.GetString("DB_INIT", resourceCulture);
+                return ResourceManager.GetString("DEBALER AUTO MODE REQUEST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debaler Brt Standard Interface.
+        /// </summary>
+        internal static string DEBALER_BRT_STANDARD_INTERFACE {
+            get {
+                return ResourceManager.GetString("DEBALER BRT STANDARD INTERFACE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debaler Faulty Status.
+        /// </summary>
+        internal static string DEBALER_FAULTY_STATUS {
+            get {
+                return ResourceManager.GetString("DEBALER FAULTY STATUS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debaler In Auto.
+        /// </summary>
+        internal static string DEBALER_IN_AUTO {
+            get {
+                return ResourceManager.GetString("DEBALER IN AUTO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debaler In Auto Mode (External Signal).
+        /// </summary>
+        internal static string DEBALER_IN_AUTO_MODE__EXTERNAL_SIGNAL_ {
+            get {
+                return ResourceManager.GetString("DEBALER IN AUTO MODE (EXTERNAL SIGNAL)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debaler Not In Auto (External Plant).
+        /// </summary>
+        internal static string DEBALER_NOT_IN_AUTO__EXTERNAL_PLANT_ {
+            get {
+                return ResourceManager.GetString("DEBALER NOT IN AUTO (EXTERNAL PLANT)", resourceCulture);
             }
         }
         
@@ -1173,6 +1749,69 @@ namespace Prevu.Localization.Properties {
         internal static string DEBALER_NOT_IN_AUTO_MODE {
             get {
                 return ResourceManager.GetString("DEBALER NOT IN AUTO MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debaler Not Running.
+        /// </summary>
+        internal static string DEBALER_NOT_RUNNING {
+            get {
+                return ResourceManager.GetString("DEBALER NOT RUNNING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debaler Start Request.
+        /// </summary>
+        internal static string DEBALER_START_REQUEST {
+            get {
+                return ResourceManager.GetString("DEBALER START REQUEST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debaler Start Request Confirm.
+        /// </summary>
+        internal static string DEBALER_START_REQUEST_CONFIRM {
+            get {
+                return ResourceManager.GetString("DEBALER START REQUEST CONFIRM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debaler Started And Active (External Signal).
+        /// </summary>
+        internal static string DEBALER_STARTED_AND_ACTIVE__EXTERNAL_SIGNAL_ {
+            get {
+                return ResourceManager.GetString("DEBALER STARTED AND ACTIVE (EXTERNAL SIGNAL)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debaler Status Ok (External Signal).
+        /// </summary>
+        internal static string DEBALER_STATUS_OK__EXTERNAL_SIGNAL_ {
+            get {
+                return ResourceManager.GetString("DEBALER STATUS OK (EXTERNAL SIGNAL)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debug Window.
+        /// </summary>
+        internal static string DEBUG_WINDOW {
+            get {
+                return ResourceManager.GetString("DEBUG WINDOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DELAY.
+        /// </summary>
+        internal static string DELAY {
+            get {
+                return ResourceManager.GetString("DELAY", resourceCulture);
             }
         }
         
@@ -1330,11 +1969,38 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Different Values.
+        /// </summary>
+        internal static string DIFFERENT_VALUES {
+            get {
+                return ResourceManager.GetString("DIFFERENT VALUES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Digital Inputs Ok     (If  False --&gt; Estop Down).
+        /// </summary>
+        internal static string DIGITAL_INPUTS_OK______IF__FALSE_____ESTOP_DOWN_ {
+            get {
+                return ResourceManager.GetString("DIGITAL INPUTS OK     (IF  FALSE --> ESTOP DOWN)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Digital Inputs Protection.
         /// </summary>
         internal static string DIGITAL_INPUTS_PROTECTION {
             get {
                 return ResourceManager.GetString("DIGITAL INPUTS PROTECTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Digital Outputs Ok.
+        /// </summary>
+        internal static string DIGITAL_OUTPUTS_OK {
+            get {
+                return ResourceManager.GetString("DIGITAL OUTPUTS OK", resourceCulture);
             }
         }
         
@@ -1348,6 +2014,24 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to DirectionOne.
+        /// </summary>
+        internal static string DIRECTIONONE {
+            get {
+                return ResourceManager.GetString("DIRECTIONONE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DirectionTwo.
+        /// </summary>
+        internal static string DIRECTIONTWO {
+            get {
+                return ResourceManager.GetString("DIRECTIONTWO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Disable.
         /// </summary>
         internal static string DISABLE {
@@ -1357,11 +2041,11 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Disable Sensor.
+        ///   Looks up a localized string similar to DISABLE COMPONENT ON START (SELECTOR).
         /// </summary>
-        internal static string DISABLE_SENSOR {
+        internal static string DISABLE_COMPONENT_ON_START__SELECTOR_ {
             get {
-                return ResourceManager.GetString("DISABLE SENSOR", resourceCulture);
+                return ResourceManager.GetString("DISABLE COMPONENT ON START (SELECTOR)", resourceCulture);
             }
         }
         
@@ -1371,6 +2055,15 @@ namespace Prevu.Localization.Properties {
         internal static string DISABLED {
             get {
                 return ResourceManager.GetString("DISABLED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DISABLED BY OPERATOR.
+        /// </summary>
+        internal static string DISABLED_BY_OPERATOR {
+            get {
+                return ResourceManager.GetString("DISABLED BY OPERATOR", resourceCulture);
             }
         }
         
@@ -1389,6 +2082,24 @@ namespace Prevu.Localization.Properties {
         internal static string DISABLED_MODE {
             get {
                 return ResourceManager.GetString("DISABLED MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disabling.
+        /// </summary>
+        internal static string DISABLING {
+            get {
+                return ResourceManager.GetString("DISABLING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Discard Changes.
+        /// </summary>
+        internal static string DISCARD_CHANGES {
+            get {
+                return ResourceManager.GetString("DISCARD CHANGES", resourceCulture);
             }
         }
         
@@ -1456,6 +2167,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to DOWNSTREAM.
+        /// </summary>
+        internal static string DOWNSTREAM {
+            get {
+                return ResourceManager.GetString("DOWNSTREAM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Downstream Destination Ok/Ready To Receive.
         /// </summary>
         internal static string DOWNSTREAM_DESTINATION_OK_READY_TO_RECEIVE {
@@ -1465,11 +2185,74 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Downstream External Machine.
+        /// </summary>
+        internal static string DOWNSTREAM_EXTERNAL_MACHINE {
+            get {
+                return ResourceManager.GetString("DOWNSTREAM EXTERNAL MACHINE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Downstream Faulty Status.
+        /// </summary>
+        internal static string DOWNSTREAM_FAULTY_STATUS {
+            get {
+                return ResourceManager.GetString("DOWNSTREAM FAULTY STATUS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DOWNSTREAM NOT OK.
+        /// </summary>
+        internal static string DOWNSTREAM_NOT_OK {
+            get {
+                return ResourceManager.GetString("DOWNSTREAM NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Downstream Not OK (External Plant).
+        /// </summary>
+        internal static string DOWNSTREAM_NOT_OK__EXTERNAL_PLANT_ {
+            get {
+                return ResourceManager.GetString("DOWNSTREAM NOT OK (EXTERNAL PLANT)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Downstream Not Ok To Receive Material.
         /// </summary>
         internal static string DOWNSTREAM_NOT_OK_TO_RECEIVE_MATERIAL {
             get {
                 return ResourceManager.GetString("DOWNSTREAM NOT OK TO RECEIVE MATERIAL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Downstream OK (External Signal).
+        /// </summary>
+        internal static string DOWNSTREAM_OK__EXTERNAL_SIGNAL_ {
+            get {
+                return ResourceManager.GetString("DOWNSTREAM OK (EXTERNAL SIGNAL)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Downstream OK For Material.
+        /// </summary>
+        internal static string DOWNSTREAM_OK_FOR_MATERIAL {
+            get {
+                return ResourceManager.GetString("DOWNSTREAM OK FOR MATERIAL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Downstream Ok To Receive (External Signal).
+        /// </summary>
+        internal static string DOWNSTREAM_OK_TO_RECEIVE__EXTERNAL_SIGNAL_ {
+            get {
+                return ResourceManager.GetString("DOWNSTREAM OK TO RECEIVE (EXTERNAL SIGNAL)", resourceCulture);
             }
         }
         
@@ -1488,6 +2271,24 @@ namespace Prevu.Localization.Properties {
         internal static string DOWNSTREAM_SAFETY__FALSE_____RESET_ENABLE_ {
             get {
                 return ResourceManager.GetString("DOWNSTREAM SAFETY (FALSE --> RESET ENABLE)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Downstream Safety Not OK.
+        /// </summary>
+        internal static string DOWNSTREAM_SAFETY_NOT_OK {
+            get {
+                return ResourceManager.GetString("DOWNSTREAM SAFETY NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Downstream Status Ok (External Signal).
+        /// </summary>
+        internal static string DOWNSTREAM_STATUS_OK__EXTERNAL_SIGNAL_ {
+            get {
+                return ResourceManager.GetString("DOWNSTREAM STATUS OK (EXTERNAL SIGNAL)", resourceCulture);
             }
         }
         
@@ -1528,11 +2329,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to E-Stop OK.
+        /// </summary>
+        internal static string E_STOP_OK {
+            get {
+                return ResourceManager.GetString("E-STOP OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to El. Drawing.
         /// </summary>
         internal static string EL__DRAWING {
             get {
                 return ResourceManager.GetString("EL. DRAWING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Electrical Cabinet Has a Message.
+        /// </summary>
+        internal static string ELECTRICAL_CABINET_HAS_A_MESSAGE {
+            get {
+                return ResourceManager.GetString("ELECTRICAL CABINET HAS A MESSAGE", resourceCulture);
             }
         }
         
@@ -1551,6 +2370,15 @@ namespace Prevu.Localization.Properties {
         internal static string ELECTRICAL_ID {
             get {
                 return ResourceManager.GetString("ELECTRICAL ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Electrical Drawing Page.
+        /// </summary>
+        internal static string ElectricalDrawing {
+            get {
+                return ResourceManager.GetString("ElectricalDrawing", resourceCulture);
             }
         }
         
@@ -1582,11 +2410,56 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Emergency Push Button in Field.
+        /// </summary>
+        internal static string EMERGENCY_PUSH_BUTTON_IN_FIELD {
+            get {
+                return ResourceManager.GetString("EMERGENCY PUSH BUTTON IN FIELD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Emergency Push Button on Cabinet.
+        /// </summary>
+        internal static string EMERGENCY_PUSH_BUTTON_ON_CABINET {
+            get {
+                return ResourceManager.GetString("EMERGENCY PUSH BUTTON ON CABINET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Emergency Stop Relay Reset Ok (Direct) (Of This Estop Area).
+        /// </summary>
+        internal static string EMERGENCY_STOP_RELAY_RESET_OK__DIRECT___OF_THIS_ESTOP_AREA_ {
+            get {
+                return ResourceManager.GetString("EMERGENCY STOP RELAY RESET OK (DIRECT) (OF THIS ESTOP AREA)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EMERGENCY STOP RESET OK (DIRECT) (OF THIS CABINET).
+        /// </summary>
+        internal static string EMERGENCY_STOP_RESET_OK__DIRECT___OF_THIS_CABINET_ {
+            get {
+                return ResourceManager.GetString("EMERGENCY STOP RESET OK (DIRECT) (OF THIS CABINET)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Empty.
         /// </summary>
         internal static string EMPTY {
             get {
                 return ResourceManager.GetString("EMPTY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Empty Hopper.
+        /// </summary>
+        internal static string EMPTY_HOPPER {
+            get {
+                return ResourceManager.GetString("EMPTY HOPPER", resourceCulture);
             }
         }
         
@@ -1605,6 +2478,24 @@ namespace Prevu.Localization.Properties {
         internal static string EMPTYING_TIME_BELOW_MINIMUM_LEVEL {
             get {
                 return ResourceManager.GetString("EMPTYING TIME BELOW MINIMUM LEVEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ENABLE.
+        /// </summary>
+        internal static string ENABLE {
+            get {
+                return ResourceManager.GetString("ENABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ENABLE DIRECTION SELECTION (SHOW IN HMI).
+        /// </summary>
+        internal static string ENABLE_DIRECTION_SELECTION__SHOW_IN_HMI_ {
+            get {
+                return ResourceManager.GetString("ENABLE DIRECTION SELECTION (SHOW IN HMI)", resourceCulture);
             }
         }
         
@@ -1645,6 +2536,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enable Modulation of Pusher Advancing Speed.
+        /// </summary>
+        internal static string ENABLE_MODULATION_OF_PUSHER_ADVANCING_SPEED {
+            get {
+                return ResourceManager.GetString("ENABLE MODULATION OF PUSHER ADVANCING SPEED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enable Semiauto Pumping Mode.
         /// </summary>
         internal static string ENABLE_SEMIAUTO_PUMPING_MODE {
@@ -1659,6 +2559,51 @@ namespace Prevu.Localization.Properties {
         internal static string END_TIME {
             get {
                 return ResourceManager.GetString("END TIME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Estop.
+        /// </summary>
+        internal static string ESTOP {
+            get {
+                return ResourceManager.GetString("ESTOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Estop Area Not OK.
+        /// </summary>
+        internal static string ESTOP_AREA_NOT_OK {
+            get {
+                return ResourceManager.GetString("ESTOP AREA NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Estop Area Not Reset (With All Estop Pbs Ok).
+        /// </summary>
+        internal static string ESTOP_AREA_NOT_RESET__WITH_ALL_ESTOP_PBS_OK_ {
+            get {
+                return ResourceManager.GetString("ESTOP AREA NOT RESET (WITH ALL ESTOP PBS OK)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ESTOP AREA OK.
+        /// </summary>
+        internal static string ESTOP_AREA_OK {
+            get {
+                return ResourceManager.GetString("ESTOP AREA OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Estop Channel.
+        /// </summary>
+        internal static string ESTOP_CHANNEL {
+            get {
+                return ResourceManager.GetString("ESTOP CHANNEL", resourceCulture);
             }
         }
         
@@ -1681,6 +2626,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ESTOP NOT RESET.
+        /// </summary>
+        internal static string ESTOP_NOT_RESET {
+            get {
+                return ResourceManager.GetString("ESTOP NOT RESET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Estop OK.
         /// </summary>
         internal static string ESTOP_OK {
@@ -1699,11 +2653,38 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Estop Pressed (On Hmi).
+        /// </summary>
+        internal static string ESTOP_PRESSED__ON_HMI_ {
+            get {
+                return ResourceManager.GetString("ESTOP PRESSED (ON HMI)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Estop Pressed (On Plant).
         /// </summary>
         internal static string ESTOP_PRESSED__ON_PLANT_ {
             get {
                 return ResourceManager.GetString("ESTOP PRESSED (ON PLANT)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Estop Push-Button Pressed.
+        /// </summary>
+        internal static string ESTOP_PUSH_BUTTON_PRESSED {
+            get {
+                return ResourceManager.GetString("ESTOP PUSH-BUTTON PRESSED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ESTOP PUSH BUTTONS NOT PRESSED.
+        /// </summary>
+        internal static string ESTOP_PUSH_BUTTONS_NOT_PRESSED {
+            get {
+                return ResourceManager.GetString("ESTOP PUSH BUTTONS NOT PRESSED", resourceCulture);
             }
         }
         
@@ -1726,11 +2707,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ethernet Switch Ok.
+        /// </summary>
+        internal static string ETHERNET_SWITCH_OK {
+            get {
+                return ResourceManager.GetString("ETHERNET SWITCH OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Event Page.
         /// </summary>
         internal static string EVENT_PAGE {
             get {
                 return ResourceManager.GetString("EVENT PAGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Events Logged.
+        /// </summary>
+        internal static string EventLogs {
+            get {
+                return ResourceManager.GetString("EventLogs", resourceCulture);
             }
         }
         
@@ -1753,11 +2752,47 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Export To Csv.
+        /// </summary>
+        internal static string EXPORT_TO_CSV {
+            get {
+                return ResourceManager.GetString("EXPORT TO CSV", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to External Devices Protection.
         /// </summary>
         internal static string EXTERNAL_DEVICES_PROTECTION {
             get {
                 return ResourceManager.GetString("EXTERNAL DEVICES PROTECTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to External Grinder.
+        /// </summary>
+        internal static string EXTERNAL_GRINDER {
+            get {
+                return ResourceManager.GetString("EXTERNAL GRINDER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to External Input.
+        /// </summary>
+        internal static string EXTERNAL_INPUT {
+            get {
+                return ResourceManager.GetString("EXTERNAL INPUT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to External Output.
+        /// </summary>
+        internal static string EXTERNAL_OUTPUT {
+            get {
+                return ResourceManager.GetString("EXTERNAL OUTPUT", resourceCulture);
             }
         }
         
@@ -1776,6 +2811,42 @@ namespace Prevu.Localization.Properties {
         internal static string EXTERNAL_SIREN {
             get {
                 return ResourceManager.GetString("EXTERNAL SIREN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed To Send Command. Plc Not Connected.
+        /// </summary>
+        internal static string FAILED_TO_SEND_COMMAND__PLC_NOT_CONNECTED {
+            get {
+                return ResourceManager.GetString("FAILED TO SEND COMMAND. PLC NOT CONNECTED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Far Downstream Not OK For Shredding.
+        /// </summary>
+        internal static string FAR_DOWNSTREAM_NOT_OK_FOR_SHREDDING {
+            get {
+                return ResourceManager.GetString("FAR DOWNSTREAM NOT OK FOR SHREDDING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FAR DOWNSTREAM OK FOR START WASHING.
+        /// </summary>
+        internal static string FAR_DOWNSTREAM_OK_FOR_START_WASHING {
+            get {
+                return ResourceManager.GetString("FAR DOWNSTREAM OK FOR START WASHING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fast Speed.
+        /// </summary>
+        internal static string FAST_SPEED {
+            get {
+                return ResourceManager.GetString("FAST SPEED", resourceCulture);
             }
         }
         
@@ -1816,11 +2887,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Faulty Status (Inverter Not Running Ok Or Inverter In Local Mode).
+        /// </summary>
+        internal static string FAULTY_STATUS__INVERTER_NOT_RUNNING_OK_OR_INVERTER_IN_LOCAL_MODE_ {
+            get {
+                return ResourceManager.GetString("FAULTY STATUS (INVERTER NOT RUNNING OK OR INVERTER IN LOCAL MODE)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Field Adjust.
         /// </summary>
         internal static string FIELD_ADJUST {
             get {
                 return ResourceManager.GetString("FIELD_ADJUST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Final Pushing Time in Maximum Forward Position.
+        /// </summary>
+        internal static string FINAL_PUSHING_TIME_IN_MAXIMUM_FORWARD_POSITION {
+            get {
+                return ResourceManager.GetString("FINAL PUSHING TIME IN MAXIMUM FORWARD POSITION", resourceCulture);
             }
         }
         
@@ -1870,6 +2959,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Forward.
+        /// </summary>
+        internal static string FORWARD {
+            get {
+                return ResourceManager.GetString("FORWARD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Full Name.
         /// </summary>
         internal static string FULL_NAME {
@@ -1888,6 +2986,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Full Running (Ok For Process).
+        /// </summary>
+        internal static string FULL_RUNNING__OK_FOR_PROCESS_ {
+            get {
+                return ResourceManager.GetString("FULL RUNNING (OK FOR PROCESS)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fully Closed Position Delay.
         /// </summary>
         internal static string FULLY_CLOSED_POSITION_DELAY {
@@ -1897,11 +3004,92 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Function.
+        /// </summary>
+        internal static string FUNCTION {
+            get {
+                return ResourceManager.GetString("FUNCTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Gap Water - Target.
         /// </summary>
         internal static string GAP_WATER___TARGET {
             get {
                 return ResourceManager.GetString("GAP WATER - TARGET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GEARBOX.
+        /// </summary>
+        internal static string GEARBOX {
+            get {
+                return ResourceManager.GetString("GEARBOX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gearbox Cooilng Fan.
+        /// </summary>
+        internal static string GEARBOX_COOILNG_FAN {
+            get {
+                return ResourceManager.GetString("GEARBOX COOILNG FAN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GEARBOX MAXIMUM TEMPERATURE.
+        /// </summary>
+        internal static string GEARBOX_MAXIMUM_TEMPERATURE {
+            get {
+                return ResourceManager.GetString("GEARBOX MAXIMUM TEMPERATURE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GEARBOX MAXIMUM TEMPERATURE - STOP MOTOR.
+        /// </summary>
+        internal static string GEARBOX_MAXIMUM_TEMPERATURE___STOP_MOTOR {
+            get {
+                return ResourceManager.GetString("GEARBOX MAXIMUM TEMPERATURE - STOP MOTOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GearBox Maximum Temperature TSH.
+        /// </summary>
+        internal static string GEARBOX_MAXIMUM_TEMPERATURE_TSH {
+            get {
+                return ResourceManager.GetString("GEARBOX MAXIMUM TEMPERATURE TSH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GearBox Maximum Temperature TSHA.
+        /// </summary>
+        internal static string GEARBOX_MAXIMUM_TEMPERATURE_TSHA {
+            get {
+                return ResourceManager.GetString("GEARBOX MAXIMUM TEMPERATURE TSHA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GearBox Not OK.
+        /// </summary>
+        internal static string GEARBOX_NOT_OK {
+            get {
+                return ResourceManager.GetString("GEARBOX NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GENERIC CYCLE OK (OK FOR PROCESS).
+        /// </summary>
+        internal static string GENERIC_CYCLE_OK__OK_FOR_PROCESS_ {
+            get {
+                return ResourceManager.GetString("GENERIC CYCLE OK (OK FOR PROCESS)", resourceCulture);
             }
         }
         
@@ -1920,6 +3108,42 @@ namespace Prevu.Localization.Properties {
         internal static string GREASE_MINIMUM_LEVEL_NOT_OK {
             get {
                 return ResourceManager.GetString("GREASE MINIMUM LEVEL NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grill Position Closed.
+        /// </summary>
+        internal static string GRILL_POSITION_CLOSED {
+            get {
+                return ResourceManager.GetString("GRILL POSITION CLOSED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grill Position LS.
+        /// </summary>
+        internal static string GRILL_POSITION_LS {
+            get {
+                return ResourceManager.GetString("GRILL POSITION LS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GRILL POSITION NOT OK FOR RUNNING.
+        /// </summary>
+        internal static string GRILL_POSITION_NOT_OK_FOR_RUNNING {
+            get {
+                return ResourceManager.GetString("GRILL POSITION NOT OK FOR RUNNING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GRILL POSITION OK.
+        /// </summary>
+        internal static string GRILL_POSITION_OK {
+            get {
+                return ResourceManager.GetString("GRILL POSITION OK", resourceCulture);
             }
         }
         
@@ -1996,6 +3220,33 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to High Load - Pusher Step Back.
+        /// </summary>
+        internal static string HIGH_LOAD___PUSHER_STEP_BACK {
+            get {
+                return ResourceManager.GetString("HIGH LOAD - PUSHER STEP BACK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to High Load - Rotor Reverse.
+        /// </summary>
+        internal static string HIGH_LOAD___ROTOR_REVERSE {
+            get {
+                return ResourceManager.GetString("HIGH LOAD - ROTOR REVERSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to High Load Condition.
+        /// </summary>
+        internal static string HIGH_LOAD_CONDITION {
+            get {
+                return ResourceManager.GetString("HIGH LOAD CONDITION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to High Restart Speed.
         /// </summary>
         internal static string HIGH_RESTART_SPEED {
@@ -2014,11 +3265,47 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to HIGH TEMPERATURE WARNING.
+        /// </summary>
+        internal static string HIGH_TEMPERATURE_WARNING {
+            get {
+                return ResourceManager.GetString("HIGH TEMPERATURE WARNING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HMI LABEL ON or IN-PROGRESS (If Not OK x Process).
+        /// </summary>
+        internal static string HMI_LABEL_ON_OR_IN_PROGRESS__IF_NOT_OK_X_PROCESS_ {
+            get {
+                return ResourceManager.GetString("HMI LABEL ON OR IN-PROGRESS (IF NOT OK X PROCESS)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HMIs Beacon Protection.
+        /// </summary>
+        internal static string HMIS_BEACON_PROTECTION {
+            get {
+                return ResourceManager.GetString("HMIS BEACON PROTECTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Holding Tank Level.
         /// </summary>
         internal static string HOLDING_TANK_LEVEL {
             get {
                 return ResourceManager.GetString("HOLDING TANK LEVEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        internal static string HOME {
+            get {
+                return ResourceManager.GetString("HOME", resourceCulture);
             }
         }
         
@@ -2037,6 +3324,78 @@ namespace Prevu.Localization.Properties {
         internal static string HOPPER_LEVEL {
             get {
                 return ResourceManager.GetString("HOPPER LEVEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hours.
+        /// </summary>
+        internal static string HOURS {
+            get {
+                return ResourceManager.GetString("HOURS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hydraulic Oil Cooilng Fan.
+        /// </summary>
+        internal static string HYDRAULIC_OIL_COOILNG_FAN {
+            get {
+                return ResourceManager.GetString("HYDRAULIC OIL COOILNG FAN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hydraulic Oil Heating Resistor.
+        /// </summary>
+        internal static string HYDRAULIC_OIL_HEATING_RESISTOR {
+            get {
+                return ResourceManager.GetString("HYDRAULIC OIL HEATING RESISTOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hydraulic Oil Temperature.
+        /// </summary>
+        internal static string HYDRAULIC_OIL_TEMPERATURE {
+            get {
+                return ResourceManager.GetString("HYDRAULIC OIL TEMPERATURE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HYDRAULIC SAFETY.
+        /// </summary>
+        internal static string HYDRAULIC_SAFETY {
+            get {
+                return ResourceManager.GetString("HYDRAULIC SAFETY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hydraulic Unit Off.
+        /// </summary>
+        internal static string HYDRAULIC_UNIT_OFF {
+            get {
+                return ResourceManager.GetString("HYDRAULIC UNIT OFF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hydraulic Unit Safeties Not OK.
+        /// </summary>
+        internal static string HYDRAULIC_UNIT_SAFETIES_NOT_OK {
+            get {
+                return ResourceManager.GetString("HYDRAULIC UNIT SAFETIES NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hydraulic Valves Protection.
+        /// </summary>
+        internal static string HYDRAULIC_VALVES_PROTECTION {
+            get {
+                return ResourceManager.GetString("HYDRAULIC VALVES PROTECTION", resourceCulture);
             }
         }
         
@@ -2091,6 +3450,15 @@ namespace Prevu.Localization.Properties {
         internal static string INACCURATE_SENSOR_READING__SENSOR_TO_BE_CLEANED__ {
             get {
                 return ResourceManager.GetString("INACCURATE SENSOR READING (SENSOR TO BE CLEANED?)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incremental Wd Counter ( +1 Every 100 Ms - Rollover At 30000 ).
+        /// </summary>
+        internal static string INCREMENTAL_WD_COUNTER____1_EVERY_100_MS___ROLLOVER_AT_30000__ {
+            get {
+                return ResourceManager.GetString("INCREMENTAL WD COUNTER ( +1 EVERY 100 MS - ROLLOVER AT 30000 )", resourceCulture);
             }
         }
         
@@ -2302,6 +3670,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Info_Downstr_Status.
+        /// </summary>
+        internal static string INFO_DOWNSTR_STATUS {
+            get {
+                return ResourceManager.GetString("INFO_DOWNSTR_STATUS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Switch On The Eddy Current Device In The Field.
         /// </summary>
         internal static string INFO_EDDY_1 {
@@ -2347,7 +3724,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Check The Ethernet Switch, Its Supply And Connections.
         /// </summary>
         internal static string INFO_ETHERNET_1 {
             get {
@@ -2437,11 +3814,20 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Close At Least One Of The Discharge Valves To Prevent Tank Complete Emptying. Check The Valves In The Field..
         /// </summary>
         internal static string INFO_GT_VALVES_1 {
             get {
                 return ResourceManager.GetString("INFO_GT_VALVES_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Discharge Cycle Cannot Go On. Check The Valve Position Ls Are Working And Placed  In The Right Position And No Valve Blockage Is Occured..
+        /// </summary>
+        internal static string INFO_GT_VALVES_2 {
+            get {
+                return ResourceManager.GetString("INFO_GT_VALVES_2", resourceCulture);
             }
         }
         
@@ -2464,7 +3850,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Check For Mechanical Blockage Or Too Much Heavy Load Occured To The Motor..
         /// </summary>
         internal static string INFO_INV_3 {
             get {
@@ -2473,7 +3859,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Set Inverter In Remote Mode To Allow Any Further Operation On It From Pc Station..
         /// </summary>
         internal static string INFO_INV_4 {
             get {
@@ -2482,7 +3868,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Alarm Is Present On Inverter Display. Please Check It For The Actions To Be Done Reffering To The Inverter User Manual..
         /// </summary>
         internal static string INFO_INV_5 {
             get {
@@ -2491,7 +3877,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Check Profinet Cable Connection And The Power Supply Of Inverter Communication Card.
         /// </summary>
         internal static string INFO_INV_6 {
             get {
@@ -2500,7 +3886,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Check Inverter Status In The Cabinet.
         /// </summary>
         internal static string INFO_INV_7 {
             get {
@@ -2604,6 +3990,15 @@ namespace Prevu.Localization.Properties {
         internal static string INFO_LEVEL_16 {
             get {
                 return ResourceManager.GetString("INFO_LEVEL_16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Levels Parameter In The Water Loop Circuit.
+        /// </summary>
+        internal static string INFO_LEVEL_18 {
+            get {
+                return ResourceManager.GetString("INFO_LEVEL_18", resourceCulture);
             }
         }
         
@@ -2716,7 +4111,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Check The Valve Position Limit Switches, Their Position And Wiring.
         /// </summary>
         internal static string INFO_LS_14 {
             get {
@@ -2725,7 +4120,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Check The Valve Position, Pressure In The Pipes And Limit Switch Position.
         /// </summary>
         internal static string INFO_LS_15 {
             get {
@@ -2829,6 +4224,42 @@ namespace Prevu.Localization.Properties {
         internal static string INFO_METDET_2 {
             get {
                 return ResourceManager.GetString("INFO_METDET_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Water Circuit, Refill Valve, Pipes And Water Pump. Possible Leakage Or Lack Of Water..
+        /// </summary>
+        internal static string INFO_MIXER_1 {
+            get {
+                return ResourceManager.GetString("INFO_MIXER_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check For A Possible Blockage At The Dicharge Valve Of The Mixer, Valve Air Pressure And Discharge Pump..
+        /// </summary>
+        internal static string INFO_MIXER_2 {
+            get {
+                return ResourceManager.GetString("INFO_MIXER_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Mixer Filling And Contact Online Assistance Of Manufacturer -Mixer Is Automatically Disabled.
+        /// </summary>
+        internal static string INFO_MIXER_3 {
+            get {
+                return ResourceManager.GetString("INFO_MIXER_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check For Mixer Overload Of Material Or Mixer Current Control Settings.
+        /// </summary>
+        internal static string INFO_MIXER_4 {
+            get {
+                return ResourceManager.GetString("INFO_MIXER_4", resourceCulture);
             }
         }
         
@@ -3148,6 +4579,42 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Check For A Possible Blockage Of Heat Exchanger And Configuration Of Setups.
+        /// </summary>
+        internal static string INFO_PRES_10 {
+            get {
+                return ResourceManager.GetString("INFO_PRES_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check For A Possible Leakage Of Heat Exchanger/Pipes And Configuration Of Setups.
+        /// </summary>
+        internal static string INFO_PRES_11 {
+            get {
+                return ResourceManager.GetString("INFO_PRES_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Inlet Steam System - Pressure Is Too High - Pressure Fluctuations May Cause Desease On Thermal Regulation.
+        /// </summary>
+        internal static string INFO_PRES_12 {
+            get {
+                return ResourceManager.GetString("INFO_PRES_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Inlet Steam System - Pressure Is Too Low - Pressure Fluctuations May Cause Desease On Thermal Regulation.
+        /// </summary>
+        internal static string INFO_PRES_13 {
+            get {
+                return ResourceManager.GetString("INFO_PRES_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to High Number Of Rotor Reverse ! Check The Material In The Hopper And The Efficiency Of The Rotor And Blades..
         /// </summary>
         internal static string INFO_PRES_2 {
@@ -3220,6 +4687,42 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Check The Levels Of The Chemical Additives In The Tanks And Dosing System For A Leakage Or A Lack Of Air Pressure.
+        /// </summary>
+        internal static string INFO_PST_1 {
+            get {
+                return ResourceManager.GetString("INFO_PST_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Water Pressure And Dosing System For A Possible Leakage Or A Lack Of Air Pressure.
+        /// </summary>
+        internal static string INFO_PST_2 {
+            get {
+                return ResourceManager.GetString("INFO_PST_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Bowl Position Sensor.
+        /// </summary>
+        internal static string INFO_PST_3 {
+            get {
+                return ResourceManager.GetString("INFO_PST_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check The Levels Of The Chemical Additives In The Tanks, The Water Pressure And Dosing System For A Leakage Or A Lack Of Air Pressure.
+        /// </summary>
+        internal static string INFO_PST_4 {
+            get {
+                return ResourceManager.GetString("INFO_PST_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Check The Motor Cooling And/Or The Electrical Connection Of The Thermistor Sensor.
         /// </summary>
         internal static string INFO_PTC_1 {
@@ -3238,7 +4741,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Safety Thermistor Tripped ! Check The Dryer For Any Possible Material Blockage, Thermoregualtion, Air Filter….
+        ///   Looks up a localized string similar to Safety Thermistor Tripped ! Check The Dryer For Any Possible Material Blockage, Thermoregulation Air Filter.
         /// </summary>
         internal static string INFO_RES_1 {
             get {
@@ -3346,7 +4849,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Check The Sensor In The Field And Clean It.
         /// </summary>
         internal static string INFO_SENSOR_READ_1 {
             get {
@@ -3625,7 +5128,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Hardware Fault On Plc-Safty Input Card. Ensure No Short Circuits Are Present In Field On Estop Channels Or Bad Connections On Estop Knobs. Check The Safety Plc Input Module, Reset The Alarm And/Or Reboot The Plc Module.
         /// </summary>
         internal static string INFO_SYS_32 {
             get {
@@ -3720,6 +5223,24 @@ namespace Prevu.Localization.Properties {
         internal static string INFO_TEMPER_11 {
             get {
                 return ResourceManager.GetString("INFO_TEMPER_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gearbox Is Overheated: Check Cooling System. If Temperature Increases Again, Main Motor Will Be Stopped..
+        /// </summary>
+        internal static string INFO_TEMPER_12 {
+            get {
+                return ResourceManager.GetString("INFO_TEMPER_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gearbox Is Highly Overheated. Main Motor Is Stopped. Check The Whole Gearbox, Its Cooling, And Do The Needed Maintenance..
+        /// </summary>
+        internal static string INFO_TEMPER_13 {
+            get {
+                return ResourceManager.GetString("INFO_TEMPER_13", resourceCulture);
             }
         }
         
@@ -3985,6 +5506,33 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Info Panel.
+        /// </summary>
+        internal static string InfoPanel {
+            get {
+                return ResourceManager.GetString("InfoPanel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Initial Backward Position.
+        /// </summary>
+        internal static string INITIAL_BACKWARD_POSITION {
+            get {
+                return ResourceManager.GetString("INITIAL BACKWARD POSITION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Initial Fast Advance.
+        /// </summary>
+        internal static string INITIAL_FAST_ADVANCE {
+            get {
+                return ResourceManager.GetString("INITIAL FAST ADVANCE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Inlet Water Pressure.
         /// </summary>
         internal static string INLET_WATER_PRESSURE {
@@ -4075,6 +5623,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Inverter Power Up Not OK.
+        /// </summary>
+        internal static string INVERTER_POWER_UP_NOT_OK {
+            get {
+                return ResourceManager.GetString("INVERTER POWER UP NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Inverter Profinet Communication Not Ok.
         /// </summary>
         internal static string INVERTER_PROFINET_COMMUNICATION_NOT_OK {
@@ -4089,6 +5646,15 @@ namespace Prevu.Localization.Properties {
         internal static string INVERTER_RUNNING {
             get {
                 return ResourceManager.GetString("INVERTER RUNNING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inverter Safety Circuits.
+        /// </summary>
+        internal static string INVERTER_SAFETY_CIRCUITS {
+            get {
+                return ResourceManager.GetString("INVERTER SAFETY CIRCUITS", resourceCulture);
             }
         }
         
@@ -4111,6 +5677,24 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Inverterbrand.
+        /// </summary>
+        internal static string INVERTERBRAND {
+            get {
+                return ResourceManager.GetString("INVERTERBRAND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inverternominaloutcurrent.
+        /// </summary>
+        internal static string INVERTERNOMINALOUTCURRENT {
+            get {
+                return ResourceManager.GetString("INVERTERNOMINALOUTCURRENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Jump Label.
         /// </summary>
         internal static string JUMP_LABEL {
@@ -4129,6 +5713,24 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to KEY UNLOCKED WITHOUT UNLOCK COMMAND.
+        /// </summary>
+        internal static string KEY_UNLOCKED_WITHOUT_UNLOCK_COMMAND {
+            get {
+                return ResourceManager.GetString("KEY UNLOCKED WITHOUT UNLOCK COMMAND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lamp ALARM.
+        /// </summary>
+        internal static string LAMP_ALARM {
+            get {
+                return ResourceManager.GetString("LAMP ALARM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Lamp Green.
         /// </summary>
         internal static string LAMP_GREEN {
@@ -4138,11 +5740,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Lamp PRODUCTION.
+        /// </summary>
+        internal static string LAMP_PRODUCTION {
+            get {
+                return ResourceManager.GetString("LAMP PRODUCTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Lamp Red.
         /// </summary>
         internal static string LAMP_RED {
             get {
                 return ResourceManager.GetString("LAMP RED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lamp WARNING.
+        /// </summary>
+        internal static string LAMP_WARNING {
+            get {
+                return ResourceManager.GetString("LAMP WARNING", resourceCulture);
             }
         }
         
@@ -4228,6 +5848,24 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Live Charting.
+        /// </summary>
+        internal static string LIVE_CHARTING {
+            get {
+                return ResourceManager.GetString("LIVE CHARTING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Load Image.
+        /// </summary>
+        internal static string LOAD_IMAGE {
+            get {
+                return ResourceManager.GetString("LOAD IMAGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Loading.
         /// </summary>
         internal static string LOADING {
@@ -4242,6 +5880,33 @@ namespace Prevu.Localization.Properties {
         internal static string LOCAL_DISCONNECT {
             get {
                 return ResourceManager.GetString("LOCAL DISCONNECT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Local Disconnect Closed.
+        /// </summary>
+        internal static string LOCAL_DISCONNECT_CLOSED {
+            get {
+                return ResourceManager.GetString("LOCAL DISCONNECT CLOSED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Local Disconnect Not Ok.
+        /// </summary>
+        internal static string LOCAL_DISCONNECT_NOT_OK {
+            get {
+                return ResourceManager.GetString("LOCAL DISCONNECT NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Local Disconnect Ok   (If Any).
+        /// </summary>
+        internal static string LOCAL_DISCONNECT_OK____IF_ANY_ {
+            get {
+                return ResourceManager.GetString("LOCAL DISCONNECT OK   (IF ANY)", resourceCulture);
             }
         }
         
@@ -4278,6 +5943,15 @@ namespace Prevu.Localization.Properties {
         internal static string LOCAL_SAFETY {
             get {
                 return ResourceManager.GetString("LOCAL SAFETY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Local Safety Ok   (If Any - E.G. Strap L.S.).
+        /// </summary>
+        internal static string LOCAL_SAFETY_OK____IF_ANY___E_G__STRAP_L_S__ {
+            get {
+                return ResourceManager.GetString("LOCAL SAFETY OK   (IF ANY - E.G. STRAP L.S.)", resourceCulture);
             }
         }
         
@@ -4327,6 +6001,24 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to LOSS OF SAFETY CONDITIONS.
+        /// </summary>
+        internal static string LOSS_OF_SAFETY_CONDITIONS {
+            get {
+                return ResourceManager.GetString("LOSS OF SAFETY CONDITIONS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Low.
+        /// </summary>
+        internal static string LOW {
+            get {
+                return ResourceManager.GetString("LOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Low Chemical Concentration Warning.
         /// </summary>
         internal static string LOW_CHEMICAL_CONCENTRATION_WARNING {
@@ -4372,11 +6064,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Main Feeding Belt.
+        /// </summary>
+        internal static string MAIN_FEEDING_BELT {
+            get {
+                return ResourceManager.GetString("MAIN FEEDING BELT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Maintenance.
         /// </summary>
         internal static string MAINTENANCE {
             get {
                 return ResourceManager.GetString("MAINTENANCE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maintenance Aux. Hdraulic Unit.
+        /// </summary>
+        internal static string MAINTENANCE_AUX__HDRAULIC_UNIT {
+            get {
+                return ResourceManager.GetString("MAINTENANCE AUX. HDRAULIC UNIT", resourceCulture);
             }
         }
         
@@ -4444,6 +6154,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Manual Sorting.
+        /// </summary>
+        internal static string MANUAL_SORTING {
+            get {
+                return ResourceManager.GetString("MANUAL SORTING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Manual Start Required.
         /// </summary>
         internal static string MANUAL_START_REQUIRED {
@@ -4476,6 +6195,24 @@ namespace Prevu.Localization.Properties {
         internal static string MATERIAL_IN_THE_PROCESS {
             get {
                 return ResourceManager.GetString("MATERIAL IN THE PROCESS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Max Torque Limit Switch 1.
+        /// </summary>
+        internal static string MAX_TORQUE_LIMIT_SWITCH_1 {
+            get {
+                return ResourceManager.GetString("MAX TORQUE LIMIT SWITCH 1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Max Torque Limit Switch 2.
+        /// </summary>
+        internal static string MAX_TORQUE_LIMIT_SWITCH_2 {
+            get {
+                return ResourceManager.GetString("MAX TORQUE LIMIT SWITCH 2", resourceCulture);
             }
         }
         
@@ -4570,6 +6307,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MAXIMUM NUMBER OF ROTOR REVERSE ROTATION (SHREDDER OVERLOAD ?).
+        /// </summary>
+        internal static string MAXIMUM_NUMBER_OF_ROTOR_REVERSE_ROTATION__SHREDDER_OVERLOAD___ {
+            get {
+                return ResourceManager.GetString("MAXIMUM NUMBER OF ROTOR REVERSE ROTATION (SHREDDER OVERLOAD ?)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Maximum Pressure.
         /// </summary>
         internal static string MAXIMUM_PRESSURE {
@@ -4584,6 +6330,15 @@ namespace Prevu.Localization.Properties {
         internal static string MAXIMUM_PRESSURE_REACHED {
             get {
                 return ResourceManager.GetString("MAXIMUM PRESSURE REACHED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maximum Push Shredding.
+        /// </summary>
+        internal static string MAXIMUM_PUSH_SHREDDING {
+            get {
+                return ResourceManager.GetString("MAXIMUM PUSH SHREDDING", resourceCulture);
             }
         }
         
@@ -4624,11 +6379,47 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mechanical Overload 1 (Reaction Arm).
+        /// </summary>
+        internal static string MECHANICAL_OVERLOAD_1__REACTION_ARM_ {
+            get {
+                return ResourceManager.GetString("MECHANICAL OVERLOAD 1 (REACTION ARM)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mechanical Overload 2 (Reaction Arm).
+        /// </summary>
+        internal static string MECHANICAL_OVERLOAD_2__REACTION_ARM_ {
+            get {
+                return ResourceManager.GetString("MECHANICAL OVERLOAD 2 (REACTION ARM)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Menu.
+        /// </summary>
+        internal static string MENU {
+            get {
+                return ResourceManager.GetString("MENU", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Message.
         /// </summary>
         internal static string MESSAGE {
             get {
                 return ResourceManager.GetString("MESSAGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message Present.
+        /// </summary>
+        internal static string MESSAGE_PRESENT {
+            get {
+                return ResourceManager.GetString("MESSAGE PRESENT", resourceCulture);
             }
         }
         
@@ -4642,11 +6433,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MESSAGING.
+        /// </summary>
+        internal static string MESSAGING {
+            get {
+                return ResourceManager.GetString("MESSAGING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Min Value.
         /// </summary>
         internal static string MIN_VALUE {
             get {
                 return ResourceManager.GetString("MIN VALUE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minimize Prevu.
+        /// </summary>
+        internal static string MINIMIZE_PREVU {
+            get {
+                return ResourceManager.GetString("MINIMIZE PREVU", resourceCulture);
             }
         }
         
@@ -4786,6 +6595,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Minor Fault in the Electrical Cabinet.
+        /// </summary>
+        internal static string MINOR_FAULT_IN_THE_ELECTRICAL_CABINET {
+            get {
+                return ResourceManager.GetString("MINOR FAULT IN THE ELECTRICAL CABINET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Minor Fault Present.
         /// </summary>
         internal static string MINOR_FAULT_PRESENT {
@@ -4813,6 +6631,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to More.
+        /// </summary>
+        internal static string MORE {
+            get {
+                return ResourceManager.GetString("MORE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Motor Current.
         /// </summary>
         internal static string MOTOR_CURRENT {
@@ -4827,6 +6654,15 @@ namespace Prevu.Localization.Properties {
         internal static string MOTOR_CURRENT_BELOW_MINIMUM_RANGE_LIMIT__POSSIBLE_CAVITATION_ {
             get {
                 return ResourceManager.GetString("MOTOR CURRENT BELOW MINIMUM RANGE LIMIT (POSSIBLE CAVITATION)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MOTOR CURRENT NOT OK FOR MATERIAL.
+        /// </summary>
+        internal static string MOTOR_CURRENT_NOT_OK_FOR_MATERIAL {
+            get {
+                return ResourceManager.GetString("MOTOR CURRENT NOT OK FOR MATERIAL", resourceCulture);
             }
         }
         
@@ -4894,11 +6730,56 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Motornominalcurrent.
+        /// </summary>
+        internal static string MOTORNOMINALCURRENT {
+            get {
+                return ResourceManager.GetString("MOTORNOMINALCURRENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motornominalpower.
+        /// </summary>
+        internal static string MOTORNOMINALPOWER {
+            get {
+                return ResourceManager.GetString("MOTORNOMINALPOWER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Name.
         /// </summary>
         internal static string NAME {
             get {
                 return ResourceManager.GetString("NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Near Downstream Not OK For Shredding.
+        /// </summary>
+        internal static string NEAR_DOWNSTREAM_NOT_OK_FOR_SHREDDING {
+            get {
+                return ResourceManager.GetString("NEAR DOWNSTREAM NOT OK FOR SHREDDING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NEAR DOWNSTREAM OK FOR START WASHING.
+        /// </summary>
+        internal static string NEAR_DOWNSTREAM_OK_FOR_START_WASHING {
+            get {
+                return ResourceManager.GetString("NEAR DOWNSTREAM OK FOR START WASHING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Alarm Present.
+        /// </summary>
+        internal static string NEW_ALARM_PRESENT {
+            get {
+                return ResourceManager.GetString("NEW ALARM PRESENT", resourceCulture);
             }
         }
         
@@ -4926,6 +6807,15 @@ namespace Prevu.Localization.Properties {
         internal static string NO_ALARMS_OR_MESSAGES {
             get {
                 return ResourceManager.GetString("NO ALARMS OR MESSAGES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No Cooling is Required (Low Temperature).
+        /// </summary>
+        internal static string NO_COOLING_IS_REQUIRED__LOW_TEMPERATURE_ {
+            get {
+                return ResourceManager.GetString("NO COOLING IS REQUIRED (LOW TEMPERATURE)", resourceCulture);
             }
         }
         
@@ -4966,6 +6856,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No Faults.
+        /// </summary>
+        internal static string NO_FAULTS {
+            get {
+                return ResourceManager.GetString("NO FAULTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to No Material Present.
         /// </summary>
         internal static string NO_MATERIAL_PRESENT {
@@ -4984,11 +6883,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No Parameters Found With Active Filters.
+        /// </summary>
+        internal static string NO_PARAMETERS_FOUND_WITH_ACTIVE_FILTERS {
+            get {
+                return ResourceManager.GetString("NO PARAMETERS FOUND WITH ACTIVE FILTERS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to No Position.
         /// </summary>
         internal static string NO_POSITION {
             get {
                 return ResourceManager.GetString("NO POSITION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NO REVERSE ROTATION.
+        /// </summary>
+        internal static string NO_REVERSE_ROTATION {
+            get {
+                return ResourceManager.GetString("NO REVERSE ROTATION", resourceCulture);
             }
         }
         
@@ -5011,11 +6928,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Non-Critical Alarm Present.
+        /// </summary>
+        internal static string NON_CRITICAL_ALARM_PRESENT {
+            get {
+                return ResourceManager.GetString("NON-CRITICAL ALARM PRESENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Not in Pause Phase.
         /// </summary>
         internal static string NOT_IN_PAUSE_PHASE {
             get {
                 return ResourceManager.GetString("NOT IN PAUSE PHASE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Not OK for Process.
+        /// </summary>
+        internal static string NOT_OK_FOR_PROCESS {
+            get {
+                return ResourceManager.GetString("NOT OK FOR PROCESS", resourceCulture);
             }
         }
         
@@ -5047,6 +6982,123 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to OIL CIRCUIT SHUTOFF VALVE NOT OPEN.
+        /// </summary>
+        internal static string OIL_CIRCUIT_SHUTOFF_VALVE_NOT_OPEN {
+            get {
+                return ResourceManager.GetString("OIL CIRCUIT SHUTOFF VALVE NOT OPEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oil Does Not Need To Be Heated.
+        /// </summary>
+        internal static string OIL_DOES_NOT_NEED_TO_BE_HEATED {
+            get {
+                return ResourceManager.GetString("OIL DOES NOT NEED TO BE HEATED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oil Filter.
+        /// </summary>
+        internal static string OIL_FILTER {
+            get {
+                return ResourceManager.GetString("OIL FILTER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OIL FILTER NOT OK.
+        /// </summary>
+        internal static string OIL_FILTER_NOT_OK {
+            get {
+                return ResourceManager.GetString("OIL FILTER NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OIL LOW TEMPERATURE.
+        /// </summary>
+        internal static string OIL_LOW_TEMPERATURE {
+            get {
+                return ResourceManager.GetString("OIL LOW TEMPERATURE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OIL MAXIMUM TEMPERATURE.
+        /// </summary>
+        internal static string OIL_MAXIMUM_TEMPERATURE {
+            get {
+                return ResourceManager.GetString("OIL MAXIMUM TEMPERATURE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OIL MINIMUM LEVEL.
+        /// </summary>
+        internal static string OIL_MINIMUM_LEVEL {
+            get {
+                return ResourceManager.GetString("OIL MINIMUM LEVEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OIL MINIMUM LEVEL NOT OK.
+        /// </summary>
+        internal static string OIL_MINIMUM_LEVEL_NOT_OK {
+            get {
+                return ResourceManager.GetString("OIL MINIMUM LEVEL NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oil Temperature.
+        /// </summary>
+        internal static string OIL_TEMPERATURE {
+            get {
+                return ResourceManager.GetString("OIL TEMPERATURE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oil Temperature Not OK For Circulation.
+        /// </summary>
+        internal static string OIL_TEMPERATURE_NOT_OK_FOR_CIRCULATION {
+            get {
+                return ResourceManager.GetString("OIL TEMPERATURE NOT OK FOR CIRCULATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OIL TEMPERATURE OK FOR CIRCULATION.
+        /// </summary>
+        internal static string OIL_TEMPERATURE_OK_FOR_CIRCULATION {
+            get {
+                return ResourceManager.GetString("OIL TEMPERATURE OK FOR CIRCULATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OIL TEMPERATURE OK FOR HEATING.
+        /// </summary>
+        internal static string OIL_TEMPERATURE_OK_FOR_HEATING {
+            get {
+                return ResourceManager.GetString("OIL TEMPERATURE OK FOR HEATING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oil Valve.
+        /// </summary>
+        internal static string OIL_VALVE {
+            get {
+                return ResourceManager.GetString("OIL VALVE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ok.
         /// </summary>
         internal static string OK {
@@ -5061,6 +7113,42 @@ namespace Prevu.Localization.Properties {
         internal static string OK_FOR_PROCESS {
             get {
                 return ResourceManager.GetString("OK FOR PROCESS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ok For Process (Epb Ok).
+        /// </summary>
+        internal static string OK_FOR_PROCESS__EPB_OK_ {
+            get {
+                return ResourceManager.GetString("OK FOR PROCESS (EPB OK)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ok For Process (Estop Area Status Ok + No Alarms/Messages).
+        /// </summary>
+        internal static string OK_FOR_PROCESS__ESTOP_AREA_STATUS_OK___NO_ALARMS_MESSAGES_ {
+            get {
+                return ResourceManager.GetString("OK FOR PROCESS (ESTOP AREA STATUS OK + NO ALARMS/MESSAGES)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ok For Process (Estop Ok + No Alarms/Messages).
+        /// </summary>
+        internal static string OK_FOR_PROCESS__ESTOP_OK___NO_ALARMS_MESSAGES_ {
+            get {
+                return ResourceManager.GetString("OK FOR PROCESS (ESTOP OK + NO ALARMS/MESSAGES)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ok For Process (Plc Run, Estop Ok + No Alarms/Messages).
+        /// </summary>
+        internal static string OK_FOR_PROCESS__PLC_RUN__ESTOP_OK___NO_ALARMS_MESSAGES_ {
+            get {
+                return ResourceManager.GetString("OK FOR PROCESS (PLC RUN, ESTOP OK + NO ALARMS/MESSAGES)", resourceCulture);
             }
         }
         
@@ -5083,11 +7171,47 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ON Command.
+        /// </summary>
+        internal static string ON_COMMAND {
+            get {
+                return ResourceManager.GetString("ON COMMAND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ON COMMAND (Any Direction).
+        /// </summary>
+        internal static string ON_COMMAND__ANY_DIRECTION_ {
+            get {
+                return ResourceManager.GetString("ON COMMAND (ANY DIRECTION)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to On_Time.
+        /// </summary>
+        internal static string ON_TIME {
+            get {
+                return ResourceManager.GetString("ON_TIME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to On Time Above Zero.
         /// </summary>
         internal static string ON_TIME_ABOVE_ZERO {
             get {
                 return ResourceManager.GetString("ON TIME ABOVE ZERO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to On Time Is Set To Zero.
+        /// </summary>
+        internal static string ON_TIME_IS_SET_TO_ZERO {
+            get {
+                return ResourceManager.GetString("ON TIME IS SET TO ZERO", resourceCulture);
             }
         }
         
@@ -5128,11 +7252,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Open Process Image.
+        /// </summary>
+        internal static string OPEN_PROCESS_IMAGE {
+            get {
+                return ResourceManager.GetString("OPEN PROCESS IMAGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Open Virtual Keyboard.
         /// </summary>
         internal static string OPEN_VIRTUAL_KEYBOARD {
             get {
                 return ResourceManager.GetString("OPEN VIRTUAL KEYBOARD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Operating System Access.
+        /// </summary>
+        internal static string OperatingSystemAccess {
+            get {
+                return ResourceManager.GetString("OperatingSystemAccess", resourceCulture);
             }
         }
         
@@ -5182,6 +7324,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Overwrite The Following Image?.
+        /// </summary>
+        internal static string OVERWRITE_THE_FOLLOWING_IMAGE_ {
+            get {
+                return ResourceManager.GetString("OVERWRITE THE FOLLOWING IMAGE?", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Parameter List.
         /// </summary>
         internal static string PARAMETER_LIST {
@@ -5200,11 +7351,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Parameter Management Page.
+        /// </summary>
+        internal static string ParameterManagement {
+            get {
+                return ResourceManager.GetString("ParameterManagement", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Parameters.
         /// </summary>
         internal static string PARAMETERS {
             get {
                 return ResourceManager.GetString("PARAMETERS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parameters saved successfully.
+        /// </summary>
+        internal static string PARAMETERS_SAVED_SUCCESSFULLY {
+            get {
+                return ResourceManager.GetString("PARAMETERS SAVED SUCCESSFULLY", resourceCulture);
             }
         }
         
@@ -5218,11 +7387,38 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Pause_Time.
+        /// </summary>
+        internal static string PAUSE_TIME {
+            get {
+                return ResourceManager.GetString("PAUSE_TIME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Pause Time Enabled.
         /// </summary>
         internal static string PAUSE_TIME_ENABLED {
             get {
                 return ResourceManager.GetString("PAUSE TIME ENABLED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pellenc Bottle Sorter.
+        /// </summary>
+        internal static string PELLENC_BOTTLE_SORTER {
+            get {
+                return ResourceManager.GetString("PELLENC BOTTLE SORTER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PERSISTENT CURRENT (&gt;3 min) ABOVE MINIMUM WITH NO INCOMING MATERIAL.
+        /// </summary>
+        internal static string PERSISTENT_CURRENT___3_MIN__ABOVE_MINIMUM_WITH_NO_INCOMING_MATERIAL {
+            get {
+                return ResourceManager.GetString("PERSISTENT CURRENT (>3 MIN) ABOVE MINIMUM WITH NO INCOMING MATERIAL", resourceCulture);
             }
         }
         
@@ -5281,11 +7477,20 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Plant View.
+        ///   Looks up a localized string similar to Plant Overview.
         /// </summary>
-        internal static string PLANT_VIEW {
+        internal static string PLANT_OVERVIEW {
             get {
-                return ResourceManager.GetString("PLANT VIEW", resourceCulture);
+                return ResourceManager.GetString("PLANT OVERVIEW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Plant Overview.
+        /// </summary>
+        internal static string PlantOverview {
+            get {
+                return ResourceManager.GetString("PlantOverview", resourceCulture);
             }
         }
         
@@ -5344,11 +7549,38 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Plc Program Simulation Active.
+        /// </summary>
+        internal static string PLC_PROGRAM_SIMULATION_ACTIVE {
+            get {
+                return ResourceManager.GetString("PLC PROGRAM SIMULATION ACTIVE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PLC Simulation.
         /// </summary>
         internal static string PLC_SIMULATION {
             get {
                 return ResourceManager.GetString("PLC SIMULATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PLC Rack Page.
+        /// </summary>
+        internal static string PlcPage {
+            get {
+                return ResourceManager.GetString("PlcPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Plctag.
+        /// </summary>
+        internal static string PLCTAG {
+            get {
+                return ResourceManager.GetString("PLCTAG", resourceCulture);
             }
         }
         
@@ -5376,6 +7608,15 @@ namespace Prevu.Localization.Properties {
         internal static string POSITION_CLOSED_NOT_OK {
             get {
                 return ResourceManager.GetString("POSITION CLOSED NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to POSITION FORWARD NOT OK.
+        /// </summary>
+        internal static string POSITION_FORWARD_NOT_OK {
+            get {
+                return ResourceManager.GetString("POSITION FORWARD NOT OK", resourceCulture);
             }
         }
         
@@ -5412,6 +7653,33 @@ namespace Prevu.Localization.Properties {
         internal static string POSITION_OPEN_NOT_OK {
             get {
                 return ResourceManager.GetString("POSITION OPEN NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to POSITION REVERSE NOT OK.
+        /// </summary>
+        internal static string POSITION_REVERSE_NOT_OK {
+            get {
+                return ResourceManager.GetString("POSITION REVERSE NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Power Disconnect (On The Cabinet).
+        /// </summary>
+        internal static string POWER_DISCONNECT__ON_THE_CABINET_ {
+            get {
+                return ResourceManager.GetString("POWER DISCONNECT (ON THE CABINET)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Power Switch Open.
+        /// </summary>
+        internal static string POWER_SWITCH_OPEN {
+            get {
+                return ResourceManager.GetString("POWER SWITCH OPEN", resourceCulture);
             }
         }
         
@@ -5461,6 +7729,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Process Signals.
+        /// </summary>
+        internal static string PROCESS_SIGNALS {
+            get {
+                return ResourceManager.GetString("PROCESS SIGNALS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Production.
         /// </summary>
         internal static string PRODUCTION {
@@ -5475,6 +7752,24 @@ namespace Prevu.Localization.Properties {
         internal static string PRODUCTION_CYCLE {
             get {
                 return ResourceManager.GetString("PRODUCTION CYCLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Production Cycle Pending (Preparation in Progress).
+        /// </summary>
+        internal static string PRODUCTION_CYCLE_PENDING__PREPARATION_IN_PROGRESS_ {
+            get {
+                return ResourceManager.GetString("PRODUCTION CYCLE PENDING (PREPARATION IN PROGRESS)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Production Cycle Running.
+        /// </summary>
+        internal static string PRODUCTION_CYCLE_RUNNING {
+            get {
+                return ResourceManager.GetString("PRODUCTION CYCLE RUNNING", resourceCulture);
             }
         }
         
@@ -5506,11 +7801,38 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Production Slowdown Speed.
+        /// </summary>
+        internal static string PRODUCTION_SLOWDOWN_SPEED {
+            get {
+                return ResourceManager.GetString("PRODUCTION SLOWDOWN SPEED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Production Speed.
         /// </summary>
         internal static string PRODUCTION_SPEED {
             get {
                 return ResourceManager.GetString("PRODUCTION SPEED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Production Speed - Advancing.
+        /// </summary>
+        internal static string PRODUCTION_SPEED___ADVANCING {
+            get {
+                return ResourceManager.GetString("PRODUCTION SPEED - ADVANCING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Production Speed (in Constant Mode).
+        /// </summary>
+        internal static string PRODUCTION_SPEED__IN_CONSTANT_MODE_ {
+            get {
+                return ResourceManager.GetString("PRODUCTION SPEED (IN CONSTANT MODE)", resourceCulture);
             }
         }
         
@@ -5542,6 +7864,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Pull-Cord Safeties.
+        /// </summary>
+        internal static string PULL_CORD_SAFETIES {
+            get {
+                return ResourceManager.GetString("PULL-CORD SAFETIES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Pull-Cord Safety.
         /// </summary>
         internal static string PULL_CORD_SAFETY {
@@ -5560,6 +7891,195 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PUSHER.
+        /// </summary>
+        internal static string PUSHER {
+            get {
+                return ResourceManager.GetString("PUSHER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Back for Downstream Not OK.
+        /// </summary>
+        internal static string PUSHER_BACK_FOR_DOWNSTREAM_NOT_OK {
+            get {
+                return ResourceManager.GetString("PUSHER BACK FOR DOWNSTREAM NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Backward.
+        /// </summary>
+        internal static string PUSHER_BACKWARD {
+            get {
+                return ResourceManager.GetString("PUSHER BACKWARD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Fast Advance.
+        /// </summary>
+        internal static string PUSHER_FAST_ADVANCE {
+            get {
+                return ResourceManager.GetString("PUSHER FAST ADVANCE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Final Retract.
+        /// </summary>
+        internal static string PUSHER_FINAL_RETRACT {
+            get {
+                return ResourceManager.GetString("PUSHER FINAL RETRACT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Forward Position Reached.
+        /// </summary>
+        internal static string PUSHER_FORWARD_POSITION_REACHED {
+            get {
+                return ResourceManager.GetString("PUSHER FORWARD POSITION REACHED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Forward/Reverse.
+        /// </summary>
+        internal static string PUSHER_FORWARD_REVERSE {
+            get {
+                return ResourceManager.GetString("PUSHER FORWARD/REVERSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Maximum Speed At Rotor Minimum Current.
+        /// </summary>
+        internal static string PUSHER_MAXIMUM_SPEED_AT_ROTOR_MINIMUM_CURRENT {
+            get {
+                return ResourceManager.GetString("PUSHER MAXIMUM SPEED AT ROTOR MINIMUM CURRENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Minimum Speed At Rotor Maximum Current.
+        /// </summary>
+        internal static string PUSHER_MINIMUM_SPEED_AT_ROTOR_MAXIMUM_CURRENT {
+            get {
+                return ResourceManager.GetString("PUSHER MINIMUM SPEED AT ROTOR MAXIMUM CURRENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PUSHER NOT FORWARD.
+        /// </summary>
+        internal static string PUSHER_NOT_FORWARD {
+            get {
+                return ResourceManager.GetString("PUSHER NOT FORWARD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PUSHER NOT REVERSE.
+        /// </summary>
+        internal static string PUSHER_NOT_REVERSE {
+            get {
+                return ResourceManager.GetString("PUSHER NOT REVERSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Oil Pump.
+        /// </summary>
+        internal static string PUSHER_OIL_PUMP {
+            get {
+                return ResourceManager.GetString("PUSHER OIL PUMP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Pressing in Forward Position.
+        /// </summary>
+        internal static string PUSHER_PRESSING_IN_FORWARD_POSITION {
+            get {
+                return ResourceManager.GetString("PUSHER PRESSING IN FORWARD POSITION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Retract.
+        /// </summary>
+        internal static string PUSHER_RETRACT {
+            get {
+                return ResourceManager.GetString("PUSHER RETRACT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Retract in Progress.
+        /// </summary>
+        internal static string PUSHER_RETRACT_IN_PROGRESS {
+            get {
+                return ResourceManager.GetString("PUSHER RETRACT IN PROGRESS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Reverse Position Reached.
+        /// </summary>
+        internal static string PUSHER_REVERSE_POSITION_REACHED {
+            get {
+                return ResourceManager.GetString("PUSHER REVERSE POSITION REACHED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Step Back.
+        /// </summary>
+        internal static string PUSHER_STEP_BACK {
+            get {
+                return ResourceManager.GetString("PUSHER STEP BACK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Step Back + Stop Material (if Selected).
+        /// </summary>
+        internal static string PUSHER_STEP_BACK___STOP_MATERIAL__IF_SELECTED_ {
+            get {
+                return ResourceManager.GetString("PUSHER STEP BACK + STOP MATERIAL (IF SELECTED)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Step Back Request.
+        /// </summary>
+        internal static string PUSHER_STEP_BACK_REQUEST {
+            get {
+                return ResourceManager.GetString("PUSHER STEP BACK REQUEST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Step Back Requested.
+        /// </summary>
+        internal static string PUSHER_STEP_BACK_REQUESTED {
+            get {
+                return ResourceManager.GetString("PUSHER STEP BACK REQUESTED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pusher Step-Back Time.
+        /// </summary>
+        internal static string PUSHER_STEP_BACK_TIME {
+            get {
+                return ResourceManager.GetString("PUSHER STEP-BACK TIME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Reaction Arm Mechanical Overload.
         /// </summary>
         internal static string REACTION_ARM_MECHANICAL_OVERLOAD {
@@ -5574,6 +8094,42 @@ namespace Prevu.Localization.Properties {
         internal static string READY {
             get {
                 return ResourceManager.GetString("READY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to READY FOR MEASURING.
+        /// </summary>
+        internal static string READY_FOR_MEASURING {
+            get {
+                return ResourceManager.GetString("READY FOR MEASURING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to READY FOR PROCESS.
+        /// </summary>
+        internal static string READY_FOR_PROCESS {
+            get {
+                return ResourceManager.GetString("READY FOR PROCESS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ready To Start.
+        /// </summary>
+        internal static string READY_TO_START {
+            get {
+                return ResourceManager.GetString("READY TO START", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to READY TO START  (FALSE When STARTED).
+        /// </summary>
+        internal static string READY_TO_START___FALSE_WHEN_STARTED_ {
+            get {
+                return ResourceManager.GetString("READY TO START  (FALSE WHEN STARTED)", resourceCulture);
             }
         }
         
@@ -5623,11 +8179,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Remote Mode.
+        /// </summary>
+        internal static string REMOTE_MODE {
+            get {
+                return ResourceManager.GetString("REMOTE MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Reset.
         /// </summary>
         internal static string RESET {
             get {
                 return ResourceManager.GetString("RESET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset Cycle - Pusher Complete Backward.
+        /// </summary>
+        internal static string RESET_CYCLE___PUSHER_COMPLETE_BACKWARD {
+            get {
+                return ResourceManager.GetString("RESET CYCLE - PUSHER COMPLETE BACKWARD", resourceCulture);
             }
         }
         
@@ -5650,6 +8224,24 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Reset Faults.
+        /// </summary>
+        internal static string ResetFaults {
+            get {
+                return ResourceManager.GetString("ResetFaults", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restart Feeding.
+        /// </summary>
+        internal static string RESTART_FEEDING {
+            get {
+                return ResourceManager.GetString("RESTART FEEDING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Restart Silo Filling.
         /// </summary>
         internal static string RESTART_SILO_FILLING {
@@ -5664,6 +8256,159 @@ namespace Prevu.Localization.Properties {
         internal static string RETURN_VALUE {
             get {
                 return ResourceManager.GetString("RETURN VALUE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reverse.
+        /// </summary>
+        internal static string REVERSE {
+            get {
+                return ResourceManager.GetString("REVERSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rotation Stopped.
+        /// </summary>
+        internal static string ROTATION_STOPPED {
+            get {
+                return ResourceManager.GetString("ROTATION STOPPED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ROTOR.
+        /// </summary>
+        internal static string ROTOR {
+            get {
+                return ResourceManager.GetString("ROTOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ROTOR COOLING.
+        /// </summary>
+        internal static string ROTOR_COOLING {
+            get {
+                return ResourceManager.GetString("ROTOR COOLING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rotor Cooling Not OK.
+        /// </summary>
+        internal static string ROTOR_COOLING_NOT_OK {
+            get {
+                return ResourceManager.GetString("ROTOR COOLING NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rotor Cooling Valve.
+        /// </summary>
+        internal static string ROTOR_COOLING_VALVE {
+            get {
+                return ResourceManager.GetString("ROTOR COOLING VALVE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rotor Current Not OK for Material Loading.
+        /// </summary>
+        internal static string ROTOR_CURRENT_NOT_OK_FOR_MATERIAL_LOADING {
+            get {
+                return ResourceManager.GetString("ROTOR CURRENT NOT OK FOR MATERIAL LOADING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ROTOR CURRENT OK.
+        /// </summary>
+        internal static string ROTOR_CURRENT_OK {
+            get {
+                return ResourceManager.GetString("ROTOR CURRENT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rotor is Moving Reverse to Prevent Blockage.
+        /// </summary>
+        internal static string ROTOR_IS_MOVING_REVERSE_TO_PREVENT_BLOCKAGE {
+            get {
+                return ResourceManager.GetString("ROTOR IS MOVING REVERSE TO PREVENT BLOCKAGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rotor Reverse.
+        /// </summary>
+        internal static string ROTOR_REVERSE {
+            get {
+                return ResourceManager.GetString("ROTOR REVERSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rotor Reverse (Floating Material).
+        /// </summary>
+        internal static string Rotor_Reverse__Floating_Material_ {
+            get {
+                return ResourceManager.GetString("Rotor Reverse (Floating Material)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rotor Reverse (Forward Timeout).
+        /// </summary>
+        internal static string ROTOR_REVERSE__FORWARD_TIMEOUT_ {
+            get {
+                return ResourceManager.GetString("ROTOR REVERSE (FORWARD TIMEOUT)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rotor Reverse Interval.
+        /// </summary>
+        internal static string ROTOR_REVERSE_INTERVAL {
+            get {
+                return ResourceManager.GetString("ROTOR REVERSE INTERVAL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rotor Reverse Requested.
+        /// </summary>
+        internal static string ROTOR_REVERSE_REQUESTED {
+            get {
+                return ResourceManager.GetString("ROTOR REVERSE REQUESTED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rotor Starting.
+        /// </summary>
+        internal static string ROTOR_STARTING {
+            get {
+                return ResourceManager.GetString("ROTOR STARTING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rotor Stop And Reverse Request.
+        /// </summary>
+        internal static string ROTOR_STOP_AND_REVERSE_REQUEST {
+            get {
+                return ResourceManager.GetString("ROTOR STOP AND REVERSE REQUEST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rotor Stopped.
+        /// </summary>
+        internal static string ROTOR_STOPPED {
+            get {
+                return ResourceManager.GetString("ROTOR STOPPED", resourceCulture);
             }
         }
         
@@ -5686,6 +8431,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Safeties.
+        /// </summary>
+        internal static string SAFETIES {
+            get {
+                return ResourceManager.GetString("SAFETIES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Safeties Not Ok.
         /// </summary>
         internal static string SAFETIES_NOT_OK {
@@ -5704,6 +8458,87 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Safety Conditions Not OK To Unlock.
+        /// </summary>
+        internal static string SAFETY_CONDITIONS_NOT_OK_TO_UNLOCK {
+            get {
+                return ResourceManager.GetString("SAFETY CONDITIONS NOT OK TO UNLOCK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Safety Key Extracted.
+        /// </summary>
+        internal static string SAFETY_KEY_EXTRACTED {
+            get {
+                return ResourceManager.GetString("SAFETY KEY EXTRACTED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SAFETY KEY NOT EXTRACTED.
+        /// </summary>
+        internal static string SAFETY_KEY_NOT_EXTRACTED {
+            get {
+                return ResourceManager.GetString("SAFETY KEY NOT EXTRACTED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Safety Key Not Inserted on Cabinet.
+        /// </summary>
+        internal static string SAFETY_KEY_NOT_INSERTED_ON_CABINET {
+            get {
+                return ResourceManager.GetString("SAFETY KEY NOT INSERTED ON CABINET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Safety Key Not Unlocked.
+        /// </summary>
+        internal static string SAFETY_KEY_NOT_UNLOCKED {
+            get {
+                return ResourceManager.GetString("SAFETY KEY NOT UNLOCKED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Safety Key Released.
+        /// </summary>
+        internal static string SAFETY_KEY_RELEASED {
+            get {
+                return ResourceManager.GetString("SAFETY KEY RELEASED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SAFETY KEY UNLOCK COMMAND OFF.
+        /// </summary>
+        internal static string SAFETY_KEY_UNLOCK_COMMAND_OFF {
+            get {
+                return ResourceManager.GetString("SAFETY KEY UNLOCK COMMAND OFF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Safety Key Unlock Requested.
+        /// </summary>
+        internal static string SAFETY_KEY_UNLOCK_REQUESTED {
+            get {
+                return ResourceManager.GetString("SAFETY KEY UNLOCK REQUESTED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Safety Not OK.
+        /// </summary>
+        internal static string SAFETY_NOT_OK {
+            get {
+                return ResourceManager.GetString("SAFETY NOT OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Save.
         /// </summary>
         internal static string SAVE {
@@ -5718,6 +8553,15 @@ namespace Prevu.Localization.Properties {
         internal static string SAVE_ALL {
             get {
                 return ResourceManager.GetString("SAVE ALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save As.
+        /// </summary>
+        internal static string SAVE_AS {
+            get {
+                return ResourceManager.GetString("SAVE AS", resourceCulture);
             }
         }
         
@@ -5803,11 +8647,38 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SELECTED DIRECTION.
+        /// </summary>
+        internal static string SELECTED_DIRECTION {
+            get {
+                return ResourceManager.GetString("SELECTED DIRECTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Selected Trends.
         /// </summary>
         internal static string SELECTED_TRENDS {
             get {
                 return ResourceManager.GetString("SELECTED TRENDS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selected Values.
+        /// </summary>
+        internal static string SELECTED_VALUES {
+            get {
+                return ResourceManager.GetString("SELECTED VALUES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Semiauto.
+        /// </summary>
+        internal static string SEMIAUTO {
+            get {
+                return ResourceManager.GetString("SEMIAUTO", resourceCulture);
             }
         }
         
@@ -5875,6 +8746,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SENSOR ON (CAB ON + 24V Sensor Supply OK - AIN or DIN).
+        /// </summary>
+        internal static string SENSOR_ON__CAB_ON___24V_SENSOR_SUPPLY_OK___AIN_OR_DIN_ {
+            get {
+                return ResourceManager.GetString("SENSOR ON (CAB ON + 24V SENSOR SUPPLY OK - AIN OR DIN)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Server Connection Lost!.
         /// </summary>
         internal static string SERVER_CONNECTION_LOST_ {
@@ -5920,11 +8800,182 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Shredder.
+        /// </summary>
+        internal static string SHREDDER {
+            get {
+                return ResourceManager.GetString("SHREDDER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SHREDDER BLADES IN ROTATION.
+        /// </summary>
+        internal static string SHREDDER_BLADES_IN_ROTATION {
+            get {
+                return ResourceManager.GetString("SHREDDER BLADES IN ROTATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shredder Devices Not Ready.
+        /// </summary>
+        internal static string SHREDDER_DEVICES_NOT_READY {
+            get {
+                return ResourceManager.GetString("SHREDDER DEVICES NOT READY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shredder Disconnectors Closed.
+        /// </summary>
+        internal static string SHREDDER_DISCONNECTORS_CLOSED {
+            get {
+                return ResourceManager.GetString("SHREDDER DISCONNECTORS CLOSED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shredder Hopper Level.
+        /// </summary>
+        internal static string SHREDDER_HOPPER_LEVEL {
+            get {
+                return ResourceManager.GetString("SHREDDER HOPPER LEVEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shredder in Rotation.
+        /// </summary>
+        internal static string SHREDDER_IN_ROTATION {
+            get {
+                return ResourceManager.GetString("SHREDDER IN ROTATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SHREDDER LOCAL+POWER DISCONNECT OPEN (BOTH).
+        /// </summary>
+        internal static string SHREDDER_LOCAL_POWER_DISCONNECT_OPEN__BOTH_ {
+            get {
+                return ResourceManager.GetString("SHREDDER LOCAL+POWER DISCONNECT OPEN (BOTH)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shredder Open Cycle.
+        /// </summary>
+        internal static string SHREDDER_OPEN_CYCLE {
+            get {
+                return ResourceManager.GetString("SHREDDER OPEN CYCLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shredder Rotor.
+        /// </summary>
+        internal static string SHREDDER_ROTOR {
+            get {
+                return ResourceManager.GetString("SHREDDER ROTOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shredder Safety Key.
+        /// </summary>
+        internal static string SHREDDER_SAFETY_KEY {
+            get {
+                return ResourceManager.GetString("SHREDDER SAFETY KEY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SHREDDER SAFETY KEY EXTRACTED FORM THE LOCK.
+        /// </summary>
+        internal static string SHREDDER_SAFETY_KEY_EXTRACTED_FORM_THE_LOCK {
+            get {
+                return ResourceManager.GetString("SHREDDER SAFETY KEY EXTRACTED FORM THE LOCK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SHREDDER SAFETY KEY UNLOCK COMMAND ACTIVE.
+        /// </summary>
+        internal static string SHREDDER_SAFETY_KEY_UNLOCK_COMMAND_ACTIVE {
+            get {
+                return ResourceManager.GetString("SHREDDER SAFETY KEY UNLOCK COMMAND ACTIVE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shredding.
+        /// </summary>
+        internal static string SHREDDING {
+            get {
+                return ResourceManager.GetString("SHREDDING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shredding and Pusher Inching.
+        /// </summary>
+        internal static string SHREDDING_AND_PUSHER_INCHING {
+            get {
+                return ResourceManager.GetString("SHREDDING AND PUSHER INCHING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shredding Cycle.
+        /// </summary>
+        internal static string SHREDDING_CYCLE {
+            get {
+                return ResourceManager.GetString("SHREDDING CYCLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shreder Open Cycle.
+        /// </summary>
+        internal static string SHREDER_OPEN_CYCLE {
+            get {
+                return ResourceManager.GetString("SHREDER OPEN CYCLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shutoff Valve 1.
+        /// </summary>
+        internal static string SHUTOFF_VALVE_1 {
+            get {
+                return ResourceManager.GetString("SHUTOFF VALVE 1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shutoff Valve 2.
+        /// </summary>
+        internal static string SHUTOFF_VALVE_2 {
+            get {
+                return ResourceManager.GetString("SHUTOFF VALVE 2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Signals.
         /// </summary>
         internal static string SIGNALS {
             get {
                 return ResourceManager.GetString("SIGNALS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Signals Panel.
+        /// </summary>
+        internal static string SignalsPanel {
+            get {
+                return ResourceManager.GetString("SignalsPanel", resourceCulture);
             }
         }
         
@@ -5974,6 +9025,177 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SOREMA OK TO RECEIVE.
+        /// </summary>
+        internal static string SOREMA_OK_TO_RECEIVE {
+            get {
+                return ResourceManager.GetString("SOREMA OK TO RECEIVE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SOREMA PLANT IS NOT OK TO RECEIVE.
+        /// </summary>
+        internal static string SOREMA_PLANT_IS_NOT_OK_TO_RECEIVE {
+            get {
+                return ResourceManager.GetString("SOREMA PLANT IS NOT OK TO RECEIVE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorema Plant OK To Receive Material.
+        /// </summary>
+        internal static string SOREMA_PLANT_OK_TO_RECEIVE_MATERIAL {
+            get {
+                return ResourceManager.GetString("SOREMA PLANT OK TO RECEIVE MATERIAL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorema Shredder OK for Material.
+        /// </summary>
+        internal static string SOREMA_SHREDDER_OK_FOR_MATERIAL {
+            get {
+                return ResourceManager.GetString("SOREMA SHREDDER OK FOR MATERIAL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter In Remote Mode.
+        /// </summary>
+        internal static string SORTER_IN_REMOTE_MODE {
+            get {
+                return ResourceManager.GetString("SORTER IN REMOTE MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter Local Estop Button.
+        /// </summary>
+        internal static string SORTER_LOCAL_ESTOP_BUTTON {
+            get {
+                return ResourceManager.GetString("SORTER LOCAL ESTOP BUTTON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter No Faults.
+        /// </summary>
+        internal static string SORTER_NO_FAULTS {
+            get {
+                return ResourceManager.GetString("SORTER NO FAULTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter On.
+        /// </summary>
+        internal static string SORTER_ON {
+            get {
+                return ResourceManager.GetString("SORTER ON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter Warning.
+        /// </summary>
+        internal static string SORTER_WARNING {
+            get {
+                return ResourceManager.GetString("SORTER WARNING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorter Warning Present.
+        /// </summary>
+        internal static string SORTER_WARNING_PRESENT {
+            get {
+                return ResourceManager.GetString("SORTER WARNING PRESENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorting.
+        /// </summary>
+        internal static string SORTING {
+            get {
+                return ResourceManager.GetString("SORTING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorting In Progress.
+        /// </summary>
+        internal static string SORTING_IN_PROGRESS {
+            get {
+                return ResourceManager.GetString("SORTING IN PROGRESS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorting Standby.
+        /// </summary>
+        internal static string SORTING_STANDBY {
+            get {
+                return ResourceManager.GetString("SORTING STANDBY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorting Unit - Local Estop Pushbutton Not Reset (Stop Belt).
+        /// </summary>
+        internal static string SORTING_UNIT___LOCAL_ESTOP_PUSHBUTTON_NOT_RESET__STOP_BELT_ {
+            get {
+                return ResourceManager.GetString("SORTING UNIT - LOCAL ESTOP PUSHBUTTON NOT RESET (STOP BELT)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorting Unit  Control Alarm.
+        /// </summary>
+        internal static string SORTING_UNIT__CONTROL_ALARM {
+            get {
+                return ResourceManager.GetString("SORTING UNIT  CONTROL ALARM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorting Unit Disabled For Production.
+        /// </summary>
+        internal static string SORTING_UNIT_DISABLED_FOR_PRODUCTION {
+            get {
+                return ResourceManager.GetString("SORTING UNIT DISABLED FOR PRODUCTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorting Unit In Local Mode Control.
+        /// </summary>
+        internal static string SORTING_UNIT_IN_LOCAL_MODE_CONTROL {
+            get {
+                return ResourceManager.GetString("SORTING UNIT IN LOCAL MODE CONTROL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorting Unit Not On Ok.
+        /// </summary>
+        internal static string SORTING_UNIT_NOT_ON_OK {
+            get {
+                return ResourceManager.GetString("SORTING UNIT NOT ON OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorting Unit Not Sorting Ok.
+        /// </summary>
+        internal static string SORTING_UNIT_NOT_SORTING_OK {
+            get {
+                return ResourceManager.GetString("SORTING UNIT NOT SORTING OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Speed.
         /// </summary>
         internal static string SPEED {
@@ -6006,6 +9228,15 @@ namespace Prevu.Localization.Properties {
         internal static string SPEED_SETPOINT {
             get {
                 return ResourceManager.GetString("SPEED SETPOINT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Standstill Relay Reset.
+        /// </summary>
+        internal static string STANDSTILL_RELAY_RESET {
+            get {
+                return ResourceManager.GetString("STANDSTILL RELAY RESET", resourceCulture);
             }
         }
         
@@ -6082,11 +9313,29 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Step Back.
+        /// </summary>
+        internal static string STEP_BACK {
+            get {
+                return ResourceManager.GetString("STEP BACK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Stop.
         /// </summary>
         internal static string STOP {
             get {
                 return ResourceManager.GetString("STOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop Cycle in Progress.
+        /// </summary>
+        internal static string STOP_CYCLE_IN_PROGRESS {
+            get {
+                return ResourceManager.GetString("STOP CYCLE IN PROGRESS", resourceCulture);
             }
         }
         
@@ -6105,6 +9354,15 @@ namespace Prevu.Localization.Properties {
         internal static string STOP_CYCLE_PENDING {
             get {
                 return ResourceManager.GetString("STOP CYCLE PENDING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop Feeding.
+        /// </summary>
+        internal static string STOP_FEEDING {
+            get {
+                return ResourceManager.GetString("STOP FEEDING", resourceCulture);
             }
         }
         
@@ -6145,11 +9403,74 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Stop Upstream If Step Back.
+        /// </summary>
+        internal static string STOP_UPSTREAM_IF_STEP_BACK {
+            get {
+                return ResourceManager.GetString("STOP UPSTREAM IF STEP BACK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop Upstream Material.
+        /// </summary>
+        internal static string STOP_UPSTREAM_MATERIAL {
+            get {
+                return ResourceManager.GetString("STOP UPSTREAM MATERIAL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stopped.
+        /// </summary>
+        internal static string STOPPED {
+            get {
+                return ResourceManager.GetString("STOPPED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Subzone.
         /// </summary>
         internal static string SUBZONE {
             get {
                 return ResourceManager.GetString("SUBZONE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subzone In Automatic Mode.
+        /// </summary>
+        internal static string SUBZONE_IN_AUTOMATIC_MODE {
+            get {
+                return ResourceManager.GetString("SUBZONE IN AUTOMATIC MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subzone In Disabled Mode.
+        /// </summary>
+        internal static string SUBZONE_IN_DISABLED_MODE {
+            get {
+                return ResourceManager.GetString("SUBZONE IN DISABLED MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subzone In E-Stop Mode.
+        /// </summary>
+        internal static string SUBZONE_IN_E_STOP_MODE {
+            get {
+                return ResourceManager.GetString("SUBZONE IN E-STOP MODE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subzone In Maintenance Mode.
+        /// </summary>
+        internal static string SUBZONE_IN_MAINTENANCE_MODE {
+            get {
+                return ResourceManager.GetString("SUBZONE IN MAINTENANCE MODE", resourceCulture);
             }
         }
         
@@ -6163,11 +9484,56 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Subzone Prepared OK for Production.
+        /// </summary>
+        internal static string SUBZONE_PREPARED_OK_FOR_PRODUCTION {
+            get {
+                return ResourceManager.GetString("SUBZONE PREPARED OK FOR PRODUCTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subzone Shredding.
+        /// </summary>
+        internal static string SUBZONE_SHREDDING {
+            get {
+                return ResourceManager.GetString("SUBZONE SHREDDING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Swipe access card to unlock.
+        /// </summary>
+        internal static string SWIPE_ACCESS_CARD_TO_UNLOCK {
+            get {
+                return ResourceManager.GetString("SWIPE ACCESS CARD TO UNLOCK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Swipe Card To Log In.
         /// </summary>
         internal static string SWIPE_CARD_TO_LOG_IN {
             get {
                 return ResourceManager.GetString("SWIPE CARD TO LOG IN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Switch Device Names.
+        /// </summary>
+        internal static string SWITCH_DEVICE_NAMES {
+            get {
+                return ResourceManager.GetString("SWITCH DEVICE NAMES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Switch Theme.
+        /// </summary>
+        internal static string SWITCH_THEME {
+            get {
+                return ResourceManager.GetString("SWITCH THEME", resourceCulture);
             }
         }
         
@@ -6186,6 +9552,213 @@ namespace Prevu.Localization.Properties {
         internal static string SYNOPTIC_PAGE_MISSING_ {
             get {
                 return ResourceManager.GetString("SYNOPTIC PAGE MISSING!", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - 24V Under Estop.
+        /// </summary>
+        internal static string SYS___24V_UNDER_ESTOP {
+            get {
+                return ResourceManager.GetString("SYS - 24V UNDER ESTOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - 24V Under Estop for Hydraulic Valves.
+        /// </summary>
+        internal static string SYS___24V_UNDER_ESTOP_FOR_HYDRAULIC_VALVES {
+            get {
+                return ResourceManager.GetString("SYS - 24V UNDER ESTOP FOR HYDRAULIC VALVES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - Air Conditioning Unit Status.
+        /// </summary>
+        internal static string SYS___AIR_CONDITIONING_UNIT_STATUS {
+            get {
+                return ResourceManager.GetString("SYS - AIR CONDITIONING UNIT STATUS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - Analog Inputs.
+        /// </summary>
+        internal static string SYS___ANALOG_INPUTS {
+            get {
+                return ResourceManager.GetString("SYS - ANALOG INPUTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - Analog Outputs.
+        /// </summary>
+        internal static string SYS___ANALOG_OUTPUTS {
+            get {
+                return ResourceManager.GetString("SYS - ANALOG OUTPUTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - Cabinet Cooling System Overload.
+        /// </summary>
+        internal static string SYS___CABINET_COOLING_SYSTEM_OVERLOAD {
+            get {
+                return ResourceManager.GetString("SYS - CABINET COOLING SYSTEM OVERLOAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - Cumulative HMIs Beacon.
+        /// </summary>
+        internal static string SYS___CUMULATIVE_HMIS_BEACON {
+            get {
+                return ResourceManager.GetString("SYS - CUMULATIVE HMIS BEACON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sys - Digital Inputs.
+        /// </summary>
+        internal static string SYS___DIGITAL_INPUTS {
+            get {
+                return ResourceManager.GetString("SYS - DIGITAL INPUTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sys - Digital Outputs.
+        /// </summary>
+        internal static string SYS___DIGITAL_OUTPUTS {
+            get {
+                return ResourceManager.GetString("SYS - DIGITAL OUTPUTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - E-Stop - Contactor Feedback CH1.
+        /// </summary>
+        internal static string SYS___E_STOP___CONTACTOR_FEEDBACK_CH1 {
+            get {
+                return ResourceManager.GetString("SYS - E-STOP - CONTACTOR FEEDBACK CH1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - E-Stop - Contactor Feedback CH2.
+        /// </summary>
+        internal static string SYS___E_STOP___CONTACTOR_FEEDBACK_CH2 {
+            get {
+                return ResourceManager.GetString("SYS - E-STOP - CONTACTOR FEEDBACK CH2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sys - E-Stop - Master Relay Status.
+        /// </summary>
+        internal static string SYS___E_STOP___MASTER_RELAY_STATUS {
+            get {
+                return ResourceManager.GetString("SYS - E-STOP - MASTER RELAY STATUS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - E-Stop - Relay Status.
+        /// </summary>
+        internal static string SYS___E_STOP___RELAY_STATUS {
+            get {
+                return ResourceManager.GetString("SYS - E-STOP - RELAY STATUS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - Emergency Push Button.
+        /// </summary>
+        internal static string SYS___EMERGENCY_PUSH_BUTTON {
+            get {
+                return ResourceManager.GetString("SYS - EMERGENCY PUSH BUTTON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - ESTOP RELAY ENABLE.
+        /// </summary>
+        internal static string SYS___ESTOP_RELAY_ENABLE {
+            get {
+                return ResourceManager.GetString("SYS - ESTOP RELAY ENABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - ESTOP RELAY RESET.
+        /// </summary>
+        internal static string SYS___ESTOP_RELAY_RESET {
+            get {
+                return ResourceManager.GetString("SYS - ESTOP RELAY RESET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - Ethernet Switch OK.
+        /// </summary>
+        internal static string SYS___ETHERNET_SWITCH_OK {
+            get {
+                return ResourceManager.GetString("SYS - ETHERNET SWITCH OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sys - External Devices.
+        /// </summary>
+        internal static string SYS___EXTERNAL_DEVICES {
+            get {
+                return ResourceManager.GetString("SYS - EXTERNAL DEVICES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sys - Internal Devices.
+        /// </summary>
+        internal static string SYS___INTERNAL_DEVICES {
+            get {
+                return ResourceManager.GetString("SYS - INTERNAL DEVICES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - Inverter Safety Circuits (STO).
+        /// </summary>
+        internal static string SYS___INVERTER_SAFETY_CIRCUITS__STO_ {
+            get {
+                return ResourceManager.GetString("SYS - INVERTER SAFETY CIRCUITS (STO)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - Power supply 24Vdc - CABINET ON.
+        /// </summary>
+        internal static string SYS___POWER_SUPPLY_24VDC___CABINET_ON {
+            get {
+                return ResourceManager.GetString("SYS - POWER SUPPLY 24VDC - CABINET ON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - Signalling HMI Beacon.
+        /// </summary>
+        internal static string SYS___SIGNALLING_HMI_BEACON {
+            get {
+                return ResourceManager.GetString("SYS - SIGNALLING HMI BEACON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SYS - Siren (For External Uses).
+        /// </summary>
+        internal static string SYS___SIREN__FOR_EXTERNAL_USES_ {
+            get {
+                return ResourceManager.GetString("SYS - SIREN (FOR EXTERNAL USES)", resourceCulture);
             }
         }
         
@@ -6258,6 +9831,15 @@ namespace Prevu.Localization.Properties {
         internal static string TEMPERATURE {
             get {
                 return ResourceManager.GetString("TEMPERATURE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TEMPERATURE OK FOR COOLING.
+        /// </summary>
+        internal static string TEMPERATURE_OK_FOR_COOLING {
+            get {
+                return ResourceManager.GetString("TEMPERATURE OK FOR COOLING", resourceCulture);
             }
         }
         
@@ -6352,6 +9934,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Times.
+        /// </summary>
+        internal static string TIMES {
+            get {
+                return ResourceManager.GetString("TIMES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to To Bag.
         /// </summary>
         internal static string TO_BAG {
@@ -6406,11 +9997,47 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Trend Limits.
+        /// </summary>
+        internal static string TREND_LIMITS {
+            get {
+                return ResourceManager.GetString("TREND LIMITS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Trend Page.
         /// </summary>
         internal static string TREND_PAGE {
             get {
                 return ResourceManager.GetString("TREND PAGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trend Window.
+        /// </summary>
+        internal static string TREND_WINDOW {
+            get {
+                return ResourceManager.GetString("TREND WINDOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trends Export.
+        /// </summary>
+        internal static string TrendExport {
+            get {
+                return ResourceManager.GetString("TrendExport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trends Page.
+        /// </summary>
+        internal static string TrendLogs {
+            get {
+                return ResourceManager.GetString("TrendLogs", resourceCulture);
             }
         }
         
@@ -6469,11 +10096,65 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Usage.
+        /// </summary>
+        internal static string USAGE {
+            get {
+                return ResourceManager.GetString("USAGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to User.
         /// </summary>
         internal static string USER {
             get {
                 return ResourceManager.GetString("USER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User added.
+        /// </summary>
+        internal static string USER_ADDED {
+            get {
+                return ResourceManager.GetString("USER ADDED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User deleted successfully.
+        /// </summary>
+        internal static string USER_DELETED_SUCCESSFULLY {
+            get {
+                return ResourceManager.GetString("USER DELETED SUCCESSFULLY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User group added.
+        /// </summary>
+        internal static string USER_GROUP_ADDED {
+            get {
+                return ResourceManager.GetString("USER GROUP ADDED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User group deleted successfully.
+        /// </summary>
+        internal static string USER_GROUP_DELETED_SUCCESSFULLY {
+            get {
+                return ResourceManager.GetString("USER GROUP DELETED SUCCESSFULLY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User group saved successfully.
+        /// </summary>
+        internal static string USER_GROUP_SAVED_SUCCESSFULLY {
+            get {
+                return ResourceManager.GetString("USER GROUP SAVED SUCCESSFULLY", resourceCulture);
             }
         }
         
@@ -6492,6 +10173,24 @@ namespace Prevu.Localization.Properties {
         internal static string USER_NAME {
             get {
                 return ResourceManager.GetString("USER NAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User saved successfully.
+        /// </summary>
+        internal static string USER_SAVED_SUCCESSFULLY {
+            get {
+                return ResourceManager.GetString("USER SAVED SUCCESSFULLY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Users Management.
+        /// </summary>
+        internal static string UserManagement {
+            get {
+                return ResourceManager.GetString("UserManagement", resourceCulture);
             }
         }
         
@@ -6568,6 +10267,69 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Waiting Cooling After Overload.
+        /// </summary>
+        internal static string WAITING_COOLING_AFTER_OVERLOAD {
+            get {
+                return ResourceManager.GetString("WAITING COOLING AFTER OVERLOAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Waiting For Evacuation Time To Stop.
+        /// </summary>
+        internal static string WAITING_FOR_EVACUATION_TIME_TO_STOP {
+            get {
+                return ResourceManager.GetString("WAITING FOR EVACUATION TIME TO STOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Waiting For Process Conditions.
+        /// </summary>
+        internal static string WAITING_FOR_PROCESS_CONDITIONS {
+            get {
+                return ResourceManager.GetString("WAITING FOR PROCESS CONDITIONS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Waiting For Process Conditions To Start.
+        /// </summary>
+        internal static string WAITING_FOR_PROCESS_CONDITIONS_TO_START {
+            get {
+                return ResourceManager.GetString("WAITING FOR PROCESS CONDITIONS TO START", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Waiting for Sorema Plant to Be Ready To Receive.
+        /// </summary>
+        internal static string WAITING_FOR_SOREMA_PLANT_TO_BE_READY_TO_RECEIVE {
+            get {
+                return ResourceManager.GetString("WAITING FOR SOREMA PLANT TO BE READY TO RECEIVE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Warning Present.
+        /// </summary>
+        internal static string WARNING_PRESENT {
+            get {
+                return ResourceManager.GetString("WARNING PRESENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Washing.
+        /// </summary>
+        internal static string WASHING {
+            get {
+                return ResourceManager.GetString("WASHING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Washing 1.
         /// </summary>
         internal static string WASHING_1 {
@@ -6627,6 +10389,15 @@ namespace Prevu.Localization.Properties {
         internal static string WASHING_TEMPERATURE_OVER_MINIMUM_TEMPERATURE {
             get {
                 return ResourceManager.GetString("WASHING TEMPERATURE OVER MINIMUM TEMPERATURE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Watchdog.
+        /// </summary>
+        internal static string WATCHDOG {
+            get {
+                return ResourceManager.GetString("WATCHDOG", resourceCulture);
             }
         }
         
@@ -6721,6 +10492,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to What Do You Want To Do?.
+        /// </summary>
+        internal static string WHAT_DO_YOU_WANT_TO_DO_ {
+            get {
+                return ResourceManager.GetString("WHAT DO YOU WANT TO DO?", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Wireless Card.
         /// </summary>
         internal static string WIRELESS_CARD {
@@ -6771,6 +10551,15 @@ namespace Prevu.Localization.Properties {
         internal static string YES {
             get {
                 return ResourceManager.GetString("YES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You Have Unsaved Changes.
+        /// </summary>
+        internal static string YOU_HAVE_UNSAVED_CHANGES {
+            get {
+                return ResourceManager.GetString("YOU HAVE UNSAVED CHANGES", resourceCulture);
             }
         }
         

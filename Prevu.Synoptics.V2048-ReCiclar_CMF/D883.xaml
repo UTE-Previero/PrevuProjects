@@ -1,0 +1,25 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" xmlns:Screws="clr-namespace:Prevu.Drawings.Machines.Screws;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D883" 
+             mc:Ignorable="d" 
+             Height="600" Width="600" d:Background="{DynamicResource MaterialDesignPaper}">
+    <Grid d:IsLocked="True">
+        <Screws:DETAIL_SCW_Flex_Verticale HorizontalAlignment="Left" Margin="100,132,0,116" Width="434" d:IsLocked="True"/>
+        <Labels:SignalLabel HorizontalAlignment="Left" Margin="94,317,0,0" VerticalAlignment="Top" ComponentName="883-61-LEV" SignalName="LSH" FlowDirection="RightToLeft" d:IsLocked="True"/>
+        <Labels:SignalLabel HorizontalAlignment="Left" Margin="174,402,0,0" VerticalAlignment="Top" ComponentName="883-61-LEV" SignalName="LSL" FlowDirection="RightToLeft" d:IsLocked="True" />
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+         Margin="317,414,0,0" 
+         VerticalAlignment="Top" 
+         ComponentName="883-61-LEV" d:IsLocked="True"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+            Margin="263,77,0,0" 
+            VerticalAlignment="Top" 
+            ComponentName="883-01-MA1" d:IsLocked="True"/>
+    </Grid>
+</UserControl>
