@@ -13,19 +13,15 @@ using System.Windows.Shapes;
 
 namespace Prevu.Synoptics
 {
-    /// <summary>
-    /// Interaction logic for WH1.xaml
-    /// </summary>
-    public partial class WH1 : UserControl
+  /// <summary>
+  /// Interaction logic for WH1.xaml
+  /// </summary>
+  public partial class WH1 : UserControl
+  {
+    public WH1()
     {
-        public WH1()
-        {
-            InitializeComponent();
-        }
-
-        private void WaterPump_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
+      InitializeComponent();
     }
+
+  }
 }

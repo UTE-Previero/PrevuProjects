@@ -13,24 +13,14 @@ using System.Windows.Shapes;
 
 namespace Prevu.Synoptics
 {
-    /// <summary>
-    /// Interaction logic for ST.xaml
-    /// </summary>
-    public partial class ST : UserControl
+  /// <summary>
+  /// Interaction logic for ST.xaml
+  /// </summary>
+  public partial class ST : UserControl
+  {
+    public ST()
     {
-        public ST()
-        {
-            InitializeComponent();
-        }
-
-        private void DeviceLabel_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void DeviceLabel_Loaded_1(object sender, RoutedEventArgs e)
-        {
-
-        }
+      InitializeComponent();
     }
+  }
 }
