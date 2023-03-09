@@ -19,7 +19,8 @@ namespace Prevu.Drawings.Stores
     Air,
     Steam,
     ByProduct,
-    Chemicals
+    Chemicals,
+    Oil
   }
 
   public enum PipeIconKind

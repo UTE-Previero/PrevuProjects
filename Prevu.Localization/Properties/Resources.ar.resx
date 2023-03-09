@@ -472,7 +472,7 @@
     <value>درجة الحرارة الفعلية</value>
   </data>
   <data name="ESTOP OK" xml:space="preserve">
-    <value>estop حسنا</value>
+    <value>Estop موافق</value>
   </data>
   <data name="DISABLED MODE" xml:space="preserve">
     <value>وضع المعوقين</value>
@@ -484,16 +484,16 @@
     <value>الوضع التلقائي</value>
   </data>
   <data name="PRODUCTION CYCLE" xml:space="preserve">
-    <value>دورة الإنتاج</value>
+    <value>خط الإنتاج</value>
   </data>
   <data name="ZONE PREPARED" xml:space="preserve">
-    <value>أعدت المنطقة</value>
+    <value>منطقة معدة</value>
   </data>
   <data name="STOP CYCLE ON" xml:space="preserve">
-    <value>وقف دورة</value>
+    <value>إيقاف الدورة ON</value>
   </data>
   <data name="STOP CYCLE PENDING" xml:space="preserve">
-    <value>توقف دورة المعلقة</value>
+    <value>إيقاف الدورة المعلقة</value>
   </data>
   <data name="INFO_SYS_3" xml:space="preserve">
     <value>يرجى الاتصال بخدمة مساعدة Previero / Sorema!</value>
@@ -823,7 +823,7 @@
     <value>مرشح قذر ويحتاج إلى تنظيفه (لا يزال مستوى المياه مرتفعا جدا).</value>
   </data>
   <data name="INFO_RES_1" xml:space="preserve">
-    <value>السلامة الثرمستور تعثرت! تحقق من المجفف لأي انسداد مادي ممكن، حراري، فلتر الهواء ...</value>
+    <value>السلامة الثرمستور تعثرت! تحقق من المجفف لأي انسداد مادي ممكن، حراري، فلتر الهواء</value>
   </data>
   <data name="INFO_RES_2" xml:space="preserve">
     <value>إعادة تشغيل منفاخ بسرعة لمنع ارتفاع درجة الحرارة نظام التدفئة</value>
@@ -1036,7 +1036,7 @@
     <value>هل تؤكد؟</value>
   </data>
   <data name="ESTOP NOT OK" xml:space="preserve">
-    <value>estop ليس موافق</value>
+    <value>Estop ليس جيدًا</value>
   </data>
   <data name="DETAILS" xml:space="preserve">
     <value>تفاصيل</value>
@@ -2627,5 +2627,239 @@
   </data>
   <data name="CRITICAL ALARM PRESENT    (IF  FALSE --&gt; NO  PROD START)" xml:space="preserve">
     <value>إنذار حرج موجود (إذا كان خطأ -&gt; لا يوجد بدء إنتاج)</value>
+  </data>
+  <data name="INFO_PRES_10" xml:space="preserve">
+    <value>تحقق من وجود انسداد محتمل للمبادل الحراري وتكوين الأجهزة</value>
+  </data>
+  <data name="INFO_PRES_11" xml:space="preserve">
+    <value>تحقق من وجود تسرب محتمل للمبادل الحراري / الأنابيب وتكوين الأجهزة</value>
+  </data>
+  <data name="INFO_ETHERNET_1" xml:space="preserve">
+    <value>تحقق من محول إيثرنت وإمداداته وتوصيلاته</value>
+  </data>
+  <data name="INFO_MIXER_1" xml:space="preserve">
+    <value>فحص دائرة المياه وصمام إعادة الملء والأنابيب ومضخة المياه. تسرب أو نقص محتمل للمياه.</value>
+  </data>
+  <data name="INFO_MIXER_2" xml:space="preserve">
+    <value>تحقق من وجود انسداد محتمل في صمام التفريغ للخلاط وضغط هواء الصمام ومضخة التفريغ.</value>
+  </data>
+  <data name="INFO_MIXER_3" xml:space="preserve">
+    <value>تحقق من تعبئة الخلاط واتصل بالمساعدة عبر الإنترنت من الشركة المصنعة - تم تعطيل الخلاط تلقائيًا</value>
+  </data>
+  <data name="INFO_LS_14" xml:space="preserve">
+    <value>تحقق من مفاتيح تحديد موضع الصمام وموضعها وأسلاكها</value>
+  </data>
+  <data name="INFO_LS_15" xml:space="preserve">
+    <value>تحقق من موضع الصمام والضغط في الأنابيب وموضع مفتاح الحد</value>
+  </data>
+  <data name="INFO_LEVEL_18" xml:space="preserve">
+    <value>تحقق من معلمة المستويات في دائرة حلقة المياه</value>
+  </data>
+  <data name="INFO_MIXER_4" xml:space="preserve">
+    <value>تحقق من الحمل الزائد للخلاط من المواد أو إعدادات التحكم الحالية في الخلاط</value>
+  </data>
+  <data name="INFO_SENSOR_READ_1" xml:space="preserve">
+    <value>افحص المستشعر في الحقل ونظفه</value>
+  </data>
+  <data name="INFO_GT_VALVES_1" xml:space="preserve">
+    <value>أغلق أحد صمامات التفريغ على الأقل لمنع تفريغ الخزان بالكامل. افحص الصمامات في الميدان.</value>
+  </data>
+  <data name="INFO_GT_VALVES_2" xml:space="preserve">
+    <value>دورة التفريغ لا يمكن أن تستمر. تحقق من عمل وضع الصمام Ls ووضعه في الموضع الصحيح ولم يحدث انسداد في الصمام.</value>
+  </data>
+  <data name="INFO_PST_1" xml:space="preserve">
+    <value>فحص مستويات الاضافات الكيماوية بالخزانات ونظام الجرعات لاكتشاف تسرب او نقص فى ضغط الهواء</value>
+  </data>
+  <data name="INFO_PST_2" xml:space="preserve">
+    <value>افحص ضغط الماء ونظام الجرعات لاحتمال وجود تسرب أو نقص في ضغط الهواء</value>
+  </data>
+  <data name="INFO_PST_3" xml:space="preserve">
+    <value>تحقق من مستشعر موضع الوعاء</value>
+  </data>
+  <data name="INFO_PST_4" xml:space="preserve">
+    <value>فحص مستويات الاضافات الكيماوية بالخزانات وضغط الماء ونظام الجرعات لاكتشاف تسرب او نقص فى ضغط الهواء</value>
+  </data>
+  <data name="INFO_INV_3" xml:space="preserve">
+    <value>تحقق من وجود انسداد ميكانيكي أو حمل ثقيل للغاية حدث للمحرك.</value>
+  </data>
+  <data name="INFO_INV_4" xml:space="preserve">
+    <value>اضبط العاكس في وضع التحكم عن بعد للسماح بأي عملية أخرى عليه من محطة الكمبيوتر.</value>
+  </data>
+  <data name="INFO_INV_5" xml:space="preserve">
+    <value>التنبيه موجود على شاشة العاكس. يرجى التحقق من الإجراءات التي سيتم إجراؤها بالرجوع إلى دليل مستخدم العاكس.</value>
+  </data>
+  <data name="INFO_INV_6" xml:space="preserve">
+    <value>تحقق من اتصال كابل Profinet وإمدادات الطاقة لبطاقة اتصال العاكس</value>
+  </data>
+  <data name="INFO_INV_7" xml:space="preserve">
+    <value>تحقق من حالة العاكس في الخزانة</value>
+  </data>
+  <data name="INFO_TEMPER_12" xml:space="preserve">
+    <value>ارتفاع درجة حرارة علبة التروس: تحقق من نظام التبريد. إذا ارتفعت درجة الحرارة مرة أخرى ، فسيتم إيقاف المحرك الرئيسي.</value>
+  </data>
+  <data name="INFO_TEMPER_13" xml:space="preserve">
+    <value>علبة التروس شديدة الحرارة. المحرك الرئيسي متوقف. تحقق من علبة التروس بالكامل وتبريدها وقم بإجراء الصيانة اللازمة.</value>
+  </data>
+  <data name="INFO_PRES_12" xml:space="preserve">
+    <value>فحص نظام بخار المدخل - الضغط مرتفع جدًا - قد تتسبب تقلبات الضغط في حدوث مرض في التنظيم الحراري</value>
+  </data>
+  <data name="INFO_PRES_13" xml:space="preserve">
+    <value>فحص نظام البخار الداخل - الضغط منخفض جدًا - قد تتسبب تقلبات الضغط في حدوث مرض في التنظيم الحراري</value>
+  </data>
+  <data name="_ESTOP_OK" xml:space="preserve">
+    <value>إستوب طيب</value>
+  </data>
+  <data name="_DISABLED_MODE" xml:space="preserve">
+    <value>وضع المعوقين</value>
+  </data>
+  <data name="_MAINTENANCE_MODE" xml:space="preserve">
+    <value>نمط الصيانة</value>
+  </data>
+  <data name="_AUTOMATIC_MODE" xml:space="preserve">
+    <value>الوضع التلقائي</value>
+  </data>
+  <data name="_PRODUCTION_CYCLE" xml:space="preserve">
+    <value>دورة الإنتاج</value>
+  </data>
+  <data name="_ZONE_PREPARED" xml:space="preserve">
+    <value>منطقة معدة</value>
+  </data>
+  <data name="_STOP_CYCLE_ON" xml:space="preserve">
+    <value>أوقف الدورة</value>
+  </data>
+  <data name="_STOP_CYCLE_PENDING" xml:space="preserve">
+    <value>إيقاف الدورة المعلقة</value>
+  </data>
+  <data name="_ESTOP_NOT_OK" xml:space="preserve">
+    <value>Estop لا بأس به</value>
+  </data>
+  <data name="_PREPARED" xml:space="preserve">
+    <value>أعدت</value>
+  </data>
+  <data name="_PROD_CYCLE_PENDING" xml:space="preserve">
+    <value>دورة الإنتاج معلقة</value>
+  </data>
+  <data name="UserManagement" xml:space="preserve">
+    <value>إدارة المستخدمين</value>
+  </data>
+  <data name="ResetFaults" xml:space="preserve">
+    <value>إعادة تعيين الأخطاء</value>
+  </data>
+  <data name="OperatingSystemAccess" xml:space="preserve">
+    <value>الوصول إلى نظام التشغيل</value>
+  </data>
+  <data name="InfoPanel" xml:space="preserve">
+    <value>لوحة المعلومات</value>
+  </data>
+  <data name="TrendLogs" xml:space="preserve">
+    <value>صفحة الاتجاهات</value>
+  </data>
+  <data name="TrendExport" xml:space="preserve">
+    <value>اتجاهات التصدير</value>
+  </data>
+  <data name="EventLogs" xml:space="preserve">
+    <value>الأحداث المسجلة</value>
+  </data>
+  <data name="CyclesPanel" xml:space="preserve">
+    <value>لوحة الدورات</value>
+  </data>
+  <data name="SignalsPanel" xml:space="preserve">
+    <value>لوحة الإشارات</value>
+  </data>
+  <data name="ParameterManagement" xml:space="preserve">
+    <value>صفحة إدارة المعلمات</value>
+  </data>
+  <data name="PlcPage" xml:space="preserve">
+    <value>صفحة رف PLC</value>
+  </data>
+  <data name="ElectricalDrawing" xml:space="preserve">
+    <value>الرسم الكهربائي</value>
+  </data>
+  <data name="PlantOverview" xml:space="preserve">
+    <value>نظرة عامة على المصنع</value>
+  </data>
+  <data name="DATA" xml:space="preserve">
+    <value>بيانات</value>
+  </data>
+  <data name="_LD" xml:space="preserve">
+    <value>قطع الاتصال المحلي</value>
+  </data>
+  <data name="_NOT_OK" xml:space="preserve">
+    <value>ليس جيدا</value>
+  </data>
+  <data name="_ALARM_CRITICAL" xml:space="preserve">
+    <value>إنذار حرج</value>
+  </data>
+  <data name="_START_DISABLED" xml:space="preserve">
+    <value>ابدأ معطل</value>
+  </data>
+  <data name="_READY" xml:space="preserve">
+    <value>مستعد</value>
+  </data>
+  <data name="_MESSAGE" xml:space="preserve">
+    <value>رسالة</value>
+  </data>
+  <data name="_NEW_ALARM" xml:space="preserve">
+    <value>منبه جديد</value>
+  </data>
+  <data name="_CMD_ON" xml:space="preserve">
+    <value>الأمر قيد التشغيل</value>
+  </data>
+  <data name="_RUNNING" xml:space="preserve">
+    <value>ادارة</value>
+  </data>
+  <data name="_ALARM_NON_CRITICAL" xml:space="preserve">
+    <value>إنذار غير حرج</value>
+  </data>
+  <data name="_OK_FOR_PROCESS" xml:space="preserve">
+    <value>طيب للعملية</value>
+  </data>
+  <data name="INTERLOCKS" xml:space="preserve">
+    <value>الانترلوك</value>
+  </data>
+  <data name="PLANT OVERVIEW" xml:space="preserve">
+    <value>عرض النبات</value>
+  </data>
+  <data name="NOW" xml:space="preserve">
+    <value>حاليا</value>
+  </data>
+  <data name="CYCLES" xml:space="preserve">
+    <value>دورات</value>
+  </data>
+  <data name="OPEN" xml:space="preserve">
+    <value>فتح</value>
+  </data>
+  <data name="CYCLE STEPS" xml:space="preserve">
+    <value>خطوات الدورة</value>
+  </data>
+  <data name="MISSING SYNOPTIC" xml:space="preserve">
+    <value>Synoptic مفقود</value>
+  </data>
+  <data name="NO DATA" xml:space="preserve">
+    <value>لايوجد بيانات</value>
+  </data>
+  <data name="WASHING TANK OVER MINIMUM TEMPERATURE" xml:space="preserve">
+    <value>غسل الخزان فوق درجة الحرارة الدنيا</value>
+  </data>
+  <data name="TIME_CYCLE" xml:space="preserve">
+    <value>دورة زمنية</value>
+  </data>
+  <data name="FIELD_ADJUST" xml:space="preserve">
+    <value>ضبط الميدان</value>
+  </data>
+  <data name="TO EXTERNAL" xml:space="preserve">
+    <value>الى الخارج</value>
+  </data>
+  <data name="TO BAG" xml:space="preserve">
+    <value>لحقيبة</value>
+  </data>
+  <data name="RELEASE" xml:space="preserve">
+    <value>إطلاق سراح</value>
+  </data>
+  <data name="LOCK" xml:space="preserve">
+    <value>قفل</value>
+  </data>
+  <data name="TREND PAGE" xml:space="preserve">
+    <value>صفحة الاتجاه</value>
   </data>
 </root>

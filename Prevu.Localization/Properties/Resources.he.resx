@@ -826,7 +826,7 @@
     <value>המסנן מלוכלך ויש צורך לנקות אותו (מפלס המים נשאר גבוה מדי).</value>
   </data>
   <data name="INFO_RES_1" xml:space="preserve">
-    <value>תרמיסטור בטיחות הוכש! בדוק את המייבש עבור כל חסימת חומר אפשרית, הגנה תרמית, מסנן אוויר …</value>
+    <value>תרמיסטור בטיחות הוכש! בדוק את המייבש עבור כל חסימת חומר אפשרית, הגנה תרמית, מסנן אוויר</value>
   </data>
   <data name="INFO_RES_2" xml:space="preserve">
     <value>הפעל מחדש את המפוח במהירות כדי למנוע התחממות יתר של מערכת החימום</value>
@@ -1113,7 +1113,7 @@
   <data name="_NEW_ALARM" xml:space="preserve">
     <value>אזעקה חדשה</value>
   </data>
-  <data name="PLANT VIEW" xml:space="preserve">
+  <data name="PLANT OVERVIEW" xml:space="preserve">
     <value>נוף צמח</value>
   </data>
   <data name="PRODUCTION CYCLE" xml:space="preserve">
@@ -2744,5 +2744,998 @@
   </data>
   <data name="CRITICAL ALARM PRESENT    (IF  FALSE --&gt; NO  PROD START)" xml:space="preserve">
     <value>אזעקה קריטית קיימת (אם כוזב --&gt; אין התחלת פרוד)</value>
+  </data>
+  <data name="INFO_PRES_10" xml:space="preserve">
+    <value>בדוק אם יש חסימה אפשרית של מחליף חום ותצורה של הגדרות</value>
+  </data>
+  <data name="INFO_PRES_11" xml:space="preserve">
+    <value>בדוק אם יש דליפה אפשרית של מחליף חום/צינורות ותצורה של הגדרות</value>
+  </data>
+  <data name="INFO_ETHERNET_1" xml:space="preserve">
+    <value>בדוק את מתג ה-Ethernet, את האספקה ​​והחיבורים שלו</value>
+  </data>
+  <data name="INFO_MIXER_1" xml:space="preserve">
+    <value>בדוק מעגל מים, שסתום מילוי מחדש, צינורות ומשאבת מים. דליפה אפשרית או חוסר מים.</value>
+  </data>
+  <data name="INFO_MIXER_2" xml:space="preserve">
+    <value>בדוק אם יש חסימה אפשרית בשסתום הפריקה של המיקסר, לחץ האוויר של השסתום ומשאבת הפריקה.</value>
+  </data>
+  <data name="INFO_MIXER_3" xml:space="preserve">
+    <value>בדוק את מילוי המיקסר וצור קשר עם הסיוע המקוון של היצרן - המיקסר מושבת באופן אוטומטי</value>
+  </data>
+  <data name="INFO_LS_14" xml:space="preserve">
+    <value>בדוק את מתגי הגבול של מיקום השסתום, מיקומם והחיווט שלהם</value>
+  </data>
+  <data name="INFO_LS_15" xml:space="preserve">
+    <value>בדוק את מיקום השסתום, את הלחץ בצינורות ואת מיקום מתג הגבול</value>
+  </data>
+  <data name="INFO_LEVEL_18" xml:space="preserve">
+    <value>בדוק פרמטר רמות במעגל לולאת המים</value>
+  </data>
+  <data name="INFO_MIXER_4" xml:space="preserve">
+    <value>בדוק אם יש עומס יתר במיקסר של חומר או הגדרות בקרה הנוכחית של המיקסר</value>
+  </data>
+  <data name="INFO_SENSOR_READ_1" xml:space="preserve">
+    <value>בדוק את החיישן בשטח ונקה אותו</value>
+  </data>
+  <data name="INFO_GT_VALVES_1" xml:space="preserve">
+    <value>סגור לפחות אחד משסתומי הפריקה כדי למנוע התרוקנות מלאה של המיכל. בדוק את השסתומים בשטח.</value>
+  </data>
+  <data name="INFO_GT_VALVES_2" xml:space="preserve">
+    <value>מחזור פריקה לא יכול להימשך. בדוק את מיקום השסתום Ls פועל וממוקם במיקום הנכון ולא התרחשה חסימת שסתום.</value>
+  </data>
+  <data name="INFO_PST_1" xml:space="preserve">
+    <value>בדוק את רמות התוספים הכימיים במיכלים ובמערכת המינון לאיתור דליפה או חוסר לחץ אוויר</value>
+  </data>
+  <data name="INFO_PST_2" xml:space="preserve">
+    <value>בדוק את לחץ המים ואת מערכת המינון עבור דליפה אפשרית או חוסר לחץ אוויר</value>
+  </data>
+  <data name="INFO_PST_3" xml:space="preserve">
+    <value>בדוק את חיישן מיקום הקערה</value>
+  </data>
+  <data name="INFO_PST_4" xml:space="preserve">
+    <value>בדוק את רמות התוספים הכימיים במיכלים, לחץ המים ומערכת המינון לאיתור דליפה או חוסר לחץ אוויר</value>
+  </data>
+  <data name="INFO_INV_3" xml:space="preserve">
+    <value>בדוק אם התרחש סתימה מכנית או עומס כבד רב מדי על המנוע.</value>
+  </data>
+  <data name="INFO_INV_4" xml:space="preserve">
+    <value>הגדר את המהפך במצב מרחוק כדי לאפשר כל פעולה נוספת עליו מתחנת PC.</value>
+  </data>
+  <data name="INFO_INV_5" xml:space="preserve">
+    <value>אזעקה קיימת בתצוגת מהפך. אנא בדוק את הפעולות שיש לבצע בהתייחס למדריך למשתמש של המהפך.</value>
+  </data>
+  <data name="INFO_INV_6" xml:space="preserve">
+    <value>בדוק את חיבור כבל Profinet ואת ספק הכוח של כרטיס תקשורת מהפך</value>
+  </data>
+  <data name="INFO_INV_7" xml:space="preserve">
+    <value>בדוק את מצב המהפך בארון</value>
+  </data>
+  <data name="INFO_TEMPER_12" xml:space="preserve">
+    <value>תיבת ההילוכים מחוממת יתר על המידה: בדוק את מערכת הקירור. אם הטמפרטורה תעלה שוב, המנוע הראשי יופסק.</value>
+  </data>
+  <data name="INFO_TEMPER_13" xml:space="preserve">
+    <value>תיבת ההילוכים מחוממת יתר על המידה. המנוע הראשי נעצר. בדוק את כל תיבת ההילוכים, את הקירור שלה, ועשה את התחזוקה הדרושה.</value>
+  </data>
+  <data name="INFO_PRES_12" xml:space="preserve">
+    <value>בדוק את מערכת הקיטור בכניסה - הלחץ גבוה מדי - תנודות הלחץ עלולות לגרום למחלה על ויסות תרמית</value>
+  </data>
+  <data name="INFO_PRES_13" xml:space="preserve">
+    <value>בדוק את מערכת הקיטור בכניסה - הלחץ נמוך מדי - תנודות הלחץ עלולות לגרום למחלה על ויסות תרמי</value>
+  </data>
+  <data name="UserManagement" xml:space="preserve">
+    <value>ניהול משתמשים</value>
+  </data>
+  <data name="ResetFaults" xml:space="preserve">
+    <value>אפס תקלות</value>
+  </data>
+  <data name="OperatingSystemAccess" xml:space="preserve">
+    <value>גישה למערכת הפעלה</value>
+  </data>
+  <data name="InfoPanel" xml:space="preserve">
+    <value>לוח מידע</value>
+  </data>
+  <data name="TrendLogs" xml:space="preserve">
+    <value>עמוד מגמות</value>
+  </data>
+  <data name="TrendExport" xml:space="preserve">
+    <value>ייצוא מגמות</value>
+  </data>
+  <data name="EventLogs" xml:space="preserve">
+    <value>אירועים מתועדים</value>
+  </data>
+  <data name="CyclesPanel" xml:space="preserve">
+    <value>לוח מחזורים</value>
+  </data>
+  <data name="SignalsPanel" xml:space="preserve">
+    <value>לוח אותות</value>
+  </data>
+  <data name="ParameterManagement" xml:space="preserve">
+    <value>דף ניהול פרמטרים</value>
+  </data>
+  <data name="PlcPage" xml:space="preserve">
+    <value>PLC Rack Page</value>
+  </data>
+  <data name="ElectricalDrawing" xml:space="preserve">
+    <value>שרטוט חשמלי</value>
+  </data>
+  <data name="PlantOverview" xml:space="preserve">
+    <value>סקירת צמח</value>
+  </data>
+  <data name="SHREDDER ROTOR" xml:space="preserve">
+    <value>רוטור מגרסה</value>
+  </data>
+  <data name="SHREDDER SAFETY KEY" xml:space="preserve">
+    <value>מפתח בטיחות מגרסה</value>
+  </data>
+  <data name="GEARBOX COOILNG FAN" xml:space="preserve">
+    <value>מאוורר קירור תיבת הילוכים</value>
+  </data>
+  <data name="PUSHER OIL PUMP" xml:space="preserve">
+    <value>משאבת שמן פושר</value>
+  </data>
+  <data name="COOLING SYSTEM - OIL RECIRC. PUMP" xml:space="preserve">
+    <value>מערכת קירור - Oil Recirc. לִשְׁאוֹב</value>
+  </data>
+  <data name="HYDRAULIC OIL COOILNG FAN" xml:space="preserve">
+    <value>מאוורר קירור שמן הידראולי</value>
+  </data>
+  <data name="MAINTENANCE AUX. HDRAULIC UNIT" xml:space="preserve">
+    <value>תחזוקה Aux. יחידה הדרולית</value>
+  </data>
+  <data name="HYDRAULIC OIL HEATING RESISTOR" xml:space="preserve">
+    <value>נגד חימום שמן הידראולי</value>
+  </data>
+  <data name="ROTOR COOLING VALVE" xml:space="preserve">
+    <value>שסתום קירור רוטור</value>
+  </data>
+  <data name="BYPASS - HIGH SPEED" xml:space="preserve">
+    <value>עוקף - מהירות גבוהה</value>
+  </data>
+  <data name="BYPASS - LOW SPEED" xml:space="preserve">
+    <value>עוקף - מהירות נמוכה</value>
+  </data>
+  <data name="PUSHER FORWARD/REVERSE" xml:space="preserve">
+    <value>דוחף קדימה/אחור</value>
+  </data>
+  <data name="SHREDDER HOPPER LEVEL" xml:space="preserve">
+    <value>רמת הופר מגרסה</value>
+  </data>
+  <data name="HYDRAULIC OIL TEMPERATURE" xml:space="preserve">
+    <value>טמפרטורת שמן הידראולי</value>
+  </data>
+  <data name="DOWNSTREAM OK FOR MATERIAL" xml:space="preserve">
+    <value>במורד הזרם אישור לחומר</value>
+  </data>
+  <data name="SOREMA SHREDDER OK FOR MATERIAL" xml:space="preserve">
+    <value>מגרסה סורמה תקין לחומר</value>
+  </data>
+  <data name="SHREDER OPEN CYCLE" xml:space="preserve">
+    <value>Shreder Open Cycle</value>
+  </data>
+  <data name="SHREDDING CYCLE" xml:space="preserve">
+    <value>מחזור גריסה</value>
+  </data>
+  <data name="DIRECTIONONE" xml:space="preserve">
+    <value>כיוון אחד</value>
+  </data>
+  <data name="FORWARD" xml:space="preserve">
+    <value>קָדִימָה</value>
+  </data>
+  <data name="DIRECTIONTWO" xml:space="preserve">
+    <value>כיוון שני</value>
+  </data>
+  <data name="REVERSE" xml:space="preserve">
+    <value>לַהֲפוֹך</value>
+  </data>
+  <data name="SAFETY NOT OK" xml:space="preserve">
+    <value>בטיחות לא בסדר</value>
+  </data>
+  <data name="INVERTER POWER UP NOT OK" xml:space="preserve">
+    <value>הפעלת מהפך לא תקין</value>
+  </data>
+  <data name="HIGH LOAD CONDITION" xml:space="preserve">
+    <value>מצב עומס גבוה</value>
+  </data>
+  <data name="GRILL POSITION OK" xml:space="preserve">
+    <value>עמדת גריל בסדר</value>
+  </data>
+  <data name="GRILL POSITION NOT OK FOR RUNNING" xml:space="preserve">
+    <value>עמדת גריל לא תקין לריצה</value>
+  </data>
+  <data name="ROTOR COOLING" xml:space="preserve">
+    <value>קירור רוטור</value>
+  </data>
+  <data name="ROTOR COOLING NOT OK" xml:space="preserve">
+    <value>קירור הרוטור לא תקין</value>
+  </data>
+  <data name="MOTOR CURRENT NOT OK FOR MATERIAL" xml:space="preserve">
+    <value>זרם מנוע אינו תקין עבור החומר</value>
+  </data>
+  <data name="PERSISTENT CURRENT (&gt;3 MIN) ABOVE MINIMUM WITH NO INCOMING MATERIAL" xml:space="preserve">
+    <value>זרם מתמשך (&gt;3 דקות) מעל המינימום ללא חומר נכנס</value>
+  </data>
+  <data name="(0-10V)" xml:space="preserve">
+    <value>(0-10V)</value>
+  </data>
+  <data name="POWER DISCONNECT (ON THE CABINET)" xml:space="preserve">
+    <value>ניתוק חשמל (על הארון)</value>
+  </data>
+  <data name="(1=RUNNING)" xml:space="preserve">
+    <value>(1=ריצה)</value>
+  </data>
+  <data name="GRILL POSITION CLOSED" xml:space="preserve">
+    <value>מצב גריל סגור</value>
+  </data>
+  <data name="GRILL POSITION LS" xml:space="preserve">
+    <value>מצב גריל LS</value>
+  </data>
+  <data name="STOPPED" xml:space="preserve">
+    <value>עצר</value>
+  </data>
+  <data name="ROTOR STOPPED" xml:space="preserve">
+    <value>הרוטור נעצר</value>
+  </data>
+  <data name="(1=STOPPED)" xml:space="preserve">
+    <value>(1=נעצר)</value>
+  </data>
+  <data name="MECHANICAL OVERLOAD 1 (REACTION ARM)" xml:space="preserve">
+    <value>עומס יתר מכני 1 (זרוע תגובה)</value>
+  </data>
+  <data name="MAX TORQUE LIMIT SWITCH 1" xml:space="preserve">
+    <value>מתג מגבלת מומנט מרבי 1</value>
+  </data>
+  <data name="MECHANICAL OVERLOAD 2 (REACTION ARM)" xml:space="preserve">
+    <value>עומס יתר מכני 2 (זרוע תגובה)</value>
+  </data>
+  <data name="MAX TORQUE LIMIT SWITCH 2" xml:space="preserve">
+    <value>מתג מגבלת מומנט מרבי 2</value>
+  </data>
+  <data name="(1=FORWARD)" xml:space="preserve">
+    <value>(1=העבר)</value>
+  </data>
+  <data name="(1=REVERSE)" xml:space="preserve">
+    <value>(1=הפוך)</value>
+  </data>
+  <data name="COMMAND STANDSTILL RELAY RESET" xml:space="preserve">
+    <value>איפוס ממסר עמידה בפקודה</value>
+  </data>
+  <data name="STANDSTILL RELAY RESET" xml:space="preserve">
+    <value>איפוס ממסר עמידה</value>
+  </data>
+  <data name="(1=RESET)" xml:space="preserve">
+    <value>(1=אפס)</value>
+  </data>
+  <data name="DISABLE COMPONENT ON START (SELECTOR)" xml:space="preserve">
+    <value>השבת את הרכיב בהתחלה (בורר)</value>
+  </data>
+  <data name="ON COMMAND (ANY DIRECTION)" xml:space="preserve">
+    <value>בפקודה (בכל כיוון)</value>
+  </data>
+  <data name="SELECTED DIRECTION" xml:space="preserve">
+    <value>כיוון נבחר</value>
+  </data>
+  <data name="ENABLE DIRECTION SELECTION (SHOW IN HMI)" xml:space="preserve">
+    <value>אפשר בחירת כיוון (הצג ב-HMI)</value>
+  </data>
+  <data name="ALL CONDITIONS TO UNLOCK" xml:space="preserve">
+    <value>כל התנאים לפתיחה</value>
+  </data>
+  <data name="SAFETY CONDITIONS NOT OK TO UNLOCK" xml:space="preserve">
+    <value>תנאי בטיחות לא בסדר לביטול הנעילה</value>
+  </data>
+  <data name="KEY UNLOCKED WITHOUT UNLOCK COMMAND" xml:space="preserve">
+    <value>מפתח נפתח ללא פקודת פתיחה</value>
+  </data>
+  <data name="LOSS OF SAFETY CONDITIONS" xml:space="preserve">
+    <value>אובדן תנאי בטיחות</value>
+  </data>
+  <data name="SAFETIES" xml:space="preserve">
+    <value>בטיחות</value>
+  </data>
+  <data name="SAFETY KEY RELEASED" xml:space="preserve">
+    <value>מפתח בטיחות שוחרר</value>
+  </data>
+  <data name="(1=RELEASED, 0=TRAPPED)" xml:space="preserve">
+    <value>(1=פורסם, 0=כלוא)</value>
+  </data>
+  <data name="COMMAND RELEASE" xml:space="preserve">
+    <value>שחרור פקודה</value>
+  </data>
+  <data name="(1=UNLOCK)" xml:space="preserve">
+    <value>(1=ביטול נעילה)</value>
+  </data>
+  <data name="WAITING COOLING AFTER OVERLOAD" xml:space="preserve">
+    <value>ממתין לקירור לאחר עומס יתר</value>
+  </data>
+  <data name="GEARBOX MAXIMUM TEMPERATURE" xml:space="preserve">
+    <value>תיבת הילוכים טמפרטורה מקסימלית</value>
+  </data>
+  <data name="GEARBOX MAXIMUM TEMPERATURE - STOP MOTOR" xml:space="preserve">
+    <value>תיבת הילוכים טמפרטורה מקסימלית - מנוע עצור</value>
+  </data>
+  <data name="GEARBOX MAXIMUM TEMPERATURE TSHA" xml:space="preserve">
+    <value>GearBox טמפרטורה מקסימלית TSHA</value>
+  </data>
+  <data name="GEARBOX MAXIMUM TEMPERATURE TSH" xml:space="preserve">
+    <value>GearBox טמפרטורה מקסימלית TSH</value>
+  </data>
+  <data name="HIDE START BUTTON ON HMI  (FALSE=SHOW START PB)" xml:space="preserve">
+    <value>הסתר כפתור התחלה ב-HMI (FALSE=הצג התחלה PB)</value>
+  </data>
+  <data name="READY TO START  (FALSE WHEN STARTED)" xml:space="preserve">
+    <value>מוכן להתחלה (שקר כשהתחיל)</value>
+  </data>
+  <data name="HYDRAULIC SAFETY" xml:space="preserve">
+    <value>בטיחות הידראולית</value>
+  </data>
+  <data name="HYDRAULIC UNIT SAFETIES NOT OK" xml:space="preserve">
+    <value>בטיחות יחידה הידראולית לא בסדר</value>
+  </data>
+  <data name="OIL FILTER NOT OK" xml:space="preserve">
+    <value>מסנן שמן לא תקין</value>
+  </data>
+  <data name="OIL CIRCUIT SHUTOFF VALVE NOT OPEN" xml:space="preserve">
+    <value>שסתום סגירת מעגל שמן אינו פתוח</value>
+  </data>
+  <data name="OIL FILTER" xml:space="preserve">
+    <value>מסנן שמן</value>
+  </data>
+  <data name="SHUTOFF VALVE 1" xml:space="preserve">
+    <value>שסתום סגירה 1</value>
+  </data>
+  <data name="SHUTOFF VALVE 2" xml:space="preserve">
+    <value>שסתום סגירה 2</value>
+  </data>
+  <data name="(1=RUN)" xml:space="preserve">
+    <value>(1=RUN)</value>
+  </data>
+  <data name="OIL TEMPERATURE OK FOR CIRCULATION" xml:space="preserve">
+    <value>טמפרטורת השמן תקין למחזור</value>
+  </data>
+  <data name="OIL TEMPERATURE NOT OK FOR CIRCULATION" xml:space="preserve">
+    <value>טמפרטורת השמן לא תקינה למחזור</value>
+  </data>
+  <data name="OIL MINIMUM LEVEL" xml:space="preserve">
+    <value>רמת שמן מינימלית</value>
+  </data>
+  <data name="OIL MINIMUM LEVEL NOT OK" xml:space="preserve">
+    <value>רמת שמן מינימלית לא תקין</value>
+  </data>
+  <data name="TEMPERATURE OK FOR COOLING" xml:space="preserve">
+    <value>טמפרטורה תקינה לקירור</value>
+  </data>
+  <data name="NO COOLING IS REQUIRED (LOW TEMPERATURE)" xml:space="preserve">
+    <value>אין צורך בקירור (טמפרטורה נמוכה)</value>
+  </data>
+  <data name="SHREDDER LOCAL+POWER DISCONNECT OPEN (BOTH)" xml:space="preserve">
+    <value>מגרסה מקומית + ניתוק מתח פתוח (שניהם)</value>
+  </data>
+  <data name="SHREDDER DISCONNECTORS CLOSED" xml:space="preserve">
+    <value>מנתקי המגרסה סגורים</value>
+  </data>
+  <data name="SHREDDER SAFETY KEY EXTRACTED FORM THE LOCK" xml:space="preserve">
+    <value>מפתח בטיחות מגרסה חולץ מהמנעול</value>
+  </data>
+  <data name="SAFETY KEY NOT EXTRACTED" xml:space="preserve">
+    <value>מפתח בטיחות לא חולץ</value>
+  </data>
+  <data name="OIL TEMPERATURE OK FOR HEATING" xml:space="preserve">
+    <value>טמפרטורת השמן תקין לחימום</value>
+  </data>
+  <data name="OIL DOES NOT NEED TO BE HEATED" xml:space="preserve">
+    <value>שמן לא צריך להתחמם</value>
+  </data>
+  <data name="COOLING VALVE IS NOT ON (ROTOR WILL BE STOPPED IN A SHORT TIME)" xml:space="preserve">
+    <value>שסתום הקירור אינו פועל (הרוטור ייעצר תוך זמן קצר)</value>
+  </data>
+  <data name="COOLING VALVE IS NOT ON (ROTOR STOP)" xml:space="preserve">
+    <value>שסתום קירור אינו פועל (עצירת רוטור)</value>
+  </data>
+  <data name="FAST SPEED" xml:space="preserve">
+    <value>מהירות גבוהה</value>
+  </data>
+  <data name="POSITION FORWARD NOT OK" xml:space="preserve">
+    <value>עמדת קדימה לא בסדר</value>
+  </data>
+  <data name="POSITION REVERSE NOT OK" xml:space="preserve">
+    <value>מיקום הפוך לא תקין</value>
+  </data>
+  <data name="BOTH POSITIONS" xml:space="preserve">
+    <value>שני התפקידים</value>
+  </data>
+  <data name="DISABLED BY OPERATOR" xml:space="preserve">
+    <value>מושבת על ידי המפעיל</value>
+  </data>
+  <data name="READY FOR MEASURING" xml:space="preserve">
+    <value>מוכן למדידה</value>
+  </data>
+  <data name="COMPONENT PREPARED OK FOR PRODUCTION" xml:space="preserve">
+    <value>הרכיב הוכן תקין לייצור</value>
+  </data>
+  <data name="SENSOR ON (CAB ON + 24V SENSOR SUPPLY OK - AIN OR DIN)" xml:space="preserve">
+    <value>SENSOR ON (CAB ON + אספקת חיישן 24V תקין - AIN או DIN)</value>
+  </data>
+  <data name="HIGH TEMPERATURE WARNING" xml:space="preserve">
+    <value>אזהרת טמפרטורה גבוהה</value>
+  </data>
+  <data name="OIL MAXIMUM TEMPERATURE" xml:space="preserve">
+    <value>שמן טמפרטורת מקסימום</value>
+  </data>
+  <data name="OIL TEMPERATURE" xml:space="preserve">
+    <value>טמפרטורת שמן</value>
+  </data>
+  <data name="DOWNSTREAM OK (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>במורד הזרם אישור (אות חיצוני)</value>
+  </data>
+  <data name="SOREMA PLANT OK TO RECEIVE MATERIAL" xml:space="preserve">
+    <value>צמח סורמה בסדר לקבל חומר</value>
+  </data>
+  <data name="(1=SOREMA OK TO RECEIVE)" xml:space="preserve">
+    <value>(1=SOREMA בסדר לקבל)</value>
+  </data>
+  <data name="CYCLE INTERLOCKS" xml:space="preserve">
+    <value>נעילות מחזור</value>
+  </data>
+  <data name="PRODUCTION SPEED (IN CONSTANT MODE)" xml:space="preserve">
+    <value>מהירות ייצור (במצב קבוע)</value>
+  </data>
+  <data name="ROTOR REVERSE" xml:space="preserve">
+    <value>רוטור הפוך</value>
+  </data>
+  <data name="PUSHER STEP BACK + STOP MATERIAL (IF SELECTED)" xml:space="preserve">
+    <value>חומר דחף צעד אחורה + עצירה (אם נבחר)</value>
+  </data>
+  <data name="STOP UPSTREAM MATERIAL" xml:space="preserve">
+    <value>עצור חומר במעלה הזרם</value>
+  </data>
+  <data name="PRODUCTION SPEED - ADVANCING" xml:space="preserve">
+    <value>מהירות ייצור - מתקדם</value>
+  </data>
+  <data name="ENABLE" xml:space="preserve">
+    <value>לְאַפשֵׁר</value>
+  </data>
+  <data name="SWIPE ACCESS CARD TO UNLOCK" xml:space="preserve">
+    <value>החלק את כרטיס הגישה כדי לבטל את הנעילה</value>
+  </data>
+  <data name="SHREDDING" xml:space="preserve">
+    <value>רִטוּשׁ</value>
+  </data>
+  <data name="BUTTONS" xml:space="preserve">
+    <value>כפתורים</value>
+  </data>
+  <data name="PROCESS SIGNALS" xml:space="preserve">
+    <value>תהליך אותות</value>
+  </data>
+  <data name="TREND LIMITS" xml:space="preserve">
+    <value>מגבלות מגמה</value>
+  </data>
+  <data name="COMPONENT STATUS STD BITMASK" xml:space="preserve">
+    <value>STD BITMASK של סטטוס רכיב</value>
+  </data>
+  <data name="FUNCTION" xml:space="preserve">
+    <value>פוּנקצִיָה</value>
+  </data>
+  <data name="PLCTAG" xml:space="preserve">
+    <value>Plctag</value>
+  </data>
+  <data name="HMIS BEACON PROTECTION" xml:space="preserve">
+    <value>HMIs Beacon Protection</value>
+  </data>
+  <data name="SYS - CUMULATIVE HMIS BEACON" xml:space="preserve">
+    <value>SYS - Beacon מצטבר של HMIs</value>
+  </data>
+  <data name="SYS - ETHERNET SWITCH OK" xml:space="preserve">
+    <value>SYS - מתג Ethernet תקין</value>
+  </data>
+  <data name="SYS - SIREN (FOR EXTERNAL USES)" xml:space="preserve">
+    <value>SYS - סירנה (לשימושים חיצוניים)</value>
+  </data>
+  <data name="SUBZONE SHREDDING" xml:space="preserve">
+    <value>גריסה של תת-אזור</value>
+  </data>
+  <data name="AUXILIARY TRANSFORMER SECONDARY PROTECTION" xml:space="preserve">
+    <value>הגנה משנית של שנאי עזר</value>
+  </data>
+  <data name="ANALOG OUTPUTS PROTECTION" xml:space="preserve">
+    <value>הגנה על יציאות אנלוגיות</value>
+  </data>
+  <data name="BUTTONSPANEL" xml:space="preserve">
+    <value>לוח כפתורים</value>
+  </data>
+  <data name="EXPORT TO CSV" xml:space="preserve">
+    <value>ייצוא ל-Csv</value>
+  </data>
+  <data name="TREND WINDOW" xml:space="preserve">
+    <value>חלון מגמה</value>
+  </data>
+  <data name="LIVE CHARTING" xml:space="preserve">
+    <value>תרשימים חיים</value>
+  </data>
+  <data name="MESSAGING" xml:space="preserve">
+    <value>הודעות</value>
+  </data>
+  <data name="DELAY FOR MESSAGE 'NO MATERIAL'   (0=NO MESSAGE)" xml:space="preserve">
+    <value>עיכוב להודעה 'ללא חומר' (0=ללא הודעה)</value>
+  </data>
+  <data name="DELAY FOR MESSAGE 'NOT OK FOR PROCESS'   (0=NO MESSAGE)" xml:space="preserve">
+    <value>עיכוב להודעה 'לא בסדר לעיבוד' (0=אין הודעה)</value>
+  </data>
+  <data name="STOP FEEDING" xml:space="preserve">
+    <value>הפסק להאכיל</value>
+  </data>
+  <data name="RESTART FEEDING" xml:space="preserve">
+    <value>הפעל מחדש את ההאכלה</value>
+  </data>
+  <data name="EMPTY HOPPER" xml:space="preserve">
+    <value>הופר ריק</value>
+  </data>
+  <data name="SHREDDER" xml:space="preserve">
+    <value>מגרסה</value>
+  </data>
+  <data name="ROTOR" xml:space="preserve">
+    <value>רוטור</value>
+  </data>
+  <data name="PUSHER" xml:space="preserve">
+    <value>דוֹחֵף</value>
+  </data>
+  <data name="ENABLE MODULATION OF PUSHER ADVANCING SPEED" xml:space="preserve">
+    <value>אפשר אפנון של מהירות קידום הדוחף</value>
+  </data>
+  <data name="PUSHER MAXIMUM SPEED AT ROTOR MINIMUM CURRENT" xml:space="preserve">
+    <value>מהירות מרבית של דוחף בזרם מינימלי של הרוטור</value>
+  </data>
+  <data name="PUSHER MINIMUM SPEED AT ROTOR MAXIMUM CURRENT" xml:space="preserve">
+    <value>דחף מהירות מינימלית בזרם מירבי של הרוטור</value>
+  </data>
+  <data name="FINAL PUSHING TIME IN MAXIMUM FORWARD POSITION" xml:space="preserve">
+    <value>זמן דחיפה סופי במיקום מירבי קדימה</value>
+  </data>
+  <data name="PUSHER STEP-BACK TIME" xml:space="preserve">
+    <value>דחף זמן צעד אחורה</value>
+  </data>
+  <data name="LOW" xml:space="preserve">
+    <value>נָמוּך</value>
+  </data>
+  <data name="USER DELETED SUCCESSFULLY" xml:space="preserve">
+    <value>המשתמש נמחק בהצלחה</value>
+  </data>
+  <data name="COULD NOT DELETE THE USER" xml:space="preserve">
+    <value>לא ניתן למחוק את המשתמש</value>
+  </data>
+  <data name="USER ADDED" xml:space="preserve">
+    <value>משתמש נוסף</value>
+  </data>
+  <data name="USER GROUP ADDED" xml:space="preserve">
+    <value>נוספה קבוצת משתמשים</value>
+  </data>
+  <data name="USER GROUP DELETED SUCCESSFULLY" xml:space="preserve">
+    <value>קבוצת משתמשים נמחקה בהצלחה</value>
+  </data>
+  <data name="COULD NOT DELETE THE USER GROUP" xml:space="preserve">
+    <value>לא ניתן למחוק את קבוצת המשתמשים</value>
+  </data>
+  <data name="PARAMETERS SAVED SUCCESSFULLY" xml:space="preserve">
+    <value>הפרמטרים נשמרו בהצלחה</value>
+  </data>
+  <data name="COULD NOT SAVE THE PARAMETERS" xml:space="preserve">
+    <value>לא ניתן לשמור את הפרמטרים</value>
+  </data>
+  <data name="USER SAVED SUCCESSFULLY" xml:space="preserve">
+    <value>המשתמש נשמר בהצלחה</value>
+  </data>
+  <data name="USER GROUP SAVED SUCCESSFULLY" xml:space="preserve">
+    <value>קבוצת משתמשים נשמרה בהצלחה</value>
+  </data>
+  <data name="AUTOCLOSE" xml:space="preserve">
+    <value>סגירה אוטומטית</value>
+  </data>
+  <data name="PRODUCTION SLOWDOWN SPEED" xml:space="preserve">
+    <value>מהירות האטה בייצור</value>
+  </data>
+  <data name="PUSHER STEP BACK" xml:space="preserve">
+    <value>דחף צעד אחורה</value>
+  </data>
+  <data name="STOP UPSTREAM IF STEP BACK" xml:space="preserve">
+    <value>עצור במעלה הזרם אם צעד אחורה</value>
+  </data>
+  <data name="(0=FORWARD)" xml:space="preserve">
+    <value>(0=העבר)</value>
+  </data>
+  <data name="(0=REVERSE)" xml:space="preserve">
+    <value>(0=הפוך)</value>
+  </data>
+  <data name="ROTOR REVERSE INTERVAL" xml:space="preserve">
+    <value>מרווח רוטור היפוך</value>
+  </data>
+  <data name="SHREDDING AND PUSHER INCHING" xml:space="preserve">
+    <value>גריסה ודחיפה אינצ'ינג</value>
+  </data>
+  <data name="RESET CYCLE - PUSHER COMPLETE BACKWARD" xml:space="preserve">
+    <value>מחזור איפוס - הדוחף הושלם לאחור</value>
+  </data>
+  <data name="HOME" xml:space="preserve">
+    <value>בית</value>
+  </data>
+  <data name="PUSHER STEP BACK REQUEST" xml:space="preserve">
+    <value>בקשת דחיפה צעד אחורה</value>
+  </data>
+  <data name="STEP BACK" xml:space="preserve">
+    <value>צעד אחורה</value>
+  </data>
+  <data name="ROTOR STOP AND REVERSE REQUEST" xml:space="preserve">
+    <value>בקשת עצירה והיפוך רוטור</value>
+  </data>
+  <data name="CUMULATIVE OK (OK FOR PROCESS)" xml:space="preserve">
+    <value>בסדר מצטבר (בסדר לתהליך)</value>
+  </data>
+  <data name="PUSHER PRESSING IN FORWARD POSITION" xml:space="preserve">
+    <value>דוחף לחיצה במצב קדימה</value>
+  </data>
+  <data name="PUSHER FINAL RETRACT" xml:space="preserve">
+    <value>דחיפה סופית</value>
+  </data>
+  <data name="SAFETY KEY UNLOCK COMMAND OFF" xml:space="preserve">
+    <value>פקודת פתיחת מפתח בטיחות כבויה</value>
+  </data>
+  <data name="SAFETY KEY UNLOCK REQUESTED" xml:space="preserve">
+    <value>בקשת ביטול נעילה של מפתח בטיחות</value>
+  </data>
+  <data name="SAFETY KEY NOT INSERTED ON CABINET" xml:space="preserve">
+    <value>מפתח בטיחות לא הוכנס לארון</value>
+  </data>
+  <data name="GEARBOX" xml:space="preserve">
+    <value>תֵבַת הִלוּכִים</value>
+  </data>
+  <data name="GEARBOX NOT OK" xml:space="preserve">
+    <value>תיבת הילוכים לא בסדר</value>
+  </data>
+  <data name="CABINET ON" xml:space="preserve">
+    <value>ארון פועל</value>
+  </data>
+  <data name="SYS - POWER SUPPLY 24VDC - CABINET ON" xml:space="preserve">
+    <value>SYS - ספק כוח 24Vdc - CABINET ON</value>
+  </data>
+  <data name="ALL ESTOP PB NOT PRESSED (CUMULATIVE OF TO THE ONES THAT BELONG TO THIS CABINET)" xml:space="preserve">
+    <value>כל ESTOP PB לא לחוץ (מצטבר של אלה ששייכים לארון זה)</value>
+  </data>
+  <data name="CABINET NO CRITICAL FAULTS PRESENT" xml:space="preserve">
+    <value>ארון ללא תקלות קריטיות</value>
+  </data>
+  <data name="E-STOP OK" xml:space="preserve">
+    <value>E-Stop בסדר</value>
+  </data>
+  <data name="ALL DEVICES READY" xml:space="preserve">
+    <value>כל המכשירים מוכנים</value>
+  </data>
+  <data name="SHREDDER DEVICES NOT READY" xml:space="preserve">
+    <value>התקני מגרסה לא מוכנים</value>
+  </data>
+  <data name="NEAR DOWNSTREAM OK FOR START WASHING" xml:space="preserve">
+    <value>קרוב ל-Downstream בסדר לתחילת הכביסה</value>
+  </data>
+  <data name="NEAR DOWNSTREAM NOT OK FOR SHREDDING" xml:space="preserve">
+    <value>ליד מורד הזרם לא מתאים לגריסה</value>
+  </data>
+  <data name="FAR DOWNSTREAM OK FOR START WASHING" xml:space="preserve">
+    <value>FAR Downstream בסדר לתחילת הכביסה</value>
+  </data>
+  <data name="FAR DOWNSTREAM NOT OK FOR SHREDDING" xml:space="preserve">
+    <value>הרחק במורד הזרם לא בסדר לגריסה</value>
+  </data>
+  <data name="MAXIMUM NUMBER OF ROTOR REVERSE ROTATION (SHREDDER OVERLOAD ?)" xml:space="preserve">
+    <value>מספר מרבי של סיבוב הפוך של הרוטור (עומס יתר על המגרסה?)</value>
+  </data>
+  <data name="READY FOR PROCESS" xml:space="preserve">
+    <value>מוכן לתהליך</value>
+  </data>
+  <data name="HMI LABEL ON OR IN-PROGRESS (IF NOT OK X PROCESS)" xml:space="preserve">
+    <value>תווית HMI פועלת או בתהליך (אם לא תקין x תהליך)</value>
+  </data>
+  <data name="CUMULATIVE - CRITICAL ALARM PRESENT" xml:space="preserve">
+    <value>מצטבר - נוכח אזעקה קריטית</value>
+  </data>
+  <data name="CUMULATIVE - AT LEAST ONE ACTUATOR ON (MTRS, VLVS...)" xml:space="preserve">
+    <value>מצטבר - לפחות מפעיל אחד מופעל (MTRs, VLVs...)</value>
+  </data>
+  <data name="*** GROUP FULL PRODUCTION (DARK GREY COLOR) ***" xml:space="preserve">
+    <value>*** ייצור מלא בקבוצה (צבע אפור כהה) ***</value>
+  </data>
+  <data name="CUMULATIVE - NON-CRITICAL ALARM PRESENT" xml:space="preserve">
+    <value>מצטבר - נוכח אזעקה לא קריטית</value>
+  </data>
+  <data name="CUMULATIVE - MESSAGE PRESENT" xml:space="preserve">
+    <value>מצטבר - הודעה נוכחת</value>
+  </data>
+  <data name="NOT OK FOR PROCESS" xml:space="preserve">
+    <value>לא בסדר לתהליך</value>
+  </data>
+  <data name="OIL LOW TEMPERATURE" xml:space="preserve">
+    <value>שמן טמפרטורה נמוכה</value>
+  </data>
+  <data name="DOWNSTREAM" xml:space="preserve">
+    <value>בְּמוֹרַד הַזֶרֶם</value>
+  </data>
+  <data name="DOWNSTREAM NOT OK (EXTERNAL PLANT)" xml:space="preserve">
+    <value>במורד הזרם לא תקין (מפעל חיצוני)</value>
+  </data>
+  <data name="DOWNSTREAM NOT OK" xml:space="preserve">
+    <value>דאונסטרים לא בסדר</value>
+  </data>
+  <data name="SOREMA OK TO RECEIVE" xml:space="preserve">
+    <value>סורמה בסדר לקבל</value>
+  </data>
+  <data name="WAITING FOR SOREMA PLANT TO BE READY TO RECEIVE" xml:space="preserve">
+    <value>מחכה שצמח סורמה יהיה מוכן לקבלה</value>
+  </data>
+  <data name="SOREMA PLANT IS NOT OK TO RECEIVE" xml:space="preserve">
+    <value>צמח SOREMA אינו בסדר לקבל</value>
+  </data>
+  <data name="LOCAL DISCONNECT CLOSED" xml:space="preserve">
+    <value>ניתוק מקומי סגור</value>
+  </data>
+  <data name="ROTATION STOPPED" xml:space="preserve">
+    <value>הסיבוב הופסק</value>
+  </data>
+  <data name="POWER SWITCH OPEN" xml:space="preserve">
+    <value>מתג הפעלה פתוח</value>
+  </data>
+  <data name="CYCLE IN PROGRESS" xml:space="preserve">
+    <value>מחזור בעיצומו</value>
+  </data>
+  <data name="GENERIC CYCLE OK (OK FOR PROCESS)" xml:space="preserve">
+    <value>מחזור כללי בסדר (בסדר לתהליך)</value>
+  </data>
+  <data name="INITIAL BACKWARD POSITION" xml:space="preserve">
+    <value>מיקום ראשוני אחורה</value>
+  </data>
+  <data name="INITIAL FAST ADVANCE" xml:space="preserve">
+    <value>התקדמות מהירה ראשונית</value>
+  </data>
+  <data name="MAXIMUM PUSH SHREDDING" xml:space="preserve">
+    <value>גריסה דחיפה מקסימלית</value>
+  </data>
+  <data name="DISABLE_SENSOR" xml:space="preserve">
+    <value>DISABLE_SENSOR</value>
+  </data>
+  <data name="DELAY" xml:space="preserve">
+    <value>לְעַכֵּב</value>
+  </data>
+  <data name="HYDRAULIC UNIT OFF" xml:space="preserve">
+    <value>יחידה הידראולית כבויה</value>
+  </data>
+  <data name="PUSHER NOT FORWARD" xml:space="preserve">
+    <value>דוחף לא קדימה</value>
+  </data>
+  <data name="PUSHER FORWARD POSITION REACHED" xml:space="preserve">
+    <value>הושג עמדת הדוחף קדימה</value>
+  </data>
+  <data name="PUSHER NOT REVERSE" xml:space="preserve">
+    <value>PUSHER לא הפוך</value>
+  </data>
+  <data name="PUSHER REVERSE POSITION REACHED" xml:space="preserve">
+    <value>הושג מיקום הדחף לאחור</value>
+  </data>
+  <data name="DOWNSTREAM SAFETY NOT OK" xml:space="preserve">
+    <value>בטיחות במורד הזרם לא בסדר</value>
+  </data>
+  <data name="SAFETY KEY EXTRACTED" xml:space="preserve">
+    <value>מפתח בטיחות חולץ</value>
+  </data>
+  <data name="PUSHER RETRACT" xml:space="preserve">
+    <value>דחיפה נסיגה</value>
+  </data>
+  <data name="PUSHER RETRACT IN PROGRESS" xml:space="preserve">
+    <value>דחיפה מתקדמת</value>
+  </data>
+  <data name="CUMULATIVE - NEW ALARM PRESENT" xml:space="preserve">
+    <value>מצטבר - אזעקה חדשה נוכחת</value>
+  </data>
+  <data name="ROTOR CURRENT OK" xml:space="preserve">
+    <value>זרם הרוטור בסדר</value>
+  </data>
+  <data name="ROTOR CURRENT NOT OK FOR MATERIAL LOADING" xml:space="preserve">
+    <value>זרם הרוטור לא תקין עבור טעינת חומר</value>
+  </data>
+  <data name="NO REVERSE ROTATION" xml:space="preserve">
+    <value>אין סיבוב הפוך</value>
+  </data>
+  <data name="ROTOR IS MOVING REVERSE TO PREVENT BLOCKAGE" xml:space="preserve">
+    <value>הרוטור נע לאחור כדי למנוע חסימה</value>
+  </data>
+  <data name="PUSHER BACKWARD" xml:space="preserve">
+    <value>דוחף לאחור</value>
+  </data>
+  <data name="PUSHER FAST ADVANCE" xml:space="preserve">
+    <value>Pusher Fast Advance</value>
+  </data>
+  <data name="HIGH LOAD - PUSHER STEP BACK" xml:space="preserve">
+    <value>עומס גבוה - דחף צעד אחורה</value>
+  </data>
+  <data name="HIGH LOAD - ROTOR REVERSE" xml:space="preserve">
+    <value>עומס גבוה - רוטור הפוך</value>
+  </data>
+  <data name="PUSHER BACK FOR DOWNSTREAM NOT OK" xml:space="preserve">
+    <value>דוחף חזרה למורד הזרם לא בסדר</value>
+  </data>
+  <data name="ROTOR REVERSE (FORWARD TIMEOUT)" xml:space="preserve">
+    <value>רוטור לאחור (זמן קצוב קדימה)</value>
+  </data>
+  <data name="PUSHER STEP BACK REQUESTED" xml:space="preserve">
+    <value>דרוש צעד אחורה דוחף</value>
+  </data>
+  <data name="ROTOR REVERSE REQUESTED" xml:space="preserve">
+    <value>רוטור היפוך מתבקש</value>
+  </data>
+  <data name="ROTOR STARTING" xml:space="preserve">
+    <value>הפעלת רוטור</value>
+  </data>
+  <data name="EMERGENCY STOP RESET OK (DIRECT) (OF THIS CABINET)" xml:space="preserve">
+    <value>איפוס עצירת חירום תקין (ישיר) (של ארון זה)</value>
+  </data>
+  <data name="ANALOG INPUTS PROTECTION" xml:space="preserve">
+    <value>הגנה על כניסות אנלוגיות</value>
+  </data>
+  <data name="SYS - ANALOG INPUTS" xml:space="preserve">
+    <value>SYS - כניסות אנלוגיות</value>
+  </data>
+  <data name="SYS - SIGNALLING HMI BEACON" xml:space="preserve">
+    <value>SYS - Signaling HMI Beacon</value>
+  </data>
+  <data name="COOLING SYSTEM OVERLOAD PROTECTION" xml:space="preserve">
+    <value>הגנה מפני עומס יתר של מערכת הקירור</value>
+  </data>
+  <data name="SYS - CABINET COOLING SYSTEM OVERLOAD" xml:space="preserve">
+    <value>SYS - עומס יתר של מערכת קירור ארונות</value>
+  </data>
+  <data name="COOLING SYSTEM HEALTY" xml:space="preserve">
+    <value>מערכת קירור בריאה</value>
+  </data>
+  <data name="SYS - AIR CONDITIONING UNIT STATUS" xml:space="preserve">
+    <value>SYS - מצב יחידת מיזוג אוויר</value>
+  </data>
+  <data name="(1=NO ALARMS)" xml:space="preserve">
+    <value>(1=אין אזעקות)</value>
+  </data>
+  <data name="ESTOP" xml:space="preserve">
+    <value>Estop</value>
+  </data>
+  <data name="SYS - E-STOP - RELAY STATUS" xml:space="preserve">
+    <value>SYS - E-Stop - מצב ממסר</value>
+  </data>
+  <data name="ESTOP CHANNEL" xml:space="preserve">
+    <value>ערוץ אסטופ</value>
+  </data>
+  <data name="SYS - E-STOP - CONTACTOR FEEDBACK CH1" xml:space="preserve">
+    <value>SYS - E-Stop - משוב מגע CH1</value>
+  </data>
+  <data name="SYS - E-STOP - CONTACTOR FEEDBACK CH2" xml:space="preserve">
+    <value>SYS - E-Stop - משוב מגע CH2</value>
+  </data>
+  <data name="EMERGENCY PUSH BUTTON ON CABINET" xml:space="preserve">
+    <value>לחצן חירום בארון</value>
+  </data>
+  <data name="SYS - EMERGENCY PUSH BUTTON" xml:space="preserve">
+    <value>SYS - לחצן חירום</value>
+  </data>
+  <data name="EMERGENCY PUSH BUTTON IN FIELD" xml:space="preserve">
+    <value>לחצן חירום בשטח</value>
+  </data>
+  <data name="COMMAND ESTOP ENABLE" xml:space="preserve">
+    <value>הפקודה Estop Enable</value>
+  </data>
+  <data name="SYS - ESTOP RELAY ENABLE" xml:space="preserve">
+    <value>SYS - ESTOP RELAY ENABLE</value>
+  </data>
+  <data name="COMMAND ESTOP RESET" xml:space="preserve">
+    <value>פקודה Estop Reset</value>
+  </data>
+  <data name="SYS - ESTOP RELAY RESET" xml:space="preserve">
+    <value>SYS - איפוס ESTOP RELAY</value>
+  </data>
+  <data name="LAMP PRODUCTION" xml:space="preserve">
+    <value>ייצור מנורה</value>
+  </data>
+  <data name="LAMP WARNING" xml:space="preserve">
+    <value>מנורה אזהרה</value>
+  </data>
+  <data name="LAMP ALARM" xml:space="preserve">
+    <value>מנורה ALARM</value>
+  </data>
+  <data name="CABINET COOLING NOT OK" xml:space="preserve">
+    <value>קירור הארון אינו תקין</value>
+  </data>
+  <data name="ESTOP NOT RESET" xml:space="preserve">
+    <value>ESTOP לא איפוס</value>
+  </data>
+  <data name="SUBZONE PREPARED OK FOR PRODUCTION" xml:space="preserve">
+    <value>תת-אזור הוכן בסדר לייצור</value>
+  </data>
+  <data name="PRODUCTION CYCLE RUNNING" xml:space="preserve">
+    <value>מחזור ייצור פועל</value>
+  </data>
+  <data name="PRODUCTION CYCLE PENDING (PREPARATION IN PROGRESS)" xml:space="preserve">
+    <value>מחזור ייצור בהמתנה (הכנה בעיצומה)</value>
+  </data>
+  <data name="STOP CYCLE IN PROGRESS" xml:space="preserve">
+    <value>עצירת מחזור בתהליך</value>
+  </data>
+  <data name="CABINET NO MINOR FAULTS PRESENT" xml:space="preserve">
+    <value>ארון ללא תקלות קלות</value>
+  </data>
+  <data name="MINOR FAULT IN THE ELECTRICAL CABINET" xml:space="preserve">
+    <value>תקלה קלה בארון החשמל</value>
+  </data>
+  <data name="CABINET NO MESSAGE PRESENT" xml:space="preserve">
+    <value>ארון ללא הודעה</value>
+  </data>
+  <data name="ELECTRICAL CABINET HAS A MESSAGE" xml:space="preserve">
+    <value>לארון חשמל יש הודעה</value>
+  </data>
+  <data name="ESTOP PUSH BUTTONS NOT PRESSED" xml:space="preserve">
+    <value>כפתורי הדחיפה לא נלחצו</value>
+  </data>
+  <data name="ESTOP AREA OK" xml:space="preserve">
+    <value>אזור ESTOP בסדר</value>
+  </data>
+  <data name="ESTOP AREA NOT OK" xml:space="preserve">
+    <value>אזור עצירה לא תקין</value>
+  </data>
+  <data name="TRUE= AT LEAST ONE I/O HW MODULE DETECTED, 0 =SIMULATION ALLOWED" xml:space="preserve">
+    <value>TRUE= לפחות מודול I/O HW אחד זוהה, 0 =הדמיה מותרת</value>
+  </data>
+  <data name="PLC PROGRAM SIMULATION ACTIVE (1=ACTIVE) [M17.7]" xml:space="preserve">
+    <value>סימולציית תוכנית PLC פעילה (1=פעילה) [M17.7]</value>
+  </data>
+  <data name="CABINET TEST MODE (1=ACTIVE) [M18.7]" xml:space="preserve">
+    <value>מצב בדיקת ארון (1=פעיל) [M18.7]</value>
+  </data>
+  <data name="PLC PROGRAM SIMULATION INIT (1=ACTIVE) [M17.3]" xml:space="preserve">
+    <value>תחילת סימולציית תוכנית PLC (1=פעיל) [M17.3]</value>
+  </data>
+  <data name="SHREDDER SAFETY KEY UNLOCK COMMAND ACTIVE" xml:space="preserve">
+    <value>פקודת פתיחת מפתח בטיחות מגרסה פעילה</value>
+  </data>
+  <data name="SAFETY KEY NOT UNLOCKED" xml:space="preserve">
+    <value>מפתח בטיחות לא נעול</value>
+  </data>
+  <data name="SHREDDER BLADES IN ROTATION" xml:space="preserve">
+    <value>להבי גריסה בסיבוב</value>
+  </data>
+  <data name="SHREDDER IN ROTATION" xml:space="preserve">
+    <value>מגרסה בסיבוב</value>
+  </data>
+  <data name="SYS - ANALOG OUTPUTS" xml:space="preserve">
+    <value>SYS - יציאות אנלוגיות</value>
+  </data>
+  <data name="24V UNDER ESTOP PROTECTION" xml:space="preserve">
+    <value>24V תחת הגנת Estop</value>
+  </data>
+  <data name="SYS - 24V UNDER ESTOP" xml:space="preserve">
+    <value>SYS - 24V Under Estop</value>
+  </data>
+  <data name="INVERTER SAFETY CIRCUITS" xml:space="preserve">
+    <value>מעגלי בטיחות אינוורטר</value>
+  </data>
+  <data name="SYS - INVERTER SAFETY CIRCUITS (STO)" xml:space="preserve">
+    <value>SYS - מעגלי בטיחות מהפך (STO)</value>
+  </data>
+  <data name="HYDRAULIC VALVES PROTECTION" xml:space="preserve">
+    <value>הגנה על שסתומים הידראוליים</value>
+  </data>
+  <data name="SYS - 24V UNDER ESTOP FOR HYDRAULIC VALVES" xml:space="preserve">
+    <value>SYS - 24V Under Estop עבור שסתומים הידראוליים</value>
+  </data>
+  <data name="AUXILIARY TRANSFORMER PRIMARY PROTECTION" xml:space="preserve">
+    <value>הגנה ראשונית של שנאי עזר</value>
+  </data>
+  <data name="SHREDDER OPEN CYCLE" xml:space="preserve">
+    <value>ספירת מחזורי הגריסה הכוללת</value>
+  </data>
+  <data name="INFO_SYS_32" xml:space="preserve">
+    <value>תקלת חומרה בכרטיס קלט Plc-Safty. ודא שאין מעגלים קצרים בשטח בערוצי Estop או חיבורים גרועים על ידיות Estop. בדוק את מודול הקלט Safety Plc, אפס את האזעקה ו/או הפעל מחדש את מודול Plc</value>
+  </data>
+  <data name="Rotor Reverse (Floating Material)" xml:space="preserve">
+    <value>סיבוב הפוך (חומר צולל)</value>
   </data>
 </root>
