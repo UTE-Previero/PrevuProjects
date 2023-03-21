@@ -6,11 +6,27 @@
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:lex="http://wpflocalizeextension.codeplex.com" 
+             xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings" 
              x:Class="Prevu.Synoptics.P230" mc:Ignorable="d" 
              Height="840" Width="1420" d:Background="{DynamicResource MaterialDesignPaper}">
 	<Grid Margin="-4,-5,4,5">
-		<Rectangle HorizontalAlignment="Left" Height="152" Margin="1232,627,0,0" Stroke="White" StrokeThickness="2" VerticalAlignment="Top" Width="118" RadiusX="15" RadiusY="15" d:IsLocked="True"/>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="539,376,0,0" VerticalAlignment="Top" Color="Water" Width="56" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="212-22-CV1">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="19*"/>
+			<RowDefinition Height="37*"/>
+		</Grid.RowDefinitions>
+		<Labels:Pipe HorizontalAlignment="Left" Margin="945,366,0,0" VerticalAlignment="Top" Width="126" StatusComponent="322-01-MA1" PipeHeight="Medium" Height="22" Grid.Row="1"/>
+		<Labels:Pipe HorizontalAlignment="Left" Margin="900,323,0,0" VerticalAlignment="Top" Width="96" StatusComponent="322-01-MA1" PipeHeight="Medium" Height="22" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+			<Labels:Pipe.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="-90"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Labels:Pipe.RenderTransform>
+		</Labels:Pipe>
+		<Rectangle HorizontalAlignment="Left" Height="152" Margin="1232,342,0,0" Stroke="White" StrokeThickness="2" VerticalAlignment="Top" Width="118" RadiusX="15" RadiusY="15" d:IsLocked="True" Grid.Row="1"/>
+		<Labels:Pipe HorizontalAlignment="Left" Margin="509,91,0,0" VerticalAlignment="Top" Color="Water" Width="56" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="212-22-CV1" Grid.Row="1">
 			<Labels:Pipe.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform ScaleX="0.859" ScaleY="1.164"/>
@@ -20,7 +36,7 @@
 				</TransformGroup>
 			</Labels:Pipe.RenderTransform>
 		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="751,293,0,0" VerticalAlignment="Top" Width="84" StatusComponent="234-01-MA1" PipeHeight="Medium" Height="24" RenderTransformOrigin="0.5,0.5">
+		<Labels:Pipe HorizontalAlignment="Left" Margin="724,8,0,0" VerticalAlignment="Top" Width="135" StatusComponent="234-01-MA1" PipeHeight="Medium" Height="24" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
 			<Labels:Pipe.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -30,7 +46,7 @@
 				</TransformGroup>
 			</Labels:Pipe.RenderTransform>
 		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="511,274,0,0" VerticalAlignment="Top" Color="Air" Width="119" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="212-21-CV1">
+		<Labels:Pipe HorizontalAlignment="Left" Margin="481,274,0,0" VerticalAlignment="Top" Color="Air" Width="119" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="212-21-CV1" Grid.RowSpan="2">
 			<Labels:Pipe.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform ScaleX="0.859" ScaleY="1.164"/>
@@ -40,7 +56,7 @@
 				</TransformGroup>
 			</Labels:Pipe.RenderTransform>
 		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="1008,127,0,0" VerticalAlignment="Top" Color="Air" Width="78" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="325-02-MA1">
+		<Labels:Pipe HorizontalAlignment="Left" Margin="912,127,0,0" VerticalAlignment="Top" Color="Air" Width="78" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="325-02-MA1">
 			<Labels:Pipe.LayoutTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -58,7 +74,7 @@
 				</TransformGroup>
 			</Labels:Pipe.RenderTransform>
 		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="655,691,0,0" VerticalAlignment="Top" Width="106" RenderTransformOrigin="0.5,0.5" StatusComponent="234-01-MA1" PipeHeight="Medium" Height="25">
+		<Labels:Pipe HorizontalAlignment="Left" Margin="625,406,0,0" VerticalAlignment="Top" Width="106" RenderTransformOrigin="0.5,0.5" StatusComponent="234-01-MA1" PipeHeight="Medium" Height="25" Grid.Row="1">
 			<Labels:Pipe.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -68,7 +84,7 @@
 				</TransformGroup>
 			</Labels:Pipe.RenderTransform>
 		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="107,197,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="210" PipeHeight="Medium" StatusComponent="208-71-ECS1" Height="30">
+		<Labels:Pipe HorizontalAlignment="Left" Margin="77,197,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="210" PipeHeight="Medium" StatusComponent="208-71-ECS1" Height="30">
 			<Labels:Pipe.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -78,7 +94,7 @@
 				</TransformGroup>
 			</Labels:Pipe.RenderTransform>
 		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="231,375,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="138" StatusComponent="208-01-MA1" Height="22" PipeHeight="Medium">
+		<Labels:Pipe HorizontalAlignment="Left" Margin="201,90,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="138" StatusComponent="208-01-MA1" Height="22" PipeHeight="Medium" Grid.Row="1">
 			<Labels:Pipe.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -88,7 +104,7 @@
 				</TransformGroup>
 			</Labels:Pipe.RenderTransform>
 		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="544,684,0,0" VerticalAlignment="Top" Width="77" RenderTransformOrigin="0.5,0.5" StatusComponent="230-03-MA1" PipeHeight="Medium" Height="20">
+		<Labels:Pipe HorizontalAlignment="Left" Margin="514,399,0,0" VerticalAlignment="Top" Width="77" RenderTransformOrigin="0.5,0.5" StatusComponent="230-03-MA1" PipeHeight="Medium" Height="20" Grid.Row="1">
 			<Labels:Pipe.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -98,7 +114,7 @@
 				</TransformGroup>
 			</Labels:Pipe.RenderTransform>
 		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="228,564,0,0" VerticalAlignment="Top" Color="Water" Width="114" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="230-21-CV1">
+		<Labels:Pipe HorizontalAlignment="Left" Margin="198,279,0,0" VerticalAlignment="Top" Color="Water" Width="114" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="230-21-CV1" Grid.Row="1">
 			<Labels:Pipe.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform ScaleX="0.859" ScaleY="1.164"/>
@@ -108,7 +124,7 @@
 				</TransformGroup>
 			</Labels:Pipe.RenderTransform>
 		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="552,495,0,0" VerticalAlignment="Top" Width="408" RenderTransformOrigin="0.5,0.5" StatusComponent="234-01-MA1" PipeHeight="Medium" Height="18">
+		<Labels:Pipe HorizontalAlignment="Left" Margin="522,210,0,0" VerticalAlignment="Top" Width="408" RenderTransformOrigin="0.5,0.5" StatusComponent="234-01-MA1" PipeHeight="Medium" Height="18" Grid.Row="1">
 			<Labels:Pipe.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -118,7 +134,7 @@
 				</TransformGroup>
 			</Labels:Pipe.RenderTransform>
 		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="401,171,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="152" PipeHeight="Medium" StatusComponent="212-71-ECS1" Height="22">
+		<Labels:Pipe HorizontalAlignment="Left" Margin="371,171,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="152" PipeHeight="Medium" StatusComponent="212-71-ECS1" Height="22">
 			<Labels:Pipe.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -128,7 +144,7 @@
 				</TransformGroup>
 			</Labels:Pipe.RenderTransform>
 		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="560,403,0,0" VerticalAlignment="Top" Color="Water" Width="65" RenderTransformOrigin="0.5,0.5" Height="6" StatusComponent="212-22-CV1">
+		<Labels:Pipe HorizontalAlignment="Left" Margin="530,118,0,0" VerticalAlignment="Top" Color="Water" Width="65" RenderTransformOrigin="0.5,0.5" Height="6" StatusComponent="212-22-CV1" Grid.Row="1">
 			<Labels:Pipe.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform ScaleX="0.859" ScaleY="1.164"/>
@@ -138,7 +154,7 @@
 				</TransformGroup>
 			</Labels:Pipe.RenderTransform>
 		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="446,373,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="124" StatusComponent="212-01-MA1" Height="22" PipeHeight="Medium">
+		<Labels:Pipe HorizontalAlignment="Left" Margin="416,88,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="124" StatusComponent="212-01-MA1" Height="22" PipeHeight="Medium" Grid.Row="1">
 			<Labels:Pipe.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -148,49 +164,27 @@
 				</TransformGroup>
 			</Labels:Pipe.RenderTransform>
 		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="924,488,0,0" VerticalAlignment="Top" Width="84" StatusComponent="322-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Height="10">
+		<Labels:Pipe HorizontalAlignment="Left" Margin="945,96,0,0" VerticalAlignment="Top" Color="Air" Width="45" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="325-02-MA1">
 			<Labels:Pipe.RenderTransform>
 				<TransformGroup>
-					<ScaleTransform/>
+					<ScaleTransform ScaleX="0.859" ScaleY="1.164"/>
+					<SkewTransform/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Labels:Pipe.RenderTransform>
+		</Labels:Pipe>
+		<Labels:Pipe HorizontalAlignment="Left" Margin="915,211,0,0" VerticalAlignment="Top" Color="Air" Width="72" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="325-02-MA1">
+			<Labels:Pipe.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="0.859" ScaleY="1.164"/>
 					<SkewTransform/>
 					<RotateTransform Angle="90"/>
 					<TranslateTransform/>
 				</TransformGroup>
 			</Labels:Pipe.RenderTransform>
 		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="1041,96,0,0" VerticalAlignment="Top" Color="Air" Width="45" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="325-02-MA1">
-			<Labels:Pipe.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform ScaleX="0.859" ScaleY="1.164"/>
-					<SkewTransform/>
-					<RotateTransform Angle="0"/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Labels:Pipe.RenderTransform>
-		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="868,211,0,0" VerticalAlignment="Top" Color="Air" Width="197" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="325-02-MA1">
-			<Labels:Pipe.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform ScaleX="0.859" ScaleY="1.164"/>
-					<SkewTransform/>
-					<RotateTransform Angle="0"/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Labels:Pipe.RenderTransform>
-		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="1054,532,0,0" VerticalAlignment="Top" Width="87" RenderTransformOrigin="0.5,0.5" StatusComponent="322-01-MA1" PipeHeight="Medium" Height="22">
-			<Labels:Pipe.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform Angle="0"/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Labels:Pipe.RenderTransform>
-		</Labels:Pipe>
-		<Labels:Pipe HorizontalAlignment="Left" Margin="961,519,0,0" VerticalAlignment="Top" Width="66" StatusComponent="322-01-MA1" PipeHeight="Medium" Height="22"/>
-		<Rectangle HorizontalAlignment="Left" Height="745" Stroke="Black" VerticalAlignment="Center" Width="642" RadiusX="15" RadiusY="15" StrokeThickness="3" StrokeDashArray="2 2" Margin="79,0,0,0" d:IsLocked="True"/>
-		<Rectangle HorizontalAlignment="Left" Height="2" Margin="923,333,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" RenderTransformOrigin="0.5,0.5">
+		<Rectangle HorizontalAlignment="Left" Height="2" Margin="1043,142,0,0" Stroke="Black" VerticalAlignment="Top" Width="62" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
 			<Rectangle.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -200,7 +194,7 @@
 				</TransformGroup>
 			</Rectangle.RenderTransform>
 		</Rectangle>
-		<Rectangle HorizontalAlignment="Left" Height="112" Margin="477,132,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5">
+		<Rectangle HorizontalAlignment="Left" Height="112" Margin="447,132,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5">
 			<Rectangle.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -210,7 +204,7 @@
 				</TransformGroup>
 			</Rectangle.RenderTransform>
 		</Rectangle>
-		<Rectangle HorizontalAlignment="Left" Height="112" Margin="214,132,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5">
+		<Rectangle HorizontalAlignment="Left" Height="112" Margin="184,132,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5">
 			<Rectangle.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -220,7 +214,7 @@
 				</TransformGroup>
 			</Rectangle.RenderTransform>
 		</Rectangle>
-		<Machines:MaterialInletOutlet HorizontalAlignment="Left" Margin="156,44,0,0" VerticalAlignment="Top" Width="114" Height="120" RenderTransformOrigin="0.5,0.5">
+		<Machines:MaterialInletOutlet HorizontalAlignment="Left" Margin="126,44,0,0" VerticalAlignment="Top" Width="114" Height="120" RenderTransformOrigin="0.5,0.5">
 			<Machines:MaterialInletOutlet.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -230,7 +224,7 @@
 				</TransformGroup>
 			</Machines:MaterialInletOutlet.RenderTransform>
 		</Machines:MaterialInletOutlet>
-		<Machines:MaterialInletOutlet HorizontalAlignment="Left" Margin="419,44,0,0" VerticalAlignment="Top" Width="116" Height="120" RenderTransformOrigin="0.5,0.5">
+		<Machines:MaterialInletOutlet HorizontalAlignment="Left" Margin="389,44,0,0" VerticalAlignment="Top" Width="116" Height="120" RenderTransformOrigin="0.5,0.5">
 			<Machines:MaterialInletOutlet.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -240,8 +234,8 @@
 				</TransformGroup>
 			</Machines:MaterialInletOutlet.RenderTransform>
 		</Machines:MaterialInletOutlet>
-		<Machines:ARF_Roll_Filter HorizontalAlignment="Left" Margin="434,215,0,0" VerticalAlignment="Top" Height="155" Width="149"/>
-		<Machines:CV_Valve_001 HorizontalAlignment="Left" Margin="171,519,0,0" VerticalAlignment="Top" Height="100" Width="100" Color="Water" RenderTransformOrigin="0.51,0.539">
+		<Machines:ARF_Roll_Filter HorizontalAlignment="Left" Margin="404,215,0,0" VerticalAlignment="Top" Height="155" Width="149" Grid.RowSpan="2"/>
+		<Machines:CV_Valve_001 HorizontalAlignment="Left" Margin="141,234,0,0" VerticalAlignment="Top" Height="100" Width="100" Color="Water" RenderTransformOrigin="0.51,0.539" Grid.Row="1">
 			<Machines:CV_Valve_001.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
@@ -251,7 +245,7 @@
 				</TransformGroup>
 			</Machines:CV_Valve_001.RenderTransform>
 		</Machines:CV_Valve_001>
-		<Machines:CV_Valve_001 HorizontalAlignment="Left" Margin="593,356,0,0" VerticalAlignment="Top" Height="100" Width="100" Color="Water" RenderTransformOrigin="0.51,0.539">
+		<Machines:CV_Valve_001 HorizontalAlignment="Left" Margin="563,71,0,0" VerticalAlignment="Top" Height="100" Width="100" Color="Water" RenderTransformOrigin="0.51,0.539" Grid.Row="1">
 			<Machines:CV_Valve_001.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
@@ -261,7 +255,7 @@
 				</TransformGroup>
 			</Machines:CV_Valve_001.RenderTransform>
 		</Machines:CV_Valve_001>
-		<Machines:CV_Valve_001 HorizontalAlignment="Left" Margin="593,233,0,0" VerticalAlignment="Top" Height="100" Width="100" Color="Air" RenderTransformOrigin="0.51,0.539">
+		<Machines:CV_Valve_001 HorizontalAlignment="Left" Margin="563,233,0,0" VerticalAlignment="Top" Height="100" Width="100" Color="Air" RenderTransformOrigin="0.51,0.539" Grid.RowSpan="2">
 			<Machines:CV_Valve_001.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
@@ -271,10 +265,11 @@
 				</TransformGroup>
 			</Machines:CV_Valve_001.RenderTransform>
 		</Machines:CV_Valve_001>
-		<Machines:EC_Filtro HorizontalAlignment="Left" Margin="1022,158,0,0" VerticalAlignment="Top" Height="67" Width="60"/>
-		<Machines:EC_Metal_Detector HorizontalAlignment="Left" Margin="252,270,0,0" VerticalAlignment="Top" Height="38" Width="44"/>
-		<Machines:GR_001 HorizontalAlignment="Left" Margin="264,414,0,0" VerticalAlignment="Top" Height="286" Width="285"/>
-		<Machines:External HorizontalAlignment="Left" Margin="369,159,0,0" VerticalAlignment="Top" Height="58" Width="59" RenderTransformOrigin="0.5,0.5">
+		<Machines:EC_Filtro HorizontalAlignment="Left" Margin="922,149,0,0" VerticalAlignment="Top" Height="76" Width="68"/>
+		<Machines:SLX_Silo HorizontalAlignment="Left" Margin="828,243,0,0" VerticalAlignment="Top" Height="339" Width="245" Grid.RowSpan="2"/>
+		<Machines:EC_Metal_Detector HorizontalAlignment="Left" Margin="222,270,0,0" VerticalAlignment="Top" Height="38" Width="44" Grid.RowSpan="2"/>
+		<Machines:GR_001 HorizontalAlignment="Left" Margin="234,129,0,0" VerticalAlignment="Top" Height="286" Width="285" Grid.Row="1"/>
+		<Machines:External HorizontalAlignment="Left" Margin="339,159,0,0" VerticalAlignment="Top" Height="58" Width="59" RenderTransformOrigin="0.5,0.5">
 			<Machines:External.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -284,7 +279,7 @@
 				</TransformGroup>
 			</Machines:External.RenderTransform>
 		</Machines:External>
-		<Machines:External HorizontalAlignment="Left" Margin="103,159,0,0" VerticalAlignment="Top" Height="58" Width="59" RenderTransformOrigin="0.5,0.5">
+		<Machines:External HorizontalAlignment="Left" Margin="73,159,0,0" VerticalAlignment="Top" Height="58" Width="59" RenderTransformOrigin="0.5,0.5">
 			<Machines:External.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -294,12 +289,10 @@
 				</TransformGroup>
 			</Machines:External.RenderTransform>
 		</Machines:External>
-		<Machines:SLX_Silo HorizontalAlignment="Left" Margin="773,198,0,0" VerticalAlignment="Top" Height="245" Width="181"/>
-		<Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="176,308,0,0" VerticalAlignment="Top" Width="152" />
-		<Machines:VT_BlowerCentrifuge_down HorizontalAlignment="Left" Margin="608,650,0,0" VerticalAlignment="Top" Height="70" Width="64"/>
-		<Machines:VT_BlowerCentrifuge_down HorizontalAlignment="Left" Margin="1006,489,0,0" VerticalAlignment="Top" Height="70" Width="64"/>
-		<Machines:VT_BlowerCentrifuge_down HorizontalAlignment="Left" Margin="1076,60,0,0" VerticalAlignment="Top" Height="70" Width="64"/>
-		<Machines:SCW_ScrewConveyor_straight HorizontalAlignment="Left" Margin="827,441,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="152" Height="18" >
+		<Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="146,23,0,0" VerticalAlignment="Top" Width="152" Grid.Row="1" />
+		<Machines:VT_BlowerCentrifuge_down HorizontalAlignment="Left" Margin="578,365,0,0" VerticalAlignment="Top" Height="70" Width="64" Grid.Row="1"/>
+		<Machines:VT_BlowerCentrifuge_down HorizontalAlignment="Left" Margin="984,60,0,0" VerticalAlignment="Top" Height="70" Width="64"/>
+		<Machines:SCW_ScrewConveyor_straight HorizontalAlignment="Left" Margin="329,396,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="195" Height="20" Grid.Row="1">
 			<Machines:SCW_ScrewConveyor_straight.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -309,101 +302,96 @@
 				</TransformGroup>
 			</Machines:SCW_ScrewConveyor_straight.RenderTransform>
 		</Machines:SCW_ScrewConveyor_straight>
-		<Machines:SCW_ScrewConveyor_straight HorizontalAlignment="Left" Margin="359,681,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="195" Height="20">
-			<Machines:SCW_ScrewConveyor_straight.RenderTransform>
-				<TransformGroup>
-					<ScaleTransform/>
-					<SkewTransform/>
-					<RotateTransform Angle="0"/>
-					<TranslateTransform/>
-				</TransformGroup>
-			</Machines:SCW_ScrewConveyor_straight.RenderTransform>
-		</Machines:SCW_ScrewConveyor_straight>
-		<TextBlock HorizontalAlignment="Left" Margin="1244,638,0,0" TextWrapping="Wrap" 
+		<TextBlock HorizontalAlignment="Left" Margin="1244,353,0,0" TextWrapping="Wrap" 
             VerticalAlignment="Top" Height="55" Width="94" TextAlignment="Center" 
-            FontSize="20" Foreground="White"><Run Text="External"/><LineBreak/><Run Text="Interface"/></TextBlock>
-		<Labels:JumpLabel HorizontalAlignment="Left" 
-            Margin="1126,506,0,0" 
-            VerticalAlignment="Top" 
-            JumpFromLabel="324-01-MA1" 
-            JumpToLabel="326-21-CV1"/>
+            FontSize="20" Foreground="White" Grid.Row="1"><Run Text="External"/><LineBreak/><Run Text="Interface"/></TextBlock>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-                        Margin="176,332,0,0" 
+                        Margin="146,47,0,0" 
                         VerticalAlignment="Top" 
-                        ComponentName="208-01-MA1"/>
+                        ComponentName="208-01-MA1" Grid.Row="1"/>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="595,713,0,0" 
+            Margin="565,428,0,0" 
             VerticalAlignment="Top" 
-            ComponentName="234-01-MA1"/>
+            ComponentName="234-01-MA1" Grid.Row="1"/>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="362,465,0,0" 
+            Margin="332,180,0,0" 
             VerticalAlignment="Top" 
-            ComponentName="230-01-MA1"/>
+            ComponentName="230-01-MA1" Grid.Row="1"/>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="364,330,0,0" 
+            Margin="334,45,0,0" 
             VerticalAlignment="Top" 
-            ComponentName="212-01-MA1"/>
+            ComponentName="212-01-MA1" Grid.Row="1"/>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="361,713,0,0" 
+            Margin="331,428,0,0" 
             VerticalAlignment="Top" 
-            ComponentName="230-03-MA1"/>
+            ComponentName="230-03-MA1" Grid.Row="1"/>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="595,423,0,0" 
+            Margin="565,138,0,0" 
             VerticalAlignment="Top" 
-            ComponentName="212-22-CV1"/>
+            ComponentName="212-22-CV1" Grid.Row="1"/>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="176,501,0,0" 
+            Margin="146,216,0,0" 
             VerticalAlignment="Top" 
-            ComponentName="230-21-CV1"/>
+            ComponentName="230-21-CV1" Grid.Row="1"/>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="827,465,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="322-01-MA1"/>
-		<Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="993,552,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="324-01-MA1"/>
-		<Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="1159,70,0,0" 
+            Margin="1058,70,0,0" 
             VerticalAlignment="Top" 
             ComponentName="325-02-MA1"/>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="1094,160,0,0" 
+            Margin="997,166,0,0" 
             VerticalAlignment="Top" 
             ComponentName="325-01-EC1"/>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="493,128,0,0" 
+            Margin="463,128,0,0" 
             VerticalAlignment="Top" 
             ComponentName="212-71-ECS1"/>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="804,146,0,0" 
+            Margin="896,275,0,0" 
             VerticalAlignment="Top" 
-            ComponentName="320-61-LEV"/>
+            ComponentName="320-61-LEV" Grid.RowSpan="2"/>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="595,215,0,0" 
+            Margin="565,215,0,0" 
             VerticalAlignment="Top" 
             ComponentName="212-21-CV1"/>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="228,215,0,0" 
+            Margin="198,215,0,0" 
             VerticalAlignment="Top" 
             ComponentName="208-02-EC1"/>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="228,128,0,0" 
+            Margin="198,128,0,0" 
             VerticalAlignment="Top" 
             ComponentName="208-71-ECS1"/>
-		<Labels:DetailsLabel HorizontalAlignment="Left" Margin="985,309,0,0" VerticalAlignment="Top" ComponentName="320-HYD" DetailsPageName="D320_2" />
-		<Labels:DetailsLabel HorizontalAlignment="Left" Margin="901,146,0,0" VerticalAlignment="Top" ComponentName="320-VIEW" DetailsPageName="D320" HideComponentName="True"/>
-		<TextBlock HorizontalAlignment="Left" Margin="85,732,0,0" TextWrapping="Wrap" 
+		<Labels:DetailsLabel HorizontalAlignment="Left" Margin="1105,118,0,0" VerticalAlignment="Top" ComponentName="320-HYD" DetailsPageName="D320_2" Grid.Row="1" />
+		<Labels:DetailsLabel HorizontalAlignment="Left" Margin="993,275,0,0" VerticalAlignment="Top" ComponentName="320-VIEW" DetailsPageName="D320" HideComponentName="True" Grid.RowSpan="2"/>
+		<TextBlock HorizontalAlignment="Left" Margin="690,39,0,0" TextWrapping="Wrap" 
             VerticalAlignment="Top" Height="50" Width="94" TextAlignment="Center" 
             FontSize="36" Foreground="Black" FontWeight="Bold"><Run Text="Q4"/><Run Language="it-it" Text="1"/><LineBreak/><Run Language="it-it"/></TextBlock>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-		Margin="509,528,0,0" 
+		Margin="479,243,0,0" 
 		VerticalAlignment="Top" 
-		ComponentName="230-02-MA1"/>
+		ComponentName="230-02-MA1" Grid.Row="1"/>
 		<Labels:DeviceLabel HorizontalAlignment="Left" 
-		Margin="509,590,0,0" 
+		Margin="479,305,0,0" 
 		VerticalAlignment="Top" 
-		ComponentName="230-01-YA1"/>
-		<Labels:DetailsLabel Margin="1260,703,98,80" ComponentName="099-71-EXT" DetailsPageName="D099"/>
+		ComponentName="230-01-YA1" Grid.Row="1"/>
+		<Labels:DetailsLabel Margin="1260,418,98,80" ComponentName="099-71-EXT" DetailsPageName="D099" Grid.Row="1"/>
+		<Labels:JumpLabel HorizontalAlignment="Left" 
+            Margin="1056,343,0,0" 
+            VerticalAlignment="Top" 
+            JumpFromLabel="320-61-LEV" 
+            JumpToLabel="322-01-MA1" Grid.Row="1"/>
+		<Misc:DashedLine HorizontalAlignment="Left" Margin="403,139,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="4" Grid.Row="1" Width="766">
+			<Misc:DashedLine.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform Angle="90"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Misc:DashedLine.RenderTransform>
+		</Misc:DashedLine>
+		<TextBlock HorizontalAlignment="Left" Margin="794,39,0,0" TextWrapping="Wrap" 
+		VerticalAlignment="Top" Height="50" Width="94" TextAlignment="Center" 
+		FontSize="36" Foreground="Black" FontWeight="Bold"><Run Text="Q"/><Run Language="it-it" Text="5"/><Run Text="1"/><LineBreak/><Run/></TextBlock>
 	</Grid>
 </UserControl>
