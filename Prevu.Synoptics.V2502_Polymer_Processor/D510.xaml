@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Prevu.Synoptics.D510"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             mc:Ignorable="d" 
+            d:Background="{DynamicResource MaterialDesignPaper}">
+    <Grid Height="300" Width="400" >
+        <Labels:Pipe HorizontalAlignment="Left" Margin="188,40,0,0" VerticalAlignment="Top" Width="68" StatusComponent="520-27-CV1" Color="Air"/>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="188,110,0,0" VerticalAlignment="Top" Width="68" StatusComponent="520-27-CV2" Color="Air"/>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="188,180,0,0" VerticalAlignment="Top" Width="68" StatusComponent="520-27-CV3" Color="Air"/>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="188,250,0,0" VerticalAlignment="Top" Width="68" StatusComponent="520-27-CV4" Color="Air"/>
+        <Machines:CV_Valve HorizontalAlignment="Left" Margin="131,6,0,0" VerticalAlignment="Top" Height="74" Width="67"/>
+        <Machines:CV_Valve HorizontalAlignment="Left" Margin="131,76,0,0" VerticalAlignment="Top" Height="74" Width="67"/>
+        <Machines:CV_Valve HorizontalAlignment="Left" Margin="131,146,0,0" VerticalAlignment="Top" Height="74" Width="67"/>
+        <Machines:CV_Valve HorizontalAlignment="Left" Margin="131,216,0,0" VerticalAlignment="Top" Height="74" Width="67"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" Margin="32,18,0,0" VerticalAlignment="Top" ComponentName="510-27-CV1"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" Margin="32,88,0,0" VerticalAlignment="Top" ComponentName="510-27-CV2"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" Margin="32,158,0,0" VerticalAlignment="Top" ComponentName="510-27-CV3"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" Margin="32,228,0,0" VerticalAlignment="Top" ComponentName="510-27-CV4"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" Margin="290,0,0,0" VerticalAlignment="Center" ComponentName="510-VLV-BLK"/>
+
+    </Grid>
+</UserControl>
