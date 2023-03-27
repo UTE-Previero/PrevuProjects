@@ -5,6 +5,7 @@
              xmlns:local="clr-namespace:Prevu.Synoptics"
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             xmlns:Belts="clr-namespace:Prevu.Drawings.Machines.Belts;assembly=Prevu.Drawings" 
              x:Class="Prevu.Synoptics.P680" mc:Ignorable="d"
              Height="840" Width="1420" d:Background="{DynamicResource MaterialDesignPaper}">
     <Grid RenderTransformOrigin="0.5,0.5">
@@ -16,7 +17,7 @@
                 <TranslateTransform/>
             </TransformGroup>
         </Grid.RenderTransform>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="689,630,0,0" VerticalAlignment="Top" Width="101" StatusComponent="670-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5">
+        <Labels:Pipe HorizontalAlignment="Left" Margin="828,432,0,0" VerticalAlignment="Top" Width="89" StatusComponent="659-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" VisibilitySignal="659-22-ZS1" VisibilityComponent="659-22-CV1">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -26,7 +27,27 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="657,629,0,0" VerticalAlignment="Top" Width="99" StatusComponent="660-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5">
+        <Labels:Pipe HorizontalAlignment="Left" Margin="735,584,0,0" VerticalAlignment="Top" Width="134" StatusComponent="670-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Belts:NT_NastroBuffer_wDrum HorizontalAlignment="Left" Margin="822,476,0,244" Width="326" RenderTransformOrigin="0.5,0.5">
+            <Belts:NT_NastroBuffer_wDrum.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform AngleY="-0.085"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.249"/>
+                </TransformGroup>
+            </Belts:NT_NastroBuffer_wDrum.RenderTransform>
+        </Belts:NT_NastroBuffer_wDrum>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="528,435,0,0" VerticalAlignment="Top" Width="97" StatusComponent="659-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" VisibilitySignal="659-21-ZS1" VisibilityComponent="659-21-CV1">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -46,12 +67,32 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="735,584,0,0" VerticalAlignment="Top" Width="134" StatusComponent="670-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5">
+        <Belts:NT_NastroBuffer_wDrum HorizontalAlignment="Left" Margin="302,476,0,244" Width="326" RenderTransformOrigin="0.5,0.5">
+            <Belts:NT_NastroBuffer_wDrum.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.085"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.249"/>
+                </TransformGroup>
+            </Belts:NT_NastroBuffer_wDrum.RenderTransform>
+        </Belts:NT_NastroBuffer_wDrum>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="689,630,0,0" VerticalAlignment="Top" Width="101" StatusComponent="670-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="0"/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="657,629,0,0" VerticalAlignment="Top" Width="99" StatusComponent="660-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
@@ -185,7 +226,7 @@
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
         <Machines:SCW_ScrewConveyor_straight HorizontalAlignment="Left" Margin="388,233,0,0" VerticalAlignment="Top" Width="250"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="540,353,0,0" VerticalAlignment="Top" Width="73" StatusComponent="659-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5">
+        <Labels:Pipe HorizontalAlignment="Left" Margin="540,353,0,0" VerticalAlignment="Top" Width="73" StatusComponent="659-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" VisibilityComponent="" VisibilitySignal="">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -214,26 +255,6 @@
             Margin="895,368,0,0" 
             VerticalAlignment="Top" 
             ComponentName="659-22-CV1"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="528,435,0,0" VerticalAlignment="Top" Width="97" StatusComponent="659-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" VisibilitySignal="659-21-ZS1">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="828,432,0,0" VerticalAlignment="Top" Width="89" StatusComponent="659-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" VisibilitySignal="659-22-ZS1">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
         <Rectangle HorizontalAlignment="Left" Height="2" Margin="964,697,0,0" Stroke="Black" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
@@ -254,9 +275,6 @@
                 </TransformGroup>
             </Machines:External.RenderTransform>
         </Machines:External>
-        <Rectangle HorizontalAlignment="Left" Height="121" Margin="318,477,0,0" VerticalAlignment="Top" Width="290" Fill="Gray" RadiusX="15" RadiusY="15"/>
-        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="318,578,0,0" VerticalAlignment="Top" Width="290"/>
-        <Machines:SeparationPaddle HorizontalAlignment="Left" Margin="560,477,0,0" VerticalAlignment="Top" Height="48" Width="45"/>
         <Labels:Pipe HorizontalAlignment="Left" Margin="308,434,0,0" VerticalAlignment="Top" Width="149" StatusComponent="660-22-CV1" Color="Air" Height="6"/>
         <Labels:Pipe HorizontalAlignment="Left" Margin="327,457,0,0" VerticalAlignment="Top" Width="49" StatusComponent="660-22-CV1" Color="Air" Height="6" RenderTransformOrigin="0.5,0.5">
             <Labels:Pipe.RenderTransform>
@@ -314,9 +332,6 @@
             Margin="425,507,0,0" 
             VerticalAlignment="Top" 
             ComponentName="660-41-LT1"/>
-        <Rectangle HorizontalAlignment="Left" Height="121" Margin="839,477,0,0" VerticalAlignment="Top" Width="290" Fill="Gray" RadiusX="15" RadiusY="15"/>
-        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="839,578,0,0" VerticalAlignment="Top" Width="290"/>
-        <Machines:SeparationPaddle HorizontalAlignment="Left" Margin="843,477,0,0" VerticalAlignment="Top" Height="48" Width="45"/>
         <Labels:Pipe HorizontalAlignment="Left" Margin="975,434,0,0" VerticalAlignment="Top" Width="149" StatusComponent="670-22-CV1" Color="Air" Height="6"/>
         <Labels:Pipe HorizontalAlignment="Left" Margin="953,457,0,0" VerticalAlignment="Top" Width="49" StatusComponent="670-22-CV1" Color="Air" Height="6" RenderTransformOrigin="0.5,0.5">
             <Labels:Pipe.RenderTransform>

@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Synoptics
+namespace Prevu.Drawings.Machines.Stirrer
 {
-  /// <summary>
-  /// Interaction logic for D09971EXT.xaml
-  /// </summary>
-  public partial class D210 : UserControl
+    /// <summary>
+    /// Logica di interazione per STR_PrewashReactor_wScrew.xaml
+    /// </summary>
+    public partial class STR_PrewashReactor_wScrew : UserControl
     {
-        public D210()
+        public STR_PrewashReactor_wScrew()
         {
             InitializeComponent();
-        }
-
-        private void DeviceLabel_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
