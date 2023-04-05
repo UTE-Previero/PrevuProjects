@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Prevu.Synoptics.PlantView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+             xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             xmlns:lex="http://wpflocalizeextension.codeplex.com"
+             lex:ResxLocalizationProvider.DefaultAssembly="Prevu.Localization"
+             lex:ResxLocalizationProvider.DefaultDictionary="Resources"             
+             mc:Ignorable="d" 
+             d:Height="840" d:Width="1700" d:Background="{DynamicResource MaterialDesignPaper}">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="645" Margin="450,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="825" RadiusX="15" RadiusY="15" StrokeThickness="6" StrokeDashArray="2 2"/>
+        <Machines:QX_HMI_ElectricalCabinet HorizontalAlignment="Left" Margin="623,240,0,0" VerticalAlignment="Top" Height="236" Width="427"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" Height="50" Margin="670,170,0,0" VerticalAlignment="Top" Width="90" ComponentName="Q01"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" Height="50" Margin="795,170,0,0" VerticalAlignment="Top" Width="90" ComponentName="Q91"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" Height="50" Margin="706,495,0,0" VerticalAlignment="Top" Width="90" ComponentName="S910"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" Height="50" Margin="328,170,0,0" VerticalAlignment="Top" Width="90" ComponentName="ESTOP-AREA-01"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" Height="50" Margin="880,494,0,0" VerticalAlignment="Top" Width="90" ComponentName="S911"/>
+        <Labels:GroupLabel HorizontalAlignment="Left" Margin="892,554,0,0" VerticalAlignment="Top" GroupName="810"/>
+        <Labels:GroupLabel HorizontalAlignment="Left" Margin="684,557,0,0" VerticalAlignment="Top" GroupName="766"/>
+        <Labels:GroupLabel HorizontalAlignment="Left" Margin="754,557,0,0" VerticalAlignment="Top" GroupName="786"/>
+
+    </Grid>
+</UserControl>
