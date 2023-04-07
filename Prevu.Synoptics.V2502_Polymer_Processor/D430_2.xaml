@@ -1,0 +1,31 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D430_2" 
+             mc:Ignorable="d" 
+             d:Background="{DynamicResource MaterialDesignPaper}">
+    <Grid Height="388" MinWidth="380" Width="565">
+        <Separation:VSP_DETAILDISTRIBUTORS_SeparationTank_wMotorsAndScrew Margin="10,10,10,10"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+		Margin="56,14,0,0" 
+		VerticalAlignment="Top" 
+		ComponentName="430-02-MA1"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+            Margin="169,14,0,0" 
+            VerticalAlignment="Top" 
+            ComponentName="430-02-MA2"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+            Margin="291,14,0,0" 
+            VerticalAlignment="Top" 
+            ComponentName="430-02-MA3"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+            Margin="404,14,0,0" 
+            VerticalAlignment="Top" 
+            ComponentName="430-02-MA4"/>
+    </Grid>
+</UserControl>

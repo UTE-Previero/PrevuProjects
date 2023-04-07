@@ -8,6 +8,7 @@
              x:Class="Prevu.Synoptics.P510" mc:Ignorable="d" 
              Height="840" Width="1420" d:Background="{DynamicResource MaterialDesignPaper}">
     <Grid Margin="0,2,0,-2">
+        <Labels:Pipe HorizontalAlignment="Left" Margin="836,498,0,0" VerticalAlignment="Top" Width="64" StatusComponent="544-01-MA1" Color="Air"/>
         <Labels:Pipe HorizontalAlignment="Left" Margin="282,570,0,0" VerticalAlignment="Top" Width="100" Color="Water" StatusComponent="508-21-CV1" RenderTransformOrigin="0.5,0.5">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -315,7 +316,6 @@
             </Rectangle.RenderTransform>
         </Rectangle>
         <Labels:Pipe HorizontalAlignment="Left" Margin="1113,507,0,0" VerticalAlignment="Top" Width="90" StatusComponent="544-01-MA1" PipeHeight="Medium" Height="14"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="575,497,0,0" VerticalAlignment="Top" Width="330" StatusComponent="544-01-MA1" Color="Air"/>
         <Labels:Pipe HorizontalAlignment="Left" Margin="884,427,0,0" VerticalAlignment="Top" Width="98" StatusComponent="514-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" VisibilitySignal="" Height="12">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -327,13 +327,7 @@
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
         <Labels:Pipe HorizontalAlignment="Left" Margin="956,496,0,0" VerticalAlignment="Top" Width="117" StatusComponent="514-01-MA1" PipeHeight="Medium" VisibilitySignal="540-21-ZS1"/>
-        <Rectangle HorizontalAlignment="Left" Height="169" Margin="514,423,0,0" Stroke="Black" StrokeThickness="2" VerticalAlignment="Top" Width="360" RadiusX="15" RadiusY="15"/>
-        <Rectangle HorizontalAlignment="Left" Height="35" Margin="817,467,0,0" Stroke="Black" VerticalAlignment="Top" Width="2"/>
-        <Ellipse HorizontalAlignment="Left" Height="16" Margin="810,491,0,0" Stroke="#FFBDBDBD" VerticalAlignment="Top" Width="16" OpacityMask="#FFBDBDBD" Fill="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}"/>
         <Machines:VT_BlowerCentrifuge_down HorizontalAlignment="Left" Margin="1071,461,0,0" VerticalAlignment="Top" Height="67" Width="67"/>
-        <Machines:DRY_HeatingBattery HorizontalAlignment="Left" Margin="535,467,0,0" VerticalAlignment="Top" Height="65" Width="66"/>
-        <Machines:DRY_HeatingBattery HorizontalAlignment="Left" Margin="629,467,0,0" VerticalAlignment="Top" Height="65" Width="66"/>
-        <Machines:DRY_HeatingBattery HorizontalAlignment="Left" Margin="723,467,0,0" VerticalAlignment="Top" Height="65" Width="66"/>
         <Machines:DV_Diverter_T HorizontalAlignment="Left" Margin="883,436,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
             <Machines:DV_Diverter_T.RenderTransform>
                 <TransformGroup>
@@ -352,45 +346,7 @@
             Margin="952,427,0,0" 
             VerticalAlignment="Top" 
             ComponentName="540-21-CV1"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="775,428,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="540-41-TT1"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="523,535,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="540-13-R1"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="617,535,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="540-12-R1"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="711,535,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="540-11-R1" Loaded="DeviceLabel_Loaded"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="628,691,0,0" VerticalAlignment="Top" Width="330" StatusComponent="554-01-MA1" Color="Air"/>
-        <Rectangle HorizontalAlignment="Left" Height="169" Margin="568,617,0,0" Stroke="Black" StrokeThickness="2" VerticalAlignment="Top" Width="360" RadiusX="15" RadiusY="15"/>
-        <Rectangle HorizontalAlignment="Left" Height="35" Margin="870,661,0,0" Stroke="Black" VerticalAlignment="Top" Width="2"/>
-        <Ellipse HorizontalAlignment="Left" Height="16" Margin="864,685,0,0" Stroke="#FFBDBDBD" VerticalAlignment="Top" Width="16" OpacityMask="#FFBDBDBD" Fill="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}"/>
-        <Machines:DRY_HeatingBattery HorizontalAlignment="Left" Margin="587,661,0,0" VerticalAlignment="Top" Height="65" Width="66"/>
-        <Machines:DRY_HeatingBattery HorizontalAlignment="Left" Margin="682,661,0,0" VerticalAlignment="Top" Height="65" Width="66"/>
-        <Machines:DRY_HeatingBattery HorizontalAlignment="Left" Margin="776,661,0,0" VerticalAlignment="Top" Height="65" Width="66"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="828,622,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="550-41-TT1"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="575,729,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="550-13-R1"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="670,729,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="550-12-R1"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="764,729,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="550-11-R1"/>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="899,691,0,0" VerticalAlignment="Top" Width="59" StatusComponent="554-01-MA1" Color="Air"/>
         <Labels:Pipe HorizontalAlignment="Left" Margin="1167,700,0,0" VerticalAlignment="Top" Width="118" StatusComponent="534-01-MA1" PipeHeight="Medium" Height="14"/>
         <Labels:Pipe HorizontalAlignment="Left" Margin="929,616,0,0" VerticalAlignment="Top" Width="116" StatusComponent="544-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" VisibilitySignal="" Height="12">
             <Labels:Pipe.RenderTransform>
@@ -458,5 +414,7 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
+        <Labels:DetailsLabel HorizontalAlignment="Left" Margin="803,476,0,0" VerticalAlignment="Top" ComponentName="540-DRY" DetailsPageName="D540"/>
+        <Labels:DetailsLabel HorizontalAlignment="Left" Margin="853,669,0,0" VerticalAlignment="Top" ComponentName="550-DRY" DetailsPageName="D550"/>
     </Grid>
 </UserControl>

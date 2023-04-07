@@ -23,9 +23,5 @@ namespace Prevu.Synoptics
             InitializeComponent();
         }
 
-        private void EXC_Air_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

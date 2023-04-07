@@ -6,7 +6,7 @@
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" 
-             x:Class="Prevu.Synoptics.P420" mc:Ignorable="d" 
+             x:Class="Prevu.Synoptics.P430" mc:Ignorable="d" 
              Height="840" Width="1420" d:Background="{DynamicResource MaterialDesignPaper}">
     <Grid>
         <Labels:Pipe HorizontalAlignment="Left" Margin="129,147,0,0" VerticalAlignment="Top" Width="118" Color="Water" StatusComponent="420-71-ECS1" VisibilityComponent=""/>
@@ -138,10 +138,6 @@
             VerticalAlignment="Top" 
             ComponentName="450-03-MA1"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="559,131,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="430-01-MA1"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
             Margin="769,292,0,0" 
             VerticalAlignment="Top" 
             ComponentName="430-41-LT1" RenderTransformOrigin="0.5,0.5">
@@ -154,10 +150,6 @@
                 </TransformGroup>
             </Labels:DeviceLabel.RenderTransform>
         </Labels:DeviceLabel>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="686,131,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="430-02-MA1"/>
         <Labels:Pipe HorizontalAlignment="Left" Margin="1046,543,0,0" VerticalAlignment="Top" Width="70" StatusComponent="444-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -514,5 +506,15 @@
             Margin="28,90,0,0" 
             VerticalAlignment="Top" 
             ComponentName="420-71-ECS3"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+            Margin="556,130,0,0" 
+            VerticalAlignment="Top" 
+            ComponentName="430-SEP-PADDLES"/>
+        <Labels:DetailsLabel HorizontalAlignment="Left" Margin="651,130,0,0" VerticalAlignment="Top" ComponentName="430-PADDLES" DetailsPageName="D430" HideComponentName="True"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+            Margin="708,130,0,0" 
+            VerticalAlignment="Top" 
+            ComponentName="430-SEP-DISTR"/>
+        <Labels:DetailsLabel HorizontalAlignment="Left" Margin="802,130,0,0" VerticalAlignment="Top" ComponentName="430-DISTRIBUTORS" DetailsPageName="D430_2" HideComponentName="True"/>
     </Grid>
 </UserControl>

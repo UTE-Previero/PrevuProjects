@@ -13,14 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Synoptics;
-/// <summary>
-/// Interaction logic for SH.xaml
-/// </summary>
-public partial class SH : UserControl
+namespace Prevu.Synoptics
 {
-  public SH()
-  {
-    InitializeComponent();
-  }
+    /// <summary>
+    /// Interaction logic for D380.xaml
+    /// </summary>
+    public partial class D510 : UserControl
+    {
+        public D510()
+        {
+            InitializeComponent();
+        }
+    }
 }
