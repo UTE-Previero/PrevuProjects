@@ -7,14 +7,14 @@
 						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              mc:Ignorable="d" 
+             Height="344" Width="368"
              d:Background="{DynamicResource MaterialDesignPaper}">
-    <Grid Height="411" MinWidth="380" Width="444">
-        <Machines:BBF_BigBagFilling Height="385" VerticalAlignment="Center" HorizontalAlignment="Left" Width="430" Margin="10,0,0,0" />
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="183,72,0,0" VerticalAlignment="Top" ComponentName="873-62-BAG" SignalName="LSH"/>
+    <Canvas>
+        <Machines:BBF_BigBagFilling Height="320" VerticalAlignment="Center" HorizontalAlignment="Center" Width="343" Canvas.Left="10" Canvas.Top="10" />
+        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Top" ComponentName="873-62-BAG" SignalName="LSH" Canvas.Left="146" Canvas.Top="72"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-		Margin="180,0,0,0" 
-		VerticalAlignment="Center" 
-		ComponentName="873-62-BAG"/>
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="175,240,0,0" VerticalAlignment="Top" ComponentName="873-62-BAG" SignalName="ENABLE"/>
-    </Grid>
+		VerticalAlignment="Top" 
+		ComponentName="873-62-BAG" Canvas.Left="136" Canvas.Top="154"/>
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="873-62-BAG" SignalName="SEL" Canvas.Left="148" Canvas.Top="214"/>
+    </Canvas>
 </UserControl>

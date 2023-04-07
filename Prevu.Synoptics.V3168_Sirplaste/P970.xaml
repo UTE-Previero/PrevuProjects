@@ -1,0 +1,79 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+             xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             xmlns:Silos="clr-namespace:Prevu.Drawings.Machines.Silos;assembly=Prevu.Drawings" 
+             xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings" 
+             x:Class="Prevu.Synoptics.P970" mc:Ignorable="d" 
+             Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="541,312,0,0" VerticalAlignment="Top" Width="72" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-01-MA1" PipeHeight="Medium"/>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="631,283,0,0" VerticalAlignment="Top" Width="76" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="758,228,0,0" VerticalAlignment="Top" Width="53" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-01-MA1"/>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="667,246,0,0" VerticalAlignment="Top" Width="62" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-01-MA1"/>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="638,507,0,0" VerticalAlignment="Top" Width="60" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-03-EC1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="642,587,0,0" VerticalAlignment="Top" Width="52" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-02-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.1"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <TextBlock HorizontalAlignment="Left" Margin="441,656,0,133" TextWrapping="Wrap" TextAlignment="Center" 
+            FontSize="36" Foreground="Black" FontWeight="Bold" Text="Air Filtration Unit"/>
+        <Machines:EC_Filtro Margin="589,276,643,0" VerticalAlignment="Top" Height="229"/>
+        <Machines:VT_BlowerCentrifuge_up HorizontalAlignment="Left" Margin="713,226,0,0" VerticalAlignment="Top" Height="40" Width="64"/>
+        <Machines:Waste HorizontalAlignment="Left" Margin="644,593,0,0" VerticalAlignment="Top" Height="48" Width="48"/>
+        <Machines:VS_Airlock HorizontalAlignment="Left" Margin="634,523,0,0" VerticalAlignment="Top" Height="64" Width="68"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+            Margin="644,176,0,0" 
+            VerticalAlignment="Top" 
+            ComponentName="970-01-MA1"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+            Margin="782,318,0,0" 
+            VerticalAlignment="Top" 
+            ComponentName="970-03-EC1"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+            Margin="708,531,0,0" 
+            VerticalAlignment="Top" 
+            ComponentName="970-02-MA1"/>
+        <Machines:MaterialInletOutlet HorizontalAlignment="Left" Margin="498,267,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="413,290,0,0" TextWrapping="Wrap" 
+            VerticalAlignment="Top" Height="66" Width="122" TextAlignment="Center" 
+            FontSize="20" Foreground="White" Text="MACHINES EXHAUST"/>
+        <Rectangle HorizontalAlignment="Left" Height="22" Margin="809,219,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+    </Canvas>
+</UserControl>

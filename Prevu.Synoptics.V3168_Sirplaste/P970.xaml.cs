@@ -16,9 +16,9 @@ namespace Prevu.Synoptics
   /// <summary>
   /// Interaction logic for WH1.xaml
   /// </summary>
-  public partial class P371 : UserControl
+  public partial class P970 : UserControl
   {
-    public P371()
+    public P970()
     {
       InitializeComponent();
     }

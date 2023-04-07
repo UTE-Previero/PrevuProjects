@@ -7,13 +7,15 @@
 						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              mc:Ignorable="d" 
+             Height="450" Width="320"
              d:Background="{DynamicResource MaterialDesignPaper}">
-    <Grid Height="450" MinWidth="380" Width="318">
-        <Machines:Storage_silo Margin="29,0,29,0"/>
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="238,48,0,0" VerticalAlignment="Top" ComponentName="810-61-LEV" SignalName="LSHA"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-		Margin="62,39,0,0" 
-		VerticalAlignment="Top" 
-		ComponentName="810-61-LEV"/>
-    </Grid>
+    <Canvas >
+        <Machines:Storage_silo Height="442" Width="323" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="810-61-LEV" SignalName="LSHA" Canvas.Left="201" Canvas.Top="48"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" 
+		VerticalAlignment="Center" 
+		ComponentName="810-61-LEV" Canvas.Left="29" Canvas.Top="39"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" 
+            ComponentName="810-41-WT1" Canvas.Left="29" Canvas.Top="94" VerticalAlignment="Top"/>
+    </Canvas>
 </UserControl>

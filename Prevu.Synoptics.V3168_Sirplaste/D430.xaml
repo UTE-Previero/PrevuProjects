@@ -8,9 +8,10 @@
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D430" 
              mc:Ignorable="d" 
+             Height="301"  Width="575"
              d:Background="{DynamicResource MaterialDesignPaper}">
-    <Grid Height="301" MinWidth="380" Width="575">
-        <Separation:VSP_SeparationTank_wBottomScrew Margin="10,10,10,0" VerticalAlignment="Top" Height="277"/>
+    <Canvas >
+        <Separation:VSP_SeparationTank_wBottomScrew VerticalAlignment="Top" Height="285" Canvas.Left="10" Canvas.Top="10" Width="555" HorizontalAlignment="Center"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
 		Margin="25,109,0,0" 
 		VerticalAlignment="Top" 
@@ -31,5 +32,5 @@
             Margin="435,109,0,0" 
             VerticalAlignment="Top" 
             ComponentName="430-01-MA5"/>
-    </Grid>
+    </Canvas>
 </UserControl>
