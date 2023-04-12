@@ -7,11 +7,12 @@
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:Silos="clr-namespace:Prevu.Drawings.Machines.Silos;assembly=Prevu.Drawings" 
              xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings" 
+             xmlns:Blowers="clr-namespace:Prevu.Drawings.Machines.Blowers;assembly=Prevu.Drawings" 
              x:Class="Prevu.Synoptics.P970" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="541,312,0,0" VerticalAlignment="Top" Width="72" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-01-MA1" PipeHeight="Medium"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="631,283,0,0" VerticalAlignment="Top" Width="76" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-01-MA1">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="72" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-01-MA1" PipeHeight="Medium" Canvas.Left="643" Canvas.Top="312"/>
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="76" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-01-MA1" Canvas.Left="733" Canvas.Top="275">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -21,9 +22,8 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="758,228,0,0" VerticalAlignment="Top" Width="53" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-01-MA1"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="667,246,0,0" VerticalAlignment="Top" Width="62" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-01-MA1"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="638,507,0,0" VerticalAlignment="Top" Width="60" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-03-EC1">
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="62" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-01-MA1" Canvas.Left="769" Canvas.Top="239"/>
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="60" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-03-EC1" Canvas.Left="740" Canvas.Top="507">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -33,7 +33,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="642,587,0,0" VerticalAlignment="Top" Width="52" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-02-MA1">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="52" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-02-MA1" Canvas.Left="744" Canvas.Top="587">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -43,37 +43,24 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <TextBlock HorizontalAlignment="Left" Margin="441,656,0,133" TextWrapping="Wrap" TextAlignment="Center" 
-            FontSize="36" Foreground="Black" FontWeight="Bold" Text="Air Filtration Unit"/>
-        <Machines:EC_Filtro Margin="589,276,643,0" VerticalAlignment="Top" Height="229"/>
-        <Machines:VT_BlowerCentrifuge_up HorizontalAlignment="Left" Margin="713,226,0,0" VerticalAlignment="Top" Height="40" Width="64"/>
-        <Machines:Waste HorizontalAlignment="Left" Margin="644,593,0,0" VerticalAlignment="Top" Height="48" Width="48"/>
-        <Machines:VS_Airlock HorizontalAlignment="Left" Margin="634,523,0,0" VerticalAlignment="Top" Height="64" Width="68"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" TextAlignment="Center" 
+            FontSize="36" Foreground="Black" FontWeight="Bold" Text="Air Filtration Unit" Canvas.Left="27" Canvas.Top="28"/>
+        <Machines:EC_Filtro VerticalAlignment="Center" Height="229" Canvas.Left="691" Canvas.Top="276" HorizontalAlignment="Left"/>
+        <Machines:Waste HorizontalAlignment="Left" VerticalAlignment="Center" Height="48" Width="48" Canvas.Left="746" Canvas.Top="593"/>
+        <Machines:VS_Airlock HorizontalAlignment="Left" VerticalAlignment="Center" Height="64" Width="68" Canvas.Left="736" Canvas.Top="523"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="644,176,0,0" 
+            VerticalAlignment="Center" 
+            ComponentName="970-01-MA1" Canvas.Left="786" Canvas.Top="156"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
-            ComponentName="970-01-MA1"/>
+            ComponentName="970-03-EC1" Canvas.Left="907" Canvas.Top="311"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="782,318,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="970-03-EC1"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="708,531,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="970-02-MA1"/>
-        <Machines:MaterialInletOutlet HorizontalAlignment="Left" Margin="498,267,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="413,290,0,0" TextWrapping="Wrap" 
-            VerticalAlignment="Top" Height="66" Width="122" TextAlignment="Center" 
-            FontSize="20" Foreground="White" Text="MACHINES EXHAUST"/>
-        <Rectangle HorizontalAlignment="Left" Height="22" Margin="809,219,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5">
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>
+            VerticalAlignment="Center" 
+            ComponentName="970-02-MA1" Canvas.Left="810" Canvas.Top="531"/>
+        <Machines:MaterialInletOutlet HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="600" Canvas.Top="267"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" 
+            VerticalAlignment="Center" Height="66" Width="122" TextAlignment="Center" 
+            FontSize="20" Foreground="White" Text="MACHINES EXHAUST" Canvas.Left="515" Canvas.Top="290"/>
+        <Blowers:VT_CMM_BlowerAirCompressor Canvas.Left="800" Canvas.Top="212" Height="59" Width="60" HorizontalAlignment="Center" VerticalAlignment="Top" Color="Air"/>
     </Canvas>
 </UserControl>
