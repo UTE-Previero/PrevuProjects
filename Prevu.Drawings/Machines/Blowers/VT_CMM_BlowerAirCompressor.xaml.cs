@@ -22,37 +22,11 @@ namespace Prevu.Drawings.Machines.Blowers
     /// </summary>
     public partial class VT_CMM_BlowerAirCompressor : UserControl
     {
-        #region Color
-
-        public static readonly DependencyProperty ColorProperty =
-        DependencyProperty.Register(nameof(Color), typeof(MaterialColor), typeof(VT_CMM_BlowerAirCompressor),
-          new FrameworkPropertyMetadata(MaterialColor.Material, FrameworkPropertyMetadataOptions.AffectsRender, PipeColorChanged));
-
-        private static void PipeColorChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e)
-          => ((VT_CMM_BlowerAirCompressor)dependencyObject).Update();
-
-        [Description("Color of the Blower/Compressor"), Category("_PV")]
-        public MaterialColor Color
-        {
-            get { return (MaterialColor)GetValue(ColorProperty); }
-            set { SetValue(ColorProperty, value); }
-        }
-        #endregion
 
         public VT_CMM_BlowerAirCompressor()
         {
             InitializeComponent();
         }
 
-        public override void OnApplyTemplate()
-        {
-            base.OnApplyTemplate();
-            Update();
-        }
-
-        private void Update()
-        {
-            ColorSide.Fill = new SolidColorBrush { Color = Dictionaries.MaterialColors[this.Color] };
-        }
     }
 }
