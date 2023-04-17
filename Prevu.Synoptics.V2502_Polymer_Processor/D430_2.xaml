@@ -9,23 +9,19 @@
              xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D430_2" 
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}">
-    <Grid Height="388" MinWidth="380" Width="565">
-        <Separation:VSP_DETAILDISTRIBUTORS_SeparationTank_wMotorsAndScrew Margin="10,10,10,10"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-		Margin="56,14,0,0" 
+    <Canvas Height="388"  Width="565">
+        <Separation:VSP_DETAILDISTRIBUTORS_SeparationTank_wMotorsAndScrew Height="368" Canvas.Left="10" Canvas.Top="10" Width="545" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" 
 		VerticalAlignment="Top" 
-		ComponentName="430-02-MA1"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="169,14,0,0" 
+		ComponentName="430-02-MA1" Canvas.Left="78" Canvas.Top="29"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
-            ComponentName="430-02-MA2"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="291,14,0,0" 
+            ComponentName="430-02-MA2" Canvas.Left="183" Canvas.Top="30"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
-            ComponentName="430-02-MA3"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="404,14,0,0" 
+            ComponentName="430-02-MA3" Canvas.Left="285" Canvas.Top="29"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
-            ComponentName="430-02-MA4"/>
-    </Grid>
+            ComponentName="430-02-MA4" Canvas.Left="391" Canvas.Top="29"/>
+    </Canvas>
 </UserControl>
