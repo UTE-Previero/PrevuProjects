@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -14,14 +16,13 @@ using System.Windows.Shapes;
 namespace Prevu.Synoptics
 {
   /// <summary>
-  /// Interaction logic for WH1.xaml
+  /// Interaction logic for D810.xaml
   /// </summary>
-  public partial class P970 : UserControl
-  {
-    public P970()
+  public partial class D970 : UserControl
     {
-      InitializeComponent();
+        public D970()
+        {
+            InitializeComponent();
+        }
     }
-
-  }
 }
