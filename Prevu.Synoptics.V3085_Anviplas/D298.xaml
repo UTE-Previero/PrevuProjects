@@ -9,14 +9,13 @@
              xmlns:Pits="clr-namespace:Prevu.Drawings.Machines.Pits;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D298" 
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}">
-    <Grid Height="369" MinWidth="380" Width="453">
-        <Pits:PSP_Collecting_Pit_A HorizontalAlignment="Center" Margin="0,41,0,0" VerticalAlignment="Top" Width="405" Height="293"/>
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="202,153,0,0" VerticalAlignment="Top" ComponentName="298-61-LEV" SignalName="LSHA"/>
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="201,194,0,0" VerticalAlignment="Top" ComponentName="298-61-LEV" SignalName="LSH" />
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="202,282,0,0" VerticalAlignment="Top" ComponentName="298-61-LEV" SignalName="LSL"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-		Margin="92,85,0,0" 
+    <Canvas Height="319" Width="443">
+        <Pits:PSP_Collecting_Pit_A HorizontalAlignment="Left" VerticalAlignment="Center" Width="405" Height="293" Canvas.Left="17" Canvas.Top="17"/>
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="298-61-LEV" SignalName="LSHA" Canvas.Left="202" Canvas.Top="104"/>
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="298-61-LEV" SignalName="LSH" Canvas.Left="201" Canvas.Top="145" />
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="298-61-LEV" SignalName="LSL" Canvas.Left="202" Canvas.Top="233"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" 
 		VerticalAlignment="Top" 
-		ComponentName="298-61-LEV"/>
-    </Grid>
+		ComponentName="298-61-LEV" Canvas.Left="92" Canvas.Top="50"/>
+    </Canvas>
 </UserControl>
