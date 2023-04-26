@@ -8,18 +8,13 @@
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" xmlns:Screws="clr-namespace:Prevu.Drawings.Machines.Screws;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D883" 
              mc:Ignorable="d" 
-             Height="600" Width="600" d:Background="{DynamicResource MaterialDesignPaper}">
-    <Grid d:IsLocked="True">
-        <Screws:DETAIL_SCW_Flex_Verticale HorizontalAlignment="Left" Margin="100,132,0,116" Width="434" d:IsLocked="True"/>
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="94,317,0,0" VerticalAlignment="Top" ComponentName="883-61-LEV" SignalName="LSH" FlowDirection="RightToLeft" d:IsLocked="True"/>
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="174,402,0,0" VerticalAlignment="Top" ComponentName="883-61-LEV" SignalName="LSL" FlowDirection="RightToLeft" d:IsLocked="True" />
+             Height="448" Width="498" d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Height="448" Width="498">
+        <Screws:DETAIL_SCW_Flex_Verticale HorizontalAlignment="Left" Width="434" Canvas.Left="38" Canvas.Top="30"/>
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="883-61-LEV" SignalName="LSH" FlowDirection="LeftToRight" Canvas.Left="56" Canvas.Top="234"/>
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="883-61-LEV" SignalName="LSL" FlowDirection="LeftToRight" Canvas.Left="138" Canvas.Top="326" />
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-         Margin="317,414,0,0" 
          VerticalAlignment="Top" 
-         ComponentName="883-61-LEV" d:IsLocked="True"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="263,77,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="883-01-MA1" d:IsLocked="True"/>
-    </Grid>
+         ComponentName="883-61-LEV" Canvas.Left="165" Canvas.Top="250"/>
+    </Canvas>
 </UserControl>

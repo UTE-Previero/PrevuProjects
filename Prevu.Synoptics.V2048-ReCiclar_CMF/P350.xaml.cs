@@ -23,6 +23,14 @@ namespace Prevu.Synoptics
             InitializeComponent();
         }
 
-       
+        private void WaterPump_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+    private void DeviceLabel_Loaded(object sender, RoutedEventArgs e)
+    {
+
+        }
     }
 }

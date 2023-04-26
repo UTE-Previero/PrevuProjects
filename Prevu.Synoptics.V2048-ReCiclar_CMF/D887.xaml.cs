@@ -23,6 +23,8 @@ namespace Prevu.Synoptics
     public D887()
     {
       InitializeComponent();
-    }   
+    }
+
+        
     }
 }

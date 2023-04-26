@@ -8,9 +8,9 @@
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" xmlns:Screws="clr-namespace:Prevu.Drawings.Machines.Screws;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D885" 
              mc:Ignorable="d" 
-             Height="600" Width="600" d:Background="{DynamicResource MaterialDesignPaper}">
-    <Grid d:IsLocked="True">
-        <Screws:DETAIL_SCW_Flex_Verticale HorizontalAlignment="Left" Margin="80,132,0,116" Width="434" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+             Height="448" Width="498" d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Height="448" Width="498">
+        <Screws:DETAIL_SCW_Flex_Verticale HorizontalAlignment="Left" Width="434" Canvas.Left="34" Canvas.Top="30" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Center">
             <Screws:DETAIL_SCW_Flex_Verticale.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -20,15 +20,10 @@
                 </TransformGroup>
             </Screws:DETAIL_SCW_Flex_Verticale.RenderTransform>
         </Screws:DETAIL_SCW_Flex_Verticale>
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="450,317,0,0" VerticalAlignment="Top" ComponentName="885-61-LEV" SignalName="LSH" d:IsLocked="True"/>
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="375,402,0,0" VerticalAlignment="Top" ComponentName="885-61-LEV" SignalName="LSL" d:IsLocked="True" />
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="885-61-LEV" SignalName="LSH" FlowDirection="RightToLeft" Canvas.Left="378" Canvas.Top="233"/>
+        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Top" ComponentName="885-61-LEV" SignalName="LSL" FlowDirection="RightToLeft" Canvas.Left="303" Canvas.Top="326" />
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="207,417,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="885-61-LEV" d:IsLocked="True"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="257,77,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="885-01-MA1" d:IsLocked="True"/>
-    </Grid>
+         VerticalAlignment="Top" 
+         ComponentName="885-61-LEV" Canvas.Left="246" Canvas.Top="255"/>
+    </Canvas>
 </UserControl>

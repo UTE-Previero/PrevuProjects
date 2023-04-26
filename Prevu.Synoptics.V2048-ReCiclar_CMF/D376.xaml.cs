@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -13,19 +15,14 @@ using System.Windows.Shapes;
 
 namespace Prevu.Synoptics
 {
-    /// <summary>
-    /// Interaction logic for GR1.xaml
-    /// </summary>
-    public partial class P330 : UserControl
+  /// <summary>
+  /// Interaction logic for D810.xaml
+  /// </summary>
+  public partial class D376 : UserControl
     {
-        public P330()
+        public D376()
         {
             InitializeComponent();
-        }
-
-        private void WaterPump_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

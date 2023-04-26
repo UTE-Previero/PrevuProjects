@@ -8,18 +8,11 @@
              xmlns:Valves="clr-namespace:Prevu.Drawings.Machines.Valves;assembly=Prevu.Drawings" 
              xmlns:VibratingScreens="clr-namespace:Prevu.Drawings.Machines.VibratingScreens;assembly=Prevu.Drawings" 
              x:Class="Prevu.Synoptics.P140" mc:Ignorable="d"
-             Height="840" Width="1420" d:Background="{DynamicResource MaterialDesignPaper}">
-    <Grid RenderTransformOrigin="0.5,0.5" Margin="-3,-1,3,1" d:IsLocked="True">
-        <Grid.RenderTransform>
-            <TransformGroup>
-                <ScaleTransform/>
-                <SkewTransform/>
-                <RotateTransform Angle="0"/>
-                <TranslateTransform/>
-            </TransformGroup>
-        </Grid.RenderTransform>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="203,267,0,0" VerticalAlignment="Top" Width="73" StatusComponent="129-01-MA1" PipeHeight="Medium" d:IsLocked="True"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="1177,515,0,0" VerticalAlignment="Top" Width="52" StatusComponent="170-01-MA1" PipeHeight="Medium" Height="14" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+             Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas >
+
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="73" StatusComponent="129-01-MA1" PipeHeight="Medium" Canvas.Left="278" Canvas.Top="297"/>
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="52" StatusComponent="170-01-MA1" PipeHeight="Medium" Height="14" RenderTransformOrigin="0.5,0.5" Canvas.Left="1262" Canvas.Top="565">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -29,8 +22,8 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="1198,538,0,0" VerticalAlignment="Top" Width="64" StatusComponent="170-01-MA1" PipeHeight="Medium" Height="14" d:IsLocked="True"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="100,498,0,0" VerticalAlignment="Top" Width="66" StatusComponent="150-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="64" StatusComponent="170-01-MA1" PipeHeight="Medium" Height="14" Canvas.Left="1283" Canvas.Top="588"/>
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="80" StatusComponent="150-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Canvas.Left="138" Canvas.Top="535">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -40,8 +33,8 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="116,101,0,0" VerticalAlignment="Top" Width="212" StatusComponent="080-01-MA1" PipeHeight="Medium" d:IsLocked="True"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="742,428,0,0" VerticalAlignment="Top" Width="82" StatusComponent="150-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="6" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="212" StatusComponent="080-01-MA1" PipeHeight="Medium" Canvas.Left="116" Canvas.Top="138"/>
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="82" StatusComponent="150-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="6" Canvas.Left="817" Canvas.Top="458">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -51,7 +44,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="94,231,0,0" VerticalAlignment="Top" Width="40" StatusComponent="128-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Height="10" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="64" StatusComponent="128-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Height="10" Canvas.Left="153" Canvas.Top="243">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -61,7 +54,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="446,397,0,0" VerticalAlignment="Top" Width="106" StatusComponent="140-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="106" StatusComponent="140-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Canvas.Left="521" Canvas.Top="427">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -71,8 +64,8 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="804,454,0,0" VerticalAlignment="Top" Width="96" StatusComponent="150-01-MA1" PipeHeight="Medium" d:IsLocked="True"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="775,424,0,0" VerticalAlignment="Top" Width="68" StatusComponent="150-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="96" StatusComponent="150-01-MA1" PipeHeight="Medium" Canvas.Left="879" Canvas.Top="484"/>
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="68" StatusComponent="150-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Canvas.Left="850" Canvas.Top="454">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -82,7 +75,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="201,575,0,0" VerticalAlignment="Top" Width="80" StatusComponent="141-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="80" StatusComponent="141-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Canvas.Left="246" Canvas.Top="620">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -92,7 +85,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="131,467,0,0" VerticalAlignment="Top" Width="654" StatusComponent="150-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="684" StatusComponent="150-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Canvas.Left="176" Canvas.Top="497">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -102,7 +95,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="255,563,0,0" VerticalAlignment="Top" Width="880" StatusComponent="170-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="6" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="910" StatusComponent="170-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="6" Canvas.Left="300" Canvas.Top="608">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -112,7 +105,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="227,590,0,0" VerticalAlignment="Top" Width="58" StatusComponent="170-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="5" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="58" StatusComponent="170-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="5" Canvas.Left="272" Canvas.Top="635">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -122,7 +115,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="1100,533,0,0" VerticalAlignment="Top" Width="65" StatusComponent="170-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="6" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="79" StatusComponent="170-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="6" Canvas.Left="1168" Canvas.Top="570">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -132,7 +125,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="837,712,0,0" VerticalAlignment="Top" Width="28" StatusComponent="180-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="4" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="28" StatusComponent="180-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="4" Canvas.Left="882" Canvas.Top="757">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -142,7 +135,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="116,448,0,0" VerticalAlignment="Top" Width="385" StatusComponent="140-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="417" StatusComponent="140-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Canvas.Left="159" Canvas.Top="478">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -152,7 +145,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="76,486,0,0" VerticalAlignment="Top" Width="81" StatusComponent="140-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="95" StatusComponent="140-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Canvas.Left="114" Canvas.Top="524">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -162,8 +155,8 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="444,101,0,0" VerticalAlignment="Top" Width="166" StatusComponent="126-01-MA1" PipeHeight="Medium" d:IsLocked="True"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="586,115,0,0" VerticalAlignment="Top" Width="38" StatusComponent="126-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="166" StatusComponent="126-01-MA1" PipeHeight="Medium" Canvas.Left="444" Canvas.Top="138"/>
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="70" StatusComponent="151-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Canvas.Left="374" Canvas.Top="698">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -173,18 +166,8 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="329,653,0,0" VerticalAlignment="Top" Width="70" StatusComponent="151-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" d:IsLocked="True">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="852,684,0,0" VerticalAlignment="Top" Width="197" StatusComponent="180-01-MA1" PipeHeight="Medium" Height="14" d:IsLocked="True"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="483,688,0,0" VerticalAlignment="Top" Width="180" StatusComponent="161-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="6" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="197" StatusComponent="180-01-MA1" PipeHeight="Medium" Height="14" Canvas.Left="897" Canvas.Top="729"/>
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="180" StatusComponent="161-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="6" Canvas.Left="528" Canvas.Top="733">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -194,8 +177,8 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="519,387,0,0" VerticalAlignment="Top" Width="93" StatusComponent="140-01-MA1" PipeHeight="Medium" d:IsLocked="True"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="498,365,0,0" VerticalAlignment="Top" Width="52" StatusComponent="140-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="93" StatusComponent="140-01-MA1" PipeHeight="Medium" Canvas.Left="594" Canvas.Top="417"/>
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="52" StatusComponent="140-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Canvas.Left="573" Canvas.Top="395">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -205,8 +188,8 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="109,216,0,0" VerticalAlignment="Top" Width="614" StatusComponent="128-01-MA1" PipeHeight="Medium" d:IsLocked="True"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="678,181,0,0" VerticalAlignment="Top" Width="80" StatusComponent="128-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Height="10" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="541" StatusComponent="128-01-MA1" PipeHeight="Medium" Canvas.Left="181" Canvas.Top="216"/>
+        <Labels:Pipe HorizontalAlignment="Left" Margin="678,181,0,0" VerticalAlignment="Top" Width="80" StatusComponent="128-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Height="10">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -216,8 +199,8 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="266,337,0,0" VerticalAlignment="Top" Width="73" StatusComponent="129-01-MA1" PipeHeight="Medium" d:IsLocked="True"/>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="231,302,0,0" VerticalAlignment="Top" Width="80" StatusComponent="129-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="73" StatusComponent="129-01-MA1" PipeHeight="Medium" Canvas.Left="341" Canvas.Top="367"/>
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="80" StatusComponent="129-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Canvas.Left="306" Canvas.Top="332">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -227,7 +210,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" Margin="1033,478,0,0" VerticalAlignment="Top" Width="28" StatusComponent="170-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="4" d:IsLocked="True">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="28" StatusComponent="170-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Height="4" Canvas.Left="1108" Canvas.Top="508">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -237,9 +220,9 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Machines:Manual_selection HorizontalAlignment="Left" Margin="968,366,0,0" VerticalAlignment="Top" Height="86" Width="46" d:IsLocked="True"/>
-        <Machines:Manual_selection HorizontalAlignment="Left" Margin="751,600,0,0" VerticalAlignment="Top" Height="86" Width="46" d:IsLocked="True"/>
-        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="217,606,0,0" VerticalAlignment="Top" Height="3" Width="165" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+        <Machines:Manual_selection HorizontalAlignment="Left" VerticalAlignment="Center" Height="86" Width="46" Canvas.Left="1043" Canvas.Top="396"/>
+        <Machines:Manual_selection HorizontalAlignment="Left" VerticalAlignment="Center" Height="86" Width="46" Canvas.Left="796" Canvas.Top="645"/>
+        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" VerticalAlignment="Center" Height="3" Width="165" RenderTransformOrigin="0.5,0.5" Canvas.Left="262" Canvas.Top="651">
             <Machines:NT_ConveyorBelt.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="1"/>
@@ -249,7 +232,7 @@
                 </TransformGroup>
             </Machines:NT_ConveyorBelt.RenderTransform>
         </Machines:NT_ConveyorBelt>
-        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="346,681,0,0" VerticalAlignment="Top" Height="3" Width="146" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" VerticalAlignment="Center" Height="3" Width="146" RenderTransformOrigin="0.5,0.5" Canvas.Left="391" Canvas.Top="726">
             <Machines:NT_ConveyorBelt.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="1"/>
@@ -259,7 +242,7 @@
                 </TransformGroup>
             </Machines:NT_ConveyorBelt.RenderTransform>
         </Machines:NT_ConveyorBelt>
-        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="97,524,0,0" VerticalAlignment="Top" Height="3" Width="165" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" VerticalAlignment="Center" Height="3" Width="165" RenderTransformOrigin="0.5,0.5" Canvas.Left="142" Canvas.Top="569">
             <Machines:NT_ConveyorBelt.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="1"/>
@@ -269,24 +252,23 @@
                 </TransformGroup>
             </Machines:NT_ConveyorBelt.RenderTransform>
         </Machines:NT_ConveyorBelt>
-        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="595,132,0,0" VerticalAlignment="Top" Height="1" Width="144" d:IsLocked="True"/>
-        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="312,96,0,0" VerticalAlignment="Top" Height="1" Width="144" d:IsLocked="True"/>
-        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="313,332,0,0" VerticalAlignment="Top" Height="1" Width="236" d:IsLocked="True"/>
-        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="597,382,0,0" VerticalAlignment="Top" Height="1" Width="236" d:IsLocked="True"/>
-        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="875,448,0,0" VerticalAlignment="Top" Height="1" Width="289" d:IsLocked="True"/>
-        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="634,682,0,0" VerticalAlignment="Top" Height="1" Width="257" d:IsLocked="True"/>
-        <Machines:EC_Metal_Detector HorizontalAlignment="Left" Margin="483,299,0,506" Width="31" d:IsLocked="True"/>
-        <Machines:EC_Metal_Detector HorizontalAlignment="Left" Margin="766,349,0,456" Width="31" d:IsLocked="True"/>
-        <Machines:EC_Metal_Detector HorizontalAlignment="Left" Margin="1071,415,0,390" Width="31" d:IsLocked="True"/>
-        <Valves:DV_Diverter Margin="1122,428,207,0" VerticalAlignment="Top" Height="91" d:IsLocked="True"/>
-        <VibratingScreens:ALV_VibratingFeeder Margin="97,239,1168,0" VerticalAlignment="Top" Height="78" d:IsLocked="True"/>
-        <Machines:Waste HorizontalAlignment="Left" Margin="829,710,0,0" VerticalAlignment="Top" Height="46" Width="44" d:IsLocked="True"/>
-        <Machines:Waste HorizontalAlignment="Left" Margin="1025,476,0,0" VerticalAlignment="Top" Height="46" Width="44" d:IsLocked="True"/>
-        <Labels:JumpLabel HorizontalAlignment="Left" 
-      Margin="101,71,0,0" 
+        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" Margin="595,132,0,0" VerticalAlignment="Top" Height="1" Width="144"/>
+        <Machines:NT_ConveyorBelt HorizontalAlignment="Center" VerticalAlignment="Top" Height="1" Width="144" Canvas.Left="312" Canvas.Top="133"/>
+        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" VerticalAlignment="Center" Height="1" Width="236" Canvas.Left="388" Canvas.Top="362"/>
+        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" VerticalAlignment="Center" Height="1" Width="236" Canvas.Left="672" Canvas.Top="412"/>
+        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" VerticalAlignment="Center" Height="1" Width="298" Canvas.Left="950" Canvas.Top="478"/>
+        <Machines:NT_ConveyorBelt HorizontalAlignment="Left" VerticalAlignment="Center" Height="1" Width="257" Canvas.Left="679" Canvas.Top="727"/>
+        <Machines:EC_Metal_Detector HorizontalAlignment="Left" Width="31" Canvas.Left="558" Canvas.Top="329" VerticalAlignment="Center"/>
+        <Machines:EC_Metal_Detector HorizontalAlignment="Left" Width="31" Canvas.Left="841" Canvas.Top="379" VerticalAlignment="Center"/>
+        <Machines:EC_Metal_Detector HorizontalAlignment="Left" Width="31" Canvas.Left="1146" Canvas.Top="445" VerticalAlignment="Center"/>
+        <Valves:DV_Diverter VerticalAlignment="Center" Height="91" Canvas.Left="1197" Canvas.Top="458" HorizontalAlignment="Left"/>
+        <VibratingScreens:ALV_VibratingFeeder VerticalAlignment="Center" Height="78" Canvas.Left="172" Canvas.Top="269" HorizontalAlignment="Left"/>
+        <Machines:Waste HorizontalAlignment="Left" VerticalAlignment="Center" Height="46" Width="44" Canvas.Left="874" Canvas.Top="755"/>
+        <Machines:Waste HorizontalAlignment="Left" VerticalAlignment="Center" Height="46" Width="44" Canvas.Left="1100" Canvas.Top="506"/>
+        <Labels:JumpLabel HorizontalAlignment="Center" 
       VerticalAlignment="Top" 
       JumpFromLabel="126-01-MA1" 
-      JumpToLabel="080-01-MA1" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+      JumpToLabel="080-01-MA1" RenderTransformOrigin="0.5,0.5" Canvas.Left="101" Canvas.Top="108">
             <Labels:JumpLabel.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -296,71 +278,55 @@
                 </TransformGroup>
             </Labels:JumpLabel.RenderTransform>
         </Labels:JumpLabel>
-        <Labels:JumpLabel HorizontalAlignment="Left" 
-            Margin="990,653,0,0" 
+        <Labels:JumpLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
             JumpFromLabel="180-01-MA1" 
-            JumpToLabel="032-01-MA1" d:IsLocked="True"/>
+            JumpToLabel="032-01-MA1" Canvas.Left="1065" Canvas.Top="702"/>
         <Labels:JumpLabel HorizontalAlignment="Left" 
-            Margin="1219,511,0,0" 
-            VerticalAlignment="Top" 
+            VerticalAlignment="Center" 
             JumpFromLabel="170-01-MA1" 
-            JumpToLabel="228-01-MA1" d:IsLocked="True"/>
+            JumpToLabel="228-01-MA1" Canvas.Left="1334" Canvas.Top="561"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="597,155,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="128-01-MA1" d:IsLocked="True"/>
+            VerticalAlignment="Center" 
+            ComponentName="128-01-MA1" Canvas.Left="679" Canvas.Top="77"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="98,551,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="141-01-MA1" d:IsLocked="True"/>
+            VerticalAlignment="Center" 
+            ComponentName="141-01-MA1" Canvas.Left="143" Canvas.Top="596"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="347,707,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="161-01-MA1" d:IsLocked="True"/>
+            VerticalAlignment="Center" 
+            ComponentName="161-01-MA1" Canvas.Left="392" Canvas.Top="752"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="218,631,0,0" 
+            VerticalAlignment="Center" 
+            ComponentName="151-01-MA1" Height="50" Width="90" Canvas.Left="263" Canvas.Top="676"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
-            ComponentName="151-01-MA1" Height="50" Width="90" d:IsLocked="True"/>
+            ComponentName="126-01-MA1" Canvas.Left="374" Canvas.Top="78"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="313,119,0,0" 
+            VerticalAlignment="Center" 
+            ComponentName="140-01-MA1" Canvas.Left="388" Canvas.Top="385"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
-            ComponentName="126-01-MA1" d:IsLocked="True"/>
+            ComponentName="140-02-EC1" Canvas.Left="528" Canvas.Top="275"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="313,355,0,0" 
+            VerticalAlignment="Center" 
+            ComponentName="150-01-MA1" Canvas.Left="672" Canvas.Top="435"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
-            ComponentName="140-01-MA1" d:IsLocked="True"/>
+            ComponentName="150-02-EC1" Canvas.Left="812" Canvas.Top="319"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="453,247,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="140-02-EC1" d:IsLocked="True"/>
+            VerticalAlignment="Center" 
+            ComponentName="170-01-MA1" Canvas.Left="950" Canvas.Top="501"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="597,405,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="150-01-MA1" d:IsLocked="True"/>
+            VerticalAlignment="Center" 
+            ComponentName="170-21-CV1" Canvas.Left="1291" Canvas.Top="463"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="737,299,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="150-02-EC1" d:IsLocked="True"/>
+            VerticalAlignment="Center" 
+            ComponentName="180-01-MA1" Canvas.Left="680" Canvas.Top="752"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="875,471,0,0" 
+            VerticalAlignment="Center" 
+            ComponentName="129-01-MA1" Canvas.Left="176" Canvas.Top="351"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
-            ComponentName="170-01-MA1" d:IsLocked="True"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="1216,433,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="170-21-CV1" d:IsLocked="True"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="635,707,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="180-01-MA1" d:IsLocked="True"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="101,321,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="129-01-MA1" d:IsLocked="True"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="1042,364,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="170-02-EC1" d:IsLocked="True"/>
-    </Grid>
+            ComponentName="170-02-EC1" Canvas.Left="1117" Canvas.Top="384"/>
+    </Canvas>
 </UserControl>
