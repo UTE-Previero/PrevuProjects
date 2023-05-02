@@ -6,7 +6,7 @@
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:Blowers="clr-namespace:Prevu.Drawings.Machines.Blowers;assembly=Prevu.Drawings" 
-             x:Class="Prevu.Synoptics.P420" mc:Ignorable="d" 
+             x:Class="Prevu.Synoptics.P430" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
         <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="46" StatusComponent="443-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Canvas.Left="1104" Canvas.Top="423">
@@ -267,16 +267,6 @@
         <Machines:VRC_WaterCollectingTank HorizontalAlignment="Center" VerticalAlignment="Top" Height="120" Width="209" Canvas.Left="616" Canvas.Top="670"/>
         <Machines:STR_Washing_reactor_B HorizontalAlignment="Center" VerticalAlignment="Top" Height="178" Width="170" Canvas.Left="235" Canvas.Top="114"/>
         <Machines:VSP_SeparationTank_wMotors HorizontalAlignment="Center" Width="159" Canvas.Left="429" Canvas.Top="137" VerticalAlignment="Top"/>
-        <Rectangle HorizontalAlignment="Center" Height="2" Stroke="Black" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.5,0.5" Canvas.Left="418" Canvas.Top="121">
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>
         <Machines:DCE_DryingCentrifuge HorizontalAlignment="Center" VerticalAlignment="Top" Height="143" Width="94" RenderTransformOrigin="0.5,0.5" Canvas.Left="1121" Canvas.Top="466">
             <Machines:DCE_DryingCentrifuge.RenderTransform>
                 <TransformGroup>
@@ -317,7 +307,7 @@
                 </TransformGroup>
             </Machines:WaterPump.RenderTransform>
         </Machines:WaterPump>
-        <Machines:WaterPump HorizontalAlignment="Center" VerticalAlignment="Top" Height="70" Width="50" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="725" Canvas.Top="212">
+        <Machines:WaterPump HorizontalAlignment="Left" VerticalAlignment="Center" Height="70" Width="50" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="665" Canvas.Top="212">
             <Machines:WaterPump.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -339,9 +329,9 @@
             VerticalAlignment="Top" 
             JumpFromLabel="455-01-MA1" 
             JumpToLabel="460-01-MA1" Canvas.Left="1228" Canvas.Top="220"/>
-        <Labels:DeviceLabel HorizontalAlignment="Center" 
-            VerticalAlignment="Top" 
-            ComponentName="430-03-MA1" Canvas.Left="705" Canvas.Top="167"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+            VerticalAlignment="Center" 
+            ComponentName="430-03-MA1" Canvas.Left="645" Canvas.Top="167"/>
         <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
             ComponentName="450-21-CV1" Canvas.Left="437" Canvas.Top="520"/>
@@ -404,7 +394,7 @@
             ComponentName="420-01-MA1" Canvas.Left="275" Canvas.Top="59"/>
         <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
-            ComponentName="430-01-MA1" Canvas.Left="402" Canvas.Top="59"/>
+            ComponentName="430-SEPARATION" Canvas.Left="447" Canvas.Top="79"/>
         <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
             ComponentName="430-41-LT1" RenderTransformOrigin="0.5,0.5" Canvas.Left="463" Canvas.Top="205">
@@ -420,6 +410,7 @@
         <Blowers:VT_CMM_BlowerAirCompressor Canvas.Left="1068" Canvas.Top="400" HorizontalAlignment="Center" Height="51" VerticalAlignment="Top"/>
         <Labels:DeviceLabel 
             ComponentName="446-62-BAG" Canvas.Left="1294" Canvas.Top="735" HorizontalAlignment="Center" VerticalAlignment="Top" />
-        <Labels:DetailsLabel ComponentName="-VIEW" DetailsPageName="D446" HideComponentName="True" Canvas.Left="1390" Canvas.Top="735" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DetailsLabel ComponentName="446-VIEW" DetailsPageName="D446" HideComponentName="True" Canvas.Left="1390" Canvas.Top="735" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DetailsLabel ComponentName="430-VIEW" DetailsPageName="D430" HideComponentName="True" Canvas.Left="542" Canvas.Top="79" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>

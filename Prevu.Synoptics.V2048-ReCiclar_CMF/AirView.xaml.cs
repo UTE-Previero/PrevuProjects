@@ -18,9 +18,9 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for PlantView.xaml
     /// </summary>
-    public partial class PlantView : UserControl
+    public partial class AirView : UserControl
     {
-        public PlantView()
+        public AirView()
         {
             InitializeComponent();
         }
