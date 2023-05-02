@@ -7,13 +7,12 @@
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:lex="http://wpflocalizeextension.codeplex.com"
-             xmlns:Belts="clr-namespace:Prevu.Drawings.Machines.Belts;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.WaterView"
+             xmlns:Belts="clr-namespace:Prevu.Drawings.Machines.Belts;assembly=Prevu.Drawings" xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.WaterView"
              lex:ResxLocalizationProvider.DefaultAssembly="Prevu.Localization"
              lex:ResxLocalizationProvider.DefaultDictionary="Resources"             
              mc:Ignorable="d" 
              d:Height="840" d:Width="1700" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas Height="840" Width="1700" >
-        <Labels:Pipe Width="111" RenderTransformOrigin="0.5,0.5" StatusComponent="220-01-MA1" Canvas.Left="355" Canvas.Top="187" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Right"/>
         <Labels:Pipe Width="138" RenderTransformOrigin="0.5,0.5" StatusComponent="288-21-CV1" Canvas.Left="682" Canvas.Top="615" HorizontalAlignment="Left" VerticalAlignment="Center" Color="Water" Icon="Left">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -24,7 +23,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="94" RenderTransformOrigin="0.5,0.5" StatusComponent="236-01-MA1" Canvas.Left="144" Canvas.Top="346" HorizontalAlignment="Left" VerticalAlignment="Center" Color="Water" Icon="Right">
+        <Labels:Pipe Width="94" RenderTransformOrigin="0.5,0.5" StatusComponent="236-01-MA1" Canvas.Left="144" Canvas.Top="354" HorizontalAlignment="Center" VerticalAlignment="Top" Color="Water">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -64,10 +63,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="111" RenderTransformOrigin="0.5,0.5" StatusComponent="237-01-MA1" Canvas.Left="672" Canvas.Top="187" HorizontalAlignment="Left" VerticalAlignment="Center" Icon="Right"/>
-        <Labels:Pipe Width="111" RenderTransformOrigin="0.5,0.5" StatusComponent="350-01-MA1" Canvas.Left="983" Canvas.Top="187" HorizontalAlignment="Left" VerticalAlignment="Center" Icon="Right"/>
-        <Labels:Pipe Width="111" RenderTransformOrigin="0.5,0.5" StatusComponent="382-01-MA1" Canvas.Left="1297" Canvas.Top="189" HorizontalAlignment="Left" VerticalAlignment="Center" Icon="Right"/>
-        <Labels:Pipe Width="616" RenderTransformOrigin="0.5,0.5" StatusComponent="291-01-MA1" Canvas.Left="-246" Canvas.Top="350" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Labels:Pipe Width="616" RenderTransformOrigin="0.5,0.5" StatusComponent="291-01-MA1" Canvas.Left="-246" Canvas.Top="349" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -77,7 +73,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="170" RenderTransformOrigin="0.5,0.5" StatusComponent="226-01-MA1" Canvas.Left="239" Canvas.Top="534" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Right">
+        <Labels:Pipe Width="170" RenderTransformOrigin="0.5,0.5" StatusComponent="226-01-MA1" Canvas.Left="239" Canvas.Top="543" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -87,7 +83,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="410" RenderTransformOrigin="0.5,0.5" StatusComponent="291-01-MA1" Canvas.Left="60" Canvas.Top="648" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center" Icon="Left">
+        <Labels:Pipe Width="410" RenderTransformOrigin="0.5,0.5" StatusComponent="291-01-MA1" Canvas.Left="60" Canvas.Top="655" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -97,7 +93,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="429" RenderTransformOrigin="0.5,0.5" StatusComponent="291-01-MA1" Canvas.Left="60" Canvas.Top="43" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <Labels:Pipe Width="428" RenderTransformOrigin="0.5,0.5" StatusComponent="291-01-MA1" Canvas.Left="60" Canvas.Top="34" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center" Icon="Right" Height="23">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -107,7 +103,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="48" RenderTransformOrigin="0.5,0.5" StatusComponent="210-21-CV1" Canvas.Left="143" Canvas.Top="122" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Center" VisibilityComponent="" VisibilitySignal="" Icon="Right">
+        <Labels:Pipe Width="48" RenderTransformOrigin="0.5,0.5" StatusComponent="210-21-CV1" Canvas.Left="143" Canvas.Top="132" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top" VisibilityComponent="" VisibilitySignal="">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -127,7 +123,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="78" RenderTransformOrigin="0.5,0.5" StatusComponent="370-21-CV1" Canvas.Left="749" Canvas.Top="348" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Right">
+        <Labels:Pipe Width="82" RenderTransformOrigin="0.5,0.5" StatusComponent="370-21-CV1" Canvas.Left="747" Canvas.Top="346" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Right">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -137,7 +133,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="88" RenderTransformOrigin="0.5,0.5" StatusComponent="293-01-MA1" Canvas.Left="600" Canvas.Top="745" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Right">
+        <Labels:Pipe Width="112" RenderTransformOrigin="0.5,0.5" StatusComponent="293-01-MA1" Canvas.Left="588" Canvas.Top="720" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -147,7 +143,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="186" RenderTransformOrigin="0.5,0.5" StatusComponent="373-01-MA1" Canvas.Left="789" Canvas.Top="302" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center" Icon="Left">
+        <Labels:Pipe Width="186" RenderTransformOrigin="0.5,0.5" StatusComponent="373-01-MA1" Canvas.Left="789" Canvas.Top="302" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -167,7 +163,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="174" RenderTransformOrigin="0.5,0.5" StatusComponent="431-01-MA1" Canvas.Left="1360" Canvas.Top="299" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center" Icon="Right">
+        <Labels:Pipe Width="174" RenderTransformOrigin="0.5,0.5" StatusComponent="431-01-MA1" Canvas.Left="1361" Canvas.Top="306" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -177,7 +173,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="178" RenderTransformOrigin="0.5,0.5" StatusComponent="453-01-MA1" Canvas.Left="1464" Canvas.Top="304" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center" Icon="Left">
+        <Labels:Pipe Width="178" RenderTransformOrigin="0.5,0.5" StatusComponent="453-01-MA1" Canvas.Left="1464" Canvas.Top="304" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -197,7 +193,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="416" RenderTransformOrigin="0.5,0.5" StatusComponent="377-01-MA1" Canvas.Left="355" Canvas.Top="404" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center" VisibilityComponent="377-23-CV1" VisibilitySignal="LS1" Icon="Left">
+        <Labels:Pipe Width="416" RenderTransformOrigin="0.5,0.5" StatusComponent="377-01-MA1" Canvas.Left="355" Canvas.Top="411" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top" VisibilityComponent="377-23-CV1" VisibilitySignal="LS1">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -217,7 +213,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="723" RenderTransformOrigin="0.5,0.5" StatusComponent="457-01-MA1" Canvas.Left="701" Canvas.Top="502" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center" Icon="Left">
+        <Labels:Pipe Width="723" RenderTransformOrigin="0.5,0.5" StatusComponent="457-01-MA1" Canvas.Left="701" Canvas.Top="509" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -227,7 +223,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="62" RenderTransformOrigin="0.5,0.5" StatusComponent="457-01-MA1" Canvas.Left="672" Canvas.Top="481" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <Labels:Pipe Width="62" RenderTransformOrigin="0.5,0.5" StatusComponent="457-01-MA1" Canvas.Left="672" Canvas.Top="480" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -237,7 +233,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="52" RenderTransformOrigin="0.5,0.5" StatusComponent="450-21-CV1" Canvas.Left="1376" Canvas.Top="356" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Right">
+        <Labels:Pipe Width="78" RenderTransformOrigin="0.5,0.5" StatusComponent="450-21-CV1" Canvas.Left="1363" Canvas.Top="343" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Right">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -247,7 +243,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="64" RenderTransformOrigin="0.5,0.5" StatusComponent="457-01-MA1" Canvas.Left="1390" Canvas.Top="480" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <Labels:Pipe Width="64" RenderTransformOrigin="0.5,0.5" StatusComponent="457-01-MA1" Canvas.Left="1390" Canvas.Top="479" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -267,7 +263,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="48" RenderTransformOrigin="0.5,0.5" StatusComponent="230-21-CV1" Canvas.Left="463" Canvas.Top="122" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Right">
+        <Labels:Pipe Width="48" RenderTransformOrigin="0.5,0.5" StatusComponent="230-21-CV1" Canvas.Left="463" Canvas.Top="132" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -278,16 +274,6 @@
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
         <Labels:Pipe Width="42" RenderTransformOrigin="0.5,0.5" StatusComponent="291-01-MA1" Canvas.Left="466" Canvas.Top="62" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
-        <Labels:Pipe Width="88" RenderTransformOrigin="0.5,0.5" StatusComponent="293-01-MA1" Canvas.Left="600" Canvas.Top="667" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -407,7 +393,7 @@
                 </TransformGroup>
             </Machines:CV_Valve.RenderTransform>
         </Machines:CV_Valve>
-        <Machines:CV_Valve Canvas.Left="768" Canvas.Top="294" Height="22" Width="40" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <Machines:CV_Valve Canvas.Left="768" Canvas.Top="294" Height="22" Width="40" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Machines:CV_Valve.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -417,7 +403,7 @@
                 </TransformGroup>
             </Machines:CV_Valve.RenderTransform>
         </Machines:CV_Valve>
-        <Machines:CV_Valve Canvas.Left="813" Canvas.Top="614" Height="22" Width="40" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <Machines:CV_Valve Canvas.Left="813" Canvas.Top="617" Height="22" Width="40" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Machines:CV_Valve.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -427,7 +413,7 @@
                 </TransformGroup>
             </Machines:CV_Valve.RenderTransform>
         </Machines:CV_Valve>
-        <Machines:CV_Valve Canvas.Left="1382" Canvas.Top="317" Height="22" Width="40" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <Machines:CV_Valve Canvas.Left="1382" Canvas.Top="294" Height="22" Width="40" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Machines:CV_Valve.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -438,131 +424,63 @@
             </Machines:CV_Valve.RenderTransform>
         </Machines:CV_Valve>
         <Canvas HorizontalAlignment="Center" Canvas.Left="120" Canvas.Top="387" VerticalAlignment="Top" Width="256" Height="86">
-            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
-            <TextBlock TextWrapping="Wrap" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Prewash Recovery" Canvas.Left="84" Canvas.Top="11" Padding="15,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="145"/>
-            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
+            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Black" Effect="{StaticResource MaterialDesignElevationShadow1}"/>
+            <TextBlock TextAlignment="Center" TextWrapping="Wrap" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Prewash Recovery" Canvas.Left="84" Canvas.Top="11"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="172"/>
+            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" Effect="{StaticResource MaterialDesignElevationShadow12}"/>
             <Labels:GroupLabel GroupName="288" Canvas.Left="11" Canvas.Top="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </Canvas>
         <Canvas HorizontalAlignment="Center" Canvas.Left="120" Canvas.Top="151" VerticalAlignment="Center" Width="256" Height="86">
-            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="24" Foreground="Black" FontWeight="Bold" Canvas.Left="84" Canvas.Top="28" Padding="15,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"><Run Language="it-it" Text="Prewash"/></TextBlock>
-            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
+            <Border Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Center" VerticalAlignment="Center" Effect="{StaticResource MaterialDesignElevationShadow1}" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="24" Foreground="Black" FontWeight="Bold" Canvas.Left="84" Canvas.Top="27" HorizontalAlignment="Center" VerticalAlignment="Top" Width="171"><Run Language="it-it" Text="Prewash"/></TextBlock>
+            <Border Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top" Effect="{StaticResource MaterialDesignElevationShadow12}" BorderThickness="1,1,1,1" BorderBrush="Black"/>
             <Labels:GroupLabel GroupName="210" Canvas.Left="11" Canvas.Top="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </Canvas>
         <Canvas Canvas.Left="442" Canvas.Top="596" Width="256" Height="86" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Filtration" Canvas.Left="84" Canvas.Top="28" Padding="15,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
+            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Black" Effect="{StaticResource MaterialDesignElevationShadow1}"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Filtration" Canvas.Left="84" Canvas.Top="27" HorizontalAlignment="Center" VerticalAlignment="Top" Width="172"/>
+            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" Effect="{StaticResource MaterialDesignElevationShadow12}"/>
             <Labels:GroupLabel GroupName="288" Canvas.Left="11" Canvas.Top="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </Canvas>
         <Canvas Canvas.Left="443" Canvas.Top="151" Width="254" Height="86" HorizontalAlignment="Center" VerticalAlignment="Top">
-            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Grinder" Canvas.Left="84" Canvas.Top="28" Padding="15,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
+            <Border BorderThickness="1,1,1,1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Center" VerticalAlignment="Center" Effect="{StaticResource MaterialDesignElevationShadow1}" BorderBrush="Black"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Grinder" Canvas.Left="84" Canvas.Top="27" HorizontalAlignment="Center" VerticalAlignment="Top" Width="170"/>
+            <Border BorderThickness="1,1,1,1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top" Effect="{StaticResource MaterialDesignElevationShadow12}" BorderBrush="Black"/>
             <Labels:GroupLabel GroupName="230" Canvas.Left="11" Canvas.Top="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </Canvas>
         <Canvas Canvas.Left="1378" Canvas.Top="152" Width="256" Height="86" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Separation" Canvas.Left="84" Canvas.Top="28" Padding="15,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
+            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Black" Effect="{StaticResource MaterialDesignElevationShadow1}"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Separation" Canvas.Left="84" Canvas.Top="27" HorizontalAlignment="Center" VerticalAlignment="Center" Width="172"/>
+            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" Effect="{StaticResource MaterialDesignElevationShadow12}"/>
             <Labels:GroupLabel GroupName="430" Canvas.Left="11" Canvas.Top="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </Canvas>
         <Canvas Canvas.Left="1066" Canvas.Top="151" Width="256" Height="86" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Washing" Canvas.Left="84" Canvas.Top="28" Padding="15,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
+            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Center" VerticalAlignment="Center" Effect="{StaticResource MaterialDesignElevationShadow1}" BorderBrush="Black"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Washing" Canvas.Left="84" Canvas.Top="27" HorizontalAlignment="Center" VerticalAlignment="Center" Width="172"/>
+            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top" Effect="{StaticResource MaterialDesignElevationShadow12}" BorderBrush="Black"/>
             <Labels:GroupLabel GroupName="350" Canvas.Left="11" Canvas.Top="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </Canvas>
         <Canvas Canvas.Left="1378" Canvas.Top="387" Width="256" Height="86" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
-            <TextBlock TextWrapping="Wrap" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Separation Recovery" Canvas.Left="84" Canvas.Top="11" Padding="15,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="161"/>
-            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
+            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Black" Effect="{StaticResource MaterialDesignElevationShadow1}"/>
+            <TextBlock TextWrapping="Wrap" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Separation Recovery" Canvas.Left="84" Canvas.Top="11" HorizontalAlignment="Center" VerticalAlignment="Center" Width="172" TextAlignment="Center"/>
+            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" Effect="{StaticResource MaterialDesignElevationShadow12}"/>
             <Labels:GroupLabel GroupName="430" Canvas.Left="11" Canvas.Top="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </Canvas>
         <Canvas Canvas.Left="754" Canvas.Top="387" Width="254" Height="86" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
-            <TextBlock TextWrapping="Wrap" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Hot Wash Recovery" Canvas.Left="84" Canvas.Top="11" Padding="15,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="161"/>
-            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
+            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Black" Effect="{StaticResource MaterialDesignElevationShadow1}"/>
+            <TextBlock TextAlignment="Center" TextWrapping="Wrap" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Hot Wash Recovery" Canvas.Left="84" Canvas.Top="11" HorizontalAlignment="Center" VerticalAlignment="Center" Width="171"/>
+            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" Effect="{StaticResource MaterialDesignElevationShadow12}"/>
             <Labels:GroupLabel GroupName="350" Canvas.Left="11" Canvas.Top="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </Canvas>
         <Canvas Canvas.Left="754" Canvas.Top="152" Width="254" Height="86" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Hot Wash" Canvas.Left="84" Canvas.Top="28" Padding="15,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect/>
-                </Border.Effect>
-            </Border>
+            <Border BorderThickness="1" Height="86" Width="171" Background="Gray" CornerRadius="0,15,15,0" Canvas.Left="84" HorizontalAlignment="Center" VerticalAlignment="Center" Effect="{StaticResource MaterialDesignElevationShadow1}" BorderBrush="Black"/>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="24" Foreground="Black" FontWeight="Bold" Text="Hot Wash" Canvas.Left="84" Canvas.Top="27" HorizontalAlignment="Center" VerticalAlignment="Top" Width="170"/>
+            <Border BorderThickness="1" Height="86" Width="86" Background="Gray" CornerRadius="15,0,0,15" HorizontalAlignment="Left" VerticalAlignment="Top" Effect="{StaticResource MaterialDesignElevationShadow12}" BorderBrush="Black"/>
             <Labels:GroupLabel GroupName="330" Canvas.Left="11" Canvas.Top="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </Canvas>
+        <Misc:WaterView_Freccia_Flow_Materiale Canvas.Left="390" Canvas.Top="160" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Misc:WaterView_Freccia_Flow_Materiale Canvas.Left="706" Canvas.Top="160" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Misc:WaterView_Freccia_Flow_Materiale Canvas.Left="1019" Canvas.Top="160" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Misc:WaterView_Freccia_Flow_Materiale Canvas.Left="1331" Canvas.Top="160" HorizontalAlignment="Left" VerticalAlignment="Center"/>
     </Canvas>
 
 </UserControl>
