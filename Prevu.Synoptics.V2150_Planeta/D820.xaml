@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Prevu.Synoptics.D820"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             mc:Ignorable="d" 
+             d:Background="{DynamicResource MaterialDesignPaper}">
+  <Canvas Height="450" Width="320">
+    <Machines:Storage_silo Height="442" Width="323" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="820-41-WT1" SignalName="LSHA" Canvas.Left="207" Canvas.Top="48"/>
+    <Labels:DeviceLabel HorizontalAlignment="Center" 
+		VerticalAlignment="Center" 
+		ComponentName="820-01-MA1" Canvas.Left="29" Canvas.Top="39"/>
+    <Labels:DeviceLabel HorizontalAlignment="Center" 
+            ComponentName="820-41-WT1" Canvas.Left="29" Canvas.Top="173" VerticalAlignment="Top"/>
+  </Canvas>
+</UserControl>
