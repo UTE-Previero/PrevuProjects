@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Prevu.Synoptics.D460"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             mc:Ignorable="d" 
+             d:Background="{DynamicResource MaterialDesignPaper}" >
+    <Canvas Height="386" Width="293">
+        <Machines:STR_Washing_reactor_B Canvas.Left="44" Canvas.Top="20" HorizontalAlignment="Left" Height="347" VerticalAlignment="Center" Width="206"/>
+        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="460-61-LEV" SignalName="LSH" Canvas.Left="107" Canvas.Top="156" />
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+		VerticalAlignment="Center" 
+		ComponentName="460-61-LEV" Canvas.Left="102" Canvas.Top="208"/>
+    </Canvas>
+</UserControl>
