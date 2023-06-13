@@ -8,10 +8,12 @@
         mc:Ignorable="d" Background="{DynamicResource MaterialDesignPaper}"
         Title="MainWindow" Height="746" Width="1600">
 
-	<ScrollViewer>
-		<StackPanel>
-            
-        </StackPanel>
+	<ScrollViewer HorizontalScrollBarVisibility="Auto">
+		<!--<StackPanel>-->
+            <Synoptics:PlantView CacheMode="BitmapCache">
+                
+            </Synoptics:PlantView>
+        <!--</StackPanel>-->
 	</ScrollViewer>
 
 </Window>
