@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -15,15 +13,16 @@ using System.Windows.Shapes;
 
 namespace Prevu.Synoptics
 {
-  /// <summary>
-  /// Interaction logic for D020.xaml
-  /// </summary>
-  public partial class D020_2 : UserControl
-  {
-    public D020_2()
+    /// <summary>
+    /// Interaction logic for GR1.xaml
+    /// </summary>
+    public partial class P020 : UserControl
     {
-      InitializeComponent();
-    }
+        public P020()
+        {
+            InitializeComponent();
+        }
 
-  }
+       
+    }
 }
