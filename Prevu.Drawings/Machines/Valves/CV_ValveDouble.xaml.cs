@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -13,17 +11,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Synoptics
+namespace Prevu.Drawings.Machines
 {
-    /// <summary>
-    /// Interaction logic for PlantView.xaml
-    /// </summary>
-    public partial class PlantView_Q61_Q71_Q72_Q81 : UserControl
+  /// <summary>
+  /// Interaction logic for CV_Valve.xaml
+  /// </summary>
+  public partial class CV_ValveDouble : UserControl
+  {
+    public CV_ValveDouble()
     {
-        public PlantView_Q61_Q71_Q72_Q81()
-        {
-            InitializeComponent();
-        }
-
+      InitializeComponent();
     }
+  }
 }

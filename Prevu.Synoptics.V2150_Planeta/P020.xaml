@@ -7,7 +7,7 @@
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:DCE="clr-namespace:Prevu.Drawings.Machines.DCE;assembly=Prevu.Drawings" 
              xmlns:VibratingScreens="clr-namespace:Prevu.Drawings.Machines.VibratingScreens;assembly=Prevu.Drawings" xmlns:Blowers="clr-namespace:Prevu.Drawings.Machines.Blowers;assembly=Prevu.Drawings" 
-             x:Class="Prevu.Synoptics.P018" mc:Ignorable="d"
+             x:Class="Prevu.Synoptics.P020" mc:Ignorable="d"
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
         <Labels:Pipe Width="134" StatusComponent="098-01-MA1" PipeHeight="Medium" Height="14" Canvas.Left="1318" Canvas.Top="742" HorizontalAlignment="Left" VerticalAlignment="Top"/>
@@ -148,16 +148,6 @@
                 </TransformGroup>
             </Machines:MaterialInletOutlet.RenderTransform>
         </Machines:MaterialInletOutlet>
-        <Rectangle HorizontalAlignment="Left" Height="36" Stroke="Black" VerticalAlignment="Center" Width="2" RenderTransformOrigin="0.5,0.5" Canvas.Left="233" Canvas.Top="493">
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>
         <Machines:CV_Valve HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Height="48" Width="56" Canvas.Left="206" Canvas.Top="66">
             <Machines:CV_Valve.RenderTransform>
                 <TransformGroup>
@@ -191,20 +181,13 @@
             ComponentName="025-01-MA1" Canvas.Left="581" Canvas.Top="208"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
             VerticalAlignment="Center" 
-            ComponentName="018-21-CV1" Canvas.Left="124" Canvas.Top="62"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            VerticalAlignment="Center" 
-            ComponentName="018-21-CV2" Height="50" Width="88" Canvas.Left="124" Canvas.Top="117"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            VerticalAlignment="Center" 
             ComponentName="020-41-LT1" Canvas.Left="158" Canvas.Top="302"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
             VerticalAlignment="Center" 
             ComponentName="024-01-MA1" Canvas.Left="541" Canvas.Top="392"/>
-        <Labels:DetailsLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="020-HYD" DetailsPageName="D020_2" Canvas.Left="126" Canvas.Top="547"/>
+        <Labels:DetailsLabel HorizontalAlignment="Left" VerticalAlignment="Top" ComponentName="020-HYD" DetailsPageName="D020" Canvas.Left="139" Canvas.Top="484"/>
         <Labels:DeviceLabel 
-            ComponentName="020-DEBALER" Canvas.Left="107" Canvas.Top="487" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Labels:DetailsLabel ComponentName="020-VIEW" DetailsPageName="D020" HideComponentName="True" Canvas.Left="203" Canvas.Top="487" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            ComponentName="020-DEBALER" Canvas.Left="195" Canvas.Top="484" HorizontalAlignment="Left" VerticalAlignment="Top" />
         <VibratingScreens:ALV_VibratingFeeder Canvas.Left="514" Canvas.Top="526" Height="98" Width="176" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5">
             <VibratingScreens:ALV_VibratingFeeder.RenderTransform>
                 <TransformGroup>
@@ -312,10 +295,6 @@
         <Labels:DeviceLabel 
             ComponentName="028-01-MA1" Canvas.Left="901" Canvas.Top="278" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Labels:DeviceLabel 
-            ComponentName="028-21-CV1" Canvas.Left="931" Canvas.Top="103" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel 
-            ComponentName="028-21-CV2" Canvas.Left="931" Canvas.Top="163" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel 
             ComponentName="028-41-LT1" Canvas.Left="1184" Canvas.Top="210" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:Pipe Width="702" Canvas.Top="400" StatusComponent="027-01-MA1" PipeHeight="Medium" Canvas.Left="400" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" >
             <Labels:Pipe.RenderTransform>
@@ -338,5 +317,7 @@
             ComponentName="098-01-MA1" Canvas.Left="1291" Canvas.Top="678" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel 
             ComponentName="096-01-MA1" Canvas.Left="1151" Canvas.Top="547" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DetailsLabel ComponentName="018-LUB" DetailsPageName="D018" Canvas.Left="165" Canvas.Top="65" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DetailsLabel ComponentName="028-LUB" DetailsPageName="D028" Canvas.Left="973" Canvas.Top="140" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>
