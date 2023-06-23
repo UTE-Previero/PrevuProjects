@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Prevu.Drawings.Machines.Stirrer"
+             xmlns:local="clr-namespace:Prevu.Drawings.Machines.Stirrer" IsHitTestVisible="False"
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents"
              mc:Ignorable="d" 
              >
   <Viewbox Stretch="Uniform">
@@ -14,9 +15,10 @@
       <Canvas.Resources>
         <RectangleGeometry  x:Key="clip0_1324_119" Rect="0, 0, 58, 133"/>
       </Canvas.Resources>
-      <!--Unknown tag: sodipodi:namedview-->
       <Canvas Name="g24" >
-        <Rectangle  Canvas.Left="1.56567" Canvas.Top="15.6579" Width="54.8026" Height="101.776" RadiusX="4.69737" RadiusY="4.69737" Name="rect2" Fill="#FF808080"/>
+        <Rectangle  Canvas.Left="1.56567" Canvas.Top="15.6579" Width="54.8026" 
+                    Height="101.776" RadiusX="4.69737" RadiusY="4.69737" 
+                    Name="rect2" Fill="#FF808080"/>
         <Canvas Name="g6" Effect="{StaticResource MaterialDesignElevationShadow1}">
           <Path  Name="path4" Fill="#FF292929">
             <Path.Data>
@@ -45,7 +47,16 @@
             </Path.Data>
           </Path>
         </Canvas>
-        <Canvas Name="g22" Effect="{StaticResource MaterialDesignElevationShadow1}">
+
+        <Labels:WaterLevel x:Name="WaterLevel" Background="Transparent" d:Background="lightblue" Height="99" Width="54" 
+                         HorizontalAlignment="Center" VerticalAlignment="Top" 
+                           Canvas.Left="2" Canvas.Top="18" d:Opacity=".6">
+          <Labels:WaterLevel.OpacityMask>
+            <VisualBrush Visual="{Binding ElementName=rect2}" />
+          </Labels:WaterLevel.OpacityMask>
+        </Labels:WaterLevel>
+
+        <Canvas Name="g22" Effect="{StaticResource MaterialDesignElevationShadow1}" d:IsLocked="True">
           <Path  Name="path20" StrokeThickness="3.13158" Stroke="#FF808080" StrokeStartLineCap="Round" StrokeEndLineCap="Round">
             <Path.Data>
               <PathGeometry Figures="M18.7894 17.2237C11.4516 17.2237 6.26304 17.2237 6.26304 17.2237C6.26304 17.2237 6.26304 17.2237 6.26304 17.2237C3.66876 17.2237 1.56567 19.0425 1.56567 21.2863V113.372C1.56567 115.615 3.66876 117.434 6.26304 117.434H51.6709C54.2652 117.434 56.3683 115.615 56.3683 113.372V21.2863C56.3683 19.0425 54.2652 17.2237 51.6709 17.2237H40.7104" FillRule="NonZero"/>
