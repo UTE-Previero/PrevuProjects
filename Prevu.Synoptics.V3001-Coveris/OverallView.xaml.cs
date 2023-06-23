@@ -15,14 +15,14 @@ using System.Windows.Shapes;
 
 namespace Prevu.Synoptics
 {
-    /// <summary>
-    /// Interaction logic for PlantView.xaml
-    /// </summary>
-    public partial class PlantView2 : UserControl
+  /// <summary>
+  /// Interaction logic for OverallView.xaml
+  /// </summary>
+  public partial class OverallView : UserControl
+  {
+    public OverallView()
     {
-        public PlantView2()
-        {
-            InitializeComponent();
-        }
+      InitializeComponent();
     }
+  }
 }
