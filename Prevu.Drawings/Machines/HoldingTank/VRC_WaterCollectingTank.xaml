@@ -3,23 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Prevu.Drawings.Machines"
+             xmlns:local="clr-namespace:Prevu.Drawings.Machines" IsHitTestVisible="False"
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents"
              mc:Ignorable="d" Width="100" Height="44" Effect="{DynamicResource MaterialDesignElevationShadow1}">
-	<Viewbox Stretch="Fill">
-		<Canvas Name="svg11" Width="100" Height="44">
-			<Canvas.RenderTransform>
-				<TranslateTransform X="0" Y="0"/>
-			</Canvas.RenderTransform>
-			<Canvas.Resources>
-				<RectangleGeometry x:Key="clip0_17_0" Rect="0, 0, 100, 44"/>
-			</Canvas.Resources>
-			<Canvas Name="g4" Clip="{StaticResource clip0_17_0}">
-				<Path Name="path2" Fill="#FF808080">
-					<Path.Data>
-						<PathGeometry Figures="M0 2C0 0.89543 0.89543 0 2 0H98C99.1046 0 100 0.895431 100 2V33.1224C100 33.6817 99.7658 34.2155 99.3541 34.5942L89.7045 43.4719C89.3353 43.8115 88.852 44 88.3504 44H11.6496C11.148 44 10.6647 43.8115 10.2955 43.4719L0.645888 34.5942C0.234242 34.2155 0 33.6817 0 33.1224L0 2Z" FillRule="NonZero"/>
-					</Path.Data>
-				</Path>
-			</Canvas>
-		</Canvas>
-	</Viewbox>
+  <Viewbox Stretch="Fill">
+    <Canvas Name="svg11" Width="100" Height="44">
+      <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="0"/>
+      </Canvas.RenderTransform>
+      <Canvas.Resources>
+        <RectangleGeometry x:Key="clip0_17_0" Rect="0, 0, 100, 44"/>
+      </Canvas.Resources>
+      <Canvas Name="g4" Clip="{StaticResource clip0_17_0}">
+        <Path Name="path2" Fill="#FF808080">
+          <Path.Data>
+            <PathGeometry Figures="M0 2C0 0.89543 0.89543 0 2 0H98C99.1046 0 100 0.895431 100 2V33.1224C100 33.6817 99.7658 34.2155 99.3541 34.5942L89.7045 43.4719C89.3353 43.8115 88.852 44 88.3504 44H11.6496C11.148 44 10.6647 43.8115 10.2955 43.4719L0.645888 34.5942C0.234242 34.2155 0 33.6817 0 33.1224L0 2Z" FillRule="NonZero"/>
+          </Path.Data>
+        </Path>
+        <Labels:WaterLevel x:Name="WaterLevel" Background="Transparent" d:Background="lightblue" Height="44" Width="100" 
+                         HorizontalAlignment="Center" VerticalAlignment="Center" d:Opacity=".6">
+          <Labels:WaterLevel.OpacityMask>
+            <VisualBrush Visual="{Binding ElementName=path2}" />
+          </Labels:WaterLevel.OpacityMask>
+        </Labels:WaterLevel>
+      </Canvas>
+    </Canvas>
+  </Viewbox>
 </UserControl>

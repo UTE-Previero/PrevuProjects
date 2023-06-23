@@ -14,17 +14,17 @@
           <PathGeometry Figures="M19.7206 84.1014L6.74602 56.8187C6.25485 55.7859 6 54.6566 6 53.5129V8.69728C6 4.44619 9.44619 1 13.6973 1H60.3027C64.5538 1 68 4.44619 68 8.69728V53.5129C68 54.6566 67.7451 55.7859 67.254 56.8187L54.2794 84.1014C53.7882 85.1342 53.5333 86.2635 53.5333 87.4071V94C53.5333 96.2828 51.6828 98.1333 49.4 98.1333H24.6C22.3172 98.1333 20.4667 96.2828 20.4667 94V87.4071C20.4667 86.2635 20.2118 85.1342 19.7206 84.1014Z" FillRule="NonZero"/>
         </Path.Data>
       </Path>
-      <Labels:WaterLevel x:Name="WaterLevel" Background="Transparent" d:Background="lightblue" Height="97" Width="62" 
-                         HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="6" Canvas.Top="1">
-        <Labels:WaterLevel.OpacityMask>
-          <VisualBrush Visual="{Binding ElementName=path2}" />
-        </Labels:WaterLevel.OpacityMask>
-      </Labels:WaterLevel>
       <Path Name="path4" Fill="#FF292929" Effect="{StaticResource MaterialDesignElevationShadow1}">
         <Path.Data>
           <PathGeometry Figures="M33.5555 80.5667H40.9119L42.9181 87.1542L49.4 91.5458L44.5986 92.2778L46.5192 98.1333H27.7939L30.6747 89.35L25.6333 84.9583H32.1151L33.5555 80.5667Z" FillRule="NonZero"/>
         </Path.Data>
       </Path>
+      <Labels:WaterLevel x:Name="WaterLevel" Background="Transparent" d:Background="lightblue" Height="97" Width="62" 
+                         HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="6" Canvas.Top="1" d:Opacity=".6">
+        <Labels:WaterLevel.OpacityMask>
+          <VisualBrush Visual="{Binding ElementName=path2}" />
+        </Labels:WaterLevel.OpacityMask>
+      </Labels:WaterLevel>
     </Canvas>
   </Viewbox>
 </UserControl>

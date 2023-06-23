@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Prevu.Drawings.Machines"
+             xmlns:local="clr-namespace:Prevu.Drawings.Machines" IsHitTestVisible="False"
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents"
              mc:Ignorable="d" Width="100" Height="100">
   <Viewbox Stretch="Uniform">
@@ -13,21 +13,6 @@
       </Canvas.Resources>
       <Canvas Name="g16" Clip="{StaticResource clip0_25_24}">
         <Rectangle Canvas.Left="1" Canvas.Top="10" Width="35" Height="65" RadiusX="3" RadiusY="3" Name="rect2" Fill="Gray"/>
-        <Labels:WaterLevel x:Name="WaterLevel" Background="Transparent" d:Background="lightblue" Height="64" Width="35" 
-                         HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="1" Canvas.Top="12">
-          <Labels:WaterLevel.OpacityMask>
-            <VisualBrush Visual="{Binding ElementName=rect2}" />
-          </Labels:WaterLevel.OpacityMask>
-        </Labels:WaterLevel>
-
-        <Canvas Name="g6" Effect="{StaticResource MaterialDesignElevationShadow1}">
-          <Path Name="path4" Fill="Gray">
-            <Path.Data>
-              <PathGeometry Figures="M12 12C12.5523 12 13 11.5523 13 11C13 10.4477 12.5523 10 12 10V12ZM26 10C25.4477 10 25 10.4477 25 11C25 11.5523 25.4477 12 26 12V10ZM35 13.5946V72.4054H37V13.5946H35ZM33 74H4V76H33V74ZM2 72.4054V13.5946H0V72.4054H2ZM4 74C2.75422 74 2 73.1547 2 72.4054H0C0 74.522 1.93207 76 4 76V74ZM35 72.4054C35 73.1547 34.2458 74 33 74V76C35.0679 76 37 74.522 37 72.4054H35ZM33 12C34.2458 12 35 12.8453 35 13.5946H37C37 11.478 35.0679 10 33 10V12ZM4 10C1.93207 10 0 11.478 0 13.5946H2C2 12.8453 2.75422 12 4 12V10ZM4 12H12V10H4V12ZM26 12H33V10H26V12Z" FillRule="NonZero"/>
-            </Path.Data>
-          </Path>
-        </Canvas>
-
         <Canvas Name="g10" Effect="{StaticResource MaterialDesignElevationShadow1}">
           <Path Name="path8" Fill="#FF292929">
             <Path.Data>
@@ -42,6 +27,24 @@
             </Path.Data>
           </Path>
         </Canvas>
+
+        <Labels:WaterLevel x:Name="WaterLevel" Background="Transparent" d:Background="lightblue" Height="64" Width="35" 
+                         HorizontalAlignment="Center" VerticalAlignment="Center" 
+                           Canvas.Left="1" Canvas.Top="12" d:Opacity=".6">
+          <Labels:WaterLevel.OpacityMask>
+            <VisualBrush Visual="{Binding ElementName=rect2}" />
+          </Labels:WaterLevel.OpacityMask>
+        </Labels:WaterLevel>
+
+        <Canvas Name="g6" Effect="{StaticResource MaterialDesignElevationShadow1}">
+          <Path Name="path4" Fill="Gray">
+            <Path.Data>
+              <PathGeometry Figures="M12 12C12.5523 12 13 11.5523 13 11C13 10.4477 12.5523 10 12 10V12ZM26 10C25.4477 10 25 10.4477 25 11C25 11.5523 25.4477 12 26 12V10ZM35 13.5946V72.4054H37V13.5946H35ZM33 74H4V76H33V74ZM2 72.4054V13.5946H0V72.4054H2ZM4 74C2.75422 74 2 73.1547 2 72.4054H0C0 74.522 1.93207 76 4 76V74ZM35 72.4054C35 73.1547 34.2458 74 33 74V76C35.0679 76 37 74.522 37 72.4054H35ZM33 12C34.2458 12 35 12.8453 35 13.5946H37C37 11.478 35.0679 10 33 10V12ZM4 10C1.93207 10 0 11.478 0 13.5946H2C2 12.8453 2.75422 12 4 12V10ZM4 12H12V10H4V12ZM26 12H33V10H26V12Z" FillRule="NonZero"/>
+            </Path.Data>
+          </Path>
+        </Canvas>
+
+
       </Canvas>
     </Canvas>
   </Viewbox>

@@ -19,7 +19,6 @@ namespace Prevu.Drawings.Machines
   /// </summary>
   public partial class STR_BatchReactor : UserControl
   {
-
     public static readonly DependencyProperty ComponentNameProperty =
       DependencyProperty.Register(nameof(ComponentName), typeof(string), typeof(STR_BatchReactor),
 new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.AffectsRender, ComponentNameChangedCallback));
