@@ -7,6 +7,7 @@
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:DCE="clr-namespace:Prevu.Drawings.Machines.DCE;assembly=Prevu.Drawings" 
              xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings" 
+             xmlns:HoldingTank="clr-namespace:Prevu.Drawings.Machines.HoldingTank;assembly=Prevu.Drawings" 
              x:Class="Prevu.Synoptics.P288" mc:Ignorable="d"
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
@@ -293,7 +294,6 @@
             </Machines:CV_Valve_001.RenderTransform>
         </Machines:CV_Valve_001>
         <Machines:Waste HorizontalAlignment="Center" VerticalAlignment="Top" Height="46" Width="44" Canvas.Left="1029" Canvas.Top="226"/>
-        <Machines:VRC_WaterCollectingTank HorizontalAlignment="Center" VerticalAlignment="Top" Height="106" Width="208" Canvas.Left="275" Canvas.Top="543"/>
         <Machines:WaterPump HorizontalAlignment="Center" VerticalAlignment="Top" Height="54" Width="49" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="538" Canvas.Top="585">
             <Machines:WaterPump.RenderTransform>
                 <TransformGroup>
@@ -315,8 +315,9 @@
             </Machines:WaterPump.RenderTransform>
         </Machines:WaterPump>
         <Machines:SCW_ScrewConveyor_inclined HorizontalAlignment="Center" VerticalAlignment="Top" Height="205" Width="236" Canvas.Left="858" Canvas.Top="118"/>
-        <Machines:VRC_WaterCollectingTank HorizontalAlignment="Center" VerticalAlignment="Top" Height="106" Width="208" Canvas.Left="806" Canvas.Top="606"/>
         <Machines:VB_VibratingScreen HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="936" Canvas.Top="366"/>
+        <HoldingTank:VRC_WaterTank Canvas.Left="272" Canvas.Top="516" HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="225-41-LT1" TrendName="LEVEL"/>
+        <HoldingTank:VRC_WaterTank Canvas.Left="810" Canvas.Top="597" HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="288-41-LT1" TrendName="LEVEL"/>
         <Machines:Waste HorizontalAlignment="Center" VerticalAlignment="Top" Height="46" Width="44" Canvas.Left="1072" Canvas.Top="396"/>
         <Machines:WaterPump HorizontalAlignment="Center" VerticalAlignment="Top" Height="54" Width="48" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="1054" Canvas.Top="615">
             <Machines:WaterPump.RenderTransform>
@@ -361,9 +362,9 @@
                 </TransformGroup>
             </Machines:External.RenderTransform>
         </Machines:External>
-        <Labels:DeviceLabel HorizontalAlignment="Center" 
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
             VerticalAlignment="Top" 
-            ComponentName="288-41-LT1" RenderTransformOrigin="0.5,0.5" Canvas.Left="865" Canvas.Top="634">
+            ComponentName="288-41-LT1" RenderTransformOrigin="0.5,0.5" Canvas.Left="861" Canvas.Top="642">
             <Labels:DeviceLabel.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -402,9 +403,9 @@
         <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Center" 
             ComponentName="288-21-CV1" Canvas.Left="732" Canvas.Top="447"/>
-        <Labels:DeviceLabel HorizontalAlignment="Center" 
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
             VerticalAlignment="Top" 
-            ComponentName="225-41-LT1" Canvas.Left="334" Canvas.Top="572"/>
+            ComponentName="225-41-LT1" Canvas.Left="323" Canvas.Top="551"/>
         <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
             ComponentName="293-01-MA1" Canvas.Left="1087" Canvas.Top="730"/>

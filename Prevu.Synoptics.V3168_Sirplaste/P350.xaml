@@ -6,6 +6,7 @@
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:Blowers="clr-namespace:Prevu.Drawings.Machines.Blowers;assembly=Prevu.Drawings" 
+             xmlns:HoldingTank="clr-namespace:Prevu.Drawings.Machines.HoldingTank;assembly=Prevu.Drawings" 
              x:Class="Prevu.Synoptics.P350" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
@@ -328,8 +329,8 @@
                 </TransformGroup>
             </Machines:DCE_DryingCentrifuge.RenderTransform>
         </Machines:DCE_DryingCentrifuge>
-        <Machines:VRC_WaterCollectingTank HorizontalAlignment="Left" VerticalAlignment="Center" Height="117" Width="235" Canvas.Left="660" Canvas.Top="681"/>
         <Machines:VB_VibratingScreen HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="931" Canvas.Top="469"/>
+        <HoldingTank:VRC_WaterTank Canvas.Left="661" Canvas.Top="648" HorizontalAlignment="Left" VerticalAlignment="Top" Width="246" ComponentName="370-41-LT1" TrendName="LEVEL" Height="170"/>
         <Machines:WaterPump HorizontalAlignment="Left" VerticalAlignment="Center" Height="70" Width="50" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="1044" Canvas.Top="700">
             <Machines:WaterPump.RenderTransform>
                 <TransformGroup>
@@ -371,13 +372,13 @@
             ComponentName="370-25-CV1" Canvas.Left="373" Canvas.Top="432"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
             VerticalAlignment="Center" 
-            ComponentName="370-42-TT1" Canvas.Left="783" Canvas.Top="709"/>
+            ComponentName="370-42-TT1" Canvas.Left="790" Canvas.Top="709"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
             VerticalAlignment="Center" 
             ComponentName="350-01-MA1" Loaded="DeviceLabel_Loaded" Canvas.Left="473" Canvas.Top="60"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
             VerticalAlignment="Center" 
-            ComponentName="370-41-LT1" Canvas.Left="681" Canvas.Top="709"/>
+            ComponentName="370-41-LT1" Canvas.Left="688" Canvas.Top="709"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
             VerticalAlignment="Center" 
             ComponentName="377-01-MA1" Canvas.Left="1024" Canvas.Top="656"/>

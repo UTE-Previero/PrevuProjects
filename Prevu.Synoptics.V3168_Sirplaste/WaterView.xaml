@@ -7,7 +7,7 @@
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:lex="http://wpflocalizeextension.codeplex.com"
-             xmlns:Belts="clr-namespace:Prevu.Drawings.Machines.Belts;assembly=Prevu.Drawings" xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings" xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" xmlns:Stirrer="clr-namespace:Prevu.Drawings.Machines.Stirrer;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.WaterView"
+             xmlns:Belts="clr-namespace:Prevu.Drawings.Machines.Belts;assembly=Prevu.Drawings" xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings" xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" xmlns:Stirrer="clr-namespace:Prevu.Drawings.Machines.Stirrer;assembly=Prevu.Drawings" xmlns:HoldingTank="clr-namespace:Prevu.Drawings.Machines.HoldingTank;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.WaterView"
              lex:ResxLocalizationProvider.DefaultAssembly="Prevu.Localization"
              lex:ResxLocalizationProvider.DefaultDictionary="Resources"             
              mc:Ignorable="d" d:Background="{DynamicResource MaterialDesignPaper}">
@@ -73,7 +73,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Color="Water" Width="60" StatusComponent="373-01-MA1" Canvas.Left="951" Canvas.Top="386" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:Pipe Color="Water" Width="66" StatusComponent="373-01-MA1" Canvas.Left="951" Canvas.Top="386" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:Pipe Color="Water" Width="194" StatusComponent="350-01-MA1" Canvas.Left="985" Canvas.Top="281" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -304,7 +304,6 @@
         <Labels:Pipe Color="Water" Width="68" StatusComponent="226-01-MA1" Canvas.Left="381" Canvas.Top="186" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Labels:Pipe Color="Water" Width="598" StatusComponent="377-01-MA1" Canvas.Left="623" Canvas.Top="486" RenderTransformOrigin="0.5,0.5" VisibilityComponent="377-23-CV1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Stirrer:STR_PrewashReactor_wScrew Width="48" Canvas.Top="118" Height="88" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="437" />
-        <Machines:VRC_WaterCollectingTank Height="70" Width="118" Canvas.Left="1005" Canvas.Top="356" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Machines:VB_VibratingScreen Canvas.Left="1143" Canvas.Top="266" Height="64" Width="58" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Machines:WaterPump Height="22" Width="24" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="965" Canvas.Top="378" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Machines:WaterPump.RenderTransform>
@@ -317,8 +316,8 @@
             </Machines:WaterPump.RenderTransform>
         </Machines:WaterPump>
         <Machines:WaterPump Height="22" Width="24" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="1165" Canvas.Top="362" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Machines:STR_BatchReactor Height="86" Width="40" Canvas.Left="1005" Canvas.Top="120" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Machines:STR_BatchReactor Height="88" Width="40" Canvas.Left="989" Canvas.Top="140" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:STR_BatchReactor Height="86" Width="40" Canvas.Left="1005" Canvas.Top="120" HorizontalAlignment="Left" VerticalAlignment="Center" TrendName="LEVEL" ComponentName="335-41-LT1"/>
+        <Machines:STR_BatchReactor Height="88" Width="40" Canvas.Left="989" Canvas.Top="140" HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="330-41-LT1" TrendName="LEVEL"/>
         <Machines:CV_Valve_001 Height="54" Width="54" Color="Water" RenderTransformOrigin="0.51,0.539" Canvas.Left="957" Canvas.Top="264" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Machines:CV_Valve_001.RenderTransform>
                 <TransformGroup>
@@ -370,7 +369,6 @@
                 </TransformGroup>
             </Machines:CV_Valve_001.RenderTransform>
         </Machines:CV_Valve_001>
-        <Machines:VRC_WaterCollectingTank Width="95" VerticalAlignment="Center" Canvas.Top="509" Canvas.Left="1472" Height="54" HorizontalAlignment="Left"/>
         <Machines:VB_VibratingScreen Width="55" VerticalAlignment="Center" Canvas.Top="427" RenderTransformOrigin="0.5,0.5" Canvas.Left="1587" Height="62" HorizontalAlignment="Left">
             <Machines:VB_VibratingScreen.RenderTransform>
                 <TransformGroup>
@@ -426,7 +424,6 @@
         <Rectangle Height="20" Stroke="Black" Width="2" RenderTransformOrigin="0.5,0.5" Canvas.Left="647" Canvas.Top="671" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Machines:External Canvas.Left="635" Canvas.Top="687" Height="28" Width="26" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Machines:VB_VibratingScreen Canvas.Left="355" Canvas.Top="561" Height="64" Width="58" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Machines:VRC_WaterCollectingTank Height="71" Width="118" Canvas.Left="429" Canvas.Top="649" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Rectangle Height="40" Width="40" Fill="Gray" RadiusX="8" RadiusY="8" Canvas.Left="707" Canvas.Top="306" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Machines:WaterPump Height="20" Width="20" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="717" Canvas.Top="316" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Machines:WaterPump.RenderTransform>
@@ -449,7 +446,6 @@
                 </TransformGroup>
             </Machines:DCE_DryingCentrifuge.RenderTransform>
         </Machines:DCE_DryingCentrifuge>
-        <Machines:VRC_WaterCollectingTank Height="71" Width="118" Canvas.Left="544" Canvas.Top="309" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Separation:VSP_SeparationTank_wHopper Width="122" Canvas.Left="472" Canvas.Top="134" Height="100" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <Machines:CV_Valve Canvas.Left="438" Canvas.Top="95" Width="22" Height="16" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Machines:CV_Valve.RenderTransform>
@@ -471,6 +467,10 @@
                 </TransformGroup>
             </Machines:CV_Valve.RenderTransform>
         </Machines:CV_Valve>
+        <HoldingTank:VRC_WaterTank Canvas.Left="1006" Canvas.Top="348" Height="88" Width="126" ComponentName="370-41-LT1" TrendName="LEVEL" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <HoldingTank:VRC_WaterTank Canvas.Left="1458" Canvas.Top="506" Height="74" Width="116" ComponentName="225-41-LT1" TrendName="LEVEL" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <HoldingTank:VRC_WaterTank Canvas.Left="542" Canvas.Top="306" Height="80" Width="118" ComponentName="225-41-LT1" TrendName="LEVEL" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <HoldingTank:VRC_WaterTank Canvas.Left="424" Canvas.Top="636" Height="88" Width="126" ComponentName="288-41-LT1" TrendName="LEVEL" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Machines:WaterPump Height="21" Width="24" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="499" Canvas.Top="332" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Machines:WaterPump.RenderTransform>
                 <TransformGroup>
@@ -488,14 +488,12 @@
         <Labels:GroupLabel GroupName="210" Canvas.Left="446" Canvas.Top="192" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:GroupLabel GroupName="330" Canvas.Left="940" Canvas.Top="72" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Labels:ValueLabel Canvas.Left="1041" Canvas.Top="161" HorizontalAlignment="Center" VerticalAlignment="Center" TrendName="TEMPERATURE" ComponentName="335-42-TT1" FontSize="16"/>
-        <Labels:ValueLabel Canvas.Left="1502" Canvas.Top="515" HorizontalAlignment="Center" VerticalAlignment="Center" TrendName="LEVEL" ComponentName="450-41-LT1" FontSize="16"/>
-        <Labels:ValueLabel Canvas.Left="1502" Canvas.Top="533" HorizontalAlignment="Center" VerticalAlignment="Center" TrendName="VOLUME_CONTROL" ParameterName="ACT_VOLUME" ComponentName="450-41-LT1" FontSize="16" />
-        <Labels:ValueLabel Canvas.Left="1472" Canvas.Top="312" HorizontalAlignment="Center" VerticalAlignment="Center" ComponentName="430-41-LT1" TrendName="LEVEL" FontSize="16"/>
+        <Labels:ValueLabel Canvas.Left="1498" Canvas.Top="520" HorizontalAlignment="Left" VerticalAlignment="Top" TrendName="LEVEL" ComponentName="450-41-LT1" FontSize="16"/>
+        <Labels:ValueLabel Canvas.Left="1498" Canvas.Top="538" HorizontalAlignment="Left" VerticalAlignment="Top" TrendName="VOLUME_CONTROL" ParameterName="ACT_VOLUME" ComponentName="450-41-LT1" FontSize="16" />
         <Labels:ValueLabel Canvas.Left="470" Canvas.Top="663" HorizontalAlignment="Center" VerticalAlignment="Center" TrendName="LEVEL" ComponentName="288-41-LT1" FontSize="16"/>
         <Labels:ValueLabel Canvas.Left="470" Canvas.Top="684" HorizontalAlignment="Center" VerticalAlignment="Center" TrendName="VOLUME_CONTROL" ParameterName="ACT_VOLUME" ComponentName="288-41-LT1" FontSize="16" />
         <Labels:ValueLabel Canvas.Left="586" Canvas.Top="324" HorizontalAlignment="Center" VerticalAlignment="Center" TrendName="LEVEL" ComponentName="225-41-LT1" FontSize="16"/>
         <Labels:ValueLabel Canvas.Left="586" Canvas.Top="345" HorizontalAlignment="Center" VerticalAlignment="Center" TrendName="VOLUME_CONTROL" ParameterName="ACT_VOLUME" ComponentName="225-41-LT1" FontSize="16" />
-        <Labels:ValueLabel Canvas.Left="506" Canvas.Top="167" TrendName="LEVEL" HorizontalAlignment="Center" VerticalAlignment="Center" ComponentName="220-41-LT1" FontSize="16"/>
         <Labels:ValueLabel Canvas.Left="973" Canvas.Top="212" TrendName="TEMPERATURE" HorizontalAlignment="Center" VerticalAlignment="Center" ComponentName="330-42-TT1" FontSize="16"/>
         <Labels:ValueLabel Canvas.Left="1041" Canvas.Top="123" TrendName="LEVEL" HorizontalAlignment="Center" VerticalAlignment="Center" ComponentName="335-41-LT1" FontSize="16"/>
         <Labels:ValueLabel Canvas.Left="1046" Canvas.Top="359" HorizontalAlignment="Center" VerticalAlignment="Center" TrendName="LEVEL" ComponentName="370-41-LT1" FontSize="16"/>
