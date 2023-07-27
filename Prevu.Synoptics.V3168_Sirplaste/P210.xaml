@@ -12,6 +12,26 @@
              x:Class="Prevu.Synoptics.P210" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
+        <Labels:Pipe Color="Water" Width="229" RenderTransformOrigin="0.5,0.5" Height="6" StatusComponent="220-01-MA5" Canvas.Left="1106" Canvas.Top="464" HorizontalAlignment="Left" VerticalAlignment="Center" >
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.859" ScaleY="1.164"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Color="Water" Width="256" RenderTransformOrigin="0.5,0.5" Height="6" StatusComponent="220-01-MA5" Canvas.Left="996" Canvas.Top="357" HorizontalAlignment="Center" VerticalAlignment="Top" >
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.859" ScaleY="1.164"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
         <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Color="ByProduct" Width="78" RenderTransformOrigin="0.5,0.5" Height="6" Canvas.Left="950" Canvas.Top="518" StatusComponent="220-22-CV1" >
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -42,7 +62,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Width="162" PipeHeight="Medium" StatusComponent="220-SEPARATION" Height="30"  VisibilityComponent="220-24-CV1" VisibilitySignal="LS1" Canvas.Left="1153" Canvas.Top="241">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Width="162" PipeHeight="Medium" StatusComponent="220-SEPARATION" Height="30"  VisibilityComponent="220-24-CV1" VisibilitySignal="LS2" Canvas.Left="1153" Canvas.Top="241">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -194,6 +214,7 @@
         <Labels:DeviceLabel HorizontalAlignment="Left" 
             VerticalAlignment="Center" 
             ComponentName="220-DISCHARGE" Canvas.Left="1019" Canvas.Top="671" />
+        <Labels:DetailsLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="220-VIEW" DetailsPageName="D220" HideComponentName="True" Canvas.Left="982" Canvas.Top="151" />
         <Labels:JumpLabel HorizontalAlignment="Left" 
             VerticalAlignment="Center" 
             JumpFromLabel="210-21-CV1" 
@@ -206,6 +227,8 @@
             VerticalAlignment="Center" 
             JumpFromLabel="220-24-CV1" 
             JumpToLabel="230-01-MA1" Canvas.Left="1295" Canvas.Top="221" />
-        <Labels:DetailsLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="220-VIEW" DetailsPageName="D220" HideComponentName="True" Canvas.Left="982" Canvas.Top="151" />
+        <Labels:JumpLabel 
+            JumpFromLabel="220-SEPARATION" 
+            JumpToLabel="225-41-LT1" Canvas.Left="1295" Canvas.Top="432" HorizontalAlignment="Center" VerticalAlignment="Top" />
     </Canvas>
 </UserControl>

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -14,18 +16,18 @@ using System.Windows.Shapes;
 namespace Prevu.Synoptics
 {
     /// <summary>
-    /// Interaction logic for GR1.xaml
+    /// Interaction logic for PlantView.xaml
     /// </summary>
-    public partial class P474 : UserControl
+    public partial class OverallView : UserControl
     {
-        public P474()
+        public OverallView()
         {
             InitializeComponent();
         }
 
-    private void VT_CMM_BlowerAirCompressor_Loaded(object sender, RoutedEventArgs e)
-    {
+        private void Pipe_Loaded(object sender, RoutedEventArgs e)
+        {
 
+        }
     }
-  }
 }
