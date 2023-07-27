@@ -3,6 +3,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Synoptics"
+             xmlns:lex="http://wpflocalizeextension.codeplex.com" 
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:Blowers="clr-namespace:Prevu.Drawings.Machines.Blowers;assembly=Prevu.Drawings" 
@@ -93,8 +94,8 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" RenderTransformOrigin="0.497,0.467" Color="Chemicals" StatusComponent="359-21-CV1" Height="22" Text="ANTIFOAM" Canvas.Left="635" Canvas.Top="436"/>
-        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Center" Width="138" Color="Chemicals" RenderTransformOrigin="0.5,0.5" StatusComponent="371-21-CV1" Text="ADDITIVE" Canvas.Left="635" Canvas.Top="404"/>
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Center" Width="125" RenderTransformOrigin="0.497,0.467" Color="Chemicals" StatusComponent="359-21-CV1" Height="22" Text="{lex:Loc ANTIFOAM}" Canvas.Left="635" Canvas.Top="436"/>
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Center" Width="138" Color="Chemicals" RenderTransformOrigin="0.5,0.5" StatusComponent="371-21-CV1" Text="{lex:Loc ADDITIVE}" Canvas.Left="635" Canvas.Top="404"/>
         <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="242" RenderTransformOrigin="0.497,0.467" Color="Chemicals" StatusComponent="359-21-CV1" Height="5" Canvas.Left="638" Canvas.Top="563">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>

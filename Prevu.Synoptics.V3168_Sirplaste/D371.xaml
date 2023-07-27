@@ -4,14 +4,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Synoptics"
-						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:lex="http://wpflocalizeextension.codeplex.com"
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D371" 
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas Height="533" Width="422">
-        <Labels:Pipe Width="206" RenderTransformOrigin="0.497,0.467" Color="Chemicals" StatusComponent="359-21-CV1" Height="28" HorizontalAlignment="Center" Canvas.Left="161" Canvas.Top="470" VerticalAlignment="Top" Text="ANTIFOAM"/>
-        <Labels:Pipe Width="166" Color="Chemicals" RenderTransformOrigin="0.5,0.5" StatusComponent="371-21-CV1" HorizontalAlignment="Center" Canvas.Left="202" Canvas.Top="394" VerticalAlignment="Top" Text="ADDITIVE"/>
+        <Labels:Pipe Width="206" RenderTransformOrigin="0.497,0.467" Color="Chemicals" StatusComponent="359-21-CV1" Height="28" HorizontalAlignment="Center" Canvas.Left="161" Canvas.Top="470" VerticalAlignment="Top" Text="{lex:Loc ANTIFOAM}"/>
+        <Labels:Pipe Width="166" Color="Chemicals" RenderTransformOrigin="0.5,0.5" StatusComponent="371-21-CV1" HorizontalAlignment="Center" Canvas.Left="202" Canvas.Top="394" VerticalAlignment="Top" Text="{lex:Loc ADDITIVE}"/>
         <Labels:Pipe Color="Water" Width="141" RenderTransformOrigin="0.5,0.5" StatusComponent="371-21-CV1" HorizontalAlignment="Center" Canvas.Left="177" Canvas.Top="198" VerticalAlignment="Top" >
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
