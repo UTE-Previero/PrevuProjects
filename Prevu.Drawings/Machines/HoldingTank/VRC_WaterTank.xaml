@@ -6,37 +6,29 @@
              xmlns:local="clr-namespace:Prevu.Drawings.Machines.HoldingTank"
              mc:Ignorable="d"
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents"
-             IsHitTestVisible="False"
-             >
-    <Viewbox Stretch="Uniform">
-        <Canvas Name="svg32" Width="192" Height="141">
-            <Canvas.RenderTransform>
-                <TranslateTransform X="0" Y="0"/>
-            </Canvas.RenderTransform>
-            <Canvas.Resources>
-                <RectangleGeometry x:Key="clip0_1436_201" Rect="0, 0, 192, 141"/>
-            </Canvas.Resources>
-            <!--Unknown tag: sodipodi:namedview-->
-            <Canvas Name="g8">
-                <Path Name="path2" Fill="#FF808080">
-                    <Path.Data>
-                        <PathGeometry Figures="M6 2H186V25V97C186 112 161 137 146 137H46C31 137 6 112 6 97V2Z" FillRule="NonZero"/>
-                    </Path.Data>
-                </Path>
-                <Labels:WaterLevel x:Name="WaterLevel" Background="Transparent" d:Background="lightblue" Height="135" Width="180" 
+             IsHitTestVisible="False" >
+  <Viewbox Stretch="Fill">
+    <Canvas Name="svg32" Width="192" Height="100">
+      <Canvas Name="g8">
+        <Path Name="path2" Fill="#FF808080" HorizontalAlignment="Center" Height="97" Stretch="Fill" VerticalAlignment="Center" Canvas.Left="6.263" Canvas.Top="2.067" Width="179">
+          <Path.Data>
+            <PathGeometry Figures="M6 2H186V25V97C186 112 161 137 146 137H46C31 137 6 112 6 97V2Z" FillRule="NonZero"/>
+          </Path.Data>
+        </Path>
+        <Labels:WaterLevel x:Name="WaterLevel" Background="Transparent" d:Background="lightblue" Height="96" Width="180" 
                          HorizontalAlignment="Center" VerticalAlignment="Top" d:Opacity=".6" Canvas.Left="6" Canvas.Top="2">
-                    <Labels:WaterLevel.OpacityMask>
-                        <VisualBrush Visual="{Binding ElementName=path2}" />
-                    </Labels:WaterLevel.OpacityMask>
-                </Labels:WaterLevel>
-                <Canvas Name="g6" Effect="{StaticResource MaterialDesignElevationShadow1}">
-                    <Path Name="path4" StrokeThickness="5" Stroke="#FF808080" StrokeStartLineCap="Round" StrokeEndLineCap="Round">
-                        <Path.Data>
-                            <PathGeometry Figures="M4.5 4.5C5.02108 4.5 5.30458 4.5 5.50082 4.5C7.15767 4.50001 8.5 5.84316 8.5 7.50001V97C8.5 103 8.5 111 13.5 117L26 130C32 135 40 135 46 135H146C152 135 160 135 165 130L178.5 117C183.5 112 183.5 103 183.5 97V26.5V7.50001C183.5 5.84315 184.842 4.50001 186.499 4.50001C186.629 4.50001 186.79 4.50001 187 4.50001" FillRule="NonZero"/>
-                        </Path.Data>
-                    </Path>
-                </Canvas>
-            </Canvas>
+          <Labels:WaterLevel.OpacityMask>
+            <VisualBrush Visual="{Binding ElementName=path2}" />
+          </Labels:WaterLevel.OpacityMask>
+        </Labels:WaterLevel>
+        <Canvas Name="g6" Effect="{StaticResource MaterialDesignElevationShadow1}">
+          <Path Name="path4" StrokeThickness="5" Stroke="#FF808080" StrokeStartLineCap="Round" StrokeEndLineCap="Round" HorizontalAlignment="Left" Height="100" Stretch="Fill" VerticalAlignment="Center" Canvas.Left="1.894">
+            <Path.Data>
+              <PathGeometry Figures="M4.5 4.5C5.02108 4.5 5.30458 4.5 5.50082 4.5C7.15767 4.50001 8.5 5.84316 8.5 7.50001V97C8.5 103 8.5 111 13.5 117L26 130C32 135 40 135 46 135H146C152 135 160 135 165 130L178.5 117C183.5 112 183.5 103 183.5 97V26.5V7.50001C183.5 5.84315 184.842 4.50001 186.499 4.50001C186.629 4.50001 186.79 4.50001 187 4.50001" FillRule="NonZero"/>
+            </Path.Data>
+          </Path>
         </Canvas>
-    </Viewbox>
+      </Canvas>
+    </Canvas>
+  </Viewbox>
 </UserControl>
