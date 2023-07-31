@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Prevu.Drawings.Machines.V01_WaterPump"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Drawings.Machines"
+             mc:Ignorable="d" DataContext="{Binding RelativeSource={RelativeSource Self}}"
+             d:DesignHeight="450" d:DesignWidth="800" Width="100" Height="100"
+             IsHitTestVisible="False">
+  <Viewbox Stretch="Uniform">
+    <Canvas Name="svg8" Width="100" Height="100">
+      <Ellipse Canvas.Left="3" Canvas.Top="3" Width="94" Height="94" Name="circle2" Fill="Gray" Effect="{DynamicResource MaterialDesignShadowDepth2}"/>
+      <Path Name="ColorSide">
+        <Path.Data>
+          <PathGeometry Figures="M27.9009 91.491C13.0836 83.5825 3 67.9688 3 50C3 32.0312 13.0836 16.4175 27.9009 8.50899V91.491Z" FillRule="NonZero"/>
+        </Path.Data>
+      </Path>
+			<Path Name="path6" StrokeThickness="6" Stroke="#FF292929" Effect="{DynamicResource MaterialDesignShadowDepth1}">
+        <Path.Data>
+          <PathGeometry Figures="M27 85.2116V14.7915C27 11.6869 30.3829 9.76576 33.0492 11.3562L92.0731 46.5649C94.6742 48.1165 94.6743 51.8837 92.0733 53.4353L33.0493 88.6467C30.383 90.2373 27 88.3162 27 85.2116Z" FillRule="NonZero"/>
+        </Path.Data>
+      </Path>
+    </Canvas>
+  </Viewbox>
+</UserControl>

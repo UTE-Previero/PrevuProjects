@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="Prevu.Drawings.Machines.V01_SLX_Silo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Drawings.Machines"
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents"
+             mc:Ignorable="d" 
+            IsHitTestVisible="False">
+    <Viewbox  Stretch="Uniform">
+        <Canvas Name="svg32" Width="68" Height="93">
+            <Canvas.RenderTransform>
+                <TranslateTransform X="0" Y="0"/>
+            </Canvas.RenderTransform>
+            <Canvas.Resources>
+                <RectangleGeometry  x:Key="clip0_1438_97" Rect="0, 0, 68, 92.9796"/>
+            </Canvas.Resources>
+            <!--Unknown tag: sodipodi:namedview-->
+            <Canvas Name="g8" >
+                <Path  Name="path2" Fill="#FF808080">
+                    <Path.Data>
+                        <PathGeometry Figures="M18.3697 78.341L6.28379 52.927C5.82626 51.9649 5.58887 50.913 5.58887 49.8477V8.17007C5.58887 4.21016 8.79902 1 12.7589 1H56.1722C60.1321 1 63.3423 4.21016 63.3423 8.17007V49.8477C63.3423 50.913 63.1049 51.9649 62.6474 52.927L50.5614 78.341C50.1039 79.3031 49.8665 80.355 49.8665 81.4203V87.5616C49.8665 89.6881 48.1427 91.4119 46.0163 91.4119H22.9149C20.7885 91.4119 19.0647 89.6881 19.0647 87.5616V81.4203C19.0647 80.355 18.8273 79.3031 18.3697 78.341Z" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+                <Labels:WaterLevel x:Name="MaterialLevel" Background="Transparent" d:Background="blue" Height="89" Width="58" 
+                         HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="6" Canvas.Top="2" d:Opacity=".6">
+                <Labels:WaterLevel.OpacityMask>
+                    <VisualBrush Visual="{Binding ElementName=path2}" />
+                </Labels:WaterLevel.OpacityMask>
+                </Labels:WaterLevel>
+                <Canvas Name="g6" Effect="{StaticResource MaterialDesignElevationShadow1}">
+                    <Path  Name="path4" StrokeThickness="2" Stroke="#FF808080" StrokeStartLineCap="Round" StrokeEndLineCap="Round">
+                        <Path.Data>
+                            <PathGeometry Figures="M16.7581 2H11.6129C7.87096 2 6 4.0578 6 8.17341L6 48.7755C6 50.8333 5.59677 52.9422 7 55L18 77.6243C18.9355 79.1676 19 81.8121 19 83.8699V87.4133C19 89.4711 20.129 90.5 22 90.5H26M50.9032 2H58.3871C62.129 2 64 4.0578 64 8.17341V48.7755C64 50.8333 63.9032 52.9422 62.5 55L51 77.6243C50.0645 79.6821 49.5 81.8121 49.5 83.8699V88C49.5 90.0578 48.871 90.5 47 90.5H45.25H43.5" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Viewbox>
+</UserControl>
