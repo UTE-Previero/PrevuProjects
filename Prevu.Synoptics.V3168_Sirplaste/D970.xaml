@@ -9,48 +9,48 @@
              xmlns:Blowers="clr-namespace:Prevu.Drawings.Machines.Blowers;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D970" 
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}">
-  <Canvas Height="450" Width="343">
-    <Labels:Pipe Width="56" VerticalAlignment="Center" Canvas.Top="79" StatusComponent="970-01-MA1" RenderTransformOrigin="0.5,0.5" Canvas.Left="48" HorizontalAlignment="Left" Color="Air">
-      <Labels:Pipe.RenderTransform>
-        <TransformGroup>
-          <ScaleTransform/>
-          <SkewTransform/>
-          <RotateTransform Angle="90"/>
-          <TranslateTransform/>
-        </TransformGroup>
-      </Labels:Pipe.RenderTransform>
-    </Labels:Pipe>
-    <Labels:Pipe Width="62" VerticalAlignment="Center" Canvas.Top="53" StatusComponent="970-01-MA1" RenderTransformOrigin="0.5,0.5" Canvas.Left="74" HorizontalAlignment="Left" Color="Air"/>
-    <Labels:Pipe Width="64" VerticalAlignment="Center" Canvas.Top="308" StatusComponent="970-03-EC1" RenderTransformOrigin="0.5,0.5" Canvas.Left="82" HorizontalAlignment="Left" Color="Air">
-      <Labels:Pipe.RenderTransform>
-        <TransformGroup>
-          <ScaleTransform/>
-          <SkewTransform/>
-          <RotateTransform Angle="90"/>
-          <TranslateTransform/>
-        </TransformGroup>
-      </Labels:Pipe.RenderTransform>
-    </Labels:Pipe>
-    <Labels:Pipe Width="52" VerticalAlignment="Center" Canvas.Top="384" StatusComponent="970-02-MA1" RenderTransformOrigin="0.5,0.5" Canvas.Left="88" HorizontalAlignment="Left" Color="Air">
-      <Labels:Pipe.RenderTransform>
-        <TransformGroup>
-          <ScaleTransform/>
-          <SkewTransform/>
-          <RotateTransform Angle="90.1"/>
-          <TranslateTransform/>
-        </TransformGroup>
-      </Labels:Pipe.RenderTransform>
-    </Labels:Pipe>
-    <Machines:VS_Airlock Width="54" VerticalAlignment="Center" Canvas.Top="322" Canvas.Left="87" Height="55" HorizontalAlignment="Left"/>
-    <Machines:EC_Filtro Width="191" VerticalAlignment="Center" Canvas.Top="88" Canvas.Left="34" Height="211" HorizontalAlignment="Left"/>
-    <Blowers:VT_CMM_BlowerAirCompressor Width="51" Canvas.Left="101" Canvas.Top="28" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-    <Machines:Waste Height="48" Width="48" Canvas.Left="90" Canvas.Top="385" HorizontalAlignment="Left" VerticalAlignment="Center" />
-    <Labels:DeviceLabel 
-            ComponentName="970-01-MA1" Canvas.Left="159" Canvas.Top="29" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-    <Labels:DeviceLabel 
-            ComponentName="970-03-EC1" Canvas.Left="229" Canvas.Top="119" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-    <Labels:DeviceLabel 
-            ComponentName="970-02-MA1" Canvas.Left="146" Canvas.Top="324" HorizontalAlignment="Left" VerticalAlignment="Center" />
-    <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="970-03-EC1" SignalName="LSH" Canvas.Left="99" Canvas.Top="261"/>
-  </Canvas>
+    <Canvas Height="450" Width="333">
+        <Labels:Pipe Width="56" VerticalAlignment="Top" Canvas.Top="69" StatusComponent="970-01-MA1" RenderTransformOrigin="0.5,0.5" Canvas.Left="48" HorizontalAlignment="Center" Color="Air">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Width="62" VerticalAlignment="Top" Canvas.Top="43" StatusComponent="970-01-MA1" RenderTransformOrigin="0.5,0.5" Canvas.Left="74" HorizontalAlignment="Center" Color="Air"/>
+        <Labels:Pipe Width="64" VerticalAlignment="Center" Canvas.Top="308" StatusComponent="970-03-EC1" RenderTransformOrigin="0.5,0.5" Canvas.Left="82" HorizontalAlignment="Left" Color="Air">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Width="52" VerticalAlignment="Top" Canvas.Top="391" StatusComponent="970-02-MA1" RenderTransformOrigin="0.5,0.5" Canvas.Left="88" HorizontalAlignment="Center" Color="Air">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.1"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Machines:V01_EC_FiltroManiche Canvas.Top="79" HorizontalAlignment="Left" Height="246" VerticalAlignment="Center" Width="190" Canvas.Left="30"/>
+        <Machines:V01_VS_Airlock Canvas.Left="87" Canvas.Top="334" Height="55" Width="54" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Blowers:VT_CMM_BlowerAirCompressor Width="51" Canvas.Left="101" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:Waste Height="48" Width="48" Canvas.Left="90" Canvas.Top="392" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Labels:DeviceLabel 
+            ComponentName="970-01-MA1" Canvas.Left="159" Canvas.Top="19" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel 
+            ComponentName="970-03-EC1" Canvas.Left="191" Canvas.Top="137" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel 
+            ComponentName="970-02-MA1" Canvas.Left="146" Canvas.Top="331" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="970-03-EC1" SignalName="LSH" Canvas.Left="79" Canvas.Top="271"/>
+    </Canvas>
 </UserControl>

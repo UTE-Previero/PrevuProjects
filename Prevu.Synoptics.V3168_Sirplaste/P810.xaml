@@ -12,7 +12,7 @@
              x:Class="Prevu.Synoptics.P810" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
-        <Labels:Pipe StatusComponent="868-01-MA1" RenderTransformOrigin="0.5,0.5" Color="Air" Canvas.Left="717" Canvas.Top="760" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Labels:Pipe StatusComponent="868-01-MA1" RenderTransformOrigin="0.5,0.5" Color="Air" Canvas.Left="717" Canvas.Top="759" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -203,26 +203,17 @@
                 </TransformGroup>
             </Machines:Waste.RenderTransform>
         </Machines:Waste>
-        <Machines:DV_Diverter_T HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="80" Canvas.Left="781" Canvas.Top="710">
-            <Machines:DV_Diverter_T.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="180"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Machines:DV_Diverter_T.RenderTransform>
-        </Machines:DV_Diverter_T>
-        <Machines:VS_Airlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="61" Width="64" Canvas.Left="799" Canvas.Top="650" />
-        <Machines:VS_Airlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="61" Width="64" Canvas.Left="929" Canvas.Top="127"/>
-        <Separation:SA_Elutriator HorizontalAlignment="Center" Width="83" Canvas.Left="920" Canvas.Top="212" VerticalAlignment="Top" />
-        <Machines:VB_VibratingScreen HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="911" Canvas.Top="476" />
+        <Machines:VS_Airlock HorizontalAlignment="Center" VerticalAlignment="Center" Height="61" Width="64" Canvas.Left="929" Canvas.Top="127"/>
         <Machines:SCW_ScrewConveyor_straight HorizontalAlignment="Left" VerticalAlignment="Top" Height="22" Width="166" Canvas.Left="396" Canvas.Top="527"/>
         <Machines:SCW_ScrewConveyor_straight HorizontalAlignment="Center" VerticalAlignment="Top" Height="22" Width="166" Canvas.Left="1055" Canvas.Top="517"/>
-        <Machines:BBF_BigBagFilling HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="1237" Canvas.Top="567"/>
-        <Machines:Storage_silo Height="284" Canvas.Left="309" Canvas.Top="182" Width="205" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Blowers:VT_CMM_BlowerAirCompressor Height="50" Canvas.Left="685" Canvas.Top="737" Width="50" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Blowers:VT_CMM_BlowerAirCompressor Height="50" Canvas.Left="685" Canvas.Top="736" Width="50" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Machines:V01_SLX_MixingSiloScrew Canvas.Left="309" Canvas.Top="182" Height="284" Width="205" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Blowers:VT_CMM_BlowerAirCompressor Height="50" Canvas.Left="1061" Canvas.Top="220" Width="49" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_VS_Airlock Canvas.Left="929" Canvas.Top="127" Height="61" Width="64" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_VB_VibratingScreen Canvas.Left="911" Canvas.Top="476" Height="100" Width="100" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_BBF_SingleBag Canvas.Left="1237" Canvas.Top="567" Height="100" Width="100" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_VS_Airlock Canvas.Left="799" Canvas.Top="650" Height="61" Width="64" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_SA_Elutriator Canvas.Left="920" Canvas.Top="212" Height="224" Width="83" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
             ComponentName="850-01-MA1" Canvas.Left="998" Canvas.Top="133"/>
@@ -245,7 +236,7 @@
             ComponentName="810-SILO" Canvas.Left="445" Canvas.Top="223" HorizontalAlignment="Left" VerticalAlignment="Top"  />
         <Labels:DetailsLabel ComponentName="810-VIEW" DetailsPageName="D810" HideComponentName="True" Canvas.Left="544" Canvas.Top="223" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <Labels:DeviceLabel 
-            ComponentName="868-01-MA1" Canvas.Left="665" Canvas.Top="681" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            ComponentName="868-01-MA1" Canvas.Left="665" Canvas.Top="680" HorizontalAlignment="Center" VerticalAlignment="Top" />
         <Labels:DeviceLabel 
             ComponentName="854-01-MA1" Canvas.Left="1044" Canvas.Top="275" HorizontalAlignment="Center" VerticalAlignment="Top" />
         <Labels:JumpLabel HorizontalAlignment="Center" 
@@ -256,5 +247,6 @@
             VerticalAlignment="Center" 
             JumpFromLabel="810-01-MA1" 
             JumpToLabel="534-01-MA1" Canvas.Left="142" Canvas.Top="175"/>
+        <Machines:V01_ScarpaTrasporto Canvas.Left="804" Canvas.Top="726" Height="48" Width="64" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>
