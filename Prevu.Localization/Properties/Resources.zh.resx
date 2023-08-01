@@ -634,7 +634,7 @@
     <value>检查现场的踏板位置。将其移动到Uper位置。</value>
   </data>
   <data name="INFO_AMP_1" xml:space="preserve">
-    <value>检查电流控制传感器信号及其在电气柜中的布线</value>
+    <value>电动机上的重负载。材料停止等待电流降低</value>
   </data>
   <data name="INFO_AMP_2" xml:space="preserve">
     <value>无法达到最小电流！检查主线保险丝，本地Disconnetor和电机接线</value>
@@ -667,7 +667,7 @@
     <value>没有命令检测到转子旋转！ - 重置警报以重新启动。如果持久故障，请检查接线</value>
   </data>
   <data name="INFO_INV_1" xml:space="preserve">
-    <value>检查电气柜中逆变器（显示屏上的故障代码并重置本机</value>
+    <value>逆变器显示器上存在警告消息。请检查是否可能采取可能的操作，将其转换为逆变器用户手册。</value>
   </data>
   <data name="INFO_INV_2" xml:space="preserve">
     <value>确保逆变器在远程模式下运行！检查变频器的“运行”反馈信号</value>
@@ -775,19 +775,19 @@
     <value>检查温度传感器，在现场接线，加热系统和温度术</value>
   </data>
   <data name="INFO_LEVEL_1" xml:space="preserve">
-    <value>检查电平传感器，其在现场的接线及其在电气柜中的信号反馈</value>
+    <value>流程正在等待恢复级别的确定。</value>
   </data>
   <data name="INFO_LEVEL_2" xml:space="preserve">
-    <value>检查料斗。确保没有存在堵塞和/或验证该过程的调节</value>
+    <value>检查过程当地条件和设置，因为未检测到最低水平</value>
   </data>
   <data name="INFO_LEVEL_3" xml:space="preserve">
-    <value>检查罐式工作条件和水循环调节（放电）</value>
+    <value>等待恢复级别的水平进行处理</value>
   </data>
   <data name="INFO_LEVEL_4" xml:space="preserve">
-    <value>检查罐式工作条件和水循环调节（填充）</value>
+    <value>料斗满！需要等待霍珀清空</value>
   </data>
   <data name="INFO_LEVEL_5" xml:space="preserve">
-    <value>检查坦克工作条件。发生可能的材料堵塞。</value>
+    <value>大袋子装满，需要更换</value>
   </data>
   <data name="INFO_LEVEL_6" xml:space="preserve">
     <value>检查罐式工作条件和水循环调节（填充）</value>
@@ -832,10 +832,10 @@
     <value>电阻低电流！如果可能需要，请检查接线并更换电阻！熟练的人员授权!!!</value>
   </data>
   <data name="INFO_GREASE_1" xml:space="preserve">
-    <value>用适当的润滑脂类型将润滑装置重新填充润滑装置（参见用户手册）</value>
+    <value>油脂必须重新装满</value>
   </data>
   <data name="INFO_GREASE_2" xml:space="preserve">
-    <value>检查润滑装置的气压并验证润滑脂实际上是设计的目标</value>
+    <value>检查油脂系统和油脂流量传感器。</value>
   </data>
   <data name="INFO_GREASE_3" xml:space="preserve">
     <value>在生产过程中启用润滑阀</value>
@@ -1000,10 +1000,10 @@
     <value>按下分拣机本地ESTOP按钮。松开分拣机本地面板上的按钮</value>
   </data>
   <data name="INFO_BAG_1" xml:space="preserve">
-    <value>大包很满。它需要改变。</value>
+    <value>打开本地启用选择器，以启用大包填充</value>
   </data>
   <data name="INFO_BAG_2" xml:space="preserve">
-    <value>大包不再存在。检查传感器和大包的放置</value>
+    <value>这两个袋子都不适合加载。更换袋子或使它们填充。</value>
   </data>
   <data name="INFO_BAG_3" xml:space="preserve">
     <value>重置大袋站的安全屏障，在灌装周期期间能够摇动袋子</value>
@@ -2602,7 +2602,7 @@
     <value>下游故障状态</value>
   </data>
   <data name="INFO_DOWNSTR_STATUS" xml:space="preserve">
-    <value>Info_Downstr_Status</value>
+    <value>检查下游系统是否可能存在故障状态</value>
   </data>
   <data name="DOWNSTREAM STATUS OK (EXTERNAL SIGNAL)" xml:space="preserve">
     <value>下游状态正常（外部信号）</value>
@@ -2641,10 +2641,10 @@
     <value>检查以太网交换机及其电源和连接</value>
   </data>
   <data name="INFO_MIXER_1" xml:space="preserve">
-    <value>检查水路、注水阀、管道和水泵。可能漏水或缺水。</value>
+    <value>通过设置启用搅拌机进行生产</value>
   </data>
   <data name="INFO_MIXER_2" xml:space="preserve">
-    <value>检查混合器的排放阀、阀空气压力和排放泵是否可能堵塞。</value>
+    <value>Al混合器设备位于Semiauto。通过设置禁用搅拌机semiauto进行生产</value>
   </data>
   <data name="INFO_MIXER_3" xml:space="preserve">
     <value>检查混合器填充并联系制造商的在线帮助 - 混合器自动禁用</value>
@@ -2665,7 +2665,7 @@
     <value>现场检查传感器并清洁</value>
   </data>
   <data name="INFO_GT_VALVES_1" xml:space="preserve">
-    <value>关闭至少一个排放阀以防止罐完全排空。检查现场的阀门。</value>
+    <value>在开始放电周期之前，需要将储罐填充至最低水平。检查过程条件和设置。</value>
   </data>
   <data name="INFO_GT_VALVES_2" xml:space="preserve">
     <value>放电循环无法继续。检查阀位Ls是否工作并放置在正确的位置，没有发生阀门堵塞。</value>
@@ -3438,9 +3438,6 @@
   <data name="CUMULATIVE - AT LEAST ONE ACTUATOR ON (MTRS, VLVS...)" xml:space="preserve">
     <value>累积 - 至少一个执行器（MTRS，VLVS ...）</value>
   </data>
-  <data name="*** GROUP FULL PRODUCTION (DARK GREY COLOR) ***" xml:space="preserve">
-    <value>***集团全部生产（深灰色）***</value>
-  </data>
   <data name="CUMULATIVE - NON-CRITICAL ALARM PRESENT" xml:space="preserve">
     <value>累积 - 非关键警报</value>
   </data>
@@ -3734,5 +3731,356 @@
   </data>
   <data name="Rotor Reverse (Floating Material)" xml:space="preserve">
     <value>转子反向（浮动材料）</value>
+  </data>
+  <data name="NO ACCESS LEVEL" xml:space="preserve">
+    <value>没有访问级别</value>
+  </data>
+  <data name="SIMULATED" xml:space="preserve">
+    <value>模拟</value>
+  </data>
+  <data name="ABOUT" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="MINIMIZE" xml:space="preserve">
+    <value>最小化</value>
+  </data>
+  <data name="CUBEDICER" xml:space="preserve">
+    <value>立方体</value>
+  </data>
+  <data name="CONFIGURATION" xml:space="preserve">
+    <value>配置</value>
+  </data>
+  <data name="TOTAL" xml:space="preserve">
+    <value>全部的</value>
+  </data>
+  <data name="PARTIAL" xml:space="preserve">
+    <value>部分的</value>
+  </data>
+  <data name="ADVANCED" xml:space="preserve">
+    <value>先进的</value>
+  </data>
+  <data name="ELECTRICAL CABINET" xml:space="preserve">
+    <value>电柜</value>
+  </data>
+  <data name="PREVIERO READY TO RECEIVE" xml:space="preserve">
+    <value>Previero准备接收</value>
+  </data>
+  <data name="COOLING WATER" xml:space="preserve">
+    <value>冷却水</value>
+  </data>
+  <data name="FEEDING ROLLERS" xml:space="preserve">
+    <value>喂食辊</value>
+  </data>
+  <data name="CUT-ROTOR" xml:space="preserve">
+    <value>切旋</value>
+  </data>
+  <data name="SAFETY KEY" xml:space="preserve">
+    <value>安全键</value>
+  </data>
+  <data name="OPEN PROCEDURE" xml:space="preserve">
+    <value>打开程序</value>
+  </data>
+  <data name="DOWNSTREAM READY TO RECEIVE" xml:space="preserve">
+    <value>下游准备接收</value>
+  </data>
+  <data name="ATEX BARRIERS CONTROL" xml:space="preserve">
+    <value>ATEX屏障控制</value>
+  </data>
+  <data name="MOTOR ACTUAL SPEED TRANSDUCER BROKEN WIRE" xml:space="preserve">
+    <value>电动机实际速度传感器断线</value>
+  </data>
+  <data name="MOTOR ACTUAL SPEED FEEDBACK OUT OF RANGE" xml:space="preserve">
+    <value>电动机实际速度反馈以外</value>
+  </data>
+  <data name="THERMAL OVERLOAD COOLING FAN" xml:space="preserve">
+    <value>热超载冷却风扇</value>
+  </data>
+  <data name="SPEED FEEDBACK" xml:space="preserve">
+    <value>速度反馈</value>
+  </data>
+  <data name="LOCAL MOTOR START REQUEST" xml:space="preserve">
+    <value>本地电动机开始请求</value>
+  </data>
+  <data name="(1=START)" xml:space="preserve">
+    <value>（1 =开始）</value>
+  </data>
+  <data name="LOCAL MOTOR STOP REQUEST" xml:space="preserve">
+    <value>当地电机停止请求</value>
+  </data>
+  <data name="(0=STOP)" xml:space="preserve">
+    <value>（0 =停止）</value>
+  </data>
+  <data name="COMMAND COOLING" xml:space="preserve">
+    <value>命令冷却</value>
+  </data>
+  <data name="COMMAND COOLING FAN" xml:space="preserve">
+    <value>指挥冷却风扇</value>
+  </data>
+  <data name="LAMP MOTOR ON" xml:space="preserve">
+    <value>灯电动机打开</value>
+  </data>
+  <data name="(1=MTR ON)" xml:space="preserve">
+    <value>（1 = MTR）</value>
+  </data>
+  <data name="LAMP MOTOR OFF" xml:space="preserve">
+    <value>灯电动机关闭</value>
+  </data>
+  <data name="(1=MTR OFF)" xml:space="preserve">
+    <value>（1 = MTR OFF）</value>
+  </data>
+  <data name="_LOC_DIS" xml:space="preserve">
+    <value>本地断开连接</value>
+  </data>
+  <data name="_LOC_SAFETY" xml:space="preserve">
+    <value>当地安全</value>
+  </data>
+  <data name="_ENABLED" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="_CYCLE_INTERLOCKS" xml:space="preserve">
+    <value>循环互锁</value>
+  </data>
+  <data name="_CYCLE_IN_PROGRESS" xml:space="preserve">
+    <value>循环正在进行中</value>
+  </data>
+  <data name="_CYCLE_OK_FOR_PROCESS" xml:space="preserve">
+    <value>循环可以进行过程</value>
+  </data>
+  <data name="MOTOR ACTUAL SPEED FEEDBACK TRANSDUCER BROKEN WIRE" xml:space="preserve">
+    <value>电动机实际速度反馈传感器断线</value>
+  </data>
+  <data name="LOCAL SPEED CHANGE ROTOR" xml:space="preserve">
+    <value>局部速度换转子</value>
+  </data>
+  <data name="(1=ONLY ROTOR, 0=ALL LINE)" xml:space="preserve">
+    <value>（1 =仅转子，0 =所有线）</value>
+  </data>
+  <data name="LOCAL SPEED CHANGE ROLLS" xml:space="preserve">
+    <value>局部速度变化卷</value>
+  </data>
+  <data name="(1=ONLY ROLLS, 0=ALL LINE)" xml:space="preserve">
+    <value>（1 =仅卷，0 =所有线）</value>
+  </data>
+  <data name="LOCAL SPEED INCREASE" xml:space="preserve">
+    <value>局部速度提高</value>
+  </data>
+  <data name="(1=INC)" xml:space="preserve">
+    <value>（1 = INC）</value>
+  </data>
+  <data name="LOCAL SPEED DECREASE" xml:space="preserve">
+    <value>局部速度降低</value>
+  </data>
+  <data name="(1=DEC)" xml:space="preserve">
+    <value>（1 = DEC）</value>
+  </data>
+  <data name="DEVICE NOT OK" xml:space="preserve">
+    <value>设备不正常</value>
+  </data>
+  <data name="DEVICE STATUS" xml:space="preserve">
+    <value>设备状态</value>
+  </data>
+  <data name="_DISABLED_BY_OP" xml:space="preserve">
+    <value>由操作员禁用</value>
+  </data>
+  <data name="_ON_OR_IN_PROGRESS" xml:space="preserve">
+    <value>在或正在进行</value>
+  </data>
+  <data name="OVERLOAD DIGITAL INPUT" xml:space="preserve">
+    <value>超载数字输入</value>
+  </data>
+  <data name="OVERLOAD DIGITAL OUTPUT" xml:space="preserve">
+    <value>超载数字输出</value>
+  </data>
+  <data name="OVERLOAD INTERNAL 24V DC" xml:space="preserve">
+    <value>内部24V DC</value>
+  </data>
+  <data name="OVERLOAD EXTERNAL 24V DC" xml:space="preserve">
+    <value>超载外部24V DC</value>
+  </data>
+  <data name="BEACON OVERLOAD" xml:space="preserve">
+    <value>信标超载</value>
+  </data>
+  <data name="_ETH_SWITCH_OK" xml:space="preserve">
+    <value>以太网开关确定</value>
+  </data>
+  <data name="_DIGITAL_INPUTS_OK" xml:space="preserve">
+    <value>数字输入还可以</value>
+  </data>
+  <data name="_DIGITAL_OUTPUTS_OK" xml:space="preserve">
+    <value>数字输出还可以</value>
+  </data>
+  <data name="_24V_INT_OK" xml:space="preserve">
+    <value>24V int确定</value>
+  </data>
+  <data name="_24V_EXT_OK" xml:space="preserve">
+    <value>24V Ext OK</value>
+  </data>
+  <data name="OVERLOAD TRANSFORMER PRIMARY" xml:space="preserve">
+    <value>超载变压器主</value>
+  </data>
+  <data name="OVERLOAD TRANSFORMER SECONDARY" xml:space="preserve">
+    <value>超载变压器次要</value>
+  </data>
+  <data name="_ESTOP_PB_NOT_PRESSED" xml:space="preserve">
+    <value>埃斯托普PB不按</value>
+  </data>
+  <data name="_ONE_COMPONENT_ON" xml:space="preserve">
+    <value>一个组成部分</value>
+  </data>
+  <data name="_GROUP_FULL_PRODUCTION" xml:space="preserve">
+    <value>团体完整生产</value>
+  </data>
+  <data name="_ESTOP_AREA_STATUS_RESET_OK" xml:space="preserve">
+    <value>埃斯托普区域状态重置确定</value>
+  </data>
+  <data name="_ESTOP_AREA_PBS_NOT_PRESSED" xml:space="preserve">
+    <value>埃斯托普区域PBS未按下</value>
+  </data>
+  <data name="_DEVICE_IO_CONNECTED" xml:space="preserve">
+    <value>设备IO连接</value>
+  </data>
+  <data name="_PLC_SIMULATION" xml:space="preserve">
+    <value>PLC模拟</value>
+  </data>
+  <data name="_PLC_CABINET_TEST_MODE" xml:space="preserve">
+    <value>PLC机柜测试模式</value>
+  </data>
+  <data name="_PLC_SIMULATION_INIT" xml:space="preserve">
+    <value>PLC模拟初始化</value>
+  </data>
+  <data name="HZ" xml:space="preserve">
+    <value>Hz</value>
+  </data>
+  <data name="ACTUAL FREQUENCY" xml:space="preserve">
+    <value>实际频率</value>
+  </data>
+  <data name="LSH" xml:space="preserve">
+    <value>LSH</value>
+  </data>
+  <data name="LSL" xml:space="preserve">
+    <value>LSL</value>
+  </data>
+  <data name="LSHA" xml:space="preserve">
+    <value>LSHA</value>
+  </data>
+  <data name="LSHA_DELAY_ABOVE" xml:space="preserve">
+    <value>LSHA_DELAY_ABOVE</value>
+  </data>
+  <data name="LSLA" xml:space="preserve">
+    <value>LSLA</value>
+  </data>
+  <data name="LSLA_DELAY_BELOW" xml:space="preserve">
+    <value>LSLA_DELAY_BELOW</value>
+  </data>
+  <data name="HZ_RATIO_TARGET" xml:space="preserve">
+    <value>HZ_RATIO_TARGET</value>
+  </data>
+  <data name="HZ_RATIO_ACTUAL" xml:space="preserve">
+    <value>HZ_RATIO_ACTUAL</value>
+  </data>
+  <data name="SYNCHRONIZATION - TARGET RATIO FEEDER/ROTOR HZ" xml:space="preserve">
+    <value>同步 - 目标比率馈线/转子Hz</value>
+  </data>
+  <data name="SYNCHRONIZATION - ACTUAL RATIO FEEDER/ROTOR HZ" xml:space="preserve">
+    <value>同步 - 实际比率馈线/转子Hz</value>
+  </data>
+  <data name="INFO_LEVEL_19" xml:space="preserve">
+    <value>持续的最大水平！检查储罐，二分泵是否有可能发生故障和水平传感器</value>
+  </data>
+  <data name="INFO_ACT_SPEED_1" xml:space="preserve">
+    <value>检查速度反馈信号接线</value>
+  </data>
+  <data name="INFO_ACT_SPEED_2" xml:space="preserve">
+    <value>电动机实际速度不可公差。检查电动机，变速箱和可能的阻塞</value>
+  </data>
+  <data name="INFO_SYS_1" xml:space="preserve">
+    <value>需要重新启动组件</value>
+  </data>
+  <data name="INFO_LD_1" xml:space="preserve">
+    <value>必须关闭本地脱节器才能重新启动</value>
+  </data>
+  <data name="INFO_TEMP_1" xml:space="preserve">
+    <value>温度高于预期。</value>
+  </data>
+  <data name="INFO_TEMP_2" xml:space="preserve">
+    <value>温度低于预期。</value>
+  </data>
+  <data name="INFO_DISAB_1" xml:space="preserve">
+    <value>传感器是由操作员在HMI上的操作被禁用的。选择指示的传感器参数菜单以再次启用它。</value>
+  </data>
+  <data name="INFO_TEMP_3" xml:space="preserve">
+    <value>温度低于预期 - 停止过程。即使在低温下，取下互锁标志即使在</value>
+  </data>
+  <data name="INFO_SEL_1" xml:space="preserve">
+    <value>打开本地启用启用选择器在现场以进行设备重新启动</value>
+  </data>
+  <data name="INFO_CALIBRATION_1" xml:space="preserve">
+    <value>需要通过使用预防面板重新校准传感器。单击传感器标签，然后选择“教菜单”菜单。</value>
+  </data>
+  <data name="INFO_DOWNSTR_NOK" xml:space="preserve">
+    <value>dowstream不正常进行流程 - 检查下游的物料停止请求的原因</value>
+  </data>
+  <data name="INFO_NO_MATERIAL" xml:space="preserve">
+    <value>没有材料。检查喂养和处理孔子</value>
+  </data>
+  <data name="INFO_EXT_1" xml:space="preserve">
+    <value>检查外部植物以准备再次提供材料</value>
+  </data>
+  <data name="INFO_SOREMA_OK_1" xml:space="preserve">
+    <value>等待Sorema Plant准备接收材料</value>
+  </data>
+  <data name="INFO_EXT_2" xml:space="preserve">
+    <value>检查外部系统以使其准备好处理</value>
+  </data>
+  <data name="INFO_WTR_TREAT_1" xml:space="preserve">
+    <value>检查水处理外部系统</value>
+  </data>
+  <data name="INFO_BRT_FAULTY" xml:space="preserve">
+    <value>在本地检查DEBALER外部单位的故障状态和重置故障</value>
+  </data>
+  <data name="INFO_BRT_NOT_RUNNING" xml:space="preserve">
+    <value>检查DeBaler外部单元，因为它没有启动/活动</value>
+  </data>
+  <data name="INFO_NOT_IN_AUTO" xml:space="preserve">
+    <value>将DEBALER外部单位放在自动模式下</value>
+  </data>
+  <data name="INFO_SORTER_DISABLED" xml:space="preserve">
+    <value>通过预防设置启用排序单元</value>
+  </data>
+  <data name="INFO_SORTER_WARNING" xml:space="preserve">
+    <value>在当地查看魔术师寻找诊断消息</value>
+  </data>
+  <data name="INFO_OIL_MIN_TEMP" xml:space="preserve">
+    <value>等待油的最低温度通过使用加热电阻允许运行液压单元</value>
+  </data>
+  <data name="INFO_OIL_FILTER" xml:space="preserve">
+    <value>更换机油过滤器</value>
+  </data>
+  <data name="INFO_FLW_LOW" xml:space="preserve">
+    <value>水的流量低于预期的流量。检查水入口压力或可能的手动阀未完全打开。</value>
+  </data>
+  <data name="INFO_FILTER_PRESS_1" xml:space="preserve">
+    <value>通过操作员毁坏的滤器按系统 - 上游互锁被绕过！ - 单击“过滤器”标签以重新启用Fileter将互锁到上游</value>
+  </data>
+  <data name="INFO_FILTER_PRESS_2" xml:space="preserve">
+    <value>如果没有材料，则按下过滤器会使自己处于缓慢的模式，以防止材料融化。等待材料重新启动以全速运行filetr。</value>
+  </data>
+  <data name="INFO_FILTER_PRESS_3" xml:space="preserve">
+    <value>在HMI视图上检查过滤器，以查看材料停止的原因</value>
+  </data>
+  <data name="INFO_FILTER_PRESS_4" xml:space="preserve">
+    <value>检查过滤器，以获取可能的材料</value>
+  </data>
+  <data name="INFO_FILTER_PRESS_5" xml:space="preserve">
+    <value>下巴打开以防止材料融化</value>
+  </data>
+  <data name="INFO_EXT_3" xml:space="preserve">
+    <value>检查外部过滤单元，因为它尚未准备好接收水</value>
+  </data>
+  <data name="INFO_EXT_4" xml:space="preserve">
+    <value>检查外部过滤单元，因为它没有在要求后抽水</value>
+  </data>
+  <data name="INFO_DOWNSTR_SLOW_DWN" xml:space="preserve">
+    <value>下游工厂要求线路放缓。等待下游植物的全容量。</value>
   </data>
 </root>
