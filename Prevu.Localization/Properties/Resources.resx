@@ -504,8 +504,8 @@
     <comment>Subzone Status</comment>
   </data>
   <data name="INFO_SYS_1" xml:space="preserve">
-    <value></value>
-    <comment>InfoText Fault</comment>
+    <value>Component Needs to be Restarted</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_SYS_2" xml:space="preserve">
     <value></value>
@@ -728,8 +728,8 @@
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_AMP_1" xml:space="preserve">
-    <value>Check The Amperage Control Sensor Signal And Its Wiring In The Electrical Cabinet</value>
-    <comment>InfoText Fault</comment>
+    <value>Heavy Load on Motor. Material is Stopped Waiting for Motor Current Lowering</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_AMP_2" xml:space="preserve">
     <value>Minimum Current Is Not Reached ! Check The Main Line Fuses, Local Disconnetor And And The Motor Wiring</value>
@@ -772,8 +772,8 @@
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_INV_1" xml:space="preserve">
-    <value>Check The Fault Code Of The Inverter (On Its Display) In The Electrical Cabinet And Reset The Unit</value>
-    <comment>InfoText Fault</comment>
+    <value>Warning Message is Present on Inverter Display. Please Check it for Possible Actions to be Done Refferring to the Inverter User Manual.</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_INV_2" xml:space="preserve">
     <value>Make Sure Inverter Is Operating In Remote Mode ! Check The "Run" Feedback Signal From Inverter</value>
@@ -916,24 +916,24 @@
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_LEVEL_1" xml:space="preserve">
-    <value>Check The Level Sensor, Its Wiring In The Field And Its Signal Feedback In The Electrical Cabinet</value>
-    <comment>InfoText Fault</comment>
+    <value>Process is Waiting for the Level to be Restored OK.</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_LEVEL_2" xml:space="preserve">
-    <value>Check The Hopper. Ensure No Blockage Is Present And/Or Verify The Regulation Of The Process</value>
-    <comment>InfoText Fault</comment>
+    <value>Check Process Local Conditions and Setup Since No Minimum Level is Detected</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_LEVEL_3" xml:space="preserve">
-    <value>Check The Tank Working Conditions And The Water Loop Regulation (Discharge)</value>
-    <comment>InfoText Fault</comment>
+    <value>Wait for Levels to be Restored OK for Process</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_LEVEL_4" xml:space="preserve">
-    <value>Check The Tank Working Conditions And The Water Loop Regulation (Filling)</value>
-    <comment>InfoText Fault</comment>
+    <value>Hopper Full ! Need to Wait for Hopper to be Emptied</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_LEVEL_5" xml:space="preserve">
-    <value>Check The Tank Working Conditions. A Possible Material Blockage Is Occured.</value>
-    <comment>InfoText Fault</comment>
+    <value>BIG BAG Full and needs to be replaced</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_LEVEL_6" xml:space="preserve">
     <value>Check The Tank Working Conditions And The Water Loop Regulation (Filling)</value>
@@ -992,12 +992,12 @@
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_GREASE_1" xml:space="preserve">
-    <value>Refill The Greasing Unit Over The Minimum Level With The Proper Grease Type (See User Manual)</value>
-    <comment>InfoText Fault</comment>
+    <value>Grease Tank Must Be Re-Filled</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_GREASE_2" xml:space="preserve">
-    <value>Check Air Pressure At The Greasing Unit And Verify The Grease Is Actually Going To Designed Target</value>
-    <comment>InfoText Fault</comment>
+    <value>Check Greasing System And Grease Flow Sensor. </value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_GREASE_3" xml:space="preserve">
     <value>Enable The Greasing Valve During The Production</value>
@@ -1216,12 +1216,12 @@
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_BAG_1" xml:space="preserve">
-    <value>Big Bag Is Full. It Needs To Be Changed.</value>
-    <comment>InfoText Fault</comment>
+    <value>Switch ON Local Enable Selector in Field To Enable BIG BAG Filling</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_BAG_2" xml:space="preserve">
-    <value>Big Bag Is No More Present. Check In The Field The Sensor And The Placement Of Big Bag</value>
-    <comment>InfoText Fault</comment>
+    <value>Both Bags Are not OK for Loading. Change Bags or Enable them for Filling.</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_BAG_3" xml:space="preserve">
     <value>Reset Safety Barriers Of Big Bag Station To Enable Shaking Of Bags During The Filling Cycle</value>
@@ -2028,7 +2028,7 @@
     <value>Name</value>
   </data>
   <data name="INFO_OIL_SEAL_3" xml:space="preserve">
-    <value></value>
+    <value>Refill The Sealing Oil Or Motor Will Be Stopped Within One Hour</value>
     <comment>InfoText Fault</comment>
   </data>
   <data name="PRESSURE TRANSDUCER NOT OK" xml:space="preserve">
@@ -2224,15 +2224,15 @@
     <value>Closed Position Not Ok</value>
   </data>
   <data name="INFO_LS_13" xml:space="preserve">
-    <value></value>
+    <value>Check The Valve Closed Position And Pressure In The Pipes</value>
     <comment>InfoText Fault</comment>
   </data>
   <data name="BOTH VALVES ARE NOT FULLY CLOSED - TANK EMPTIYNG!" xml:space="preserve">
     <value>Both Valves Are Not Fully Closed - Tank Emptiyng!</value>
   </data>
   <data name="INFO_GT_VALVES_1" xml:space="preserve">
-    <value>Close At Least One Of The Discharge Valves To Prevent Tank Complete Emptying. Check The Valves In The Field.</value>
-    <comment>InfoText Fault</comment>
+    <value>Tank Needs to Be Fillied to Minimum Level Before Start Discharge Cycle. Check Process Conditions and Settings.</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_INV_7" xml:space="preserve">
     <value>Check Inverter Status In The Cabinet</value>
@@ -2443,36 +2443,36 @@
     <value>No Material Present</value>
   </data>
   <data name="INFO_DISAB_1" xml:space="preserve">
-    <value></value>
-    <comment>InfoText Fault</comment>
+    <value>Sensor is been Disabled By an Action of Operator on HMI. Select the Indicated Sensor Parameters Menu to Enable it Again.</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="HIGH CHEMICAL CONCENTRATION WARNING" xml:space="preserve">
     <value>High Chemical Concentration Warning</value>
   </data>
   <data name="INFO_CALIBRATION_1" xml:space="preserve">
-    <value></value>
-    <comment>InfoText Fault</comment>
+    <value>Sensor Need to be Re-Calibrated by the Use of PreVu Panel. Click on Sensor Label and Select Teach Menu.</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="LOCAL DISCONNECT OPEN" xml:space="preserve">
     <value>Local Disconnect Open</value>
   </data>
   <data name="INFO_LD_1" xml:space="preserve">
-    <value></value>
-    <comment>InfoText Fault</comment>
+    <value>Local Disconnector in Must Be Closed for Restart</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="(PT100)" xml:space="preserve">
     <value>(Pt100)</value>
   </data>
   <data name="INFO_TEMP_2" xml:space="preserve">
-    <value></value>
-    <comment>InfoText Fault</comment>
+    <value>Temperature is Lower than Expected.</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="LOW CHEMICAL CONCENTRATION WARNING" xml:space="preserve">
     <value>Low Chemical Concentration Warning</value>
   </data>
   <data name="INFO_NO_MATERIAL" xml:space="preserve">
-    <value></value>
-    <comment>InfoText Fault</comment>
+    <value>No Material Present. Check for Feeding and Process Conditons</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="(1&gt;=MIN)" xml:space="preserve">
     <value>(1&gt;=Min)</value>
@@ -2481,15 +2481,15 @@
     <value>(1=Ext Upstream Ready To Give Material)</value>
   </data>
   <data name="INFO_EXT_1" xml:space="preserve">
-    <value></value>
-    <comment>InfoText Fault</comment>
+    <value>Check External Plant to Make it Ready to Give Material Again</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="(1=DOWNSTREAM OK TO RECEIVE)" xml:space="preserve">
     <value>(1=Downstream Ok To Receive)</value>
   </data>
   <data name="INFO_DOWNSTR_NOK" xml:space="preserve">
-    <value></value>
-    <comment>InfoText Fault</comment>
+    <value>Dowstream Not OK for Process - Check The Reason for Material Stop Request from Downstream</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_INV_5" xml:space="preserve">
     <value>Alarm Is Present On Inverter Display. Please Check It For The Actions To Be Done Reffering To The Inverter User Manual.</value>
@@ -2553,12 +2553,12 @@
     <value>(1=Brt In Auto Mode)</value>
   </data>
   <data name="INFO_NOT_IN_AUTO" xml:space="preserve">
-    <value></value>
-    <comment>InfoText Fault</comment>
+    <value>Put Debaler External Unit in Auto Mode</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_SEL_1" xml:space="preserve">
-    <value></value>
-    <comment>InfoText Fault</comment>
+    <value>Switch ON Local Enable Selector in Field for Device Restart</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="CHANGED" xml:space="preserve">
     <value>Changed</value>
@@ -3038,7 +3038,8 @@
     <value>Downstream Faulty Status</value>
   </data>
   <data name="INFO_DOWNSTR_STATUS" xml:space="preserve">
-    <value>Info_Downstr_Status</value>
+    <value>Check Downstream System for Possible Faulty Status</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="DOWNSTREAM STATUS OK (EXTERNAL SIGNAL)" xml:space="preserve">
     <value>Downstream Status Ok (External Signal)</value>
@@ -3076,12 +3077,12 @@
     <comment>InfoText Fault</comment>
   </data>
   <data name="INFO_MIXER_1" xml:space="preserve">
-    <value>Check Water Circuit, Refill Valve, Pipes And Water Pump. Possible Leakage Or Lack Of Water.</value>
-    <comment>InfoText Fault</comment>
+    <value>Enable Mixer By Setups for Production</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_MIXER_2" xml:space="preserve">
-    <value>Check For A Possible Blockage At The Dicharge Valve Of The Mixer, Valve Air Pressure And Discharge Pump.</value>
-    <comment>InfoText Fault</comment>
+    <value>Al Mixer Devices are in Semiauto. Disable Mixer Semiauto By Setups for Production</value>
+    <comment>InfoText Message</comment>
   </data>
   <data name="INFO_MIXER_3" xml:space="preserve">
     <value>Check The Mixer Filling And Contact Online Assistance Of Manufacturer -Mixer Is Automatically Disabled</value>
@@ -3759,9 +3760,6 @@
   <data name="CUMULATIVE - AT LEAST ONE ACTUATOR ON (MTRS, VLVS...)" xml:space="preserve">
     <value>Cumulative - At Least One Actuator On (Mtrs, Vlvs...)</value>
   </data>
-  <data name="*** GROUP FULL PRODUCTION (DARK GREY COLOR) ***" xml:space="preserve">
-    <value>*** Group Full Production (Dark Grey Color) ***</value>
-  </data>
   <data name="CUMULATIVE - NON-CRITICAL ALARM PRESENT" xml:space="preserve">
     <value>Cumulative - Non-Critical Alarm Present</value>
   </data>
@@ -4055,5 +4053,371 @@
   </data>
   <data name="Rotor Reverse (Floating Material)" xml:space="preserve">
     <value>Rotor Reverse (Floating Material)</value>
+  </data>
+  <data name="NO ACCESS LEVEL" xml:space="preserve">
+    <value>No Access Level</value>
+  </data>
+  <data name="SIMULATED" xml:space="preserve">
+    <value>Simulated</value>
+  </data>
+  <data name="ABOUT" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="MINIMIZE" xml:space="preserve">
+    <value>Minimize</value>
+  </data>
+  <data name="CUBEDICER" xml:space="preserve">
+    <value>Cubedicer</value>
+  </data>
+  <data name="CONFIGURATION" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="TOTAL" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="PARTIAL" xml:space="preserve">
+    <value>Partial</value>
+  </data>
+  <data name="ADVANCED" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="ELECTRICAL CABINET" xml:space="preserve">
+    <value>Electrical Cabinet</value>
+  </data>
+  <data name="PREVIERO READY TO RECEIVE" xml:space="preserve">
+    <value>Previero Ready To Receive</value>
+  </data>
+  <data name="COOLING WATER" xml:space="preserve">
+    <value>Cooling Water</value>
+  </data>
+  <data name="FEEDING ROLLERS" xml:space="preserve">
+    <value>Feeding Rollers</value>
+  </data>
+  <data name="CUT-ROTOR" xml:space="preserve">
+    <value>Cut-Rotor</value>
+  </data>
+  <data name="SAFETY KEY" xml:space="preserve">
+    <value>Safety Key</value>
+  </data>
+  <data name="OPEN PROCEDURE" xml:space="preserve">
+    <value>Open Procedure</value>
+  </data>
+  <data name="DOWNSTREAM READY TO RECEIVE" xml:space="preserve">
+    <value>Downstream Ready To Receive</value>
+  </data>
+  <data name="ATEX BARRIERS CONTROL" xml:space="preserve">
+    <value>Atex Barriers Control</value>
+  </data>
+  <data name="MOTOR ACTUAL SPEED TRANSDUCER BROKEN WIRE" xml:space="preserve">
+    <value>Motor Actual Speed Transducer Broken Wire</value>
+  </data>
+  <data name="MOTOR ACTUAL SPEED FEEDBACK OUT OF RANGE" xml:space="preserve">
+    <value>Motor Actual Speed Feedback Out Of Range</value>
+  </data>
+  <data name="THERMAL OVERLOAD COOLING FAN" xml:space="preserve">
+    <value>Thermal Overload Cooling Fan</value>
+  </data>
+  <data name="SPEED FEEDBACK" xml:space="preserve">
+    <value>Speed Feedback</value>
+  </data>
+  <data name="LOCAL MOTOR START REQUEST" xml:space="preserve">
+    <value>Local Motor Start Request</value>
+  </data>
+  <data name="(1=START)" xml:space="preserve">
+    <value>(1=Start)</value>
+  </data>
+  <data name="LOCAL MOTOR STOP REQUEST" xml:space="preserve">
+    <value>Local Motor Stop Request</value>
+  </data>
+  <data name="(0=STOP)" xml:space="preserve">
+    <value>(0=Stop)</value>
+  </data>
+  <data name="COMMAND COOLING" xml:space="preserve">
+    <value>Command Cooling</value>
+  </data>
+  <data name="COMMAND COOLING FAN" xml:space="preserve">
+    <value>Command Cooling Fan</value>
+  </data>
+  <data name="LAMP MOTOR ON" xml:space="preserve">
+    <value>Lamp Motor On</value>
+  </data>
+  <data name="(1=MTR ON)" xml:space="preserve">
+    <value>(1=Mtr On)</value>
+  </data>
+  <data name="LAMP MOTOR OFF" xml:space="preserve">
+    <value>Lamp Motor Off</value>
+  </data>
+  <data name="(1=MTR OFF)" xml:space="preserve">
+    <value>(1=Mtr Off)</value>
+  </data>
+  <data name="_LOC_DIS" xml:space="preserve">
+    <value>Local Disconnect</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_LOC_SAFETY" xml:space="preserve">
+    <value>Local Safety</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_ENABLED" xml:space="preserve">
+    <value>Enabled</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_CYCLE_INTERLOCKS" xml:space="preserve">
+    <value>Cycle Interlocks</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_CYCLE_IN_PROGRESS" xml:space="preserve">
+    <value>Cycle In Progress</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_CYCLE_OK_FOR_PROCESS" xml:space="preserve">
+    <value>Cycle Ok For Process</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="MOTOR ACTUAL SPEED FEEDBACK TRANSDUCER BROKEN WIRE" xml:space="preserve">
+    <value>Motor Actual Speed Feedback Transducer Broken Wire</value>
+  </data>
+  <data name="LOCAL SPEED CHANGE ROTOR" xml:space="preserve">
+    <value>Local Speed Change Rotor</value>
+  </data>
+  <data name="(1=ONLY ROTOR, 0=ALL LINE)" xml:space="preserve">
+    <value>(1=Only Rotor, 0=All Line)</value>
+  </data>
+  <data name="LOCAL SPEED CHANGE ROLLS" xml:space="preserve">
+    <value>Local Speed Change Rolls</value>
+  </data>
+  <data name="(1=ONLY ROLLS, 0=ALL LINE)" xml:space="preserve">
+    <value>(1=Only Rolls, 0=All Line)</value>
+  </data>
+  <data name="LOCAL SPEED INCREASE" xml:space="preserve">
+    <value>Local Speed Increase</value>
+  </data>
+  <data name="(1=INC)" xml:space="preserve">
+    <value>(1=Inc)</value>
+  </data>
+  <data name="LOCAL SPEED DECREASE" xml:space="preserve">
+    <value>Local Speed Decrease</value>
+  </data>
+  <data name="(1=DEC)" xml:space="preserve">
+    <value>(1=Dec)</value>
+  </data>
+  <data name="DEVICE NOT OK" xml:space="preserve">
+    <value>Device Not Ok</value>
+  </data>
+  <data name="DEVICE STATUS" xml:space="preserve">
+    <value>Device Status</value>
+  </data>
+  <data name="_DISABLED_BY_OP" xml:space="preserve">
+    <value>Disabled By Operator</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_ON_OR_IN_PROGRESS" xml:space="preserve">
+    <value>On Or In Progress</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="OVERLOAD DIGITAL INPUT" xml:space="preserve">
+    <value>Overload Digital Input</value>
+  </data>
+  <data name="OVERLOAD DIGITAL OUTPUT" xml:space="preserve">
+    <value>Overload Digital Output</value>
+  </data>
+  <data name="OVERLOAD INTERNAL 24V DC" xml:space="preserve">
+    <value>Overload Internal 24V Dc</value>
+  </data>
+  <data name="OVERLOAD EXTERNAL 24V DC" xml:space="preserve">
+    <value>Overload External 24V Dc</value>
+  </data>
+  <data name="BEACON OVERLOAD" xml:space="preserve">
+    <value>Beacon Overload</value>
+  </data>
+  <data name="_ETH_SWITCH_OK" xml:space="preserve">
+    <value>Ethernet Switch Ok</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_DIGITAL_INPUTS_OK" xml:space="preserve">
+    <value>Digital Inputs Ok</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_DIGITAL_OUTPUTS_OK" xml:space="preserve">
+    <value>Digital Outputs Ok</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_24V_INT_OK" xml:space="preserve">
+    <value>24V Int Ok</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_24V_EXT_OK" xml:space="preserve">
+    <value>24V Ext Ok</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="OVERLOAD TRANSFORMER PRIMARY" xml:space="preserve">
+    <value>Overload Transformer Primary</value>
+  </data>
+  <data name="OVERLOAD TRANSFORMER SECONDARY" xml:space="preserve">
+    <value>Overload Transformer Secondary</value>
+  </data>
+  <data name="_ESTOP_PB_NOT_PRESSED" xml:space="preserve">
+    <value>Estop Pb Not Pressed</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_ONE_COMPONENT_ON" xml:space="preserve">
+    <value>One Component On</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_GROUP_FULL_PRODUCTION" xml:space="preserve">
+    <value>Group Full Production</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_ESTOP_AREA_STATUS_RESET_OK" xml:space="preserve">
+    <value>Estop Area Status Reset Ok</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_ESTOP_AREA_PBS_NOT_PRESSED" xml:space="preserve">
+    <value>Estop Area Pbs Not Pressed</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_DEVICE_IO_CONNECTED" xml:space="preserve">
+    <value>Device Io Connected</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_PLC_SIMULATION" xml:space="preserve">
+    <value>PLC Simulation</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_PLC_CABINET_TEST_MODE" xml:space="preserve">
+    <value>Plc Cabinet Test Mode</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="_PLC_SIMULATION_INIT" xml:space="preserve">
+    <value>Plc Simulation Init</value>
+    <comment>Component Status</comment>
+  </data>
+  <data name="HZ" xml:space="preserve">
+    <value>Hz</value>
+  </data>
+  <data name="ACTUAL FREQUENCY" xml:space="preserve">
+    <value>Actual Frequency</value>
+  </data>
+  <data name="LSH" xml:space="preserve">
+    <value>LSH</value>
+  </data>
+  <data name="LSL" xml:space="preserve">
+    <value>LSL</value>
+  </data>
+  <data name="LSHA" xml:space="preserve">
+    <value>LSHA</value>
+  </data>
+  <data name="LSHA_DELAY_ABOVE" xml:space="preserve">
+    <value>LSHA_DELAY_ABOVE</value>
+  </data>
+  <data name="LSLA" xml:space="preserve">
+    <value>LSLA</value>
+  </data>
+  <data name="LSLA_DELAY_BELOW" xml:space="preserve">
+    <value>LSLA_DELAY_BELOW</value>
+  </data>
+  <data name="HZ_RATIO_TARGET" xml:space="preserve">
+    <value>HZ_RATIO_TARGET</value>
+  </data>
+  <data name="HZ_RATIO_ACTUAL" xml:space="preserve">
+    <value>HZ_RATIO_ACTUAL</value>
+  </data>
+  <data name="SYNCHRONIZATION - TARGET RATIO FEEDER/ROTOR HZ" xml:space="preserve">
+    <value>Synchronization - Target Ratio Feeder/Rotor Hz</value>
+  </data>
+  <data name="SYNCHRONIZATION - ACTUAL RATIO FEEDER/ROTOR HZ" xml:space="preserve">
+    <value>Synchronization - Actual Ratio Feeder/Rotor Hz</value>
+  </data>
+  <data name="INFO_LEVEL_19" xml:space="preserve">
+    <value>Persistent Maximum Level ! Check The Tank, The Dicharging Pump For A Possible Fault And The Level Sensor</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_ACT_SPEED_1" xml:space="preserve">
+    <value>Check Speed Feedback Signal Wiring</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_ACT_SPEED_2" xml:space="preserve">
+    <value>Motor Actual Speed Is Out Of Tolerance. Check Motor, Transmission And A Possible Blockage</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_TEMP_1" xml:space="preserve">
+    <value>Temperature is Higher than Expected.</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_TEMP_3" xml:space="preserve">
+    <value>Temperature is Lower than Expected - Process is Stopped. Take Interlock Flag OFF to Restart the Process Even With Low Temperature</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_SOREMA_OK_1" xml:space="preserve">
+    <value>Wait for Sorema Plant to Get Ready to Receive Material</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_EXT_2" xml:space="preserve">
+    <value>Check External System to Make it Ready for Process</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_WTR_TREAT_1" xml:space="preserve">
+    <value>Check Water Treatment External System</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_BRT_FAULTY" xml:space="preserve">
+    <value>Check Faulty Status of Debaler External Unit and Reset Faults Locally</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_BRT_NOT_RUNNING" xml:space="preserve">
+    <value>Check Debaler External Unit Since It is Not Started/Active</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_SORTER_DISABLED" xml:space="preserve">
+    <value>Sorting Unit to Be Enabled by PreVu Setting</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_SORTER_WARNING" xml:space="preserve">
+    <value>Check Sorter Locally Looking for Diagnostic Messages</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_OIL_MIN_TEMP" xml:space="preserve">
+    <value>Wait for Oil Minimum Temperature to Reached by the Use of Heating Resistor to Allow Hydraulic Unit Running</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_OIL_FILTER" xml:space="preserve">
+    <value>Replace Oil Filter</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_FLW_LOW" xml:space="preserve">
+    <value>Water is Incoming at a Lower Flowrate Than Expected. Check the Water Inlet Pressure or Possible Manual Valve Not Completely Open.</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_FILTER_PRESS_1" xml:space="preserve">
+    <value>Filter Press System Disbaled By Operator - Upstream Interlocks are Bypassed ! - Click on Filter Press Label to Re-Enable Fileter Press Interlocks to Upstream</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_FILTER_PRESS_2" xml:space="preserve">
+    <value>If No Material is Incoming Filter Press Puts itself in Slow Mode To Prevent Material Melt. Wait for Material Reprise for Filetr Press Running at Full Speed.</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_FILTER_PRESS_3" xml:space="preserve">
+    <value>Check Filter Press on HMI View to See the Cause of Material Stop</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_FILTER_PRESS_4" xml:space="preserve">
+    <value>Check Filter Press for a Possible Material Klogged</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_FILTER_PRESS_5" xml:space="preserve">
+    <value>Jaws Open to Prevent Material Melt</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_EXT_3" xml:space="preserve">
+    <value>Check External Filteration Unit Since It is NOT Ready to Receive Water</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_EXT_4" xml:space="preserve">
+    <value>Check External Filteration Unit Since It is NOT Pumping After Request</value>
+    <comment>InfoText Message</comment>
+  </data>
+  <data name="INFO_DOWNSTR_SLOW_DWN" xml:space="preserve">
+    <value>Dowstream Plant Is Requesting Line Slow Down. Wait for Downstream Plant Full Capacity.</value>
+    <comment>InfoText Message</comment>
   </data>
 </root>

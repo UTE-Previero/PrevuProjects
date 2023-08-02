@@ -23,9 +23,5 @@ namespace Prevu.Synoptics
             InitializeComponent();
         }
 
-    private void VT_CMM_BlowerAirCompressor_Loaded(object sender, RoutedEventArgs e)
-    {
-
     }
-  }
 }

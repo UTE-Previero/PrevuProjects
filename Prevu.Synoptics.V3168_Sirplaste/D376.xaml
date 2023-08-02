@@ -8,13 +8,12 @@
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}">
-    <Grid Height="386" MinWidth="380">
-        <Machines:SCW_ScrewConveyor_inclined HorizontalAlignment="Center" VerticalAlignment="Center" Height="450" Width="380"/>
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="64,119,0,0" VerticalAlignment="Top" ComponentName="376-61-LEV" SignalName="LSH" />
-        <Labels:SignalLabel HorizontalAlignment="Left" Margin="81,183,0,0" VerticalAlignment="Top" ComponentName="376-61-LEV" SignalName="LSL"/>
+    <Canvas Height="386" MinWidth="380">
+        <Machines:V01_SCW_Screw_wHopper VerticalAlignment="Top" HorizontalAlignment="Left" Width="342" Canvas.Left="19" Canvas.Top="27"/>
+        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Top" ComponentName="376-61-LEV" SignalName="LSH" Canvas.Left="35" Canvas.Top="159" />
+        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Top" ComponentName="376-61-LEV" SignalName="LSL" Canvas.Left="52" Canvas.Top="223"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
-		Margin="133,46,0,0" 
 		VerticalAlignment="Top" 
-		ComponentName="376-61-LEV"/>
-    </Grid>
+		ComponentName="376-61-LEV" Canvas.Left="85" Canvas.Top="83"/>
+    </Canvas>
 </UserControl>

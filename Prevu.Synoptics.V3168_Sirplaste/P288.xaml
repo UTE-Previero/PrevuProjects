@@ -306,8 +306,6 @@
                 </TransformGroup>
             </Machines:WaterPump.RenderTransform>
         </Machines:WaterPump>
-        <Machines:SCW_ScrewConveyor_inclined HorizontalAlignment="Center" VerticalAlignment="Top" Height="205" Width="236" Canvas.Left="858" Canvas.Top="118"/>
-        <Machines:VB_VibratingScreen HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="936" Canvas.Top="366"/>
         <HoldingTank:VRC_WaterTank Canvas.Left="282" Canvas.Top="531" HorizontalAlignment="Center" VerticalAlignment="Center" ComponentName="225-41-LT1" TrendName="LEVEL"/>
         <HoldingTank:VRC_WaterTank Canvas.Left="815" Canvas.Top="612" HorizontalAlignment="Center" VerticalAlignment="Center" ComponentName="288-41-LT1" TrendName="LEVEL"/>
         <Machines:Waste HorizontalAlignment="Center" VerticalAlignment="Top" Height="46" Width="44" Canvas.Left="1071" Canvas.Top="395"/>
@@ -341,12 +339,14 @@
                 </TransformGroup>
             </Machines:External.RenderTransform>
         </Machines:External>
+        <Machines:V01_SCW_Screw_wHopper Canvas.Left="889" Canvas.Top="122" Height="173" Width="188" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:V01_VB_VibratingScreen Canvas.Left="936" Canvas.Top="366" HorizontalAlignment="Left" VerticalAlignment="Center" Height="100" Width="100"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            ComponentName="281-01-MA1" Canvas.Left="1066" Canvas.Top="84"/>
         <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
-            ComponentName="281-01-MA1" Canvas.Left="1083" Canvas.Top="143"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            VerticalAlignment="Center" 
-            ComponentName="288-41-LT1" RenderTransformOrigin="0.5,0.5" Canvas.Left="866" Canvas.Top="642">
+            ComponentName="288-41-LT1" RenderTransformOrigin="0.5,0.5" Canvas.Left="866" Canvas.Top="637">
             <Labels:DeviceLabel.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -362,9 +362,9 @@
         <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Center" 
             ComponentName="288-21-CV1" Canvas.Left="732" Canvas.Top="447"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            VerticalAlignment="Center" 
-            ComponentName="225-41-LT1" Canvas.Left="333" Canvas.Top="551"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" 
+            VerticalAlignment="Top" 
+            ComponentName="225-41-LT1" Canvas.Left="333" Canvas.Top="556"/>
         <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
             ComponentName="293-01-MA1" Canvas.Left="1087" Canvas.Top="730"/>
@@ -399,6 +399,6 @@
             JumpToLabel="457-01-MA1" Canvas.Left="135" Canvas.Top="213"/>
         <Labels:JumpLabel 
             JumpFromLabel="225-41-LT1" 
-            JumpToLabel="220-SEPARATION" Canvas.Left="135" Canvas.Top="444" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            JumpToLabel="220-01-MA5" Canvas.Left="135" Canvas.Top="444" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>

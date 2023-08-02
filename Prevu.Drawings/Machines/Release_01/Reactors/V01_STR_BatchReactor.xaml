@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="Prevu.Drawings.Machines.V01_STR_BatchReactor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Drawings.Machines"
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents"
+             mc:Ignorable="d" 
+            IsHitTestVisible="False">
+    <Viewbox  Stretch="Uniform">
+        <Canvas Name="svg74" Width="58" Height="119">
+            <Canvas.RenderTransform>
+                <TranslateTransform X="0" Y="0"/>
+            </Canvas.RenderTransform>
+            <Canvas.Resources>
+                <RectangleGeometry  x:Key="clip0_1439_333" Rect="0, 0, 57.9342, 119"/>
+            </Canvas.Resources>
+            <!--Unknown tag: sodipodi:namedview-->
+            <Canvas Name="g16" >
+                <Rectangle  Canvas.Left="1.56592" Canvas.Top="15.6579" Width="54.8026" Height="101.776" RadiusX="4.69737" RadiusY="4.69737" Name="rect2" Fill="#FF808080"/>
+                <Labels:WaterLevel x:Name="WaterLevel" Background="Transparent" d:Background="lightblue" Height="102" Width="54" 
+                         HorizontalAlignment="Center" VerticalAlignment="Center" 
+                           Canvas.Left="2" Canvas.Top="17" d:Opacity=".6">
+                    <Labels:WaterLevel.OpacityMask>
+                        <VisualBrush Visual="{Binding ElementName=rect2}" />
+                    </Labels:WaterLevel.OpacityMask>
+                </Labels:WaterLevel>
+                <Canvas Name="g6" Effect="{StaticResource MaterialDesignElevationShadow1}">
+                    <Path  Name="path4" StrokeThickness="3.13158" Stroke="#FF808080" StrokeStartLineCap="Round" StrokeEndLineCap="Round">
+                        <Path.Data>
+                            <PathGeometry Figures="M18.7896 17.2237C11.4519 17.2237 6.26329 17.2237 6.26329 17.2237C6.26329 17.2237 6.26329 17.2237 6.26329 17.2237C3.669 17.2237 1.56592 19.0425 1.56592 21.2863V113.372C1.56592 115.615 3.669 117.434 6.26329 117.434H51.6712C54.2655 117.434 56.3685 115.615 56.3685 113.372V21.2863C56.3685 19.0425 54.2655 17.2237 51.6712 17.2237H40.7107" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+
+                <Canvas Name="g10" Effect="{StaticResource MaterialDesignElevationShadow1}">
+                    <Path  Name="path8" Fill="#FF292929">
+                        <Path.Data>
+                            <PathGeometry Figures="M26.6187 1.56579C26.6187 0.701027 27.3197 0 28.1844 0C29.0492 0 29.7502 0.701028 29.7502 1.56579V34.2178C29.7502 34.7841 29.4444 35.3063 28.9505 35.5834C28.4747 35.8503 27.8942 35.8503 27.4184 35.5834C26.9245 35.3063 26.6187 34.7841 26.6187 34.2178L26.6187 1.56579Z" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+                <Canvas Name="g14" Effect="{StaticResource MaterialDesignElevationShadow1}">
+                    <Path  Name="path12" Fill="#FF292929">
+                        <Path.Data>
+                            <PathGeometry Figures="M18.2404 27.8036C15.9479 26.2832 12.8573 26.9052 11.3314 29.1941C11.0855 29.563 10.8898 29.9632 10.7495 30.3839L10.3853 31.4765C9.7425 33.4049 9.7425 35.4898 10.3853 37.4183L10.7495 38.5107C10.8897 38.9315 11.0855 39.3318 11.3315 39.7008C12.8575 41.9898 15.948 42.6123 18.2411 41.0925L22.9944 37.9422C26.1404 35.8572 30.2286 35.8572 33.3746 37.9422L38.1279 41.0925C40.421 42.6123 43.5115 41.9898 45.0374 39.7008C45.2835 39.3318 45.4793 38.9315 45.6195 38.5107L45.9837 37.4183C46.6265 35.4898 46.6265 33.4049 45.9837 31.4765L45.6195 30.3839C45.4792 29.9632 45.2835 29.563 45.0375 29.1941C43.5116 26.9052 40.4211 26.2832 38.1285 27.8036L33.3769 30.9549C30.2299 33.042 26.1391 33.042 22.9921 30.9549L18.2404 27.8036Z" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Viewbox>
+</UserControl>

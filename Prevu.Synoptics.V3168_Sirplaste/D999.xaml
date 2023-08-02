@@ -7,11 +7,11 @@
              xmlns:local="clr-namespace:Prevu.Synoptics"
 						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             xmlns:BigBag="clr-namespace:Prevu.Drawings.Machines.BigBag;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D999" 
+             xmlns:BigBag="clr-namespace:Prevu.Drawings.Machines.BigBag;assembly=Prevu.Drawings" xmlns:Stirrer="clr-namespace:Prevu.Drawings.Machines.Stirrer;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D999" 
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas Width="541" Height="350">
-        <BigBag:BBF_DoubleBigBagFilling Canvas.Left="10" Canvas.Top="10" Height="330" Width="523" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_BBF_DoubleBag Canvas.Left="10" Canvas.Top="10" Height="330" Width="523" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="999-61-BAG" SignalName="LSH" Canvas.Left="115" Canvas.Top="71"/>
         <Labels:DeviceLabel HorizontalAlignment="Center" 
 		VerticalAlignment="Center" 
