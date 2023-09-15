@@ -11,15 +11,12 @@
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas Width="541" Height="350">
-        <BigBag:BBF_DoubleBigBagFilling Canvas.Left="10" Canvas.Top="10" Height="330" Width="523" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_BBF_DoubleBag Canvas.Left="10" Canvas.Top="10" Height="330" Width="523" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="485-61-BAG" SignalName="LSH" Canvas.Left="115" Canvas.Top="71"/>
-        <Labels:DeviceLabel HorizontalAlignment="Center" 
-		VerticalAlignment="Center" 
-		ComponentName="485-61-BAG" Canvas.Left="105" Canvas.Top="150"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" VerticalAlignment="Center" ComponentName="485-61-BAG" Canvas.Left="105" Canvas.Top="150"/>
         <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Center" ComponentName="485-61-BAG" SignalName="SEL" Canvas.Left="117" Canvas.Top="205"/>
         <Labels:SignalLabel ComponentName="485-62-BAG" SignalName="LSH" Canvas.Left="358" Canvas.Top="71" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel 
-            ComponentName="485-62-BAG" Canvas.Left="348" Canvas.Top="150" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="485-62-BAG" Canvas.Left="348" Canvas.Top="150" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:SignalLabel ComponentName="485-62-BAG" SignalName="SEL" Canvas.Left="360" Canvas.Top="205" HorizontalAlignment="Left" VerticalAlignment="Center"/>
     </Canvas>
 </UserControl>
