@@ -4,14 +4,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Synoptics"
-						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
-             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D371" 
+			xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents"
+            xmlns:lex="http://wpflocalizeextension.codeplex.com" 
+             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" 
+            x:Class="Prevu.Synoptics.D371" 
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas Height="533" Width="422">
-        <Labels:Pipe Width="206" RenderTransformOrigin="0.497,0.467" Color="Chemicals" StatusComponent="359-21-CV1" Height="28" HorizontalAlignment="Center" Canvas.Left="161" Canvas.Top="470" VerticalAlignment="Top" Text="ANTIFOAM"/>
-        <Labels:Pipe Width="166" Color="Chemicals" RenderTransformOrigin="0.5,0.5" StatusComponent="371-21-CV1" HorizontalAlignment="Center" Canvas.Left="202" Canvas.Top="394" VerticalAlignment="Top" Text="ADDITIVE"/>
+        <Labels:Pipe Width="206" RenderTransformOrigin="0.497,0.467" Color="Chemicals" StatusComponent="359-21-CV1" Height="28" HorizontalAlignment="Center" Canvas.Left="161" Canvas.Top="470" VerticalAlignment="Top" Text="{lex:Loc ANTIFOAM}"/>
+        <Labels:Pipe Width="166" Color="Chemicals" RenderTransformOrigin="0.5,0.5" StatusComponent="371-21-CV1" HorizontalAlignment="Center" Canvas.Left="202" Canvas.Top="394" VerticalAlignment="Top" Text="{lex:Loc ADDITIVE}"/>
         <Labels:Pipe Color="Water" Width="141" RenderTransformOrigin="0.5,0.5" StatusComponent="371-21-CV1" HorizontalAlignment="Center" Canvas.Left="177" Canvas.Top="198" VerticalAlignment="Top" >
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -74,8 +76,8 @@
                 </TransformGroup>
             </Machines:CV_Valve_001.RenderTransform>
         </Machines:CV_Valve_001>
-        <Machines:Chemical_dosing Height="130" Width="144" HorizontalAlignment="Left" Canvas.Left="133" Canvas.Top="229" VerticalAlignment="Center"/>
-        <Machines:WaterPump Height="70" Width="50" RenderTransformOrigin="0.5,0.5" Color="Chemicals" HorizontalAlignment="Center" Canvas.Left="137" Canvas.Top="66" VerticalAlignment="Top">
+        <Machines:V01_ACS_Chemical_Dosing Canvas.Left="133" Canvas.Top="229" Height="130" Width="144" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:WaterPump Height="44" Width="44" RenderTransformOrigin="0.5,0.5" Color="Chemicals" HorizontalAlignment="Left" Canvas.Left="140" Canvas.Top="78" VerticalAlignment="Top">
             <Machines:WaterPump.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="1"/>
@@ -85,7 +87,7 @@
                 </TransformGroup>
             </Machines:WaterPump.RenderTransform>
         </Machines:WaterPump>
-        <Machines:WaterPump Height="72" Width="52" RenderTransformOrigin="0.5,0.5" Color="Chemicals" HorizontalAlignment="Left" Canvas.Left="137" Canvas.Top="151" VerticalAlignment="Center">
+        <Machines:WaterPump Height="44" Width="45" RenderTransformOrigin="0.5,0.5" Color="Chemicals" HorizontalAlignment="Left" Canvas.Left="140" Canvas.Top="164" VerticalAlignment="Center">
             <Machines:WaterPump.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="1"/>
@@ -95,7 +97,7 @@
                 </TransformGroup>
             </Machines:WaterPump.RenderTransform>
         </Machines:WaterPump>
-        <Machines:WaterPump Height="70" Width="50" RenderTransformOrigin="0.5,0.5" Color="Chemicals" HorizontalAlignment="Center" Canvas.Left="137" Canvas.Top="449" VerticalAlignment="Center">
+        <Machines:WaterPump Height="44" Width="45" RenderTransformOrigin="0.5,0.5" Color="Chemicals" HorizontalAlignment="Left" Canvas.Left="139" Canvas.Top="462" VerticalAlignment="Top">
             <Machines:WaterPump.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="1"/>
@@ -135,6 +137,5 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-
     </Canvas>
 </UserControl>

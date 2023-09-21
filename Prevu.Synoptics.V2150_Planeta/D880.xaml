@@ -10,12 +10,10 @@
              mc:Ignorable="d" 
               d:Background="{DynamicResource MaterialDesignPaper}" >
     <Canvas Height="427" Width="275">
-        <FlakesSorting:NEW_FKS_FlakesSorter Canvas.Left="10" Canvas.Top="10" Height="407" Width="256"/>
+        <Machines:V01_FKS_FlakesSorter_SingleCH Canvas.Left="10" Canvas.Top="10" Height="407" Width="256" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Top" ComponentName="880-61-LEV" SignalName="LSHA" Canvas.Left="110" Canvas.Top="32"/>
         <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Top" ComponentName="880-61-LEV" SignalName="LSH" Canvas.Left="110" Canvas.Top="81" />
         <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Top" ComponentName="880-61-LEV" SignalName="LSL" Canvas.Left="112" Canvas.Top="175"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-         VerticalAlignment="Top" 
-         ComponentName="880-61-LEV" Canvas.Left="100" Canvas.Top="214"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" VerticalAlignment="Top" ComponentName="880-61-LEV" Canvas.Left="100" Canvas.Top="214"/>
     </Canvas>
 </UserControl>

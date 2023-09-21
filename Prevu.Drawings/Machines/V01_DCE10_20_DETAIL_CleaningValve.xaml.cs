@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Synoptics
+namespace Prevu.Drawings.Machines
 {
     /// <summary>
-    /// Interaction logic for D380.xaml
+    /// Logica di interazione per V01_DCE10_20_DETAIL_CleaningValve.xaml
     /// </summary>
-    public partial class D175 : UserControl
+    public partial class V01_DCE10_20_DETAIL_CleaningValve : UserControl
     {
-        public D175()
+        public V01_DCE10_20_DETAIL_CleaningValve()
         {
             InitializeComponent();
         }
