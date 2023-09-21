@@ -1240,7 +1240,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Buttonspanel.
+        ///   Looks up a localized string similar to Buttons Panel.
         /// </summary>
         internal static string BUTTONSPANEL {
             get {
@@ -3661,6 +3661,15 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FILTER PRESS MAXIMUM TORQUE.
+        /// </summary>
+        internal static string FILTER_PRESS_MAXIMUM_TORQUE {
+            get {
+                return ResourceManager.GetString("FILTER PRESS MAXIMUM TORQUE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Filtration.
         /// </summary>
         internal static string FILTRATION {
@@ -4192,7 +4201,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hidefaults.
+        ///   Looks up a localized string similar to Hide Faults.
         /// </summary>
         internal static string HIDEFAULTS {
             get {
@@ -8305,7 +8314,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Motor Torque Transducer Broken Wire.
+        ///   Looks up a localized string similar to MOTOR TORQUE TRANSDUCER BROKEN WIRE.
         /// </summary>
         internal static string MOTOR_TORQUE_TRANSDUCER_BROKEN_WIRE {
             get {
@@ -9304,7 +9313,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Plantcontrol.
+        ///   Looks up a localized string similar to Plant Control.
         /// </summary>
         internal static string PLANTCONTROL {
             get {
@@ -10744,7 +10753,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Send The Following Recipe To Plc?.
+        ///   Looks up a localized string similar to Send The Following Recipe To PLC?.
         /// </summary>
         internal static string SEND_THE_FOLLOWING_RECIPE_TO_PLC_ {
             get {
@@ -11266,7 +11275,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Simulated.
+        ///   Looks up a localized string similar to SIMULATED.
         /// </summary>
         internal static string SIMULATED {
             get {
@@ -12499,7 +12508,7 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Usagetime.
+        ///   Looks up a localized string similar to Usage Time.
         /// </summary>
         internal static string USAGETIME {
             get {
