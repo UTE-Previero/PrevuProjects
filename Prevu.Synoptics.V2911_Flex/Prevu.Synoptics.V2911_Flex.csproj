@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0-windows10.0.22621.0</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<RootNamespace>Prevu.Synoptics</RootNamespace>
+		<SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+		<AssemblyName>Prevu.Synoptics</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MaterialDesignColors" Version="2.1.2" />
+		<PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+		<PackageReference Include="Prevu.UIComponents" Version="1.3.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Prevu.Drawings\Prevu.Drawings.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="D018.xaml.cs">
+	    <SubType>Code</SubType>
+	  </Compile>
+	  <Compile Update="D032.xaml.cs">
+	    <SubType>Code</SubType>
+	  </Compile>
+	  <Compile Update="D320.xaml.cs">
+	    <SubType>Code</SubType>
+	  </Compile>
+	  <Compile Update="D330.xaml.cs">
+	    <SubType>Code</SubType>
+	  </Compile>
+	  <Compile Update="D335.xaml.cs">
+	    <SubType>Code</SubType>
+	  </Compile>
+	  <Compile Update="D354.xaml.cs">
+	    <SubType>Code</SubType>
+	  </Compile>
+	  <Compile Update="D371.xaml.cs">
+	    <SubType>Code</SubType>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Page Update="D020.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	  </Page>
+	  <Page Update="D140.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	  </Page>
+	  <Page Update="D150.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	  </Page>
+	  <Page Update="D170.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	  </Page>
+	  <Page Update="D190.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	  </Page>
+	  <Page Update="D180.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	  </Page>
+	  <Page Update="P020.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	  </Page>
+	  <Page Update="P100.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	  </Page>
+	  <Page Update="P140.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	  </Page>
+	  <Page Update="P230.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	  </Page>
+	  <Page Update="P288.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	  </Page>
+	  <Page Update="P330.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	  </Page>
+	  <Page Update="P350.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	  </Page>
+	</ItemGroup>
+
+</Project>
