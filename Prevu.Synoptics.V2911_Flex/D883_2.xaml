@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="Prevu.Synoptics.D883_2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             mc:Ignorable="d" 
+             d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Height="344" Width="368">
+        <Machines:BBF_BigBagFilling Height="320" VerticalAlignment="Center" HorizontalAlignment="Center" Width="343" Canvas.Left="10" Canvas.Top="10" />
+        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Top" ComponentName="883-62-BAG" SignalName="LSH" Canvas.Left="146" Canvas.Top="72"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+		VerticalAlignment="Top" 
+		ComponentName="883-62-BAG" Canvas.Left="136" Canvas.Top="154"/>
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="883-62-BAG" SignalName="SEL" Canvas.Left="148" Canvas.Top="214"/>
+    </Canvas>
+</UserControl>
