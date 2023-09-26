@@ -16,9 +16,9 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for GR1.xaml
     /// </summary>
-    public partial class P485 : UserControl
+    public partial class P443 : UserControl
     {
-        public P485()
+        public P443()
         {
             InitializeComponent();
         }
