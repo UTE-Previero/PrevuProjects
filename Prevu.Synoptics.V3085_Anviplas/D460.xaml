@@ -9,19 +9,9 @@
              xmlns:Pits="clr-namespace:Prevu.Drawings.Machines.Pits;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D460" 
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}">
-    <Canvas Height="273" Width="371">
-        <Machines:DCE_DryingCentrifuge Height="317" Width="255" RenderTransformOrigin="0.5,0.5" Canvas.Left="47" Canvas.Top="-14">
-            <Machines:DCE_DryingCentrifuge.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Machines:DCE_DryingCentrifuge.RenderTransform>
-        </Machines:DCE_DryingCentrifuge>
-        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="460-61-LEV" SignalName="LSH" Canvas.Left="287" Canvas.Top="226" />
-        <Labels:DeviceLabel 
-            ComponentName="460-61-LEV"  HorizontalAlignment="Left" Canvas.Left="176" Canvas.Top="178" VerticalAlignment="Top"/>
-    </Canvas>
+  <Canvas Height="273" Width="371">
+    <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Top" ComponentName="464-61-LEV" SignalName="LSH" Canvas.Left="167" Canvas.Top="75" />
+    <Labels:SignalLabel ComponentName="464-61-LEV" SignalName="LSL1" Canvas.Left="115" Canvas.Top="136" HorizontalAlignment="Left" VerticalAlignment="Top" />
+    <Labels:SignalLabel ComponentName="464-61-LEV" SignalName="LSL2" Canvas.Left="212" Canvas.Top="137" HorizontalAlignment="Center" VerticalAlignment="Top" />
+  </Canvas>
 </UserControl>
