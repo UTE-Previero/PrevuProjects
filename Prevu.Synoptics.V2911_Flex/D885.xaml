@@ -6,24 +6,16 @@
              xmlns:local="clr-namespace:Prevu.Synoptics"
 						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" xmlns:Screws="clr-namespace:Prevu.Drawings.Machines.Screws;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D885" 
+             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" xmlns:Screws="clr-namespace:Prevu.Drawings.Machines.Screws;assembly=Prevu.Drawings" 
+             x:Class="Prevu.Synoptics.D885" 
              mc:Ignorable="d" 
              Height="448" Width="498" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas Height="448" Width="498">
-        <Screws:DETAIL_SCW_Flex_Verticale HorizontalAlignment="Left" Width="434" Canvas.Left="34" Canvas.Top="30" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Center">
-            <Screws:DETAIL_SCW_Flex_Verticale.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Screws:DETAIL_SCW_Flex_Verticale.RenderTransform>
-        </Screws:DETAIL_SCW_Flex_Verticale>
-        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="885-61-LEV" SignalName="LSH" FlowDirection="RightToLeft" Canvas.Left="378" Canvas.Top="233"/>
-        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Top" ComponentName="885-61-LEV" SignalName="LSL" FlowDirection="RightToLeft" Canvas.Left="303" Canvas.Top="326" />
+        <Machines:V01_SCW_DETAIL_Flex_Verticale_DX Canvas.Left="10" Canvas.Top="10" Height="428" Width="478" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="885-61-LEV" SignalName="LSH" FlowDirection="RightToLeft" Canvas.Left="313" Canvas.Top="179"/>
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="885-61-LEV" SignalName="LSL" FlowDirection="RightToLeft" Canvas.Left="250" Canvas.Top="255" />
         <Labels:DeviceLabel HorizontalAlignment="Left" 
          VerticalAlignment="Top" 
-         ComponentName="885-61-LEV" Canvas.Left="246" Canvas.Top="255"/>
+         ComponentName="885-61-LEV" Canvas.Left="342" Canvas.Top="90"/>
     </Canvas>
 </UserControl>
