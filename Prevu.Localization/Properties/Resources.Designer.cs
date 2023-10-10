@@ -1006,11 +1006,11 @@ namespace Prevu.Localization.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Air Minimum Pressure Not Ok (For Stepoint Requested).
+        ///   Looks up a localized string similar to Air Minimum Pressure Not Ok (For Setpoint Requested).
         /// </summary>
-        internal static string AIR_MINIMUM_PRESSURE_NOT_OK__FOR_STEPOINT_REQUESTED_ {
+        internal static string AIR_MINIMUM_PRESSURE_NOT_OK__FOR_SETPOINT_REQUESTED_ {
             get {
-                return ResourceManager.GetString("AIR MINIMUM PRESSURE NOT OK (FOR STEPOINT REQUESTED)", resourceCulture);
+                return ResourceManager.GetString("AIR MINIMUM PRESSURE NOT OK (FOR SETPOINT REQUESTED)", resourceCulture);
             }
         }
         
