@@ -9,32 +9,32 @@
              xmlns:Pits="clr-namespace:Prevu.Drawings.Machines.Pits;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D464" 
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}">
-    <Canvas Height="314" Width="444">
-        <Labels:Pipe Width="98" StatusComponent="460-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Height="10" Canvas.Left="164" Canvas.Top="61" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
-        <Machines:V01_FP_Hopper_DETAIL Canvas.Left="17" Canvas.Top="50" Height="253" Width="392" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="464-61-LEV" SignalName="LSH" Canvas.Left="178" Canvas.Top="87" />
-        <Labels:SignalLabel ComponentName="464-61-LEV" SignalName="LSL1" Canvas.Left="87" Canvas.Top="199" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Labels:SignalLabel ComponentName="464-61-LEV" SignalName="LSL2" Canvas.Left="289" Canvas.Top="199" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Labels:DeviceLabel 
-            ComponentName="464-61-LEV" Canvas.Left="168" Canvas.Top="133" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Rectangle Height="6" Stroke="Black" Width="46" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="190" Canvas.Top="16" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>
-    </Canvas>
+  <Canvas Height="375" Width="519">
+    <Labels:Pipe Width="98" StatusComponent="460-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Height="10" Canvas.Left="213" Canvas.Top="61" HorizontalAlignment="Left" VerticalAlignment="Center">
+      <Labels:Pipe.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform Angle="90"/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </Labels:Pipe.RenderTransform>
+    </Labels:Pipe>
+    <Machines:V01_FP_Hopper_DETAIL Canvas.Left="21" Canvas.Top="50" Height="334" Width="509" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="464-61-LEV" SignalName="LSH" Canvas.Left="229" Canvas.Top="85" />
+    <Labels:SignalLabel ComponentName="464-61-LEV" SignalName="LSL1" Canvas.Left="75" Canvas.Top="236" HorizontalAlignment="Left" VerticalAlignment="Center" FlowDirection="LeftToRight"/>
+    <Labels:SignalLabel ComponentName="464-61-LEV" SignalName="LSL2" Canvas.Left="260" Canvas.Top="265" HorizontalAlignment="Center" VerticalAlignment="Top" />
+    <Labels:DeviceLabel 
+            ComponentName="464-61-LEV" Canvas.Left="222" Canvas.Top="154" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    <Rectangle Height="6" Stroke="Black" Width="46" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="238" Canvas.Top="16" HorizontalAlignment="Left" VerticalAlignment="Center">
+      <Rectangle.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform Angle="0"/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </Rectangle.RenderTransform>
+    </Rectangle>
+  </Canvas>
 </UserControl>
