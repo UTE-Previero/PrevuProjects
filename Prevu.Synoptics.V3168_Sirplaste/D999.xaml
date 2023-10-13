@@ -10,16 +10,15 @@
              xmlns:BigBag="clr-namespace:Prevu.Drawings.Machines.BigBag;assembly=Prevu.Drawings" xmlns:Stirrer="clr-namespace:Prevu.Drawings.Machines.Stirrer;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D999" 
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}">
-    <Canvas Width="541" Height="350">
-        <Machines:V01_BBF_DoubleBag Canvas.Left="10" Canvas.Top="10" Height="330" Width="523" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="999-61-BAG" SignalName="LSH" Canvas.Left="115" Canvas.Top="71"/>
-        <Labels:DeviceLabel HorizontalAlignment="Center" 
-		VerticalAlignment="Center" 
-		ComponentName="999-61-BAG" Canvas.Left="105" Canvas.Top="150"/>
-        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Center" ComponentName="999-61-BAG" SignalName="SEL" Canvas.Left="117" Canvas.Top="205"/>
-        <Labels:SignalLabel ComponentName="999-62-BAG" SignalName="LSH" Canvas.Left="358" Canvas.Top="71" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel 
-            ComponentName="999-62-BAG" Canvas.Left="348" Canvas.Top="150" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:SignalLabel ComponentName="999-62-BAG" SignalName="SEL" Canvas.Left="360" Canvas.Top="205" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-    </Canvas>
+  <Canvas Width="541" Height="350">
+    <Machines:V01_BBF_DoubleBag Canvas.Left="10" Canvas.Top="10" Height="330" Width="523" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel HorizontalAlignment="Center" VerticalAlignment="Center" ComponentName="999-61-BAG" Canvas.Left="105" Canvas.Top="150"/>
+    <Labels:DeviceLabel ComponentName="999-62-BAG" Canvas.Left="348" Canvas.Top="150" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+    <Labels:SignalLabel ComponentName="999-61-BAG" SignalName="LSH" Canvas.Left="90" Canvas.Top="72"/>
+    <Labels:SignalLabel ComponentName="999-62-BAG" SignalName="LSH" Canvas.Left="333" Canvas.Top="72" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+    <Labels:SignalLabel ComponentName="999-61-BAG" SignalName="SEL" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="34" Canvas.Top="212" SignalPosition="Top" Width="230"/>
+    <Labels:SignalLabel ComponentName="999-62-BAG" SignalName="SEL" Canvas.Left="275" Canvas.Top="216" HorizontalAlignment="Left" VerticalAlignment="Center" SignalPosition="Top" Width="235"/>
+  </Canvas>
 </UserControl>
