@@ -22,8 +22,8 @@
     <Labels:Pipe 
             StatusComponent="200-01-MA1" Canvas.Left="693" Canvas.Top="414" PipeHeight="Big" Width="252" HorizontalAlignment="Center" VerticalAlignment="Top" />
     <Labels:Pipe HorizontalAlignment="Left" 
-                 VerticalAlignment="Top" 
-                 StatusComponent="200-71-ECS1" Canvas.Left="151" Canvas.Top="303" PipeHeight="Big" Width="315" Loaded="Pipe_Loaded" />
+                 VerticalAlignment="Center" 
+                 StatusComponent="200-71-ECS1" Canvas.Left="196" Canvas.Top="303" PipeHeight="Big" Width="236" Loaded="Pipe_Loaded" />
     <Grinders:CU_Cubedicer Canvas.Left="378" Canvas.Top="188" Height="405" Width="339" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
       <Grinders:CU_Cubedicer.RenderTransform>
         <TransformGroup>
@@ -53,7 +53,7 @@
     </Machines:CV_Valve_001>
     <Labels:DeviceLabel 
             ComponentName="200-21-CV1" HorizontalAlignment="Center" Canvas.Left="240" Canvas.Top="402" VerticalAlignment="Top"/>
-    <Rectangle Height="6" Stroke="Black" Width="90" RenderTransformOrigin="0.5,0.5" Canvas.Left="108" Canvas.Top="313" HorizontalAlignment="Left" VerticalAlignment="Top" StrokeThickness="3">
+    <Rectangle Height="6" Stroke="Black" Width="90" RenderTransformOrigin="0.5,0.5" Canvas.Left="153" Canvas.Top="313" HorizontalAlignment="Left" VerticalAlignment="Center" StrokeThickness="3">
       <Rectangle.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
@@ -63,7 +63,7 @@
         </TransformGroup>
       </Rectangle.RenderTransform>
     </Rectangle>
-    <Machines:External Height="76" Width="80" RenderTransformOrigin="0.5,0.5" Canvas.Left="113" Canvas.Top="207" HorizontalAlignment="Left" VerticalAlignment="Top">
+    <Machines:External Height="76" Width="80" RenderTransformOrigin="0.5,0.5" Canvas.Left="157" Canvas.Top="207" HorizontalAlignment="Left" VerticalAlignment="Center">
       <Machines:External.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
@@ -74,7 +74,7 @@
       </Machines:External.RenderTransform>
     </Machines:External>
     <Labels:DeviceLabel 
-            ComponentName="200-71-ECS1" Canvas.Left="201" Canvas.Top="235" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="2.433,-0.34"/>
+            ComponentName="200-71-ECS1" Canvas.Left="246" Canvas.Top="235" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="2.433,-0.34"/>
     <Rectangle Height="6" Stroke="Black" Width="90" RenderTransformOrigin="0.5,0.5" Canvas.Left="897" Canvas.Top="419" StrokeThickness="3" HorizontalAlignment="Center" VerticalAlignment="Top">
       <Rectangle.RenderTransform>
         <TransformGroup>
@@ -109,5 +109,6 @@
     <Labels:DeviceLabel x:Name="S710" ComponentName="S420" Canvas.Left="186" Canvas.Top="17" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     <Labels:DeviceLabel 
       ComponentName="200-71-ECS2" Canvas.Left="898" Canvas.Top="247" RenderTransformOrigin="2.433,-0.34" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:CodeLabel Canvas.Left="37" Canvas.Top="293" HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="WORK-ORDER" CodeName="WORK_ORDER"/>
   </Canvas>
 </UserControl>
