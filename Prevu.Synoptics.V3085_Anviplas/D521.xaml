@@ -1,0 +1,24 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             xmlns:Pits="clr-namespace:Prevu.Drawings.Machines.Pits;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D521" 
+             mc:Ignorable="d" 
+             d:Background="{DynamicResource MaterialDesignPaper}">
+  <Canvas Height="319" Width="445">
+    <Machines:V01_SLX_Silo_wAgitator Canvas.Left="14" Canvas.Top="5" Height="310" Width="226" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="521-61-LSHA" SignalName="LSH" Canvas.Left="139" Canvas.Top="34"/>
+    <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="521-61-LSH" SignalName="LSH" Canvas.Left="139" Canvas.Top="90" />
+    <Labels:DeviceLabel HorizontalAlignment="Left" 
+		VerticalAlignment="Top" 
+		ComponentName="521-01-MA1" Canvas.Left="85" Canvas.Top="200"/>
+    <Labels:DeviceLabel 
+      ComponentName="521-61-LSHA" Canvas.Left="45" Canvas.Top="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Labels:DeviceLabel 
+      ComponentName="521-61-LSH" Canvas.Left="45" Canvas.Top="81" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+  </Canvas>
+</UserControl>
