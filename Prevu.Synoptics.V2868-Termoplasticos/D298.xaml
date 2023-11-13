@@ -1,0 +1,21 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             xmlns:Pits="clr-namespace:Prevu.Drawings.Machines.Pits;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D298" 
+             mc:Ignorable="d" 
+             d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Height="319" Width="443">
+        <Machines:V01_PSP_Pit Canvas.Left="17" Canvas.Top="17" Height="293" Width="405" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="298-61-LEV" SignalName="LSHA" Canvas.Left="196" Canvas.Top="104"/>
+        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="298-61-LEV" SignalName="LSH" Canvas.Left="195" Canvas.Top="145" />
+        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="298-61-LEV" SignalName="LSL" Canvas.Left="196" Canvas.Top="233"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+		VerticalAlignment="Top" 
+		ComponentName="298-61-LEV" Canvas.Left="52" Canvas.Top="41"/>
+    </Canvas>
+</UserControl>
