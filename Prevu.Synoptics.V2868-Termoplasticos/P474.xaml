@@ -9,6 +9,7 @@
              x:Class="Prevu.Synoptics.P474" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
+        <Labels:Pipe Color="Water" Width="93" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="492-21-CV1" Canvas.Left="1169" Canvas.Top="612" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Color="Water" Width="70" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="492-21-CV1" Canvas.Left="1136" Canvas.Top="646">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -40,7 +41,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="108" StatusComponent="465-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Height="10" Canvas.Left="743" Canvas.Top="271">
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="108" StatusComponent="470-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Height="10" Canvas.Left="743" Canvas.Top="271">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -73,11 +74,11 @@
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
         <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.5,0.5" StatusComponent="492-01-MA1" PipeHeight="Medium" Height="22" Canvas.Left="1186" Canvas.Top="688"/>
-        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="307" StatusComponent="465-01-MA1" PipeHeight="Medium" Canvas.Left="493" Canvas.Top="222"/>
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="307" StatusComponent="470-01-MA1" PipeHeight="Medium" Canvas.Left="493" Canvas.Top="222"/>
         <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="170" StatusComponent="430-01-MA8" PipeHeight="Medium" Height="10" Canvas.Left="173" Canvas.Top="77"/>
-        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="147" Color="Water" StatusComponent="465-01-MA1" VisibilityComponent="" Canvas.Left="232" Canvas.Top="269"/>
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="147" Color="Water" StatusComponent="470-01-MA1" VisibilityComponent="" Canvas.Left="232" Canvas.Top="269"/>
         <Labels:Pipe Color="Water" Width="115" RenderTransformOrigin="0.5,0.5" Height="24" StatusComponent="474-21-CV1" Canvas.Left="498" Canvas.Top="503" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="71" Color="Water" StatusComponent="465-01-MA1" VisibilityComponent="" RenderTransformOrigin="0.5,0.5" Canvas.Left="342" Canvas.Top="236">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="71" Color="Water" StatusComponent="470-01-MA1" VisibilityComponent="" RenderTransformOrigin="0.5,0.5" Canvas.Left="342" Canvas.Top="236">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -131,16 +132,6 @@
                 </TransformGroup>
             </Machines:CV_Valve_001.RenderTransform>
         </Machines:CV_Valve_001>
-        <Machines:CV_Valve_001 HorizontalAlignment="Center" VerticalAlignment="Top" Color="Water" RenderTransformOrigin="0.5,0.5" Height="45" Width="77" Canvas.Left="1132" Canvas.Top="586">
-            <Machines:CV_Valve_001.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="270"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Machines:CV_Valve_001.RenderTransform>
-        </Machines:CV_Valve_001>
         <Blowers:VT_CMM_BlowerAirCompressor Canvas.Left="1144" Canvas.Top="671" HorizontalAlignment="Left" Height="54" VerticalAlignment="Center"/>
         <Machines:V01_WCE_Centrifuge Canvas.Left="325" Canvas.Top="68" HorizontalAlignment="Center" Height="165" VerticalAlignment="Top"/>
         <Machines:V01_FP_FiltroPressa_wFeederScrew Canvas.Left="706" Canvas.Top="318" Height="220" Width="294" HorizontalAlignment="Left" VerticalAlignment="Center"/>
@@ -183,9 +174,6 @@
             VerticalAlignment="Top" 
             ComponentName="474-02-MA1" Canvas.Left="625" Canvas.Top="617"/>
         <Labels:DeviceLabel HorizontalAlignment="Center" 
-            VerticalAlignment="Top" 
-            ComponentName="492-21-CV1" Canvas.Left="1194" Canvas.Top="584"/>
-        <Labels:DeviceLabel HorizontalAlignment="Center" 
 		VerticalAlignment="Top" 
 		ComponentName="474-F-PRESS" Canvas.Left="626" Canvas.Top="318" RenderTransformOrigin="0.6,0"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
@@ -193,7 +181,7 @@
     ComponentName="474-23-CV1" Canvas.Left="1056" Canvas.Top="422"/>
         <Labels:DeviceLabel HorizontalAlignment="Left" 
             VerticalAlignment="Center" 
-            ComponentName="465-01-MA1" Canvas.Left="520" Canvas.Top="95"/>
+            ComponentName="470-01-MA1" Canvas.Left="520" Canvas.Top="95"/>
         <Labels:DetailsLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="474-HYD" DetailsPageName="D474" Canvas.Left="1074" Canvas.Top="496"  />
         <Labels:JumpLabel HorizontalAlignment="Left" 
             VerticalAlignment="Center" 
@@ -207,5 +195,8 @@
             VerticalAlignment="Center" 
             JumpFromLabel="465-01-MA1" 
             JumpToLabel="444-01-MA1" Direction="Left" Canvas.Left="193" Canvas.Top="236"/>
+        <Labels:JumpLabel 
+            JumpFromLabel="492-01-MA1" 
+            JumpToLabel="482-01-MA1" Canvas.Left="1251" Canvas.Top="586" HorizontalAlignment="Center" VerticalAlignment="Top" Direction="Left"/>
     </Canvas>
 </UserControl>

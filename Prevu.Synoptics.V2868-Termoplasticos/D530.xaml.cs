@@ -15,14 +15,14 @@ using System.Windows.Shapes;
 
 namespace Prevu.Synoptics
 {
-  /// <summary>
-  /// Interaction logic for OverallView.xaml
-  /// </summary>
-  public partial class OverallView : UserControl
-  {
-    public OverallView()
+    /// <summary>
+    /// Interaction logic for D380.xaml
+    /// </summary>
+    public partial class D530 : UserControl
     {
-      InitializeComponent();
+        public D530()
+        {
+            InitializeComponent();
+        }
     }
-  }
 }

@@ -13,16 +13,16 @@ using System.Windows.Shapes;
 
 namespace Prevu.Synoptics
 {
-    /// <summary>
-    /// Interaction logic for WH1.xaml
-    /// </summary>
-    public partial class P450 : UserControl
+  /// <summary>
+  /// Interaction logic for GR1.xaml
+  /// </summary>
+  public partial class P570 : UserControl
+  {
+    public P570()
     {
-        public P450()
-        {
-            InitializeComponent();
-        }
+      InitializeComponent();
+    }
 
-        
+ 
     }
 }
