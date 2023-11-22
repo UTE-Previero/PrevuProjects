@@ -1,16 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Text;
+﻿using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using Prevu.UIComponents.Stores;
 
 namespace Prevu.Drawings.Machines
 {
@@ -47,6 +38,37 @@ new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.
       set { SetValue(TrendNameProperty, value); }
     }
 
+    public static readonly DependencyProperty MaxFillingValueProperty =
+    DependencyProperty.Register(nameof(MaxFillingValue), typeof(double), typeof(VRC_WaterCollectingTank),
+new FrameworkPropertyMetadata(100.0, FrameworkPropertyMetadataOptions.AffectsRender, MaxFillingValuePropertyChangedCallback));
+
+    private static void MaxFillingValuePropertyChangedCallback(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
+      => ((VRC_WaterCollectingTank)dependencyObject).Update();
+
+    [Description("Max Value of trend"), Category("_PV")]
+    public double MaxFillingValue
+    {
+      get { return (double)GetValue(MaxFillingValueProperty); }
+      set { SetValue(MaxFillingValueProperty, value); }
+    }
+
+    #region Color
+
+    public static readonly DependencyProperty ColorProperty =
+    DependencyProperty.Register(nameof(Color), typeof(FillColor), typeof(VRC_WaterCollectingTank),
+      new FrameworkPropertyMetadata(FillColor.Water, FrameworkPropertyMetadataOptions.AffectsRender, LevelColorChanged));
+
+    private static void LevelColorChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e)
+    => ((VRC_WaterCollectingTank)dependencyObject).Update();
+
+    [Description("Color of the level"), Category("_PV")]
+    public FillColor Color
+    {
+      get { return (FillColor)GetValue(ColorProperty); }
+      set { SetValue(ColorProperty, value); }
+    }
+    #endregion
+
     public VRC_WaterCollectingTank()
     {
       InitializeComponent();
@@ -54,8 +76,10 @@ new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.
 
     private void Update()
     {
-      WaterLevel.ComponentName = ComponentName;
-      WaterLevel.TrendName = TrendName;
+      MaterialLevel.ComponentName = ComponentName;
+      MaterialLevel.TrendName = TrendName;
+      MaterialLevel.MaxValue = MaxFillingValue;
+      MaterialLevel.Color = Color;
     }
   }
 }
