@@ -1,0 +1,22 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             xmlns:Pits="clr-namespace:Prevu.Drawings.Machines.Pits;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D231" 
+             mc:Ignorable="d" 
+             d:Background="{DynamicResource MaterialDesignPaper}">
+  <Canvas Height="285" Width="320">
+    <Machines:V01_VRC_WaterTank Canvas.Left="10" Canvas.Top="15" Height="259" Width="301" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Machines:V01_Agitator Canvas.Left="110" Canvas.Top="81" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Rectangle Height="95" Canvas.Left="158" Canvas.Top="4" Width="6" Fill="#FF292929" RadiusX="2" RadiusY="2" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Top" ComponentName="231-01-LEV" SignalName="LSH" Canvas.Left="36" Canvas.Top="34"/>
+    <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="231-01-LEV" SignalName="LSL" Canvas.Left="33" Canvas.Top="175" />
+    <Labels:DeviceLabel 
+      ComponentName="231-01-LEV" Canvas.Left="35" Canvas.Top="117" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    <Labels:SignalLabel ComponentName="231-01-LEV" SignalName="LSLA" Canvas.Left="55" Canvas.Top="224" HorizontalAlignment="Left" VerticalAlignment="Center" />
+  </Canvas>
+</UserControl>
