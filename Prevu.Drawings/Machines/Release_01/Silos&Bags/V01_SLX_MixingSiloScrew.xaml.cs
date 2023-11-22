@@ -73,6 +73,13 @@ namespace Prevu.Drawings.Machines
     {
       InitializeComponent();
     }
+
+    public override void OnApplyTemplate()
+    {
+      base.OnApplyTemplate();
+      Update();
+    }
+
     private void Update()
     {
       MaterialLevel.ComponentName = ComponentName;

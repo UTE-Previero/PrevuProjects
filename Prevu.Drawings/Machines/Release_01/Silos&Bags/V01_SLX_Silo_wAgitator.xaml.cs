@@ -73,6 +73,13 @@ new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.
     {
       InitializeComponent();
     }
+
+    public override void OnApplyTemplate()
+    {
+      base.OnApplyTemplate();
+      Update();
+    }
+
     private void Update()
     {
       MaterialLevel.ComponentName = ComponentName;

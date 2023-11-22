@@ -87,6 +87,12 @@ new FrameworkPropertyMetadata(100.0, FrameworkPropertyMetadataOptions.AffectsRen
       InitializeComponent();
     }
 
+    public override void OnApplyTemplate()
+    {
+      base.OnApplyTemplate();
+      Update();
+    }
+
     private void Update()
     {
       MaterialLevel.ComponentName = ComponentName;
