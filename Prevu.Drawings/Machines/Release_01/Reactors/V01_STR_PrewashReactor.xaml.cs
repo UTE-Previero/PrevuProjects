@@ -50,19 +50,6 @@ new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.
       set { SetValue(TrendNameProperty, value); }
     }
 
-    public static readonly DependencyProperty MaxFillingValueProperty =
-      DependencyProperty.Register(nameof(MaxFillingValue), typeof(double), typeof(V01_STR_PrewashReactor),
-new FrameworkPropertyMetadata(100.0, FrameworkPropertyMetadataOptions.AffectsRender, MaxFillingValuePropertyChangedCallback));
-
-    private static void MaxFillingValuePropertyChangedCallback(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
-      => ((V01_STR_PrewashReactor)dependencyObject).Update();
-
-    [Description("Max Value of trend"), Category("_PV")]
-    public double MaxFillingValue
-    {
-      get { return (double)GetValue(MaxFillingValueProperty); }
-      set { SetValue(MaxFillingValueProperty, value); }
-    }
 
     #region Color
 
@@ -96,7 +83,6 @@ new FrameworkPropertyMetadata(100.0, FrameworkPropertyMetadataOptions.AffectsRen
     {
       MaterialLevel.ComponentName = ComponentName;
       MaterialLevel.TrendName = TrendName;
-      MaterialLevel.MaxValue = MaxFillingValue;
       MaterialLevel.Color = Color;
     }
   }

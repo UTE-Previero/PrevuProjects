@@ -38,19 +38,6 @@ namespace Prevu.Drawings.Machines
       set { SetValue(TrendNameProperty, value); }
     }
 
-    public static readonly DependencyProperty MaxFillingValueProperty =
-    DependencyProperty.Register(nameof(MaxFillingValue), typeof(double), typeof(V01_SLX_MixingSiloScrew),
-    new FrameworkPropertyMetadata(100.0, FrameworkPropertyMetadataOptions.AffectsRender, MaxFillingValuePropertyChangedCallback));
-
-    private static void MaxFillingValuePropertyChangedCallback(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
-      => ((V01_SLX_MixingSiloScrew)dependencyObject).Update();
-
-    [Description("Max Value of trend"), Category("_PV")]
-    public double MaxFillingValue
-    {
-      get { return (double)GetValue(MaxFillingValueProperty); }
-      set { SetValue(MaxFillingValueProperty, value); }
-    }
 
     #region Color
 
@@ -84,7 +71,6 @@ namespace Prevu.Drawings.Machines
     {
       MaterialLevel.ComponentName = ComponentName;
       MaterialLevel.TrendName = TrendName;
-      MaterialLevel.MaxValue = MaxFillingValue;
       MaterialLevel.Color = Color;
     }
   }

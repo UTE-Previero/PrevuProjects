@@ -11,7 +11,7 @@ namespace Prevu.Drawings.Machines
   public partial class V01_SLX_Silo_wAgitator : UserControl
   {
     public static readonly DependencyProperty ComponentNameProperty =
-DependencyProperty.Register(nameof(ComponentName), typeof(string), typeof(V01_SLX_Silo_wAgitator),
+    DependencyProperty.Register(nameof(ComponentName), typeof(string), typeof(V01_SLX_Silo_wAgitator),
 new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.AffectsRender, ComponentNameChangedCallback));
 
     private static void ComponentNameChangedCallback(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
@@ -38,19 +38,6 @@ new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.
       set { SetValue(TrendNameProperty, value); }
     }
 
-    public static readonly DependencyProperty MaxFillingValueProperty =
-    DependencyProperty.Register(nameof(MaxFillingValue), typeof(double), typeof(V01_SLX_Silo_wAgitator),
-    new FrameworkPropertyMetadata(100.0, FrameworkPropertyMetadataOptions.AffectsRender, MaxFillingValuePropertyChangedCallback));
-
-    private static void MaxFillingValuePropertyChangedCallback(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
-      => ((V01_SLX_Silo_wAgitator)dependencyObject).Update();
-
-    [Description("Max Value of trend"), Category("_PV")]
-    public double MaxFillingValue
-    {
-      get { return (double)GetValue(MaxFillingValueProperty); }
-      set { SetValue(MaxFillingValueProperty, value); }
-    }
 
     #region Color
 
@@ -84,7 +71,6 @@ new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.
     {
       MaterialLevel.ComponentName = ComponentName;
       MaterialLevel.TrendName = TrendName;
-      MaterialLevel.MaxValue = MaxFillingValue;
       MaterialLevel.Color = Color;
     }
   }
