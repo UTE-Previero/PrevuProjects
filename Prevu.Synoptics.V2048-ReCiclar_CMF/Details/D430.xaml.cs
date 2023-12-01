@@ -16,13 +16,15 @@ using System.Windows.Shapes;
 namespace Prevu.Synoptics
 {
   /// <summary>
-  /// Interaction logic for PlantView.xaml
+  /// Interaction logic for D810.xaml
   /// </summary>
-  public partial class WaterView : UserControl
-  {
-    public WaterView()
+  public partial class D430 : UserControl
     {
-      InitializeComponent();
+        public D430()
+        {
+            InitializeComponent();
+        }
+
+
     }
-  }
 }

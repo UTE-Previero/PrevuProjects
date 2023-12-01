@@ -1,0 +1,29 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" xmlns:Screws="clr-namespace:Prevu.Drawings.Machines.Screws;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D883" 
+             mc:Ignorable="d" 
+             Height="448" Width="498" d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Height="448" Width="498">
+        <Machines:V01_SCW_DETAIL_Flex_Verticale_DX Canvas.Left="10" Canvas.Top="10" Height="428" Width="478" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5">
+            <Machines:V01_SCW_DETAIL_Flex_Verticale_DX.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Machines:V01_SCW_DETAIL_Flex_Verticale_DX.RenderTransform>
+        </Machines:V01_SCW_DETAIL_Flex_Verticale_DX>
+        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="883-61-LEV" SignalName="LSH" FlowDirection="LeftToRight" Canvas.Left="59" Canvas.Top="181"/>
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="883-61-LEV" SignalName="LSLA" FlowDirection="LeftToRight" Canvas.Left="122" Canvas.Top="257" />
+        <Labels:DeviceLabel HorizontalAlignment="Left" 
+         VerticalAlignment="Top" 
+         ComponentName="883-61-LEV" Canvas.Left="59" Canvas.Top="90"/>
+    </Canvas>
+</UserControl>
