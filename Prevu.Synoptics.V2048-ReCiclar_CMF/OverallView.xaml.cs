@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Prevu.Synoptics
 {
   /// <summary>
-  /// Interaction logic for PlantView.xaml
+  /// Interaction logic for OverallView.xaml
   /// </summary>
-  public partial class WaterView : UserControl
+  public partial class OverallView : UserControl
   {
-    public WaterView()
+    public OverallView()
     {
       InitializeComponent();
     }
