@@ -1,0 +1,136 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows10.0.22621.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="2.1.2" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+    <PackageReference Include="Prevu.UIComponents" Version="1.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Prevu.Drawings\Prevu.Drawings.csproj" />
+    <ProjectReference Include="..\Prevu.Localization\Prevu.Localization.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="SeparationTank\DET_005-5Paddles.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SeparationTank\DET_011-7Paddles+Distributors.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SeparationTank\DET_012-4Distributor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SeparationTank\DET_005-5Paddles-PreWashSep.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SeparationTank\DET_012-4Paddles.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Nastri\DET_019-Lubrification Metal Conveyor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HeatExchanger\DET_006-HeatExchanger.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Reactors\DET_020-HotWash.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Silos\DET_024-Buffer Silo Extraction Screws.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Reactors\DET_020-HotWash+BottomReactor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="D340.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ChemicalsDosing\DET_007-ChemicalsDosing.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Hoppers\DET_010-ScrewHopper.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SeparationTank\DET_025-7Paddles.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BigBags\DET_004-DoubleBag.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Hoppers\DET_026-3Lev-LSHA+LSH+LSL.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Silos\DET_003-MixSilo+Weight.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BigBags\DET_009-SingleBag.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Others\DET_002-AirFilter.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="D978.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="BaleBraker\DET_021-Hydraulic 4 Shaft.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="BaleBraker\DET_021-Hydraulic 3 Shaft.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Dryers\DET_008-3Resistor.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Others\DET_015-HydrFP400.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Hoppers\DET_010-FlexibleScrew.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Dryers\DET_008-Blower+3Resistor.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Nastri\DET_017-BottleSorter+ExternalConveyor.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Nastri\DET_022-BottleSorter+FastConveyor+Roll.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Nastri\DET_023-BottleSorter+FastConveyor.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Nastri\DET_016-Conveyor+MetalDetector+Diverter.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Dryers\DET_027-Blower+6Resistor.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="EddyCurrent\DET_028-VibrTable+Conveyor+Roll+Drum.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Hoppers\DET_026-3Lev-ImmageFKS.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Hoppers\DET_029-2Room-4Lev+3Lev-ForFKS.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Hoppers\DET_xxx-2Lev-LSHA+LSH-FKS.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Hoppers\DET_xxx-2Room-3Lev+2Lev-ForFKS.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+  </ItemGroup>
+
+</Project>
