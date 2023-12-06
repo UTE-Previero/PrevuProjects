@@ -2,18 +2,19 @@ How to create Project Template:
 1- Go to Project > Export Template
 2- Select Prevu.Synoptics
 3- Set Name, Description, select TemplateIcon.png as the icon
-4- Deselect "automatically sets up the template in visual studio" check box
+4- Deselect "automatically sets up the template in visual studio" checkbox
 5- Select "Finish"
 
 How to make the Template usable:
-1- Go to %userprofile%\Documents\Visual Studio 2022\Templates\ProjectTemplates
-2- Extract the template .zip
-3- Edit MyTemplate.vstemplate and set all ReplaceParameters="false"
+1- Go to %userprofile%\Documents\Visual Studio 2022\My Exported Templates
+2- Extract the template .zip in a new Folder "Prevu.Synoptics"
+3- Edit with notepad++ MyTemplate.vstemplate and set all ReplaceParameters="false"
 4- Open all other files with notepad++ and replace $safeprojectname$ with Prevu.Synoptics everywhere. Add <AssemblyName>Prevu.Synoptics</AssemblyName> to Prevu.Synoptics.csproj in <PropertyGroup>
-5- Delete old .zip and compress the new folder to replace it
-6- to refresh template cache run this from command prompt: devenv /installvstemplates
+5- Compress the folder and copy the .zip to %userprofile%\Documents\Visual Studio 2022\Templates\ProjectTemplates
+6- Replace the old .zip with the new 
+7- to refresh template cache, run this from Visual Studio "Tools>Command Line>Developer Command Prompt" : devenv /installvstemplates 
 
-How to import Project Template:
+How to import Project Template (to do only if .zip file is imported from other source):
 1- Open Prevu.Projects folder
 2- Copy Prevu.Synoptics.zip
 3- Paste to %userprofile%\Documents\Visual Studio 2022\Templates\ProjectTemplates
