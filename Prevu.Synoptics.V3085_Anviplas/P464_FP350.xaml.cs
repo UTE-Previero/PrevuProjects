@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,18 +14,14 @@ using System.Windows.Shapes;
 namespace Prevu.Synoptics
 {
     /// <summary>
-    /// Interaction logic for D514.xaml
+    /// Interaction logic for GR1.xaml
     /// </summary>
-    public partial class D464 : UserControl
+    public partial class P464_FP350 : UserControl
     {
-        public D464()
+        public P464_FP350()
         {
             InitializeComponent();
         }
 
-        private void Pipe_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

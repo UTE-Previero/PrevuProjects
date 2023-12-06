@@ -15,15 +15,19 @@ using System.Windows.Shapes;
 
 namespace Prevu.Synoptics
 {
-  /// <summary>
-  /// Interaction logic for D810.xaml
-  /// </summary>
-  public partial class D474 : UserControl
+    /// <summary>
+    /// Interaction logic for D514.xaml
+    /// </summary>
+    public partial class D474 : UserControl
     {
         public D474()
         {
             InitializeComponent();
         }
 
+        private void Pipe_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
