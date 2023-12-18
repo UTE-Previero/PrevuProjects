@@ -4,24 +4,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Synoptics"
-						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.DET_012_SEP_4Paddles" 
              mc:Ignorable="d" 
-             d:Background="{DynamicResource MaterialDesignPaper}">
+             d:Background="{DynamicResource MaterialDesignPaper}"
+             x:Class="Prevu.Synoptics.DET_012_SEP_4Paddles">
   <Canvas Height="226" Width="545">
     <Machines:V01_VSP_DETAIL_SepTank_w4Paddles Canvas.Left="16" Canvas.Top="58" Height="145" Width="516" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-    <Labels:DeviceLabel HorizontalAlignment="Left" 
-		VerticalAlignment="Center" 
-		ComponentName="430-01-MA1" Canvas.Left="72" Canvas.Top="34"/>
-    <Labels:DeviceLabel HorizontalAlignment="Left" 
-            VerticalAlignment="Center" 
-            ComponentName="430-01-MA2" Canvas.Left="174" Canvas.Top="34"/>
-    <Labels:DeviceLabel HorizontalAlignment="Left" 
-            VerticalAlignment="Center" 
-            ComponentName="430-01-MA3" Canvas.Left="274" Canvas.Top="34"/>
-    <Labels:DeviceLabel HorizontalAlignment="Left" 
-            VerticalAlignment="Center" 
-            ComponentName="430-01-MA4" Canvas.Left="376" Canvas.Top="34"/>
+        <Labels:DeviceLabel ComponentName="430-01-MA1" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="72" Canvas.Top="34"/>
+        <Labels:DeviceLabel ComponentName="430-01-MA2" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="174" Canvas.Top="34"/>
+        <Labels:DeviceLabel ComponentName="430-01-MA3" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="274" Canvas.Top="34"/>
+        <Labels:DeviceLabel ComponentName="430-01-MA4" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="376" Canvas.Top="34"/>
   </Canvas>
 </UserControl>

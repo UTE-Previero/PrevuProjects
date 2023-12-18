@@ -1,13 +1,14 @@
-﻿<UserControl x:Class="Prevu.Synoptics.DET_015_FP400_Hydr"
+﻿<UserControl 
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Synoptics"
-						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              mc:Ignorable="d" 
-              d:Background="{DynamicResource MaterialDesignPaper}">
+             d:Background="{DynamicResource MaterialDesignPaper}"
+             x:Class="Prevu.Synoptics.DET_015_FP400_Hydr">
     <Canvas Height="425" Width="468">
         <Labels:Pipe HorizontalAlignment="Left" Margin="213,65,0,0" VerticalAlignment="Top" Color="Oil" Width="32" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="464-25-CV1">
             <Labels:Pipe.RenderTransform>
@@ -71,7 +72,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Color="Oil" Width="174" RenderTransformOrigin="0.5,0.5" Height="18" StatusComponent="464-25-CV1" Canvas.Left="44" Canvas.Top="91"/>
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Color="Oil" Width="174" RenderTransformOrigin="0.5,0.5" StatusComponent="464-25-CV1" Canvas.Left="44" Canvas.Top="97"/>
         <Rectangle HorizontalAlignment="Left" Height="2" Stroke="Black" VerticalAlignment="Center" Width="54" RenderTransformOrigin="0.5,0.5" Canvas.Left="92" Canvas.Top="74">
             <d:Rectangle.RenderTransform>
                 <TransformGroup>
@@ -83,38 +84,38 @@
             </d:Rectangle.RenderTransform>
         </Rectangle>
         <Ellipse HorizontalAlignment="Left" Height="16" Stroke="#FFBDBDBD" VerticalAlignment="Center" Width="16" OpacityMask="#FFBDBDBD" Fill="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" Canvas.Left="111" Canvas.Top="92"/>
-        <Machines:CV_Valve HorizontalAlignment="Left" Margin="211,149,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="30" Width="36">
-            <Machines:CV_Valve.RenderTransform>
+        <Machines:V01_CV_Valve Canvas.Left="211" Canvas.Top="149" Height="30" Width="36" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Machines:V01_CV_Valve.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
                     <RotateTransform Angle="90"/>
                     <TranslateTransform/>
                 </TransformGroup>
-            </Machines:CV_Valve.RenderTransform>
-        </Machines:CV_Valve>
-        <Machines:EXC_Air HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="60" Canvas.Left="298" Canvas.Top="249" RenderTransformOrigin="0.5,0.5">
-            <Machines:EXC_Air.RenderTransform>
+            </Machines:V01_CV_Valve.RenderTransform>
+        </Machines:V01_CV_Valve>
+        <Machines:V01_EXC_CoolingFan Canvas.Left="297" Canvas.Top="249" Height="28" Width="61" RenderTransformOrigin="0.5,0.5">
+            <Machines:V01_EXC_CoolingFan.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
                     <RotateTransform Angle="90"/>
                     <TranslateTransform/>
                 </TransformGroup>
-            </Machines:EXC_Air.RenderTransform>
-        </Machines:EXC_Air>
-        <Machines:WaterPump HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Height="66" Width="48" Color="Oil" Canvas.Left="71" Canvas.Top="249"/>
-        <Machines:VRC_WaterCollectingTank HorizontalAlignment="Left" Margin="20,308,0,0" VerticalAlignment="Top" Height="107" Width="358"/>
-        <Machines:SCW_ScrewConveyor_straight HorizontalAlignment="Left" Margin="258,338,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="80" Height="16">
-            <Machines:SCW_ScrewConveyor_straight.RenderTransform>
+            </Machines:V01_EXC_CoolingFan.RenderTransform>
+        </Machines:V01_EXC_CoolingFan>
+        <Machines:V01_WaterPump Canvas.Left="71" Canvas.Top="249" Height="66" Width="48" Color="Oil"/>
+        <Machines:V01_AuxHydraulicOilTank Canvas.Left="20" Canvas.Top="308" Height="107" Width="358"/>
+        <Machines:V01_SCW_ScrewConveyor_straight Canvas.Left="258" Canvas.Top="338" HorizontalAlignment="Center" Height="20" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.5,0.5">
+            <Machines:V01_SCW_ScrewConveyor_straight.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform ScaleY="-1"/>
+                    <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="-90"/>
+                    <RotateTransform Angle="90"/>
                     <TranslateTransform/>
                 </TransformGroup>
-            </Machines:SCW_ScrewConveyor_straight.RenderTransform>
-        </Machines:SCW_ScrewConveyor_straight>
+            </Machines:V01_SCW_ScrewConveyor_straight.RenderTransform>
+        </Machines:V01_SCW_ScrewConveyor_straight>
         <Machines:V01_CV_ValveDouble Canvas.Left="205" Canvas.Top="83" Height="33" Width="39" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Machines:V01_CV_ValveDouble.RenderTransform>
                 <TransformGroup>
@@ -125,40 +126,14 @@
                 </TransformGroup>
             </Machines:V01_CV_ValveDouble.RenderTransform>
         </Machines:V01_CV_ValveDouble>
-        <Rectangle Height="30" Stroke="Black" Width="6" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="44" Canvas.Top="85">
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            VerticalAlignment="Center" 
-            ComponentName="464-03-PT1" Canvas.Left="74" Canvas.Top="26"/>
-        <Labels:DeviceLabel HorizontalAlignment="Center" 
-            VerticalAlignment="Top" 
-            ComponentName="464-05-MA1" Canvas.Left="355" Canvas.Top="238"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            VerticalAlignment="Center" 
-            ComponentName="464-03-MA1" Height="50" Canvas.Left="50" Canvas.Top="201"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="190,318,0,0" 
-            VerticalAlignment="Top" 
-            ComponentName="464-11-R1"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            VerticalAlignment="Center" 
-            ComponentName="464-22-CV2" Canvas.Left="337" Canvas.Top="68"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            VerticalAlignment="Center" 
-            ComponentName="464-22-CV1" Canvas.Left="337" Canvas.Top="130"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            VerticalAlignment="Center" 
-            ComponentName="464-25-CV1" Height="50" Canvas.Left="121" Canvas.Top="138"/>
-        <Labels:DeviceLabel HorizontalAlignment="Left" 
-            VerticalAlignment="Center" 
-            ComponentName="464-42-TT1" Canvas.Left="85" Canvas.Top="318"/>
+        <Rectangle Height="30" Stroke="Black" Width="6" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="44" Canvas.Top="85"/>
+        <Labels:DeviceLabel ComponentName="464-03-PT1" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="74" Canvas.Top="26"/>
+        <Labels:DeviceLabel ComponentName="464-05-MA1" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="355" Canvas.Top="238"/>
+        <Labels:DeviceLabel ComponentName="464-03-MA1" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="50" Canvas.Top="201"/>
+        <Labels:DeviceLabel ComponentName="464-11-R1" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="188" Canvas.Top="319" />
+        <Labels:DeviceLabel ComponentName="464-22-CV2" HorizontalAlignment="Left" VerticalAlignment="Center"  Canvas.Left="337" Canvas.Top="68"/>
+        <Labels:DeviceLabel ComponentName="464-22-CV1" HorizontalAlignment="Left" VerticalAlignment="Center"  Canvas.Left="337" Canvas.Top="130"/>
+        <Labels:DeviceLabel ComponentName="464-25-CV1" HorizontalAlignment="Left" VerticalAlignment="Center"  Canvas.Left="121" Canvas.Top="138"/>
+        <Labels:DeviceLabel ComponentName="464-42-TT1" HorizontalAlignment="Left" VerticalAlignment="Center"  Canvas.Left="85" Canvas.Top="318"/>
     </Canvas>
 </UserControl>

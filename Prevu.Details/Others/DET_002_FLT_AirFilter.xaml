@@ -4,11 +4,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Synoptics"
-						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             xmlns:Blowers="clr-namespace:Prevu.Drawings.Machines.Blowers;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.DET_002_FLT_AirFilter" 
              mc:Ignorable="d" 
-             d:Background="{DynamicResource MaterialDesignPaper}">
+             d:Background="{DynamicResource MaterialDesignPaper}"
+             x:Class="Prevu.Synoptics.DET_002_FLT_AirFilter" >
     <Canvas Height="450" Width="333">
         <Labels:Pipe Width="56" VerticalAlignment="Top" Canvas.Top="69" StatusComponent="970-01-MA1" RenderTransformOrigin="0.5,0.5" Canvas.Left="48" HorizontalAlignment="Center" Color="Air">
             <Labels:Pipe.RenderTransform>
@@ -43,14 +43,11 @@
         </Labels:Pipe>
         <Machines:V01_EC_FiltroManiche Canvas.Top="79" HorizontalAlignment="Left" Height="246" VerticalAlignment="Center" Width="190" Canvas.Left="30"/>
         <Machines:V01_VS_Airlock Canvas.Left="87" Canvas.Top="334" Height="55" Width="54" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Blowers:VT_CMM_BlowerAirCompressor Width="51" Canvas.Left="101" Canvas.Top="18" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Machines:Waste Height="48" Width="48" Canvas.Left="90" Canvas.Top="392" HorizontalAlignment="Center" VerticalAlignment="Top" />
-        <Labels:DeviceLabel 
-            ComponentName="970-01-MA1" Canvas.Left="159" Canvas.Top="19" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel 
-            ComponentName="970-03-EC1" Canvas.Left="191" Canvas.Top="137" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel 
-            ComponentName="970-02-MA1" Canvas.Left="146" Canvas.Top="331" HorizontalAlignment="Center" VerticalAlignment="Top" />
-        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="970-03-EC1" SignalName="LSH" Canvas.Left="79" Canvas.Top="271"/>
+        <Machines:V01_VT_CMM_Blower_Air_Compressor Canvas.Left="101" Canvas.Top="20" Height="51" Width="51"/>
+        <Machines:V01_Waste Canvas.Left="94" Canvas.Top="402" Height="40" Width="40" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:SignalLabel ComponentName="970-03-EC1" SignalName="LSH" HorizontalAlignment="Left" VerticalAlignment="Center"   Canvas.Left="79" Canvas.Top="271"/>
+        <Labels:DeviceLabel ComponentName="970-01-MA1" Canvas.Left="159" Canvas.Top="19" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="970-03-EC1" Canvas.Left="191" Canvas.Top="137" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="970-02-MA1" Canvas.Left="146" Canvas.Top="331" HorizontalAlignment="Center" VerticalAlignment="Top" />
     </Canvas>
 </UserControl>

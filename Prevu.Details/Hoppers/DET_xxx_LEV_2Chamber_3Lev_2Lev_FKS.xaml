@@ -4,23 +4,19 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Synoptics"
-						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" xmlns:FlakesSorting="clr-namespace:Prevu.Drawings.Machines.FlakesSorting;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.DET_xxx_LEV_2Chamber_3Lev_2Lev_FKS" 
              mc:Ignorable="d" 
-              d:Background="{DynamicResource MaterialDesignPaper}">
+             d:Background="{DynamicResource MaterialDesignPaper}"
+             x:Class="Prevu.Synoptics.DET_xxx_LEV_2Chamber_3Lev_2Lev_FKS">
     <Canvas Height="427" Width="452">
         <Machines:V01_FKS_FlakesSorter_DoubleCH Canvas.Left="10" Canvas.Top="10" Height="414" Width="435" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="950-61-LEV" SignalName="LSHA1" Canvas.Left="54" Canvas.Top="39"/>
-        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="950-61-LEV" SignalName="LSH" Canvas.Left="101" Canvas.Top="94" />
-        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="950-61-LEV" SignalName="LSHA" Canvas.Left="307" Canvas.Top="39"/>
-        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="950-61-LEV" SignalName="LSH" Canvas.Left="307" Canvas.Top="94" />
-        <Labels:DeviceLabel HorizontalAlignment="Center" 
-         VerticalAlignment="Top" 
-         ComponentName="950-61-LEV" Canvas.Left="77" Canvas.Top="219"/>
-        <Labels:DeviceLabel HorizontalAlignment="Center" 
-            VerticalAlignment="Top" 
-            ComponentName="950-62-LEV" Canvas.Left="285" Canvas.Top="219"/>
+        <Labels:SignalLabel ComponentName="950-61-LEV" SignalName="LSHA1" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="54" Canvas.Top="39"/>
+        <Labels:SignalLabel ComponentName="950-61-LEV" SignalName="LSH" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="101" Canvas.Top="94" />
+        <Labels:SignalLabel ComponentName="950-61-LEV" SignalName="LSHA" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="307" Canvas.Top="39"/>
+        <Labels:SignalLabel ComponentName="950-61-LEV" SignalName="LSH" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="307" Canvas.Top="94" />
         <Labels:SignalLabel ComponentName="950-61-LEV" SignalName="LSHA2" Canvas.Left="159" Canvas.Top="39" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="950-61-LEV" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="77" Canvas.Top="219"/>
+        <Labels:DeviceLabel ComponentName="950-62-LEV" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="285" Canvas.Top="219"/>
     </Canvas>
 </UserControl>

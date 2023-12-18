@@ -4,27 +4,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Synoptics"
-						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.DET_005_SEP_5Paddles" 
              mc:Ignorable="d" 
-             d:Background="{DynamicResource MaterialDesignPaper}">
+             d:Background="{DynamicResource MaterialDesignPaper}"
+             x:Class="Prevu.Synoptics.DET_005_SEP_5Paddles">
     <Canvas Height="186"  Width="600">
-        <Separation:VSP_DETAILPADDLES_SeparationTank_wBottomSrcew Canvas.Left="10" Canvas.Top="15" Height="140" Width="580" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel HorizontalAlignment="Center" 
-		VerticalAlignment="Top" 
-		ComponentName="430-01-MA1" Canvas.Left="36" Canvas.Top="108"/>
-        <Labels:DeviceLabel HorizontalAlignment="Center" 
-            VerticalAlignment="Top" 
-            ComponentName="430-01-MA2" Canvas.Left="138" Canvas.Top="108"/>
-        <Labels:DeviceLabel HorizontalAlignment="Center" 
-            VerticalAlignment="Top" 
-            ComponentName="430-01-MA3" Canvas.Left="241" Canvas.Top="108"/>
-        <Labels:DeviceLabel HorizontalAlignment="Center" 
-            VerticalAlignment="Top" 
-            ComponentName="430-01-MA4" Canvas.Left="344" Canvas.Top="108"/>
-        <Labels:DeviceLabel HorizontalAlignment="Center" 
-            VerticalAlignment="Top" 
-            ComponentName="430-01-MA5" Canvas.Left="446" Canvas.Top="108"/>
+        <Machines:V01_VSP_DETAIL_SepTank_w5Paddles Canvas.Left="10" Canvas.Top="15" Height="140" Width="580" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="430-01-MA1" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="36" Canvas.Top="108"/>
+        <Labels:DeviceLabel ComponentName="430-01-MA2" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="138" Canvas.Top="108"/>
+        <Labels:DeviceLabel ComponentName="430-01-MA3" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="241" Canvas.Top="108"/>
+        <Labels:DeviceLabel ComponentName="430-01-MA4" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="344" Canvas.Top="108"/>
+        <Labels:DeviceLabel ComponentName="430-01-MA5" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="446" Canvas.Top="108"/>
     </Canvas>
 </UserControl>
