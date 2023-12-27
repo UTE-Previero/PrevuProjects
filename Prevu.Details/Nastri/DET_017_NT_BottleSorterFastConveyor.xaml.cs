@@ -18,9 +18,9 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for D380.xaml
     /// </summary>
-    public partial class DET_023_NT_BottleSorterFastConveyor : UserControl
+    public partial class DET_017_NT_BottleSorterFastConveyor : UserControl
     {
-        public DET_023_NT_BottleSorterFastConveyor()
+        public DET_017_NT_BottleSorterFastConveyor()
         {
             InitializeComponent();
         }
