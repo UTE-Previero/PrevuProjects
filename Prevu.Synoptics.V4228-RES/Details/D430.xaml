@@ -1,0 +1,18 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             mc:Ignorable="d" 
+             d:Background="{DynamicResource MaterialDesignPaper}"
+             x:Class="Prevu.Synoptics.D430">
+    <Canvas Height="226" Width="545">
+        <Machines:V01_VSP_DETAIL_SepTank_w3Paddles Canvas.Left="16" Canvas.Top="58" HorizontalAlignment="Center" VerticalAlignment="Top" Width="516" Height="145"/>
+        <Labels:DeviceLabel ComponentName="430-01-MA1" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="89" Canvas.Top="34"/>
+        <Labels:DeviceLabel ComponentName="430-01-MA2" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="226" Canvas.Top="34"/>
+        <Labels:DeviceLabel ComponentName="430-01-MA3" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="361" Canvas.Top="34"/>
+    </Canvas>
+</UserControl>
