@@ -7,8 +7,6 @@
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:lex="http://wpflocalizeextension.codeplex.com" 
              xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings" 
-             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" xmlns:Silos="clr-namespace:Prevu.Drawings.Machines.Silos;assembly=Prevu.Drawings" 
-             xmlns:Blowers="clr-namespace:Prevu.Drawings.Machines.Blowers;assembly=Prevu.Drawings" 
              x:Class="Prevu.Synoptics.P340" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
@@ -191,14 +189,23 @@
             VerticalAlignment="Center" 
             JumpFromLabel="310-41-LT1" 
             JumpToLabel="279-21-CV1" Canvas.Left="29" Canvas.Top="41" />
+        <Labels:JumpLabel 
+            JumpFromLabel="310-41-LT1" 
+            JumpToLabel="299-21-CV1" Canvas.Left="64" Canvas.Top="122" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Labels:JumpLabel 
+            JumpFromLabel="340-WASHING" 
+            JumpToLabel="350-01-MA1" Canvas.Left="1431" Canvas.Top="703" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:JumpLabel 
+            JumpFromLabel="340-WASHING" 
+            JumpToLabel="354-HEAT" Canvas.Left="650" Canvas.Top="323" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DetailsLabel ComponentName="340-VIEW" DetailsPageName="D340" Canvas.Left="821" Canvas.Top="696" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DetailsLabel ComponentName="345-VIEW" DetailsPageName="D345" Canvas.Left="1222" Canvas.Top="572" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DetailsLabel ComponentName="311-VIEW" DetailsPageName="D311" Canvas.Left="487" Canvas.Top="403" HorizontalAlignment="Left" VerticalAlignment="Center" HideComponentName="True"/>
         <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
             ComponentName="316-01-MA1" Canvas.Left="206" Canvas.Top="551" />
         <Labels:DeviceLabel 
             ComponentName="318-01-MA1" Canvas.Left="402" Canvas.Top="700" HorizontalAlignment="Center" VerticalAlignment="Top" />
-        <Labels:JumpLabel 
-            JumpFromLabel="310-41-LT1" 
-            JumpToLabel="299-21-CV1" Canvas.Left="64" Canvas.Top="122" HorizontalAlignment="Center" VerticalAlignment="Top" />
         <Labels:DeviceLabel HorizontalAlignment="Center" 
             VerticalAlignment="Top" 
             ComponentName="310-41-LT1" Canvas.Left="376" Canvas.Top="123"/>
@@ -208,18 +215,9 @@
             ComponentName="338-21-CV1" Canvas.Left="790" Canvas.Top="212" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DeviceLabel 
             ComponentName="338-01-MA1" Canvas.Left="1041" Canvas.Top="87" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DetailsLabel ComponentName="340-VIEW" DetailsPageName="D340" Canvas.Left="821" Canvas.Top="696" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel 
             ComponentName="345-MIXER" Canvas.Left="1203" Canvas.Top="509" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DetailsLabel ComponentName="345-VIEW" DetailsPageName="D345" Canvas.Left="1222" Canvas.Top="572" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:JumpLabel 
-            JumpFromLabel="340-WASHING" 
-            JumpToLabel="354-HEAT" Canvas.Left="650" Canvas.Top="323" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DetailsLabel ComponentName="311-VIEW" DetailsPageName="D311" Canvas.Left="487" Canvas.Top="403" HorizontalAlignment="Left" VerticalAlignment="Center" HideComponentName="True"/>
         <Labels:DeviceLabel 
             ComponentName="311-DISCHARGE" Canvas.Left="388" Canvas.Top="403" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Labels:JumpLabel 
-            JumpFromLabel="340-WASHING" 
-            JumpToLabel="350-01-MA1" Canvas.Left="1431" Canvas.Top="703" HorizontalAlignment="Left" VerticalAlignment="Center"/>
     </Canvas>
 </UserControl>
