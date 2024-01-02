@@ -4,9 +4,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Synoptics"
-						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D354" 
+             x:Class="Prevu.Synoptics.D354" 
              mc:Ignorable="d" 
              
              d:Background="{DynamicResource MaterialDesignPaper}">
@@ -21,16 +21,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Color="Vapor" Width="86" StatusComponent="354-21-CV1" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Canvas.Left="89" Canvas.Top="180" VerticalAlignment="Center">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
+        <Labels:Pipe Color="Vapor" Width="86" StatusComponent="354-21-CV1" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Canvas.Left="89" Canvas.Top="180" VerticalAlignment="Center"/>
         <Rectangle Height="2" Stroke="Black" Width="63" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Canvas.Left="189" Canvas.Top="110" VerticalAlignment="Center">
             <d:Rectangle.RenderTransform>
                 <TransformGroup>
@@ -64,14 +55,6 @@
                 </TransformGroup>
             </Machines:EXC_HeatExchanger.RenderTransform>
         </Machines:EXC_HeatExchanger>
-        <Labels:DeviceLabel 
-            ComponentName="354-21-CV1" HorizontalAlignment="Left" Canvas.Left="35" Canvas.Top="110" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel 
-            ComponentName="354-41-TT1" HorizontalAlignment="Left" Canvas.Left="221" Canvas.Top="86" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel 
-            ComponentName="354-42-PT2" HorizontalAlignment="Left" Canvas.Left="221" Canvas.Top="230" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel 
-            ComponentName="354-42-PT1" HorizontalAlignment="Left" Canvas.Left="34" Canvas.Top="230" VerticalAlignment="Center"/>
         <Rectangle Height="46" Stroke="Black" Width="6" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Canvas.Left="187" Canvas.Top="13" VerticalAlignment="Center">
             <Rectangle.RenderTransform>
                 <TransformGroup>
@@ -92,5 +75,9 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
+        <Labels:DeviceLabel ComponentName="354-21-CV1" HorizontalAlignment="Left" Canvas.Left="35" Canvas.Top="110" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="354-41-TT1" HorizontalAlignment="Left" Canvas.Left="221" Canvas.Top="86" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="354-42-PT2" HorizontalAlignment="Left" Canvas.Left="221" Canvas.Top="230" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="354-42-PT1" HorizontalAlignment="Left" Canvas.Left="34" Canvas.Top="230" VerticalAlignment="Center"/>
     </Canvas>
 </UserControl>
