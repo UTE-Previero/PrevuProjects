@@ -6,47 +6,35 @@
              xmlns:lex="http://wpflocalizeextension.codeplex.com" 
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             xmlns:DCE="clr-namespace:Prevu.Drawings.Machines.DCE;assembly=Prevu.Drawings" 
-             xmlns:BigBag="clr-namespace:Prevu.Drawings.Machines.BigBag;assembly=Prevu.Drawings" xmlns:Valves="clr-namespace:Prevu.Drawings.Machines.Valves;assembly=Prevu.Drawings" 
-             xmlns:Blowers="clr-namespace:Prevu.Drawings.Machines.Blowers;assembly=Prevu.Drawings" 
              x:Class="Prevu.Synoptics.P997" mc:Ignorable="d"
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
         <Labels:Pipe Width="106" Color="Air" RenderTransformOrigin="0.5,0.5" StatusComponent="970-01-MA1" Canvas.Left="1056" Canvas.Top="312" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.5,0.5" StatusComponent="898-01-MA1" PipeHeight="Medium" Height="24" Canvas.Left="515" Canvas.Top="349">
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.5,0.5" StatusComponent="898-01-MA1" PipeHeight="Medium" Canvas.Left="515" Canvas.Top="355">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform ScaleX="1"/>
+                    <ScaleTransform />
                     <SkewTransform/>
                     <RotateTransform Angle="90"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="185" StatusComponent="898-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Height="10" Canvas.Left="376" Canvas.Top="319">
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="185" StatusComponent="898-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Canvas.Left="376" Canvas.Top="319"/>
+        <Labels:Pipe Width="90" StatusComponent="898-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" VisibilityComponent="998-25-CV1" VisibilitySignal="LS1" Canvas.Left="444" Canvas.Top="494" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform ScaleX="1"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
-        <Labels:Pipe Width="90" StatusComponent="898-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Height="10" VisibilityComponent="998-25-CV1" VisibilitySignal="LS1" Canvas.Left="444" Canvas.Top="494" HorizontalAlignment="Center" VerticalAlignment="Top">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="1"/>
+                    <ScaleTransform/>
                     <SkewTransform/>
                     <RotateTransform Angle="90"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="92" StatusComponent="898-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Height="10" VisibilityComponent="998-25-CV1" VisibilitySignal="LS2" Canvas.Left="579" Canvas.Top="499" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Labels:Pipe Width="92" StatusComponent="898-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" VisibilityComponent="998-25-CV1" VisibilitySignal="LS2" Canvas.Left="579" Canvas.Top="499" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform ScaleX="1"/>
+                    <ScaleTransform/>
                     <SkewTransform/>
                     <RotateTransform Angle="90"/>
                     <TranslateTransform/>
@@ -54,87 +42,16 @@
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
         <Machines:V01_EC_FiltroManiche Canvas.Left="1149" Canvas.Top="295" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Machines:V01_BBF_DoubleBag Canvas.Left="415" Canvas.Top="506" Height="166" Width="286" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
-            <Machines:V01_BBF_DoubleBag.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Machines:V01_BBF_DoubleBag.RenderTransform>
-        </Machines:V01_BBF_DoubleBag>
-        <Labels:JumpLabel HorizontalAlignment="Center" 
-            VerticalAlignment="Top" 
-            JumpFromLabel="997-25-CV1" 
-            JumpToLabel="898-01-MA1" Canvas.Left="322" Canvas.Top="289" RenderTransformOrigin="0.5,0.5">
-            <Labels:JumpLabel.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:JumpLabel.RenderTransform>
-        </Labels:JumpLabel>
-        <Labels:DeviceLabel 
-            ComponentName="997-25-CV1" Canvas.Left="512" Canvas.Top="452" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
-            <Labels:DeviceLabel.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:DeviceLabel.RenderTransform>
-        </Labels:DeviceLabel>
-        <Labels:DetailsLabel ComponentName="997-BAGS" DetailsPageName="D997" Canvas.Left="532" Canvas.Top="532" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
-            <Labels:DetailsLabel.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:DetailsLabel.RenderTransform>
-        </Labels:DetailsLabel>
+        <Machines:V01_BBF_DoubleBag Canvas.Left="415" Canvas.Top="506" Height="166" Width="286" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
         <Machines:MaterialInletOutlet Canvas.Left="1016" Canvas.Top="281" HorizontalAlignment="Center" VerticalAlignment="Top" Height="67" Width="67"/>
-        <TextBlock TextWrapping="Wrap" 
-            Height="66" Width="122" TextAlignment="Center" 
-            FontSize="20" Foreground="White" Text="{lex:Loc MACHINES EXHAUST}" Canvas.Left="917" Canvas.Top="288" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Machines:V01_DV_DoubleBagsDiverter Canvas.Left="474" Canvas.Top="385" Height="94" Width="164" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
-            <Machines:V01_DV_DoubleBagsDiverter.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Machines:V01_DV_DoubleBagsDiverter.RenderTransform>
-        </Machines:V01_DV_DoubleBagsDiverter>
-        <Labels:DeviceLabel 
-            ComponentName="997-SHAKE" Canvas.Left="511" Canvas.Top="589" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
-            <Labels:DeviceLabel.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Labels:DeviceLabel.RenderTransform>
-        </Labels:DeviceLabel>
+        <TextBlock TextWrapping="Wrap" Height="66" Width="122" TextAlignment="Center" FontSize="20" Foreground="White" Text="{lex:Loc MACHINES EXHAUST}" Canvas.Left="917" Canvas.Top="288" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_DV_DoubleBagsDiverter Canvas.Left="474" Canvas.Top="385" Height="94" Width="164" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
         <Rectangle Height="139" Stroke="Black" Width="2" RenderTransformOrigin="0.5,0.5" Canvas.Left="1105" Canvas.Top="227" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Machines:External Height="58" Width="60" RenderTransformOrigin="0.5,0.5" Canvas.Left="1076" Canvas.Top="175" HorizontalAlignment="Center" VerticalAlignment="Top">
-            <Machines:External.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Machines:External.RenderTransform>
-        </Machines:External>
-        <Labels:DeviceLabel 
-            ComponentName="900-71-ECS2" Canvas.Left="993" Canvas.Top="207" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Machines:External Height="58" Width="60" RenderTransformOrigin="0.5,0.5" Canvas.Left="1076" Canvas.Top="175" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:JumpLabel HorizontalAlignment="Center" VerticalAlignment="Top" JumpFromLabel="997-25-CV1" JumpToLabel="898-01-MA1" Canvas.Left="322" Canvas.Top="289" RenderTransformOrigin="0.5,0.5"/>
+        <Labels:DetailsLabel ComponentName="997-BAGS" DetailsPageName="D997" Canvas.Left="532" Canvas.Top="532" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
+        <Labels:DeviceLabel ComponentName="997-25-CV1" Canvas.Left="512" Canvas.Top="452" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
+        <Labels:DeviceLabel ComponentName="997-SHAKE" Canvas.Left="511" Canvas.Top="589" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
+        <Labels:DeviceLabel ComponentName="900-71-ECS2" Canvas.Left="993" Canvas.Top="207" HorizontalAlignment="Center" VerticalAlignment="Top" />
     </Canvas>
 </UserControl>

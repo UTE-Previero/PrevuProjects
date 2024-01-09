@@ -4,9 +4,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Synoptics"
-						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             xmlns:Blowers="clr-namespace:Prevu.Drawings.Machines.Blowers;assembly=Prevu.Drawings" xmlns:Belts="clr-namespace:Prevu.Drawings.Machines.Belts;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D150" 
+             x:Class="Prevu.Synoptics.D150" 
              mc:Ignorable="d"  
             d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas Height="250" Width="445">
@@ -41,40 +41,11 @@
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
         <Machines:V01_NT_Belt_BottleSorter Canvas.Left="18" Canvas.Top="50" Height="154" Width="376" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Rectangle Height="30" Stroke="Black" Width="6" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="56" Canvas.Top="52" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>
-        <Rectangle Height="30" Stroke="Black" Width="6" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="359" Canvas.Top="213" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>
-        <Rectangle Height="30" Stroke="Black" Width="6" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="287" Canvas.Top="213" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="90"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>
-        <Labels:DeviceLabel 
-            ComponentName="150-01-MA1" Canvas.Left="33" Canvas.Top="154" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel 
-            ComponentName="150-02-EC1" Canvas.Left="185" Canvas.Top="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        
+        <Rectangle Height="6" Stroke="Black" Width="30" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="44" Canvas.Top="64" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Rectangle Height="6" Stroke="Black" Width="30" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="347" Canvas.Top="225" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Rectangle Height="6" Stroke="Black" Width="30" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="275" Canvas.Top="225" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="150-01-MA1" Canvas.Left="33" Canvas.Top="154" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="150-02-EC1" Canvas.Left="185" Canvas.Top="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
     </Canvas>
 </UserControl>

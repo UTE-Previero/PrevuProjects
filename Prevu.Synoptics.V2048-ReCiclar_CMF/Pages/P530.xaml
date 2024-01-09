@@ -5,8 +5,7 @@
              xmlns:local="clr-namespace:Prevu.Synoptics"
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             xmlns:Blowers="clr-namespace:Prevu.Drawings.Machines.Blowers;assembly=Prevu.Drawings" xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" 
-             xmlns:DCE="clr-namespace:Prevu.Drawings.Machines.DCE;assembly=Prevu.Drawings" xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings" 
+             xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings" 
              x:Class="Prevu.Synoptics.P530" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas >
@@ -68,30 +67,21 @@
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
         <Labels:Pipe Width="108" StatusComponent="578-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Canvas.Left="952" Canvas.Top="551" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:Pipe Width="89" RenderTransformOrigin="0.5,0.5" StatusComponent="578-01-MA1" Height="24" Canvas.Left="818" Canvas.Top="544" Color="Air" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:Pipe Width="89" RenderTransformOrigin="0.5,0.5" StatusComponent="578-01-MA1" Canvas.Left="818" Canvas.Top="554" Color="Air" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Machines:Waste Height="46" Width="44" Canvas.Left="805" Canvas.Top="296" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Machines:DRY_HeatingBattery Height="50" Width="52" Canvas.Left="460" Canvas.Top="360" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Blowers:VT_CMM_BlowerAirCompressor Canvas.Left="724" Canvas.Top="262" Height="50" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="50"/>
-        <Blowers:VT_CMM_BlowerAirCompressor Canvas.Left="390" Canvas.Top="359" Height="50" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="50"/>
         <Machines:V01_DRY_FluidBedDryer Canvas.Left="536" Canvas.Top="335" Height="124" Width="213" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
         <Machines:V01_VS_Airlock Canvas.Left="895" Canvas.Top="405" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Blowers:VT_CMM_BlowerAirCompressor Canvas.Left="788" Canvas.Top="530" Height="50" Width="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Machines:V01_ScarpaTrasporto Canvas.Left="895" Canvas.Top="523" Height="43" Width="66" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:JumpLabel HorizontalAlignment="Center" 
-                      VerticalAlignment="Top" 
-                      JumpFromLabel="530-01-MA1" 
-                      JumpToLabel="526-01-MA1" Canvas.Left="357" Canvas.Top="221"/>
-        <Labels:JumpLabel 
-            JumpFromLabel="578-01-MA1" 
-            JumpToLabel="808-21-CV1" Canvas.Left="1042" Canvas.Top="522" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_VT_CMM_Blower_Air_Compressor Canvas.Left="390" Canvas.Top="359" Height="50" Width="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_VT_CMM_Blower_Air_Compressor Canvas.Left="724" Canvas.Top="262" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50" Width="50"/>
+        <Machines:V01_VT_CMM_Blower_Air_Compressor Canvas.Left="788" Canvas.Top="531" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50" Width="50"/>
+        <Labels:JumpLabel HorizontalAlignment="Center" VerticalAlignment="Top" JumpFromLabel="530-01-MA1" JumpToLabel="526-01-MA1" Canvas.Left="357" Canvas.Top="221"/>
+        <Labels:JumpLabel JumpFromLabel="578-01-MA1" JumpToLabel="808-21-CV1" Canvas.Left="1042" Canvas.Top="522" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DetailsLabel ComponentName="530-DRY" DetailsPageName="D530" Canvas.Left="459" Canvas.Top="309" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel 
-            ComponentName="532-01-MA1" Width="96" Canvas.Left="703" Canvas.Top="212" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel 
-      ComponentName="578-01-MA1" Canvas.Left="767" Canvas.Top="476" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel 
-      ComponentName="576-01-MA1" Canvas.Left="965" Canvas.Top="414" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel 
-            ComponentName="530-01-MA1" Canvas.Left="603" Canvas.Top="373" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="532-01-MA1" Width="96" Canvas.Left="703" Canvas.Top="198" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="578-01-MA1" Canvas.Left="767" Canvas.Top="471" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="576-01-MA1" Canvas.Left="965" Canvas.Top="414" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="530-01-MA1" Canvas.Left="603" Canvas.Top="373" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>

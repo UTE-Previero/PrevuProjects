@@ -4,9 +4,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Synoptics"
-						 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
-             xmlns:Separation="clr-namespace:Prevu.Drawings.Machines.Separation;assembly=Prevu.Drawings" xmlns:FlakesSorting="clr-namespace:Prevu.Drawings.Machines.FlakesSorting;assembly=Prevu.Drawings" x:Class="Prevu.Synoptics.D880" 
+             x:Class="Prevu.Synoptics.D880" 
              mc:Ignorable="d" 
               d:Background="{DynamicResource MaterialDesignPaper}">
   <Canvas Height="460" Width="452">
@@ -15,11 +15,7 @@
     <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="880-62-LEV" SignalName="LSHA" Canvas.Left="257" Canvas.Top="45"/>
     <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="880-62-LEV" SignalName="LSH" Canvas.Left="257" Canvas.Top="142" />
     <Labels:SignalLabel FlowDirection="RightToLeft" ComponentName="880-61-LEV" SignalName="LSHA" Canvas.Left="46" Canvas.Top="45" HorizontalAlignment="Left" VerticalAlignment="Center" SignalPosition="Right"/>
-    <Labels:DeviceLabel HorizontalAlignment="Center" 
-         VerticalAlignment="Top" 
-         ComponentName="880-61-LEV" Canvas.Left="77" Canvas.Top="249"/>
-    <Labels:DeviceLabel HorizontalAlignment="Center" 
-            VerticalAlignment="Top" 
-            ComponentName="880-62-LEV" Canvas.Left="285" Canvas.Top="249"/>
+    <Labels:DeviceLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="880-61-LEV" Canvas.Left="77" Canvas.Top="249"/>
+    <Labels:DeviceLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="880-62-LEV" Canvas.Left="285" Canvas.Top="249"/>
   </Canvas>
 </UserControl>
