@@ -1,0 +1,19 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             x:Class="Prevu.Synoptics.D430_2" 
+             mc:Ignorable="d" 
+             d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Height="359" Width="565">
+        <Machines:V01_VSP_DETAIL_SepTank_w4Distributors Canvas.Left="10" Canvas.Top="30" Height="323" Width="545" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="430-02-MA1" Canvas.Left="81" Canvas.Top="22"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="430-02-MA2" Canvas.Left="183" Canvas.Top="22"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="430-02-MA3" Canvas.Left="286" Canvas.Top="22"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="430-02-MA4" Canvas.Left="389" Canvas.Top="22"/>
+    </Canvas>
+</UserControl>
