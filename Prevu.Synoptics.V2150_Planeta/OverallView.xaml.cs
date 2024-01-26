@@ -25,9 +25,5 @@ namespace Prevu.Synoptics
             InitializeComponent();
         }
 
-        private void Pipe_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
