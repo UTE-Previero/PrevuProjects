@@ -273,5 +273,13 @@
             </Rectangle.RenderTransform>
         </Rectangle>
         <Machines:External Height="30" Width="25" RenderTransformOrigin="0.5,0.5" Canvas.Left="2401" Canvas.Top="572" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:ValueLabel FontSize="20" Canvas.Left="2364" Canvas.Top="662" TrendName="USAGE" ParameterName="TOTAL_DOWNSTREAM_OK" ComponentName="580-71-ECS1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock TextWrapping="Wrap" 
+            Height="36" Width="160" TextAlignment="Center" 
+            FontSize="20" Foreground="White" Text="{lex:Loc Downstream OK}" Canvas.Left="2199" Canvas.Top="661" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:ValueLabel FontSize="20" Canvas.Left="2364" Canvas.Top="692" TrendName="USAGE" ParameterName="TOTAL_DOWNSTREAM_NOT_OK" ComponentName="580-71-ECS1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock TextWrapping="Wrap" 
+            Height="36" Width="197" TextAlignment="Center" 
+            FontSize="20" Foreground="White" Text="{lex:Loc Downstream NOT OK}" Canvas.Left="2162" Canvas.Top="691" HorizontalAlignment="Left" VerticalAlignment="Center"/>
     </Canvas>
 </UserControl>
