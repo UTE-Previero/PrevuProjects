@@ -16,9 +16,7 @@
         <TranslateTransform/>
       </TransformGroup>
     </Grid.RenderTransform>
-    <Labels:Pipe HorizontalAlignment="Left" Margin="759,322,0,0" VerticalAlignment="Top" Width="118" StatusComponent="534-01-MA1" PipeHeight="Medium" Height="14"/>
-    <Labels:Pipe HorizontalAlignment="Left" Margin="133,312,0,0" VerticalAlignment="Top" Width="439" StatusComponent="534-01-MA1" Color="Air"/>
-    <Labels:Pipe HorizontalAlignment="Left" Margin="512,214,0,0" VerticalAlignment="Top" Width="160" StatusComponent="524-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" VisibilitySignal="">
+    <Labels:Pipe HorizontalAlignment="Left" Margin="545,247,0,0" VerticalAlignment="Top" Width="94" StatusComponent="527-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" VisibilitySignal="">
       <Labels:Pipe.RenderTransform>
         <TransformGroup>
           <ScaleTransform/>
@@ -28,7 +26,19 @@
         </TransformGroup>
       </Labels:Pipe.RenderTransform>
     </Labels:Pipe>
-    <Labels:Pipe HorizontalAlignment="Left" Margin="615,311,0,0" VerticalAlignment="Top" Width="117" StatusComponent="524-01-MA1" PipeHeight="Medium" VisibilitySignal="530-21-ZS1"/>
+    <Labels:Pipe HorizontalAlignment="Left" Margin="759,322,0,0" VerticalAlignment="Top" Width="118" StatusComponent="534-01-MA1" PipeHeight="Medium" Height="14"/>
+    <Labels:Pipe HorizontalAlignment="Left" Margin="133,312,0,0" VerticalAlignment="Top" Width="439" StatusComponent="534-01-MA1" Color="Air"/>
+    <Labels:Pipe HorizontalAlignment="Left" Margin="571,155,0,0" VerticalAlignment="Top" Width="42" StatusComponent="524-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" VisibilitySignal="">
+      <Labels:Pipe.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform Angle="90"/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </Labels:Pipe.RenderTransform>
+    </Labels:Pipe>
+    <Labels:Pipe HorizontalAlignment="Left" Margin="615,311,0,0" VerticalAlignment="Top" Width="117" StatusComponent="527-01-MA1" PipeHeight="Medium" VisibilitySignal=""/>
     <Labels:Pipe HorizontalAlignment="Left" Margin="480,139,0,0" VerticalAlignment="Top" Width="117" StatusComponent="524-01-MA1" PipeHeight="Medium"/>
     <Labels:Pipe HorizontalAlignment="Left" Margin="1061,621,0,0" VerticalAlignment="Top" Width="150" StatusComponent="812-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5">
       <Labels:Pipe.RenderTransform>
@@ -141,9 +151,9 @@
             VerticalAlignment="Top" 
             ComponentName="534-01-MA1"/>
     <Labels:DeviceLabel HorizontalAlignment="Left" 
-            Margin="611,232,0,0" 
+            Margin="629,174,0,0" 
             VerticalAlignment="Top" 
-            ComponentName="530-21-CV1"/>
+            ComponentName="527-01-MA1"/>
     <Labels:DeviceLabel HorizontalAlignment="Left" 
             Margin="893,565,0,0" 
             VerticalAlignment="Top" 
@@ -180,7 +190,7 @@
     <Labels:JumpLabel HorizontalAlignment="Left" 
             Margin="401,109,0,0" 
             VerticalAlignment="Top" 
-            JumpFromLabel="530-21-CV1" 
+            JumpFromLabel="527-01-MA1" 
             JumpToLabel="524-01-MA1"/>
     <Machines:EC_Filtro HorizontalAlignment="Left" Margin="929,143,0,0" VerticalAlignment="Top" Height="67" Width="60"/>
     <Machines:SLX_Silo HorizontalAlignment="Left" Margin="824,222,0,0" VerticalAlignment="Top" Height="324" Width="234"/>
@@ -190,5 +200,6 @@
             VerticalAlignment="Top" 
             ComponentName="810-61-LEV"/>
     <Labels:DetailsLabel HorizontalAlignment="Left" Margin="984,256,0,0" VerticalAlignment="Top" ComponentName="810-VIEW" DetailsPageName="D810" HideComponentName="True"/>
+    <Machines:V01_VS_Airlock HorizontalAlignment="Left" Margin="560,164,0,0" VerticalAlignment="Top" Height="71" Width="64"/>
   </Grid>
 </UserControl>
