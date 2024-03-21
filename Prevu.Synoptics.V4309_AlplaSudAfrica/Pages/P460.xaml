@@ -8,6 +8,17 @@
              x:Class="Prevu.Synoptics.P460" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
+        <Labels:Pipe Color="Water" Width="65" RenderTransformOrigin="0.5,0.5" StatusComponent="516-01-MA1" VisibilityComponent="477-21-CV1" Canvas.Left="821" Canvas.Top="434" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:Pipe Color="Water" Width="62" RenderTransformOrigin="0.5,0.5" StatusComponent="516-01-MA1" VisibilityComponent="477-21-CV1" Canvas.Left="853" Canvas.Top="463" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
         <Labels:Pipe Color="Water" Width="158" RenderTransformOrigin="0.5,0.5" StatusComponent="463-01-MA1" Canvas.Left="948" Canvas.Top="300" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -227,6 +238,7 @@
         <Labels:JumpLabel HorizontalAlignment="Center" VerticalAlignment="Top" JumpFromLabel="456-01-MA1" JumpToLabel="455-01-MA1" Canvas.Left="55" Canvas.Top="27"/>
         <Labels:JumpLabel JumpFromLabel="477-01-MA1" JumpToLabel="283-01-MA1" Canvas.Left="1309" Canvas.Top="491" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:JumpLabel JumpFromLabel="466-01-MA1" JumpToLabel="510-01-MA1" Canvas.Left="1378" Canvas.Top="349" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:JumpLabel JumpFromLabel="464-01-MA1" JumpToLabel="516-01-MA1" Canvas.Left="764" Canvas.Top="402" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DetailsLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="474-HEAT" DetailsPageName="D474" Canvas.Left="157" Canvas.Top="489"/>
         <Labels:DeviceLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="470-44-FT1" Canvas.Left="515" Canvas.Top="560"/>
         <Labels:DeviceLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="477-21-CV1" Canvas.Left="1029" Canvas.Top="561"/>
