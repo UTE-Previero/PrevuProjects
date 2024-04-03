@@ -4543,10 +4543,10 @@
     <value>تحقق من حالة الصك / الجهاز والإنذار المحلي أو التحذيرات في حالة وجود</value>
   </data>
   <data name="INFO_SEA_1" xml:space="preserve">
-    <value>فارز الإنذار العام! تحقق فارز البحر في اللوحة المحلية و / أو الأسلاك الواجهة.</value>
+    <value>فارز إنذار عام! تحقق من جهاز الفرز في لوحته المحلية و/أو أسلاك الواجهة.</value>
   </data>
   <data name="INFO_SEA_2" xml:space="preserve">
-    <value>نقل الهزاز (S) أو وحدة الفرز لا تعمل! تحقق محليا.</value>
+    <value>هزاز النقل أو وحدة الفرز لا تعمل! التحقق من ذلك محليا.</value>
   </data>
   <data name="INFO_SAB_1" xml:space="preserve">
     <value>حاول المصفق القرص العديد من دورات التنظيف منذ حظرها تقريبا. تحقق وتنظيفها.</value>
@@ -4885,13 +4885,13 @@
     <value>نظام التخزين المؤقت ليس على ما يرام للتحميل. تحقق من ظروف المصب للسماح بتفريغ المخزن المؤقت.</value>
   </data>
   <data name="M_INFO_ANTISTIKING_1" xml:space="preserve">
-    <value>تحقق</value>
+    <value>تحقق من نظام منع الالتصاق الخارجي</value>
   </data>
   <data name="M_INFO_EXT_PMP_NOT_RUN" xml:space="preserve">
     <value>تحقق من مضخة المياه الخارجية لأنها لا تعمل بعد طلب المياه</value>
   </data>
   <data name="M_INFO_SEMIAUTO_ON" xml:space="preserve">
-    <value>الأجهزة ذات الصلة في Semiauto. تعطيل وضع semiauto عن طريق الإعدادات للإنتاج</value>
+    <value>جميع الأجهزة ذات الصلة موجودة في وضع نصف تلقائي مما يعني أنه يمكن تشغيلها بواسطة المشغل تحت إشرافه (تم تجاوز التشابك التلقائي للعملية مؤقتًا). قم بتعطيل الوضع شبه التلقائي عن طريق إعدادات الإنتاج</value>
   </data>
   <data name="M_INFO_INVERSION_HI_AMP" xml:space="preserve">
     <value>انعكاس اتجاه المحرك في التقدم في الحمل العالي. تحقق من الحمل وفي النهاية كمية المواد الواردة</value>
@@ -7462,7 +7462,7 @@
     <value>منظر هوبر</value>
   </data>
   <data name="WATER PUMP TO RECIRC./DISCHARGE" xml:space="preserve">
-    <value>مضخة المياه لإعادة التخلص منها.</value>
+    <value>مضخة المياه لإعادة التخلص منها</value>
   </data>
   <data name="VALVE TO RECIRCULATION" xml:space="preserve">
     <value>صمام لإعادة تدوير</value>
@@ -8027,5 +8027,890 @@
   </data>
   <data name="FROM" xml:space="preserve">
     <value>من</value>
+  </data>
+  <data name="M_INFO_GR_DISABLING" xml:space="preserve">
+    <value>تم تعطيل إحدى المطحنة - انتظر حتى تبطئ المواد قبل تحويل المواد إلى المطحنة الأخرى</value>
+  </data>
+  <data name="M_INFO_FILTER_PRESS_6" xml:space="preserve">
+    <value>يتم إيقاف المواد الأولية أثناء تحرير مستوى واحد على الأقل من الحد الأدنى. انتظر انخفاض مستوى هوبر.</value>
+  </data>
+  <data name="M_INFO_FILLING_1" xml:space="preserve">
+    <value>حدد ملء الوضع التلقائي للإنتاج</value>
+  </data>
+  <data name="M_INFO_BYPASS_1" xml:space="preserve">
+    <value>التجاوز المؤقت للمستشعر قيد التقدم - قم بإزالة التجاوز عن طريق إعدادات PreVu لإعادة تشغيل الإنتاج</value>
+  </data>
+  <data name="M_INFO_AIR_FILTER_OFF" xml:space="preserve">
+    <value>قم بتشغيل مرشح الهواء لاستعادة ظروف العملية</value>
+  </data>
+  <data name="M_INFO_UNLOCK_REQ" xml:space="preserve">
+    <value>يجب أن يكون مفتاح الأمان مفتوحًا بواسطة المشغل</value>
+  </data>
+  <data name="CLEANING ROLL" xml:space="preserve">
+    <value>رول التنظيف</value>
+  </data>
+  <data name="BELT SAFETY" xml:space="preserve">
+    <value>سلامة الحزام</value>
+  </data>
+  <data name="BELT SAFETY NOT OK" xml:space="preserve">
+    <value>سلامة الحزام ليست على ما يرام</value>
+  </data>
+  <data name="BOTTLE SORTER" xml:space="preserve">
+    <value>فارز الزجاجة</value>
+  </data>
+  <data name="BOTTLE SORTER SAFETY UNLOCK DOORS" xml:space="preserve">
+    <value>فتح أبواب أمان فارز الزجاجات</value>
+  </data>
+  <data name="SORTER OPEN PROCEDURE" xml:space="preserve">
+    <value>إجراء الفرز المفتوح</value>
+  </data>
+  <data name="FOOTBOARD DOWN POSITION" xml:space="preserve">
+    <value>وضعية أسفل لوح القدم</value>
+  </data>
+  <data name="METAL SORTING" xml:space="preserve">
+    <value>فرز المعادن</value>
+  </data>
+  <data name="MATERIAL DIVERTER" xml:space="preserve">
+    <value>محول المواد</value>
+  </data>
+  <data name="POSITION MIDDLE" xml:space="preserve">
+    <value>الموقف الأوسط</value>
+  </data>
+  <data name="(1=MIDDLE POSITION)" xml:space="preserve">
+    <value>(1= الموضع الأوسط)</value>
+  </data>
+  <data name="POSITION NOT ALL" xml:space="preserve">
+    <value>الموقف ليس الكل</value>
+  </data>
+  <data name="(0=ALL" xml:space="preserve">
+    <value>(0=الكل</value>
+  </data>
+  <data name="CENTER CYCLE MAXIMUM TIME" xml:space="preserve">
+    <value>الحد الأقصى لوقت دورة المركز</value>
+  </data>
+  <data name="POSITION INCONGRUENCY" xml:space="preserve">
+    <value>تناقض الموقف</value>
+  </data>
+  <data name="SAFETY NOT OK OF BOTH GRINDERS" xml:space="preserve">
+    <value>السلامة ليست جيدة لكلا المطاحنتين</value>
+  </data>
+  <data name="NO MIDDLE" xml:space="preserve">
+    <value>لا الأوسط</value>
+  </data>
+  <data name="DIVERTER IN CENTER POSITION" xml:space="preserve">
+    <value>المحول في موضع المركز</value>
+  </data>
+  <data name="ALL" xml:space="preserve">
+    <value>الجميع</value>
+  </data>
+  <data name="NOT HOMING" xml:space="preserve">
+    <value>لا صاروخ موجه</value>
+  </data>
+  <data name="HOMING TO CENTER POSITION" xml:space="preserve">
+    <value>صاروخ موجه إلى مركز الموقف</value>
+  </data>
+  <data name="NO LEFT STEP REQUEST" xml:space="preserve">
+    <value>لا يوجد طلب للخطوة اليسرى</value>
+  </data>
+  <data name="STEP REQUEST FOR MORE" xml:space="preserve">
+    <value>طلب خطوة للمزيد</value>
+  </data>
+  <data name="NO RIGHT STEP REQUEST" xml:space="preserve">
+    <value>لا يوجد طلب خطوة صحيحة</value>
+  </data>
+  <data name="SEMI-AUTO MODE" xml:space="preserve">
+    <value>الوضع شبه التلقائي</value>
+  </data>
+  <data name="SELECT SEMI-AUTO MODE TO ENABLE BUTTONS" xml:space="preserve">
+    <value>حدد الوضع شبه التلقائي لتمكين الأزرار</value>
+  </data>
+  <data name="GRINDERS MANAGER" xml:space="preserve">
+    <value>مدير المطاحن</value>
+  </data>
+  <data name="GRINDER DISABLE IN PROGRESS (WAIT BEFORE DIVERTER MOVING)" xml:space="preserve">
+    <value>تعطيل المطحنة قيد التقدم (انتظر قبل تحريك المحول)</value>
+  </data>
+  <data name="ONE GRINDER IS RUNNING" xml:space="preserve">
+    <value>طاحونة واحدة قيد التشغيل</value>
+  </data>
+  <data name="BOTH GRINDERS STOPPED" xml:space="preserve">
+    <value>توقفت كلا المطاحنتين</value>
+  </data>
+  <data name="ACTUAL BALANCE" xml:space="preserve">
+    <value>الرصيد الفعلي</value>
+  </data>
+  <data name="DIVERSION" xml:space="preserve">
+    <value>تحويل</value>
+  </data>
+  <data name="DIVERTER MINIMUM MOVING TIME" xml:space="preserve">
+    <value>الحد الأدنى لوقت التحرك للمحول</value>
+  </data>
+  <data name="GRINDERS" xml:space="preserve">
+    <value>المطاحن</value>
+  </data>
+  <data name="WAITING TO DIVERT ALL MATERIAL TO ONE GRINDER" xml:space="preserve">
+    <value>في انتظار تحويل جميع المواد إلى مطحنة واحدة</value>
+  </data>
+  <data name="DISABLED GRINDER" xml:space="preserve">
+    <value>طاحونة معطلة</value>
+  </data>
+  <data name="DIVERTER SELF-CENTERING IN PROGRESS" xml:space="preserve">
+    <value>المحول المتمركز ذاتيًا قيد التقدم</value>
+  </data>
+  <data name="ALL MATERIAL DIVERTED TO GRINDER" xml:space="preserve">
+    <value>تم تحويل جميع المواد إلى المطحنة</value>
+  </data>
+  <data name="AUTO BALANCE IN PROGRESS - MORE MATERIALE TO" xml:space="preserve">
+    <value>التوازن التلقائي قيد التقدم - المزيد من المواد</value>
+  </data>
+  <data name="MATERIAL BALANCING IN SEMI-AUTO MODE" xml:space="preserve">
+    <value>موازنة المواد في الوضع شبه التلقائي</value>
+  </data>
+  <data name="MATERIAL NOT BALANCED - MORE TO GRINDER" xml:space="preserve">
+    <value>المادة غير متوازنة - المزيد من الطحن</value>
+  </data>
+  <data name="MATERIAL FULLY BALANCED" xml:space="preserve">
+    <value>المواد متوازنة بالكامل</value>
+  </data>
+  <data name="GRINDER DISABLED - EXCLUSION FROM PRODUCTION" xml:space="preserve">
+    <value>المطحنة معطلة - الاستبعاد من الإنتاج</value>
+  </data>
+  <data name="NO LOAD CURRENT" xml:space="preserve">
+    <value>لا يوجد تحميل الحالي</value>
+  </data>
+  <data name="GRINDER AUX HYDRAULIC UNIT" xml:space="preserve">
+    <value>وحدة طاحونة Aux الهيدروليكية</value>
+  </data>
+  <data name="POSITION TO OPPOSITE GRINDER" xml:space="preserve">
+    <value>الموقف مقابل المطحنة</value>
+  </data>
+  <data name="(0=RELEASED 1=LOCKED)" xml:space="preserve">
+    <value>(0=محرر 1=مقفل)</value>
+  </data>
+  <data name="PUMP TO DECANTER" xml:space="preserve">
+    <value>مضخة إلى الدورق</value>
+  </data>
+  <data name="TANK MAXIMUM LEVEL" xml:space="preserve">
+    <value>الحد الأقصى لمستوى الخزان</value>
+  </data>
+  <data name="WATER PUMP TO GRINDERS" xml:space="preserve">
+    <value>مضخة المياه للمطاحن</value>
+  </data>
+  <data name="PRODUCTION SPEED WITH GRINDER DISABLED" xml:space="preserve">
+    <value>سرعة الإنتاج مع تعطيل المطحنة</value>
+  </data>
+  <data name="WATER PUMP TO WCES" xml:space="preserve">
+    <value>مضخة مياه إلى Wces</value>
+  </data>
+  <data name="WASHING SILOS FILLING MANAGER" xml:space="preserve">
+    <value>مدير تعبئة صوامع الغسيل</value>
+  </data>
+  <data name="BOTH SILOS NOT OK FOR MATERIAL" xml:space="preserve">
+    <value>كلا الصوامع ليست مناسبة للمواد</value>
+  </data>
+  <data name="FILLING MODE NOT IN AUTO - MATERIAL STOPPED FOR SILO NOT OK" xml:space="preserve">
+    <value>وضع التعبئة ليس في الوضع التلقائي - المواد متوقفة في الصومعة ليست على ما يرام</value>
+  </data>
+  <data name="NO SEMI-AUTO MODE" xml:space="preserve">
+    <value>لا يوجد وضع شبه تلقائي</value>
+  </data>
+  <data name="SEMI-AUTO MODE IN PROGRESS" xml:space="preserve">
+    <value>الوضع شبه التلقائي قيد التقدم</value>
+  </data>
+  <data name="DIVERTER ENABLED " xml:space="preserve">
+    <value>تم تمكين المحول</value>
+  </data>
+  <data name="DIVERTER DISABLED" xml:space="preserve">
+    <value>المحول معطل</value>
+  </data>
+  <data name="SILOS FILLING" xml:space="preserve">
+    <value>تعبئة الصوامع</value>
+  </data>
+  <data name="SILO BUFFER LEVEL" xml:space="preserve">
+    <value>مستوى المخزن المؤقت للصومعة</value>
+  </data>
+  <data name="SILO BUFFER EXTRACTION SCREWS" xml:space="preserve">
+    <value>مسامير استخراج العازلة صومعة</value>
+  </data>
+  <data name="SILO BUFFER EXTRACTION SCREWS MANAGER" xml:space="preserve">
+    <value>مدير براغي استخراج المخزن المؤقت للصوامع</value>
+  </data>
+  <data name="BOTH SCREWS COUPLES ENABLED" xml:space="preserve">
+    <value>تمكين كلا الأزواج مسامير</value>
+  </data>
+  <data name="ENABLE ALL SCREWS TO ALLOW AUTO-SWITCH" xml:space="preserve">
+    <value>تمكين جميع البراغي للسماح بالتبديل التلقائي</value>
+  </data>
+  <data name="SCREW SELECTED COUPLE" xml:space="preserve">
+    <value>برغي الزوجين المحددين</value>
+  </data>
+  <data name="SELECTED SCREW COUPLE" xml:space="preserve">
+    <value>زوج المسمار المحدد</value>
+  </data>
+  <data name="REACTOR 1 SHUTOFF GATE" xml:space="preserve">
+    <value>بوابة إغلاق المفاعل 1</value>
+  </data>
+  <data name="HOT WASH REACTOR BOTTOM MIXER" xml:space="preserve">
+    <value>خلاط سفلي لمفاعل الغسيل الساخن</value>
+  </data>
+  <data name="SEALING GLYCOL MINIMUM PRESSURE" xml:space="preserve">
+    <value>ختم غليكول الحد الأدنى من الضغط</value>
+  </data>
+  <data name="SEALING GLYCOL MINIMUM LEVEL" xml:space="preserve">
+    <value>ختم مستوى جليكول الحد الأدنى</value>
+  </data>
+  <data name="SEALING GLYCOL PRESSURE NOT OK" xml:space="preserve">
+    <value>ختم ضغط الجليكول ليس جيدًا</value>
+  </data>
+  <data name="SEALING GLYCOL LEVEL NOT OK" xml:space="preserve">
+    <value>ختم مستوى الجليكول ليس جيدًا</value>
+  </data>
+  <data name="SEALING GLYCOL PRESSURE NOT OK (STOP MOTOR)" xml:space="preserve">
+    <value>ختم ضغط الجليكول ليس جيدًا (إيقاف المحرك)</value>
+  </data>
+  <data name="SEALING GLYCOL LEVEL NOT OK (STOP MOTOR)" xml:space="preserve">
+    <value>ختم مستوى الجليكول ليس جيدًا (إيقاف المحرك)</value>
+  </data>
+  <data name="SEAL PRESSURE" xml:space="preserve">
+    <value>ضغط الختم</value>
+  </data>
+  <data name="CHECK SEAL GLYCOL PRESSURE" xml:space="preserve">
+    <value>تحقق من ضغط ختم جلايكول</value>
+  </data>
+  <data name="SEAL LEVEL" xml:space="preserve">
+    <value>مستوى الختم</value>
+  </data>
+  <data name="CHECK SEAL GLYCOL LEVEL" xml:space="preserve">
+    <value>تحقق من مستوى الختم جلايكول</value>
+  </data>
+  <data name="MATERIAL LOADING DEVICES READY" xml:space="preserve">
+    <value>أجهزة تحميل المواد جاهزة</value>
+  </data>
+  <data name="AT LEAST ONE MIXER NOT ENABLED" xml:space="preserve">
+    <value>لم يتم تمكين خلاط واحد على الأقل</value>
+  </data>
+  <data name="AT LEAST ONE MIXER STILL NOT PREPARED" xml:space="preserve">
+    <value>خلاط واحد على الأقل غير جاهز بعد</value>
+  </data>
+  <data name="ALL MIXERS IN PRODUCTION MODE" xml:space="preserve">
+    <value>جميع الخلاطات في وضع الإنتاج</value>
+  </data>
+  <data name="NOT ALL MIXERS ARE IN PRODUCTION MODE" xml:space="preserve">
+    <value>ليست كل الخلاطات في وضع الإنتاج</value>
+  </data>
+  <data name="REACTOR 3 SHUTOFF GATE" xml:space="preserve">
+    <value>بوابة إغلاق المفاعل 3</value>
+  </data>
+  <data name="DCE SAFETY KEY" xml:space="preserve">
+    <value>مفتاح الأمان DCE</value>
+  </data>
+  <data name="DCE AUX HYDRAULIC UNIT" xml:space="preserve">
+    <value>وحدة هيدروليكية DCE Aux</value>
+  </data>
+  <data name="DCE VALVE BLOCK" xml:space="preserve">
+    <value>كتلة صمام DCE</value>
+  </data>
+  <data name="DCE GREASE APPLICATOR" xml:space="preserve">
+    <value>أداة توزيع الشحوم من DCE</value>
+  </data>
+  <data name="DCE DISCHARGE VALVE" xml:space="preserve">
+    <value>صمام التفريغ DCE</value>
+  </data>
+  <data name="DCE HOPPER CLEANING" xml:space="preserve">
+    <value>تنظيف هوبر DCE</value>
+  </data>
+  <data name="DCE INTERNAL CLEANING" xml:space="preserve">
+    <value>دي سي للتنظيف الداخلي</value>
+  </data>
+  <data name="DCE EXTRENAL CLEANING" xml:space="preserve">
+    <value>DCE التنظيف الخارجي</value>
+  </data>
+  <data name="DCE CLEANING CYCLE" xml:space="preserve">
+    <value>دورة تنظيف DCE</value>
+  </data>
+  <data name="DCE DRAIN CYCLE" xml:space="preserve">
+    <value>دورة استنزاف DCE</value>
+  </data>
+  <data name="DCE BOTTOM RINSE CYCLE" xml:space="preserve">
+    <value>دورة شطف الجزء السفلي من DCE</value>
+  </data>
+  <data name="DCE MAINTENANCE OPEN CYCLE" xml:space="preserve">
+    <value>دورة صيانة DCE المفتوحة</value>
+  </data>
+  <data name="DCE FOR PET CENTRIFUGE MANAGER" xml:space="preserve">
+    <value>DCE لمدير أجهزة الطرد المركزي للحيوانات الأليفة</value>
+  </data>
+  <data name="LUBRIFICATION AND RINSE" xml:space="preserve">
+    <value>التشحيم والشطف</value>
+  </data>
+  <data name="CLEANING VALVES DETAIL" xml:space="preserve">
+    <value>تفاصيل صمامات التنظيف</value>
+  </data>
+  <data name="SEPARATION TANK SCREW CONVEYOR" xml:space="preserve">
+    <value>ناقل برغي خزان الفصل</value>
+  </data>
+  <data name="LEVEL OK FOR RUN" xml:space="preserve">
+    <value>المستوى موافق للتشغيل</value>
+  </data>
+  <data name="NO FLUSHING" xml:space="preserve">
+    <value>لا فلاشينغ</value>
+  </data>
+  <data name="TANK RESTART FLUSHING IN PROGRESS" xml:space="preserve">
+    <value>جاري إعادة تشغيل الخزان</value>
+  </data>
+  <data name="AGITATOR OF RINSING REACTOR" xml:space="preserve">
+    <value>المحرض لمفاعل الشطف</value>
+  </data>
+  <data name="WATER PUMP TO RECIRC./FILTRATION" xml:space="preserve">
+    <value>مضخة مياه لإعادة التدوير/الترشيح</value>
+  </data>
+  <data name="VALVE TO FILTRATION" xml:space="preserve">
+    <value>صمام للترشيح</value>
+  </data>
+  <data name="BIG BAG STATION DIVERTER" xml:space="preserve">
+    <value>محول محطة الحقيبة الكبيرة</value>
+  </data>
+  <data name="(1=BAG" xml:space="preserve">
+    <value>(1= كيس</value>
+  </data>
+  <data name="BOTH BAGS NOT OK FOR LOADING" xml:space="preserve">
+    <value>كلا الحقيبتين غير مناسبتين للتحميل</value>
+  </data>
+  <data name="BAG" xml:space="preserve">
+    <value>شنطة</value>
+  </data>
+  <data name="BIG BAG STATION BAG" xml:space="preserve">
+    <value>حقيبة محطة حقيبة كبيرة</value>
+  </data>
+  <data name="(1=NOT OK FLSH=ALARM)" xml:space="preserve">
+    <value>(1=غير موافق Flsh=إنذار)</value>
+  </data>
+  <data name="BIG BAG STATION DETAIL" xml:space="preserve">
+    <value>تفاصيل محطة الحقائب الكبيرة</value>
+  </data>
+  <data name="WATER TANK NETWORK WATER" xml:space="preserve">
+    <value>شبكة خزان المياه المياه</value>
+  </data>
+  <data name="WATER TANK PUMP TO DCES" xml:space="preserve">
+    <value>مضخة خزان المياه إلى DCEs</value>
+  </data>
+  <data name="SILO NOT FILLED" xml:space="preserve">
+    <value>الصومعة غير مملوءة</value>
+  </data>
+  <data name="SILO NOT EMPTYING" xml:space="preserve">
+    <value>صومعة لا تفريغ</value>
+  </data>
+  <data name="SILO NOT EMPTY" xml:space="preserve">
+    <value>صومعة ليست فارغة</value>
+  </data>
+  <data name="NOT WAITING FOR MINIMUM LEVEL" xml:space="preserve">
+    <value>لا تنتظر الحد الأدنى للمستوى</value>
+  </data>
+  <data name="WAITING FOR LEVEL BELOW MINIMUM" xml:space="preserve">
+    <value>في انتظار مستوى أقل من الحد الأدنى</value>
+  </data>
+  <data name="EDDY CURRENT VIBRATING FEEDER" xml:space="preserve">
+    <value>المغذي الاهتزازي بتيار إيدي</value>
+  </data>
+  <data name="EDDY CURRENT CONVEYOR BELT" xml:space="preserve">
+    <value>إيدي الحزام الناقل الحالي</value>
+  </data>
+  <data name="ALIGNMENT BYPASS IN PROGRESS" xml:space="preserve">
+    <value>تجاوز المحاذاة قيد التقدم</value>
+  </data>
+  <data name="NO ALIGNMENT BYPASS" xml:space="preserve">
+    <value>لا تجاوز المحاذاة</value>
+  </data>
+  <data name="BYPASS OF ALIGNMENT SENSOR" xml:space="preserve">
+    <value>تجاوز مستشعر المحاذاة</value>
+  </data>
+  <data name="EDDY CURRENT ROLL" xml:space="preserve">
+    <value>لفة إيدي الحالية</value>
+  </data>
+  <data name="CONVEYOR BELT SAFETY NOT OK" xml:space="preserve">
+    <value>سلامة الحزام الناقل ليست على ما يرام</value>
+  </data>
+  <data name="EDDY CURRENT MAGNETIC DRUM" xml:space="preserve">
+    <value>الدوامة المغناطيسية الحالية</value>
+  </data>
+  <data name="EDDY CURRENT" xml:space="preserve">
+    <value>الدوامة الحالية</value>
+  </data>
+  <data name="DRY GRINDER MAIN MOTOR" xml:space="preserve">
+    <value>المحرك الرئيسي للمطحنة الجافة</value>
+  </data>
+  <data name="DRY GRINDER SAFETY KEY" xml:space="preserve">
+    <value>مفتاح أمان المطحنة الجافة</value>
+  </data>
+  <data name="DRY GRINDER COOLING" xml:space="preserve">
+    <value>تبريد المطحنة الجافة</value>
+  </data>
+  <data name="DRY GRINDER MAINTENANCE PROCEDURE" xml:space="preserve">
+    <value>إجراءات صيانة المطحنة الجافة</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER MAIN START" xml:space="preserve">
+    <value>البداية الرئيسية لفارز رقائق بوهلر</value>
+  </data>
+  <data name="NO FAULT PRESENT" xml:space="preserve">
+    <value>لا يوجد خطأ الحاضر</value>
+  </data>
+  <data name="SORTER NO FAULT" xml:space="preserve">
+    <value>فارز لا خطأ</value>
+  </data>
+  <data name="(1=NO ALARM)" xml:space="preserve">
+    <value>(1=لا يوجد إنذار)</value>
+  </data>
+  <data name="MAJOR ALARM PRESENT" xml:space="preserve">
+    <value>إنذار رئيسي موجود</value>
+  </data>
+  <data name="MAJOR ALARM" xml:space="preserve">
+    <value>إنذار رئيسي</value>
+  </data>
+  <data name="MINOR ALARM PRESENT" xml:space="preserve">
+    <value>إنذار طفيف موجود</value>
+  </data>
+  <data name="MINOR ALARM" xml:space="preserve">
+    <value>إنذار طفيف</value>
+  </data>
+  <data name="SORTER MAJOR ALARM" xml:space="preserve">
+    <value>فارز إنذار رئيسي</value>
+  </data>
+  <data name="NOT BYPASSED" xml:space="preserve">
+    <value>لم يتم تجاوزها</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER MAIN STREAM START" xml:space="preserve">
+    <value>بدء التيار الرئيسي لفارز رقائق بوهلر</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER RECOVERY START" xml:space="preserve">
+    <value>بدء عملية استرداد فارز رقائق بوهلر</value>
+  </data>
+  <data name="MAXIMUM LEVEL OF SECONDARY MATERIAL" xml:space="preserve">
+    <value>الحد الأقصى لمستوى المواد الثانوية</value>
+  </data>
+  <data name="DIVERTING MODE" xml:space="preserve">
+    <value>وضع التحويل</value>
+  </data>
+  <data name="ONLY" xml:space="preserve">
+    <value>فقط</value>
+  </data>
+  <data name="CHANNEL HOPPER MINIMUM LEVEL" xml:space="preserve">
+    <value>الحد الأدنى لمستوى قادوس القناة</value>
+  </data>
+  <data name="VIBRATOR IN SEMIAUTO MODE" xml:space="preserve">
+    <value>هزاز في وضع نصف تلقائي</value>
+  </data>
+  <data name="VIBRATOR" xml:space="preserve">
+    <value>هزاز</value>
+  </data>
+  <data name="UNISENSOR FLAKES SORTER MAIN START" xml:space="preserve">
+    <value>البداية الرئيسية لفارز الرقائق غير المستشعر</value>
+  </data>
+  <data name="SORTER RUNNING" xml:space="preserve">
+    <value>تشغيل فارز</value>
+  </data>
+  <data name="SORTER STATUS" xml:space="preserve">
+    <value>حالة فارز</value>
+  </data>
+  <data name="(1=AUTO MODE)" xml:space="preserve">
+    <value>(1= الوضع التلقائي)</value>
+  </data>
+  <data name="OUTPUT CLOGGED" xml:space="preserve">
+    <value>انسداد الإخراج</value>
+  </data>
+  <data name="(1=CLOGGED)" xml:space="preserve">
+    <value>(1= مسدود)</value>
+  </data>
+  <data name="SORTING UNIT NOT RUNNING" xml:space="preserve">
+    <value>وحدة الفرز لا تعمل</value>
+  </data>
+  <data name="SORTING OUTLET BLOCKED" xml:space="preserve">
+    <value>تم حظر منفذ الفرز</value>
+  </data>
+  <data name="SORTER NOT IN AUTO MODE" xml:space="preserve">
+    <value>فارز ليس في الوضع التلقائي</value>
+  </data>
+  <data name="SORTER IN AUTO MODE" xml:space="preserve">
+    <value>فارز في الوضع التلقائي</value>
+  </data>
+  <data name="UNISENSOR FLAKES SORTER MAIN STREAM START" xml:space="preserve">
+    <value>بدء التيار الرئيسي لفارز الرقائق غير المستشعر</value>
+  </data>
+  <data name="UNISENSOR FLAKES SORTER RECOVERY START" xml:space="preserve">
+    <value>بدء عملية استرداد فارز الرقائق غير المستشعر</value>
+  </data>
+  <data name="AIR FILTRATION BLOWER" xml:space="preserve">
+    <value>منفاخ تنقية الهواء</value>
+  </data>
+  <data name="BLOWERS ON" xml:space="preserve">
+    <value>تشغيل المنافيخ</value>
+  </data>
+  <data name="NO BLOWERS ON" xml:space="preserve">
+    <value>لا يوجد منفاخ</value>
+  </data>
+  <data name="AIR FILTRATION AIR LOCK POWDER" xml:space="preserve">
+    <value>مسحوق قفل الهواء لترشيح الهواء</value>
+  </data>
+  <data name="AIR FILTRATION DEVICE CONTROLLER" xml:space="preserve">
+    <value>وحدة تحكم جهاز تنقية الهواء</value>
+  </data>
+  <data name="ISOLATION VALVE POSITION" xml:space="preserve">
+    <value>موقف صمام العزل</value>
+  </data>
+  <data name="(1=FILTER OK)" xml:space="preserve">
+    <value>(1=حسن التصفية)</value>
+  </data>
+  <data name="POWDER MAXIMUM LEVEL" xml:space="preserve">
+    <value>الحد الأقصى لمستوى المسحوق</value>
+  </data>
+  <data name="MAXIMUM POWDER LEVEL" xml:space="preserve">
+    <value>الحد الأقصى لمستوى المسحوق</value>
+  </data>
+  <data name="ISOLATION VALVE POSITION NOT OK (FILTER MAXIMUM PRESSURE)" xml:space="preserve">
+    <value>وضع صمام العزل ليس جيدًا (الضغط الأقصى للمرشح)</value>
+  </data>
+  <data name="OK FOR UPSTREAM MATERIAL" xml:space="preserve">
+    <value>موافق للمواد المنبع</value>
+  </data>
+  <data name="NOT OK FOR UPSTREAM MATERIAL" xml:space="preserve">
+    <value>ليس جيدًا بالنسبة للمواد الأولية</value>
+  </data>
+  <data name="POWDER MAXIMUM LEVEL OK" xml:space="preserve">
+    <value>مسحوق الحد الأقصى لمستوى موافق</value>
+  </data>
+  <data name="POWDER MAXIMUM LEVEL REACHED" xml:space="preserve">
+    <value>تم الوصول إلى الحد الأقصى لمستوى المسحوق</value>
+  </data>
+  <data name="ASPIRATION RUNNING" xml:space="preserve">
+    <value>تشغيل الطموح</value>
+  </data>
+  <data name="ASPIRATION NOT RUNNING" xml:space="preserve">
+    <value>الطموح لا يعمل</value>
+  </data>
+  <data name="AIR FILTRATION DETAIL VIEW" xml:space="preserve">
+    <value>عرض التفاصيل لتنقية الهواء</value>
+  </data>
+  <data name="EXTERNAL AIR FILTER READY (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>فلتر الهواء الخارجي جاهز (إشارة خارجية)</value>
+  </data>
+  <data name="SOREMA IS REQUESTING FILTER ON" xml:space="preserve">
+    <value>سوريما يطلب تشغيل التصفية</value>
+  </data>
+  <data name="(1=REQ FILTER ON)" xml:space="preserve">
+    <value>(1=تشغيل عامل تصفية المتطلبات)</value>
+  </data>
+  <data name="FILTER READY" xml:space="preserve">
+    <value>التصفية جاهزة</value>
+  </data>
+  <data name="AIR FILTER NOT OK (EXTERNAL PLANT)" xml:space="preserve">
+    <value>فلتر الهواء غير جيد (المحطة الخارجية)</value>
+  </data>
+  <data name="HOT WASHING" xml:space="preserve">
+    <value>الغسيل الساخن</value>
+  </data>
+  <data name="WASHING TANK" xml:space="preserve">
+    <value>خزان الغسيل</value>
+  </data>
+  <data name="DRY-GRINDING" xml:space="preserve">
+    <value>طحن جاف</value>
+  </data>
+  <data name="MIX SILOS AND SORTERS" xml:space="preserve">
+    <value>خلط الصوامع والفرز</value>
+  </data>
+  <data name="AIR FILTERS" xml:space="preserve">
+    <value>مرشحات الهواء</value>
+  </data>
+  <data name="METAL " xml:space="preserve">
+    <value>معدن</value>
+  </data>
+  <data name="DISCHARGE VALVES IN SEMIAUTO MODE" xml:space="preserve">
+    <value>صمامات التفريغ في الوضع النصف تلقائي</value>
+  </data>
+  <data name="VALVES" xml:space="preserve">
+    <value>الصمامات</value>
+  </data>
+  <data name="TORQUE FULL RANGE (100% = NOM. MOTOR TORQUE)" xml:space="preserve">
+    <value>النطاق الكامل لعزم الدوران (100% = عزم دوران المحرك الاسمي)</value>
+  </data>
+  <data name="TODAY" xml:space="preserve">
+    <value>اليوم</value>
+  </data>
+  <data name="LEVEL NOT OK FOR PROCESS (MATERIAL ACCUMULATION)" xml:space="preserve">
+    <value>المستوى غير مناسب للعملية (تراكم المواد)</value>
+  </data>
+  <data name="TO TRENDS" xml:space="preserve">
+    <value>إلى الاتجاهات</value>
+  </data>
+  <data name="2 DAYS" xml:space="preserve">
+    <value>2 أيام</value>
+  </data>
+  <data name="3 DAYS" xml:space="preserve">
+    <value>3 أيام</value>
+  </data>
+  <data name="7 DAYS" xml:space="preserve">
+    <value>7 أيام</value>
+  </data>
+  <data name="14 DAYS" xml:space="preserve">
+    <value>14 يوما</value>
+  </data>
+  <data name="30 DAYS" xml:space="preserve">
+    <value>30 يوما</value>
+  </data>
+  <data name="RESET FILTER" xml:space="preserve">
+    <value>تصفية إعادة تعيين</value>
+  </data>
+  <data name="RELOAD" xml:space="preserve">
+    <value>إعادة تحميل</value>
+  </data>
+  <data name="SILO AGITATOR" xml:space="preserve">
+    <value>المحرض صومعة</value>
+  </data>
+  <data name="ENABLE ON-OFF CYCLE FOR SCREW" xml:space="preserve">
+    <value>تمكين دورة التشغيل والإيقاف للمسمار</value>
+  </data>
+  <data name="MATERIAL INCOMING CONTROL ADVANCED" xml:space="preserve">
+    <value>التحكم في وارد المواد المتقدم</value>
+  </data>
+  <data name="STOP FILTER PRESS IF NO INCOMING MATERIAL" xml:space="preserve">
+    <value>أوقف الفلتر، اضغط في حالة عدم وجود مواد واردة</value>
+  </data>
+  <data name="CLOSE DELAY AFTER SCREW START (0= KEEP CLOSED IF  STOPPED)" xml:space="preserve">
+    <value>تأخير الإغلاق بعد بدء المسمار (0= يظل مغلقًا في حالة التوقف)</value>
+  </data>
+  <data name="DISABLE OPEN WHEN MATERIAL IS NOT INCOMING" xml:space="preserve">
+    <value>قم بتعطيل الفتح عندما لا تكون المادة واردة</value>
+  </data>
+  <data name="DISABLE MESSAGES OF NO MATERIAL INCOMING" xml:space="preserve">
+    <value>تعطيل الرسائل التي لا تحتوي على مواد واردة</value>
+  </data>
+  <data name="TEACH ADVANCED" xml:space="preserve">
+    <value>تعليم المتقدم</value>
+  </data>
+  <data name="START DELAY AMONG THE PADDLES" xml:space="preserve">
+    <value>تأخير البدء بين المجاذيف</value>
+  </data>
+  <data name="STOP DELAY AMONG THE PADDLES" xml:space="preserve">
+    <value>وقف التأخير بين المجاذيف</value>
+  </data>
+  <data name="LAST PADDLE DELAY OFF (0=IMMEDIATE STOP)" xml:space="preserve">
+    <value>إيقاف تشغيل تأخير المجداف الأخير (0=توقف فوري)</value>
+  </data>
+  <data name="RESTART WITH DOWNSTREAM COMPLETELY EMPTY" xml:space="preserve">
+    <value>إعادة التشغيل مع المصب فارغة تماما</value>
+  </data>
+  <data name="PADDLE" xml:space="preserve">
+    <value>مجداف</value>
+  </data>
+  <data name="REVERSE ROTATION" xml:space="preserve">
+    <value>دوران عكسي</value>
+  </data>
+  <data name="TIME FRAME" xml:space="preserve">
+    <value>إطار زمني</value>
+  </data>
+  <data name="INTEGRAL" xml:space="preserve">
+    <value>أساسي</value>
+  </data>
+  <data name="MIN" xml:space="preserve">
+    <value>دقيقة</value>
+  </data>
+  <data name="MAX" xml:space="preserve">
+    <value>الأعلى</value>
+  </data>
+  <data name="SENDING" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+  <data name="INVERSION SEQUENCE" xml:space="preserve">
+    <value>تسلسل الانقلاب</value>
+  </data>
+  <data name="REQUEST INVERSION SEQUENCE" xml:space="preserve">
+    <value>طلب تسلسل الانعكاس</value>
+  </data>
+  <data name="INVERSION ADVANCED" xml:space="preserve">
+    <value>الانعكاس المتقدم</value>
+  </data>
+  <data name="REVERSE DURATION" xml:space="preserve">
+    <value>عكس المدة</value>
+  </data>
+  <data name="MAX NUMBER OF INVERSIONS" xml:space="preserve">
+    <value>الحد الأقصى لعدد الانقلابات</value>
+  </data>
+  <data name="TIME TO REACH MAX NUMBER OF INVERSIONS" xml:space="preserve">
+    <value>الوقت للوصول إلى الحد الأقصى لعدد الانقلابات</value>
+  </data>
+  <data name="ENABLE INVERSION AT STARTUP" xml:space="preserve">
+    <value>تمكين الانقلاب عند بدء التشغيل</value>
+  </data>
+  <data name="SILO MAX LEVEL" xml:space="preserve">
+    <value>صومعة ماكس المستوى</value>
+  </data>
+  <data name="SILO DISCHARGE SCREW" xml:space="preserve">
+    <value>برغي تفريغ الصومعة</value>
+  </data>
+  <data name="DISCHARGE SCREW EXIT DOOR" xml:space="preserve">
+    <value>باب الخروج المسمار التفريغ</value>
+  </data>
+  <data name="STORED MAXIMUM LEVEL" xml:space="preserve">
+    <value>الحد الأقصى للمستوى المخزن</value>
+  </data>
+  <data name="STORED BV FOR MAXIMUM" xml:space="preserve">
+    <value>مخزنة Bv للحد الأقصى</value>
+  </data>
+  <data name="STORED MINIMUM LEVEL" xml:space="preserve">
+    <value>المستوى الأدنى المخزن</value>
+  </data>
+  <data name="STORED BV FOR MINIMUM" xml:space="preserve">
+    <value>مخزنة Bv للحد الأدنى</value>
+  </data>
+  <data name="INVERTER" xml:space="preserve">
+    <value>العاكس</value>
+  </data>
+  <data name="TANK RESTART" xml:space="preserve">
+    <value>إعادة تشغيل الخزان</value>
+  </data>
+  <data name="REFERENCE PADDLE" xml:space="preserve">
+    <value>المجداف المرجعي</value>
+  </data>
+  <data name="TEST MODE" xml:space="preserve">
+    <value>وضع الاختبار</value>
+  </data>
+  <data name="ENABLE TANK FLUSHING AT RESTART" xml:space="preserve">
+    <value>تمكين تنظيف الخزان عند إعادة التشغيل</value>
+  </data>
+  <data name="FLUSHING SPEED" xml:space="preserve">
+    <value>سرعة التنظيف</value>
+  </data>
+  <data name="CLEANING AND RESTART HIGH SPEED" xml:space="preserve">
+    <value>التنظيف وإعادة التشغيل بسرعة عالية</value>
+  </data>
+  <data name="HIGH SPEED VALUE" xml:space="preserve">
+    <value>قيمة السرعة العالية</value>
+  </data>
+  <data name="CLEANING INTERVAL" xml:space="preserve">
+    <value>الفاصل الزمني للتنظيف</value>
+  </data>
+  <data name="INVERSION SEQUENCE ADVANCED" xml:space="preserve">
+    <value>تسلسل الانعكاس المتقدم</value>
+  </data>
+  <data name="DELAYS" xml:space="preserve">
+    <value>التأخير</value>
+  </data>
+  <data name="STEP AT LEVEL FILLING MODE - STEP EXTRA TIME" xml:space="preserve">
+    <value>وضع ملء المستوى - الخطوة وقت إضافي</value>
+  </data>
+  <data name="STOP UPSTREAM MATERIAL DELAY AFTER MAX. LEVEL" xml:space="preserve">
+    <value>إيقاف تأخير المواد في المنبع بعد الحد الأقصى. مستوى</value>
+  </data>
+  <data name="SEPARATION TANK - MATERIAL LEVEL" xml:space="preserve">
+    <value>خزان الفصل - مستوى المواد</value>
+  </data>
+  <data name="LONG START RAMP TIME" xml:space="preserve">
+    <value>وقت البدء الطويل</value>
+  </data>
+  <data name="INVERTER MAXIMUM FREQUENCY" xml:space="preserve">
+    <value>العاكس الحد الأقصى للتردد</value>
+  </data>
+  <data name="BOTH MINIMUM HOPPER LEVELS PRESENT" xml:space="preserve">
+    <value>كلا الحد الأدنى من مستويات القادوس موجود</value>
+  </data>
+  <data name="JAWS OPEN REQUEST IN SEMI-AUTO MODE" xml:space="preserve">
+    <value>طلب فتح الفكين في الوضع شبه التلقائي</value>
+  </data>
+  <data name="JAWS CLOSE REQUEST IN SEMI-AUTO MODE" xml:space="preserve">
+    <value>طلب إغلاق الفكين في الوضع شبه التلقائي</value>
+  </data>
+  <data name="CLOSE JAWS" xml:space="preserve">
+    <value>إغلاق الفكين</value>
+  </data>
+  <data name="OIL MAXIMUM LEVEL REACHED" xml:space="preserve">
+    <value>تم الوصول إلى الحد الأقصى لمستوى الزيت</value>
+  </data>
+  <data name="NO EVACUATION" xml:space="preserve">
+    <value>لا إخلاء</value>
+  </data>
+  <data name="MATERIAL EVACUATION IN PROGRESS" xml:space="preserve">
+    <value>جاري إخلاء المواد</value>
+  </data>
+  <data name="VESSEL WATER REFILL" xml:space="preserve">
+    <value>إعادة تعبئة مياه السفينة</value>
+  </data>
+  <data name="VESSEL WATER RELEASE" xml:space="preserve">
+    <value>إطلاق مياه السفينة</value>
+  </data>
+  <data name="RE-OPEN VESSEL REFILL (OPTIONAL)" xml:space="preserve">
+    <value>إعادة فتح عبوة السفينة (اختياري)</value>
+  </data>
+  <data name="HIGH PRODUCTION SPEED" xml:space="preserve">
+    <value>سرعة إنتاج عالية</value>
+  </data>
+  <data name="LOW PRODUCTION SPEED" xml:space="preserve">
+    <value>سرعة الإنتاج منخفضة</value>
+  </data>
+  <data name="COLLECTING PIT - AGITATOR" xml:space="preserve">
+    <value>حفرة التجميع - المحرض</value>
+  </data>
+  <data name="NO LAST PADDLE EVACUATION" xml:space="preserve">
+    <value>لا يوجد إخلاء مجداف آخر</value>
+  </data>
+  <data name="LAST PADDLE - EVACUATION IN PROGRESS" xml:space="preserve">
+    <value>المجداف الأخير - عملية الإخلاء جارية</value>
+  </data>
+  <data name="MATERIAL LEVEL" xml:space="preserve">
+    <value>المستوى المادي</value>
+  </data>
+  <data name="FILTER PRESS - SAFETY KEY" xml:space="preserve">
+    <value>مرشح الصحافة - مفتاح الأمان</value>
+  </data>
+  <data name="UNLOCK REQUEST" xml:space="preserve">
+    <value>فتح الطلب</value>
+  </data>
+  <data name="(1=REQUEST)" xml:space="preserve">
+    <value>(1=طلب)</value>
+  </data>
+  <data name="WHITE LAMP" xml:space="preserve">
+    <value>المصباح الأبيض</value>
+  </data>
+  <data name="(1=PB ENABLED)" xml:space="preserve">
+    <value>(1=الرصاص ممكن)</value>
+  </data>
+  <data name="COMMAND UNLOCK SAFETY SWITCH" xml:space="preserve">
+    <value>أمر فتح مفتاح الأمان</value>
+  </data>
+  <data name="FILTER PRESS OPEN PROCEDURE" xml:space="preserve">
+    <value>تصفية اضغط على الإجراء المفتوح</value>
+  </data>
+  <data name="ENABLED IN PROCESS" xml:space="preserve">
+    <value>تمكين في العملية</value>
+  </data>
+  <data name="FILTER PRESS DISBALED (CONFIGURATION)" xml:space="preserve">
+    <value>تم تعطيل ضغط التصفية (التكوين)</value>
+  </data>
+  <data name="NO REVERSE FOR STARTUP" xml:space="preserve">
+    <value>لا يوجد عكس لبدء التشغيل</value>
+  </data>
+  <data name="REVERSE REQUESTED FOR MOTOR STARTUP" xml:space="preserve">
+    <value>عكس المطلوب لبدء تشغيل المحرك</value>
+  </data>
+  <data name="FILTER PRESS - HOPPER ANTI-BRIDGE" xml:space="preserve">
+    <value>مكبس الترشيح - قادوس مضاد للجسر</value>
+  </data>
+  <data name="EXIT SHREDDER MIN CURRENT" xml:space="preserve">
+    <value>قم بالخروج من الحد الأدنى لتيار التقطيع</value>
+  </data>
+  <data name="WAITING FOR EXIT SHREDDER LOW CURRENT" xml:space="preserve">
+    <value>في انتظار خروج التقطيع الحالي المنخفض</value>
+  </data>
+  <data name="INVERSION SEQUENCE " xml:space="preserve">
+    <value>تسلسل الانقلاب</value>
+  </data>
+  <data name="SILO LEVELS DETAIL" xml:space="preserve">
+    <value>تفاصيل مستويات الصومعة</value>
+  </data>
+  <data name="DOWNSTREAM  VALVE" xml:space="preserve">
+    <value>صمام المصب</value>
+  </data>
+  <data name="DOWNSTREAM VALVE NOT OK" xml:space="preserve">
+    <value>صمام المصب ليس على ما يرام</value>
+  </data>
+  <data name="DRYER - AIR LOCK" xml:space="preserve">
+    <value>مجفف - قفل الهواء</value>
   </data>
 </root>
