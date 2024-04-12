@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows10.0.22621.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>Prevu.Synoptics</RootNamespace>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+	<AssemblyName>Prevu.Synoptics</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="2.1.2" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+    <PackageReference Include="Prevu.UIComponents" Version="1.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Prevu.Drawings\Prevu.Drawings.csproj" />
+    <ProjectReference Include="..\Prevu.Localization\Prevu.Localization.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="D354.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="D376.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="D810.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="D997.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="L0\Details\L0_D320.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="L0\Pages\L0_P320.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="L1\Pages\L1_P230.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="L2\Pages\L2_P230.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="L1\Details\" />
+    <Folder Include="L2\Details\" />
+  </ItemGroup>
+
+</Project>
