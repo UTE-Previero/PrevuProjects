@@ -11,6 +11,17 @@
              x:Class="Prevu.Synoptics.L2_P230" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
+        <Labels:Pipe Color="Water" Width="62" StatusComponent="L2+450-02-MA1" RenderTransformOrigin="0.5,0.5" Canvas.Left="452" Canvas.Top="225" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Color="Water" Width="77" StatusComponent="L2+450-02-MA1" Canvas.Left="408" Canvas.Top="196" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Labels:Pipe Color="Water" Width="76" StatusComponent="L2+230-71-ECS1" Canvas.Left="304" Canvas.Top="343" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:Pipe Color="Water" Width="135" StatusComponent="L2+230-01-CV1" Canvas.Left="408" Canvas.Top="343" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:Pipe Color="Water" Width="172" StatusComponent="L2+232-21-CV1" RenderTransformOrigin="0.5,0.5" Canvas.Left="376" Canvas.Top="597" HorizontalAlignment="Left" VerticalAlignment="Center">
@@ -130,8 +141,9 @@
                 </TransformGroup>
             </Machines:External.RenderTransform>
         </Machines:External>
-        <Labels:JumpLabel JumpFromLabel="L2+239-21-CV1" JumpToLabel="L0+320-SILO" Canvas.Left="1278" Canvas.Top="318" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:JumpLabel JumpFromLabel="L2+239-21-CV1" JumpToLabel="L2+320-SILO" Canvas.Left="1278" Canvas.Top="438" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:JumpLabel JumpFromLabel="L2+239-21-CV1" JumpToLabel="L0+320-43-LT1" Canvas.Left="1278" Canvas.Top="318" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:JumpLabel JumpFromLabel="L2+239-21-CV1" JumpToLabel="L2+320-43-LT1" Canvas.Left="1278" Canvas.Top="438" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:JumpLabel JumpFromLabel="L2+230-01-MA1" JumpToLabel="L2+450-02-MA1" Canvas.Left="342" Canvas.Top="163" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="L2+232-21-CV1" Canvas.Left="343" Canvas.Top="541" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="L2+230-21-CV1" Canvas.Left="351" Canvas.Top="363" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="L2+230-71-ECS4" Canvas.Left="183" Canvas.Top="353" HorizontalAlignment="Left" VerticalAlignment="Center"/>
