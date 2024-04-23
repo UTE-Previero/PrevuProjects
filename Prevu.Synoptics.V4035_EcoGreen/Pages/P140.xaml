@@ -6,6 +6,7 @@
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings"
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:lex="http://wpflocalizeextension.codeplex.com" 
+             xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings" 
              x:Class="Prevu.Synoptics.P140" mc:Ignorable="d"
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas >
@@ -170,5 +171,18 @@
         <Labels:DeviceLabel ComponentName="150-01-MA1" Canvas.Left="1118" Canvas.Top="220" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="168-01-MA1" Canvas.Left="1130" Canvas.Top="109" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="168-02-EC1" Canvas.Left="1246" Canvas.Top="54" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Misc:DashedLine RenderTransformOrigin="0.5,0.5" Height="4" Width="266" Canvas.Left="224" Canvas.Top="172" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Misc:DashedLine.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Misc:DashedLine.RenderTransform>
+        </Misc:DashedLine>
+        <TextBlock Width="94" Canvas.Top="54" TextWrapping="Wrap" TextAlignment="Center" Canvas.Left="261" Height="50" FontSize="36" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center"><Run Text="Q"/><Run Language="it-it" Text="21"/></TextBlock>
+        <TextBlock Width="94" Canvas.Top="54" TextWrapping="Wrap" TextAlignment="Center" Canvas.Left="360" Height="50" FontSize="36" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center"><Run Text="Q"/><Run Language="it-it" Text="31"/></TextBlock>
+        <Misc:DashedLine RenderTransformOrigin="0.5,0.5" Height="4" Width="230" Canvas.Left="128" Canvas.Top="304" HorizontalAlignment="Left" VerticalAlignment="Center"/>
     </Canvas>
 </UserControl>
