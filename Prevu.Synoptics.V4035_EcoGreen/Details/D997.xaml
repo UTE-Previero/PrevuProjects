@@ -5,20 +5,23 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:lex="http://wpflocalizeextension.codeplex.com"
              xmlns:local="clr-namespace:Prevu.Synoptics"
-             xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             x:Class="Prevu.Synoptics.D997" 
              mc:Ignorable="d" 
-             d:Background="{DynamicResource MaterialDesignPaper}"
-             x:Class="Prevu.Synoptics.D997">
-    <Canvas Width="630" Height="363">
-        <Machines:V01_BBF_DoubleBag Canvas.Left="52" Canvas.Top="31" Height="330" Width="523" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:SignalLabel ComponentName="997-61-BAG" SignalName="LSH" HorizontalAlignment="Center" VerticalAlignment="Top"  Canvas.Left="157" Canvas.Top="92"/>
-        <Labels:SignalLabel ComponentName="997-61-BAG" SignalName="SEL" HorizontalAlignment="Center" VerticalAlignment="Top"  Canvas.Left="159" Canvas.Top="226"/>
-        <Labels:SignalLabel ComponentName="997-62-BAG" SignalName="LSH" Canvas.Left="400" Canvas.Top="92" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:SignalLabel ComponentName="997-62-BAG" SignalName="SEL" Canvas.Left="402" Canvas.Top="226" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="997-62-BAG" Canvas.Left="390" Canvas.Top="171" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="997-61-BAG" HorizontalAlignment="Center" VerticalAlignment="Top"  Canvas.Left="147" Canvas.Top="171"/>
-        <Labels:DeviceLabel ComponentName="997-21-CV1"  Canvas.Left="25" Canvas.Top="30" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="997-22-CV1"  Canvas.Left="511" Canvas.Top="30" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+             d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Width="680" Height="441">
+        <Machines:V01_BBF_DoubleBag Canvas.Left="80" Canvas.Top="80" Height="330" Width="523" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:V01_SB_SafetyBarrier Canvas.Left="44" Canvas.Top="293" Height="126" Width="19" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Machines:V01_SB_SafetyBarrier Canvas.Left="618" Canvas.Top="293" Height="126" Width="19" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="997-61-BAG" SignalName="LSH" Canvas.Left="160" Canvas.Top="142"/>
+        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="997-61-BAG" SignalName="SEL" Canvas.Left="105" Canvas.Top="284" SignalPosition="Top" Width="230"/>
+        <Labels:SignalLabel ComponentName="997-62-BAG" SignalName="LSH" Canvas.Left="403" Canvas.Top="142" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:SignalLabel ComponentName="997-62-BAG" SignalName="SEL" Canvas.Left="345" Canvas.Top="284" HorizontalAlignment="Left" VerticalAlignment="Center" SignalPosition="Top" Width="235"/>
+        <Labels:DeviceLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="997-61-BAG" Canvas.Left="175" Canvas.Top="220"/>
+        <Labels:DeviceLabel ComponentName="997-62-BAG" Canvas.Left="418" Canvas.Top="220" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="997-21-CV1" Canvas.Left="175" Canvas.Top="71" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="997-22-CV1" Canvas.Left="418" Canvas.Top="70" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="997-SHAKE" Canvas.Left="296" Canvas.Top="32" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>
