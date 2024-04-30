@@ -1,0 +1,105 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Drawings.Machines"
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" x:Class="Prevu.Drawings.Machines.V01_STR_BatchContinuousReactor"
+             mc:Ignorable="d" 
+             >
+    <Viewbox Stretch="Uniform">
+        <Canvas Name="svg202" Width="111" Height="171">
+            <Canvas.RenderTransform>
+                <TranslateTransform X="0" Y="0"/>
+            </Canvas.RenderTransform>
+            <Canvas.Resources>
+                <RectangleGeometry  x:Key="clip0_1646_67" Rect="0, 0, 111, 171"/>
+            </Canvas.Resources>
+            <!--Unknown tag: sodipodi:namedview-->
+            <Canvas Name="g42" Clip="{StaticResource clip0_1646_67}">
+                <Path  Name="path2" Fill="#FF808080">
+                    <Path.Data>
+                        <PathGeometry Figures="M3 52.3552C3 49.761 5.10308 47.6579 7.69737 47.6579H53.1053C55.6995 47.6579 57.8026 49.761 57.8026 52.3553V147.033C57.8026 148.359 56.7275 149.434 55.4013 149.434H54.291C53.578 149.434 53 150.012 53 150.725V150.725C53 150.877 53.123 151 53.2748 151H89C89.5523 151 90 150.552 90 150V89C90 88.4477 89.5523 88 89 88H88C86.3431 88 85 86.6569 85 85V59C85 57.3431 86.3431 56 88 56H89C89.5523 56 90 55.5523 90 55V22.618C90 21.8747 89.2177 21.3912 88.5528 21.7236L82.8944 24.5528C81.5646 25.2177 80 24.2507 80 22.7639V14.2648C80 12.8597 80.7372 11.5577 81.942 10.8348L89.5145 6.2913C89.8157 6.11058 90 5.78507 90 5.43381V4C90 2.34315 91.3431 1 93 1H97C98.6569 1 100 2.34315 100 4V5.43381C100 5.78507 100.184 6.11058 100.486 6.2913L108.058 10.8348C109.263 11.5577 110 12.8597 110 14.2648V22.7639C110 24.2507 108.435 25.2177 107.106 24.5528L101.447 21.7236C100.782 21.3912 100 21.8747 100 22.618V55C100 55.5523 100.448 56 101 56H102C103.657 56 105 57.3431 105 59V85C105 86.6569 103.657 88 102 88H101C100.448 88 100 88.4477 100 89V168C100 169.105 99.1046 170 98 170H92C90.8954 170 90 169.105 90 168V162C90 161.448 89.5523 161 89 161H8C6.34315 161 5 159.657 5 158V153.4C5 152.075 6.07452 151 7.4 151H7.72517C7.87696 151 8 150.877 8 150.725V150.725C8 150.012 7.42201 149.434 6.70903 149.434H5.5C4.11929 149.434 3 148.315 3 146.934V52.3552Z" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+                <Rectangle  Canvas.Left="4" Canvas.Top="48" Width="54" Height="101" RadiusX="4.69737" RadiusY="4.69737" Name="rect2" Fill="#FF808080" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Labels:WaterLevel x:Name="MaterialLevel" Background="Transparent" d:Background="lightblue" Height="102" Width="54" 
+                                HorizontalAlignment="Center" VerticalAlignment="Top" 
+                                Canvas.Left="4" Canvas.Top="49" d:Opacity=".6">
+                    <Labels:WaterLevel.OpacityMask>
+                        <VisualBrush Visual="{Binding ElementName=rect2}" />
+                    </Labels:WaterLevel.OpacityMask>
+                </Labels:WaterLevel>
+                <Canvas Name="g6" Effect="{StaticResource MaterialDesignElevationShadow1}">
+                    <Path  Name="path4" Stroke="#FF292929" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round">
+                        <Path.Data>
+                            <PathGeometry Figures="M86 159L82.1905 153L78.381 159L74.5714 153L70.7619 159L66.9524 153L63.1429 159L59.3333 153L55.5238 159L51.7143 153L47.9048 159L44.0952 153L40.2857 159L36.4762 153L32.6667 159L28.8571 153L25.0476 159L21.2381 153L17.4286 159L13.619 153L9.80952 159L6 153" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+                <Canvas Name="g10" Effect="{StaticResource MaterialDesignElevationShadow1}">
+                    <Path  Name="path8" Stroke="#FF292929" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round">
+                        <Path.Data>
+                            <PathGeometry Figures="M92 168L98 164.19L92 160.381L98 156.571L92 152.762L98 148.952L92 145.143L98 141.333L92 137.524L98 133.714L92 129.905L98 126.095L92 122.286L98 118.476L92 114.667L98 110.857L92 107.048L98 103.238L92 99.4286L98 95L92 91.8095L98 88L92 84L98 81L92 77L98 74L92 70L98 67L92 63L98 60L92 56L98 53L92 49L98 46L92 42L98 39L92 35L98 32L92 28L98 25L92 21L98 18L92 14L98 11L92 7L98 4" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+                <Canvas Name="g14" Effect="{StaticResource MaterialDesignElevationShadow1}">
+                    <Path  Name="path12" Fill="#FF292929">
+                        <Path.Data>
+                            <PathGeometry Figures="M29.0527 33.5658C29.0527 32.701 29.7538 32 30.6185 32V32C31.4833 32 32.1843 32.701 32.1843 33.5658V66.2178C32.1843 66.7841 31.8785 67.3063 31.3846 67.5834V67.5834C30.9088 67.8503 30.3283 67.8503 29.8525 67.5834V67.5834C29.3585 67.3063 29.0527 66.7841 29.0527 66.2178L29.0527 33.5658Z" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+                <Canvas Name="g18" Effect="{StaticResource MaterialDesignElevationShadow1}">
+                    <Path  Name="path16" Fill="#FF292929">
+                        <Path.Data>
+                            <PathGeometry Figures="M20.6745 59.8036C18.382 58.2832 15.2914 58.9052 13.7655 61.1941V61.1941C13.5195 61.563 13.3238 61.9632 13.1836 62.3839L12.8194 63.4765C12.1766 65.4049 12.1766 67.4898 12.8194 69.4183L13.1835 70.5107C13.3238 70.9315 13.5196 71.3318 13.7656 71.7008V71.7008C15.2916 73.9898 18.3821 74.6123 20.6752 73.0925L25.4285 69.9422C28.5745 67.8572 32.6627 67.8572 35.8086 69.9422L40.5619 73.0925C42.855 74.6123 45.9455 73.9898 47.4715 71.7008V71.7008C47.7176 71.3318 47.9133 70.9315 48.0536 70.5107L48.4178 69.4183C49.0606 67.4898 49.0606 65.4049 48.4178 63.4765L48.0536 62.3839C47.9133 61.9632 47.7176 61.563 47.4716 61.1941V61.1941C45.9457 58.9052 42.8551 58.2832 40.5626 59.8036L35.811 62.9549C32.664 65.042 28.5732 65.042 25.4261 62.9549L20.6745 59.8036Z" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+                <Canvas Name="g22" Effect="{StaticResource MaterialDesignElevationShadow1}">
+                    <Path  Name="path20" Stroke="#FF909090" StrokeDashArray="2 2" StrokeStartLineCap="Round" StrokeEndLineCap="Round">
+                        <Path.Data>
+                            <PathGeometry Figures="M89 58V86M101 86V58" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+                <Canvas Name="g26" Effect="{StaticResource MaterialDesignElevationShadow1}">
+                    <Path  Name="path24" Fill="#FF9E9E9E">
+                        <Path.Data>
+                            <PathGeometry Figures="M84.1243 20.2719C83.9925 20.546 83.6635 20.6614 83.3893 20.5297V20.5297C83.1152 20.3979 82.9998 20.0689 83.1315 19.7947L88.7515 8.10071C88.9346 7.71971 89.2337 7.40652 89.6059 7.2061L89.6547 7.17983L90.026 7.99159L84.1243 20.2719Z" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+                <Canvas Name="g30" Effect="{StaticResource MaterialDesignElevationShadow1}">
+                    <Path  Name="path28" Fill="#FF9E9E9E">
+                        <Path.Data>
+                            <PathGeometry Figures="M107.142 19.7946C107.274 20.0687 107.159 20.3978 106.884 20.5295V20.5295C106.61 20.6613 106.281 20.5459 106.15 20.2717L100.529 8.57787C100.346 8.19688 100.288 7.76766 100.364 7.35183L100.374 7.29731L101.24 7.5145L107.142 19.7946Z" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+                <Canvas Name="g36" Effect="{StaticResource MaterialDesignElevationShadow1}">
+                    <Path  Name="path32" Fill="#FF808080">
+                        <Path.Data>
+                            <PathGeometry Figures="M99.5 3.5V5.5L101.425 6.75153L101.169 7.20241C101.06 7.394 100.884 7.53856 100.675 7.60825C100.097 7.80097 99.5 7.37063 99.5 6.76117V5.5V3.5C99.5 2.39543 98.6046 1.5 97.5 1.5H92.5C91.3954 1.5 90.5 2.39543 90.5 3.5V5.5V6.76117C90.5 7.37063 89.9029 7.80097 89.3247 7.60825C89.1157 7.53856 88.9398 7.394 88.8308 7.20241L88.5746 6.75153L90.5 5.5V3.5C90.5 2.39543 91.3954 1.5 92.5 1.5H97.5C98.6046 1.5 99.5 2.39543 99.5 3.5Z" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                    <Path  Name="path34" Stroke="#FF808080" StrokeStartLineCap="Round" StrokeEndLineCap="Round">
+                        <Path.Data>
+                            <PathGeometry Figures="M99.5 5.5V3.5C99.5 2.39543 98.6046 1.5 97.5 1.5H92.5C91.3954 1.5 90.5 2.39543 90.5 3.5V5.5M99.5 5.5L101.425 6.75153M99.5 5.5V6.76117C99.5 7.37062 100.097 7.80097 100.675 7.60825V7.60825C100.884 7.53856 101.06 7.394 101.169 7.20241L101.425 6.75153M90.5 5.5L88.5746 6.75153M90.5 5.5V6.76117C90.5 7.37062 89.9029 7.80097 89.3247 7.60825V7.60825C89.1157 7.53856 88.9398 7.394 88.8308 7.20241L88.5746 6.75153M80.5 22.5V23.882C80.5 24.6253 81.2823 25.1088 81.9472 24.7764L88.1584 21.6708C88.383 21.5585 88.6308 21.5 88.882 21.5V21.5C89.7756 21.5 90.5 22.2244 90.5 23.118V54C90.5 55.3807 89.3807 56.5 88 56.5V56.5C86.6193 56.5 85.5 57.6193 85.5 59V85C85.5 86.3807 86.6193 87.5 88 87.5V87.5C89.3807 87.5 90.5 88.6193 90.5 90V148C90.5 149.657 89.1569 151 87.5 151H53C51.8954 151 51 150.105 51 149V149M80.5 15V13.6281C80.5 12.6126 81.0137 11.6661 81.865 11.1127L88.5746 6.75153M109.5 22.5V23.882C109.5 24.6253 108.718 25.1088 108.053 24.7764L101.842 21.6708C101.617 21.5585 101.369 21.5 101.118 21.5V21.5C100.224 21.5 99.5 22.2244 99.5 23.118V54C99.5 55.3807 100.619 56.5 102 56.5V56.5C103.381 56.5 104.5 57.6193 104.5 59V85C104.5 86.3807 103.381 87.5 102 87.5V87.5C100.619 87.5 99.5 88.6193 99.5 90V168.5C99.5 169.052 99.0523 169.5 98.5 169.5H91.5C90.9477 169.5 90.5 169.052 90.5 168.5V163.5C90.5 161.843 89.1569 160.5 87.5 160.5H7.5C6.39543 160.5 5.5 159.605 5.5 158.5V153C5.5 151.895 6.39543 151 7.5 151H8.5C9.32843 151 10 150.328 10 149.5V149.5M109.5 15V13.6281C109.5 12.6126 108.986 11.6661 108.135 11.1127L101.425 6.75153" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+                <Canvas Name="g40" Effect="{StaticResource MaterialDesignElevationShadow1}">
+                    <Path  Name="path38" StrokeThickness="3.13158" Stroke="#FF808080" StrokeStartLineCap="Round" StrokeEndLineCap="Round">
+                        <Path.Data>
+                            <PathGeometry Figures="M20.2237 49.2237C12.8859 49.2237 7.69737 49.2237 7.69737 49.2237C7.69737 49.2237 7.69737 49.2237 7.69737 49.2237C5.10308 49.2237 3 51.0426 3 53.2863V145.372C3 147.615 5.10308 149.434 7.69737 149.434H10M42.1447 49.2237H53.1053C55.6995 49.2237 57.8026 51.0426 57.8026 53.2863V145.372C57.8026 147.615 55.6995 149.434 53.1053 149.434H51" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Viewbox>
+    
+</UserControl>
