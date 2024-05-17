@@ -9,6 +9,26 @@
              x:Class="Prevu.Synoptics.L0_P508" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas >
+        <Labels:Pipe Width="60" Color="Water" StatusComponent="L0+508-22-CV1" RenderTransformOrigin="0.5,0.5" Canvas.Left="422" Canvas.Top="477" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Width="60" Color="Water" StatusComponent="L0+508-22-CV1" RenderTransformOrigin="0.5,0.5" Canvas.Left="422" Canvas.Top="561" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
         <Labels:Pipe Width="78" RenderTransformOrigin="0.5,0.5" StatusComponent="L2+446-01-MA1" Canvas.Left="1168" Canvas.Top="515" HorizontalAlignment="Left" VerticalAlignment="Center" Color="ByProduct" VisibilityComponent="L2+447-21-CV1" VisibilitySignal="LS1">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -189,13 +209,24 @@
         <Labels:JumpLabel JumpFromLabel="L0+508-01-MA1" JumpToLabel="L2+510-RINSE" Canvas.Left="76" Canvas.Top="672" Direction="Left" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Labels:JumpLabel JumpFromLabel="L0+508-01-MA1" JumpToLabel="L1+510-RINSE" Canvas.Left="76" Canvas.Top="510" Direction="Left" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DetailsLabel ComponentName="L0+997-BAGS" DetailsPageName="L0_D997" Canvas.Left="1172" Canvas.Top="669" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel ComponentName="L0+508-01-MA1" RenderTransformOrigin="0.567,-2.17" Canvas.Left="301" Canvas.Top="695" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="L0+508-41-LT1" RenderTransformOrigin="0.567,-2.17" Canvas.Left="440" Canvas.Top="618" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="L0+508-21-CV1" RenderTransformOrigin="0.567,-2.17" Canvas.Left="548" Canvas.Top="494" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="L0+508-01-MA1" Canvas.Left="301" Canvas.Top="695" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="L0+508-41-LT1" Canvas.Left="440" Canvas.Top="618" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="L0+508-21-CV1" Canvas.Left="548" Canvas.Top="494" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="L0+421-01-MA1" Canvas.Left="549" Canvas.Top="191" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="L0+423-01-MA1" Canvas.Left="995" Canvas.Top="145" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="L0+425-01-MA1" Canvas.Left="1180" Canvas.Top="198" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="L0+997-25-CV1" Canvas.Left="1171" Canvas.Top="589" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="L0+997-SHAKE" Canvas.Left="1169" Canvas.Top="726" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:CV_Valve_001 RenderTransformOrigin="0.5,0.5" Height="54" Width="58" Canvas.Left="424" Canvas.Top="487" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Machines:CV_Valve_001.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="270"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Machines:CV_Valve_001.RenderTransform>
+        </Machines:CV_Valve_001>
+        <Labels:DeviceLabel ComponentName="L0+508-22-CV1" Canvas.Left="332" Canvas.Top="494" HorizontalAlignment="Left" VerticalAlignment="Center"/>
     </Canvas>
 </UserControl>
