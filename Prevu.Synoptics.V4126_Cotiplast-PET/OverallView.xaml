@@ -1,0 +1,374 @@
+﻿<UserControl x:Class="Prevu.Synoptics.OverallView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             xmlns:lex="http://wpflocalizeextension.codeplex.com"
+             lex:ResxLocalizationProvider.DefaultAssembly="Prevu.Localization"
+             lex:ResxLocalizationProvider.DefaultDictionary="Resources"             
+             mc:Ignorable="d" d:Background="{DynamicResource MaterialDesignPaper}">
+
+    <Canvas Height="4270" Width="8050">
+        <local:P020 CacheMode="BitmapCache" Canvas.Left="89" Canvas.Top="89" d:IsLocked="True"/>
+        <local:P140 CacheMode="BitmapCache" Canvas.Left="3381" Canvas.Top="586" HorizontalAlignment="Left" VerticalAlignment="Center" d:IsLocked="True"/>
+        <local:P230 CacheMode="BitmapCache" Canvas.Left="5300" Canvas.Top="89" HorizontalAlignment="Left" VerticalAlignment="Center" d:IsLocked="True"/>
+        <local:P288 CacheMode="BitmapCache" Canvas.Left="171" Canvas.Top="1475" HorizontalAlignment="Left" VerticalAlignment="Center" d:IsLocked="True"/>
+        <local:P330 CacheMode="BitmapCache" Canvas.Left="2388" Canvas.Top="1697" HorizontalAlignment="Left" VerticalAlignment="Center" d:IsLocked="True"/>
+        <local:P350 CacheMode="BitmapCache" Canvas.Left="4089" Canvas.Top="1994" HorizontalAlignment="Left" VerticalAlignment="Center" d:IsLocked="True"/>
+        <local:P430 CacheMode="BitmapCache" Canvas.Left="5807" Canvas.Top="1697" HorizontalAlignment="Left" VerticalAlignment="Center" d:IsLocked="True"/>
+        <local:P100 CacheMode="BitmapCache" Canvas.Left="2453" Canvas.Top="356" HorizontalAlignment="Left" VerticalAlignment="Center" d:IsLocked="True"/>
+        <local:P530 CacheMode="BitmapCache" Canvas.Left="561" Canvas.Top="3204" HorizontalAlignment="Center" VerticalAlignment="Top" d:IsLocked="True"/>
+        <local:P810 CacheMode="BitmapCache" Canvas.Left="2976" Canvas.Top="3271" HorizontalAlignment="Center" VerticalAlignment="Top" d:IsLocked="True"/>
+        <local:P880 CacheMode="BitmapCache" Canvas.Left="5487" Canvas.Top="3291" HorizontalAlignment="Center" VerticalAlignment="Top" d:IsLocked="True"/>
+        <Labels:Pipe Canvas.Left="1574" Canvas.Top="763" PipeHeight="Medium" HorizontalAlignment="Left" VerticalAlignment="Center" Width="220" StatusComponent="098-01-MA1"/>
+        <Labels:Pipe Canvas.Left="1786" Canvas.Top="541" PipeHeight="Medium" Width="898" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="098-01-MA1"/>
+        <Labels:Pipe Canvas.Left="1674" Canvas.Top="652" PipeHeight="Medium" Width="232" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" StatusComponent="098-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="4955" Canvas.Top="165" PipeHeight="Medium" Width="469" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="170-01-MA1" VisibilityComponent="170-21-CV1" VisibilitySignal="LS1"/>
+        <Labels:Pipe Canvas.Left="4689" Canvas.Top="1167" PipeHeight="Medium" Width="276" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="170-01-MA1" VisibilityComponent="170-21-CV1" VisibilitySignal="LS1"/>
+        <Labels:Pipe Canvas.Left="4455" Canvas.Top="667" PipeHeight="Medium" Width="1010" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="170-01-MA1" VisibilityComponent="170-21-CV1" VisibilitySignal="LS1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="6678" Canvas.Top="783" PipeHeight="Medium" Width="216" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="298-01-MA1"/>
+        <Labels:Pipe Canvas.Left="6463" Canvas.Top="1205" PipeHeight="Medium" Width="854" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="298-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="2512" Canvas.Top="1627" PipeHeight="Medium" Width="4382" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="298-01-MA1"/>
+        <Labels:Pipe Canvas.Left="2392" Canvas.Top="1748" PipeHeight="Medium" Width="250" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="298-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="3841" Canvas.Top="2211" PipeHeight="Medium" Width="352" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="336-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="3901" Canvas.Top="2245" PipeHeight="Medium" Width="352" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="331-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="4012" Canvas.Top="2039" PipeHeight="Medium" Width="293" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="336-01-MA1"/>
+        <Labels:Pipe Canvas.Left="4073" Canvas.Top="2073" PipeHeight="Medium" Width="241" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="331-01-MA1"/>
+        <Labels:Pipe Canvas.Left="3789" Canvas.Top="2382" PipeHeight="Medium" Width="232" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="336-01-MA1"/>
+        <Labels:Pipe Canvas.Left="3789" Canvas.Top="2418" PipeHeight="Medium" Width="293" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="331-01-MA1"/>
+        <Labels:Pipe Canvas.Left="5442" Canvas.Top="2138" PipeHeight="Medium" Width="630" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="380-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="5583" Canvas.Top="2449" PipeHeight="Medium" Width="179" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="380-01-MA1"/>
+        <Labels:Pipe Canvas.Left="5752" Canvas.Top="1827" PipeHeight="Medium" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="380-01-MA1"/>
+        <Labels:Pipe Canvas.Left="7240" Canvas.Top="1974" PipeHeight="Medium" Width="199" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="455-01-MA1"/>
+        <Labels:Pipe Canvas.Left="6891" Canvas.Top="2515" PipeHeight="Medium" Width="1092" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="455-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="654" Canvas.Top="3057" PipeHeight="Medium" Width="6787" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" StatusComponent="455-01-MA1"/>
+        <Labels:Pipe Canvas.Left="439" Canvas.Top="3273" PipeHeight="Medium" Width="440" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="455-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="5032" Canvas.Top="3361" PipeHeight="Medium" Width="578" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="868-01-MA1"/>
+        <Labels:Pipe Canvas.Left="4451" Canvas.Top="4051" PipeHeight="Medium" Width="591" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="868-01-MA1"/>
+        <Labels:Pipe Canvas.Left="4688" Canvas.Top="3706" PipeHeight="Medium" Width="698" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="868-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="2367" Canvas.Top="3635" PipeHeight="Medium" Width="544" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="558-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="2635" Canvas.Top="3368" PipeHeight="Medium" Width="463" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="558-01-MA1"/>
+        <Labels:Pipe Canvas.Left="2011" Canvas.Top="3905" PipeHeight="Medium" Width="633" HorizontalAlignment="Center" VerticalAlignment="Center" StatusComponent="558-01-MA1"/>
+        <Labels:Pipe Canvas.Left="3042" Canvas.Top="2745" Color="Water" HorizontalAlignment="Center" VerticalAlignment="Top" Width="1122" Icon="Left" StatusComponent="373-01-MA1"/>
+        <Labels:Pipe Canvas.Left="2666" Canvas.Top="2379" Color="Water" Width="756" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" StatusComponent="373-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="2242" Canvas.Top="2905" Color="Water" Width="3164" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Left" StatusComponent="377-01-MA1"/>
+        <Labels:Pipe Canvas.Left="1833" Canvas.Top="1852" Color="Water" Width="582" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Left" StatusComponent="293-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="5322" Canvas.Top="2835" Color="Water" Width="164" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="377-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="5136" Canvas.Top="2755" Color="Water" Width="270" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="377-01-MA1"/>
+        <Labels:Pipe Canvas.Left="1942" Canvas.Top="1536" Color="Water" Width="3264" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Right" StatusComponent="292-01-MA1"/>
+        <Labels:Pipe Canvas.Left="1822" Canvas.Top="1503" Color="Water" Width="3344" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Right" StatusComponent="291-01-MA1"/>
+        <Labels:Pipe Canvas.Left="1571" Canvas.Top="2235" Color="Water" Width="1346" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Left" StatusComponent="377-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="1716" Canvas.Top="1762" Color="Water" Width="456" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Left" StatusComponent="292-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="1617" Canvas.Top="1708" Color="Water" Width="414" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Left" StatusComponent="291-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="1535" Canvas.Top="1924" Color="Water" Width="291" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="291-01-MA1"/>
+        <Labels:Pipe Canvas.Left="1540" Canvas.Top="1999" Color="Water" Width="406" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="292-01-MA1"/>
+        <Labels:Pipe Canvas.Left="1548" Canvas.Top="2150" Color="Water" Width="578" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="293-01-MA1"/>
+        <Labels:Pipe Canvas.Left="6715" Canvas.Top="2466" Color="Water" Width="693" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="457-01-MA1"/>
+        <Labels:Pipe Canvas.Left="7464" Canvas.Top="2466" Color="Water" Width="142" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="457-01-MA1"/>
+        <Labels:Pipe Canvas.Left="6416" Canvas.Top="1271" Color="Water" Width="2376" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Left" StatusComponent="457-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform X="0.008"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="3203" Canvas.Top="86" Color="Water" Width="4403" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Left" StatusComponent="457-01-MA1"/>
+        <Labels:Pipe Canvas.Left="3050" Canvas.Top="248" Color="Water" Width="310" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="457-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="1716" Canvas.Top="968" Color="Water" Width="816" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Left" StatusComponent="293-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="2064" Canvas.Top="452" Color="Water" Width="120" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="293-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="2122" Canvas.Top="384" Color="Water" Width="788" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Right" StatusComponent="293-01-MA1"/>
+        <Labels:Pipe Canvas.Left="2242" Canvas.Top="444" Color="Water" Width="568" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Right" StatusComponent="377-01-MA1"/>
+        <Labels:Pipe Canvas.Left="1836" Canvas.Top="968" Color="Water" Width="816" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Left" StatusComponent="377-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="2214" Canvas.Top="482" Color="Water" Width="60" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="377-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="4680" Canvas.Top="897" Color="Water" Width="968" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Left" StatusComponent="291-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="5162" Canvas.Top="423" Color="Water" Width="224" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="291-01-MA1"/>
+        <Labels:Pipe Canvas.Left="5202" Canvas.Top="548" Color="Water" Width="197" HorizontalAlignment="Center" VerticalAlignment="Center" StatusComponent="292-01-MA1"/>
+        <Labels:Pipe Canvas.Left="5705" Canvas.Top="1109" Color="Water" Width="598" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Right" StatusComponent="236-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="443" Canvas.Top="1407" Color="Water" Width="5563" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Left" StatusComponent="236-01-MA1"/>
+        <Labels:Pipe Canvas.Left="5866" Canvas.Top="822" Color="Water" Width="140" HorizontalAlignment="Left" VerticalAlignment="Center" StatusComponent="236-01-MA1"/>
+        <Labels:Pipe Canvas.Left="2218" Canvas.Top="1462" Color="Water" Width="52" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="377-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="2098" Canvas.Top="1462" Color="Water" Width="52" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="293-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="341" Canvas.Top="1518" Color="Water" Width="208" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="236-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="4782" Canvas.Top="959" Color="Water" Width="844" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" Icon="Left" StatusComponent="292-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="5124" Canvas.Top="1476" Color="Water" Width="80" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="291-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Canvas.Left="5148" Canvas.Top="1492" Color="Water" Width="112" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" StatusComponent="292-01-MA1">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+
+    </Canvas>
+</UserControl>
