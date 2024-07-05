@@ -31,13 +31,6 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Color="Water" Width="60" RenderTransformOrigin="0.5,0.5" Canvas.Left="557" Canvas.Top="69" PipeHeight="Medium" HorizontalAlignment="Center" VerticalAlignment="Top">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <RotateTransform Angle="90"/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
         <Machines:V01_MU_Grinder Canvas.Left="416" Canvas.Top="225" Height="221" Width="289" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Rectangle Height="6" Stroke="Black" Width="158" RenderTransformOrigin="0.5,0.5" Canvas.Left="471" Canvas.Top="44" HorizontalAlignment="Left" VerticalAlignment="Center" StrokeThickness="3"/>
         <Machines:External Height="76" Width="80" RenderTransformOrigin="0.5,0.5" Canvas.Left="400" Canvas.Top="9" HorizontalAlignment="Left" VerticalAlignment="Center">
@@ -56,13 +49,6 @@
         </Rectangle>
         <Machines:External Height="76" Width="80" RenderTransformOrigin="0.5,0.5" Canvas.Left="816" Canvas.Top="425" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Machines:QX_LongElectricalCabinet Width="290" Height="102" Canvas.Left="76" Canvas.Top="348" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Machines:V01_CV_Valve Canvas.Left="554" Canvas.Top="109" Height="38" Width="68" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Machines:V01_CV_Valve.RenderTransform>
-                <TransformGroup>
-                    <RotateTransform Angle="90"/>
-                </TransformGroup>
-            </Machines:V01_CV_Valve.RenderTransform>
-        </Machines:V01_CV_Valve>
         <Labels:DeviceLabel ComponentName="Q41" Canvas.Left="104" Canvas.Top="291" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="S410" Canvas.Left="244" Canvas.Top="291" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="230-21-CV1" HorizontalAlignment="Left" Canvas.Left="625" Canvas.Top="103" VerticalAlignment="Center"/>
@@ -73,5 +59,15 @@
         <Labels:DeviceLabel ComponentName="230-BRAKER" Canvas.Left="671" Canvas.Top="290" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="230-71-ECS2" Canvas.Left="373" Canvas.Top="158" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="230-71-ECS3" Canvas.Left="878" Canvas.Top="512" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Machines:V01_CV_Valve_wColor Canvas.Left="555" Canvas.Top="107" Color="Water" Height="36" Width="65" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Machines:V01_CV_Valve_wColor.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Machines:V01_CV_Valve_wColor.RenderTransform>
+        </Machines:V01_CV_Valve_wColor>
     </Canvas>
 </UserControl>
