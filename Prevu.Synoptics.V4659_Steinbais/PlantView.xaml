@@ -12,69 +12,65 @@
              lex:ResxLocalizationProvider.DefaultDictionary="Resources"             
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}" >
-    <Canvas Height="1124" Width="2334" >
-        <Labels:Pipe Canvas.Left="173" Canvas.Top="85" Width="106" PipeHeight="Medium" StatusComponent="018-01-MA1" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Labels:Pipe Canvas.Left="216" Canvas.Top="140" Width="118" PipeHeight="Medium" StatusComponent="018-01-MA1" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <RotateTransform Angle="90"/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
-        <Machines:QX_HMI Height="66" Width="56" Canvas.Left="413" Canvas.Top="261" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Machines:QX_LongElectricalCabinet Width="188" Height="75" Canvas.Left="316" Canvas.Top="367" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Machines:QX_ShortElectricalCabinet Width="54" Height="64" Canvas.Left="766" Canvas.Top="277" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Machines:QX_HMI Height="66" Width="56" Canvas.Left="539" Canvas.Top="269" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Machines:QX_HMI Height="66" Width="56" Canvas.Left="647" Canvas.Top="273" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="ESTOP" ComponentName="ESTOP-AREA-01" Canvas.Left="401" Canvas.Top="128" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="Q21" ComponentName="L0+Q51" Canvas.Left="41" Canvas.Top="678" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="Q01" ComponentName="Q01" Canvas.Left="748" Canvas.Top="217" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="HMI_01" ComponentName="HMI-01" Canvas.Left="397" Canvas.Top="209" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="S210" ComponentName="L0+S510" Canvas.Left="41" Canvas.Top="806" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="HMI_01_Copia" ComponentName="HMI-02" Canvas.Left="521" Canvas.Top="217" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="HMI_01_Copia1" ComponentName="HMI-03" Canvas.Left="630" Canvas.Top="221" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Misc:DashedLine RenderTransformOrigin="0.5,0.5" Height="4" Width="416" Canvas.Left="34" Canvas.Top="41" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Labels:GroupLabel GroupName="L0+330" Canvas.Left="146" Canvas.Top="674" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Misc:DashedLine RenderTransformOrigin="0.5,0.5" Height="4" Width="208" Canvas.Left="-68" Canvas.Top="144" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Misc:DashedLine.RenderTransform>
-                <TransformGroup>
-                    <RotateTransform Angle="90"/>
-                </TransformGroup>
-            </Misc:DashedLine.RenderTransform>
-        </Misc:DashedLine>
-        <Labels:DeviceLabel x:Name="Q21_Copia" ComponentName="L0+Q51-POWER" Canvas.Left="41" Canvas.Top="740" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:GroupLabel GroupName="L0+508" Canvas.Left="356" Canvas.Top="676" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="Q21_Copia1" ComponentName="L0+Q52" Canvas.Left="251" Canvas.Top="678" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="S210_Copia" ComponentName="L0+S520" Canvas.Left="251" Canvas.Top="806" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:GroupLabel GroupName="L1+230" Canvas.Left="564" Canvas.Top="526" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="Q21_Copia3" ComponentName="L1+Q41" Canvas.Left="459" Canvas.Top="528" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="S210_Copia1" ComponentName="L1+S410" Canvas.Left="459" Canvas.Top="656" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="Q21_Copia4" ComponentName="L1+Q41-POWER" Canvas.Left="459" Canvas.Top="590" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:GroupLabel GroupName="L2+230" Canvas.Left="564" Canvas.Top="831" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="Q21_Copia5" ComponentName="L2+Q42" Canvas.Left="459" Canvas.Top="833" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="S210_Copia2" ComponentName="L2+S420" Canvas.Left="459" Canvas.Top="961" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="Q21_Copia6" ComponentName="L2+Q42-POWER" Canvas.Left="459" Canvas.Top="895" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:GroupLabel GroupName="L1+430" Canvas.Left="774" Canvas.Top="526" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="Q21_Copia7" ComponentName="L1+Q61" Canvas.Left="669" Canvas.Top="528" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="S210_Copia3" ComponentName="L1+S610" Canvas.Left="669" Canvas.Top="656" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="Q21_Copia8" ComponentName="L1+Q61-POWER" Canvas.Left="669" Canvas.Top="590" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:GroupLabel GroupName="L1+440" Canvas.Left="774" Canvas.Top="601" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:GroupLabel GroupName="L2+430" Canvas.Left="774" Canvas.Top="831" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="Q21_Copia9" ComponentName="L2+Q62" Canvas.Left="669" Canvas.Top="833" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="S210_Copia4" ComponentName="L2+S620" Canvas.Left="669" Canvas.Top="961" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="Q21_Copia10" ComponentName="L2+Q62-POWER" Canvas.Left="669" Canvas.Top="895" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:GroupLabel GroupName="L2+440" Canvas.Left="774" Canvas.Top="906" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:GroupLabel GroupName="L1+530" Canvas.Left="984" Canvas.Top="526" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="Q21_Copia11" ComponentName="L1+Q71" Canvas.Left="879" Canvas.Top="528" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="S210_Copia5" ComponentName="L1+S710" Canvas.Left="879" Canvas.Top="656" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="Q21_Copia12" ComponentName="L1+Q71-POWER" Canvas.Left="879" Canvas.Top="590" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:GroupLabel GroupName="L2+530" Canvas.Left="984" Canvas.Top="831" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="Q21_Copia13" ComponentName="L2+Q72" Canvas.Left="879" Canvas.Top="833" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="S210_Copia6" ComponentName="L2+S720" Canvas.Left="879" Canvas.Top="961" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="Q21_Copia14" ComponentName="L2+Q72-POWER" Canvas.Left="879" Canvas.Top="895" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:GroupLabel GroupName="L0+997" Canvas.Left="356" Canvas.Top="751" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel x:Name="S210_Copia7" ComponentName="L0+S521" Canvas.Left="251" Canvas.Top="869" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:GroupLabel GroupName="L1+810" Canvas.Left="984" Canvas.Top="596" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:GroupLabel GroupName="L2+810" Canvas.Left="984" Canvas.Top="901" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    </Canvas>
+  <Canvas Height="1124" Width="2334" >
+    <Machines:QX_HMI Height="66" Width="56" Canvas.Left="262" Canvas.Top="241" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <Machines:QX_LongElectricalCabinet Width="188" Height="75" Canvas.Left="165" Canvas.Top="347" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <Machines:QX_ShortElectricalCabinet Width="54" Height="64" Canvas.Left="615" Canvas.Top="257" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <Machines:QX_HMI Height="66" Width="56" Canvas.Left="388" Canvas.Top="249" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <Machines:QX_HMI Height="66" Width="56" Canvas.Left="496" Canvas.Top="253" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="ESTOP" ComponentName="ESTOP-AREA-01" Canvas.Left="250" Canvas.Top="108" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21" ComponentName="L0+Q51" Canvas.Left="41" Canvas.Top="678" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q01" ComponentName="Q01" Canvas.Left="597" Canvas.Top="197" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="HMI_01" ComponentName="HMI-01" Canvas.Left="246" Canvas.Top="189" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="S210" ComponentName="L0+S510" Canvas.Left="41" Canvas.Top="806" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="HMI_01_Copia" ComponentName="HMI-02" Canvas.Left="370" Canvas.Top="197" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="HMI_01_Copia1" ComponentName="HMI-03" Canvas.Left="479" Canvas.Top="201" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <Misc:DashedLine RenderTransformOrigin="0.5,0.5" Height="4" Width="416" Canvas.Left="34" Canvas.Top="41" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <Labels:GroupLabel GroupName="L0+330" Canvas.Left="146" Canvas.Top="674" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Misc:DashedLine RenderTransformOrigin="0.5,0.5" Height="4" Width="208" Canvas.Left="-68" Canvas.Top="144" HorizontalAlignment="Left" VerticalAlignment="Top">
+      <Misc:DashedLine.RenderTransform>
+        <TransformGroup>
+          <RotateTransform Angle="90"/>
+        </TransformGroup>
+      </Misc:DashedLine.RenderTransform>
+    </Misc:DashedLine>
+    <Labels:DeviceLabel x:Name="Q21_Copia" ComponentName="L0+Q51-POWER" Canvas.Left="41" Canvas.Top="740" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:GroupLabel GroupName="L0+508" Canvas.Left="356" Canvas.Top="676" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia1" ComponentName="L0+Q52" Canvas.Left="251" Canvas.Top="678" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="S210_Copia" ComponentName="L0+S520" Canvas.Left="251" Canvas.Top="806" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:GroupLabel GroupName="L1+230" Canvas.Left="564" Canvas.Top="526" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia3" ComponentName="L1+Q41" Canvas.Left="459" Canvas.Top="528" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="S210_Copia1" ComponentName="L1+S410" Canvas.Left="459" Canvas.Top="656" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia4" ComponentName="L1+Q41-POWER" Canvas.Left="459" Canvas.Top="590" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:GroupLabel GroupName="L2+230" Canvas.Left="564" Canvas.Top="831" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia5" ComponentName="L2+Q42" Canvas.Left="459" Canvas.Top="833" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="S210_Copia2" ComponentName="L2+S420" Canvas.Left="459" Canvas.Top="961" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia6" ComponentName="L2+Q42-POWER" Canvas.Left="459" Canvas.Top="895" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:GroupLabel GroupName="L1+430" Canvas.Left="774" Canvas.Top="526" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia7" ComponentName="L1+Q61" Canvas.Left="669" Canvas.Top="528" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="S210_Copia3" ComponentName="L1+S610" Canvas.Left="669" Canvas.Top="656" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia8" ComponentName="L1+Q61-POWER" Canvas.Left="669" Canvas.Top="590" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:GroupLabel GroupName="L1+440" Canvas.Left="774" Canvas.Top="601" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:GroupLabel GroupName="L2+430" Canvas.Left="774" Canvas.Top="831" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia9" ComponentName="L2+Q62" Canvas.Left="669" Canvas.Top="833" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="S210_Copia4" ComponentName="L2+S620" Canvas.Left="669" Canvas.Top="961" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia10" ComponentName="L2+Q62-POWER" Canvas.Left="669" Canvas.Top="895" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:GroupLabel GroupName="L2+440" Canvas.Left="774" Canvas.Top="906" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:GroupLabel GroupName="L1+530" Canvas.Left="984" Canvas.Top="526" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia11" ComponentName="L1+Q71" Canvas.Left="879" Canvas.Top="528" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="S210_Copia5" ComponentName="L1+S710" Canvas.Left="879" Canvas.Top="656" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia12" ComponentName="L1+Q71-POWER" Canvas.Left="879" Canvas.Top="590" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:GroupLabel GroupName="L2+530" Canvas.Left="984" Canvas.Top="831" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia13" ComponentName="L2+Q72" Canvas.Left="879" Canvas.Top="833" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="S210_Copia6" ComponentName="L2+S720" Canvas.Left="879" Canvas.Top="961" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia14" ComponentName="L2+Q72-POWER" Canvas.Left="879" Canvas.Top="895" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:GroupLabel GroupName="L0+997" Canvas.Left="356" Canvas.Top="751" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="S210_Copia7" ComponentName="L0+S521" Canvas.Left="251" Canvas.Top="869" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:GroupLabel GroupName="L1+810" Canvas.Left="984" Canvas.Top="596" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:GroupLabel GroupName="L2+810" Canvas.Left="984" Canvas.Top="901" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia2" ComponentName="BANZO-COMM" Canvas.Left="411" Canvas.Top="392" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia15" ComponentName="BOILER-COMM" Canvas.Left="524" Canvas.Top="392" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia16" ComponentName="DWSTR-COMM" Canvas.Left="637" Canvas.Top="393" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    <Labels:DeviceLabel x:Name="Q21_Copia17" ComponentName="TREATM-COMM" Canvas.Left="749" Canvas.Top="392" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+  </Canvas>
 </UserControl>
