@@ -24,6 +24,5 @@ namespace Prevu.Synoptics
         {
             InitializeComponent();
         }
-
     }
 }
