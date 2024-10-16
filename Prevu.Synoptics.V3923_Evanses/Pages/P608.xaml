@@ -6,6 +6,7 @@
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings" 
+             xmlns:Custom="https://github.com/XAMLMarkupExtensions/WPFLocalizationExtension" 
              x:Class="Prevu.Synoptics.P608" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
@@ -337,5 +338,23 @@
             </Machines:External.RenderTransform>
         </Machines:External>
         <Labels:DeviceLabel ComponentName="609-71-ECS1" Canvas.Left="1099" Canvas.Top="713" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock VerticalAlignment="Top" Canvas.Top="734" Text="3rd party, who?" TextWrapping="Wrap" TextAlignment="Right" Opacity="0.7" Canvas.Left="800" HorizontalAlignment="Left" FontSize="26" Foreground="White"/>
+        <TextBlock Canvas.Top="783" Text="{Custom:Loc Silos}" TextWrapping="Wrap" TextAlignment="Right" Opacity="0.7" Canvas.Left="800" FontSize="26" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Misc:DashedLine RenderTransformOrigin="0.5,0.5" Height="4" Width="116" Canvas.Left="731" Canvas.Top="775" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Misc:DashedLine.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Misc:DashedLine.RenderTransform>
+        </Misc:DashedLine>
+        <Misc:DashedLine RenderTransformOrigin="0.5,0.5" Height="4" Width="268" Canvas.Left="788" Canvas.Top="718" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Misc:DashedLine RenderTransformOrigin="0.5,0.5" Height="4" Width="268" Canvas.Left="788" Canvas.Top="832" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Misc:DashedLine RenderTransformOrigin="0.5,0.5" Height="4" Width="116" Canvas.Left="997" Canvas.Top="775" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Misc:DashedLine.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Misc:DashedLine.RenderTransform>
+        </Misc:DashedLine>
     </Canvas>
 </UserControl>
