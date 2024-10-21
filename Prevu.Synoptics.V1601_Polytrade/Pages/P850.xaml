@@ -98,6 +98,15 @@
         <Rectangle Height="52" Stroke="Black" Width="2" RenderTransformOrigin="0.5,0.5" Canvas.Left="560" Canvas.Top="592" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Rectangle Height="52" Stroke="Black" Width="2" RenderTransformOrigin="0.5,0.5" Canvas.Left="974" Canvas.Top="237" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Machines:Waste Height="46" Width="44" RenderTransformOrigin="0.5,0.5" Canvas.Left="190" Canvas.Top="278" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Misc:DashedLine RenderTransformOrigin="0.5,0.5" Height="4" Width="756" Canvas.Left="409" Canvas.Top="432" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Misc:DashedLine.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Misc:DashedLine.RenderTransform>
+        </Misc:DashedLine>
+        <TextBlock TextWrapping="Wrap" Height="50" Width="94" TextAlignment="Center" FontSize="36" Foreground="Black" FontWeight="Bold" Canvas.Left="660" Canvas.Top="78" HorizontalAlignment="Left" VerticalAlignment="Top"><Run Language="it-it" Text="S610"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Height="50" Width="94" TextAlignment="Center" FontSize="36" Foreground="Black" FontWeight="Bold" Canvas.Left="815" Canvas.Top="78" HorizontalAlignment="Left" VerticalAlignment="Center"><Run Language="it-it" Text="S611"/></TextBlock>
         <Labels:JumpLabel HorizontalAlignment="Left" VerticalAlignment="Top" JumpFromLabel="850-01-MA1" JumpToLabel="578-01-MA1" Canvas.Left="202" Canvas.Top="58" />
         <Labels:DeviceLabel ComponentName="850-01-MA1" Canvas.Left="268" Canvas.Top="142" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="854-01-MA1" Canvas.Left="244" Canvas.Top="284" HorizontalAlignment="Left" VerticalAlignment="Top" />
@@ -109,14 +118,5 @@
         <Labels:DetailsLabel ComponentName="997-BAGS" DetailsPageName="D997" Canvas.Left="1140" Canvas.Top="506" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="997-25-CV1" Canvas.Left="1120" Canvas.Top="398" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="311-71-ECS1" Canvas.Left="1008" Canvas.Top="285" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Misc:DashedLine RenderTransformOrigin="0.5,0.5" Height="4" Width="756" Canvas.Left="409" Canvas.Top="432" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Misc:DashedLine.RenderTransform>
-                <TransformGroup>
-                    <RotateTransform Angle="90"/>
-                </TransformGroup>
-            </Misc:DashedLine.RenderTransform>
-        </Misc:DashedLine>
-        <TextBlock TextWrapping="Wrap" Height="50" Width="94" TextAlignment="Center" FontSize="36" Foreground="Black" FontWeight="Bold" Canvas.Left="660" Canvas.Top="78" HorizontalAlignment="Left" VerticalAlignment="Top"><Run Language="it-it" Text="S610"/></TextBlock>
-        <TextBlock TextWrapping="Wrap" Height="50" Width="94" TextAlignment="Center" FontSize="36" Foreground="Black" FontWeight="Bold" Canvas.Left="815" Canvas.Top="78" HorizontalAlignment="Left" VerticalAlignment="Center"><Run Language="it-it" Text="S611"/></TextBlock>
     </Canvas>
 </UserControl>
