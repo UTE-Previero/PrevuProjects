@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="Prevu.Synoptics.D510_2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             mc:Ignorable="d" 
+             d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Height="276" Width="415" >
+        <Labels:Pipe Width="51" Color="Water" StatusComponent="519-01-MA1" Canvas.Left="58" Canvas.Top="87" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:Pipe Width="63" Color="Water" StatusComponent="519-01-MA1" VisibilityComponent="510-33-CV1" Canvas.Left="147" Canvas.Top="180" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:Pipe Width="63" Color="Water" StatusComponent="519-01-MA1" VisibilityComponent="510-34-CV1" Canvas.Left="150" Canvas.Top="87" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:Pipe Width="51" Color="Water" StatusComponent="519-01-MA1" Canvas.Left="58" Canvas.Top="180" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:CV_Valve Height="100" Width="100" RenderTransformOrigin="0.5,0.5" Canvas.Left="81" Canvas.Top="132" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Machines:CV_Valve.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Machines:CV_Valve.RenderTransform>
+        </Machines:CV_Valve>
+        <Machines:CV_Valve Height="100" Width="100" RenderTransformOrigin="0.5,0.5" Canvas.Left="81" Canvas.Top="39" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Machines:CV_Valve.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Machines:CV_Valve.RenderTransform>
+        </Machines:CV_Valve>
+        <Rectangle Height="30" Stroke="Black" Width="6" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="58" Canvas.Top="168" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Rectangle Height="30" Stroke="Black" Width="6" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="58" Canvas.Top="75" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_WCE_Centrifuge Canvas.Left="184" Canvas.Top="42" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="510-34-CV1" RenderTransformOrigin="0.567,-2.17" Canvas.Left="86" Canvas.Top="15" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="510-33-CV1" RenderTransformOrigin="0.567,-2.17" Canvas.Left="86" Canvas.Top="205" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    </Canvas>
+</UserControl>
