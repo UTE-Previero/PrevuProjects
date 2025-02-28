@@ -10,61 +10,49 @@
              x:Class="Prevu.Synoptics.D997" 
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}" Width="680" Height="496">
-  <Canvas>
-    <Machines:V01_BBF_DoubleBag Canvas.Left="80" Canvas.Top="72" Height="330" Width="523" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    <Machines:V01_SB_SafetyBarrier Canvas.Left="44" Canvas.Top="295" Height="126" Width="19" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    <Machines:V01_SB_SafetyBarrier Canvas.Left="618" Canvas.Top="295" Height="126" Width="19" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="997-41-BAG" SignalName="LSHA" Canvas.Left="160" Canvas.Top="134"/>
-    <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="997-41-BAG" SignalName="SEL" Canvas.Left="105" Canvas.Top="267" SignalPosition="Top" Width="230"/>
-    <Labels:SignalLabel ComponentName="997-42-BAG" SignalName="LSHA" Canvas.Left="403" Canvas.Top="134" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    <Labels:SignalLabel ComponentName="997-42-BAG" SignalName="SEL" Canvas.Left="345" Canvas.Top="269" HorizontalAlignment="Center" VerticalAlignment="Top" SignalPosition="Top" Width="235"/>
-    <Labels:DeviceLabel ComponentName="997-32-CV1" Canvas.Left="175" Canvas.Top="62" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    <Labels:DeviceLabel ComponentName="997-33-CV1" Canvas.Left="418" Canvas.Top="62" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    <Labels:DeviceLabel ComponentName="997-SHAKE" Canvas.Left="296" Canvas.Top="24" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    <Labels:Pipe Width="14" RenderTransformOrigin="0.5,0.5" StatusComponent="997-33-CV1" Canvas.Left="494" Canvas.Top="117" HorizontalAlignment="Center" VerticalAlignment="Top">
-      <Labels:Pipe.RenderTransform>
-        <TransformGroup>
-          <ScaleTransform />
-          <SkewTransform/>
-          <RotateTransform Angle="90"/>
-          <TranslateTransform/>
-        </TransformGroup>
-      </Labels:Pipe.RenderTransform>
-    </Labels:Pipe>
-    <Labels:Pipe Width="14" RenderTransformOrigin="0.5,0.5" StatusComponent="997-33-CV1" Canvas.Left="417" Canvas.Top="117" HorizontalAlignment="Center" VerticalAlignment="Top">
-      <Labels:Pipe.RenderTransform>
-        <TransformGroup>
-          <ScaleTransform />
-          <SkewTransform/>
-          <RotateTransform Angle="90"/>
-          <TranslateTransform/>
-        </TransformGroup>
-      </Labels:Pipe.RenderTransform>
-    </Labels:Pipe>
-    <Labels:Pipe Width="14" RenderTransformOrigin="0.5,0.5" StatusComponent="997-32-CV1" Canvas.Left="250" Canvas.Top="117" HorizontalAlignment="Center" VerticalAlignment="Top">
-      <Labels:Pipe.RenderTransform>
-        <TransformGroup>
-          <ScaleTransform />
-          <SkewTransform/>
-          <RotateTransform Angle="90"/>
-          <TranslateTransform/>
-        </TransformGroup>
-      </Labels:Pipe.RenderTransform>
-    </Labels:Pipe>
-    <Labels:Pipe Width="14" RenderTransformOrigin="0.5,0.5" StatusComponent="997-32-CV1" Canvas.Left="174" Canvas.Top="117" HorizontalAlignment="Center" VerticalAlignment="Top">
-      <Labels:Pipe.RenderTransform>
-        <TransformGroup>
-          <ScaleTransform />
-          <SkewTransform/>
-          <RotateTransform Angle="90"/>
-          <TranslateTransform/>
-        </TransformGroup>
-      </Labels:Pipe.RenderTransform>
-    </Labels:Pipe>
-    <Labels:Pipe Width="270" RenderTransformOrigin="0.5,0.5" StatusComponent="" Canvas.Left="52" Canvas.Top="344" HorizontalAlignment="Left" VerticalAlignment="Center" VisibilityComponent="997-SHAKE" VisibilitySignal="ESR" Color="ByProduct" Height="6"/>
-    <Labels:SignalLabel ComponentName="997-41-BAG" SignalName="PEC" Canvas.Left="105" Canvas.Top="382" SignalPosition="Top" Width="230" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    <Labels:SignalLabel ComponentName="997-42-BAG" SignalName="PEC" Canvas.Left="346" Canvas.Top="381" SignalPosition="Top" Width="234" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    <Labels:SignalLabel ComponentName="997-SHAKE" SignalName="ESR" Canvas.Left="225" Canvas.Top="326" SignalPosition="Top" Width="230" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-    <Labels:Pipe Width="270" RenderTransformOrigin="0.5,0.5" StatusComponent="" Canvas.Left="358" Canvas.Top="344" VisibilityComponent="997-SHAKE" VisibilitySignal="ESR" Color="ByProduct" Height="6" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-  </Canvas>
+    <Canvas>
+        <Machines:V01_BBF_DoubleBag Canvas.Left="80" Canvas.Top="72" Height="330" Width="523" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:Pipe Width="270" RenderTransformOrigin="0.5,0.5" StatusComponent="" Canvas.Left="358" Canvas.Top="344" VisibilityComponent="997-SHAKE" VisibilitySignal="ESR" Color="ByProduct" Height="6" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:Pipe Width="14" RenderTransformOrigin="0.5,0.5" StatusComponent="997-33-CV1" Canvas.Left="494" Canvas.Top="117" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Width="14" RenderTransformOrigin="0.5,0.5" StatusComponent="997-33-CV1" Canvas.Left="417" Canvas.Top="117" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Width="14" RenderTransformOrigin="0.5,0.5" StatusComponent="997-32-CV1" Canvas.Left="250" Canvas.Top="117" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Width="14" RenderTransformOrigin="0.5,0.5" StatusComponent="997-32-CV1" Canvas.Left="174" Canvas.Top="117" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Width="270" RenderTransformOrigin="0.5,0.5" StatusComponent="" Canvas.Left="52" Canvas.Top="344" HorizontalAlignment="Left" VerticalAlignment="Center" VisibilityComponent="997-SHAKE" VisibilitySignal="ESR" Color="ByProduct" Height="6"/>
+        <Machines:V01_SB_SafetyBarrier Canvas.Left="44" Canvas.Top="295" Height="126" Width="19" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_SB_SafetyBarrier Canvas.Left="618" Canvas.Top="295" Height="126" Width="19" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:SignalLabel ComponentName="997-41-BAG" SignalName="PEC" Canvas.Left="105" Canvas.Top="382" SignalPosition="Top" Width="230" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:SignalLabel ComponentName="997-42-BAG" SignalName="PEC" Canvas.Left="346" Canvas.Top="381" SignalPosition="Top" Width="234" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:SignalLabel ComponentName="997-SHAKE" SignalName="ESR" Canvas.Left="225" Canvas.Top="326" SignalPosition="Top" Width="230" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="997-41-BAG" SignalName="LSHA" Canvas.Left="160" Canvas.Top="134"/>
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="997-41-BAG" SignalName="SEL" Canvas.Left="105" Canvas.Top="267" SignalPosition="Top" Width="230"/>
+        <Labels:SignalLabel ComponentName="997-42-BAG" SignalName="LSHA" Canvas.Left="403" Canvas.Top="134" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:SignalLabel ComponentName="997-42-BAG" SignalName="SEL" Canvas.Left="345" Canvas.Top="269" HorizontalAlignment="Center" VerticalAlignment="Top" SignalPosition="Top" Width="235"/>
+        <Labels:DeviceLabel ComponentName="997-32-CV1" Canvas.Left="175" Canvas.Top="62" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="997-33-CV1" Canvas.Left="418" Canvas.Top="62" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="997-SHAKE" Canvas.Left="296" Canvas.Top="24" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    </Canvas>
 </UserControl>
