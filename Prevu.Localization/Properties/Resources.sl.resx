@@ -10422,4 +10422,58 @@
   <data name="M_INFO_GT_VALVES_2" xml:space="preserve">
     <value>Izpustni ventili so izgubili svoj vzajemni položaj. Varne zapore. Operater jih lahko zdaj odpre istočasno v načinu vzdrževanja</value>
   </data>
+  <data name="P_INFO_DISAB_SENS" xml:space="preserve">
+    <value>Lahko se začasno uporablja v primeru okvare senzorja. Ko je senzor onemogočen, je njegovo branje prikrito in vrednost, prikazana na HMI, je tista, ki jo proces potrebuje za proizvodnjo. Senzor je treba zamenjati čim prej.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_1" xml:space="preserve">
+    <value>Kliknite to zastavico, ko senzor pregleda pravo raven materiala, to je tisto, ki ustreza vrednosti, navedeni v relativnem parametru. To je način, kako senzor naučiti, da je to prikazana raven.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_2" xml:space="preserve">
+    <value>Nastavite vrednost najvišje ravni, ki ustreza ravni materiala v stroju, in nato kliknite »Nastavi celotno lestvico«, da pridobite to mero kot vrednost najvišje ravni. Npr.: Nastavite 90 %, ko je koš skoraj poln, pri približno 90 % svoje zmogljivosti.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_3" xml:space="preserve">
+    <value>Nastavite vrednost najnižje ravni, ki ustreza ravni materiala v stroju, in nato kliknite »Nastavi prazno lestvico«, da pridobite to mero kot vrednost najnižje ravni. Npr.: Nastavite 10 %, ko je koš skoraj prazen, pri približno 10 % njegove prostornine.</value>
+  </data>
+  <data name="P_INFO_DIS_MODUL_MTR" xml:space="preserve">
+    <value>Kliknite to zastavico, da bo motor deloval s konstantno hitrostjo. Če ta zastavica ni nastavljena, motor poganja logika procesa s spremenljivo hitrostjo v času.</value>
+  </data>
+  <data name="P_INFO_PAUSE_TIME_1" xml:space="preserve">
+    <value>Tukaj nastavite čas, ki se bo upošteval kot premor ali izpad komponente v delovnem načinu, ki temelji na zaporedju VKLOP-IZKLOP. Če je ta čas nastavljen na nič, komponenta, na katero se nanaša ta parameter, ne bo imela več izpadov zaradi zaporedja VKLOP-IZKLOP, razen če je celo čas VKLOPA nastavljen na nič.</value>
+  </data>
+  <data name="P_INFO_ON_TIME_1" xml:space="preserve">
+    <value>Tukaj nastavite čas, ki bo obravnavan kot čas aktivnosti ali čas delovanja komponente znotraj delovnega načina, ki temelji na zaporedju VKLOP-IZKLOP. Če je ta čas nastavljen na nič, komponenta, na katero se ta parameter nanaša, ne bo imela več časa aktivnosti, kar pomeni, da bo ustavljena med zaporedjem VKLOP-IZKLOP. Opomba: Če je čas premora nastavljen na nič in je čas vklopa nad nič, je komponenta ukazana, da mora biti vedno VKLOPLJENA znotraj zaporedja VKLOP-IZKLOP.</value>
+  </data>
+  <data name="P_INFO_DIS_MODUL_VLV" xml:space="preserve">
+    <value>Kliknite to zastavico, če želite, da ventil deluje pri stalni referenčni vrednosti. Če ta zastavica ni nastavljena, ventil poganja logika procesa pri spremenljivi referenci v času.</value>
+  </data>
+  <data name="P_INFO_PROP_GAIN" xml:space="preserve">
+    <value>Regulacija v domeni razlike med nastavljeno vrednostjo in povratno informacijo. Višja kot je ta vrednost, višja je predvsem reaktivnost sistema, ko se razlika med nastavljeno vrednostjo in povratno informacijo poveča. Opomba: Če je ta dobiček previsok, lahko uredba postane nestabilna. Če je prenizka, bo regulacija zelo stabilna, a potencialno nezadostna, da bi tako spodbudila proizvodnjo, da bi dosegla želeni cilj.</value>
+  </data>
+  <data name="P_INFO_INTGR_SMP_TIME" xml:space="preserve">
+    <value>Višja je ta vrednost, počasnejša je odzivnost sistema. Ta čas je tisti, ki ga za delo uporablja parameter integralnega ojačanja. En vzorec neprekinjeno nasledi naslednji.</value>
+  </data>
+  <data name="P_INFO_INTGR_GAIN" xml:space="preserve">
+    <value>Regulacija v časovni domeni. Višja je ta vrednost, višja je reaktivnost sistema vsakič, ko poteče čas integralnega vzorca. Opomba: če je ta dobiček previsok, se uredba morda ne more odzvati na hitre spremembe povratnih informacij. Če je prenizka, bo regulacija hitrejša, vendar potencialno nezadostna, da bi dosegla dovolj proizvodnje, da bi dosegla želeni cilj. Če je ta dobiček nastavljen na nič, se regulacija v časovni domeni ne izvede.</value>
+  </data>
+  <data name="P_INFO_ACT_PI_OUT" xml:space="preserve">
+    <value>Dejanski izhod regulacije, ki se uporablja kot odpravljanje napak ali diagnostika ali za ovrednotenje pravilne parametrizacije parametrov regulacije, ki jih je treba nastaviti glede na splošno vedenje sistema.</value>
+  </data>
+  <data name="P_INFO_ANTICAV_1" xml:space="preserve">
+    <value>Črpalka za kratek čas ciklično zmanjša svojo hitrost (Npr.: -5 % za 3 sekunde) z namenom preprečevanja kavitacije. Ta parameter predstavlja čas med enim kratkim znižanjem hitrosti in naslednjim. Če je nastavljena na nič, se znižanje hitrosti ne izvede.</value>
+  </data>
+  <data name="P_INFO_ANTICAV_2" xml:space="preserve">
+    <value>Črpalka zmanjša svojo hitrost na vrednost "Nižja hitrost za minimalni tok - nastavljena točka" za čas "Nižja hitrost za minimalni tok - trajanje", da odpravi kavitacijo, ki je v teku (kar prepoznamo po znižanju toka pod mejo, nastavljeno v HMI za "Najmanjši tok"). Če protikavitacijski postopek uspe prekiniti kavitacijo, se črpalka vrne na procesno hitrost brez globalnega signala. V nasprotnem primeru, ko se hitrost procesa obnovi, se ustvari alarm "Motor Current Below Minimum Range Limit – Possible Cavitation". V tem primeru sistem NE bo znova poskušal samodejno dekavitirati črpalke, ker prvi poskus ni uspel, ampak se bo obrnil na operaterja za pregled parametrov ali za druga dejanja. Če je trajanje nastavljeno na nič, se dekavitacija ne izvede v primeru minimalnega toka črpalke.</value>
+  </data>
+  <data name="P_INFO_MICROF_1" xml:space="preserve">
+    <value>Na začetku proizvodnje je možno aktivirati "posebno čiščenje", ki bi moralo biti intenzivnejše od naslednjih drugih, da se stopijo morebitni strjeni ostanki na mreži filtra. S tem parametrom lahko nastavite njegovo trajanje.</value>
+  </data>
+  <data name="P_INFO_MICROF_2" xml:space="preserve">
+    <value>Na koncu proizvodnje (cikel zaustavitve) je možno zmanjšati čas premora med enim čiščenjem in naslednjim, da se poveča učinek vode na mrežo in prepreči strjevanje ostankov med izpadom linije.</value>
+  </data>
+  <data name="P_INFO_MIN_LEV_BYPS" xml:space="preserve">
+    <value>Kliknite to zastavico, da preizkusite vrtenje črpalke v primeru, da ni prisotne minimalne ravni. V tem primeru bo črpalka lahko delovala nekaj sekund brez minimalne ravni z namenom samo preverjanja vrtenja. Ta zastavica se samodejno ponastavi, ko se črpalka začne premikati.</value>
+  </data>
+  <data name="P_INFO_MTR_NOM_AMP" xml:space="preserve">
+    <value>Tukaj nastavite nazivni tok motorja. To vrednost je mogoče doseči na nalepki motorja (tisti, ki je prikazana pri ustrezni napetosti motorja), da bi predstavljala najbolj natančno mero trenutne vrednosti v odstotkih v pogledu HMI.</value>
+  </data>
 </root>

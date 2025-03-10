@@ -10422,4 +10422,58 @@
   <data name="M_INFO_GT_VALVES_2" xml:space="preserve">
     <value>Les vannes de décharge ont perdu leur position réciproque. Verrouillage sécurisé. L'opérateur est désormais capable de les ouvrir en même temps en mode maintenance</value>
   </data>
+  <data name="P_INFO_DISAB_SENS" xml:space="preserve">
+    <value>Il peut être temporairement utilisé en cas de dysfonctionnement du capteur. Lorsque le capteur est désactivé, sa lecture est masquée et la valeur affichée sur l'IHM est celle dont le processus a besoin pour la production. Le capteur doit être remplacé dès que possible.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_1" xml:space="preserve">
+    <value>Cliquez sur ce drapeau une fois que le bon niveau de matériau, c'est-à-dire celui qui correspond à la valeur indiquée dans le paramètre relatif, est scanné par le capteur. C'est ainsi que l'on apprend au capteur qu'il s'agit du niveau indiqué.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_2" xml:space="preserve">
+    <value>Définissez la valeur du niveau maximum qui correspond au niveau de matériau dans la machine et cliquez ensuite sur « Définir la pleine échelle » pour acquérir cette mesure comme valeur du niveau maximum. Par exemple : réglez 90 % lorsque la trémie est presque pleine, à environ 90 % de sa capacité.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_3" xml:space="preserve">
+    <value>Définissez la valeur du niveau minimum qui correspond au niveau de matériau dans la machine et cliquez ensuite sur « Définir l'échelle vide » pour acquérir cette mesure comme valeur du niveau minimum. Par exemple : réglez 10 % lorsque la trémie est presque vide, à environ 10 % de sa capacité.</value>
+  </data>
+  <data name="P_INFO_DIS_MODUL_MTR" xml:space="preserve">
+    <value>Cliquez sur ce drapeau pour laisser le moteur fonctionner à vitesse constante. Si cet indicateur n'est pas défini, le moteur est entraîné par la logique du processus à vitesse variable dans le temps.</value>
+  </data>
+  <data name="P_INFO_PAUSE_TIME_1" xml:space="preserve">
+    <value>Définissez ici le temps à considérer comme la pause ou le temps d’arrêt du composant dans un mode de fonctionnement basé sur la séquence ON-OFF. Si ce temps est réglé à zéro, le composant auquel ce paramètre fait référence n'aura plus de temps d'arrêt en raison de la séquence ON-OFF, sauf dans le cas où même le temps ON est réglé à zéro.</value>
+  </data>
+  <data name="P_INFO_ON_TIME_1" xml:space="preserve">
+    <value>Définissez ici le temps à considérer comme temps d'activité, ou temps d'exécution, du composant dans un mode de fonctionnement basé sur la séquence ON-OFF. Si ce temps est réglé à zéro, le composant auquel ce paramètre fait référence n'aura plus de temps d'activité, ce qui signifie qu'il sera arrêté pendant la séquence ON-OFF. Remarque : si le temps de pause est réglé sur zéro et que le temps d'activation est supérieur à zéro, le composant doit être toujours allumé dans la séquence marche-arrêt.</value>
+  </data>
+  <data name="P_INFO_DIS_MODUL_VLV" xml:space="preserve">
+    <value>Cliquez sur ce drapeau pour laisser la vanne fonctionner à référence constante. Si cet indicateur n'est pas défini, la vanne est pilotée par la logique du processus à une référence variable dans le temps.</value>
+  </data>
+  <data name="P_INFO_PROP_GAIN" xml:space="preserve">
+    <value>Régulation dans le domaine de la différence entre la valeur définie et la rétroaction. Plus cette valeur est élevée, plus la réactivité du système est élevée, surtout lorsque la différence entre la consigne et le retour augmente. Remarque : si ce gain est trop élevé, la régulation peut devenir instable. Si elle est trop faible, la régulation sera très précise mais potentiellement pas suffisante pour pousser suffisamment la production pour atteindre l'objectif souhaité.</value>
+  </data>
+  <data name="P_INFO_INTGR_SMP_TIME" xml:space="preserve">
+    <value>Plus cette valeur est élevée, plus la réactivité du système est lente. Cette fois est celle qui est utilisée par le paramètre de gain intégral pour travailler. Un échantillon est succédé par le suivant en continu.</value>
+  </data>
+  <data name="P_INFO_INTGR_GAIN" xml:space="preserve">
+    <value>Régulation dans le domaine temporel. Plus cette valeur est élevée, plus la réactivité du système est élevée à chaque fois que le temps d'échantillonnage intégral expire. Remarque : si ce gain est trop élevé, la régulation peut devenir incapable de répondre à une variation rapide du feedback. Si elle est trop faible, la régulation sera plus stricte mais potentiellement pas suffisante pour pousser suffisamment la production pour atteindre l’objectif souhaité. Si ce gain est défini sur zéro, aucune régulation dans le domaine temporel n'est effectuée.</value>
+  </data>
+  <data name="P_INFO_ACT_PI_OUT" xml:space="preserve">
+    <value>Sortie de régulation réelle à utiliser comme débogage ou diagnostic ou pour évaluer le paramétrage approprié des paramètres de régulation qui doivent être définis en tenant compte du comportement global du système.</value>
+  </data>
+  <data name="P_INFO_ANTICAV_1" xml:space="preserve">
+    <value>La pompe réduit cycliquement sa vitesse pendant une courte période (par exemple : -5 % pendant 3 secondes) dans le but d'éviter la cavitation. Ce paramètre représente le temps entre une courte diminution de vitesse et la suivante. S'il est réglé sur zéro, aucune diminution de vitesse n'est effectuée.</value>
+  </data>
+  <data name="P_INFO_ANTICAV_2" xml:space="preserve">
+    <value>La pompe diminue sa vitesse jusqu'à la valeur de "Vitesse inférieure pour courant minimum - Point de consigne" pendant le temps "Vitesse inférieure pour courant minimum - Durée" afin de résoudre la cavitation en cours (qui est reconnue par la baisse du courant en dessous de la limite définie dans l'IHM de "Courant minimum"). Si la procédure anti-cavitation réussit à interrompre la cavitation, la pompe revient à la vitesse de processus sans aucun signal global. Sinon, lorsque la vitesse du processus est rétablie, l'alarme « Courant moteur inférieur à la limite minimale de plage – Cavitation possible » est générée. Dans ce cas, le système ne tentera PAS de déscaviter automatiquement la pompe puisque la première tentative a échoué, mais demandera à l'opérateur de revoir les paramètres ou d'autres actions. Si la durée est réglée sur zéro, aucune décavitation n'est effectuée en cas de courant minimum de la pompe.</value>
+  </data>
+  <data name="P_INFO_MICROF_1" xml:space="preserve">
+    <value>Au début de la production, il est possible d'activer un "nettoyage spécial" qui doit être plus intensif que les suivants afin de faire fondre les éventuels résidus solidifiés sur le filet filtrant. Sa durée peut être définie par ce paramètre.</value>
+  </data>
+  <data name="P_INFO_MICROF_2" xml:space="preserve">
+    <value>En fin de production (cycle d'arrêt), il est possible de réduire le temps de pause entre un nettoyage et le suivant afin d'intensifier l'effet de l'eau sur le filet et d'éviter la solidification des résidus pendant le temps d'arrêt de la ligne.</value>
+  </data>
+  <data name="P_INFO_MIN_LEV_BYPS" xml:space="preserve">
+    <value>Cliquez sur ce drapeau pour tester la rotation de la pompe en cas d'absence de niveau minimum. Dans ce cas, la pompe sera autorisée à fonctionner pendant quelques secondes sans niveau minimum dans le seul but de vérifier la rotation. Cet indicateur est automatiquement réinitialisé une fois que la pompe commence à bouger.</value>
+  </data>
+  <data name="P_INFO_MTR_NOM_AMP" xml:space="preserve">
+    <value>Réglez ici le courant nominal du moteur. Cette valeur peut être obtenue sur l'étiquette du moteur (celle indiquée à la tension du moteur appropriée) afin de représenter la mesure la plus précise de la valeur en pourcentage actuelle dans la vue HMI.</value>
+  </data>
 </root>

@@ -10422,4 +10422,58 @@
   <data name="M_INFO_GT_VALVES_2" xml:space="preserve">
     <value>Auslassventile haben ihre gegenseitige Position verloren. Sichere Verriegelungen. Der Bediener kann sie jetzt im Wartungsmodus gleichzeitig öffnen</value>
   </data>
+  <data name="P_INFO_DISAB_SENS" xml:space="preserve">
+    <value>Es kann vorübergehend im Falle einer Sensorfehlfunktion verwendet werden. Wenn der Sensor deaktiviert ist, wird sein Messwert maskiert und der auf der HMI angezeigte Wert ist derjenige, den der Prozess für die Produktion benötigt. Der Sensor muss so schnell wie möglich ausgetauscht werden.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_1" xml:space="preserve">
+    <value>Klicken Sie auf diese Flagge, sobald der richtige Materialstand, d. h. derjenige, der dem im relativen Parameter angegebenen Wert entspricht, vom Sensor gescannt wurde. Auf diese Weise wird dem Sensor beigebracht, dass dies der angezeigte Füllstand ist.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_2" xml:space="preserve">
+    <value>Stellen Sie den Wert des maximalen Füllstands ein, der dem Füllstand des Materials in der Maschine entspricht, und klicken Sie dann auf „Vollständigen Maßstab festlegen“, um diese Messung als Wert des maximalen Füllstands zu erfassen. Beispiel: Stellen Sie 90 % ein, wenn der Trichter fast voll ist, d. h. bei etwa 90 % seiner Kapazität.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_3" xml:space="preserve">
+    <value>Stellen Sie den Wert des Mindestfüllstands ein, der dem Materialfüllstand in der Maschine entspricht, und klicken Sie dann auf „Leerwaage festlegen“, um diese Messung als Wert des Mindestfüllstands zu übernehmen. Beispiel: Stellen Sie 10 % ein, wenn der Trichter fast leer ist, etwa 10 % seiner Kapazität.</value>
+  </data>
+  <data name="P_INFO_DIS_MODUL_MTR" xml:space="preserve">
+    <value>Klicken Sie auf diese Flagge, um den Motor mit konstanter Geschwindigkeit laufen zu lassen. Wenn dieses Flag nicht gesetzt ist, wird der Motor durch die Logik des Prozesses mit zeitlich variabler Geschwindigkeit angetrieben.</value>
+  </data>
+  <data name="P_INFO_PAUSE_TIME_1" xml:space="preserve">
+    <value>Stellen Sie hier die Zeit ein, die als Pause oder Ausfallzeit der Komponente innerhalb eines Arbeitsmodus betrachtet werden soll, der auf einer EIN-AUS-Sequenz basiert. Wenn diese Zeit auf Null gesetzt ist, hat die Komponente, auf die sich dieser Parameter bezieht, aufgrund der EIN-AUS-Sequenz keine Ausfallzeit mehr, es sei denn, die Einschaltzeit ist auf Null gesetzt.</value>
+  </data>
+  <data name="P_INFO_ON_TIME_1" xml:space="preserve">
+    <value>Stellen Sie hier die Zeit ein, die als Aktivitätszeit oder Laufzeit der Komponente innerhalb eines Arbeitsmodus betrachtet werden soll, der auf einer EIN-AUS-Sequenz basiert. Wenn diese Zeit auf Null gesetzt ist, hat die Komponente, auf die sich dieser Parameter bezieht, keine Aktivitätszeit mehr, was bedeutet, dass sie während der EIN-AUS-Sequenz angehalten wird. Hinweis: Wenn die Pausenzeit auf Null eingestellt ist und die Einschaltzeit über Null liegt, wird der Komponente befohlen, innerhalb der EIN-AUS-Sequenz immer eingeschaltet zu sein.</value>
+  </data>
+  <data name="P_INFO_DIS_MODUL_VLV" xml:space="preserve">
+    <value>Klicken Sie auf diese Flagge, um das Ventil mit konstanter Referenz laufen zu lassen. Wenn dieses Flag nicht gesetzt ist, wird das Ventil durch die Logik des Prozesses zur Variablenreferenzzeit gesteuert.</value>
+  </data>
+  <data name="P_INFO_PROP_GAIN" xml:space="preserve">
+    <value>Regelung im Bereich der Differenz zwischen Soll-Wert und Rückmeldung. Je höher dieser Wert ist, desto höher ist die Reaktivität des Systems, insbesondere wenn die Differenz zwischen Sollwert und Istwert zunimmt. Hinweis: Wenn diese Verstärkung zu hoch ist, kann die Regelung instabil werden. Wenn sie zu niedrig ist, ist die Regelung zwar sehr schlecht, aber möglicherweise nicht ausreichend, um die Leistung ausreichend zu steigern, um das gewünschte Ziel zu erreichen.</value>
+  </data>
+  <data name="P_INFO_INTGR_SMP_TIME" xml:space="preserve">
+    <value>Je höher dieser Wert ist, desto langsamer ist die Reaktivität des Systems. Dies ist die Zeit, mit der der Integral-Gain-Parameter arbeitet. Einer Probe folgt kontinuierlich die nächste.</value>
+  </data>
+  <data name="P_INFO_INTGR_GAIN" xml:space="preserve">
+    <value>Regulierung im Zeitbereich. Je höher dieser Wert ist, desto höher ist die Reaktivität des Systems, wenn die integrale Probenzeit abläuft. Hinweis: Wenn diese Verstärkung zu hoch ist, kann die Regelung möglicherweise nicht mehr auf schnelle Rückmeldungsänderungen reagieren. Wenn sie zu niedrig ist, ist die Regelung schneller, reicht aber möglicherweise nicht aus, um die Leistung so weit zu steigern, dass das gewünschte Ziel erreicht wird. Wenn diese Verstärkung auf Null gesetzt ist, wird keine Regelung im Zeitbereich durchgeführt.</value>
+  </data>
+  <data name="P_INFO_ACT_PI_OUT" xml:space="preserve">
+    <value>Tatsächliche Regelungsausgabe zur Verwendung als Debug- oder Diagnosegerät oder zur Bewertung der ordnungsgemäßen Parametrisierung der einzustellenden Regelungsparameter unter Berücksichtigung des Gesamtverhaltens des Systems.</value>
+  </data>
+  <data name="P_INFO_ANTICAV_1" xml:space="preserve">
+    <value>Die Pumpe reduziert ihre Drehzahl zyklisch für kurze Zeit (z. B. -5 % für 3 Sekunden), um Kavitation zu verhindern. Dieser Parameter stellt die Zeit zwischen einem kurzen Geschwindigkeitsabfall und dem nächsten dar. Wenn es auf Null gesetzt ist, wird keine Geschwindigkeitsreduzierung durchgeführt.</value>
+  </data>
+  <data name="P_INFO_ANTICAV_2" xml:space="preserve">
+    <value>Die Pumpe verringert ihre Drehzahl für die Zeit „Lower Speed ​​​​For Minimum Current – ​​Duration“ auf den Wert „Lower Speed ​​​​For Minimum Current – ​​Setpoint“, um die laufende Kavitation zu beheben (erkennbar daran, dass der Strom unter den im HMI „Minimum Current“ eingestellten Grenzwert fällt). Gelingt es dem Antikavitationsvorgang, die Kavitation zu unterbrechen, kehrt die Pumpe ohne globales Signal zur Prozessdrehzahl zurück. Andernfalls wird bei Wiederherstellung der Prozessgeschwindigkeit der Alarm „Motorstrom unterhalb der minimalen Bereichsgrenze – mögliche Kavitation“ generiert. In diesem Fall wird das System NICHT erneut versuchen, die Pumpe automatisch zu dekavitieren, da der erste Versuch fehlgeschlagen ist, sondern sich an den Bediener wenden, um die Parameter zu überprüfen oder andere Maßnahmen zu ergreifen. Wenn die Dauer auf Null eingestellt ist, wird bei minimalem Pumpenstrom keine Dekavitation durchgeführt.</value>
+  </data>
+  <data name="P_INFO_MICROF_1" xml:space="preserve">
+    <value>Zu Beginn der Produktion besteht die Möglichkeit, eine „Spezialreinigung“ zu aktivieren, die intensiver sein sollte als die nächsten, um eventuell verfestigte Rückstände auf dem Filternetz aufzuschmelzen. Seine Dauer kann mit diesem Parameter eingestellt werden.</value>
+  </data>
+  <data name="P_INFO_MICROF_2" xml:space="preserve">
+    <value>Am Ende der Produktion (Stoppzyklus) ist es möglich, die Pausenzeit zwischen einer Reinigung und der nächsten zu verkürzen, um die Wirkung des Wassers auf das Netz zu verstärken und die Verfestigung von Rückständen während der Stillstandszeit der Linie zu verhindern.</value>
+  </data>
+  <data name="P_INFO_MIN_LEV_BYPS" xml:space="preserve">
+    <value>Klicken Sie auf diese Flagge, um die Pumpendrehung zu testen, falls kein Mindestfüllstand vorhanden ist. In diesem Fall wird die Pumpe einige Sekunden lang ohne Mindestfüllstand laufen gelassen, mit dem einzigen Ziel, die Rotation zu überprüfen. Dieses Flag wird automatisch zurückgesetzt, sobald die Pumpe anfängt, sich zu bewegen.</value>
+  </data>
+  <data name="P_INFO_MTR_NOM_AMP" xml:space="preserve">
+    <value>Stellen Sie hier den Nennstrom des Motors ein. Dieser Wert kann auf dem Motoretikett (das bei der richtigen Motorspannung angegeben ist) erreicht werden, um das genaueste Maß des aktuellen Prozentwerts in der HMI-Ansicht darzustellen.</value>
+  </data>
 </root>

@@ -10422,4 +10422,58 @@
   <data name="M_INFO_GT_VALVES_2" xml:space="preserve">
     <value>排放阀失去了其相互位置安全联锁装置。操作员现在可以在维护模式下同时打开它们</value>
   </data>
+  <data name="P_INFO_DISAB_SENS" xml:space="preserve">
+    <value>传感器故障时可临时使用。当传感器被禁用时，其读数被屏蔽，HMI 上显示的值是过程生产所需的值。需要尽快更换传感器。</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_1" xml:space="preserve">
+    <value>一旦传感器扫描到正确的材料层（即与相对参数中指示的值相对应的材料层），请单击此标志。这是教导传感器这是指示的液位的方法。</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_2" xml:space="preserve">
+    <value>设置与机器中物料水平相对应的最大水平值，然后单击“设置满刻度”以获取该测量值作为最大水平值。例如：当料斗几乎满时（大约是其容量的 90%），设置为 90%。</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_3" xml:space="preserve">
+    <value>设置与机器中料位相对应的最小料位值，然后单击“设置空秤”以获取该测量值作为最小料位值。例如：当料斗几乎为空时，设置为 10%，约为其容量的 10%。</value>
+  </data>
+  <data name="P_INFO_DIS_MODUL_MTR" xml:space="preserve">
+    <value>单击此标志可使电机匀速运行。如果未设置该标志，则电机由过程逻辑以变速及时驱动。</value>
+  </data>
+  <data name="P_INFO_PAUSE_TIME_1" xml:space="preserve">
+    <value>此处设置的时间被视为组件在基于开关序列的工作模式下的暂停或停机时间。如果该时间设置为零，则该参数所涉及的组件将不会再因开关顺序而导致停机，除非即使打开时间设置为零的情况。</value>
+  </data>
+  <data name="P_INFO_ON_TIME_1" xml:space="preserve">
+    <value>此处设置的时间被视为组件在基于开关序列的工作模式下的活动时间或运行时间。如果该时间设置为零，则该参数所涉及的组件将不再有活动时间，这意味着它将在开关序列期间停止。注意：如果暂停时间设置为零，并且开启时间大于零，则命令组件在开关序列内始终开启。</value>
+  </data>
+  <data name="P_INFO_DIS_MODUL_VLV" xml:space="preserve">
+    <value>单击此标志可以让阀门以恒定参考值运行。如果未设置该标志，则阀门由时间可变参考处的过程逻辑驱动。</value>
+  </data>
+  <data name="P_INFO_PROP_GAIN" xml:space="preserve">
+    <value>调节设定值和反馈之间的差异。当设定值和反馈之间的差异增大时，该值越高，系统的反应性越高。注意：如果增益太高，调节可能会变得不稳定。如果太低，调节将非常稳定，但可能不足以推动输出达到所需目标。</value>
+  </data>
+  <data name="P_INFO_INTGR_SMP_TIME" xml:space="preserve">
+    <value>该值越高，系统的反应速度越慢。这次是积分增益参数使用的一次。一个样本不断地被下一个样本取代。</value>
+  </data>
+  <data name="P_INFO_INTGR_GAIN" xml:space="preserve">
+    <value>时域调节。该值越高，当积分采样时间到期时系统的反应性越高。注意：如果增益太高，调节可能无法响应反馈的快速变化。如果太低，监管将会更加迅速，但可能不足以推动产出达到预期目标。如果该增益设置为零，则不执行时域调节。</value>
+  </data>
+  <data name="P_INFO_ACT_PI_OUT" xml:space="preserve">
+    <value>实际调节输出可用作调试或诊断，或评估必须设置的调节参数的正确参数化，以查看系统的整体行为。</value>
+  </data>
+  <data name="P_INFO_ANTICAV_1" xml:space="preserve">
+    <value>泵会在短时间内周期性地降低速度（例如：-5%，持续 3 秒），目的是防止气蚀。该参数表示一次速度短暂下降与下一次速度短暂下降之间的时间。如果设置为零，则不执行减速。</value>
+  </data>
+  <data name="P_INFO_ANTICAV_2" xml:space="preserve">
+    <value>泵将其速度降低至“最小电流的较低速度 - 设定点”的值，持续时间为“最小电流的较低速度 - 持续时间”，以解决正在进行的气蚀问题（通过电流降低到低于 HMI 中设置的“最小电流”限值来识别）。如果防气蚀程序成功中断气蚀，则泵将返回到过程速度，而无需任何全局信号。否则，当过程速度恢复时，将生成警报“电机电流低于最小范围限制 - 可能出现气蚀”。在这种情况下，由于第一次尝试失败，系统不会再次尝试自动对泵进行去气蚀，而是会请操作员检查参数或采取其他操作。如果持续时间设置为零，则在泵最小电流的情况下不执行去气蚀。</value>
+  </data>
+  <data name="P_INFO_MICROF_1" xml:space="preserve">
+    <value>在生产开始时，可​​以启动“特殊清洁”，该清洁应比接下来的其他清洁更深入，以熔化过滤网上任何可能的固化残留物。其持续时间可以通过该参数设置。</value>
+  </data>
+  <data name="P_INFO_MICROF_2" xml:space="preserve">
+    <value>在生产结束时（停止周期），可以减少一次清洗与下一次清洗之间的暂停时间，以加强水对网的作用并防止生产线停机期间残留物凝固。</value>
+  </data>
+  <data name="P_INFO_MIN_LEV_BYPS" xml:space="preserve">
+    <value>单击此标志可在不存在最低液位的情况下测试泵的旋转情况。在这种情况下，泵将被允许运行几秒钟，而没有最低液位，仅用于旋转检查。一旦泵开始移动，该标志就会自动重置。</value>
+  </data>
+  <data name="P_INFO_MTR_NOM_AMP" xml:space="preserve">
+    <value>此处设置电机的额定电流。该值可以在电机标签（在适当电机电压下指示的标签）上实现，以表示 HMI 视图中当前百分比值的最准确测量值。</value>
+  </data>
 </root>

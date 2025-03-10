@@ -10802,4 +10802,76 @@
     <value>Discharge Valves Has Lost Their Reciprocal Position Secure Interlocks. Operator Is Now Able To Open Them At The Same Time In Maintenance Mode</value>
     <comment>InfoText Message</comment>
   </data>
+  <data name="P_INFO_DISAB_SENS" xml:space="preserve">
+    <value>It Can Be Temporarly Used In Case Of Sensor Mulfunction. When Sensor Is Disabled, Its Reading Is Masked And The Value Displayed On HMI Is The One Wich The Process Needs For Production. The Sensor Needs To Be Replaced As Soon As Possible.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_1" xml:space="preserve">
+    <value>Click This Flag Once The Right Level Of Material, That Is The One That Corresponds To The Value Indicated In The Relative Parameter, Is Scanned By the Sensor. This Is The Way To Teach The Sensor That This Is The Level Indicated.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_2" xml:space="preserve">
+    <value>Set The Value Of The Maximum Level That Corresponds To the Level Of Material In The Machine And Than Clic "Set Full Scale" To Acquire This Measure As The Value Of Maximum Level. Eg: Set 90% When Hopper Is Almost Full, At About 90% Of Its Capacity.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_3" xml:space="preserve">
+    <value>Set The Value Of The minimum Level That Corresponds To the Level Of Material In The Machine And Than Clic "Set Empty Scale" To Acquire This Measure As The Value Of Minimum Level. Eg: Set 10% When Hopper Is Almost Empty, At About 10% Of Its Capacity.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_DIS_MODUL_MTR" xml:space="preserve">
+    <value>Click This Flag To Let The Motor Run At Constant Speed. If This Flag Is Not Set, The Motor Is Driven By The Logic Of The Process At Variable Speed In Time.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_PAUSE_TIME_1" xml:space="preserve">
+    <value>Set Here The Time To Be Considered As The Pause, Or Downtime, Of The Component Within A Working Mode That Is Based On ON-OFF Sequence. If This Time Is Set To Zero, The Component Wich This Paramenter Is Referred To, Will Have No More Downtime Due To The ON-OFF Sequence Except The Case Even ON time Is Set To Zero.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_ON_TIME_1" xml:space="preserve">
+    <value>Set Here The Time To Be Considered As The Activity Time, Or Run-time, Of The Component Within A Working Mode That Is Based On ON-OFF Sequence. If This Time Is Set To Zero, The Component Wich This Paramenter Is Referred To, Will Have No More Activity Time, That Means It Will Be Stopped, During The ON-OFF Sequence. Note: If Pause Time Is Set To Zero, And On Time Is Above Zero, The Component Is Commanded To Be Always ON Within The ON-OFF Sequence.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_DIS_MODUL_VLV" xml:space="preserve">
+    <value>Click This Flag To Let The Valve Run At Constant Reference. If This Flag Is Not Set, The Valve Is Driven By The Logic Of The Process At Variable Reference In Time.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_PROP_GAIN" xml:space="preserve">
+    <value>Regulation In Domain Of The Difference Between Set Value And Feedback. Higher Is This Value, Higher Is The Reactivity Of The System Above All When The Difference Between Setpoint And Feedback Increases. Note: If This Gain Is Too High, The Regulation Can Became Instable. If It Is Too Low, Tha Regulation Will Be Very Sable But Potentially Not Sufficient To Push The Output Enought To Reach The Desired Target.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_INTGR_SMP_TIME" xml:space="preserve">
+    <value>Higher Is This Value, Slower Is The Reactivity Of The System. This Time Is The One Which Is Used By Integral Gain Parameter To Work With. One Sample Is Succeeded By The Next One Continuously.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_INTGR_GAIN" xml:space="preserve">
+    <value>Regulation In Time Domain. Higher Is This Value, Higher Is The Reactivity Of The System Whenever Integral Sample Time Expires. Note: If This Gain Is Too High, The Regulation Can Became Unable To Respond To Quick Variation Of Feedback. If It Is Too Low, Tha Regulation Will Be Quiker But Potentially Not Sufficient To Push The Output Enought To Reach The Desired Target. If This Gain Is Set To Zero No Regualtion In Time Domain Is Performed.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_ACT_PI_OUT" xml:space="preserve">
+    <value>Actual Regulation Output To Be Used As Debug Or Diagnostic Or To Evaluate The Proper Parametrization Of The Regulation Parameters That Have To Be Set Looking At The Overall Behavior Of The System.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_ANTICAV_1" xml:space="preserve">
+    <value>The Pump Cyclically Reduces Its Speed For A Short Time (E.G: -5% for 3 sec) With The Aim Of Preventing Cavitation. This Parameter Represents The Time Between One Speed Short Decrease And The Next One. If It Is Set To Zero, No Speed Decrease Is Performed.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_ANTICAV_2" xml:space="preserve">
+    <value>The pump decreases its speed to the value of "Lower Speed ​​For Minimum Current - Setpoint" for the time "Lower Speed ​​For Minimum Current - Duration" in order to resolve the cavitation in progress (which is recognized by the current lowering below the limit set in the HMI of "Minimum Current"). If the anti-cavitation procedure succeeds in interrupting the cavitation, the pump returns to the process speed without any global signal. Otherwise, when the process speed is restored, the alarm "Motor Current Below Minimum Range Limit – Possible Cavitation" is generated. In this case, the system will NOT attempt to automatically de-cavitate the pump again since the first attempt failed, but will refer to the operator for reviewing the parameters or for other actions. If Duration Is Set To Zero, No De-Cavitation Is Performed In Case Of Pump Minimum Current.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_MICROF_1" xml:space="preserve">
+    <value>At The Start Of Production It Is Possible To Activate A "Special Cleaning" That Should Be More Intensive Of The Next Others In Order To Melt Any Possible Solidified Residues On The Filter Net. Its Duration Can Be Set By this Parameter.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_MICROF_2" xml:space="preserve">
+    <value>At The End Of Production (Stop Cycle) It Is Possible To Reduce The Pause time Between One Cleaning And The Next One In Order To Intensify The Effect Of The Water Onto The Net And Prevent The Solidification Of Residues During The Downtime Of The Line.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_MIN_LEV_BYPS" xml:space="preserve">
+    <value>Click This Flag To Test The Pump Rotation In Case Of No Minimum Level Present. In This Case, Pump Will Be Allowed To Run For A Couple Of Seconds Without Minimum Level With Only The Aim Of Rotation Check. This Flag Is Automatically Reset Once The Pump Starts Moving.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_INFO_MTR_NOM_AMP" xml:space="preserve">
+    <value>Set Here The Nominal Current Of The Motor. This Value Can Be Achieved On the Motor Lable (the One Indicated At The Proper motor Voltage) In Order to Represent The Most Accurate Measure Of The Current Percent Value In The HMI View.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
 </root>

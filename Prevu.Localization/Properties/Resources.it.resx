@@ -10422,4 +10422,58 @@
   <data name="M_INFO_GT_VALVES_2" xml:space="preserve">
     <value>Le valvole di scarico hanno perso la loro posizione reciproca Interblocchi di sicurezza. L'operatore è ora in grado di aprirli contemporaneamente in modalità manutenzione</value>
   </data>
+  <data name="P_INFO_DISAB_SENS" xml:space="preserve">
+    <value>Può essere utilizzato temporaneamente in caso di malfunzionamento del sensore. Quando il sensore è disabilitato, la sua lettura è mascherata e il valore visualizzato sull'HMI è quello necessario al processo per la produzione. Il sensore deve essere sostituito il prima possibile.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_1" xml:space="preserve">
+    <value>Fare clic su questa bandierina una volta che il sensore ha scansionato il giusto livello di materiale, cioè quello che corrisponde al valore indicato nel relativo parametro. Questo è il modo per insegnare al sensore che questo è il livello indicato.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_2" xml:space="preserve">
+    <value>Impostare il valore del livello massimo che corrisponde al livello del materiale nella macchina e quindi fare clic su "Imposta fondo scala" per acquisire questa misura come valore del livello massimo. Ad esempio: impostare il 90% quando la tramoggia è quasi piena, a circa il 90% della sua capacità.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_3" xml:space="preserve">
+    <value>Impostare il valore del livello minimo che corrisponde al livello del materiale nella macchina e quindi fare clic su "Imposta scala vuota" per acquisire questa misura come valore del livello minimo. Ad esempio: impostare il 10% quando la tramoggia è quasi vuota, a circa il 10% della sua capacità.</value>
+  </data>
+  <data name="P_INFO_DIS_MODUL_MTR" xml:space="preserve">
+    <value>Fare clic su questo flag per far funzionare il motore a velocità costante. Se questo flag non è impostato, il motore è azionato dalla logica del processo a velocità variabile nel tempo.</value>
+  </data>
+  <data name="P_INFO_PAUSE_TIME_1" xml:space="preserve">
+    <value>Imposta qui il tempo da considerare come pausa, o inattività, del componente all'interno di una modalità di lavoro basata sulla sequenza ON-OFF. Se questo tempo è impostato su zero, il componente a cui fa riferimento questo parametro non avrà più tempi di inattività a causa della sequenza ON-OFF, tranne nel caso in cui anche il tempo ON sia impostato su zero.</value>
+  </data>
+  <data name="P_INFO_ON_TIME_1" xml:space="preserve">
+    <value>Impostare qui il tempo da considerare come tempo di attività, o tempo di esecuzione, del componente all'interno di una modalità di lavoro basata sulla sequenza ON-OFF. Se questo tempo viene impostato a zero, il componente a cui fa riferimento questo parametro, non avrà più tempo di attività, ciò significa che verrà fermato, durante la sequenza ON-OFF. Nota: se il tempo di pausa è impostato su zero e il tempo di accensione è superiore a zero, al componente viene comandato di essere sempre acceso all'interno della sequenza ON-OFF.</value>
+  </data>
+  <data name="P_INFO_DIS_MODUL_VLV" xml:space="preserve">
+    <value>Fare clic su questo flag per far funzionare la valvola a riferimento costante. Se questo flag non è impostato, la valvola è pilotata dalla logica del processo con riferimento variabile nel tempo.</value>
+  </data>
+  <data name="P_INFO_PROP_GAIN" xml:space="preserve">
+    <value>Regolazione nel dominio della differenza tra valore impostato e feedback. Maggiore è questo valore, maggiore è la reattività del sistema soprattutto quando aumenta la differenza tra Setpoint e Feedback. Nota: se questo guadagno è troppo elevato, la regolazione può diventare instabile. Se è troppo basso, la regolazione sarà molto debole ma potenzialmente non sufficiente a spingere l’output abbastanza da raggiungere l’obiettivo desiderato.</value>
+  </data>
+  <data name="P_INFO_INTGR_SMP_TIME" xml:space="preserve">
+    <value>Maggiore è questo valore, più lenta è la reattività del sistema. Questo tempo è quello utilizzato dal parametro di guadagno integrale con cui lavorare. Un campione viene seguito continuamente da quello successivo.</value>
+  </data>
+  <data name="P_INFO_INTGR_GAIN" xml:space="preserve">
+    <value>Regolazione nel dominio del tempo. Maggiore è questo valore, maggiore è la reattività del sistema allo scadere del tempo di campionamento integrale. Nota: se questo guadagno è troppo elevato, il regolamento potrebbe non essere in grado di rispondere a una rapida variazione del feedback. Se è troppo basso, il regolamento sarà più rigido ma potenzialmente non sufficiente a spingere l’output abbastanza da raggiungere l’obiettivo desiderato. Se questo guadagno è impostato su zero non viene eseguita alcuna regolazione nel dominio del tempo.</value>
+  </data>
+  <data name="P_INFO_ACT_PI_OUT" xml:space="preserve">
+    <value>Output effettivo della regolazione da utilizzare come debug o diagnostica o per valutare la corretta parametrizzazione dei parametri di regolazione che devono essere impostati osservando il comportamento complessivo del sistema.</value>
+  </data>
+  <data name="P_INFO_ANTICAV_1" xml:space="preserve">
+    <value>La Pompa Riduce Ciclicamente La Sua Velocità Per Un Breve Tempo (Es: -5% per 3 sec) Con Lo Scopo Di Prevenire La Cavitazione. Questo parametro rappresenta il tempo che intercorre tra una breve diminuzione della velocità e quella successiva. Se è impostato su zero, non viene eseguita alcuna riduzione della velocità.</value>
+  </data>
+  <data name="P_INFO_ANTICAV_2" xml:space="preserve">
+    <value>La pompa diminuisce la sua velocità al valore di "Velocità inferiore per corrente minima - Setpoint" per il tempo "Velocità inferiore per corrente minima - Durata" al fine di risolvere la cavitazione in atto (che si riconosce dall'abbassamento della corrente al di sotto del limite impostato nell'HMI di "Corrente minima"). Se la procedura anticavitazione riesce ad interrompere la cavitazione, la pompa ritorna alla velocità di processo senza alcun segnale globale. Altrimenti, quando la velocità del processo viene ripristinata, viene generato l'allarme "Corrente motore inferiore al limite minimo del range – Possibile cavitazione". In questo caso, il sistema NON tenterà nuovamente di decavitare automaticamente la pompa poiché il primo tentativo è fallito, ma farà riferimento all'operatore per la revisione dei parametri o per altre azioni. Se la durata è impostata su zero, non viene eseguita alcuna decavitazione in caso di corrente minima della pompa.</value>
+  </data>
+  <data name="P_INFO_MICROF_1" xml:space="preserve">
+    <value>All'inizio della produzione è possibile attivare una "pulizia speciale" che dovrà essere più intensiva delle successive al fine di sciogliere eventuali residui solidificati sulla rete filtrante. La sua durata può essere impostata tramite questo parametro.</value>
+  </data>
+  <data name="P_INFO_MICROF_2" xml:space="preserve">
+    <value>A Fine Produzione (Ciclo Stop) È possibile ridurre il tempo di pausa tra una pulizia e la successiva in modo da intensificare l'effetto dell'acqua sulla rete ed evitare la solidificazione dei residui durante i tempi di inattività della linea.</value>
+  </data>
+  <data name="P_INFO_MIN_LEV_BYPS" xml:space="preserve">
+    <value>Fare clic su questo flag per testare la rotazione della pompa in caso di assenza di livello minimo. In questo caso, la pompa potrà funzionare per un paio di secondi senza livello minimo, con il solo scopo di controllare la rotazione. Questo flag viene ripristinato automaticamente una volta che la pompa inizia a muoversi.</value>
+  </data>
+  <data name="P_INFO_MTR_NOM_AMP" xml:space="preserve">
+    <value>Imposta qui la corrente nominale del motore. Questo valore può essere ottenuto sull'etichetta del motore (quella indicata con la tensione del motore corretta) per rappresentare la misura più accurata del valore percentuale corrente nella visualizzazione HMI.</value>
+  </data>
 </root>

@@ -10422,4 +10422,58 @@
   <data name="M_INFO_GT_VALVES_2" xml:space="preserve">
     <value>Afvoerkleppen hebben hun wederzijdse positie verloren Veilige vergrendelingen. De operator kan ze nu tegelijkertijd openen in de onderhoudsmodus</value>
   </data>
+  <data name="P_INFO_DISAB_SENS" xml:space="preserve">
+    <value>Zorg ervoor dat het apparaat niet goed werkt. Zorg ervoor dat u de juiste keuze maakt voor het gebruik ervan Zorg ervoor dat HMI niet goed werkt. Zorg ervoor dat het apparaat niet goed werkt.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_1" xml:space="preserve">
+    <value>Klik op deze vlag zodra het juiste materiaalniveau, dat wil zeggen het materiaal dat overeenkomt met de waarde aangegeven in de relatieve parameter, door de sensor is gescand. Dit is de manier om de sensor te leren dat dit het aangegeven niveau is.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_2" xml:space="preserve">
+    <value>Stel de waarde in van het maximale niveau dat overeenkomt met het materiaalniveau in de machine en klik vervolgens op "Volledige schaal instellen" om deze maatstaf te verkrijgen als de waarde van het maximale niveau. Bijv.: Stel 90% in wanneer de trechter bijna vol is, op ongeveer 90% van de capaciteit.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_3" xml:space="preserve">
+    <value>Stel de waarde in van het minimumniveau dat overeenkomt met het materiaalniveau in de machine en klik vervolgens op "Lege schaal instellen" om deze maat te verkrijgen als de waarde van het minimumniveau. Bijv.: Stel 10% in wanneer de trechter bijna leeg is, op ongeveer 10% van de capaciteit.</value>
+  </data>
+  <data name="P_INFO_DIS_MODUL_MTR" xml:space="preserve">
+    <value>Klik op deze vlag om de motor op constante snelheid te laten draaien. Als deze vlag niet is ingesteld, wordt de motor aangedreven door de logica van het proces met variabele snelheid in de tijd.</value>
+  </data>
+  <data name="P_INFO_PAUSE_TIME_1" xml:space="preserve">
+    <value>Stel hier de tijd in die moet worden beschouwd als de pauze of uitvaltijd van het onderdeel binnen een werkmodus die is gebaseerd op de AAN-UIT-reeks. Als deze tijd op nul is ingesteld, zal de component waarnaar deze parameter wordt verwezen, geen uitvaltijd meer hebben vanwege de AAN-UIT-reeks, behalve in het geval dat zelfs de AAN-tijd op nul is ingesteld.</value>
+  </data>
+  <data name="P_INFO_ON_TIME_1" xml:space="preserve">
+    <value>Stel hier de tijd in die moet worden beschouwd als de activiteitstijd, of looptijd, van de component binnen een werkmodus die is gebaseerd op de AAN-UIT-reeks. Als deze tijd op nul is ingesteld, zal de component waarnaar deze parameter verwijst, geen activiteitstijd meer hebben, wat betekent dat deze zal worden gestopt tijdens de AAN-UIT-reeks. Opmerking: Als de pauzetijd is ingesteld op nul en de aan-tijd hoger is dan nul, wordt de component opgedragen om altijd AAN te zijn binnen de AAN-UIT-reeks.</value>
+  </data>
+  <data name="P_INFO_DIS_MODUL_VLV" xml:space="preserve">
+    <value>Klik op deze vlag om de klep op constante referentie te laten draaien. Als deze vlag niet is ingesteld, wordt de klep aangedreven door de logica van het proces met een variabele referentie in de tijd.</value>
+  </data>
+  <data name="P_INFO_PROP_GAIN" xml:space="preserve">
+    <value>Regeling in het domein van het verschil tussen ingestelde waarde en feedback. Hoger is deze waarde, hoger is de reactiviteit van het systeem, vooral wanneer het verschil tussen instelpunt en feedback groter wordt. Opmerking: als deze winst te hoog is, kan de regeling instabiel worden. Als deze te laag is, zal de regelgeving zeer stabiel zijn, maar potentieel niet voldoende om de output voldoende te stimuleren om het gewenste doel te bereiken.</value>
+  </data>
+  <data name="P_INFO_INTGR_SMP_TIME" xml:space="preserve">
+    <value>Hoger is deze waarde, langzamer is de reactiviteit van het systeem. Deze tijd is degene die wordt gebruikt door de integrale versterkingsparameter om mee te werken. Het ene monster wordt continu opgevolgd door het volgende.</value>
+  </data>
+  <data name="P_INFO_INTGR_GAIN" xml:space="preserve">
+    <value>Regelgeving in tijdsdomein. Hoger is deze waarde, hoger is de reactiviteit van het systeem wanneer de integrale bemonsteringstijd verstrijkt. Opmerking: als deze versterking te hoog is, kan de regeling niet meer reageren op snelle variaties in de feedback. Als deze te laag is, zal de regulering sneller zijn, maar mogelijk niet voldoende om de output voldoende te pushen om het gewenste doel te bereiken. Als deze winst op nul wordt ingesteld, wordt er geen regulering in het tijdsdomein uitgevoerd.</value>
+  </data>
+  <data name="P_INFO_ACT_PI_OUT" xml:space="preserve">
+    <value>Werkelijke regeluitvoer die moet worden gebruikt als foutopsporing of diagnose, of om de juiste parametrisering van de regelparameters te evalueren die moeten worden ingesteld, waarbij naar het algemene gedrag van het systeem wordt gekeken.</value>
+  </data>
+  <data name="P_INFO_ANTICAV_1" xml:space="preserve">
+    <value>De pomp verlaagt cyclisch de snelheid gedurende een korte tijd (bijvoorbeeld: -5% gedurende 3 sec) met als doel cavitatie te voorkomen. Deze parameter vertegenwoordigt de tijd tussen de ene korte snelheidsverlaging en de volgende. Als deze op nul is ingesteld, wordt er geen snelheidsverlaging uitgevoerd.</value>
+  </data>
+  <data name="P_INFO_ANTICAV_2" xml:space="preserve">
+    <value>De pomp verlaagt zijn snelheid naar de waarde van "Lagere snelheid voor minimale stroom - Setpoint" gedurende de tijd "Lagere snelheid voor minimale stroom - Duur" om de lopende cavitatie op te lossen (wat wordt herkend doordat de stroom daalt tot onder de limiet die is ingesteld in de HMI van "Minimale stroom"). Als de anti-cavitatieprocedure erin slaagt de cavitatie te onderbreken, keert de pomp zonder enig globaal signaal terug naar de processnelheid. Anders wordt, wanneer de processnelheid wordt hersteld, het alarm "Motorstroom onder minimum bereikgrens – mogelijke cavitatie" gegenereerd. In dit geval zal het systeem NIET proberen de pomp automatisch opnieuw te decaviteren omdat de eerste poging mislukte, maar zal het de operator raadplegen voor het controleren van de parameters of voor andere acties. Als de duur op nul is ingesteld, wordt er geen decavitatie uitgevoerd bij een minimale pompstroom.</value>
+  </data>
+  <data name="P_INFO_MICROF_1" xml:space="preserve">
+    <value>Bij het begin van de productie is het mogelijk om een ​​"speciale reiniging" te activeren die intensiever zou moeten zijn dan de volgende, om eventuele gestolde resten op het filternet te smelten. De duur ervan kan met deze parameter worden ingesteld.</value>
+  </data>
+  <data name="P_INFO_MICROF_2" xml:space="preserve">
+    <value>Aan het einde van de productie (stopcyclus) is het mogelijk om de pauzetijd tussen de ene reiniging en de volgende te verkorten om het effect van het water op het net te intensiveren en het stollen van residuen tijdens de stilstand van de lijn te voorkomen.</value>
+  </data>
+  <data name="P_INFO_MIN_LEV_BYPS" xml:space="preserve">
+    <value>Klik op deze vlag om de pomprotatie te testen als er geen minimumniveau aanwezig is. In dit geval mag de pomp een paar seconden draaien zonder minimumniveau, met alleen als doel de rotatiecontrole. Deze vlag wordt automatisch gereset zodra de pomp begint te bewegen.</value>
+  </data>
+  <data name="P_INFO_MTR_NOM_AMP" xml:space="preserve">
+    <value>Stel hier de nominale stroom van de motor in. Deze waarde kan worden bereikt op het motorlabel (degene die wordt aangegeven met de juiste motorspanning) om de meest nauwkeurige maatstaf van de huidige procentwaarde in de HMI-weergave weer te geven.</value>
+  </data>
 </root>

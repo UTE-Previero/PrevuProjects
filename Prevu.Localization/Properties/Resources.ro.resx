@@ -10422,4 +10422,58 @@
   <data name="M_INFO_GT_VALVES_2" xml:space="preserve">
     <value>Supapele de refulare și-au pierdut interblocarele de siguranță din poziție reciprocă. Operatorul este acum capabil să le deschidă în același timp în modul de întreținere</value>
   </data>
+  <data name="P_INFO_DISAB_SENS" xml:space="preserve">
+    <value>Poate fi utilizat temporar în caz de funcționare multiplă a senzorului. Când senzorul este dezactivat, citirea acestuia este mascata, iar valoarea afișată pe HMI este cea de care are nevoie procesul pentru producție. Senzorul trebuie înlocuit cât mai curând posibil.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_1" xml:space="preserve">
+    <value>Faceți clic pe acest steag odată ce nivelul corect de material, care este cel care corespunde valorii indicate în parametrul relativ, este scanat de senzor. Acesta este modul de a învăța senzorul că acesta este nivelul indicat.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_2" xml:space="preserve">
+    <value>Setați valoarea nivelului maxim care corespunde nivelului de material din mașină și apoi faceți clic pe „Setați scara maximă” pentru a obține această măsură ca valoare a nivelului maxim. De exemplu: Setați 90% când buncărul este aproape plin, la aproximativ 90% din capacitatea sa.</value>
+  </data>
+  <data name="P_INFO_LEVEL_TEACH_3" xml:space="preserve">
+    <value>Setați valoarea nivelului minim care corespunde nivelului de material din mașină și apoi faceți clic pe „Setare scară goală” pentru a obține această măsură ca valoare a nivelului minim. De exemplu: Setați 10% când buncărul este aproape gol, la aproximativ 10% din capacitatea sa.</value>
+  </data>
+  <data name="P_INFO_DIS_MODUL_MTR" xml:space="preserve">
+    <value>Faceți clic pe acest steag pentru a lăsa motorul să funcționeze la viteză constantă. Dacă acest steag nu este setat, motorul este condus de logica procesului la viteză variabilă în timp.</value>
+  </data>
+  <data name="P_INFO_PAUSE_TIME_1" xml:space="preserve">
+    <value>Setați aici timpul care trebuie considerat ca pauză sau timp de nefuncționare a componentei într-un mod de lucru care se bazează pe secvența ON-OFF. Dacă acest timp este setat la zero, componenta la care se referă acest paramenter, nu va mai avea timp de nefuncționare datorită secvenței ON-OFF, cu excepția cazului în care chiar și timpul ON este setat la zero.</value>
+  </data>
+  <data name="P_INFO_ON_TIME_1" xml:space="preserve">
+    <value>Setați aici timpul care trebuie considerat ca fiind timpul de activitate sau durata de funcționare a componentei într-un mod de lucru care se bazează pe secvența ON-OFF. Dacă acest timp este setat la zero, componenta la care se referă acest paramenter, nu va mai avea timp de activitate, ceea ce înseamnă că va fi oprită în timpul secvenței ON-OFF. Notă: Dacă timpul de pauză este setat la zero, iar timpul de pornire este peste zero, Componenta este comandată să fie întotdeauna PORNIT în cadrul secvenței ON-OFF.</value>
+  </data>
+  <data name="P_INFO_DIS_MODUL_VLV" xml:space="preserve">
+    <value>Faceți clic pe acest steag pentru a lăsa supapa să funcționeze la referință constantă. Dacă acest steag nu este setat, supapa este condusă de logica procesului la referință variabilă în timp.</value>
+  </data>
+  <data name="P_INFO_PROP_GAIN" xml:space="preserve">
+    <value>Reglementarea în domeniul diferenței dintre valoarea setată și feedback. Mai mare este această valoare, mai mare este reactivitatea sistemului mai presus de toate când diferența dintre valoarea de referință și feedback crește. Notă: Dacă acest câștig este prea mare, regulamentul poate deveni instabil. Dacă este prea scăzut, această reglementare va fi foarte sigură, dar potențial insuficientă pentru a împinge rezultatul suficient pentru a atinge ținta dorită.</value>
+  </data>
+  <data name="P_INFO_INTGR_SMP_TIME" xml:space="preserve">
+    <value>Mai mare este această valoare, mai lentă este reactivitatea sistemului. De data aceasta este cea care este folosită de parametrul de câștig integral pentru a lucra. Un eșantion este urmat continuu de următorul.</value>
+  </data>
+  <data name="P_INFO_INTGR_GAIN" xml:space="preserve">
+    <value>Reglementarea în domeniul timpului. Mai mare este această valoare, mai mare este reactivitatea sistemului ori de câte ori expiră timpul de eșantionare integrală. Notă: Dacă acest câștig este prea mare, regulamentul poate deveni incapabil să răspundă la variația rapidă a feedback-ului. Dacă este prea scăzută, regularea va fi mai rapidă, dar potențial nu suficientă pentru a împinge suficient de mult producția pentru a atinge ținta dorită. Dacă acest câștig este setat la zero, nu se efectuează nicio reglementare în domeniul timpului.</value>
+  </data>
+  <data name="P_INFO_ACT_PI_OUT" xml:space="preserve">
+    <value>Ieșirea reală de reglare pentru a fi utilizată ca depanare sau diagnosticare sau pentru a evalua parametrizarea corectă a parametrilor de reglare care trebuie setați privind comportamentul general al sistemului.</value>
+  </data>
+  <data name="P_INFO_ANTICAV_1" xml:space="preserve">
+    <value>Pompa își reduce ciclic viteza pentru un timp scurt (de exemplu: -5% timp de 3 secunde) cu scopul de a preveni cavitația. Acest parametru reprezintă timpul dintre o scădere scurtă a vitezei și următoarea. Dacă este setat la zero, nu se efectuează nicio scădere a vitezei.</value>
+  </data>
+  <data name="P_INFO_ANTICAV_2" xml:space="preserve">
+    <value>Pompa își scade turația la valoarea „Viteză inferioară pentru curent minim - Setpoint” pentru timpul „Viteză inferioară pentru curent minim - Durată” pentru a rezolva cavitația în curs (care este recunoscută prin scăderea curentului sub limita setată în HMI de „Curentul minim”). Dacă procedura anti-cavitație reușește să întrerupă cavitația, pompa revine la viteza procesului fără niciun semnal global. În caz contrar, când viteza procesului este restabilită, este generată alarma „Curentul motorului sub limita intervalului minim – Cavitație posibilă”. În acest caz, sistemul NU va încerca să decaviteze automat pompa din nou de la prima încercare eșuată, ci se va referi la operator pentru revizuirea parametrilor sau pentru alte acțiuni. Dacă durata este setată la zero, nu se efectuează nicio decavitație în cazul curentului minim al pompei.</value>
+  </data>
+  <data name="P_INFO_MICROF_1" xml:space="preserve">
+    <value>La începutul producției, este posibil să se activeze o „curățare specială” care ar trebui să fie mai intensă față de celelalte, pentru a topi eventualele reziduuri solidificate de pe rețeaua de filtrare. Durata acestuia poate fi setată prin acest parametru.</value>
+  </data>
+  <data name="P_INFO_MICROF_2" xml:space="preserve">
+    <value>La sfârșitul producției (ciclu de oprire) este posibil să se reducă timpul de pauză dintre o curățare și următoarea pentru a intensifica efectul apei asupra plasei și a preveni solidificarea reziduurilor în timpul opririi liniei.</value>
+  </data>
+  <data name="P_INFO_MIN_LEV_BYPS" xml:space="preserve">
+    <value>Faceți clic pe acest steag pentru a testa rotația pompei în cazul în care nu există un nivel minim. În acest caz, pompei va fi lăsată să funcționeze pentru câteva secunde fără un nivel minim, doar cu scopul verificării rotației. Acest steag este resetat automat odată ce pompa începe să se miște.</value>
+  </data>
+  <data name="P_INFO_MTR_NOM_AMP" xml:space="preserve">
+    <value>Setați aici curentul nominal al motorului. Această valoare poate fi atinsă pe eticheta motorului (cea indicată la tensiunea corectă a motorului) pentru a reprezenta cea mai precisă măsură a valorii procentuale curente în vizualizarea HMI.</value>
+  </data>
 </root>
