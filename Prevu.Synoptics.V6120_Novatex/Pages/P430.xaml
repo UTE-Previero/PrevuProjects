@@ -9,6 +9,14 @@
              x:Class="Prevu.Synoptics.P430" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas >
+        <Labels:Pipe Width="213" RenderTransformOrigin="0.497,0.467" Color="Chemicals" StatusComponent="451-31-CV1" Canvas.Left="265" Canvas.Top="409" Text="{lex:Loc ADDITIVE}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:Pipe Width="261" RenderTransformOrigin="0.497,0.467" Color="Chemicals" StatusComponent="451-31-CV1" Canvas.Left="346" Canvas.Top="544" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
         <Labels:Pipe Width="109" Color="Water" StatusComponent="440-01-MA1" VisibilityComponent="" Canvas.Left="493" Canvas.Top="428" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:Pipe Color="Water" Width="252" RenderTransformOrigin="0.5,0.5" StatusComponent="440-01-MA1" VisibilityComponent="" Canvas.Left="369" Canvas.Top="552" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
@@ -101,8 +109,8 @@
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
         <Labels:Pipe Width="52" StatusComponent="440-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Canvas.Left="836" Canvas.Top="514" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:Pipe Width="188" RenderTransformOrigin="0.497,0.467" Color="Chemicals" StatusComponent="451-31-CV1" Canvas.Left="276" Canvas.Top="474" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{lex:Loc ADDITIVE}"/>
-        <Labels:Pipe Width="213" RenderTransformOrigin="0.497,0.467" Color="Chemicals" StatusComponent="451-31-CV1" Canvas.Left="356" Canvas.Top="586" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Labels:Pipe Width="181" RenderTransformOrigin="0.497,0.467" Color="Chemicals" StatusComponent="452-31-CV1" Canvas.Left="276" Canvas.Top="474" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{lex:Loc ANTIFOAM}"/>
+        <Labels:Pipe Width="213" RenderTransformOrigin="0.497,0.467" Color="Chemicals" StatusComponent="452-31-CV1" Canvas.Left="349" Canvas.Top="586" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
@@ -175,6 +183,7 @@
                 </TransformGroup>
             </Machines:CV_Valve_001.RenderTransform>
         </Machines:CV_Valve_001>
+        <Machines:WaterPump Height="46" Width="44" RenderTransformOrigin="0.5,0.5" Color="Chemicals" Canvas.Left="240" Canvas.Top="396" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Machines:WaterPump Height="45" Width="44" RenderTransformOrigin="0.5,0.5" Color="Chemicals" Canvas.Left="240" Canvas.Top="461" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Machines:V01_VRC_WaterTank Canvas.Left="373" Canvas.Top="665" HorizontalAlignment="Center" VerticalAlignment="Top" Width="242" Height="136" ComponentName="450-41-LT1" TrendName="LEVEL"/>
         <Machines:V01_WCE_Centrifuge Canvas.Left="1102" Canvas.Top="55" Height="152" Width="178" HorizontalAlignment="Left" VerticalAlignment="Center"/>
@@ -208,7 +217,7 @@
         <Labels:DeviceLabel ComponentName="453-01-MA1" Canvas.Left="254" Canvas.Top="672" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="457-01-MA1" Canvas.Left="661" Canvas.Top="703" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="450-21-CV1" Canvas.Left="217" Canvas.Top="534" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="451-31-CV1" Canvas.Left="217" Canvas.Top="400" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="452-31-CV1" Canvas.Left="141" Canvas.Top="458" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="450-41-LT1" RenderTransformOrigin="0.5,0.5" Canvas.Left="449" Canvas.Top="709" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="440-01-MA1" Canvas.Left="750" Canvas.Top="570" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="456-01-MA1" Canvas.Left="1323" Canvas.Top="236" HorizontalAlignment="Left" VerticalAlignment="Center" />
@@ -220,5 +229,6 @@
         <Labels:DeviceLabel ComponentName="442-01-MA1" Canvas.Left="934" Canvas.Top="658" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="443-01-MA1" Canvas.Left="1058" Canvas.Top="478" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="443-02-MA1" Canvas.Left="934" Canvas.Top="527" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="451-31-CV1" Canvas.Left="141" Canvas.Top="394" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>
