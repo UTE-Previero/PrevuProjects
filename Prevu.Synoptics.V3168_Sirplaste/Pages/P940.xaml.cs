@@ -16,5 +16,10 @@ namespace Prevu.Synoptics
     {
 
         }
+
+    private void DeviceLabel_Loaded_1(object sender, System.Windows.RoutedEventArgs e)
+    {
+
+        }
     }
 }
