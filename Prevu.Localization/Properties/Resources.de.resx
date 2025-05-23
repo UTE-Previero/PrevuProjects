@@ -10423,121 +10423,136 @@
     <value>Auslassventile haben ihre gegenseitige Position verloren. Sichere Verriegelungen. Der Bediener kann sie jetzt im Wartungsmodus gleichzeitig öffnen</value>
   </data>
   <data name="P_INFO_DISAB_SENS" xml:space="preserve">
-    <value>Es kann vorübergehend im Falle einer Sensorfehlfunktion verwendet werden. Wenn der Sensor deaktiviert ist, wird sein Messwert maskiert und der auf der HMI angezeigte Wert ist derjenige, den der Prozess für die Produktion benötigt. Der Sensor muss so schnell wie möglich ausgetauscht werden.</value>
+    <value>Es kann vorübergehend bei einer Sensorstörung eingesetzt werden. Bei Deaktivierung des Sensors wird sein Messwert maskiert und der auf der Bedienoberfläche angezeigte Wert entspricht dem für den Produktionsprozess erforderlichen Wert. Der Sensor muss so schnell wie möglich ausgetauscht werden.</value>
   </data>
   <data name="P_INFO_LEVEL_TEACH_1" xml:space="preserve">
-    <value>Klicken Sie auf diese Flagge, sobald der richtige Materialstand, d. h. derjenige, der dem im relativen Parameter angegebenen Wert entspricht, vom Sensor gescannt wurde. Auf diese Weise wird dem Sensor beigebracht, dass dies der angezeigte Füllstand ist.</value>
+    <value>Klicken Sie auf diese Markierung, wenn der Sensor den korrekten Materialfüllstand gemäß Parametereinstellung erkennt. Dadurch wird dem Sensor mitgeteilt, dass der aktuelle Füllstand der Referenzfüllstand ist.</value>
   </data>
   <data name="P_INFO_LEVEL_TEACH_2" xml:space="preserve">
-    <value>Stellen Sie den Wert des maximalen Füllstands ein, der dem Füllstand des Materials in der Maschine entspricht, und klicken Sie dann auf „Vollständigen Maßstab festlegen“, um diese Messung als Wert des maximalen Füllstands zu erfassen. Beispiel: Stellen Sie 90 % ein, wenn der Trichter fast voll ist, d. h. bei etwa 90 % seiner Kapazität.</value>
+    <value>Geben Sie den maximalen Materialfüllstand ein (z. B. 90 %, wenn der Trichter fast voll ist) und klicken Sie auf „Vollständigen Maßstab festlegen“, um ihn als maximalen Referenzwert zu speichern.</value>
   </data>
   <data name="P_INFO_LEVEL_TEACH_3" xml:space="preserve">
-    <value>Stellen Sie den Wert des Mindestfüllstands ein, der dem Materialfüllstand in der Maschine entspricht, und klicken Sie dann auf „Leerwaage festlegen“, um diese Messung als Wert des Mindestfüllstands zu übernehmen. Beispiel: Stellen Sie 10 % ein, wenn der Trichter fast leer ist, etwa 10 % seiner Kapazität.</value>
+    <value>Geben Sie den Mindestmaterialfüllstand ein (z. B. 10 %, wenn der Trichter fast leer ist) und klicken Sie auf „Leere Waage festlegen“, um ihn als Mindestreferenz zu speichern.</value>
   </data>
   <data name="P_INFO_DIS_MODUL_MTR" xml:space="preserve">
-    <value>Klicken Sie auf diese Flagge, um den Motor mit konstanter Geschwindigkeit laufen zu lassen. Wenn dieses Flag nicht gesetzt ist, wird der Motor durch die Logik des Prozesses mit zeitlich variabler Geschwindigkeit angetrieben.</value>
+    <value>Aktivieren Sie dieses Flag, um den Motor mit konstanter Drehzahl laufen zu lassen. Andernfalls variiert die Motordrehzahl je nach Prozesslogik.</value>
   </data>
   <data name="P_INFO_PAUSE_TIME_1" xml:space="preserve">
-    <value>Stellen Sie hier die Zeit ein, die als Pause oder Ausfallzeit der Komponente innerhalb eines Arbeitsmodus betrachtet werden soll, der auf einer EIN-AUS-Sequenz basiert. Wenn diese Zeit auf Null gesetzt ist, hat die Komponente, auf die sich dieser Parameter bezieht, aufgrund der EIN-AUS-Sequenz keine Ausfallzeit mehr, es sei denn, die Einschaltzeit ist auf Null gesetzt.</value>
+    <value>Geben Sie die Dauer der Ausfallzeit einer Komponente im Ein-Aus-Modus an. Bei einem Wert von 0 hat die Komponente keine Pausenzeit, es sei denn, die Einschaltzeit ist ebenfalls 0.</value>
   </data>
   <data name="P_INFO_ON_TIME_1" xml:space="preserve">
-    <value>Stellen Sie hier die Zeit ein, die als Aktivitätszeit oder Laufzeit der Komponente innerhalb eines Arbeitsmodus betrachtet werden soll, der auf einer EIN-AUS-Sequenz basiert. Wenn diese Zeit auf Null gesetzt ist, hat die Komponente, auf die sich dieser Parameter bezieht, keine Aktivitätszeit mehr, was bedeutet, dass sie während der EIN-AUS-Sequenz angehalten wird. Hinweis: Wenn die Pausenzeit auf Null eingestellt ist und die Einschaltzeit über Null liegt, wird der Komponente befohlen, innerhalb der EIN-AUS-Sequenz immer eingeschaltet zu sein.</value>
+    <value>Geben Sie die aktive Zeit für eine Komponente im Ein-Aus-Modus an. Bei einem Wert von 0 läuft die Komponente während des Zyklus nicht. Hinweis: Wenn die Pausenzeit 0 und die Einschaltzeit eingestellt sind, bleibt die Komponente dauerhaft eingeschaltet.</value>
   </data>
   <data name="P_INFO_DIS_MODUL_VLV" xml:space="preserve">
-    <value>Klicken Sie auf diese Flagge, um das Ventil mit konstanter Referenz laufen zu lassen. Wenn dieses Flag nicht gesetzt ist, wird das Ventil durch die Logik des Prozesses zur Variablenreferenzzeit gesteuert.</value>
+    <value>Aktivieren Sie diese Option, um das Ventil auf einem konstanten Referenzwert zu halten. Andernfalls variiert der Referenzwert je nach Prozesslogik.</value>
   </data>
   <data name="P_INFO_PROP_GAIN" xml:space="preserve">
-    <value>Regelung im Bereich der Differenz zwischen Soll-Wert und Rückmeldung. Je höher dieser Wert ist, desto höher ist die Reaktivität des Systems, insbesondere wenn die Differenz zwischen Sollwert und Istwert zunimmt. Hinweis: Wenn diese Verstärkung zu hoch ist, kann die Regelung instabil werden. Wenn sie zu niedrig ist, ist die Regelung zwar sehr schlecht, aber möglicherweise nicht ausreichend, um die Leistung ausreichend zu steigern, um das gewünschte Ziel zu erreichen.</value>
+    <value>Dieser Parameter definiert die Reaktion des Systems auf die Differenz zwischen Sollwert und Istwert. Ein höherer Wert erhöht die Reaktionsfähigkeit des Systems, insbesondere bei großen Abweichungen zwischen Sollwert und Istwert.
+Hinweis: Bei zu hoher Verstärkung kann das System instabil werden. Bei zu niedriger Verstärkung ist die Regelung zwar sehr stabil, aber möglicherweise nicht stark genug, um den gewünschten Zielwert zu erreichen.</value>
   </data>
   <data name="P_INFO_INTGR_SMP_TIME" xml:space="preserve">
-    <value>Je höher dieser Wert ist, desto langsamer ist die Reaktivität des Systems. Dies ist die Zeit, mit der der Integral-Gain-Parameter arbeitet. Einer Probe folgt kontinuierlich die nächste.</value>
+    <value>Je höher dieser Wert ist, desto langsamer reagiert das System. Diese Zeit entspricht dem Intervall, das vom Parameter „Integralverstärkung“ verwendet wird. Auf jede Probe folgt kontinuierlich die nächste.</value>
   </data>
   <data name="P_INFO_INTGR_GAIN" xml:space="preserve">
-    <value>Regulierung im Zeitbereich. Je höher dieser Wert ist, desto höher ist die Reaktivität des Systems, wenn die integrale Probenzeit abläuft. Hinweis: Wenn diese Verstärkung zu hoch ist, kann die Regelung möglicherweise nicht mehr auf schnelle Rückmeldungsänderungen reagieren. Wenn sie zu niedrig ist, ist die Regelung schneller, reicht aber möglicherweise nicht aus, um die Leistung so weit zu steigern, dass das gewünschte Ziel erreicht wird. Wenn diese Verstärkung auf Null gesetzt ist, wird keine Regelung im Zeitbereich durchgeführt.</value>
+    <value>Je höher dieser Wert, desto schneller reagiert das System nach Ablauf der integralen Abtastzeit.
+Hinweis: Ist diese Verstärkung zu hoch, reagiert die Regelung möglicherweise nicht effektiv auf schnelle Änderungen der Rückkopplung. Ist sie zu niedrig, ist die Regelung zwar schneller, aber möglicherweise nicht stark genug, um den Ausgang auf das gewünschte Ziel zu bringen. Ist diese Verstärkung auf Null gesetzt, erfolgt keine Regelung im Zeitbereich.</value>
   </data>
   <data name="P_INFO_ACT_PI_OUT" xml:space="preserve">
-    <value>Tatsächliche Regelungsausgabe zur Verwendung als Debug- oder Diagnosegerät oder zur Bewertung der ordnungsgemäßen Parametrisierung der einzustellenden Regelungsparameter unter Berücksichtigung des Gesamtverhaltens des Systems.</value>
+    <value>Zeigt die tatsächliche Regelungsausgabe an, nützlich für die Diagnose oder die Anpassung von Regelungsparametern.</value>
   </data>
   <data name="P_INFO_ANTICAV_1" xml:space="preserve">
-    <value>Die Pumpe reduziert ihre Drehzahl zyklisch für kurze Zeit (z. B. -5 % für 3 Sekunden), um Kavitation zu verhindern. Dieser Parameter stellt die Zeit zwischen einem kurzen Geschwindigkeitsabfall und dem nächsten dar. Wenn es auf Null gesetzt ist, wird keine Geschwindigkeitsreduzierung durchgeführt.</value>
+    <value>Die Pumpe wird kurzzeitig gedrosselt (z. B. -5 % für 3 Sekunden), um Kavitation zu vermeiden. Hiermit wird die Zeitspanne zwischen den einzelnen Verlangsamungen eingestellt. Bei einem Wert von 0 ist die Funktion deaktiviert.</value>
   </data>
   <data name="P_INFO_ANTICAV_2" xml:space="preserve">
-    <value>Die Pumpe verringert ihre Drehzahl für die Zeit „Lower Speed ​​​​For Minimum Current – ​​Duration“ auf den Wert „Lower Speed ​​​​For Minimum Current – ​​Setpoint“, um die laufende Kavitation zu beheben (erkennbar daran, dass der Strom unter den im HMI „Minimum Current“ eingestellten Grenzwert fällt). Gelingt es dem Antikavitationsvorgang, die Kavitation zu unterbrechen, kehrt die Pumpe ohne globales Signal zur Prozessdrehzahl zurück. Andernfalls wird bei Wiederherstellung der Prozessgeschwindigkeit der Alarm „Motorstrom unterhalb der minimalen Bereichsgrenze – mögliche Kavitation“ generiert. In diesem Fall wird das System NICHT erneut versuchen, die Pumpe automatisch zu dekavitieren, da der erste Versuch fehlgeschlagen ist, sondern sich an den Bediener wenden, um die Parameter zu überprüfen oder andere Maßnahmen zu ergreifen. Wenn die Dauer auf Null eingestellt ist, wird bei minimalem Pumpenstrom keine Dekavitation durchgeführt.</value>
+    <value>Wird Kavitation erkannt – erkennbar daran, dass der Motorstrom unter den im Bediengerät eingestellten Grenzwert „Mindeststrom“ fällt –, reduziert die Pumpe automatisch ihre Drehzahl auf den unter „Drehzahl bei Mindeststrom – Sollwert“ angegebenen Wert und hält diese Drehzahl für die unter „Drehzahl bei Mindeststrom – Dauer“ festgelegte Dauer.
+
+Behebt dieses Antikavitationsverfahren das Problem erfolgreich, nimmt die Pumpe ihre normale Prozessdrehzahl wieder auf, ohne dass Alarme oder allgemeine Signale ausgelöst werden.
+
+Besteht die Kavitation jedoch weiterhin und bleibt der Motorstrom nach Wiederherstellung der Drehzahl unter dem Mindestwert, löst das System den Alarm „Motorstrom unter Mindestbereichsgrenze – Mögliche Kavitation“ aus.
+
+Ab diesem Zeitpunkt werden keine weiteren automatischen Dekavitationsversuche unternommen. Das System ist auf das Eingreifen des Bedieners angewiesen, um die Parameter zu überprüfen oder Korrekturmaßnahmen zu ergreifen.
+
+Hinweis: Wenn die Dauer auf Null eingestellt ist, wird das Antikavitationsverfahren deaktiviert und es werden keine Maßnahmen ergriffen, wenn der Motorstrom unter den Mindestwert fällt.</value>
   </data>
   <data name="P_INFO_MICROF_1" xml:space="preserve">
-    <value>Zu Beginn der Produktion besteht die Möglichkeit, eine „Spezialreinigung“ zu aktivieren, die intensiver sein sollte als die nächsten, um eventuell verfestigte Rückstände auf dem Filternetz aufzuschmelzen. Seine Dauer kann mit diesem Parameter eingestellt werden.</value>
+    <value>Zu Beginn der Produktion kann eine „Sonderreinigung“ aktiviert werden. Diese Reinigung ist intensiver als die regulären Reinigungen und hilft, eventuell verfestigte Rückstände im Filternetz zu lösen. Die Dauer der Reinigung kann über diesen Parameter eingestellt werden.</value>
   </data>
   <data name="P_INFO_MICROF_2" xml:space="preserve">
-    <value>Am Ende der Produktion (Stoppzyklus) ist es möglich, die Pausenzeit zwischen einer Reinigung und der nächsten zu verkürzen, um die Wirkung des Wassers auf das Netz zu verstärken und die Verfestigung von Rückständen während der Stillstandszeit der Linie zu verhindern.</value>
+    <value>Am Ende der Produktion (während des Stoppzyklus) ist es möglich, die Pausenzeit zwischen den Reinigungen zu verkürzen. Dies verstärkt die Wirkung des Wassers auf das Filternetz und verhindert, dass sich Rückstände während des Stillstands der Anlage verfestigen.</value>
   </data>
   <data name="P_INFO_MIN_LEV_BYPS" xml:space="preserve">
-    <value>Klicken Sie auf diese Flagge, um die Pumpendrehung zu testen, falls kein Mindestfüllstand vorhanden ist. In diesem Fall wird die Pumpe einige Sekunden lang ohne Mindestfüllstand laufen gelassen, mit dem einzigen Ziel, die Rotation zu überprüfen. Dieses Flag wird automatisch zurückgesetzt, sobald die Pumpe anfängt, sich zu bewegen.</value>
+    <value>Klicken Sie auf diese Markierung, um die Pumpenrotation zu testen, wenn kein Mindestfüllstand erkannt wird. In diesem Modus läuft die Pumpe einige Sekunden lang, um ihre Rotation zu überprüfen. Die Markierung wird automatisch zurückgesetzt, sobald die Pumpe anfängt zu laufen.</value>
   </data>
   <data name="P_INFO_MTR_NOM_AMP" xml:space="preserve">
-    <value>Stellen Sie hier den Nennstrom des Motors ein. Dieser Wert kann auf dem Motoretikett (das bei der entsprechenden Motorspannung angegeben ist) angegeben werden, um den aktuellen Prozentwert in der HMI-Ansicht möglichst genau darzustellen.</value>
+    <value>Stellen Sie hier den Nennstrom des Motors ein. Diesen Wert finden Sie auf dem Motoretikett (entsprechend der korrekten Motorspannung). Dadurch wird sichergestellt, dass der auf dem HMI angezeigte Stromprozentsatz so genau wie möglich ist.</value>
   </data>
   <data name="P_INFO_SEMIAUTO_MODE" xml:space="preserve">
-    <value>Der halbautomatische Modus ermöglicht die Ausführung von Vorgängen während der Produktion auf die gleiche Weise wie im Wartungsmodus. Dabei werden ausgewählte Komponenten mithilfe von HMI-Befehlen manuell gesteuert, ohne dass eine Prozessverriegelung verwaltet wird. Bei Auswahl dieses Modus kann die vorgelagerte Produktion unterbrochen werden.</value>
+    <value>Der halbautomatische Modus ermöglicht bestimmte Vorgänge während der Produktion, ähnlich wie im Wartungsmodus. Er ermöglicht die manuelle Steuerung ausgewählter Komponenten über HMI-Befehle ohne Prozessverriegelungen.
+Hinweis: Bei Aktivierung dieses Modus kann die vorgelagerte Produktion unterbrochen werden.</value>
   </data>
   <data name="P_INFO_BYPASS_GT_VLVs" xml:space="preserve">
-    <value>Wenn die Option „Sicher“ ausgewählt ist, ermöglicht das System das gleichzeitige Öffnen der oberen und unteren Ventile. Andernfalls ist dies bei Auswahl der Option „Entsperrt“ zulässig und kann nur im Wartungsmodus mithilfe der HMI-Befehle durchgeführt werden.</value>
+    <value>Bei Auswahl der Option „Sicher“ verhindert das System das gleichzeitige Öffnen der oberen und unteren Ventile. Bei Auswahl der Option „Entsperrt“ ist das gleichzeitige Öffnen beider Ventile zulässig – allerdings nur im Wartungsmodus über HMI-Befehle.</value>
   </data>
   <data name="P_MATER_FLOAT_CTRL" xml:space="preserve">
-    <value>Maximale Zeit ohne Druck oberhalb des im Rotordruckfeld eingestellten Mindestwerts. Nach Ablauf dieser Zeit versucht der Rotor, mehr Material einzufangen, indem er seine Richtung ändert, da das Material wahrscheinlich im Trichter schwimmt. Setzen Sie diesen Parameter auf Null, um diese Steuerung zu deaktivieren.</value>
+    <value>Dies ist die maximal zulässige Zeit, ohne dass der Rotordruck den am Bedienfeld eingestellten Mindestwert überschreitet. Läuft diese Zeit ab, versucht der Rotor durch Richtungswechsel, mehr Material aufzufangen, da das Material wahrscheinlich im Trichter schwimmt. Setzen Sie diesen Parameter auf Null, um diese Steuerung zu deaktivieren.</value>
   </data>
   <data name="P_ROT_DIR_CHG_TIME" xml:space="preserve">
-    <value>Der Rotor kann seine Richtung zeitabhängig ändern. Geben Sie hier das Zeitintervall ein, in dem die Rotorrichtung umgedreht wird. Beachten Sie, dass dieses Zeitintervall bei jedem Richtungswechsel zurückgesetzt wird, auch wenn die Richtungsumkehr andere Ursachen hat. Ist dieser Parameter auf Null gesetzt, bleibt diese Funktion deaktiviert.</value>
+    <value>Der Rotor kann seine Drehrichtung zeitabhängig umkehren. Geben Sie das Zeitintervall ein, das diese Umkehr auslöst. Beachten Sie, dass der Timer bei jeder Richtungsänderung zurückgesetzt wird, auch wenn die Umkehr aus anderen Gründen erfolgt. Wenn Sie diesen Parameter auf Null setzen, wird diese Funktion deaktiviert.</value>
   </data>
   <data name="P_ROT_RST_MODE" xml:space="preserve">
-    <value>Auch wenn ein bestimmter Modus zur Synchronisierung der Rotoren gewählt ist, kann es vorkommen, dass ein Rotor beispielsweise aufgrund von Druckspitzen seine Drehrichtung ändert. In diesem Fall entspricht die Synchronisierung zwischen den Rotoren nicht mehr der gewünschten. Dieser Parameter stellt sicher, dass der Verlust der Rotorsynchronisation nicht länger als die hier eingestellte Zeit andauert. Ist diese Funktion nicht gewünscht und keine Synchronisierung zwischen den Rotoren erforderlich, kann im entsprechenden Auswahlmenü der Rotationsmodus „Frei“ gewählt werden.</value>
+    <value>Selbst wenn ein Modus zur Synchronisierung der Rotorrotation ausgewählt ist, kann ein Rotor aufgrund von Gründen wie dem Erreichen des Maximaldrucks die Richtung ändern. In diesem Fall sind die Rotoren nicht mehr wie ursprünglich vorgesehen synchronisiert. Dieser Parameter legt die maximal zulässige Zeit fest, die die Rotoren benötigen, um die Synchronisation wiederherzustellen. Wenn keine Synchronisierung erforderlich ist, können Sie im entsprechenden Menü den Rotationsmodus „Frei“ auswählen.</value>
   </data>
   <data name="P_ROT_MODE" xml:space="preserve">
-    <value>Es stehen drei Rotationsmodi für die Rotoren zur Auswahl: 1) FREE ist der Modus, bei dem jeder Rotor völlig unabhängig von den anderen ist (keine Synchronisierung). 2) IN PHASE ist der Modus, bei dem die Rotoren die gleiche Drehrichtung haben. Beachten Sie, dass bei diesem Modus die letzte Richtung von Rotor 1 als Referenz für beide verwendet wird. 3) INSIDE ist der Modus, bei dem die Rotoren synchronisiert werden, um das Material zwischen den Rotoren zu fördern und zu halten. 4) OUTSIDE ist der Modus, bei dem die Rotoren synchronisiert werden, um das Material an der Außenseite der Rotoren, in der Nähe der seitlichen Trichterwände, zu fördern und zu halten.</value>
+    <value>Für die Rotoren stehen vier Rotationsmodi zur Verfügung:
+1. Frei: Jeder Rotor arbeitet völlig unabhängig und ohne Synchronisierung.
+2. In Phase: Beide Rotoren drehen sich in die gleiche Richtung. Die letzte Richtung von Rotor 1 dient als Referenz für beide.
+3. Innen: Die Rotoren sind synchronisiert, um Material zwischen ihnen zu fördern und zu halten.
+4. Außen: Die Rotoren sind synchronisiert, um Material an den Außenseiten, nahe den seitlichen Trichterwänden, zu fördern und zu halten.</value>
   </data>
   <data name="P_ENAB_EXT_SP_REF" xml:space="preserve">
-    <value>Diese Auswahl begrenzt den im HMI-Menü eingestellten Drehzahlsollwert und ermöglicht den Antrieb des Motors mit externer Drehzahlreferenz</value>
+    <value>Diese Auswahl deaktiviert den Drehzahlsollwert im HMI-Menü und ermöglicht die Steuerung des Motors über eine externe Drehzahlreferenz.</value>
   </data>
   <data name="P_CORRECTION_FACTOR" xml:space="preserve">
-    <value>Mit diesem Parameter können Sie das Mess- oder Referenzsignal nach oben und unten anpassen. Werte unter 100 korrigieren den Referenzwert nach unten, Werte über 100 nach oben. Der Wert 100 bedeutet keine Korrektur.</value>
+    <value>Mit diesem Parameter können Sie das Mess- oder Referenzsignal für die Ober- und Unterseite anpassen. Werte unter 100 verringern den Referenzwert, Werte über 100 erhöhen ihn. Ein Wert von 100 bedeutet keine Korrektur.</value>
   </data>
   <data name="P_EVAC_TIME" xml:space="preserve">
-    <value>Stellen Sie diese Verzögerung basierend auf der Zeit ein, die das System benötigt, um den Prozess durchzuführen und das gesamte Material abzutransportieren, um den Materialpfad zu ändern, ohne dass die Gefahr besteht, dass verschiedene Materialtypen vermischt werden. Setzen Sie diesen Parameter auf Null, wenn für diese Anlage kein Risiko besteht.</value>
+    <value>Stellen Sie diese Verzögerung entsprechend der Zeit ein, die das System benötigt, um den Prozess abzuschließen und das gesamte Material abzutransportieren. Dadurch wird sichergestellt, dass Materialwege gewechselt werden können, ohne dass die Gefahr einer Vermischung verschiedener Materialarten besteht. Setzen Sie diesen Parameter auf Null, wenn im System keine Gefahr einer Kreuzkontamination besteht.</value>
   </data>
   <data name="P_INV_MAX_FREQ" xml:space="preserve">
-    <value>Legen Sie hier die maximale Frequenz fest, die der Motor erreichen darf. Diese ist in den Antriebsparametern festgelegt. Dadurch wird die Anzeige der tatsächlichen Frequenz auf der PreVu-HMI an die im Wechselrichter-Bedienfeld angezeigte Frequenz angepasst.</value>
+    <value>Stellen Sie die maximale Frequenz ein, die der Motor erreichen darf, wie in den Antriebsparametern definiert. Dadurch wird sichergestellt, dass die auf der PreVu-Bedienoberfläche angezeigte Frequenz mit dem auf dem Wechselrichter-Bedienfeld angezeigten Wert übereinstimmt.</value>
   </data>
   <data name="P_SENS_FULL_SCALE" xml:space="preserve">
-    <value>Stellen Sie hier den Messwert ein, der dem maximalen Signalausgang des Sensors (20 mA) entspricht.</value>
+    <value>Stellen Sie den Messwert ein, der dem maximalen Ausgangssignal des Sensors (20 mA) entspricht.</value>
   </data>
   <data name="P_INFO_RES_NOM_AMP" xml:space="preserve">
-    <value>Stellen Sie hier den Nennstrom des Widerstandes ein, um die Anzeige des aktuellen Prozentwertes in der HMI-Ansicht zu ermöglichen.</value>
+    <value>Stellen Sie hier den Nennstrom des Widerstandes ein, um eine genaue Anzeige des aktuellen Prozentwertes auf dem HMI zu ermöglichen.</value>
   </data>
   <data name="P_PULSE_VALUE_WATER" xml:space="preserve">
-    <value>Dies ist die Wassermenge, die einem Signalimpuls vom Sensor entspricht. Wenn dieser Wert beispielsweise auf 10 Liter eingestellt ist, entspricht die Anzahl von 3 Impulsen einer Ansammlung von 30 Litern.</value>
+    <value>Dies ist die Wassermenge, die einem Impuls vom Sensor entspricht. Wenn dieser Wert beispielsweise auf 10 Liter eingestellt ist, bedeutet der Empfang von 3 Impulsen, dass insgesamt 30 Liter gemessen wurden.</value>
   </data>
   <data name="P_TANK_LEVEL_OVERFLOW" xml:space="preserve">
-    <value>Dieser Wert wird durch Messen des Abstands zwischen dem Füllstandssensor und der Überlaufkante des Tanks eingestellt. Auf diese Weise kann PreVu HMI einen Füllstand von 100 % anzeigen, sobald die Flüssigkeit die Überlaufkante des Tanks erreicht.</value>
+    <value>Dieser Wert sollte durch Messen des Abstands zwischen Füllstandssensor und Überlaufkante des Tanks eingestellt werden. Dadurch kann das PreVu HMI einen Füllstand von 100 % anzeigen, wenn die Flüssigkeit den Überlaufpunkt erreicht.</value>
   </data>
   <data name="P_TANK_DIAMETER" xml:space="preserve">
-    <value>Dieser Wert wird verwendet, um das Flüssigkeitsvolumen im Tank zu schätzen und zeitliche Volumenschwankungen zu berechnen. Je genauer dieser Wert ist, desto genauer sind auch die Flüssigkeitsvolumenmessungen.</value>
+    <value>Dieser Wert dient zur Schätzung des Flüssigkeitsvolumens im Tank und zur Berechnung zeitlicher Volumenschwankungen. Je genauer dieser Wert ist, desto präziser sind die Flüssigkeitsvolumenmessungen.</value>
   </data>
   <data name="P_ENAB_HI_REST_SP" xml:space="preserve">
-    <value>Die hohe Wiederanlaufgeschwindigkeit kann in verschiedenen Prozesszuständen genutzt werden, insbesondere um das Risiko einer Abfallansammlung zu vermeiden, die die Pumpe verstopfen kann. Der Bediener kann diese Funktion je nach Bedarf aktivieren oder deaktivieren.</value>
+    <value>Eine hohe Wiederanlaufgeschwindigkeit kann unter verschiedenen Prozessbedingungen genutzt werden, vor allem um das Risiko einer Abfallansammlung zu vermeiden, die die Pumpe verstopfen könnte. Der Bediener kann diese Funktion je nach Bedarf aktivieren oder deaktivieren.</value>
   </data>
   <data name="P_HI_REST_SP_VAL" xml:space="preserve">
-    <value>Wenn die hohe Neustartgeschwindigkeit aktiviert ist, ist dies der Wert der Höchstgeschwindigkeit, die die Pumpe beim Neustart erreicht.</value>
+    <value>Wenn die hohe Neustartgeschwindigkeit aktiviert ist, ist dies die maximale Geschwindigkeit, die die Pumpe während des Neustarts erreicht.</value>
   </data>
   <data name="P_HI_REST_SP_TIME" xml:space="preserve">
-    <value>Wenn die hohe Neustartgeschwindigkeit aktiviert ist, ist dies die Dauer der Höchstgeschwindigkeit, die die Pumpe beim Neustart erreicht.</value>
+    <value>Wenn die hohe Neustartgeschwindigkeit aktiviert ist, ist dies die Dauer, für die die Pumpe während des Neustarts mit ihrer maximalen Geschwindigkeit läuft.</value>
   </data>
   <data name="INFO_COOL_3" xml:space="preserve">
     <value>Schalten Sie die Kühlpumpe ein, damit das zugehörige Gerät kontinuierlich läuft</value>
   </data>
   <data name="INFO_SYS_36" xml:space="preserve">
-    <value>Hardwarefehler auf der SPS-Sicherheitseingangskarte. Stellen Sie sicher, dass keine Kurzschlüsse im Feld oder fehlerhafte Verbindungen im an diesen SPS-Eingang angeschlossenen Schaltkreis vorliegen. Überprüfen Sie das Sicherheits-SPS-Eingangsmodul, setzen Sie den Alarm zurück und/oder starten Sie das SPS-Modul neu.</value>
+    <value>Hardwarefehler auf der SPS-Sicherheitseingangskarte. Stellen Sie sicher, dass keine Kurzschlüsse im Feld oder fehlerhafte Verbindungen im an diesen SPS-Eingang angeschlossenen Schaltkreis vorliegen. Überprüfen Sie das Sicherheits-SPS-Eingangsmodul, setzen Sie den Alarm zurück und/oder starten Sie das SPS-Modul neu</value>
   </data>
   <data name="INFO_SYS_37" xml:space="preserve">
-    <value>Hardwarefehler auf der SPS-Sicherheitsausgangskarte. Stellen Sie sicher, dass keine Kurzschlüsse im Feld oder fehlerhafte Verbindungen im an diesen SPS-Ausgang angeschlossenen Schaltkreis vorliegen. Überprüfen Sie das Sicherheits-SPS-Ausgangsmodul, setzen Sie den Alarm zurück und/oder starten Sie das SPS-Modul neu.</value>
+    <value>Hardwarefehler auf der SPS-Sicherheitsausgangskarte. Stellen Sie sicher, dass keine Kurzschlüsse im Feld oder fehlerhafte Verbindungen im an diesen SPS-Ausgang angeschlossenen Schaltkreis vorliegen. Überprüfen Sie das Sicherheits-SPS-Ausgangsmodul, setzen Sie den Alarm zurück und/oder starten Sie das SPS-Modul neu</value>
   </data>
   <data name="INFO_SYS_38" xml:space="preserve">
     <value>Mindestens einer der Ausgangsschütze ist immer noch geschlossen, auch wenn das Gerät ausgeschaltet ist! Überprüfen Sie beide Schütze und die SPS-Schnittstellenrelais, die die Schütze antreiben.</value>

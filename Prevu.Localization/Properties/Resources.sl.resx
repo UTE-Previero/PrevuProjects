@@ -10423,112 +10423,124 @@
     <value>Izpustni ventili so izgubili svoj vzajemni položaj. Varne zapore. Operater jih lahko zdaj odpre istočasno v načinu vzdrževanja</value>
   </data>
   <data name="P_INFO_DISAB_SENS" xml:space="preserve">
-    <value>Lahko se začasno uporablja v primeru okvare senzorja. Ko je senzor onemogočen, je njegovo branje prikrito in vrednost, prikazana na HMI, je tista, ki jo proces potrebuje za proizvodnjo. Senzor je treba zamenjati čim prej.</value>
+    <value>Lahko se uporablja začasno v primeru okvare senzorja. Ko je senzor onemogočen, je njegov odčitek prikrit in vrednost, prikazana na HMI, je tista, ki jo zahteva proces za proizvodnjo. Senzor je treba zamenjati čim prej.</value>
   </data>
   <data name="P_INFO_LEVEL_TEACH_1" xml:space="preserve">
-    <value>Kliknite to zastavico, ko senzor pregleda pravo raven materiala, to je tisto, ki ustreza vrednosti, navedeni v relativnem parametru. To je način, kako senzor naučiti, da je to prikazana raven.</value>
+    <value>Kliknite to zastavico, ko senzor zazna pravilno raven materiala, kot je določeno v parametru. To senzor nauči, da je trenutna raven referenčna raven.</value>
   </data>
   <data name="P_INFO_LEVEL_TEACH_2" xml:space="preserve">
-    <value>Nastavite vrednost najvišje ravni, ki ustreza ravni materiala v stroju, in nato kliknite »Nastavi celotno lestvico«, da pridobite to mero kot vrednost najvišje ravni. Npr.: Nastavite 90 %, ko je koš skoraj poln, pri približno 90 % svoje zmogljivosti.</value>
+    <value>Vnesite najvišjo raven materiala (npr. 90 %, ko je lijak skoraj poln) in kliknite »Nastavi celotno lestvico«, da jo shranite kot najvišjo referenco.</value>
   </data>
   <data name="P_INFO_LEVEL_TEACH_3" xml:space="preserve">
-    <value>Nastavite vrednost najnižje ravni, ki ustreza ravni materiala v stroju, in nato kliknite »Nastavi prazno lestvico«, da pridobite to mero kot vrednost najnižje ravni. Npr.: Nastavite 10 %, ko je koš skoraj prazen, pri približno 10 % njegove prostornine.</value>
+    <value>Vnesite najnižjo raven materiala (npr. 10 %, ko je lijak skoraj prazen) in kliknite »Nastavi prazno lestvico«, da jo shranite kot najnižjo referenco.</value>
   </data>
   <data name="P_INFO_DIS_MODUL_MTR" xml:space="preserve">
-    <value>Kliknite to zastavico, da bo motor deloval s konstantno hitrostjo. Če ta zastavica ni nastavljena, motor poganja logika procesa s spremenljivo hitrostjo v času.</value>
+    <value>Omogočite to zastavico, da bo motor deloval s konstantno hitrostjo. Če ni omogočeno, se bo hitrost motorja spreminjala glede na logiko procesa.</value>
   </data>
   <data name="P_INFO_PAUSE_TIME_1" xml:space="preserve">
-    <value>Tukaj nastavite čas, ki se bo upošteval kot premor ali izpad komponente v delovnem načinu, ki temelji na zaporedju VKLOP-IZKLOP. Če je ta čas nastavljen na nič, komponenta, na katero se nanaša ta parameter, ne bo imela več izpadov zaradi zaporedja VKLOP-IZKLOP, razen če je celo čas VKLOPA nastavljen na nič.</value>
+    <value>Določite trajanje, ki se šteje kot izpad za komponento, ki deluje v načinu ON-OFF. Če je nastavljena na nič, komponenta ne bo imela časa premora, razen če je tudi čas VKLOPANJA enak nič.</value>
   </data>
   <data name="P_INFO_ON_TIME_1" xml:space="preserve">
-    <value>Tukaj nastavite čas, ki bo obravnavan kot čas aktivnosti ali čas delovanja komponente znotraj delovnega načina, ki temelji na zaporedju VKLOP-IZKLOP. Če je ta čas nastavljen na nič, komponenta, na katero se ta parameter nanaša, ne bo imela več časa aktivnosti, kar pomeni, da bo ustavljena med zaporedjem VKLOP-IZKLOP. Opomba: Če je čas premora nastavljen na nič in je čas vklopa nad nič, je komponenta ukazana, da mora biti vedno VKLOPLJENA znotraj zaporedja VKLOP-IZKLOP.</value>
+    <value>Določite aktivni čas za komponento v načinu ON-OFF. Če je nastavljena na nič, komponenta med ciklom ne bo delovala. Opomba: Če je čas premora enak nič in je nastavljen čas vklopa, bo komponenta ostala VKLOPLJENA neprekinjeno.</value>
   </data>
   <data name="P_INFO_DIS_MODUL_VLV" xml:space="preserve">
-    <value>Kliknite to zastavico, če želite, da ventil deluje pri stalni referenčni vrednosti. Če ta zastavica ni nastavljena, ventil poganja logika procesa pri spremenljivi referenci v času.</value>
+    <value>Omogočite to, da ohranite konstantno referenčno vrednost ventila. V nasprotnem primeru se bo referenca razlikovala glede na logiko procesa.</value>
   </data>
   <data name="P_INFO_PROP_GAIN" xml:space="preserve">
-    <value>Regulacija v domeni razlike med nastavljeno vrednostjo in povratno informacijo. Višja kot je ta vrednost, višja je predvsem reaktivnost sistema, ko se razlika med nastavljeno vrednostjo in povratno informacijo poveča. Opomba: Če je ta dobiček previsok, lahko uredba postane nestabilna. Če je prenizka, bo regulacija zelo stabilna, a potencialno nezadostna, da bi tako spodbudila proizvodnjo, da bi dosegla želeni cilj.</value>
+    <value>Ta parameter določa odzivnost sistema na razliko med nastavljeno vrednostjo (setpoint) in dejansko povratno informacijo. Višja vrednost poveča reaktivnost sistema, še posebej, če je razlika med nastavljeno vrednostjo in povratno informacijo velika.
+Opomba: če je ojačanje nastavljeno previsoko, lahko sistem postane nestabilen. Če je ojačanje prenizko, bo regulacija zelo stabilna, vendar morda ne bo dovolj močna, da bi dosegla želeni cilj.</value>
   </data>
   <data name="P_INFO_INTGR_SMP_TIME" xml:space="preserve">
-    <value>Višja je ta vrednost, počasnejša je odzivnost sistema. Ta čas je tisti, ki ga za delo uporablja parameter integralnega ojačanja. En vzorec neprekinjeno nasledi naslednji.</value>
+    <value>Višja kot je ta vrednost, počasneje se sistem odziva. Ta čas predstavlja interval, ki ga uporablja parameter integralnega ojačanja. Vsakemu vzorcu neprekinjeno sledi naslednji.</value>
   </data>
   <data name="P_INFO_INTGR_GAIN" xml:space="preserve">
-    <value>Regulacija v časovni domeni. Višja je ta vrednost, višja je reaktivnost sistema vsakič, ko poteče čas integralnega vzorca. Opomba: če je ta dobiček previsok, se uredba morda ne more odzvati na hitre spremembe povratnih informacij. Če je prenizka, bo regulacija hitrejša, vendar potencialno nezadostna, da bi dosegla dovolj proizvodnje, da bi dosegla želeni cilj. Če je ta dobiček nastavljen na nič, se regulacija v časovni domeni ne izvede.</value>
+    <value>Višja kot je ta vrednost, bolj je sistem odziven vsakič, ko poteče čas integralnega vzorčenja.
+Opomba: če je ta dobiček previsok, se uredba morda ne bo uspela učinkovito odzvati na hitre spremembe povratnih informacij. Če je prenizka, bo regulacija hitrejša, vendar morda ne bo dovolj močna, da bi dosegla želeni cilj. Če je ta dobiček nastavljen na nič, se regulacija v časovni domeni ne izvede.</value>
   </data>
   <data name="P_INFO_ACT_PI_OUT" xml:space="preserve">
-    <value>Dejanski izhod regulacije, ki se uporablja kot odpravljanje napak ali diagnostika ali za ovrednotenje pravilne parametrizacije parametrov regulacije, ki jih je treba nastaviti glede na splošno vedenje sistema.</value>
+    <value>Prikazuje dejanski regulacijski izhod, uporaben za diagnostiko ali prilagajanje regulacijskih parametrov.</value>
   </data>
   <data name="P_INFO_ANTICAV_1" xml:space="preserve">
-    <value>Črpalka za kratek čas ciklično zmanjša svojo hitrost (Npr.: -5 % za 3 sekunde) z namenom preprečevanja kavitacije. Ta parameter predstavlja čas med enim kratkim znižanjem hitrosti in naslednjim. Če je nastavljena na nič, se znižanje hitrosti ne izvede.</value>
+    <value>Črpalka se na kratko upočasni (npr. -5 % za 3 sekunde), da prepreči kavitacijo. To nastavi čas med takšnimi upočasnitvami. Če je nič, je funkcija onemogočena.</value>
   </data>
   <data name="P_INFO_ANTICAV_2" xml:space="preserve">
-    <value>Črpalka zmanjša svojo hitrost na vrednost "Nižja hitrost za minimalni tok - nastavljena točka" za čas "Nižja hitrost za minimalni tok - trajanje", da odpravi kavitacijo, ki je v teku (kar prepoznamo po znižanju toka pod mejo, nastavljeno v HMI za "Najmanjši tok"). Če protikavitacijski postopek uspe prekiniti kavitacijo, se črpalka vrne na procesno hitrost brez globalnega signala. V nasprotnem primeru, ko se hitrost procesa obnovi, se ustvari alarm "Motor Current Below Minimum Range Limit – Possible Cavitation". V tem primeru sistem NE bo znova poskušal samodejno dekavitirati črpalke, ker prvi poskus ni uspel, ampak se bo obrnil na operaterja za pregled parametrov ali za druga dejanja. Če je trajanje nastavljeno na nič, se dekavitacija ne izvede v primeru minimalnega toka črpalke.</value>
+    <value>Ko je zaznana kavitacija – prepoznana tako, da tok motorja pade pod prag "Minimalni tok", nastavljen v HMI - bo črpalka samodejno zmanjšala svojo hitrost na vrednost, določeno v "Nižja hitrost za najmanjši tok – Nastavljena točka" in ohranila to zmanjšano hitrost za čas, določen v "Nižja hitrost za minimalni tok – Trajanje".
+Če ta postopek proti kavitaciji uspešno odpravi težavo, črpalka nadaljuje z običajno hitrostjo procesa, ne da bi sprožila kakršne koli alarme ali globalne signale.
+Če pa se kavitacija nadaljuje in tok motorja po ponovni vzpostavitvi hitrosti ostane pod minimalnim pragom, bo sistem sprožil alarm:
+"Tok motorja pod minimalno mejo območja – možna kavitacija."
+Na tej točki ne bodo izvedeni nadaljnji poskusi samodejne dekavitacije. Sistem se zanaša na posredovanje operaterja, da pregleda parametre ali izvede korektivne ukrepe.
+Opomba: če je Trajanje nastavljeno na nič, bo postopek proti kavitaciji onemogočen in ne bo izvedeno nobeno dejanje, ko tok motorja pade pod minimalni prag.</value>
   </data>
   <data name="P_INFO_MICROF_1" xml:space="preserve">
-    <value>Na začetku proizvodnje je možno aktivirati "posebno čiščenje", ki bi moralo biti intenzivnejše od naslednjih drugih, da se stopijo morebitni strjeni ostanki na mreži filtra. S tem parametrom lahko nastavite njegovo trajanje.</value>
+    <value>Na začetku proizvodnje se lahko aktivira "posebno čiščenje". To čiščenje je intenzivnejše od običajnih in pomaga raztopiti morebitne strjene ostanke na mreži filtra. S tem parametrom lahko nastavite trajanje tega čiščenja.</value>
   </data>
   <data name="P_INFO_MICROF_2" xml:space="preserve">
-    <value>Na koncu proizvodnje (cikel zaustavitve) je možno zmanjšati čas premora med enim čiščenjem in naslednjim, da se poveča učinek vode na mrežo in prepreči strjevanje ostankov med izpadom linije.</value>
+    <value>Na koncu proizvodnje (med ciklom zaustavitve) je možno skrajšati čas premora med čiščenji. To okrepi učinek vode na filtrirno mrežo in pomaga preprečiti strjevanje ostankov, medtem ko cev miruje.</value>
   </data>
   <data name="P_INFO_MIN_LEV_BYPS" xml:space="preserve">
-    <value>Kliknite to zastavico, da preizkusite vrtenje črpalke v primeru, da ni prisotne minimalne ravni. V tem primeru bo črpalka lahko delovala nekaj sekund brez minimalne ravni z namenom samo preverjanja vrtenja. Ta zastavica se samodejno ponastavi, ko se črpalka začne premikati.</value>
+    <value>Kliknite to zastavico, da preizkusite vrtenje črpalke, ko ni zaznana najnižja raven. V tem načinu bo črpalka delovala nekaj sekund samo za preverjanje njenega vrtenja. Zastavica se samodejno ponastavi, ko se črpalka začne premikati.</value>
   </data>
   <data name="P_INFO_MTR_NOM_AMP" xml:space="preserve">
-    <value>Tukaj nastavite nazivni tok motorja. To vrednost je mogoče doseči na nalepki motorja (tisti, ki je prikazana pri ustrezni napetosti motorja), da bi predstavljala najbolj natančno mero trenutne vrednosti v odstotkih v pogledu HMI.</value>
+    <value>Tukaj nastavite nazivni tok motorja. To vrednost najdete na nalepki motorja (ustreza pravilni napetosti motorja). To zagotavlja, da je trenutni odstotek, prikazan na HMI, kar se da natančen.</value>
   </data>
   <data name="P_INFO_SEMIAUTO_MODE" xml:space="preserve">
-    <value>Polsamodejno je način, ki se uporablja za določene komponente, da se omogoči izvajanje operacij med proizvodnjo na enak način, kot se lahko izvajajo v načinu vzdrževanja. Ročno premikanje nekaterih izbranih komponent z uporabo ukazov HMI, ne da bi bila upravljana kakršna koli blokada procesa. Če je izbran ta način, bi lahko bila proizvodnja na zgornjem delu oskrbne verige začasno ustavljena.</value>
+    <value>Polsamodejni način se uporablja za določene komponente, da omogoči določene operacije med proizvodnjo, podobno kot se izvajajo v vzdrževalnem načinu. Omogoča vam ročno upravljanje izbranih komponent prek ukazov HMI brez kakršnih koli procesnih zapor.
+Opomba: če je ta način aktiviran, je proizvodnja na zgornjem delu verige lahko začasno ustavljena.</value>
   </data>
   <data name="P_INFO_BYPASS_GT_VLVs" xml:space="preserve">
-    <value>Če je izbrana varna možnost, sistem onemogoči hkratno odpiranje zgornjih in spodnjih ventilov. V nasprotnem primeru, če je izbrana možnost Odklenjeno, je to dovoljeno in se lahko izvede samo v načinu vzdrževanja z uporabo ukazov HMI.</value>
+    <value>Če je izbrana možnost Secure, sistem prepreči istočasno odpiranje zgornjega in spodnjega ventila. Če je izbrana možnost Odklenjeno, je dovoljeno odpiranje obeh ventilov hkrati, vendar le v načinu vzdrževanja z uporabo ukazov HMI.</value>
   </data>
   <data name="P_MATER_FLOAT_CTRL" xml:space="preserve">
-    <value>Najdaljši čas brez tlaka nad minimalno mejo, nastavljeno na plošči tlaka rotorja. Če ta čas poteče, poskuša rotor ujeti več materiala, ki spreminja svojo smer, saj material, ki ga verjetno lebdi v lijaku. Nastavite ta parameter na nič, da onemogočite ta nadzor.</value>
+    <value>To je najdaljši dovoljeni čas, ne da bi tlak rotorja presegel najnižjo mejo, nastavljeno na plošči. Če se ta čas izteče, bo rotor poskušal ujeti več materiala s spremembo smeri, saj material verjetno lebdi v lijaku. Nastavite ta parameter na nič, da onemogočite ta nadzor.</value>
   </data>
   <data name="P_ROT_DIR_CHG_TIME" xml:space="preserve">
-    <value>Rotor lahko spremeni svojo smer glede na čas. Tukaj vnesite časovni interval, ki se uporablja za obračanje smeri rotorja. Upoštevajte, da se ta časovni interval ponastavi ob vsaki spremembi smeri, tudi če je ta obrat posledica drugih vzrokov. Če je ta parameter nastavljen na nič, ta funkcija ostane onemogočena.</value>
+    <value>Rotor lahko obrne svojo smer glede na časovni interval. Vnesite časovni interval, uporabljen za sprožitev te razveljavitve. Upoštevajte, da se časovnik ponastavi vsakič, ko se smer spremeni, tudi če do preobrata pride iz drugih razlogov. Če ta parameter nastavite na nič, to funkcijo onemogočite.</value>
   </data>
   <data name="P_ROT_RST_MODE" xml:space="preserve">
-    <value>Tudi če je izbran določen način za sinhronizacijo vrtenja rotorjev, se lahko zgodi, da eden od rotorjev spremeni svojo smer zaradi največjega tlaka (Npr.). V tem primeru sinhronizacija med rotorjema ni več enaka, kot je bila zahtevana. Ta parameter se uporablja za zagotovitev, da izguba sinhronizacije rotorjev ni daljša od časa, ki je tukaj nastavljen. Če ta funkcija ni zahtevana in ni potrebna sinhronizacija med rotorjema, je možno izbrati način "prostega" vrtenja v meniju za pravilno izbiro.</value>
+    <value>Tudi ko je izbran način za sinhronizacijo vrtenja rotorjev, lahko en rotor spremeni smer zaradi razlogov, kot je doseganje največjega tlaka. V tem primeru rotorji niso več sinhronizirani, kot je bilo prvotno predvideno. Ta parameter nastavi najdaljši dovoljeni čas za ponovno vzpostavitev sinhronizacije rotorjev. Če sinhronizacija ni potrebna, lahko v ustreznem meniju izberete način vrtenja »Prosti«.</value>
   </data>
   <data name="P_ROT_MODE" xml:space="preserve">
-    <value>Izberete lahko tri načine vrtenja rotorjev: 1) BREZPLAČNO je način, ki omogoča, da je vsak rotor popolnoma neodvisen od drugega (brez sinhronizacije). 2) V FAZI je način, ki zagotavlja enako smer vrtenja rotorjev. Upoštevajte, da se za ta način zadnja smer rotorja 1 uporablja kot referenca za oba. 3) INSIDE je način, ki sinhronizira rotorje z namenom prenašanja in zadrževanja materiala med rotorji. 4) ZUNAJ je način, ki sinhronizira rotorje z namenom transporta in zadrževanja materiala na zunanji strani rotorjev, v bližini stranskih sten lijaka.</value>
+    <value>Za rotorje so na voljo štirje načini vrtenja:
+1. Brezplačno: Vsak rotor deluje popolnoma neodvisno, brez sinhronizacije.
+2. V fazi: oba rotorja se vrtita v isto smer. Zadnja smer rotorja 1 se uporablja kot referenca za oba.
+3. Notranjost: Rotorji so sinhronizirani za transport in zadrževanje materiala med njimi.
+4. Zunaj: Rotorji so sinhronizirani za transport in zadrževanje materiala vzdolž zunanjih strani, blizu stranskih sten lijaka.</value>
   </data>
   <data name="P_ENAB_EXT_SP_REF" xml:space="preserve">
-    <value>Ta izbira Hinibits nastavitve hitrosti, nastavljene v meniju HMI, in omogoča, da se motor poganja z zunanjo referenco hitrosti</value>
+    <value>Ta izbira onemogoči nastavljeno vrednost hitrosti v meniju HMI in omogoči krmiljenje motorja z uporabo zunanje reference hitrosti.</value>
   </data>
   <data name="P_CORRECTION_FACTOR" xml:space="preserve">
-    <value>S tem parametrom prilagodite merilni ali referenčni signal na obeh straneh, zgoraj in spodaj. Nastavite vrednosti, manjše od 100, da popravite referenčno mero navzdol, in vrednosti, večje od 100, da jo popravite navzgor. Vrednost 100 pomeni brez popravka.</value>
+    <value>S tem parametrom prilagodite merilni ali referenčni signal za zgornjo in spodnjo stran. Nastavite vrednosti pod 100, da zmanjšate referenčno meritev, in vrednosti nad 100, da jo povečate. Vrednost 100 pomeni, da ni popravka.</value>
   </data>
   <data name="P_EVAC_TIME" xml:space="preserve">
-    <value>Nastavite to zakasnitev glede na čas, ki ga sistem potrebuje za izvedbo procesa in transport celotnega materiala, da se spremeni pot materiala brez tveganja, da bi se lahko mešale različne vrste materiala. Ta parameter nastavite na nič, če za ta obrat ni tveganja.</value>
+    <value>To zakasnitev nastavite glede na čas, ki ga sistem potrebuje za dokončanje postopka in transport ves material. To zagotavlja, da je mogoče poti materiala zamenjati brez tveganja mešanja različnih vrst materiala. Ta parameter nastavite na nič, če v sistemu ni nevarnosti navzkrižne kontaminacije.</value>
   </data>
   <data name="P_INV_MAX_FREQ" xml:space="preserve">
-    <value>Tukaj nastavite največjo frekvenco, ki jo motor lahko doseže in je nastavljena v parametrih pogona. To se uporablja za ujemanje pogleda dejanske frekvence na PreVu HMI s tisto, ki je prikazana na plošči pretvornika.</value>
+    <value>Nastavite največjo frekvenco, ki jo motor lahko doseže, kot je določeno v parametrih pogona. To zagotavlja, da se frekvenca, prikazana na PreVu HMI, ujema z vrednostjo, prikazano na plošči pretvornika.</value>
   </data>
   <data name="P_SENS_FULL_SCALE" xml:space="preserve">
-    <value>Tukaj nastavite vrednost mere, ki ustreza največjemu izhodnemu signalu senzorja (20 mA)</value>
+    <value>Nastavite vrednost meritve, ki ustreza največjemu izhodnemu signalu senzorja (20 mA).</value>
   </data>
   <data name="P_INFO_RES_NOM_AMP" xml:space="preserve">
-    <value>Tukaj nastavite nazivni tok upora, da omogočite pogled trenutne odstotne vrednosti v pogledu HMI.</value>
+    <value>Tukaj nastavite nazivni tok upora, da omogočite natančen prikaz trenutne vrednosti v odstotkih na HMI.</value>
   </data>
   <data name="P_PULSE_VALUE_WATER" xml:space="preserve">
-    <value>To je količina vode, ki ustreza enemu impulzu signala, ki prihaja iz senzorja. Na primer, če je ta vrednost nastavljena na 10 litrov, štetje 3 impulzov pomeni kopičenje 30 litrov.</value>
+    <value>To je količina vode, ki ustreza enemu impulzu senzorja. Na primer, če je ta vrednost nastavljena na 10 litrov, sprejem 3 impulzov pomeni, da je bilo izmerjenih skupno 30 litrov.</value>
   </data>
   <data name="P_TANK_LEVEL_OVERFLOW" xml:space="preserve">
-    <value>To vrednost je treba nastaviti z merjenjem razdalje med senzorjem nivoja in robom pretoka rezervoarja. Na ta način lahko PreVu HMI prikaže 100-odstotno raven takoj, ko tekočina doseže prelivni rob rezervoarja.</value>
+    <value>To vrednost je treba nastaviti z merjenjem razdalje med senzorjem nivoja in prelivnim robom rezervoarja. To omogoča PreVu HMI, da prikaže 100-odstotno raven, ko tekočina doseže točko prelivanja.</value>
   </data>
   <data name="P_TANK_DIAMETER" xml:space="preserve">
-    <value>Ta vrednost se uporablja za oceno prostornine tekočine, ki je v rezervoarju, in za izračun časovnih nihanj prostornine. Bolj kot je ta vrednost točna, bolj natančne bodo tudi meritve prostornine tekočine.</value>
+    <value>Ta vrednost se uporablja za oceno prostornine tekočine v rezervoarju in za izračun nihanj prostornine skozi čas. Bolj kot je ta vrednost natančna, natančnejše bodo meritve prostornine tekočine.</value>
   </data>
   <data name="P_ENAB_HI_REST_SP" xml:space="preserve">
-    <value>Visoko hitrost ponovnega zagona je mogoče uporabiti v več pogojih procesa, predvsem za preprečevanje tveganja kopičenja odpadkov, ki lahko ovirajo črpalko. Operater lahko omogoči ali onemogoči to funkcijo, odvisno od njegove ocene potrebe.</value>
+    <value>Visoko hitrost ponovnega zagona je mogoče uporabiti v različnih procesnih pogojih, predvsem za preprečitev tveganja kopičenja odpadkov, ki bi lahko ovirali črpalko. Operater lahko omogoči ali onemogoči to funkcijo glede na svojo oceno potrebe.</value>
   </data>
   <data name="P_HI_REST_SP_VAL" xml:space="preserve">
-    <value>Če je omogočena visoka hitrost ponovnega zagona, je to vrednost najvišje hitrosti, ki jo črpalka doseže ob ponovnem zagonu.</value>
+    <value>Če je omogočena visoka hitrost ponovnega zagona, je to največja hitrost, ki jo črpalka doseže med ponovnim zagonom.</value>
   </data>
   <data name="P_HI_REST_SP_TIME" xml:space="preserve">
-    <value>Če je omogočena visoka hitrost ponovnega zagona, je to trajanje najvišje hitrosti, ki jo črpalka doseže ob ponovnem zagonu.</value>
+    <value>Če je omogočena visoka hitrost ponovnega zagona, je to čas, v katerem črpalka med ponovnim zagonom deluje pri največji hitrosti.</value>
   </data>
   <data name="INFO_COOL_3" xml:space="preserve">
     <value>Vklopite hladilno črpalko, da omogočite neprekinjeno delovanje pripadajoče naprave</value>

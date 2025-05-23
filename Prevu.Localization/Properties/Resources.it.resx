@@ -10423,121 +10423,133 @@
     <value>Le valvole di scarico hanno perso la loro posizione reciproca Interblocchi di sicurezza. L'operatore è ora in grado di aprirli contemporaneamente in modalità manutenzione</value>
   </data>
   <data name="P_INFO_DISAB_SENS" xml:space="preserve">
-    <value>Può essere utilizzato temporaneamente in caso di malfunzionamento del sensore. Quando il sensore è disabilitato, la sua lettura è mascherata e il valore visualizzato sull'HMI è quello necessario al processo per la produzione. Il sensore deve essere sostituito il prima possibile.</value>
+    <value>Può essere utilizzato temporaneamente in caso di malfunzionamento di un sensore. Quando il sensore è disabilitato, la sua lettura viene mascherata e il valore visualizzato sull'HMI è quello richiesto dal processo per la produzione. Il sensore deve essere sostituito il prima possibile.</value>
   </data>
   <data name="P_INFO_LEVEL_TEACH_1" xml:space="preserve">
-    <value>Fare clic su questa bandierina una volta che il sensore ha scansionato il giusto livello di materiale, cioè quello che corrisponde al valore indicato nel relativo parametro. Questo è il modo per insegnare al sensore che questo è il livello indicato.</value>
+    <value>Fare clic su questo flag quando il sensore rileva il livello corretto del materiale, come definito nel parametro. In questo modo, il sensore viene informato che il livello corrente è il livello di riferimento.</value>
   </data>
   <data name="P_INFO_LEVEL_TEACH_2" xml:space="preserve">
-    <value>Impostare il valore del livello massimo che corrisponde al livello del materiale nella macchina e quindi fare clic su "Imposta fondo scala" per acquisire questa misura come valore del livello massimo. Ad esempio: impostare il 90% quando la tramoggia è quasi piena, a circa il 90% della sua capacità.</value>
+    <value>Immettere il livello massimo del materiale (ad esempio, 90% quando la tramoggia è quasi piena) e fare clic su "Imposta scala completa" per salvarlo come riferimento massimo.</value>
   </data>
   <data name="P_INFO_LEVEL_TEACH_3" xml:space="preserve">
-    <value>Impostare il valore del livello minimo che corrisponde al livello del materiale nella macchina e quindi fare clic su "Imposta scala vuota" per acquisire questa misura come valore del livello minimo. Ad esempio: impostare il 10% quando la tramoggia è quasi vuota, a circa il 10% della sua capacità.</value>
+    <value>Immettere il livello minimo del materiale (ad esempio, 10% quando la tramoggia è quasi vuota) e fare clic su "Imposta bilancia vuota" per salvarlo come riferimento minimo.</value>
   </data>
   <data name="P_INFO_DIS_MODUL_MTR" xml:space="preserve">
-    <value>Fare clic su questo flag per far funzionare il motore a velocità costante. Se questo flag non è impostato, il motore è azionato dalla logica del processo a velocità variabile nel tempo.</value>
+    <value>Abilitare questo flag per far funzionare il motore a velocità costante. Se non abilitato, la velocità del motore varierà in base alla logica del processo.</value>
   </data>
   <data name="P_INFO_PAUSE_TIME_1" xml:space="preserve">
-    <value>Imposta qui il tempo da considerare come pausa, o inattività, del componente all'interno di una modalità di lavoro basata sulla sequenza ON-OFF. Se questo tempo è impostato su zero, il componente a cui fa riferimento questo parametro non avrà più tempi di inattività a causa della sequenza ON-OFF, tranne nel caso in cui anche il tempo ON sia impostato su zero.</value>
+    <value>Specificare la durata considerata come tempo di inattività per un componente in modalità ON-OFF. Se impostato su zero, il componente non avrà alcun tempo di pausa a meno che anche il tempo di ON non sia zero.</value>
   </data>
   <data name="P_INFO_ON_TIME_1" xml:space="preserve">
-    <value>Impostare qui il tempo da considerare come tempo di attività, o tempo di esecuzione, del componente all'interno di una modalità di lavoro basata sulla sequenza ON-OFF. Se questo tempo viene impostato a zero, il componente a cui fa riferimento questo parametro, non avrà più tempo di attività, ciò significa che verrà fermato, durante la sequenza ON-OFF. Nota: se il tempo di pausa è impostato su zero e il tempo di accensione è superiore a zero, al componente viene comandato di essere sempre acceso all'interno della sequenza ON-OFF.</value>
+    <value>Specifica il tempo di attività di un componente in modalità ON-OFF. Se impostato su zero, il componente non funzionerà durante il ciclo. Nota: se il tempo di pausa è impostato su zero e il tempo di accensione è impostato, il componente rimarrà acceso ininterrottamente.</value>
   </data>
   <data name="P_INFO_DIS_MODUL_VLV" xml:space="preserve">
-    <value>Fare clic su questo flag per far funzionare la valvola a riferimento costante. Se questo flag non è impostato, la valvola è pilotata dalla logica del processo con riferimento variabile nel tempo.</value>
+    <value>Abilitare questa opzione per mantenere la valvola a un riferimento costante. In caso contrario, il riferimento varierà in base alla logica del processo.</value>
   </data>
   <data name="P_INFO_PROP_GAIN" xml:space="preserve">
-    <value>Regolazione nel dominio della differenza tra valore impostato e feedback. Maggiore è questo valore, maggiore è la reattività del sistema soprattutto quando aumenta la differenza tra Setpoint e Feedback. Nota: se questo guadagno è troppo elevato, la regolazione può diventare instabile. Se è troppo basso, la regolazione sarà molto debole ma potenzialmente non sufficiente a spingere l’output abbastanza da raggiungere l’obiettivo desiderato.</value>
+    <value>Questo parametro definisce la reattività del sistema alla differenza tra il valore impostato (setpoint) e il feedback effettivo. Un valore più elevato aumenta la reattività del sistema, soprattutto quando la differenza tra setpoint e feedback è ampia.
+Si noti che se il guadagno è impostato su un valore troppo alto, il sistema potrebbe diventare instabile. Se il guadagno è troppo basso, la regolazione sarà molto stabile ma potrebbe non essere sufficientemente forte da portare l'uscita al valore desiderato.</value>
   </data>
   <data name="P_INFO_INTGR_SMP_TIME" xml:space="preserve">
-    <value>Maggiore è questo valore, più lenta è la reattività del sistema. Questo tempo è quello utilizzato dal parametro di guadagno integrale con cui lavorare. Un campione viene seguito continuamente da quello successivo.</value>
+    <value>Più alto è questo valore, più lento è il sistema. Questo tempo rappresenta l'intervallo utilizzato dal parametro di guadagno integrale. Ogni campione è seguito ininterrottamente da quello successivo.</value>
   </data>
   <data name="P_INFO_INTGR_GAIN" xml:space="preserve">
-    <value>Regolazione nel dominio del tempo. Maggiore è questo valore, maggiore è la reattività del sistema allo scadere del tempo di campionamento integrale. Nota: se questo guadagno è troppo elevato, il regolamento potrebbe non essere in grado di rispondere a una rapida variazione del feedback. Se è troppo basso, il regolamento sarà più rigido ma potenzialmente non sufficiente a spingere l’output abbastanza da raggiungere l’obiettivo desiderato. Se questo guadagno è impostato su zero non viene eseguita alcuna regolazione nel dominio del tempo.</value>
+    <value>Maggiore è questo valore, maggiore è la reattività del sistema ogni volta che scade il tempo di campionamento integrale.
+Nota: se questo guadagno è troppo alto, la regolazione potrebbe non rispondere efficacemente alle rapide variazioni del feedback. Se è troppo basso, la regolazione sarà più rapida ma potrebbe non essere abbastanza forte da indirizzare l'uscita verso il target desiderato. Se questo guadagno è impostato su zero, non viene eseguita alcuna regolazione nel dominio del tempo.</value>
   </data>
   <data name="P_INFO_ACT_PI_OUT" xml:space="preserve">
-    <value>Output effettivo della regolazione da utilizzare come debug o diagnostica o per valutare la corretta parametrizzazione dei parametri di regolazione che devono essere impostati osservando il comportamento complessivo del sistema.</value>
+    <value>Visualizza l'uscita di regolazione effettiva, utile per la diagnostica o la regolazione dei parametri di regolazione.</value>
   </data>
   <data name="P_INFO_ANTICAV_1" xml:space="preserve">
-    <value>La Pompa Riduce Ciclicamente La Sua Velocità Per Un Breve Tempo (Es: -5% per 3 sec) Con Lo Scopo Di Prevenire La Cavitazione. Questo parametro rappresenta il tempo che intercorre tra una breve diminuzione della velocità e quella successiva. Se è impostato su zero, non viene eseguita alcuna riduzione della velocità.</value>
+    <value>La pompa rallenta brevemente (ad esempio, -5% per 3 secondi) per prevenire la cavitazione. Questo imposta l'intervallo tra tali rallentamenti. Se impostato a zero, la funzione è disabilitata.</value>
   </data>
   <data name="P_INFO_ANTICAV_2" xml:space="preserve">
-    <value>La pompa diminuisce la sua velocità al valore di "Velocità inferiore per corrente minima - Setpoint" per il tempo "Velocità inferiore per corrente minima - Durata" al fine di risolvere la cavitazione in atto (che si riconosce dall'abbassamento della corrente al di sotto del limite impostato nell'HMI di "Corrente minima"). Se la procedura anticavitazione riesce ad interrompere la cavitazione, la pompa ritorna alla velocità di processo senza alcun segnale globale. Altrimenti, quando la velocità del processo viene ripristinata, viene generato l'allarme "Corrente motore inferiore al limite minimo del range – Possibile cavitazione". In questo caso, il sistema NON tenterà nuovamente di decavitare automaticamente la pompa poiché il primo tentativo è fallito, ma farà riferimento all'operatore per la revisione dei parametri o per altre azioni. Se la durata è impostata su zero, non viene eseguita alcuna decavitazione in caso di corrente minima della pompa.</value>
+    <value>Quando viene rilevata la cavitazione, identificata dalla corrente del motore che scende al di sotto della soglia di "Corrente minima" impostata nell'HMI, la pompa riduce automaticamente la velocità al valore specificato in "Velocità inferiore per corrente minima - Setpoint" e mantiene questa velocità ridotta per la durata definita in "Velocità inferiore per corrente minima - Durata".
+Se questa procedura anticavitazione risolve correttamente il problema, la pompa riprende la normale velocità di processo senza attivare allarmi o segnali globali.
+Tuttavia, se la cavitazione persiste e la corrente del motore rimane al di sotto della soglia minima dopo il ripristino della velocità, il sistema genera l'allarme:
+"Corrente motore inferiore al limite minimo di intervallo - Possibile cavitazione".
+A questo punto, non verranno effettuati ulteriori tentativi di decavitazione automatica. Il sistema si affida all'intervento dell'operatore per rivedere i parametri o intraprendere azioni correttive.
+Nota: se la durata è impostata su zero, la procedura anticavitazione verrà disabilitata e non verrà intrapresa alcuna azione quando la corrente del motore scende al di sotto della soglia minima.</value>
   </data>
   <data name="P_INFO_MICROF_1" xml:space="preserve">
-    <value>All'inizio della produzione è possibile attivare una "pulizia speciale" che dovrà essere più intensiva delle successive al fine di sciogliere eventuali residui solidificati sulla rete filtrante. La sua durata può essere impostata tramite questo parametro.</value>
+    <value>All'inizio della produzione è possibile attivare una "pulizia speciale". Questa pulizia è più intensiva di quelle standard e aiuta a sciogliere eventuali residui solidificati sulla rete filtrante. La durata di questa pulizia può essere impostata tramite questo parametro.</value>
   </data>
   <data name="P_INFO_MICROF_2" xml:space="preserve">
-    <value>A Fine Produzione (Ciclo Stop) È possibile ridurre il tempo di pausa tra una pulizia e la successiva in modo da intensificare l'effetto dell'acqua sulla rete ed evitare la solidificazione dei residui durante i tempi di inattività della linea.</value>
+    <value>Al termine della produzione (durante il ciclo di arresto), è possibile ridurre il tempo di pausa tra le pulizie. Questo intensifica l'effetto dell'acqua sulla rete filtrante e aiuta a prevenire la solidificazione dei residui durante i periodi di inattività della linea.</value>
   </data>
   <data name="P_INFO_MIN_LEV_BYPS" xml:space="preserve">
-    <value>Fare clic su questo flag per testare la rotazione della pompa in caso di assenza di livello minimo. In questo caso, la pompa potrà funzionare per un paio di secondi senza livello minimo, con il solo scopo di controllare la rotazione. Questo flag viene ripristinato automaticamente una volta che la pompa inizia a muoversi.</value>
+    <value>Cliccare su questo flag per testare la rotazione della pompa quando non viene rilevato alcun livello minimo. In questa modalità, la pompa funzionerà per alcuni secondi solo per verificarne la rotazione. Il flag si reimposta automaticamente non appena la pompa inizia a muoversi.</value>
   </data>
   <data name="P_INFO_MTR_NOM_AMP" xml:space="preserve">
-    <value>Impostare qui la corrente nominale del motore. Questo valore può essere ottenuto dall'etichetta del motore (quella indicata alla corretta tensione del motore) per rappresentare la misura più accurata del valore percentuale di corrente nella vista HMI.</value>
+    <value>Imposta qui la corrente nominale del motore. Puoi trovare questo valore sull'etichetta del motore (corrispondente alla tensione corretta del motore). Questo garantisce che la percentuale di corrente visualizzata sull'HMI sia la più precisa possibile.</value>
   </data>
   <data name="P_INFO_SEMIAUTO_MODE" xml:space="preserve">
-    <value>La modalità semiautomatica è utilizzata per componenti specifici per consentire l'esecuzione di operazioni durante la produzione allo stesso modo in cui possono essere eseguite in modalità di manutenzione, comandando manualmente alcuni componenti selezionati tramite comandi HMI, senza la gestione di alcun interblocco di processo. Se questa modalità viene selezionata, la produzione a monte potrebbe essere sospesa.</value>
+    <value>La modalità semi-automatica viene utilizzata per componenti specifici per consentire determinate operazioni durante la produzione, in modo simile a come avviene in modalità manutenzione. Consente di controllare manualmente componenti selezionati tramite comandi HMI senza alcun interblocco di processo.
+Nota: se questa modalità è attivata, la produzione a monte potrebbe essere sospesa.</value>
   </data>
   <data name="P_INFO_BYPASS_GT_VLVs" xml:space="preserve">
-    <value>Se è selezionata l'opzione Sicura, il sistema consente di aprire contemporaneamente le valvole superiore e inferiore. Altrimenti, se è selezionata l'opzione Sbloccata, questa operazione è consentita e può essere eseguita solo in modalità Manutenzione tramite i comandi HMI.</value>
+    <value>Se è selezionata l'opzione Sicura, il sistema impedisce l'apertura simultanea delle valvole superiore e inferiore. Se è selezionata l'opzione Sbloccata, l'apertura simultanea di entrambe le valvole è consentita, ma solo in Modalità Manutenzione tramite comandi HMI.</value>
   </data>
   <data name="P_MATER_FLOAT_CTRL" xml:space="preserve">
-    <value>Tempo massimo senza pressione superiore al limite minimo impostato nel pannello di controllo della pressione del rotore. Allo scadere di questo tempo, il rotore cerca di catturare altro materiale cambiando direzione, poiché il materiale probabilmente galleggia all'interno della tramoggia. Impostare questo parametro su zero per disabilitare questo controllo.</value>
+    <value>Questo è il tempo massimo consentito senza che la pressione del rotore superi il limite minimo impostato sul pannello. Se questo tempo si esaurisce, il rotore cercherà di catturare altro materiale cambiando direzione, poiché è probabile che il materiale galleggi all'interno della tramoggia. Impostare questo parametro su zero per disabilitare questo controllo.</value>
   </data>
   <data name="P_ROT_DIR_CHG_TIME" xml:space="preserve">
-    <value>Il rotore può cambiare direzione in base al tempo. Inserire qui l'intervallo di tempo utilizzato per invertire la direzione del rotore. Si noti che questo intervallo di tempo viene azzerato a ogni cambio di direzione, anche se l'inversione è dovuta ad altre cause. Se questo parametro è impostato su zero, la funzione rimane disabilitata.</value>
+    <value>Il rotore può invertire la direzione in base a un intervallo di tempo. Inserire l'intervallo di tempo utilizzato per attivare questa inversione. Si noti che il timer si azzera ogni volta che la direzione cambia, anche se l'inversione avviene per altri motivi. Impostando questo parametro a zero, questa funzione viene disabilitata.</value>
   </data>
   <data name="P_ROT_RST_MODE" xml:space="preserve">
-    <value>Anche se viene selezionata una determinata modalità per sincronizzare la rotazione dei rotori, può accadere che uno dei rotori cambi direzione a causa della pressione massima (ad esempio). In questo caso, la sincronizzazione tra i rotori non è più quella richiesta. Questo parametro viene utilizzato per garantire che la perdita di sincronizzazione dei rotori non superi il tempo impostato. Se questa funzione non è richiesta e non è necessaria alcuna sincronizzazione tra i rotori, è possibile selezionare la modalità di rotazione "Libera" nell'apposito menu di selezione.</value>
+    <value>Anche quando si seleziona una modalità per sincronizzare la rotazione dei rotori, un rotore potrebbe cambiare direzione per motivi come il raggiungimento della pressione massima. In questo caso, i rotori non sono più sincronizzati come previsto. Questo parametro imposta il tempo massimo consentito affinché i rotori riacquistino la sincronizzazione. Se la sincronizzazione non è necessaria, è possibile selezionare la modalità di rotazione "Libera" nell'apposito menu.</value>
   </data>
   <data name="P_ROT_MODE" xml:space="preserve">
-    <value>È possibile selezionare tre modalità di rotazione dei rotori: 1) LIBERA è la modalità che consente a ciascun rotore di essere completamente indipendente dall'altro (nessuna sincronizzazione). 2) IN FASE è la modalità che garantisce la stessa direzione di rotazione dei rotori. Si noti che per questa modalità l'ultima direzione del rotore 1 viene utilizzata come riferimento per entrambi. 3) INTERNA è la modalità che sincronizza i rotori allo scopo di trasportare e mantenere il materiale tra i rotori. 4) ESTERNA è la modalità che sincronizza i rotori allo scopo di trasportare e mantenere il materiale sul lato esterno dei rotori, vicino alle pareti laterali della tramoggia.</value>
+    <value>Sono disponibili quattro modalità di rotazione per i rotori:
+1. Libera: Ogni rotore funziona in modo completamente indipendente, senza sincronizzazione.
+2. In fase: Entrambi i rotori ruotano nella stessa direzione. L'ultima direzione del rotore 1 viene utilizzata come riferimento per entrambi.
+3. Interna: I rotori sono sincronizzati per trasportare e trattenere il materiale tra di loro.
+4. Esterna: I rotori sono sincronizzati per trasportare e trattenere il materiale lungo i lati esterni, vicino alle pareti laterali della tramoggia.</value>
   </data>
   <data name="P_ENAB_EXT_SP_REF" xml:space="preserve">
-    <value>Questa selezione limita il setpoint di velocità impostato nel menu HMI e consente di azionare il motore con un riferimento di velocità esterno</value>
+    <value>Questa selezione disabilita il setpoint di velocità nel menu HMI e consente di controllare il motore tramite un riferimento di velocità esterno.</value>
   </data>
   <data name="P_CORRECTION_FACTOR" xml:space="preserve">
-    <value>Utilizzare questo parametro per regolare la misura o il segnale di riferimento su entrambi i lati, superiore e inferiore. Impostare valori inferiori a 100 per correggere la misura di riferimento verso il basso e valori superiori a 100 per correggerla verso l'alto. Il valore 100 indica nessuna correzione.</value>
+    <value>Utilizzare questo parametro per regolare il segnale di misura o di riferimento per entrambi i lati, superiore e inferiore. Impostare valori inferiori a 100 per ridurre la misura di riferimento e valori superiori a 100 per aumentarla. Un valore pari a 100 indica nessuna correzione.</value>
   </data>
   <data name="P_EVAC_TIME" xml:space="preserve">
-    <value>Impostare questo ritardo in base al tempo impiegato dal sistema per completare il processo e trasportare via tutto il materiale, in modo da poter modificare il percorso del materiale senza il rischio che si mescolino materiali di tipo diverso. Impostare questo parametro su zero se non si verifica alcun rischio per l'impianto.</value>
+    <value>Impostare questo ritardo in base al tempo necessario al sistema per completare il processo e trasportare via tutto il materiale. Ciò garantisce che i percorsi dei materiali possano essere cambiati senza il rischio di mescolare materiali di tipo diverso. Impostare questo parametro su zero se non vi è alcun rischio di contaminazione incrociata nel sistema.</value>
   </data>
   <data name="P_INV_MAX_FREQ" xml:space="preserve">
-    <value>Imposta qui la frequenza massima che il motore può raggiungere, impostata nei parametri dell'azionamento. Questo parametro serve per far corrispondere la frequenza effettiva visualizzata sull'HMI PreVu a quella visualizzata nel pannello dell'inverter.</value>
+    <value>Imposta la frequenza massima che il motore può raggiungere, come definito nei parametri dell'azionamento. Questo garantisce che la frequenza visualizzata sull'HMI PreVu corrisponda al valore visualizzato sul pannello dell'inverter.</value>
   </data>
   <data name="P_SENS_FULL_SCALE" xml:space="preserve">
-    <value>Imposta qui il valore della misura che corrisponde al segnale massimo in uscita dal sensore (20 mA)</value>
+    <value>Impostare il valore di misura corrispondente al segnale di uscita massimo del sensore (20 mA).</value>
   </data>
   <data name="P_INFO_RES_NOM_AMP" xml:space="preserve">
-    <value>Impostare qui la corrente nominale del resistore per consentire la visualizzazione del valore percentuale della corrente nella vista HMI.</value>
+    <value>Impostare qui la corrente nominale del resistore per consentire la visualizzazione accurata del valore percentuale corrente sull'HMI.</value>
   </data>
   <data name="P_PULSE_VALUE_WATER" xml:space="preserve">
-    <value>Questa è la quantità d'acqua che corrisponde a un impulso di segnale emesso dal sensore. Ad esempio, se questo valore è impostato su 10 litri, il conteggio di 3 impulsi indica l'accumulo di 30 litri.</value>
+    <value>Questa è la quantità d'acqua corrispondente a un impulso del sensore. Ad esempio, se questo valore è impostato su 10 litri, la ricezione di 3 impulsi significa che sono stati misurati 30 litri in totale.</value>
   </data>
   <data name="P_TANK_LEVEL_OVERFLOW" xml:space="preserve">
-    <value>Questo valore deve essere impostato misurando la distanza tra il sensore di livello e il bordo di troppo pieno del serbatoio. In questo modo, l'HMI PreVu può visualizzare il livello al 100% non appena il liquido raggiunge il bordo di troppo pieno del serbatoio.</value>
+    <value>Questo valore deve essere impostato misurando la distanza tra il sensore di livello e il bordo di troppo pieno del serbatoio. Questo consente all'HMI PreVu di visualizzare il livello al 100% quando il liquido raggiunge il punto di troppo pieno.</value>
   </data>
   <data name="P_TANK_DIAMETER" xml:space="preserve">
-    <value>Questo valore viene utilizzato per stimare il volume del liquido presente nel serbatoio e per calcolare, di volta in volta, le fluttuazioni di volume. Più questo valore è accurato, più accurate saranno anche le misure del volume del liquido.</value>
+    <value>Questo valore viene utilizzato per stimare il volume del liquido all'interno del serbatoio e per calcolarne le fluttuazioni nel tempo. Maggiore è la precisione di questo valore, maggiore sarà la precisione delle misurazioni del volume del liquido.</value>
   </data>
   <data name="P_ENAB_HI_REST_SP" xml:space="preserve">
-    <value>L'elevata velocità di riavvio può essere utilizzata in diverse condizioni del processo, soprattutto per prevenire il rischio di accumulo di rifiuti che potrebbero ostruire la pompa. L'operatore può abilitare o disabilitare questa funzione a seconda della sua valutazione della necessità.</value>
+    <value>L'elevata velocità di riavvio può essere utilizzata in diverse condizioni di processo, principalmente per prevenire il rischio di accumulo di scorie che potrebbero ostruire la pompa. L'operatore può abilitare o disabilitare questa funzione in base alla propria valutazione della necessità.</value>
   </data>
   <data name="P_HI_REST_SP_VAL" xml:space="preserve">
-    <value>Se è abilitata la velocità di riavvio elevata, questo è il valore della velocità massima che la pompa raggiunge al riavvio.</value>
+    <value>Se è abilitata la velocità di riavvio elevata, questa è la velocità massima che la pompa raggiunge durante il riavvio.</value>
   </data>
   <data name="P_HI_REST_SP_TIME" xml:space="preserve">
-    <value>Se è abilitata la velocità di riavvio elevata, questa è la durata della velocità massima che la pompa raggiunge al riavvio.</value>
+    <value>Se è abilitata la velocità di riavvio elevata, questa è la durata per cui la pompa funziona alla sua velocità massima durante il riavvio.</value>
   </data>
   <data name="INFO_COOL_3" xml:space="preserve">
     <value>Accendere la pompa di raffreddamento per consentire al dispositivo correlato di funzionare ininterrottamente</value>
   </data>
   <data name="INFO_SYS_36" xml:space="preserve">
-    <value>Guasto hardware sulla scheda di ingresso di sicurezza del PLC. Assicurarsi che non vi siano cortocircuiti sul campo o connessioni difettose sul circuito collegato a questo ingresso del PLC. Controllare il modulo di ingresso di sicurezza del PLC, resettare l'allarme e/o riavviare il modulo PLC.</value>
+    <value>Guasto hardware sulla scheda di ingresso di sicurezza del PLC. Assicurarsi che non vi siano cortocircuiti sul campo o connessioni difettose sul circuito collegato a questo ingresso del PLC. Controllare il modulo di ingresso di sicurezza del PLC, resettare l'allarme e/o riavviare il modulo PLC</value>
   </data>
   <data name="INFO_SYS_37" xml:space="preserve">
-    <value>Guasto hardware sulla scheda di uscita di sicurezza del PLC. Assicurarsi che non vi siano cortocircuiti sul campo o connessioni difettose sul circuito collegato a questa uscita del PLC. Controllare il modulo di uscita di sicurezza del PLC, resettare l'allarme e/o riavviare il modulo PLC.</value>
+    <value>Guasto hardware sulla scheda di uscita di sicurezza del PLC. Assicurarsi che non vi siano cortocircuiti sul campo o connessioni difettose sul circuito collegato a questa uscita del PLC. Controllare il modulo di uscita di sicurezza del PLC, resettare l'allarme e/o riavviare il modulo PLC</value>
   </data>
   <data name="INFO_SYS_38" xml:space="preserve">
     <value>Almeno uno dei contattori di uscita è ancora chiuso anche se il dispositivo è spento! Controllare entrambi i contattori e i relè di interfaccia PLC che li azionano.</value>
@@ -10555,7 +10567,7 @@
     <value>Controllare lo stato dell'inverter e la presenza di allarmi poiché la funzione Safe-Torque-OFF non risponde ai comandi del PLC. Riavviare l'azionamento per ripristinare l'eventuale passivazione della scheda PROFIsafe. Solo personale autorizzato!</value>
   </data>
   <data name="INFO_AMP_14" xml:space="preserve">
-    <value>Troppe fermate per corrente elevata! Controllare la quantità di materiale in entrata, le difficoltà in uscita e l'impostazione del parametro di corrente.</value>
+    <value>Troppe fermate per corrente elevata! Controllare la quantità di materiale in entrata, le difficoltà in uscita e l'impostazione del parametro di corrente</value>
   </data>
   <data name="INFO_EXT_SIG" xml:space="preserve">
     <value>Controllare il sensore analogico esterno, il suo cablaggio sul campo e il suo feedback del segnale nell'armadio elettrico</value>
