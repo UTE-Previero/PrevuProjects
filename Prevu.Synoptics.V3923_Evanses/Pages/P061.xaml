@@ -5,6 +5,7 @@
              xmlns:local="clr-namespace:Prevu.Synoptics"
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             xmlns:Custom="https://github.com/XAMLMarkupExtensions/WPFLocalizationExtension" 
              x:Class="Prevu.Synoptics.P061" mc:Ignorable="d"
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
@@ -260,5 +261,8 @@
         <Labels:DeviceLabel ComponentName="073-01-MA1" Canvas.Left="892" Canvas.Top="237" HorizontalAlignment="Left" VerticalAlignment="Top" />
         <Labels:DeviceLabel ComponentName="079-01-MA1" Canvas.Left="1031" Canvas.Top="645" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <Labels:DeviceLabel ComponentName="071-01-MA1" Canvas.Left="1031" Canvas.Top="106" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock TextWrapping="Wrap" 
+            Height="148" Width="354" TextAlignment="Center" 
+            FontSize="48" Foreground="White" Text="{Custom:Loc FUTURE UPGRADE}" Canvas.Left="1152" Canvas.Top="187" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>
