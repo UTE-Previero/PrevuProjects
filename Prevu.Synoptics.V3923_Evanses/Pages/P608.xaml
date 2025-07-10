@@ -6,7 +6,7 @@
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings" 
-             xmlns:Custom="https://github.com/XAMLMarkupExtensions/WPFLocalizationExtension" 
+             xmlns:lex="http://wpflocalizeextension.codeplex.com" 
              x:Class="Prevu.Synoptics.P608" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
@@ -239,7 +239,11 @@
                 </TransformGroup>
             </Misc:DashedLine.RenderTransform>
         </Misc:DashedLine>
-        <TextBlock Canvas.Top="773" Text="{Custom:Loc MIX SILOS#A}" TextWrapping="Wrap" TextAlignment="Center" Opacity="0.7" Canvas.Left="1025" FontSize="26" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Width="238"/>
+        <TextBlock Canvas.Top="773" TextWrapping="Wrap" TextAlignment="Center" Canvas.Left="1025" FontSize="26" d:Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Width="238">
+            <TextBlock.Text>
+                <lex:Loc>#MIX SILOS &apos;A&apos; </lex:Loc>
+            </TextBlock.Text>
+        </TextBlock>
         <Labels:JumpLabel JumpFromLabel="546-01-MA1" JumpToLabel="545-01-MA1" Canvas.Left="78" Canvas.Top="109" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:JumpLabel JumpFromLabel="546-01-MA1" JumpToLabel="535-01-MA1" Canvas.Left="57" Canvas.Top="34" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="608-01-YA1" Canvas.Left="1373" Canvas.Top="308" HorizontalAlignment="Left" VerticalAlignment="Center"/>

@@ -162,7 +162,11 @@
                 </TransformGroup>
             </Machines:External.RenderTransform>
         </Machines:External>
-        <TextBlock Canvas.Top="357" Text="{lex:Loc BAG STATION#I}" TextWrapping="Wrap" TextAlignment="Center" Opacity="0.7" Canvas.Left="1079" FontSize="26" Foreground="White" Width="170" Height="82" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Canvas.Top="357" TextWrapping="Wrap" TextAlignment="Center" Canvas.Left="1079" FontSize="26" d:Foreground="White" Width="170" Height="82" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBlock.Text>
+                <lex:Loc>#BAG STATION &apos;I&apos;</lex:Loc>
+            </TextBlock.Text>
+        </TextBlock>
         <Labels:JumpLabel JumpFromLabel="880-01-EC1" JumpToLabel="878-01-MA1" Canvas.Left="299" Canvas.Top="60" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <Labels:JumpLabel JumpFromLabel="898-01-MA1" JumpToLabel="939-21-CV1" Canvas.Left="769" Canvas.Top="773" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <Labels:DeviceLabel ComponentName="898-01-MA1" Canvas.Left="475" Canvas.Top="725" HorizontalAlignment="Left" VerticalAlignment="Center" />
