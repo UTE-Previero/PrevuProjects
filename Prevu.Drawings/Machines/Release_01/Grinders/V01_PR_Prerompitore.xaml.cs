@@ -1,4 +1,5 @@
 ﻿using Prevu.UIComponents.Labels;
+using Prevu.UIComponents.Stores;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,6 +44,23 @@ new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.
         private static void TrendNamePropertyChangedCallback(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
           => ((V01_PR_Prerompitore)dependencyObject).Update();
 
+        #region Color
+
+        public static readonly DependencyProperty ColorProperty =
+          DependencyProperty.Register(nameof(Color), typeof(FillColor), typeof(V01_PR_Prerompitore),
+          new FrameworkPropertyMetadata(FillColor.Water, FrameworkPropertyMetadataOptions.AffectsRender, LevelColorChanged));
+
+        private static void LevelColorChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e)
+        => ((V01_PR_Prerompitore)dependencyObject).Update();
+
+        [Description("Color of the level"), Category("_PV")]
+        public FillColor Color
+        {
+            get { return (FillColor)GetValue(ColorProperty); }
+            set { SetValue(ColorProperty, value); }
+        }
+        #endregion
+
         [Description("Name of the level trend, percentage only"), Category("_PV")]
         public string TrendName
         {
@@ -57,6 +75,7 @@ new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.
         {
             MaterialLevel.ComponentName = ComponentName;
             MaterialLevel.TrendName = TrendName;
+            MaterialLevel.Color = Color;
         }
     }
 }
