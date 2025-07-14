@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Drawings.Machines"
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents"
              mc:Ignorable="d" 
              IsHitTestVisible="False">
     <Viewbox  Stretch="Uniform">
@@ -21,6 +22,12 @@
                         <PathGeometry Figures="M149.416 3.00001L9.26235 3C5.19377 3 2.71172 7.45202 4.82819 10.9268L29.2157 50.9653C29.7135 51.7825 29.9767 52.7209 29.9767 53.6778V126.252C29.9767 128.142 31.0004 129.885 32.6518 130.806L51.2382 141.169C52.0145 141.601 52.8886 141.829 53.7774 141.829H105.985C106.874 141.829 107.748 141.601 108.524 141.169L127.111 130.806C128.762 129.885 129.786 128.142 129.786 126.252V53.5546C129.786 52.6301 130.031 51.7222 130.498 50.924L153.916 10.8449C155.947 7.36876 153.442 3.00001 149.416 3.00001Z" FillRule="NonZero"/>
                     </Path.Data>
                 </Path>
+                <Labels:WaterLevel x:Name="MaterialLevel" Background="Transparent" d:Background="blue" Height="138" Width="149" 
+                            HorizontalAlignment="Center" VerticalAlignment="Center" d:Opacity=".6" Canvas.Top="4" Canvas.Left="5">
+                    <Labels:WaterLevel.OpacityMask>
+                        <VisualBrush Visual="{Binding ElementName=path2}" />
+                    </Labels:WaterLevel.OpacityMask>
+                </Labels:WaterLevel>
                 <Canvas Name="g6" Effect="{StaticResource MaterialDesignElevationShadow1}">
                     <Path  Name="path4" Fill="#FF292929">
                         <Path.Data>
