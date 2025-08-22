@@ -27,5 +27,15 @@ namespace Prevu.Synoptics
     {
 
     }
+
+    private void DeviceLabel_Loaded_1(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void Pipe_Loaded(object sender, RoutedEventArgs e)
+    {
+
+    }
   }
 }
