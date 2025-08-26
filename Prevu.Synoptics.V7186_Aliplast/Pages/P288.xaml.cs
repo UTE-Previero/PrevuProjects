@@ -23,19 +23,5 @@ namespace Prevu.Synoptics
       InitializeComponent();
     }
 
-    private void DeviceLabel_Loaded(object sender, RoutedEventArgs e)
-    {
-
-    }
-
-    private void DeviceLabel_Loaded_1(object sender, RoutedEventArgs e)
-    {
-
-    }
-
-    private void Pipe_Loaded(object sender, RoutedEventArgs e)
-    {
-
-    }
   }
 }
