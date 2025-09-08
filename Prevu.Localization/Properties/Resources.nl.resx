@@ -10396,7 +10396,7 @@
     <value>Rapportdag</value>
   </data>
   <data name="INFO_PRES_14" xml:space="preserve">
-    <value>Controleer stroomafwaarts op obstructies of lekkages in de leidingen en/of in het filter</value>
+    <value>Abnormale werking van de compressor gedetecteerd door de stroomafwaartse druksensor. Systeem moet worden gecontroleerd.</value>
   </data>
   <data name="INFO_USAGE_1" xml:space="preserve">
     <value>Te veel water in gebruik! Controleer de bijbehorende instellingen en de reden van dit abnormale verbruik</value>
@@ -10543,7 +10543,7 @@ Opmerking: Als deze modus is geactiveerd, kan de upstream-productie worden opges
     <value>Als de hoge herstartsnelheid is ingeschakeld, is dit de tijdsduur waarin de pomp op maximale snelheid werkt tijdens het herstarten.</value>
   </data>
   <data name="INFO_COOL_3" xml:space="preserve">
-    <value>Schakel de koelpomp in zodat het bijbehorende apparaat continu kan draaien</value>
+    <value>Zet binnenkort de kastventilatie AAN.</value>
   </data>
   <data name="INFO_SYS_36" xml:space="preserve">
     <value>Hardwarefout op de PLC-veiligheidsingangskaart. Controleer of er geen kortsluitingen in het veld of slechte verbindingen zijn op het circuit dat op deze PLC-ingang is aangesloten. Controleer de PLC-veiligheidsingangsmodule, reset het alarm en/of start de PLC-module opnieuw op</value>
@@ -11477,5 +11477,686 @@ Opmerking: Als deze modus is geactiveerd, kan de upstream-productie worden opges
   </data>
   <data name="SYS_SUBZONE_001 - MAIN CONTROL" xml:space="preserve">
     <value>Sys_Subzone_001 - Hoofdbesturingselement</value>
+  </data>
+  <data name="INFO_MAX_PRESS_FREQ" xml:space="preserve">
+    <value>Er is een te hoog aantal maximale drukgebeurtenissen opgetreden tijdens de referentietijd. Controleer het systeem om de oorzaak van deze afwijking te achterhalen.</value>
+  </data>
+  <data name="INFO_BELT_NOT_OK" xml:space="preserve">
+    <value>Controleer de status van de transportband.</value>
+  </data>
+  <data name="INFO_METDET_3" xml:space="preserve">
+    <value>Er zijn hoge metaalgehaltes in het materiaal aangetroffen. Controleer de materiaalkwaliteit bij de laadruimte van de fabriek.</value>
+  </data>
+  <data name="INFO_METDET_4" xml:space="preserve">
+    <value>Verwijder de gedetecteerde metaalverontreiniging uit de band en start het systeem vervolgens opnieuw op.</value>
+  </data>
+  <data name="INFO_24V_POWER_SUPPLY" xml:space="preserve">
+    <value>Controleer de 24V-voeding, het stroomopwaartse circuit en de stroomstatus van de kast.</value>
+  </data>
+  <data name="INFO_SYS_41" xml:space="preserve">
+    <value>De gehele fail-safe I/O-module verkeert in een fout- of passieve toestand en moet worden gereset. Controleer de DIP-switchconfiguratie (indien aanwezig), de F-naamtoewijzing (SW) van de module en de voeding. Start de module vervolgens opnieuw op of herstart de CPU. Deze handeling mag alleen worden uitgevoerd door bevoegd personeel.</value>
+  </data>
+  <data name="INFO_CONTAM_1" xml:space="preserve">
+    <value>Controleer op waterlekken in de hydraulische unit die de olie verontreinigd hebben. Controleer vooral het koelcircuit en de warmtewisselaar. Vervang de hydraulische olie zodra het lek is gedicht.</value>
+  </data>
+  <data name="INFO_CONTAM_2" xml:space="preserve">
+    <value>De hydraulische olie is sterker vervuild dan de op de sensor ingestelde grenswaarde. Als u bevestigt dat de verontreiniging de door de specificaties van de hydraulische unit toegestane grenswaarde overschrijdt, dient u de olie te vervangen. Zo niet, evalueer dan de drempelwaarden die u op het instrument hebt ingesteld.</value>
+  </data>
+  <data name="INFO_CONTAM_3" xml:space="preserve">
+    <value>Controleer het signaal van de watersensor en de bedrading ervan in de elektriciteitskast.</value>
+  </data>
+  <data name="M_INFO_STOP_x_MAX_PRESS" xml:space="preserve">
+    <value>Tijdelijke stop vanwege maximale oliedruk. Er moet een minimale herstarttijd verstrijken voordat de motor weer kan starten.</value>
+  </data>
+  <data name="M_INFO_MIXER_4" xml:space="preserve">
+    <value>Controleer het externe waterbehandelingssysteem, de interfacesignalen en zorg dat alle bijbehorende HMI-componenten correct zijn ingeschakeld.</value>
+  </data>
+  <data name="P_TIME_BEFORE_RESTART" xml:space="preserve">
+    <value>Deze waarde geeft aan hoe lang het onderdeel moet wachten voordat het opnieuw kan worden opgestart.</value>
+  </data>
+  <data name="P_MAX_NUM_OF_STOPS" xml:space="preserve">
+    <value>Maximaal aantal stops binnen het gedefinieerde tijdsbestek (sampletijd). Als het onderdeel vaker stopt dan de door deze parameter ingestelde limiet, geeft het systeem een ​​waarschuwing of alarm.</value>
+  </data>
+  <data name="P_SAMPLE_TIME" xml:space="preserve">
+    <value>Stel deze waarde in om het tijdsinterval op te geven dat het systeem gebruikt om de gecontroleerde gebeurtenissen te bewaken en te tellen.</value>
+  </data>
+  <data name="P_BACKUP_PUMP" xml:space="preserve">
+    <value>Pompselectie kan alleen worden gemaakt wanneer de pomp niet draait. Zorg ervoor dat de handbediende kleppen van de pomp open zijn voordat u een nieuwe selectie maakt.</value>
+  </data>
+  <data name="EXTERNAL MIXING SILOS SYSTEM" xml:space="preserve">
+    <value>Extern mengsilosysteem</value>
+  </data>
+  <data name="DRY GRINDER" xml:space="preserve">
+    <value>Droogmolen</value>
+  </data>
+  <data name="F-SORTER" xml:space="preserve">
+    <value>F-Sorter</value>
+  </data>
+  <data name="PRE-FILTRATION" xml:space="preserve">
+    <value>Voorfiltratie</value>
+  </data>
+  <data name="DETAIL WINDOW" xml:space="preserve">
+    <value>Detailvenster</value>
+  </data>
+  <data name="EXTRACT CURRENT PAGE AS STANDALONE WINDOW" xml:space="preserve">
+    <value>Huidige pagina extraheren als zelfstandig venster</value>
+  </data>
+  <data name="OPEN CAMERAS" xml:space="preserve">
+    <value>Open camera's</value>
+  </data>
+  <data name="SOREMA LINE" xml:space="preserve">
+    <value>Sorema-lijn</value>
+  </data>
+  <data name="F-I/O MODULE ERROR (MODULE PASSIVATION)" xml:space="preserve">
+    <value>F-I/O-modulefout (modulepassivering)</value>
+  </data>
+  <data name="PREFILTRATION" xml:space="preserve">
+    <value>Voorfiltratie</value>
+  </data>
+  <data name="RE-GRINDER" xml:space="preserve">
+    <value>Opnieuw malen</value>
+  </data>
+  <data name="CONSUMPTION" xml:space="preserve">
+    <value>Consumptie</value>
+  </data>
+  <data name="DECANTER - SKIMMER" xml:space="preserve">
+    <value>Decanter - Schuimspaan</value>
+  </data>
+  <data name="WATER FLOW RATE FROM" xml:space="preserve">
+    <value>Waterstroomsnelheid van</value>
+  </data>
+  <data name="FORCE SIGNAL" xml:space="preserve">
+    <value>Krachtsignaal</value>
+  </data>
+  <data name="FORCING SINGAL TO FALSE" xml:space="preserve">
+    <value>Singal dwingen tot vals</value>
+  </data>
+  <data name="FORCING SINGAL TO TRUE" xml:space="preserve">
+    <value>Singal dwingen tot waar</value>
+  </data>
+  <data name="MATERIAL DIRECTED TO" xml:space="preserve">
+    <value>Materiaal gericht op</value>
+  </data>
+  <data name="SORTING UNIT CONTROL ALARM" xml:space="preserve">
+    <value>Alarm voor sorteereenheidregeling</value>
+  </data>
+  <data name="PLAYBACK" xml:space="preserve">
+    <value>Afspelen</value>
+  </data>
+  <data name="GRINDER ELETRICAL CABINET" xml:space="preserve">
+    <value>Elektrische kast voor slijpmachine</value>
+  </data>
+  <data name="LOADING ELETRICAL CABINET" xml:space="preserve">
+    <value>Laden van elektrische kast</value>
+  </data>
+  <data name="POWER METER SETUP" xml:space="preserve">
+    <value>Vermogensmeter instellen</value>
+  </data>
+  <data name="MAXIMUM VOLTAGE FOR ALARM" xml:space="preserve">
+    <value>Maximale spanning voor alarm</value>
+  </data>
+  <data name="MAXIMUM CURRENT FOR ALARM" xml:space="preserve">
+    <value>Maximale stroom voor alarm</value>
+  </data>
+  <data name="NOMINAL LINE FREQUENCY" xml:space="preserve">
+    <value>Nominale lijnfrequentie</value>
+  </data>
+  <data name="PEAK OF MAXIMUM LINE VOLTAGE" xml:space="preserve">
+    <value>Piek van maximale lijnspanning</value>
+  </data>
+  <data name="PEAK OF MAXIMUM CURRENT" xml:space="preserve">
+    <value>Piek van maximale stroom</value>
+  </data>
+  <data name="PEAK OF MAXIMUM POWER" xml:space="preserve">
+    <value>Piek van maximaal vermogen</value>
+  </data>
+  <data name="RESET ALL PEAK RECORDERS" xml:space="preserve">
+    <value>Alle piekrecorders resetten</value>
+  </data>
+  <data name="FILTER ERRORS" xml:space="preserve">
+    <value>Filterfouten</value>
+  </data>
+  <data name="FILTER NEVER MODIFIED" xml:space="preserve">
+    <value>Filter nooit gewijzigd</value>
+  </data>
+  <data name="REDUCED_SPEED" xml:space="preserve">
+    <value>Verminderde_snelheid</value>
+  </data>
+  <data name="PERCENTAGE OF SPEED REDUCTION" xml:space="preserve">
+    <value>Percentage snelheidsreductie</value>
+  </data>
+  <data name="RECOVERY_MODE" xml:space="preserve">
+    <value>Herstelmodus</value>
+  </data>
+  <data name="DISABLE RECOVERY MODE" xml:space="preserve">
+    <value>Herstelmodus uitschakelen</value>
+  </data>
+  <data name="FILLING RESTART" xml:space="preserve">
+    <value>Vullen opnieuw starten</value>
+  </data>
+  <data name="TIME BELOW HIGH LEVEL TO RESTART FILLING" xml:space="preserve">
+    <value>Tijd onder hoog niveau om het vullen opnieuw te starten</value>
+  </data>
+  <data name="LOADING CONVEYOR" xml:space="preserve">
+    <value>Laadtransportband</value>
+  </data>
+  <data name="LOADING CONVEYOR - SAFETY KEY" xml:space="preserve">
+    <value>Laadtransportband - Veiligheidssleutel</value>
+  </data>
+  <data name="LOADING CONVEYOR - LEFT LUBRIF." xml:space="preserve">
+    <value>Laadtransportband - Links Lubrif.</value>
+  </data>
+  <data name="LOADING CONVEYOR - RIGHT LUBRIF." xml:space="preserve">
+    <value>Laadtransportband - Rechts Lubrif.</value>
+  </data>
+  <data name="LOADING CONVEYOR - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>Laadtransportband - Onderhoudscyclus</value>
+  </data>
+  <data name="LOADING CONVEYOR - LUBRIFICATION" xml:space="preserve">
+    <value>Laadtransportband - Smering</value>
+  </data>
+  <data name="SHREDDER - MAIN PUMP" xml:space="preserve">
+    <value>Shredder - Hoofdpomp</value>
+  </data>
+  <data name="OIL LOW LEVEL" xml:space="preserve">
+    <value>Laag oliepeil</value>
+  </data>
+  <data name="(1&gt;=LOW)" xml:space="preserve">
+    <value>(1&gt;=Laag)</value>
+  </data>
+  <data name="OIL FILTER LINE" xml:space="preserve">
+    <value>Oliefilterleiding</value>
+  </data>
+  <data name="OIL FILTER NOT OK - LINE" xml:space="preserve">
+    <value>Oliefilter niet ok - Lijn</value>
+  </data>
+  <data name="OIL CIRCUIT SHUTOFF VALVE NOT OPEN - LINE" xml:space="preserve">
+    <value>Oliecircuitafsluiter niet open - Lijn</value>
+  </data>
+  <data name="OIL MINIMUM PRESSURE NOT OK - LINE" xml:space="preserve">
+    <value>Olie minimum druk niet ok - Lijn</value>
+  </data>
+  <data name="SHREDDER - SAFETY UNLOCK REELS" xml:space="preserve">
+    <value>Versnipperaar - Veiligheidsontgrendelingspoelen</value>
+  </data>
+  <data name="SHREDDER - COOLING FLUX PUMP" xml:space="preserve">
+    <value>Shredder - Koelvloeistofpomp</value>
+  </data>
+  <data name="OIL SHUTOFF VALVE" xml:space="preserve">
+    <value>Olie-afsluitklep</value>
+  </data>
+  <data name="COOLING PUMP IS NOT ON (MAIN PUMP WILL BE STOPPED IN A SHORT TIME)" xml:space="preserve">
+    <value>Koelpomp is niet aan (hoofdpomp zal binnenkort stoppen)</value>
+  </data>
+  <data name="COOLING PUMP IS NOT ON (MAIN PUMP STOP)" xml:space="preserve">
+    <value>Koelpomp is niet ingeschakeld (hoofdpomp gestopt)</value>
+  </data>
+  <data name="SHUTOFF VALVE" xml:space="preserve">
+    <value>Afsluitklep</value>
+  </data>
+  <data name="SHUTOFF VALVE NOT OK" xml:space="preserve">
+    <value>Afsluitklep niet ok</value>
+  </data>
+  <data name="SHREDDER - THERMAL HEATER" xml:space="preserve">
+    <value>Versnipperaar - Thermische verwarmer</value>
+  </data>
+  <data name="SHREDDER - HYDRAULIC SHAFT" xml:space="preserve">
+    <value>Shredder - Hydraulische as</value>
+  </data>
+  <data name="WAITING FOR MINIMUM TIME TO" xml:space="preserve">
+    <value>Wachten op minimale tijd om</value>
+  </data>
+  <data name="NO AUTO-UNLOCK" xml:space="preserve">
+    <value>Geen automatische ontgrendeling</value>
+  </data>
+  <data name="AUTO-UNLOCK HIGH SPEED IN PROGRESS" xml:space="preserve">
+    <value>Automatisch ontgrendelen op hoge snelheid in uitvoering</value>
+  </data>
+  <data name="ROTATION SPEED IN PRODUCTION" xml:space="preserve">
+    <value>Rotatiesnelheid in productie</value>
+  </data>
+  <data name="ROTATION SPEED IN MAINTENANCE" xml:space="preserve">
+    <value>Rotatiesnelheid bij onderhoud</value>
+  </data>
+  <data name="INSIDE" xml:space="preserve">
+    <value>Binnen</value>
+  </data>
+  <data name="OUTSIDE" xml:space="preserve">
+    <value>Buiten</value>
+  </data>
+  <data name="SHREDDER - HYDRAULIC ACCUMULATOR (BYPASS) SHAFT" xml:space="preserve">
+    <value>Shredder - Hydraulische accumulator (bypass) as</value>
+  </data>
+  <data name="SHREDDER - OIL PRESSURE ROTAION SHAFT" xml:space="preserve">
+    <value>Versnipperaar - Oliedruk Rotatie-as</value>
+  </data>
+  <data name="PRESSURE PARAMETERS" xml:space="preserve">
+    <value>Drukparameters</value>
+  </data>
+  <data name="ROTOR CHANGE DIRECTION" xml:space="preserve">
+    <value>Rotorveranderingsrichting</value>
+  </data>
+  <data name="MINIMUM LOAD" xml:space="preserve">
+    <value>Minimale belasting</value>
+  </data>
+  <data name="SHREDDER - OIL TEMPERATURE SHAFT" xml:space="preserve">
+    <value>Versnipperaar - Olietemperatuuras</value>
+  </data>
+  <data name="SHREDDER - COOLING VALVE" xml:space="preserve">
+    <value>Versnipperaar - Koelklep</value>
+  </data>
+  <data name="SHREDDER - OIL TEMPERATURE" xml:space="preserve">
+    <value>Versnipperaar - Olietemperatuur</value>
+  </data>
+  <data name="SHREDDER - WATER PRESENCE IN OIL" xml:space="preserve">
+    <value>Versnipperaar - Wateraanwezigheid in olie</value>
+  </data>
+  <data name="SHREDDER - MAINTENANCE PROCEDURE" xml:space="preserve">
+    <value>Shredder - Onderhoudsprocedure</value>
+  </data>
+  <data name="SHREDDER - HYDRAULICS" xml:space="preserve">
+    <value>Shredder - Hydrauliek</value>
+  </data>
+  <data name="SHREDDER - MANAGER" xml:space="preserve">
+    <value>Versnipperaar - Manager</value>
+  </data>
+  <data name="MAXIMUM NUMBER OF ROTOR REVERSE ROTATION (SHREDDER OVERLOAD ?) - ROTOR" xml:space="preserve">
+    <value>Maximaal aantal omgekeerde rotaties van de rotor (overbelasting van de versnipperaar?) - Rotor</value>
+  </data>
+  <data name="ROTOR 1 PRESSURE OK" xml:space="preserve">
+    <value>Rotor 1 Druk Ok</value>
+  </data>
+  <data name="STOP MATERIAL FOR PRESSURE NOT OK OF ROTOR" xml:space="preserve">
+    <value>Stopmateriaal voor druk niet ok van rotor</value>
+  </data>
+  <data name="ROTOR 2 PRESSURE OK" xml:space="preserve">
+    <value>Rotor 2 Druk Ok</value>
+  </data>
+  <data name="ROTATION MODE" xml:space="preserve">
+    <value>Rotatiemodus</value>
+  </data>
+  <data name="ROTATIONS UNLIKE SELECTED MODE" xml:space="preserve">
+    <value>Rotaties in tegenstelling tot de geselecteerde modus</value>
+  </data>
+  <data name="ROTORS" xml:space="preserve">
+    <value>Rotoren</value>
+  </data>
+  <data name="DIRECTION CHANGE INTERVAL (0=NO CHANGE BY TIME)" xml:space="preserve">
+    <value>Interval voor richtingsverandering (0 = geen verandering in de tijd)</value>
+  </data>
+  <data name="DIRECTION CHANGE FOR HIGH LOAD OF ROTOR" xml:space="preserve">
+    <value>Richtingverandering bij hoge rotorbelasting</value>
+  </data>
+  <data name="DIRECTION CHANGE FOR TIME EXPIRED OF ROTOR" xml:space="preserve">
+    <value>Richtingverandering voor de verstreken tijd van de rotor</value>
+  </data>
+  <data name="DIRECTION CHANGE FOR FLOATING MATERIAL OF ROTOR" xml:space="preserve">
+    <value>Richtingverandering voor drijvend materiaal van rotor</value>
+  </data>
+  <data name="DIRECTION CHANGE FOR ROTATION MODE REFRESH" xml:space="preserve">
+    <value>Richtingwijziging voor rotatiemodusvernieuwing</value>
+  </data>
+  <data name="DIRECTION CHANGE FOR OPERATOR REQUEST" xml:space="preserve">
+    <value>Richtingwijziging op verzoek van de operator</value>
+  </data>
+  <data name="RESTORE ROTATION MODE REQUESTED" xml:space="preserve">
+    <value>Rotatiemodus herstellen aangevraagd</value>
+  </data>
+  <data name="SHREDDING IN PROGRESS" xml:space="preserve">
+    <value>Versnipperen in uitvoering</value>
+  </data>
+  <data name="BUFFER BELT" xml:space="preserve">
+    <value>Bufferband</value>
+  </data>
+  <data name="BUFFER BELT - SAFETY KEY" xml:space="preserve">
+    <value>Bufferband - Veiligheidssleutel</value>
+  </data>
+  <data name="BUFFER BELT - LEFT LUBRIF." xml:space="preserve">
+    <value>Bufferband - Links Smeermiddel</value>
+  </data>
+  <data name="BUFFER BELT - RIGHT LUBRIF." xml:space="preserve">
+    <value>Bufferband - Rechts Smeermiddel</value>
+  </data>
+  <data name="BUFFER BELT - LEVEL" xml:space="preserve">
+    <value>Bufferband - Niveau</value>
+  </data>
+  <data name="BUFFER BELT - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>Bufferband - Onderhoudscyclus</value>
+  </data>
+  <data name="BUFFER BELT - LUBRIFICATION" xml:space="preserve">
+    <value>Bufferband - Smering</value>
+  </data>
+  <data name="DRY TROMMEL - MAIN MOTOR" xml:space="preserve">
+    <value>Droge trommel - Hoofdmotor</value>
+  </data>
+  <data name="FOOTBOARD UP POSITION" xml:space="preserve">
+    <value>Voetbord omhoog positie</value>
+  </data>
+  <data name="FOOTBOARD POSITION INCONGRUENCY" xml:space="preserve">
+    <value>Incongruentie in de positie van het voetbord</value>
+  </data>
+  <data name="FOOTBOARD NOT IN UPPER POSITION" xml:space="preserve">
+    <value>Voetbord niet in bovenste positie</value>
+  </data>
+  <data name="FOOTBOARD UP" xml:space="preserve">
+    <value>Voetbord omhoog</value>
+  </data>
+  <data name="FOOTBOARD NOT UP" xml:space="preserve">
+    <value>Voetbord niet omhoog</value>
+  </data>
+  <data name="DRY TROMMEL - SAFETY UNLOCK DOORS" xml:space="preserve">
+    <value>Droge trommel - Veiligheidsdeuren ontgrendelen</value>
+  </data>
+  <data name="DRY TROMMEL - MAINTENANCE PROCEDURE" xml:space="preserve">
+    <value>Droge trommel - Onderhoudsprocedure</value>
+  </data>
+  <data name="DISCHARGE FROM PUMP" xml:space="preserve">
+    <value>Afvoer uit pomp</value>
+  </data>
+  <data name="DISCHARGE TO" xml:space="preserve">
+    <value>Ontlading naar</value>
+  </data>
+  <data name="BYPASS VALVE" xml:space="preserve">
+    <value>Bypassklep</value>
+  </data>
+  <data name="WATER FLOWRATE TO" xml:space="preserve">
+    <value>Waterstroomsnelheid naar</value>
+  </data>
+  <data name="SOREMA DISCHARGE TO" xml:space="preserve">
+    <value>Sorema-ontlading naar</value>
+  </data>
+  <data name="NO ALARM OF WATER TREATMENT (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Geen alarm voor waterbehandeling (extern signaal)</value>
+  </data>
+  <data name="WATER TREATMENT OK TO RECEIVE (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Waterbehandeling OK om te ontvangen (extern signaal)</value>
+  </data>
+  <data name="VAR MIN LEVEL (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Var Min-niveau (extern signaal)</value>
+  </data>
+  <data name="COLLECTING TANK NO MAXIMUM LEVEL" xml:space="preserve">
+    <value>Verzameltank Geen maximaal niveau</value>
+  </data>
+  <data name="SOREMA IS DISCHARGING" xml:space="preserve">
+    <value>Sorema ontlaadt</value>
+  </data>
+  <data name="GENERAL ALARM OF WATER TREATMENT" xml:space="preserve">
+    <value>Algemeen alarm van waterbehandeling</value>
+  </data>
+  <data name="VRM MINIMUM LEVEL" xml:space="preserve">
+    <value>Vrm Minimumniveau</value>
+  </data>
+  <data name="WATER TREATMENT SELECTION" xml:space="preserve">
+    <value>Selectie van waterbehandeling</value>
+  </data>
+  <data name="NO DIR" xml:space="preserve">
+    <value>Geen dir</value>
+  </data>
+  <data name="SELECTED" xml:space="preserve">
+    <value>Gekozen</value>
+  </data>
+  <data name="LOADING DIRECTION" xml:space="preserve">
+    <value>Laadrichting</value>
+  </data>
+  <data name="HIGH FREQUENCY OF STOP FOR HIGH CURRENT" xml:space="preserve">
+    <value>Hoge frequentie van stop voor hoge stroom</value>
+  </data>
+  <data name="PIT - MAIN PUMP" xml:space="preserve">
+    <value>Put - Hoofdpomp</value>
+  </data>
+  <data name="PIT - AGITATOR" xml:space="preserve">
+    <value>Put - Roerwerk</value>
+  </data>
+  <data name="PIT - WATER LEVEL" xml:space="preserve">
+    <value>Put - Waterpeil</value>
+  </data>
+  <data name="START PUMP" xml:space="preserve">
+    <value>Startpomp</value>
+  </data>
+  <data name="STOP PUMP" xml:space="preserve">
+    <value>Stop pomp</value>
+  </data>
+  <data name="PREWASH WCE - TOP CLEANING PUMP" xml:space="preserve">
+    <value>Voorwas Wce - Bovenreinigingspomp</value>
+  </data>
+  <data name="DECANTER - DISCHARGE PUMP TO PREFILTRATION" xml:space="preserve">
+    <value>Decanter - Afvoerpomp naar voorfiltratie</value>
+  </data>
+  <data name="NOT IN PAUSE PHASE FRESH WATER" xml:space="preserve">
+    <value>Niet in pauzefase Zoet water</value>
+  </data>
+  <data name="IN PAUSE TIME PHASE - TREATMENT NOT IN USE" xml:space="preserve">
+    <value>In pauzetijdfase - Behandeling niet in gebruik</value>
+  </data>
+  <data name="SETUP WITH WATER TREATMENT" xml:space="preserve">
+    <value>Opstelling met waterbehandeling</value>
+  </data>
+  <data name="DISABLED SPEED MODULATION (CONSTANT SPEED ON)" xml:space="preserve">
+    <value>Snelheidsmodulatie uitgeschakeld (constante snelheid aan)</value>
+  </data>
+  <data name="SETUP WITH FRESH WATER" xml:space="preserve">
+    <value>Opzetten met zoet water</value>
+  </data>
+  <data name="PREWASH WCE - BOTTOM CLEANING PUMP" xml:space="preserve">
+    <value>Voorwas Wce - Bodemreinigingspomp</value>
+  </data>
+  <data name="COMMAND UP" xml:space="preserve">
+    <value>Commando omhoog</value>
+  </data>
+  <data name="COMMAND DOWN" xml:space="preserve">
+    <value>Commando omlaag</value>
+  </data>
+  <data name="TOMRA - BOTTLE SORTER" xml:space="preserve">
+    <value>Tomra - Flessensorteerder</value>
+  </data>
+  <data name="MANUAL SORTING - CONVEYOR BELT" xml:space="preserve">
+    <value>Handmatig sorteren - Transportband</value>
+  </data>
+  <data name="MANUAL SORTING - METAL DETECTOR" xml:space="preserve">
+    <value>Handmatig sorteren - Metaaldetector</value>
+  </data>
+  <data name="MANUAL SORTING - DIVERTER" xml:space="preserve">
+    <value>Handmatig sorteren - Omleider</value>
+  </data>
+  <data name="CONVEYOR BELT - METAL DETECTOR" xml:space="preserve">
+    <value>Transportband - Metaaldetector</value>
+  </data>
+  <data name="CONVEYOR BELT - DIVERTER" xml:space="preserve">
+    <value>Transportband - Omleider</value>
+  </data>
+  <data name="INITIAL PHASING (SELF-CENTERING)" xml:space="preserve">
+    <value>Initiële fasering (zelfcentrerend)</value>
+  </data>
+  <data name="STANDBY" xml:space="preserve">
+    <value>Stand-by</value>
+  </data>
+  <data name="HIGH FREQUENCY OF STOP FOR HIGH CURRENT (BLADES TO BE CHANGED?)" xml:space="preserve">
+    <value>Hoge frequentie van stop bij hoge stroom (messen vervangen?)</value>
+  </data>
+  <data name="AIR LOCK - CLEANING VALVE" xml:space="preserve">
+    <value>Luchtsluis - Reinigingsklep</value>
+  </data>
+  <data name="AIR COMPRESSOR - MAIN MOTOR" xml:space="preserve">
+    <value>Luchtcompressor - Hoofdmotor</value>
+  </data>
+  <data name="CABINET COOLING NOT OK (MOTOR WILL BE STOPPED)" xml:space="preserve">
+    <value>Kastkoeling niet ok (motor stopt)</value>
+  </data>
+  <data name="AIR FILTER NOT OK" xml:space="preserve">
+    <value>Luchtfilter niet ok</value>
+  </data>
+  <data name="CABINET COOLING NOT OK (MOTOR STOP)" xml:space="preserve">
+    <value>Kastkoeling niet ok (motor stopt)</value>
+  </data>
+  <data name="AIR PRESSURE NOT OK (MOTOR STOP)" xml:space="preserve">
+    <value>Luchtdruk niet ok (motor stopt)</value>
+  </data>
+  <data name="CABINET COOLING" xml:space="preserve">
+    <value>Kastkoeling</value>
+  </data>
+  <data name="FILTER" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="AIR FILTER SIGNAL NOT OK" xml:space="preserve">
+    <value>Luchtfiltersignaal niet ok</value>
+  </data>
+  <data name="AIR PRESSURE" xml:space="preserve">
+    <value>Luchtdruk</value>
+  </data>
+  <data name="AIR PRESSURE NOT IN RANGE" xml:space="preserve">
+    <value>Luchtdruk niet binnen bereik</value>
+  </data>
+  <data name="AIR COMPRESSOR - COOLING" xml:space="preserve">
+    <value>Luchtcompressor - Koeling</value>
+  </data>
+  <data name="AIR COMPRESSOR - AIR PRESSURE" xml:space="preserve">
+    <value>Luchtcompressor - Luchtdruk</value>
+  </data>
+  <data name="AIR COMPRESSOR - MAX LEVEL" xml:space="preserve">
+    <value>Luchtcompressor - Max. niveau</value>
+  </data>
+  <data name="MICROFILTER" xml:space="preserve">
+    <value>Microfilter</value>
+  </data>
+  <data name="DECANTER - TREATED WATER FROM" xml:space="preserve">
+    <value>Decanter - Behandeld water van</value>
+  </data>
+  <data name="SOREMA REQUEST WATER FROM" xml:space="preserve">
+    <value>Sorema Vraag Water Van</value>
+  </data>
+  <data name="DECANTER - WATER PUMP TO GRINDERS" xml:space="preserve">
+    <value>Decanter - Waterpomp naar maalmachines</value>
+  </data>
+  <data name="DECANTER - WATER PUMP TO WCES" xml:space="preserve">
+    <value>Decanter - Waterpomp naar toilet</value>
+  </data>
+  <data name="DECANTER - DISCHARGE PUMP TO PREWASH" xml:space="preserve">
+    <value>Decanter - Afvoerpomp voor voorwas</value>
+  </data>
+  <data name="DIVERTER ENABLED" xml:space="preserve">
+    <value>Omleider ingeschakeld</value>
+  </data>
+  <data name="ALL MIXERS FILLING SUSPENDED BY OPERATOR" xml:space="preserve">
+    <value>Alle mixers zijn door de operator gestopt met vullen</value>
+  </data>
+  <data name="ALL MIXERS FILLING SUSPENDED FOR WATER TREATMENT NOT OK" xml:space="preserve">
+    <value>Alle mixers vullen opgeschort voor waterbehandeling Niet OK</value>
+  </data>
+  <data name="HOT WASH - ANTIFOAM PUMP" xml:space="preserve">
+    <value>Hot Wash - Antischuimpomp</value>
+  </data>
+  <data name="ACTUAL CONDUCTIVITY" xml:space="preserve">
+    <value>Werkelijke geleidbaarheid</value>
+  </data>
+  <data name="VALVE TO DISCHARGE TO PREFILTRATION" xml:space="preserve">
+    <value>Klep voor afvoer naar voorfiltratie</value>
+  </data>
+  <data name="CENTRIFUGE LOCAL DISCONNECT OPEN" xml:space="preserve">
+    <value>Centrifuge Lokale Ontkoppeling Open</value>
+  </data>
+  <data name="CENTRIFUGE DISCONNECTOR NOT OPEN" xml:space="preserve">
+    <value>Centrifuge-ontkoppeling niet open</value>
+  </data>
+  <data name="WRONG CALIBRATION PROCEDURE" xml:space="preserve">
+    <value>Verkeerde kalibratieprocedure</value>
+  </data>
+  <data name="CURRENT CALIBRATION NOT COMPLETE" xml:space="preserve">
+    <value>Huidige kalibratie niet voltooid</value>
+  </data>
+  <data name="AMP CALIBRATION DONE" xml:space="preserve">
+    <value>Amp-kalibratie voltooid</value>
+  </data>
+  <data name="MOTOR CURRENT CALIBRATION INCOMPLETE" xml:space="preserve">
+    <value>Motorstroomkalibratie onvolledig</value>
+  </data>
+  <data name="AMP CALIBRATION OFF" xml:space="preserve">
+    <value>Amp-kalibratie uit</value>
+  </data>
+  <data name="CURRENT CALIBRATION IN PROGRESS. KEEP MOTOR ON" xml:space="preserve">
+    <value>Huidige kalibratie bezig. Motor aanhouden.</value>
+  </data>
+  <data name="SELF PURGE ENABLED" xml:space="preserve">
+    <value>Zelfreiniging ingeschakeld</value>
+  </data>
+  <data name="PUMP STOP TIME FOR PURGE IS SET TO ZERO" xml:space="preserve">
+    <value>De pompstoptijd voor het spoelen is ingesteld op nul</value>
+  </data>
+  <data name="RECORDED PROCESS CURRENT" xml:space="preserve">
+    <value>Geregistreerde processtroom</value>
+  </data>
+  <data name="WATER TANK - STEAM HEATING" xml:space="preserve">
+    <value>Watertank - Stoomverwarming</value>
+  </data>
+  <data name="MIX SILOS AREA READY" xml:space="preserve">
+    <value>Mengsilo's klaar voor gebruik</value>
+  </data>
+  <data name="SOREMA READY TO RECEIVE" xml:space="preserve">
+    <value>Sorema klaar om te ontvangen</value>
+  </data>
+  <data name="BAG STATION READY" xml:space="preserve">
+    <value>Tasstation klaar</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER - GENERAL START" xml:space="preserve">
+    <value>Buhler Vlokkensorteerder - Algemene start</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER - RECOVERY STREAM START" xml:space="preserve">
+    <value>Buhler Flakes Sorter - Herstelstroom Start</value>
+  </data>
+  <data name="DOWNSTREAM TRANSPORT READY" xml:space="preserve">
+    <value>Downstream Transport Ready</value>
+  </data>
+  <data name="CONTROL ELETRICAL CABINET" xml:space="preserve">
+    <value>Besturing elektrische kast</value>
+  </data>
+  <data name="SYS - 24V UNDER ESTOP FOR HYDRAULIC VALVES (IF ANY)" xml:space="preserve">
+    <value>Sys - 24V onder noodstop voor hydraulische kleppen (indien aanwezig)</value>
+  </data>
+  <data name="MAIN 24V POWER SUPPLY" xml:space="preserve">
+    <value>Hoofdvoeding 24V</value>
+  </data>
+  <data name="SYS - MAIN 24V POWER SUPPLY (F-INPUT)" xml:space="preserve">
+    <value>Sys - Hoofdvoeding 24V (F-ingang)</value>
+  </data>
+  <data name="24V POWER SUPPLY OF HYDR. VALVES" xml:space="preserve">
+    <value>24V-voeding van hydraulische kleppen</value>
+  </data>
+  <data name="SYS - 24V POWER SUPPLY OF HYDR. VALVES (IF ANY)" xml:space="preserve">
+    <value>Sys - 24V-voeding van hydraulische kleppen (indien aanwezig)</value>
+  </data>
+  <data name="SYS - E-STOP - CONTACTOR FEEDBACK CH" xml:space="preserve">
+    <value>Sys - E-Stop - Contactor Feedback Ch</value>
+  </data>
+  <data name="ESTOP PUSH-BUTTON - HARDWARE FAULT (INPUT PASSIVATION)" xml:space="preserve">
+    <value>Estop-drukknop - Hardwarefout (ingangspassivering)</value>
+  </data>
+  <data name="24V POWER SUPPLY NOT OK" xml:space="preserve">
+    <value>24V-voeding niet ok</value>
+  </data>
+  <data name="SELECTION ELETRICAL CABINET" xml:space="preserve">
+    <value>Selectie elektrische kast</value>
+  </data>
+  <data name="FILTRATION ELETRICAL CABINET" xml:space="preserve">
+    <value>Filtratie elektrische kast</value>
+  </data>
+  <data name="PREFILTRATION ELETRICAL CABINET" xml:space="preserve">
+    <value>Voorfiltratie elektrische kast</value>
+  </data>
+  <data name="WASHING ELETRICAL CABINET" xml:space="preserve">
+    <value>Wasmachine elektrische kast</value>
+  </data>
+  <data name="SEPARATION ELETRICAL CABINET" xml:space="preserve">
+    <value>Scheidingskast voor elektrische apparaten</value>
+  </data>
+  <data name="DRYING ELETRICAL CABINET" xml:space="preserve">
+    <value>Droogkast voor elektrische apparaten</value>
+  </data>
+  <data name="RE-GRINDER ELETRICAL CABINET" xml:space="preserve">
+    <value>Elektrische kast voor herslijpen</value>
+  </data>
+  <data name="SORTING ELETRICAL CABINET" xml:space="preserve">
+    <value>Elektrische kast sorteren</value>
+  </data>
+  <data name="DRY GRINDING" xml:space="preserve">
+    <value>Droog malen</value>
   </data>
 </root>

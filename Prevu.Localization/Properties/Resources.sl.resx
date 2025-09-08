@@ -10396,7 +10396,7 @@
     <value>Dan poročila</value>
   </data>
   <data name="INFO_PRES_14" xml:space="preserve">
-    <value>Preverite za ovire ali puščanja v ceveh in/ali filtru</value>
+    <value>Nenormalno delovanje kompresorja, ki ga je zaznal tlačni senzor za tok. Sistem je treba preveriti.</value>
   </data>
   <data name="INFO_USAGE_1" xml:space="preserve">
     <value>Preveč vode v uporabi! Preverite povezane nastavitve in razlog za to neobičajno uporabo</value>
@@ -10543,7 +10543,7 @@ Opomba: če je ta način aktiviran, je proizvodnja na zgornjem delu verige lahko
     <value>Če je omogočena visoka hitrost ponovnega zagona, je to čas, v katerem črpalka med ponovnim zagonom deluje pri največji hitrosti.</value>
   </data>
   <data name="INFO_COOL_3" xml:space="preserve">
-    <value>Vklopite hladilno črpalko, da omogočite neprekinjeno delovanje pripadajoče naprave</value>
+    <value>V kratkem času VKLOPITE prezračevanje omare.</value>
   </data>
   <data name="INFO_SYS_36" xml:space="preserve">
     <value>Napaka strojne opreme na Plc-varnostni vhodni kartici. Prepričajte se, da na terenu ni kratkih stikov ali slabih povezav na vezju, ki je povezano s tem vhodom PLC. Preverite vhodni modul varnostnega krmilnika, ponastavite alarm in/ali znova zaženite modul krmilnika</value>
@@ -11477,5 +11477,686 @@ Opomba: če je ta način aktiviran, je proizvodnja na zgornjem delu verige lahko
   </data>
   <data name="SYS_SUBZONE_001 - MAIN CONTROL" xml:space="preserve">
     <value>Sys_Subzone_001 - Glavni nadzor</value>
+  </data>
+  <data name="INFO_MAX_PRESS_FREQ" xml:space="preserve">
+    <value>Med referenčnim časom se je zgodilo preveliko število dogodkov največjega tlaka. Preglejte sistem, da ugotovite vzrok te anomalije.</value>
+  </data>
+  <data name="INFO_BELT_NOT_OK" xml:space="preserve">
+    <value>Preverite stanje tekočega traku.</value>
+  </data>
+  <data name="INFO_METDET_3" xml:space="preserve">
+    <value>V materialu so bile odkrite visoke ravni kovine. Preverite kakovost materiala na nakladalnem območju obrata.</value>
+  </data>
+  <data name="INFO_METDET_4" xml:space="preserve">
+    <value>Očistite pas zaznane kovinske kontaminacije in nato ponovno zaženite sistem.</value>
+  </data>
+  <data name="INFO_24V_POWER_SUPPLY" xml:space="preserve">
+    <value>Preverite 24-voltno napajalno napravo, njen predhodni tokokrog in stanje napajanja omarice.</value>
+  </data>
+  <data name="INFO_SYS_41" xml:space="preserve">
+    <value>Celoten V/I modul, varen pred napakami, je v stanju napake ali pasiviziran in ga je treba ponastaviti. Preverite konfiguracijo dip-stikala (če obstaja), dodelitev F-imena (SW) modula in njegovo napajanje. Nato ga znova zaženite ali znova zaženite CPE. Ta postopek naj izvaja samo pooblaščeno osebje.</value>
+  </data>
+  <data name="INFO_CONTAM_1" xml:space="preserve">
+    <value>Preverite morebitno puščanje vode v hidravlični enoti, ki je onesnažila olje. Predvsem preglejte hladilni krog in izmenjevalnik toplote. Ko je puščanje odpravljeno, zamenjajte hidravlično olje.</value>
+  </data>
+  <data name="INFO_CONTAM_2" xml:space="preserve">
+    <value>Hidravlično olje je bolj onesnaženo od meje, nastavljene na senzorju. Če ugotovite, da kontaminacija presega raven, ki jo dovoljujejo specifikacije hidravlične enote, zamenjajte olje. Če ne, ponovno ocenite pragove, ki ste jih nastavili na instrumentu.</value>
+  </data>
+  <data name="INFO_CONTAM_3" xml:space="preserve">
+    <value>Preverite signal senzorja za nadzor prisotnosti vode in njegovo ožičenje v električni omarici.</value>
+  </data>
+  <data name="M_INFO_STOP_x_MAX_PRESS" xml:space="preserve">
+    <value>Začasna zaustavitev zaradi največjega tlaka olja. Pred ponovnim zagonom motorja mora preteči najmanjši čas ponovnega zagona.</value>
+  </data>
+  <data name="M_INFO_MIXER_4" xml:space="preserve">
+    <value>Preverite zunanji sistem za obdelavo vode, njegove signale vmesnika in zagotovite, da so vse povezane komponente HMI pravilno omogočene.</value>
+  </data>
+  <data name="P_TIME_BEFORE_RESTART" xml:space="preserve">
+    <value>Ta vrednost označuje, kako dolgo mora komponenta čakati, preden se lahko znova zažene.</value>
+  </data>
+  <data name="P_MAX_NUM_OF_STOPS" xml:space="preserve">
+    <value>Največje število postankov v definiranem časovnem oknu (vzorčni čas). Če se komponenta ustavi pogosteje od omejitve, določene s tem parametrom, bo sistem izdal opozorilo ali alarm.</value>
+  </data>
+  <data name="P_SAMPLE_TIME" xml:space="preserve">
+    <value>Nastavite to vrednost, da določite časovni interval, ki ga sistem uporablja za spremljanje in štetje nadzorovanih dogodkov.</value>
+  </data>
+  <data name="P_BACKUP_PUMP" xml:space="preserve">
+    <value>Črpalko lahko izberete le, ko črpalka ne deluje. Pred novo izbiro se prepričajte, da so ročni ventili, povezani s črpalko, odprti.</value>
+  </data>
+  <data name="EXTERNAL MIXING SILOS SYSTEM" xml:space="preserve">
+    <value>Sistem zunanjih mešalnih silosov</value>
+  </data>
+  <data name="DRY GRINDER" xml:space="preserve">
+    <value>Suhi mlinček</value>
+  </data>
+  <data name="F-SORTER" xml:space="preserve">
+    <value>F-Sorter</value>
+  </data>
+  <data name="PRE-FILTRATION" xml:space="preserve">
+    <value>Predfiltracija</value>
+  </data>
+  <data name="DETAIL WINDOW" xml:space="preserve">
+    <value>Okno s podrobnostmi</value>
+  </data>
+  <data name="EXTRACT CURRENT PAGE AS STANDALONE WINDOW" xml:space="preserve">
+    <value>Ekstrahiraj trenutno stran kot samostojno okno</value>
+  </data>
+  <data name="OPEN CAMERAS" xml:space="preserve">
+    <value>Odprite Kamere</value>
+  </data>
+  <data name="SOREMA LINE" xml:space="preserve">
+    <value>Linija Sorema</value>
+  </data>
+  <data name="F-I/O MODULE ERROR (MODULE PASSIVATION)" xml:space="preserve">
+    <value>Napaka modula F-I/O (pasivacija modula)</value>
+  </data>
+  <data name="PREFILTRATION" xml:space="preserve">
+    <value>Predfiltracija</value>
+  </data>
+  <data name="RE-GRINDER" xml:space="preserve">
+    <value>Ponovno mlinček</value>
+  </data>
+  <data name="CONSUMPTION" xml:space="preserve">
+    <value>Poraba</value>
+  </data>
+  <data name="DECANTER - SKIMMER" xml:space="preserve">
+    <value>Dekanter - Skimmer</value>
+  </data>
+  <data name="WATER FLOW RATE FROM" xml:space="preserve">
+    <value>Pretok vode od</value>
+  </data>
+  <data name="FORCE SIGNAL" xml:space="preserve">
+    <value>Signal sile</value>
+  </data>
+  <data name="FORCING SINGAL TO FALSE" xml:space="preserve">
+    <value>Prisiljevanje Singala v False</value>
+  </data>
+  <data name="FORCING SINGAL TO TRUE" xml:space="preserve">
+    <value>Prisiljevanje Singala v True</value>
+  </data>
+  <data name="MATERIAL DIRECTED TO" xml:space="preserve">
+    <value>Material, namenjen</value>
+  </data>
+  <data name="SORTING UNIT CONTROL ALARM" xml:space="preserve">
+    <value>Alarm za nadzor enote za sortiranje</value>
+  </data>
+  <data name="PLAYBACK" xml:space="preserve">
+    <value>Predvajanje</value>
+  </data>
+  <data name="GRINDER ELETRICAL CABINET" xml:space="preserve">
+    <value>Električna omarica za mlinček</value>
+  </data>
+  <data name="LOADING ELETRICAL CABINET" xml:space="preserve">
+    <value>Nalaganje električne omarice</value>
+  </data>
+  <data name="POWER METER SETUP" xml:space="preserve">
+    <value>Nastavitev merilnika moči</value>
+  </data>
+  <data name="MAXIMUM VOLTAGE FOR ALARM" xml:space="preserve">
+    <value>Največja napetost za alarm</value>
+  </data>
+  <data name="MAXIMUM CURRENT FOR ALARM" xml:space="preserve">
+    <value>Največji tok za alarm</value>
+  </data>
+  <data name="NOMINAL LINE FREQUENCY" xml:space="preserve">
+    <value>Nazivna linijska frekvenca</value>
+  </data>
+  <data name="PEAK OF MAXIMUM LINE VOLTAGE" xml:space="preserve">
+    <value>Vrh največje omrežne napetosti</value>
+  </data>
+  <data name="PEAK OF MAXIMUM CURRENT" xml:space="preserve">
+    <value>Vrh največjega toka</value>
+  </data>
+  <data name="PEAK OF MAXIMUM POWER" xml:space="preserve">
+    <value>Vrhunec največje moči</value>
+  </data>
+  <data name="RESET ALL PEAK RECORDERS" xml:space="preserve">
+    <value>Ponastavi vse rekorderje najvišjih vrednosti</value>
+  </data>
+  <data name="FILTER ERRORS" xml:space="preserve">
+    <value>Napake filtra</value>
+  </data>
+  <data name="FILTER NEVER MODIFIED" xml:space="preserve">
+    <value>Filter ni bil nikoli spremenjen</value>
+  </data>
+  <data name="REDUCED_SPEED" xml:space="preserve">
+    <value>Zmanjšana_hitrost</value>
+  </data>
+  <data name="PERCENTAGE OF SPEED REDUCTION" xml:space="preserve">
+    <value>Odstotek zmanjšanja hitrosti</value>
+  </data>
+  <data name="RECOVERY_MODE" xml:space="preserve">
+    <value>Recovery_Mode</value>
+  </data>
+  <data name="DISABLE RECOVERY MODE" xml:space="preserve">
+    <value>Onemogoči obnovitveni način</value>
+  </data>
+  <data name="FILLING RESTART" xml:space="preserve">
+    <value>Polnjenje Ponovni zagon</value>
+  </data>
+  <data name="TIME BELOW HIGH LEVEL TO RESTART FILLING" xml:space="preserve">
+    <value>Čas pod visoko stopnjo za ponovni začetek polnjenja</value>
+  </data>
+  <data name="LOADING CONVEYOR" xml:space="preserve">
+    <value>Nakladalni transporter</value>
+  </data>
+  <data name="LOADING CONVEYOR - SAFETY KEY" xml:space="preserve">
+    <value>Nakladalni transporter - varnostni ključ</value>
+  </data>
+  <data name="LOADING CONVEYOR - LEFT LUBRIF." xml:space="preserve">
+    <value>Nakladalni transporter - levo mazivo.</value>
+  </data>
+  <data name="LOADING CONVEYOR - RIGHT LUBRIF." xml:space="preserve">
+    <value>Nakladalni transporter - desno mazivo.</value>
+  </data>
+  <data name="LOADING CONVEYOR - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>Nakladalni transporter – cikel vzdrževanja</value>
+  </data>
+  <data name="LOADING CONVEYOR - LUBRIFICATION" xml:space="preserve">
+    <value>Nakladalni transporter – mazanje</value>
+  </data>
+  <data name="SHREDDER - MAIN PUMP" xml:space="preserve">
+    <value>Drobilnik - glavna črpalka</value>
+  </data>
+  <data name="OIL LOW LEVEL" xml:space="preserve">
+    <value>Nizek nivo olja</value>
+  </data>
+  <data name="(1&gt;=LOW)" xml:space="preserve">
+    <value>(1&gt;=nizko)</value>
+  </data>
+  <data name="OIL FILTER LINE" xml:space="preserve">
+    <value>Linija oljnega filtra</value>
+  </data>
+  <data name="OIL FILTER NOT OK - LINE" xml:space="preserve">
+    <value>Oljni filter ni v redu - Linija</value>
+  </data>
+  <data name="OIL CIRCUIT SHUTOFF VALVE NOT OPEN - LINE" xml:space="preserve">
+    <value>Zaporni ventil oljnega tokokroga ni odprt - vod</value>
+  </data>
+  <data name="OIL MINIMUM PRESSURE NOT OK - LINE" xml:space="preserve">
+    <value>Najnižji tlak olja ni v redu - cev</value>
+  </data>
+  <data name="SHREDDER - SAFETY UNLOCK REELS" xml:space="preserve">
+    <value>Uničevalnik - koluti za varnostno odklepanje</value>
+  </data>
+  <data name="SHREDDER - COOLING FLUX PUMP" xml:space="preserve">
+    <value>Drobilnik - črpalka hladilnega toka</value>
+  </data>
+  <data name="OIL SHUTOFF VALVE" xml:space="preserve">
+    <value>Zaporni ventil za olje</value>
+  </data>
+  <data name="COOLING PUMP IS NOT ON (MAIN PUMP WILL BE STOPPED IN A SHORT TIME)" xml:space="preserve">
+    <value>Hladilna črpalka ni vklopljena (glavna črpalka se bo v kratkem času ustavila)</value>
+  </data>
+  <data name="COOLING PUMP IS NOT ON (MAIN PUMP STOP)" xml:space="preserve">
+    <value>Hladilna črpalka ni vklopljena (ustavitev glavne črpalke)</value>
+  </data>
+  <data name="SHUTOFF VALVE" xml:space="preserve">
+    <value>Zaporni ventil</value>
+  </data>
+  <data name="SHUTOFF VALVE NOT OK" xml:space="preserve">
+    <value>Zaporni ventil ni v redu</value>
+  </data>
+  <data name="SHREDDER - THERMAL HEATER" xml:space="preserve">
+    <value>Drobilnik - termični grelec</value>
+  </data>
+  <data name="SHREDDER - HYDRAULIC SHAFT" xml:space="preserve">
+    <value>Drobilnik - hidravlična gred</value>
+  </data>
+  <data name="WAITING FOR MINIMUM TIME TO" xml:space="preserve">
+    <value>Čakanje na minimalni čas za</value>
+  </data>
+  <data name="NO AUTO-UNLOCK" xml:space="preserve">
+    <value>Brez samodejnega odklepanja</value>
+  </data>
+  <data name="AUTO-UNLOCK HIGH SPEED IN PROGRESS" xml:space="preserve">
+    <value>Samodejno odklepanje visoke hitrosti v teku</value>
+  </data>
+  <data name="ROTATION SPEED IN PRODUCTION" xml:space="preserve">
+    <value>Hitrost vrtenja v proizvodnji</value>
+  </data>
+  <data name="ROTATION SPEED IN MAINTENANCE" xml:space="preserve">
+    <value>Hitrost vrtenja pri vzdrževanju</value>
+  </data>
+  <data name="INSIDE" xml:space="preserve">
+    <value>V notranjosti</value>
+  </data>
+  <data name="OUTSIDE" xml:space="preserve">
+    <value>Zunaj</value>
+  </data>
+  <data name="SHREDDER - HYDRAULIC ACCUMULATOR (BYPASS) SHAFT" xml:space="preserve">
+    <value>Drobilnik - gred hidravličnega akumulatorja (obvoz).</value>
+  </data>
+  <data name="SHREDDER - OIL PRESSURE ROTAION SHAFT" xml:space="preserve">
+    <value>Drobilnik - rotacijska gred pod pritiskom olja</value>
+  </data>
+  <data name="PRESSURE PARAMETERS" xml:space="preserve">
+    <value>Parametri tlaka</value>
+  </data>
+  <data name="ROTOR CHANGE DIRECTION" xml:space="preserve">
+    <value>Spremeni smer rotorja</value>
+  </data>
+  <data name="MINIMUM LOAD" xml:space="preserve">
+    <value>Najmanjša obremenitev</value>
+  </data>
+  <data name="SHREDDER - OIL TEMPERATURE SHAFT" xml:space="preserve">
+    <value>Drobilnik - gred za temperaturo olja</value>
+  </data>
+  <data name="SHREDDER - COOLING VALVE" xml:space="preserve">
+    <value>Drobilnik - hladilni ventil</value>
+  </data>
+  <data name="SHREDDER - OIL TEMPERATURE" xml:space="preserve">
+    <value>Drobilnik - Temperatura olja</value>
+  </data>
+  <data name="SHREDDER - WATER PRESENCE IN OIL" xml:space="preserve">
+    <value>Drobilec - Prisotnost vode v olju</value>
+  </data>
+  <data name="SHREDDER - MAINTENANCE PROCEDURE" xml:space="preserve">
+    <value>Drobilnik – postopek vzdrževanja</value>
+  </data>
+  <data name="SHREDDER - HYDRAULICS" xml:space="preserve">
+    <value>Drobilnik - hidravlika</value>
+  </data>
+  <data name="SHREDDER - MANAGER" xml:space="preserve">
+    <value>Shredder - Upravitelj</value>
+  </data>
+  <data name="MAXIMUM NUMBER OF ROTOR REVERSE ROTATION (SHREDDER OVERLOAD ?) - ROTOR" xml:space="preserve">
+    <value>Največje število obratnih vrtljajev rotorja (preobremenitev drobilnika?) - Rotor</value>
+  </data>
+  <data name="ROTOR 1 PRESSURE OK" xml:space="preserve">
+    <value>Tlak rotorja 1 OK</value>
+  </data>
+  <data name="STOP MATERIAL FOR PRESSURE NOT OK OF ROTOR" xml:space="preserve">
+    <value>Zavorni material za tlak ni v redu rotorja</value>
+  </data>
+  <data name="ROTOR 2 PRESSURE OK" xml:space="preserve">
+    <value>Tlak rotorja 2 OK</value>
+  </data>
+  <data name="ROTATION MODE" xml:space="preserve">
+    <value>Način vrtenja</value>
+  </data>
+  <data name="ROTATIONS UNLIKE SELECTED MODE" xml:space="preserve">
+    <value>Rotacije za razliko od izbranega načina</value>
+  </data>
+  <data name="ROTORS" xml:space="preserve">
+    <value>Rotorji</value>
+  </data>
+  <data name="DIRECTION CHANGE INTERVAL (0=NO CHANGE BY TIME)" xml:space="preserve">
+    <value>Interval spremembe smeri (0=brez spremembe po času)</value>
+  </data>
+  <data name="DIRECTION CHANGE FOR HIGH LOAD OF ROTOR" xml:space="preserve">
+    <value>Sprememba smeri za visoko obremenitev rotorja</value>
+  </data>
+  <data name="DIRECTION CHANGE FOR TIME EXPIRED OF ROTOR" xml:space="preserve">
+    <value>Sprememba smeri za potekel čas rotorja</value>
+  </data>
+  <data name="DIRECTION CHANGE FOR FLOATING MATERIAL OF ROTOR" xml:space="preserve">
+    <value>Sprememba smeri za plavajoči material rotorja</value>
+  </data>
+  <data name="DIRECTION CHANGE FOR ROTATION MODE REFRESH" xml:space="preserve">
+    <value>Sprememba smeri za osvežitev načina vrtenja</value>
+  </data>
+  <data name="DIRECTION CHANGE FOR OPERATOR REQUEST" xml:space="preserve">
+    <value>Sprememba smeri na zahtevo operaterja</value>
+  </data>
+  <data name="RESTORE ROTATION MODE REQUESTED" xml:space="preserve">
+    <value>Zahtevana je obnovitev načina vrtenja</value>
+  </data>
+  <data name="SHREDDING IN PROGRESS" xml:space="preserve">
+    <value>Uničevanje v teku</value>
+  </data>
+  <data name="BUFFER BELT" xml:space="preserve">
+    <value>Odbojni pas</value>
+  </data>
+  <data name="BUFFER BELT - SAFETY KEY" xml:space="preserve">
+    <value>Odbojni pas - Varnostni ključ</value>
+  </data>
+  <data name="BUFFER BELT - LEFT LUBRIF." xml:space="preserve">
+    <value>Odbojni jermen - levo mazivo.</value>
+  </data>
+  <data name="BUFFER BELT - RIGHT LUBRIF." xml:space="preserve">
+    <value>Odbojni jermen - desno mazivo.</value>
+  </data>
+  <data name="BUFFER BELT - LEVEL" xml:space="preserve">
+    <value>Odbojni pas - raven</value>
+  </data>
+  <data name="BUFFER BELT - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>Odbojni jermen - vzdrževalni cikel</value>
+  </data>
+  <data name="BUFFER BELT - LUBRIFICATION" xml:space="preserve">
+    <value>Odbojni jermen - mazanje</value>
+  </data>
+  <data name="DRY TROMMEL - MAIN MOTOR" xml:space="preserve">
+    <value>Suhi trommel - glavni motor</value>
+  </data>
+  <data name="FOOTBOARD UP POSITION" xml:space="preserve">
+    <value>Dvignjen položaj vznožja</value>
+  </data>
+  <data name="FOOTBOARD POSITION INCONGRUENCY" xml:space="preserve">
+    <value>Neskladnost položaja podnožja</value>
+  </data>
+  <data name="FOOTBOARD NOT IN UPPER POSITION" xml:space="preserve">
+    <value>Podnožje ni v zgornjem položaju</value>
+  </data>
+  <data name="FOOTBOARD UP" xml:space="preserve">
+    <value>Podnožje navzgor</value>
+  </data>
+  <data name="FOOTBOARD NOT UP" xml:space="preserve">
+    <value>Podnožje ni dvignjeno</value>
+  </data>
+  <data name="DRY TROMMEL - SAFETY UNLOCK DOORS" xml:space="preserve">
+    <value>Suhi trommel - varnostno odklepanje vrat</value>
+  </data>
+  <data name="DRY TROMMEL - MAINTENANCE PROCEDURE" xml:space="preserve">
+    <value>Suhi trommel - postopek vzdrževanja</value>
+  </data>
+  <data name="DISCHARGE FROM PUMP" xml:space="preserve">
+    <value>Izpust iz črpalke</value>
+  </data>
+  <data name="DISCHARGE TO" xml:space="preserve">
+    <value>Odpust Za</value>
+  </data>
+  <data name="BYPASS VALVE" xml:space="preserve">
+    <value>Obvodni ventil</value>
+  </data>
+  <data name="WATER FLOWRATE TO" xml:space="preserve">
+    <value>Pretok vode do</value>
+  </data>
+  <data name="SOREMA DISCHARGE TO" xml:space="preserve">
+    <value>Sorema Odvajanje To</value>
+  </data>
+  <data name="NO ALARM OF WATER TREATMENT (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Brez alarma za obdelavo vode (zunanji signal)</value>
+  </data>
+  <data name="WATER TREATMENT OK TO RECEIVE (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Obdelava vode v redu za sprejem (zunanji signal)</value>
+  </data>
+  <data name="VAR MIN LEVEL (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Var min. raven (zunanji signal)</value>
+  </data>
+  <data name="COLLECTING TANK NO MAXIMUM LEVEL" xml:space="preserve">
+    <value>Zbirni rezervoar brez največje ravni</value>
+  </data>
+  <data name="SOREMA IS DISCHARGING" xml:space="preserve">
+    <value>Sorema se izprazni</value>
+  </data>
+  <data name="GENERAL ALARM OF WATER TREATMENT" xml:space="preserve">
+    <value>Splošni alarm za čiščenje vode</value>
+  </data>
+  <data name="VRM MINIMUM LEVEL" xml:space="preserve">
+    <value>Najnižja raven Vrm</value>
+  </data>
+  <data name="WATER TREATMENT SELECTION" xml:space="preserve">
+    <value>Izbira priprave vode</value>
+  </data>
+  <data name="NO DIR" xml:space="preserve">
+    <value>Brez Dir</value>
+  </data>
+  <data name="SELECTED" xml:space="preserve">
+    <value>Izbrano</value>
+  </data>
+  <data name="LOADING DIRECTION" xml:space="preserve">
+    <value>Smer nalaganja</value>
+  </data>
+  <data name="HIGH FREQUENCY OF STOP FOR HIGH CURRENT" xml:space="preserve">
+    <value>Visoka frekvenca zaustavitve za visok tok</value>
+  </data>
+  <data name="PIT - MAIN PUMP" xml:space="preserve">
+    <value>Jama - glavna črpalka</value>
+  </data>
+  <data name="PIT - AGITATOR" xml:space="preserve">
+    <value>Jama - mešalo</value>
+  </data>
+  <data name="PIT - WATER LEVEL" xml:space="preserve">
+    <value>Jama - vodna gladina</value>
+  </data>
+  <data name="START PUMP" xml:space="preserve">
+    <value>Zaženi črpalko</value>
+  </data>
+  <data name="STOP PUMP" xml:space="preserve">
+    <value>Ustavi črpalko</value>
+  </data>
+  <data name="PREWASH WCE - TOP CLEANING PUMP" xml:space="preserve">
+    <value>Predpranje Wce - Zgornja čistilna črpalka</value>
+  </data>
+  <data name="DECANTER - DISCHARGE PUMP TO PREFILTRATION" xml:space="preserve">
+    <value>Dekanter - izpustna črpalka za predfiltracijo</value>
+  </data>
+  <data name="NOT IN PAUSE PHASE FRESH WATER" xml:space="preserve">
+    <value>Ni v fazi premora Sveža voda</value>
+  </data>
+  <data name="IN PAUSE TIME PHASE - TREATMENT NOT IN USE" xml:space="preserve">
+    <value>V fazi premora – zdravljenje ni v uporabi</value>
+  </data>
+  <data name="SETUP WITH WATER TREATMENT" xml:space="preserve">
+    <value>Nastavitev s pripravo vode</value>
+  </data>
+  <data name="DISABLED SPEED MODULATION (CONSTANT SPEED ON)" xml:space="preserve">
+    <value>Onemogočena modulacija hitrosti (konstantna hitrost vklopljena)</value>
+  </data>
+  <data name="SETUP WITH FRESH WATER" xml:space="preserve">
+    <value>Namestitev s svežo vodo</value>
+  </data>
+  <data name="PREWASH WCE - BOTTOM CLEANING PUMP" xml:space="preserve">
+    <value>Predpranje Wce - črpalka za čiščenje dna</value>
+  </data>
+  <data name="COMMAND UP" xml:space="preserve">
+    <value>Ukaz gor</value>
+  </data>
+  <data name="COMMAND DOWN" xml:space="preserve">
+    <value>Ukaz navzdol</value>
+  </data>
+  <data name="TOMRA - BOTTLE SORTER" xml:space="preserve">
+    <value>Tomra - sortirnik steklenic</value>
+  </data>
+  <data name="MANUAL SORTING - CONVEYOR BELT" xml:space="preserve">
+    <value>Ročno sortiranje - tekoči trak</value>
+  </data>
+  <data name="MANUAL SORTING - METAL DETECTOR" xml:space="preserve">
+    <value>Ročno razvrščanje - detektor kovin</value>
+  </data>
+  <data name="MANUAL SORTING - DIVERTER" xml:space="preserve">
+    <value>Ročno razvrščanje - preusmerjevalnik</value>
+  </data>
+  <data name="CONVEYOR BELT - METAL DETECTOR" xml:space="preserve">
+    <value>Tekoči trak - detektor kovin</value>
+  </data>
+  <data name="CONVEYOR BELT - DIVERTER" xml:space="preserve">
+    <value>Tekoči trak - preusmerjevalnik</value>
+  </data>
+  <data name="INITIAL PHASING (SELF-CENTERING)" xml:space="preserve">
+    <value>Začetno faziranje (samocentriranje)</value>
+  </data>
+  <data name="STANDBY" xml:space="preserve">
+    <value>Pripravljenost</value>
+  </data>
+  <data name="HIGH FREQUENCY OF STOP FOR HIGH CURRENT (BLADES TO BE CHANGED?)" xml:space="preserve">
+    <value>Visoka frekvenca zaustavitve za visok tok (rezila je treba zamenjati?)</value>
+  </data>
+  <data name="AIR LOCK - CLEANING VALVE" xml:space="preserve">
+    <value>Zračna zapora - čistilni ventil</value>
+  </data>
+  <data name="AIR COMPRESSOR - MAIN MOTOR" xml:space="preserve">
+    <value>Zračni kompresor - glavni motor</value>
+  </data>
+  <data name="CABINET COOLING NOT OK (MOTOR WILL BE STOPPED)" xml:space="preserve">
+    <value>Hlajenje omarice ni v redu (motor bo ustavljen)</value>
+  </data>
+  <data name="AIR FILTER NOT OK" xml:space="preserve">
+    <value>Zračni filter ni v redu</value>
+  </data>
+  <data name="CABINET COOLING NOT OK (MOTOR STOP)" xml:space="preserve">
+    <value>Hlajenje omarice ni v redu (zaustavitev motorja)</value>
+  </data>
+  <data name="AIR PRESSURE NOT OK (MOTOR STOP)" xml:space="preserve">
+    <value>Zračni tlak ni v redu (zaustavitev motorja)</value>
+  </data>
+  <data name="CABINET COOLING" xml:space="preserve">
+    <value>Hlajenje kabineta</value>
+  </data>
+  <data name="FILTER" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="AIR FILTER SIGNAL NOT OK" xml:space="preserve">
+    <value>Signal zračnega filtra ni v redu</value>
+  </data>
+  <data name="AIR PRESSURE" xml:space="preserve">
+    <value>Zračni tlak</value>
+  </data>
+  <data name="AIR PRESSURE NOT IN RANGE" xml:space="preserve">
+    <value>Zračni tlak ni v območju</value>
+  </data>
+  <data name="AIR COMPRESSOR - COOLING" xml:space="preserve">
+    <value>Zračni kompresor - hlajenje</value>
+  </data>
+  <data name="AIR COMPRESSOR - AIR PRESSURE" xml:space="preserve">
+    <value>Zračni kompresor - zračni tlak</value>
+  </data>
+  <data name="AIR COMPRESSOR - MAX LEVEL" xml:space="preserve">
+    <value>Zračni kompresor - najvišja raven</value>
+  </data>
+  <data name="MICROFILTER" xml:space="preserve">
+    <value>Mikrofilter</value>
+  </data>
+  <data name="DECANTER - TREATED WATER FROM" xml:space="preserve">
+    <value>Decanter - obdelana voda iz</value>
+  </data>
+  <data name="SOREMA REQUEST WATER FROM" xml:space="preserve">
+    <value>Sorema Zahtevaj vodo od</value>
+  </data>
+  <data name="DECANTER - WATER PUMP TO GRINDERS" xml:space="preserve">
+    <value>Dekanter - vodna črpalka za mlinčke</value>
+  </data>
+  <data name="DECANTER - WATER PUMP TO WCES" xml:space="preserve">
+    <value>Dekanter - vodna črpalka za Wces</value>
+  </data>
+  <data name="DECANTER - DISCHARGE PUMP TO PREWASH" xml:space="preserve">
+    <value>Dekanter - izpustna črpalka za predpranje</value>
+  </data>
+  <data name="DIVERTER ENABLED" xml:space="preserve">
+    <value>Preusmerjevalnik omogočen</value>
+  </data>
+  <data name="ALL MIXERS FILLING SUSPENDED BY OPERATOR" xml:space="preserve">
+    <value>Polnjenje vseh mešalnikov je prekinil operater</value>
+  </data>
+  <data name="ALL MIXERS FILLING SUSPENDED FOR WATER TREATMENT NOT OK" xml:space="preserve">
+    <value>Polnjenje vseh mešalnikov začasno začasno za pripravo vode ni v redu</value>
+  </data>
+  <data name="HOT WASH - ANTIFOAM PUMP" xml:space="preserve">
+    <value>Vroče pranje - črpalka proti penjenju</value>
+  </data>
+  <data name="ACTUAL CONDUCTIVITY" xml:space="preserve">
+    <value>Dejanska prevodnost</value>
+  </data>
+  <data name="VALVE TO DISCHARGE TO PREFILTRATION" xml:space="preserve">
+    <value>Ventil za izpust v predfiltracijo</value>
+  </data>
+  <data name="CENTRIFUGE LOCAL DISCONNECT OPEN" xml:space="preserve">
+    <value>Centrifuga Local Disconnect Open</value>
+  </data>
+  <data name="CENTRIFUGE DISCONNECTOR NOT OPEN" xml:space="preserve">
+    <value>Odklopnik centrifuge ni odprt</value>
+  </data>
+  <data name="WRONG CALIBRATION PROCEDURE" xml:space="preserve">
+    <value>Napačen postopek umerjanja</value>
+  </data>
+  <data name="CURRENT CALIBRATION NOT COMPLETE" xml:space="preserve">
+    <value>Trenutna kalibracija ni dokončana</value>
+  </data>
+  <data name="AMP CALIBRATION DONE" xml:space="preserve">
+    <value>Kalibracija ojačevalnika končana</value>
+  </data>
+  <data name="MOTOR CURRENT CALIBRATION INCOMPLETE" xml:space="preserve">
+    <value>Kalibracija toka motorja ni dokončana</value>
+  </data>
+  <data name="AMP CALIBRATION OFF" xml:space="preserve">
+    <value>Kalibracija ojačevalnika izklopljena</value>
+  </data>
+  <data name="CURRENT CALIBRATION IN PROGRESS. KEEP MOTOR ON" xml:space="preserve">
+    <value>Trenutna kalibracija v teku. Naj bo motor vključen</value>
+  </data>
+  <data name="SELF PURGE ENABLED" xml:space="preserve">
+    <value>Omogočeno samočiščenje</value>
+  </data>
+  <data name="PUMP STOP TIME FOR PURGE IS SET TO ZERO" xml:space="preserve">
+    <value>Čas zaustavitve črpalke za čiščenje je nastavljen na nič</value>
+  </data>
+  <data name="RECORDED PROCESS CURRENT" xml:space="preserve">
+    <value>Zabeleženi procesni tok</value>
+  </data>
+  <data name="WATER TANK - STEAM HEATING" xml:space="preserve">
+    <value>Rezervoar za vodo - parno ogrevanje</value>
+  </data>
+  <data name="MIX SILOS AREA READY" xml:space="preserve">
+    <value>Območje silosa mešanice je pripravljeno</value>
+  </data>
+  <data name="SOREMA READY TO RECEIVE" xml:space="preserve">
+    <value>Sorema pripravljena za sprejem</value>
+  </data>
+  <data name="BAG STATION READY" xml:space="preserve">
+    <value>Postaja za vrečke pripravljena</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER - GENERAL START" xml:space="preserve">
+    <value>Buhler sortirnik kosmičev - splošni začetek</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER - RECOVERY STREAM START" xml:space="preserve">
+    <value>Razvrščevalnik kosmičev Buhler - Začetek obnovitvenega toka</value>
+  </data>
+  <data name="DOWNSTREAM TRANSPORT READY" xml:space="preserve">
+    <value>Pripravljen za nadaljnji transport</value>
+  </data>
+  <data name="CONTROL ELETRICAL CABINET" xml:space="preserve">
+    <value>Krmilna elektro omarica</value>
+  </data>
+  <data name="SYS - 24V UNDER ESTOP FOR HYDRAULIC VALVES (IF ANY)" xml:space="preserve">
+    <value>Sys - 24 V Under Estop za hidravlične ventile (če obstajajo)</value>
+  </data>
+  <data name="MAIN 24V POWER SUPPLY" xml:space="preserve">
+    <value>Glavni napajalnik 24 V</value>
+  </data>
+  <data name="SYS - MAIN 24V POWER SUPPLY (F-INPUT)" xml:space="preserve">
+    <value>Sistem - glavni napajalnik 24 V (F-vhod)</value>
+  </data>
+  <data name="24V POWER SUPPLY OF HYDR. VALVES" xml:space="preserve">
+    <value>24V Napajalnik Hidr. Ventili</value>
+  </data>
+  <data name="SYS - 24V POWER SUPPLY OF HYDR. VALVES (IF ANY)" xml:space="preserve">
+    <value>Sys - 24V napajalnik hid. Ventili (če obstajajo)</value>
+  </data>
+  <data name="SYS - E-STOP - CONTACTOR FEEDBACK CH" xml:space="preserve">
+    <value>Sys - E-Stop - Povratna informacija kontaktorja Ch</value>
+  </data>
+  <data name="ESTOP PUSH-BUTTON - HARDWARE FAULT (INPUT PASSIVATION)" xml:space="preserve">
+    <value>Estop Push-Button - napaka strojne opreme (pasivacija vhoda)</value>
+  </data>
+  <data name="24V POWER SUPPLY NOT OK" xml:space="preserve">
+    <value>Napajalnik 24 V ni v redu</value>
+  </data>
+  <data name="SELECTION ELETRICAL CABINET" xml:space="preserve">
+    <value>Izbor elektro omar</value>
+  </data>
+  <data name="FILTRATION ELETRICAL CABINET" xml:space="preserve">
+    <value>Filtracijska elektro omarica</value>
+  </data>
+  <data name="PREFILTRATION ELETRICAL CABINET" xml:space="preserve">
+    <value>Predfiltracijska elektro omarica</value>
+  </data>
+  <data name="WASHING ELETRICAL CABINET" xml:space="preserve">
+    <value>Pranje elektro omar</value>
+  </data>
+  <data name="SEPARATION ELETRICAL CABINET" xml:space="preserve">
+    <value>Ločilna elektro omarica</value>
+  </data>
+  <data name="DRYING ELETRICAL CABINET" xml:space="preserve">
+    <value>Sušilna elektro omara</value>
+  </data>
+  <data name="RE-GRINDER ELETRICAL CABINET" xml:space="preserve">
+    <value>Električna omarica za ponovno brušenje</value>
+  </data>
+  <data name="SORTING ELETRICAL CABINET" xml:space="preserve">
+    <value>Razvrščanje elektro omar</value>
+  </data>
+  <data name="DRY GRINDING" xml:space="preserve">
+    <value>Suho mletje</value>
   </data>
 </root>
