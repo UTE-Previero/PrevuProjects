@@ -10396,7 +10396,7 @@
     <value>יום דיווח</value>
   </data>
   <data name="INFO_PRES_14" xml:space="preserve">
-    <value>בדוק במורד הזרם אם יש חסימות או דליפות בצנרת ו/או במסנן</value>
+    <value>פעולת מדחס חריגה זוהתה על ידי חיישן הלחץ במורד הזרם. יש לבדוק את המערכת.</value>
   </data>
   <data name="INFO_USAGE_1" xml:space="preserve">
     <value>יותר מדי מים בשימוש! בדוק את ההגדרות הקשורות ואת הסיבה לשימוש חריג זה</value>
@@ -10543,7 +10543,7 @@
     <value>אם מופעלת מהירות הפעלה מחדש גבוהה, זהו משך הזמן שבו המשאבה פועלת במהירות המרבית שלה במהלך ההפעלה מחדש.</value>
   </data>
   <data name="INFO_COOL_3" xml:space="preserve">
-    <value>הפעל את משאבת הקירור כדי לאפשר למכשיר הקשור לה לפעול ברציפות</value>
+    <value>הפעל את אוורור הארון תוך זמן קצר.</value>
   </data>
   <data name="INFO_SYS_36" xml:space="preserve">
     <value>תקלת חומרה בכרטיס קלט Plc-Safety. ודא שאין מעגלים קצרים בשטח או חיבורים גרועים במעגל המחובר לכניסת PLC זו. בדוק את מודול הקלט Safety Plc, אפס את האזעקה ו/או הפעל מחדש את מודול Plc</value>
@@ -11477,5 +11477,686 @@
   </data>
   <data name="SYS_SUBZONE_001 - MAIN CONTROL" xml:space="preserve">
     <value>Sys_Subzone_001 - בקרה ראשית</value>
+  </data>
+  <data name="INFO_MAX_PRESS_FREQ" xml:space="preserve">
+    <value>מספר מוגזם של אירועי לחץ מרבי התרחש במהלך זמן הייחוס. אנא בדוק את המערכת כדי לקבוע את הגורם לאנומליה זו.</value>
+  </data>
+  <data name="INFO_BELT_NOT_OK" xml:space="preserve">
+    <value>בדוק את מצב המסוע.</value>
+  </data>
+  <data name="INFO_METDET_3" xml:space="preserve">
+    <value>רמות גבוהות של מתכת זוהו בחומר. בדוק את איכות החומר באזור הטעינה של המפעל.</value>
+  </data>
+  <data name="INFO_METDET_4" xml:space="preserve">
+    <value>נקה את החגורה מזיהום המתכת שזוהה ולאחר מכן הפעל מחדש את המערכת.</value>
+  </data>
+  <data name="INFO_24V_POWER_SUPPLY" xml:space="preserve">
+    <value>בדוק את התקן אספקת החשמל של 24V, את המעגל שלו במעלה הזרם ואת מצב החשמל של הארון.</value>
+  </data>
+  <data name="INFO_SYS_41" xml:space="preserve">
+    <value>כל מודול הקלט/פלט המוגן בכשל נמצא במצב שגיאה או פסיבי ויש לאפס אותו. בדוק את תצורת מתג הדיפ (אם יש), את הקצאת שם ה-F של המודול (SW) ואת ספק הכוח שלו. לאחר מכן, הפעל אותו מחדש או הפעל מחדש את המעבד. פעולה זו צריכה להתבצע רק על ידי צוות מורשה.</value>
+  </data>
+  <data name="INFO_CONTAM_1" xml:space="preserve">
+    <value>בדוק אם יש נזילות מים ביחידה ההידראולית שזיהמה את השמן. מעל הכל, בדוק את מעגל הקירור ואת מחליף החום. לאחר תיקון הדליפה, החלף את השמן ההידראולי.</value>
+  </data>
+  <data name="INFO_CONTAM_2" xml:space="preserve">
+    <value>השמן ההידראולי מזוהם יותר מהמגבלה שנקבעה בחיישן. אם אתה מאשר שהזיהום חורג מהרמה המותרת במפרטי היחידה ההידראולית, עליך להחליף את השמן. אם לא, הערך מחדש את הספים שהגדרת במכשיר.</value>
+  </data>
+  <data name="INFO_CONTAM_3" xml:space="preserve">
+    <value>בדוק את אות חיישן בקרת נוכחות המים ואת החיווט שלו בארון החשמל.</value>
+  </data>
+  <data name="M_INFO_STOP_x_MAX_PRESS" xml:space="preserve">
+    <value>עצירה זמנית עקב לחץ שמן מרבי. זמן הפעלה מחדש מינימלי חייב לעבור לפני שהמנוע יוכל להתניע שוב.</value>
+  </data>
+  <data name="M_INFO_MIXER_4" xml:space="preserve">
+    <value>בדוק את המערכת החיצונית לטיפול במים, את אותות הממשק שלה, וודא שכל רכיבי ה-HMI הקשורים מופעלים כהלכה.</value>
+  </data>
+  <data name="P_TIME_BEFORE_RESTART" xml:space="preserve">
+    <value>ערך זה מציין כמה זמן על הרכיב להמתין לפני שהוא יכול להפעיל מחדש.</value>
+  </data>
+  <data name="P_MAX_NUM_OF_STOPS" xml:space="preserve">
+    <value>מספר עצירות מקסימלי בתוך חלון הזמן שהוגדר (זמן דגימה). אם הרכיב עוצר בתדירות גבוהה יותר מהמגבלה שנקבעה בפרמטר זה, המערכת תוציא אזהרה או אזעקה.</value>
+  </data>
+  <data name="P_SAMPLE_TIME" xml:space="preserve">
+    <value>הגדר ערך זה כדי לציין את מרווח הזמן שבו המערכת משתמשת כדי לנטר ולספור את האירועים המנוטרים.</value>
+  </data>
+  <data name="P_BACKUP_PUMP" xml:space="preserve">
+    <value>בחירת משאבה יכולה להתבצע רק כאשר המשאבה אינה פועלת. ודא שהשסתומים הידניים הקשורים למשאבה פתוחים לפני בחירה חדשה.</value>
+  </data>
+  <data name="EXTERNAL MIXING SILOS SYSTEM" xml:space="preserve">
+    <value>מערכת ממגורות ערבוב חיצונית</value>
+  </data>
+  <data name="DRY GRINDER" xml:space="preserve">
+    <value>מטחנה יבשה</value>
+  </data>
+  <data name="F-SORTER" xml:space="preserve">
+    <value>F-Sorter</value>
+  </data>
+  <data name="PRE-FILTRATION" xml:space="preserve">
+    <value>סינון מראש</value>
+  </data>
+  <data name="DETAIL WINDOW" xml:space="preserve">
+    <value>חלון פרטים</value>
+  </data>
+  <data name="EXTRACT CURRENT PAGE AS STANDALONE WINDOW" xml:space="preserve">
+    <value>חלץ דף נוכחי כחלון עצמאי</value>
+  </data>
+  <data name="OPEN CAMERAS" xml:space="preserve">
+    <value>פתח את מצלמות</value>
+  </data>
+  <data name="SOREMA LINE" xml:space="preserve">
+    <value>סורמה קו</value>
+  </data>
+  <data name="F-I/O MODULE ERROR (MODULE PASSIVATION)" xml:space="preserve">
+    <value>שגיאת מודול F-I/O (פסיבציה של מודול)</value>
+  </data>
+  <data name="PREFILTRATION" xml:space="preserve">
+    <value>סינון מקדים</value>
+  </data>
+  <data name="RE-GRINDER" xml:space="preserve">
+    <value>גריינדר מחדש</value>
+  </data>
+  <data name="CONSUMPTION" xml:space="preserve">
+    <value>צְרִיכָה</value>
+  </data>
+  <data name="DECANTER - SKIMMER" xml:space="preserve">
+    <value>דקנטר - רחפן</value>
+  </data>
+  <data name="WATER FLOW RATE FROM" xml:space="preserve">
+    <value>קצב זרימת מים מ</value>
+  </data>
+  <data name="FORCE SIGNAL" xml:space="preserve">
+    <value>אות כוח</value>
+  </data>
+  <data name="FORCING SINGAL TO FALSE" xml:space="preserve">
+    <value>מכריח את סינגאל לשווא</value>
+  </data>
+  <data name="FORCING SINGAL TO TRUE" xml:space="preserve">
+    <value>מכריח את סינגאל לאמת</value>
+  </data>
+  <data name="MATERIAL DIRECTED TO" xml:space="preserve">
+    <value>חומר מופנה אל</value>
+  </data>
+  <data name="SORTING UNIT CONTROL ALARM" xml:space="preserve">
+    <value>אזעקת בקרת יחידת מיון</value>
+  </data>
+  <data name="PLAYBACK" xml:space="preserve">
+    <value>השמעה</value>
+  </data>
+  <data name="GRINDER ELETRICAL CABINET" xml:space="preserve">
+    <value>ארון חשמלי מטחנה</value>
+  </data>
+  <data name="LOADING ELETRICAL CABINET" xml:space="preserve">
+    <value>טוען ארון חשמלי</value>
+  </data>
+  <data name="POWER METER SETUP" xml:space="preserve">
+    <value>הגדרת מד כוח</value>
+  </data>
+  <data name="MAXIMUM VOLTAGE FOR ALARM" xml:space="preserve">
+    <value>מתח מרבי לאזעקה</value>
+  </data>
+  <data name="MAXIMUM CURRENT FOR ALARM" xml:space="preserve">
+    <value>זרם מקסימלי עבור אזעקה</value>
+  </data>
+  <data name="NOMINAL LINE FREQUENCY" xml:space="preserve">
+    <value>תדר קו נומינלי</value>
+  </data>
+  <data name="PEAK OF MAXIMUM LINE VOLTAGE" xml:space="preserve">
+    <value>שיא מתח הקו המרבי</value>
+  </data>
+  <data name="PEAK OF MAXIMUM CURRENT" xml:space="preserve">
+    <value>שיא הזרם המרבי</value>
+  </data>
+  <data name="PEAK OF MAXIMUM POWER" xml:space="preserve">
+    <value>שיא הכוח המרבי</value>
+  </data>
+  <data name="RESET ALL PEAK RECORDERS" xml:space="preserve">
+    <value>אפס את כל מקליטי השיא</value>
+  </data>
+  <data name="FILTER ERRORS" xml:space="preserve">
+    <value>שגיאות סינון</value>
+  </data>
+  <data name="FILTER NEVER MODIFIED" xml:space="preserve">
+    <value>מסנן מעולם לא השתנה</value>
+  </data>
+  <data name="REDUCED_SPEED" xml:space="preserve">
+    <value>Reduced_Speed</value>
+  </data>
+  <data name="PERCENTAGE OF SPEED REDUCTION" xml:space="preserve">
+    <value>אחוז הפחתת מהירות</value>
+  </data>
+  <data name="RECOVERY_MODE" xml:space="preserve">
+    <value>Recovery_Mode</value>
+  </data>
+  <data name="DISABLE RECOVERY MODE" xml:space="preserve">
+    <value>השבת את מצב השחזור</value>
+  </data>
+  <data name="FILLING RESTART" xml:space="preserve">
+    <value>מילוי הפעל מחדש</value>
+  </data>
+  <data name="TIME BELOW HIGH LEVEL TO RESTART FILLING" xml:space="preserve">
+    <value>זמן מתחת לרמה גבוהה כדי להתחיל מחדש את המילוי</value>
+  </data>
+  <data name="LOADING CONVEYOR" xml:space="preserve">
+    <value>מסוע טעינה</value>
+  </data>
+  <data name="LOADING CONVEYOR - SAFETY KEY" xml:space="preserve">
+    <value>מסוע טעינה - מפתח בטיחות</value>
+  </data>
+  <data name="LOADING CONVEYOR - LEFT LUBRIF." xml:space="preserve">
+    <value>מסוע טעינה - לובריב שמאלה.</value>
+  </data>
+  <data name="LOADING CONVEYOR - RIGHT LUBRIF." xml:space="preserve">
+    <value>מסוע העמסה - לובריף ימני.</value>
+  </data>
+  <data name="LOADING CONVEYOR - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>מסוע טעינה - מחזור תחזוקה</value>
+  </data>
+  <data name="LOADING CONVEYOR - LUBRIFICATION" xml:space="preserve">
+    <value>מסוע העמסה - סיכה</value>
+  </data>
+  <data name="SHREDDER - MAIN PUMP" xml:space="preserve">
+    <value>מגרסה - משאבה ראשית</value>
+  </data>
+  <data name="OIL LOW LEVEL" xml:space="preserve">
+    <value>שמן ברמה נמוכה</value>
+  </data>
+  <data name="(1&gt;=LOW)" xml:space="preserve">
+    <value>(1&gt;=נמוך)</value>
+  </data>
+  <data name="OIL FILTER LINE" xml:space="preserve">
+    <value>קו מסנן שמן</value>
+  </data>
+  <data name="OIL FILTER NOT OK - LINE" xml:space="preserve">
+    <value>מסנן שמן לא בסדר - קו</value>
+  </data>
+  <data name="OIL CIRCUIT SHUTOFF VALVE NOT OPEN - LINE" xml:space="preserve">
+    <value>שסתום סגירת מעגל שמן לא פתוח - קו</value>
+  </data>
+  <data name="OIL MINIMUM PRESSURE NOT OK - LINE" xml:space="preserve">
+    <value>שמן מינימום לחץ לא בסדר - קו</value>
+  </data>
+  <data name="SHREDDER - SAFETY UNLOCK REELS" xml:space="preserve">
+    <value>Shredder - סלילים לפתיחת נעילה בטיחותית</value>
+  </data>
+  <data name="SHREDDER - COOLING FLUX PUMP" xml:space="preserve">
+    <value>מגרסה - משאבת שטף קירור</value>
+  </data>
+  <data name="OIL SHUTOFF VALVE" xml:space="preserve">
+    <value>שסתום סגירת שמן</value>
+  </data>
+  <data name="COOLING PUMP IS NOT ON (MAIN PUMP WILL BE STOPPED IN A SHORT TIME)" xml:space="preserve">
+    <value>משאבת הקירור לא פועלת (המשאבה הראשית תופסק תוך זמן קצר)</value>
+  </data>
+  <data name="COOLING PUMP IS NOT ON (MAIN PUMP STOP)" xml:space="preserve">
+    <value>משאבת הקירור לא פועלת (עצירת משאבה ראשית)</value>
+  </data>
+  <data name="SHUTOFF VALVE" xml:space="preserve">
+    <value>שסתום סגירה</value>
+  </data>
+  <data name="SHUTOFF VALVE NOT OK" xml:space="preserve">
+    <value>שסתום סגירה לא בסדר</value>
+  </data>
+  <data name="SHREDDER - THERMAL HEATER" xml:space="preserve">
+    <value>מגרסה - מחמם תרמי</value>
+  </data>
+  <data name="SHREDDER - HYDRAULIC SHAFT" xml:space="preserve">
+    <value>מגרסה - פיר הידראולי</value>
+  </data>
+  <data name="WAITING FOR MINIMUM TIME TO" xml:space="preserve">
+    <value>מחכה למינימום זמן כדי</value>
+  </data>
+  <data name="NO AUTO-UNLOCK" xml:space="preserve">
+    <value>אין פתיחה אוטומטית</value>
+  </data>
+  <data name="AUTO-UNLOCK HIGH SPEED IN PROGRESS" xml:space="preserve">
+    <value>פתיחה אוטומטית במהירות גבוהה בתהליך</value>
+  </data>
+  <data name="ROTATION SPEED IN PRODUCTION" xml:space="preserve">
+    <value>מהירות סיבוב בייצור</value>
+  </data>
+  <data name="ROTATION SPEED IN MAINTENANCE" xml:space="preserve">
+    <value>מהירות סיבוב בתחזוקה</value>
+  </data>
+  <data name="INSIDE" xml:space="preserve">
+    <value>בְּתוֹך</value>
+  </data>
+  <data name="OUTSIDE" xml:space="preserve">
+    <value>בָּחוּץ</value>
+  </data>
+  <data name="SHREDDER - HYDRAULIC ACCUMULATOR (BYPASS) SHAFT" xml:space="preserve">
+    <value>מגרסה - פיר מצבר הידראולי (עוקף).</value>
+  </data>
+  <data name="SHREDDER - OIL PRESSURE ROTAION SHAFT" xml:space="preserve">
+    <value>מגרסה - פיר Rotaion לחץ שמן</value>
+  </data>
+  <data name="PRESSURE PARAMETERS" xml:space="preserve">
+    <value>פרמטרי לחץ</value>
+  </data>
+  <data name="ROTOR CHANGE DIRECTION" xml:space="preserve">
+    <value>רוטור שינוי כיוון</value>
+  </data>
+  <data name="MINIMUM LOAD" xml:space="preserve">
+    <value>עומס מינימלי</value>
+  </data>
+  <data name="SHREDDER - OIL TEMPERATURE SHAFT" xml:space="preserve">
+    <value>מגרסה - פיר טמפרטורת שמן</value>
+  </data>
+  <data name="SHREDDER - COOLING VALVE" xml:space="preserve">
+    <value>מגרסה - שסתום קירור</value>
+  </data>
+  <data name="SHREDDER - OIL TEMPERATURE" xml:space="preserve">
+    <value>מגרסה - טמפרטורת שמן</value>
+  </data>
+  <data name="SHREDDER - WATER PRESENCE IN OIL" xml:space="preserve">
+    <value>מגרסה - נוכחות מים בשמן</value>
+  </data>
+  <data name="SHREDDER - MAINTENANCE PROCEDURE" xml:space="preserve">
+    <value>מגרסה - נוהל תחזוקה</value>
+  </data>
+  <data name="SHREDDER - HYDRAULICS" xml:space="preserve">
+    <value>מגרסה - הידראוליקה</value>
+  </data>
+  <data name="SHREDDER - MANAGER" xml:space="preserve">
+    <value>מגרסה - מנהלת</value>
+  </data>
+  <data name="MAXIMUM NUMBER OF ROTOR REVERSE ROTATION (SHREDDER OVERLOAD ?) - ROTOR" xml:space="preserve">
+    <value>מספר מירבי של סיבוב הפוך של הרוטור (עומס יתר של המגרסה?) - רוטור</value>
+  </data>
+  <data name="ROTOR 1 PRESSURE OK" xml:space="preserve">
+    <value>רוטור 1 לחץ בסדר</value>
+  </data>
+  <data name="STOP MATERIAL FOR PRESSURE NOT OK OF ROTOR" xml:space="preserve">
+    <value>עצור חומר ללחץ לא בסדר של הרוטור</value>
+  </data>
+  <data name="ROTOR 2 PRESSURE OK" xml:space="preserve">
+    <value>רוטור 2 לחץ בסדר</value>
+  </data>
+  <data name="ROTATION MODE" xml:space="preserve">
+    <value>מצב סיבוב</value>
+  </data>
+  <data name="ROTATIONS UNLIKE SELECTED MODE" xml:space="preserve">
+    <value>סיבובים בניגוד למצב נבחר</value>
+  </data>
+  <data name="ROTORS" xml:space="preserve">
+    <value>רוטורים</value>
+  </data>
+  <data name="DIRECTION CHANGE INTERVAL (0=NO CHANGE BY TIME)" xml:space="preserve">
+    <value>מרווח שינוי כיוון (0=ללא שינוי לפי זמן)</value>
+  </data>
+  <data name="DIRECTION CHANGE FOR HIGH LOAD OF ROTOR" xml:space="preserve">
+    <value>שינוי כיוון עבור עומס גבוה של הרוטור</value>
+  </data>
+  <data name="DIRECTION CHANGE FOR TIME EXPIRED OF ROTOR" xml:space="preserve">
+    <value>שינוי כיוון עבור הזמן שפג תוקף הרוטור</value>
+  </data>
+  <data name="DIRECTION CHANGE FOR FLOATING MATERIAL OF ROTOR" xml:space="preserve">
+    <value>שינוי כיוון עבור חומר צף של הרוטור</value>
+  </data>
+  <data name="DIRECTION CHANGE FOR ROTATION MODE REFRESH" xml:space="preserve">
+    <value>שינוי כיוון עבור מצב סיבוב רענון</value>
+  </data>
+  <data name="DIRECTION CHANGE FOR OPERATOR REQUEST" xml:space="preserve">
+    <value>שינוי כיוון לבקשת מפעיל</value>
+  </data>
+  <data name="RESTORE ROTATION MODE REQUESTED" xml:space="preserve">
+    <value>שחזור מצב סיבוב מתבקש</value>
+  </data>
+  <data name="SHREDDING IN PROGRESS" xml:space="preserve">
+    <value>גריסה בעיצומה</value>
+  </data>
+  <data name="BUFFER BELT" xml:space="preserve">
+    <value>חגורת חוצץ</value>
+  </data>
+  <data name="BUFFER BELT - SAFETY KEY" xml:space="preserve">
+    <value>חגורת חוצץ - מפתח בטיחות</value>
+  </data>
+  <data name="BUFFER BELT - LEFT LUBRIF." xml:space="preserve">
+    <value>חגורת חוצץ - Lubrif שמאלית.</value>
+  </data>
+  <data name="BUFFER BELT - RIGHT LUBRIF." xml:space="preserve">
+    <value>חגורת חוצץ - לוברף ימין.</value>
+  </data>
+  <data name="BUFFER BELT - LEVEL" xml:space="preserve">
+    <value>חגורת חוצץ - רמה</value>
+  </data>
+  <data name="BUFFER BELT - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>חגורת חוצץ - מחזור תחזוקה</value>
+  </data>
+  <data name="BUFFER BELT - LUBRIFICATION" xml:space="preserve">
+    <value>חגורת חוצץ - סיכה</value>
+  </data>
+  <data name="DRY TROMMEL - MAIN MOTOR" xml:space="preserve">
+    <value>טרומל יבש - מנוע ראשי</value>
+  </data>
+  <data name="FOOTBOARD UP POSITION" xml:space="preserve">
+    <value>מיקום לוח רגל למעלה</value>
+  </data>
+  <data name="FOOTBOARD POSITION INCONGRUENCY" xml:space="preserve">
+    <value>אי התאמה של מיקום לוח הרגל</value>
+  </data>
+  <data name="FOOTBOARD NOT IN UPPER POSITION" xml:space="preserve">
+    <value>לוח הרגל לא במצב עליון</value>
+  </data>
+  <data name="FOOTBOARD UP" xml:space="preserve">
+    <value>קרש רגל למעלה</value>
+  </data>
+  <data name="FOOTBOARD NOT UP" xml:space="preserve">
+    <value>לוח הרגל לא למעלה</value>
+  </data>
+  <data name="DRY TROMMEL - SAFETY UNLOCK DOORS" xml:space="preserve">
+    <value>Dry Trommel - דלתות לפתיחת נעילה בטיחותית</value>
+  </data>
+  <data name="DRY TROMMEL - MAINTENANCE PROCEDURE" xml:space="preserve">
+    <value>טרומל יבש - נוהל תחזוקה</value>
+  </data>
+  <data name="DISCHARGE FROM PUMP" xml:space="preserve">
+    <value>פריקה ממשאבה</value>
+  </data>
+  <data name="DISCHARGE TO" xml:space="preserve">
+    <value>פריקה אל</value>
+  </data>
+  <data name="BYPASS VALVE" xml:space="preserve">
+    <value>שסתום עוקף</value>
+  </data>
+  <data name="WATER FLOWRATE TO" xml:space="preserve">
+    <value>זרימת מים ל</value>
+  </data>
+  <data name="SOREMA DISCHARGE TO" xml:space="preserve">
+    <value>סורמה פריקה ל</value>
+  </data>
+  <data name="NO ALARM OF WATER TREATMENT (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>אין אזעקה לטיפול במים (אות חיצוני)</value>
+  </data>
+  <data name="WATER TREATMENT OK TO RECEIVE (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>טיפול במים בסדר לקבל (אות חיצוני)</value>
+  </data>
+  <data name="VAR MIN LEVEL (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Var Min Level (אות חיצוני)</value>
+  </data>
+  <data name="COLLECTING TANK NO MAXIMUM LEVEL" xml:space="preserve">
+    <value>מיכל איסוף ללא רמה מקסימלית</value>
+  </data>
+  <data name="SOREMA IS DISCHARGING" xml:space="preserve">
+    <value>סורמה משתחררת</value>
+  </data>
+  <data name="GENERAL ALARM OF WATER TREATMENT" xml:space="preserve">
+    <value>אזעקה כללית של טיפול במים</value>
+  </data>
+  <data name="VRM MINIMUM LEVEL" xml:space="preserve">
+    <value>רמת Vrm מינימום</value>
+  </data>
+  <data name="WATER TREATMENT SELECTION" xml:space="preserve">
+    <value>בחירת טיפול במים</value>
+  </data>
+  <data name="NO DIR" xml:space="preserve">
+    <value>אין דיר</value>
+  </data>
+  <data name="SELECTED" xml:space="preserve">
+    <value>נִבחָר</value>
+  </data>
+  <data name="LOADING DIRECTION" xml:space="preserve">
+    <value>כיוון הטעינה</value>
+  </data>
+  <data name="HIGH FREQUENCY OF STOP FOR HIGH CURRENT" xml:space="preserve">
+    <value>תדר גבוה של עצירה עבור זרם גבוה</value>
+  </data>
+  <data name="PIT - MAIN PUMP" xml:space="preserve">
+    <value>בור - משאבה ראשית</value>
+  </data>
+  <data name="PIT - AGITATOR" xml:space="preserve">
+    <value>בור - עורר</value>
+  </data>
+  <data name="PIT - WATER LEVEL" xml:space="preserve">
+    <value>בור - מפלס מים</value>
+  </data>
+  <data name="START PUMP" xml:space="preserve">
+    <value>התחל משאבה</value>
+  </data>
+  <data name="STOP PUMP" xml:space="preserve">
+    <value>עצור משאבה</value>
+  </data>
+  <data name="PREWASH WCE - TOP CLEANING PUMP" xml:space="preserve">
+    <value>Prewash Wce - Top Cleaning Pump</value>
+  </data>
+  <data name="DECANTER - DISCHARGE PUMP TO PREFILTRATION" xml:space="preserve">
+    <value>Decanter - משאבת פריקה לסינון מראש</value>
+  </data>
+  <data name="NOT IN PAUSE PHASE FRESH WATER" xml:space="preserve">
+    <value>לא בשלב הפסקה מים מתוקים</value>
+  </data>
+  <data name="IN PAUSE TIME PHASE - TREATMENT NOT IN USE" xml:space="preserve">
+    <value>שלב זמן הפסקה - טיפול לא בשימוש</value>
+  </data>
+  <data name="SETUP WITH WATER TREATMENT" xml:space="preserve">
+    <value>התקנה עם טיפול במים</value>
+  </data>
+  <data name="DISABLED SPEED MODULATION (CONSTANT SPEED ON)" xml:space="preserve">
+    <value>אפנון מהירות מושבת (מהירות קבועה פועל)</value>
+  </data>
+  <data name="SETUP WITH FRESH WATER" xml:space="preserve">
+    <value>התקנה עם מים מתוקים</value>
+  </data>
+  <data name="PREWASH WCE - BOTTOM CLEANING PUMP" xml:space="preserve">
+    <value>Prewash Wce - משאבת ניקוי תחתית</value>
+  </data>
+  <data name="COMMAND UP" xml:space="preserve">
+    <value>Command Up</value>
+  </data>
+  <data name="COMMAND DOWN" xml:space="preserve">
+    <value>הפקודה למטה</value>
+  </data>
+  <data name="TOMRA - BOTTLE SORTER" xml:space="preserve">
+    <value>תומרה - סדרן בקבוקים</value>
+  </data>
+  <data name="MANUAL SORTING - CONVEYOR BELT" xml:space="preserve">
+    <value>מיון ידני - מסוע</value>
+  </data>
+  <data name="MANUAL SORTING - METAL DETECTOR" xml:space="preserve">
+    <value>מיון ידני - גלאי מתכות</value>
+  </data>
+  <data name="MANUAL SORTING - DIVERTER" xml:space="preserve">
+    <value>מיון ידני - מפנה</value>
+  </data>
+  <data name="CONVEYOR BELT - METAL DETECTOR" xml:space="preserve">
+    <value>מסוע - גלאי מתכות</value>
+  </data>
+  <data name="CONVEYOR BELT - DIVERTER" xml:space="preserve">
+    <value>מסוע - מפנה</value>
+  </data>
+  <data name="INITIAL PHASING (SELF-CENTERING)" xml:space="preserve">
+    <value>שלב ראשוני (מרכז עצמי)</value>
+  </data>
+  <data name="STANDBY" xml:space="preserve">
+    <value>המתנה</value>
+  </data>
+  <data name="HIGH FREQUENCY OF STOP FOR HIGH CURRENT (BLADES TO BE CHANGED?)" xml:space="preserve">
+    <value>תדירות עצירה גבוהה עבור זרם גבוה (להבים להחלפה?)</value>
+  </data>
+  <data name="AIR LOCK - CLEANING VALVE" xml:space="preserve">
+    <value>מנעול אוויר - שסתום ניקוי</value>
+  </data>
+  <data name="AIR COMPRESSOR - MAIN MOTOR" xml:space="preserve">
+    <value>מדחס אוויר - מנוע ראשי</value>
+  </data>
+  <data name="CABINET COOLING NOT OK (MOTOR WILL BE STOPPED)" xml:space="preserve">
+    <value>קירור הארון לא בסדר (המנוע יופסק)</value>
+  </data>
+  <data name="AIR FILTER NOT OK" xml:space="preserve">
+    <value>מסנן אוויר לא בסדר</value>
+  </data>
+  <data name="CABINET COOLING NOT OK (MOTOR STOP)" xml:space="preserve">
+    <value>קירור הארון לא בסדר (עצירת מנוע)</value>
+  </data>
+  <data name="AIR PRESSURE NOT OK (MOTOR STOP)" xml:space="preserve">
+    <value>לחץ אוויר לא בסדר (עצירת מנוע)</value>
+  </data>
+  <data name="CABINET COOLING" xml:space="preserve">
+    <value>קירור ארון</value>
+  </data>
+  <data name="FILTER" xml:space="preserve">
+    <value>לְסַנֵן</value>
+  </data>
+  <data name="AIR FILTER SIGNAL NOT OK" xml:space="preserve">
+    <value>אות מסנן אוויר לא בסדר</value>
+  </data>
+  <data name="AIR PRESSURE" xml:space="preserve">
+    <value>לחץ אוויר</value>
+  </data>
+  <data name="AIR PRESSURE NOT IN RANGE" xml:space="preserve">
+    <value>לחץ אוויר לא בטווח</value>
+  </data>
+  <data name="AIR COMPRESSOR - COOLING" xml:space="preserve">
+    <value>מדחס אוויר - קירור</value>
+  </data>
+  <data name="AIR COMPRESSOR - AIR PRESSURE" xml:space="preserve">
+    <value>מדחס אוויר - לחץ אוויר</value>
+  </data>
+  <data name="AIR COMPRESSOR - MAX LEVEL" xml:space="preserve">
+    <value>מדחס אוויר - רמה מקסימלית</value>
+  </data>
+  <data name="MICROFILTER" xml:space="preserve">
+    <value>מיקרופילטר</value>
+  </data>
+  <data name="DECANTER - TREATED WATER FROM" xml:space="preserve">
+    <value>דקנטר - מים מטופלים מ</value>
+  </data>
+  <data name="SOREMA REQUEST WATER FROM" xml:space="preserve">
+    <value>סורמה בקשת מים מ</value>
+  </data>
+  <data name="DECANTER - WATER PUMP TO GRINDERS" xml:space="preserve">
+    <value>Decanter - משאבת מים למטחנות</value>
+  </data>
+  <data name="DECANTER - WATER PUMP TO WCES" xml:space="preserve">
+    <value>Decanter - משאבת מים ל-Wces</value>
+  </data>
+  <data name="DECANTER - DISCHARGE PUMP TO PREWASH" xml:space="preserve">
+    <value>Decanter - משאבת פריקה לשטיפה מוקדמת</value>
+  </data>
+  <data name="DIVERTER ENABLED" xml:space="preserve">
+    <value>מפנה מופעל</value>
+  </data>
+  <data name="ALL MIXERS FILLING SUSPENDED BY OPERATOR" xml:space="preserve">
+    <value>כל מילוי המיקסרים הושעה על ידי המפעיל</value>
+  </data>
+  <data name="ALL MIXERS FILLING SUSPENDED FOR WATER TREATMENT NOT OK" xml:space="preserve">
+    <value>כל מילוי המיקסרים מושעה לטיפול במים לא בסדר</value>
+  </data>
+  <data name="HOT WASH - ANTIFOAM PUMP" xml:space="preserve">
+    <value>כביסה חמה - משאבת נגד קצף</value>
+  </data>
+  <data name="ACTUAL CONDUCTIVITY" xml:space="preserve">
+    <value>מוליכות בפועל</value>
+  </data>
+  <data name="VALVE TO DISCHARGE TO PREFILTRATION" xml:space="preserve">
+    <value>שסתום לפריקה לסינון מראש</value>
+  </data>
+  <data name="CENTRIFUGE LOCAL DISCONNECT OPEN" xml:space="preserve">
+    <value>צנטריפוגה מקומי ניתוק פתוח</value>
+  </data>
+  <data name="CENTRIFUGE DISCONNECTOR NOT OPEN" xml:space="preserve">
+    <value>מנתק צנטריפוגה לא פתוח</value>
+  </data>
+  <data name="WRONG CALIBRATION PROCEDURE" xml:space="preserve">
+    <value>הליך כיול שגוי</value>
+  </data>
+  <data name="CURRENT CALIBRATION NOT COMPLETE" xml:space="preserve">
+    <value>הכיול הנוכחי לא הושלם</value>
+  </data>
+  <data name="AMP CALIBRATION DONE" xml:space="preserve">
+    <value>כיול מגבר נעשה</value>
+  </data>
+  <data name="MOTOR CURRENT CALIBRATION INCOMPLETE" xml:space="preserve">
+    <value>כיול זרם המנוע לא הושלם</value>
+  </data>
+  <data name="AMP CALIBRATION OFF" xml:space="preserve">
+    <value>כיול מגבר כבוי</value>
+  </data>
+  <data name="CURRENT CALIBRATION IN PROGRESS. KEEP MOTOR ON" xml:space="preserve">
+    <value>כיול נוכחי מתבצע. השאר את המנוע דולק</value>
+  </data>
+  <data name="SELF PURGE ENABLED" xml:space="preserve">
+    <value>טיהור עצמי מופעל</value>
+  </data>
+  <data name="PUMP STOP TIME FOR PURGE IS SET TO ZERO" xml:space="preserve">
+    <value>זמן עצירת משאבה לטיהור מוגדר לאפס</value>
+  </data>
+  <data name="RECORDED PROCESS CURRENT" xml:space="preserve">
+    <value>נוכחי תהליך מוקלט</value>
+  </data>
+  <data name="WATER TANK - STEAM HEATING" xml:space="preserve">
+    <value>מיכל מים - חימום בקיטור</value>
+  </data>
+  <data name="MIX SILOS AREA READY" xml:space="preserve">
+    <value>מיקס סילוס אזור מוכן</value>
+  </data>
+  <data name="SOREMA READY TO RECEIVE" xml:space="preserve">
+    <value>סורמה מוכנה לקבלה</value>
+  </data>
+  <data name="BAG STATION READY" xml:space="preserve">
+    <value>Bag Station מוכן</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER - GENERAL START" xml:space="preserve">
+    <value>סדרן פתיתים בוהלר - התחלה כללית</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER - RECOVERY STREAM START" xml:space="preserve">
+    <value>סדרן פתיתים Buhler - התחלת זרם התאוששות</value>
+  </data>
+  <data name="DOWNSTREAM TRANSPORT READY" xml:space="preserve">
+    <value>מוכן לתחבורה במורד הזרם</value>
+  </data>
+  <data name="CONTROL ELETRICAL CABINET" xml:space="preserve">
+    <value>ארון חשמל בקרה</value>
+  </data>
+  <data name="SYS - 24V UNDER ESTOP FOR HYDRAULIC VALVES (IF ANY)" xml:space="preserve">
+    <value>Sys - 24V Under Estop עבור שסתומים הידראוליים (אם יש)</value>
+  </data>
+  <data name="MAIN 24V POWER SUPPLY" xml:space="preserve">
+    <value>ספק כוח ראשי 24V</value>
+  </data>
+  <data name="SYS - MAIN 24V POWER SUPPLY (F-INPUT)" xml:space="preserve">
+    <value>Sys - ספק כוח ראשי 24V (כניסת F)</value>
+  </data>
+  <data name="24V POWER SUPPLY OF HYDR. VALVES" xml:space="preserve">
+    <value>ספק כוח 24V של Hydr. שסתומים</value>
+  </data>
+  <data name="SYS - 24V POWER SUPPLY OF HYDR. VALVES (IF ANY)" xml:space="preserve">
+    <value>Sys - ספק כוח 24V של Hydr. שסתומים (אם יש)</value>
+  </data>
+  <data name="SYS - E-STOP - CONTACTOR FEEDBACK CH" xml:space="preserve">
+    <value>Sys - E-Stop - משוב מגע Ch</value>
+  </data>
+  <data name="ESTOP PUSH-BUTTON - HARDWARE FAULT (INPUT PASSIVATION)" xml:space="preserve">
+    <value>כפתור Estop Push-Button - תקלת חומרה (פסיביית קלט)</value>
+  </data>
+  <data name="24V POWER SUPPLY NOT OK" xml:space="preserve">
+    <value>ספק כוח 24V לא בסדר</value>
+  </data>
+  <data name="SELECTION ELETRICAL CABINET" xml:space="preserve">
+    <value>מבחר ארון חשמל</value>
+  </data>
+  <data name="FILTRATION ELETRICAL CABINET" xml:space="preserve">
+    <value>ארון חשמל סינון</value>
+  </data>
+  <data name="PREFILTRATION ELETRICAL CABINET" xml:space="preserve">
+    <value>ארון חשמל טרום סינון</value>
+  </data>
+  <data name="WASHING ELETRICAL CABINET" xml:space="preserve">
+    <value>ארון כביסה חשמלי</value>
+  </data>
+  <data name="SEPARATION ELETRICAL CABINET" xml:space="preserve">
+    <value>ארון חשמל הפרדה</value>
+  </data>
+  <data name="DRYING ELETRICAL CABINET" xml:space="preserve">
+    <value>ארון חשמלי ייבוש</value>
+  </data>
+  <data name="RE-GRINDER ELETRICAL CABINET" xml:space="preserve">
+    <value>ארון חשמלי Re-Grinder</value>
+  </data>
+  <data name="SORTING ELETRICAL CABINET" xml:space="preserve">
+    <value>מיון ארון חשמל</value>
+  </data>
+  <data name="DRY GRINDING" xml:space="preserve">
+    <value>טחינה יבשה</value>
   </data>
 </root>
