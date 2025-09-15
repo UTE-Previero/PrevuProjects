@@ -1,0 +1,94 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+             xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             xmlns:lex="http://wpflocalizeextension.codeplex.com"
+             xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings"
+             x:Class="Prevu.Synoptics.PlantView"
+             lex:ResxLocalizationProvider.DefaultAssembly="Prevu.Localization"
+             lex:ResxLocalizationProvider.DefaultDictionary="Resources"             
+             mc:Ignorable="d" 
+             d:Background="{DynamicResource MaterialDesignPaper}" >
+    <Canvas Height="1303" Width="1787" >
+        <Machines:QX_HMI Height="66" Width="56" Canvas.Left="133" Canvas.Top="822" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:QX_LongElectricalCabinet Width="188" Height="74" Canvas.Left="340" Canvas.Top="95" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:QX_ShortElectricalCabinet Width="54" Height="64" Canvas.Left="134" Canvas.Top="426" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:QX_HMI Height="66" Width="56" Canvas.Left="133" Canvas.Top="692" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:QX_HMI Height="66" Width="56" Canvas.Left="133" Canvas.Top="559" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:GroupLabel GroupName="020" Canvas.Left="358" Canvas.Top="416" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="100" Canvas.Left="446" Canvas.Top="416" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="ESTOP-AREA-01" Canvas.Left="116" Canvas.Top="277" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="Q21" Canvas.Left="333" Canvas.Top="37" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="HMI-02" Canvas.Left="116" Canvas.Top="644" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="Q01" Canvas.Left="116" Canvas.Top="362" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="HMI-01" Canvas.Left="116" Canvas.Top="511" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="S210" Canvas.Left="389" Canvas.Top="352" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q21-POWER" Canvas.Left="445" Canvas.Top="37" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="HMI-03" Canvas.Left="116" Canvas.Top="774" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="OEE-WATER" Canvas.Left="116" Canvas.Top="916" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="OEE-POWER" Canvas.Left="116" Canvas.Top="990" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:ElectricalCabinetBox Canvas.Left="357" Canvas.Top="244" Height="77" Width="42" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q211" Canvas.Left="333" Canvas.Top="187" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Machines:ElectricalCabinetBox Canvas.Left="470" Canvas.Top="244" Height="77" Width="42" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q212" Canvas.Left="446" Canvas.Top="187" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Machines:QX_LongElectricalCabinet Width="188" Height="74" Canvas.Left="720" Canvas.Top="95" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="140" Canvas.Left="708" Canvas.Top="416" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="180" Canvas.Left="858" Canvas.Top="416" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q31" Canvas.Left="713" Canvas.Top="37" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="S310" Canvas.Left="769" Canvas.Top="352" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q31-POWER" Canvas.Left="825" Canvas.Top="37" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:ElectricalCabinetBox Canvas.Left="794" Canvas.Top="244" Height="77" Width="42" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q311" Canvas.Left="770" Canvas.Top="187" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="170" Canvas.Left="782" Canvas.Top="416" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:QX_LongElectricalCabinet Width="188" Height="74" Canvas.Left="1095" Canvas.Top="95" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="288" Canvas.Left="1045" Canvas.Top="486" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:GroupLabel GroupName="268" Canvas.Left="1156" Canvas.Top="416" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="Q40" Canvas.Left="1088" Canvas.Top="37" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="S401" Canvas.Left="1145" Canvas.Top="352" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q40-POWER" Canvas.Left="1200" Canvas.Top="37" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:ElectricalCabinetBox Canvas.Left="1168" Canvas.Top="244" Height="77" Width="42" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q401" Canvas.Left="1144" Canvas.Top="187" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="S400" Canvas.Left="1032" Canvas.Top="352" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="S402" Canvas.Left="1258" Canvas.Top="352" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="229" Canvas.Left="1045" Canvas.Top="416" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:QX_LongElectricalCabinet Width="188" Height="74" Canvas.Left="1471" Canvas.Top="95" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q41" Canvas.Left="1464" Canvas.Top="37" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="S410" Canvas.Left="1520" Canvas.Top="187" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q41-POWER" Canvas.Left="1576" Canvas.Top="37" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="230" Canvas.Left="1532" Canvas.Top="255" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:QX_LongElectricalCabinet Width="188" Height="74" Canvas.Left="510" Canvas.Top="673" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="Q42" Canvas.Left="503" Canvas.Top="616" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="S420" Canvas.Left="559" Canvas.Top="765" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="Q42-POWER" Canvas.Left="615" Canvas.Top="616" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:GroupLabel GroupName="240" Canvas.Left="572" Canvas.Top="833" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:QX_LongElectricalCabinet Width="188" Height="74" Canvas.Left="901" Canvas.Top="673" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="330" Canvas.Left="962" Canvas.Top="994" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q51" Canvas.Left="893" Canvas.Top="615" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="S510" Canvas.Left="950" Canvas.Top="930" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q51-POWER" Canvas.Left="1005" Canvas.Top="615" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:ElectricalCabinetBox Canvas.Left="974" Canvas.Top="822" Height="77" Width="42" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q511" Canvas.Left="950" Canvas.Top="765" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="350" Canvas.Left="962" Canvas.Top="1059" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Machines:QX_LongElectricalCabinet Width="188" Height="74" Canvas.Left="1306" Canvas.Top="673" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="430" Canvas.Left="1313" Canvas.Top="994" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="530" Canvas.Left="1313" Canvas.Top="1059" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q61" Canvas.Left="1298" Canvas.Top="615" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="S610" Canvas.Left="1300" Canvas.Top="930" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q61-POWER" Canvas.Left="1410" Canvas.Top="615" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="083" Canvas.Left="1273" Canvas.Top="416" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:ElectricalCabinetBox Canvas.Left="1266" Canvas.Top="822" Height="77" Width="42" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q611" Canvas.Left="1242" Canvas.Top="765" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:ElectricalCabinetBox Canvas.Left="1380" Canvas.Top="822" Height="77" Width="42" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q612" Canvas.Left="1356" Canvas.Top="765" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:ElectricalCabinetBox Canvas.Left="1492" Canvas.Top="822" Height="77" Width="42" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q613" Canvas.Left="1468" Canvas.Top="765" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="S611" Canvas.Left="1414" Canvas.Top="930" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="557" Canvas.Left="1313" Canvas.Top="1124" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="810" Canvas.Left="1426" Canvas.Top="994" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="970" Canvas.Left="1313" Canvas.Top="1189" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Canvas>
+</UserControl>
