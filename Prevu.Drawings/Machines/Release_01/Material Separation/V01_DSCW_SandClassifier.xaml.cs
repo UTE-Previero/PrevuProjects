@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -11,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Synoptics
+namespace Prevu.Drawings.Machines
 {
     /// <summary>
-    /// Interaction logic for WH1.xaml
+    /// Logica di interazione per V01_DSCW_SandClassifier.xaml
     /// </summary>
-    public partial class P100 : UserControl
+    public partial class V01_DSCW_SandClassifier : UserControl
     {
-        public P100()
+        public V01_DSCW_SandClassifier()
         {
             InitializeComponent();
         }
-
     }
 }

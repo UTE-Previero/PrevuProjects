@@ -13,18 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Synoptics
+namespace Prevu.Drawings.Machines;
+/// <summary>
+/// Interaction logic for V01_VSP_SepTank_wInletOutletScrews_Agitator.xaml
+/// </summary>
+public partial class V01_VSP_SepTank_wInletOutletScrews_Agitator : UserControl
 {
-  /// <summary>
-  /// Interaction logic for D810.xaml
-  /// </summary>
-  public partial class D430 : UserControl
+    public V01_VSP_SepTank_wInletOutletScrews_Agitator()
     {
-        public D430()
-        {
-            InitializeComponent();
-        }
-
-    
+        InitializeComponent();
     }
 }

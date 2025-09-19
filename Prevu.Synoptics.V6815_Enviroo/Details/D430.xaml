@@ -8,13 +8,32 @@
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}"
-             x:Class="Prevu.Synoptics.D430">
-    <Canvas Height="186"  Width="600">
-        <Machines:V01_VSP_DETAIL_SepTank_w5Paddles Canvas.Left="10" Canvas.Top="15" Height="140" Width="580" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="430-02-MA1" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="36" Canvas.Top="108"/>
-        <Labels:DeviceLabel ComponentName="430-02-MA2" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="138" Canvas.Top="108"/>
-        <Labels:DeviceLabel ComponentName="430-02-MA3" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="241" Canvas.Top="108"/>
-        <Labels:DeviceLabel ComponentName="430-02-MA4" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="344" Canvas.Top="108"/>
-        <Labels:DeviceLabel ComponentName="430-02-MA5" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="446" Canvas.Top="108"/>
+             x:Class="Prevu.Synoptics.D430" >
+    <Canvas Height="468"  Width="940">
+        <Labels:Pipe Width="60" Color="Water" StatusComponent="430-32-CV1" Canvas.Left="665" Canvas.Top="286" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Machines:V01_VSP_SepTank_wInletOutletScrews_Agitator Canvas.Left="9" Height="466" Width="926" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="1" d:IsLocked="True"/>
+        <Machines:CV_Valve_001 Height="50" Width="50" Color="Water" RenderTransformOrigin="0.5,0.5" Canvas.Left="670" Canvas.Top="306" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Machines:CV_Valve_001.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Machines:CV_Valve_001.RenderTransform>
+        </Machines:CV_Valve_001>
+        <Labels:DeviceLabel ComponentName="430-02-MA1" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="112" Canvas.Top="105"/>
+        <Labels:DeviceLabel ComponentName="430-02-MA2" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="233" Canvas.Top="105"/>
+        <Labels:DeviceLabel ComponentName="430-02-MA3" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="333" Canvas.Top="105"/>
+        <Labels:DeviceLabel ComponentName="430-02-MA4" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="434" Canvas.Top="105"/>
+        <Labels:DeviceLabel ComponentName="430-02-MA5" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="534" Canvas.Top="105"/>
+        <Labels:DeviceLabel ComponentName="430-03-MA1" Canvas.Left="173" Canvas.Top="306" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="430-04-MA1" Canvas.Top="394" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="9"/>
+        <Labels:DeviceLabel ComponentName="430-01-MA1" Canvas.Left="9" Canvas.Top="90" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="430-32-CV1" Canvas.Left="582" Canvas.Top="306" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="430-41-LS1" Canvas.Left="332" Canvas.Top="306" HorizontalAlignment="Center" VerticalAlignment="Top" />
     </Canvas>
 </UserControl>
