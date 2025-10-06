@@ -6,6 +6,7 @@
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings" 
+             xmlns:Custom="https://github.com/XAMLMarkupExtensions/WPFLocalizationExtension" 
              x:Class="Prevu.Synoptics.P087" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
@@ -184,5 +185,9 @@
         <Labels:DeviceLabel ComponentName="077-44-FT1" Canvas.Left="1226" Canvas.Top="666" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="078-01-MA1" Canvas.Left="851" Canvas.Top="573" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:JumpLabel JumpFromLabel="071-01-MA1" JumpToLabel="117-01-MA1" Canvas.Left="790" Canvas.Top="41" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock TextWrapping="Wrap" TextAlignment="Right" FontSize="20" d:Foreground="White" Text="{Custom:Loc Washing}" Canvas.Left="603" Canvas.Top="557" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock TextWrapping="Wrap" TextAlignment="Right" FontSize="20" d:Foreground="White" Text="{Custom:Loc Grinding}" Canvas.Left="280" Canvas.Top="557" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock TextWrapping="Wrap" TextAlignment="Right" FontSize="20" d:Foreground="White" Text="{Custom:Loc Prewashing}" Canvas.Left="424" Canvas.Top="182" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock TextWrapping="Wrap" TextAlignment="Right" FontSize="20" d:Foreground="White" Text="{Custom:Loc Filtration}" Canvas.Left="772" Canvas.Top="185" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>
