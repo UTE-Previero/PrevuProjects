@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Prevu.Synoptics.L2_D810"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             mc:Ignorable="d" 
+             d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Height="467" Width="353">
+        <Machines:V01_SLX_MixingSiloScrew Height="442" Width="323" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="14" Canvas.Top="27" Color="DryMaterial" ComponentName="810-46-WT1" TrendName="WEIGHT"/>
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="L2+810-46-WT1" SignalName="LSHA" Canvas.Left="43" Canvas.Top="81"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="L2+810-01-MA1" Canvas.Left="126" Canvas.Top="11"/>
+        <Labels:DeviceLabel ComponentName="L2+810-41-LEV" Canvas.Left="222" Canvas.Top="124" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:SignalLabel ComponentName="L2+810-41-LEV" SignalName="LSH" Canvas.Left="43" Canvas.Top="133" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:SignalLabel ComponentName="L2+810-41-LEV" SignalName="LSL" Canvas.Left="43" Canvas.Top="224" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:SignalLabel ComponentName="L2+810-41-LEV" SignalName="LSLA" Canvas.Left="113" Canvas.Top="331" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="L2+810-46-WT1" Canvas.Left="222" Canvas.Top="190"/>
+    </Canvas>
+</UserControl>
