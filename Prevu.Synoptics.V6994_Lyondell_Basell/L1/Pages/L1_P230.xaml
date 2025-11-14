@@ -11,21 +11,21 @@
              x:Class="Prevu.Synoptics.L1_P230" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
-        <Labels:Pipe Width="84" RenderTransformOrigin="0.5,0.5" StatusComponent="L1+170-01-MA1" PipeHeight="Medium" Canvas.Left="317" Canvas.Top="304" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Labels:Pipe Width="56" RenderTransformOrigin="0.5,0.5" StatusComponent="L1+160-71-ES1" PipeHeight="Medium" Canvas.Left="120" Canvas.Top="143" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="56" RenderTransformOrigin="0.5,0.5" StatusComponent="L1+160-71-ES1" PipeHeight="Medium" Canvas.Left="120" Canvas.Top="101" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Labels:Pipe Width="82" RenderTransformOrigin="0.5,0.5" StatusComponent="L1+160-71-ES1" PipeHeight="Medium" Canvas.Left="71" Canvas.Top="120" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:Pipe Width="84" RenderTransformOrigin="0.5,0.5" StatusComponent="L1+165-01-MA1" PipeHeight="Medium" Canvas.Left="317" Canvas.Top="304" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="82" RenderTransformOrigin="0.5,0.5" StatusComponent="L1+160-71-ES1" PipeHeight="Medium" Canvas.Left="71" Canvas.Top="78" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Labels:Pipe Width="36" RenderTransformOrigin="0.5,0.5" StatusComponent="L1+180-01-MA1" PipeHeight="Medium" Canvas.Left="659" Canvas.Top="362" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -126,9 +126,6 @@
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
         <Machines:V01_MU_Grinder Canvas.Left="1085" Canvas.Top="298" Height="162" Width="203" HorizontalAlignment="Center" VerticalAlignment="Top" TrendName="CURRENT.AMP_INTEGRATION" Color="WetMaterial" ComponentName="L1+230-01-MA1"/>
-        <Machines:V01_SCW_ScrewFlat_wHopper Canvas.Left="111" Canvas.Top="113" Height="175" Width="262" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Machines:V01_Material_Inlet_Outlet Canvas.Left="38" Canvas.Top="53" Height="60" Width="52" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Rectangle Height="2" Stroke="Black" Width="42" RenderTransformOrigin="0.5,0.5" Canvas.Left="286" Canvas.Top="192" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Machines:NT_ConveyorBelt Height="19" Width="180" Canvas.Left="346" Canvas.Top="344" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Machines:V01_SEP_Lindner_PrewashSepTank Canvas.Left="656" Canvas.Top="345" Height="229" Width="238"/>
         <Machines:SCW_ScrewConveyor_straight RenderTransformOrigin="0.5,0.5" Width="174" Height="18" Canvas.Left="532" Canvas.Top="562" HorizontalAlignment="Left" VerticalAlignment="Top" />
@@ -153,6 +150,8 @@
         <Rectangle Height="2" Stroke="Black" Width="28" Canvas.Left="695" Canvas.Top="269" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Ellipse Height="16" Stroke="#FFBDBDBD" Width="16" OpacityMask="#FFBDBDBD" Fill="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" Canvas.Left="682" Canvas.Top="262" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Machines:V01_SCW_Screw_wHopper Canvas.Left="1134" Canvas.Top="535" Height="187" Width="209" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_NT_BunkerBelt_wDrum Canvas.Left="94" Canvas.Top="168" Height="118" Width="288" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Machines:V01_Material_Inlet_Outlet Canvas.Left="38" Canvas.Top="95" Height="60" Width="52" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Machines:V01_CV_Valve Canvas.Left="1217" Canvas.Top="154" Height="24" Width="46" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Machines:V01_CV_Valve.RenderTransform>
                 <TransformGroup>
@@ -185,7 +184,6 @@
         <TextBlock Width="94" Canvas.Top="634" TextWrapping="Wrap" TextAlignment="Center" Canvas.Left="64" Height="50" FontSize="36" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="S"/><Run Language="it-it" Text="411"/></TextBlock>
         <TextBlock Width="94" Canvas.Top="565" TextWrapping="Wrap" TextAlignment="Center" Canvas.Left="64" Height="50" FontSize="36" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center"><Run Text="S"/><Run Language="it-it" Text="410"/></TextBlock>
         <Machines:V01_Radar Canvas.Left="661" Canvas.Top="316" Height="42" Width="24" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Machines:SeparationPaddle Canvas.Left="259" Canvas.Top="172" Height="42" Width="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Misc:DashedLine RenderTransformOrigin="0.5,0.5" Height="4" Width="204" Canvas.Left="288" Canvas.Top="724" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Misc:DashedLine.RenderTransform>
                 <TransformGroup>
@@ -196,15 +194,11 @@
         <Misc:DashedLine RenderTransformOrigin="0.5,0.5" Height="4" Width="347" Canvas.Left="44" Canvas.Top="623" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:JumpLabel JumpFromLabel="L1+232-01-MA1" JumpToLabel="L1+305-01-MA1" Canvas.Left="1348" Canvas.Top="672" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Labels:JumpLabel JumpFromLabel="L1+290-01-MA1" JumpToLabel="L2+265-01-MA1" Canvas.Left="168" Canvas.Top="496" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="L1+160-71-ES1" Canvas.Left="168" Canvas.Top="38" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Labels:DeviceLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="L1+230-01-MA1" Canvas.Left="1143" Canvas.Top="308"/>
         <Labels:DeviceLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="L1+230-01-YA1" Canvas.Left="1265" Canvas.Top="346"/>
         <Labels:DeviceLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="L1+232-01-MA1" Canvas.Left="1348" Canvas.Top="546"/>
-        <Labels:DeviceLabel ComponentName="L1+170-01-MA1" Canvas.Left="378" Canvas.Top="232" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="L1+165-01-MA1" Canvas.Left="321" Canvas.Top="168" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="L1+180-01-MA1" Canvas.Left="436" Canvas.Top="372" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="L1+265-01-MA1" Canvas.Left="505" Canvas.Top="505" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Labels:DetailsLabel ComponentName="L1+160-LEVEL" DetailsPageName="L1_D160" Canvas.Left="171" Canvas.Top="134" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DetailsLabel ComponentName="L1+255-VIEW" DetailsPageName="L1_D255" HideComponentName="True" Canvas.Left="811" Canvas.Top="314" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="L1+250-41-LT1" Canvas.Left="664" Canvas.Top="410" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="L1+290-01-MA1" Canvas.Left="168" Canvas.Top="665" HorizontalAlignment="Center" VerticalAlignment="Top"/>
@@ -221,5 +215,9 @@
         <Labels:DeviceLabel ComponentName="L1+260-01-MA1" Canvas.Left="899" Canvas.Top="314" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="L1+255-PADDLES" Canvas.Left="709" Canvas.Top="314" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="L1+250-41-LT2" Canvas.Left="571" Canvas.Top="284" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="L1+160-71-ES1" Canvas.Left="71" Canvas.Top="45" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="L1+170-01-MA1" Canvas.Left="238" Canvas.Top="291" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="L1+165-01-MA1" Canvas.Left="273" Canvas.Top="112" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:DetailsLabel ComponentName="L1+160-LEVEL" DetailsPageName="L1_D160" Canvas.Left="159" Canvas.Top="173" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Canvas>
 </UserControl>
