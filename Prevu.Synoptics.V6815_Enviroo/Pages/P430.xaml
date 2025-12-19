@@ -66,14 +66,14 @@
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
         <Labels:Pipe Width="81" StatusComponent="455-01-MA1" PipeHeight="Medium" Canvas.Left="1352" Canvas.Top="140" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:Pipe Width="52" RenderTransformOrigin="0.5,0.5" StatusComponent="432-01-MA1" Canvas.Left="1288" Canvas.Top="628" Color="ByProduct" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Labels:Pipe Width="52" RenderTransformOrigin="0.5,0.5" StatusComponent="432-01-MA1" Canvas.Left="1284" Canvas.Top="628" Color="ByProduct" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="106" RenderTransformOrigin="0.5,0.5" StatusComponent="432-01-MA1" Canvas.Left="1115" Canvas.Top="443" Color="Chemicals" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:Pipe Width="102" RenderTransformOrigin="0.5,0.5" StatusComponent="432-01-MA1" Canvas.Left="1115" Canvas.Top="443" Color="Chemicals" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:Pipe Width="258" Color="Water" StatusComponent="433-01-MA1" Canvas.Left="580" Canvas.Top="423" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:Pipe Color="Water" Width="74" RenderTransformOrigin="0.5,0.5" StatusComponent="433-01-MA1" VisibilityComponent="433-31-CV1" Canvas.Left="594" Canvas.Top="544" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Labels:Pipe.RenderTransform>
@@ -132,8 +132,8 @@
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
         <Labels:Pipe 
-            StatusComponent="432-01-MA1" RenderTransformOrigin="0.55,0.5" Width="157" Color="Air" Canvas.Left="1159" Canvas.Top="603" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:Pipe Width="76" RenderTransformOrigin="0.5,0.5" StatusComponent="432-01-MA1" Canvas.Left="1181" Canvas.Top="479" Color="ByProduct" HorizontalAlignment="Center" VerticalAlignment="Top">
+            StatusComponent="432-01-MA1" RenderTransformOrigin="0.55,0.5" Width="153" Color="Air" Canvas.Left="1159" Canvas.Top="603" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:Pipe Width="76" RenderTransformOrigin="0.5,0.5" StatusComponent="432-01-MA1" Canvas.Left="1177" Canvas.Top="479" Color="ByProduct" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
@@ -154,6 +154,15 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
+        <Labels:Pipe Width="54" StatusComponent="970-01-MA1" RenderTransformOrigin="0.5,0.5" Canvas.Left="1292" Canvas.Top="609" Color="Air" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Width="147" StatusComponent="970-01-MA1" RenderTransformOrigin="0.5,0.5" Color="ByProduct" Canvas.Left="1317" Canvas.Top="584" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:VRC_WaterCollectingTank Canvas.Left="1299" Canvas.Top="636" Width="30" Height="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Rectangle Height="37" Canvas.Left="1001" Canvas.Top="436" Width="46" Fill="#FF8A8A8A" RadiusX="10" RadiusY="10" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Machines:WaterPump Height="44" Width="46" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="216" Canvas.Top="753" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Machines:WaterPump.RenderTransform>
@@ -198,33 +207,11 @@
         </Machines:CV_Valve>
         <Machines:CV_Valve Height="50" Width="50" RenderTransformOrigin="0.5,0.5" Canvas.Left="536" Canvas.Top="400" HorizontalAlignment="Left" VerticalAlignment="Top" />
         <Machines:CV_Valve_001 Height="50" Width="50" Color="Water" RenderTransformOrigin="0.5,0.5" Canvas.Left="1364" Canvas.Top="241" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Machines:DRY_HeatingBattery Height="50" Width="52" Canvas.Left="1135" Canvas.Top="581" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_VS_Airlock Canvas.Left="1196" Canvas.Top="503" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50"/>
+        <Machines:V01_VS_Airlock Canvas.Left="1291" Canvas.Top="645" Height="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Rectangle Height="32" Stroke="Black" Width="2" Canvas.Left="129" Canvas.Top="741" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Ellipse Height="16" Stroke="#FFBDBDBD" Width="16" OpacityMask="#FFBDBDBD" Fill="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" Canvas.Left="122" Canvas.Top="767" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="433-31-CV1" Canvas.Left="657" Canvas.Top="472" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:JumpLabel JumpFromLabel="455-DCE" JumpToLabel="460-01-MA1" Canvas.Left="1419" Canvas.Top="111" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:JumpLabel JumpFromLabel="430-01-MA1" JumpToLabel="380-DCE" Canvas.Left="17" Canvas.Top="93" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="430-41-LT1" Canvas.Left="335" Canvas.Top="188" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Labels:DetailsLabel ComponentName="430-SEP" DetailsPageName="D430" Canvas.Left="437" Canvas.Top="65" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="430-PADDLES" Canvas.Left="335" Canvas.Top="65" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="453-01-MA1" Canvas.Left="194" Canvas.Top="695" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="440-01-MA1" Canvas.Left="588" Canvas.Top="641" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel ComponentName="453-44-FT1" Canvas.Left="85" Canvas.Top="695" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="432-01-MA1" Canvas.Left="662" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="28"/>
-        <Labels:DeviceLabel ComponentName="431-01-MA1" Canvas.Left="657" Canvas.Top="213" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:JumpLabel JumpFromLabel="440-01-MA1" JumpToLabel="467-01-MA1" Canvas.Left="758" Canvas.Top="666" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="433-01-MA1" Canvas.Left="805" Canvas.Top="460" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel ComponentName="433-32-CV1" Canvas.Left="516" Canvas.Top="350" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:JumpLabel JumpFromLabel="433-32-CV1" JumpToLabel="477-01-MA1" Canvas.Left="405" Canvas.Top="390" HorizontalAlignment="Left" VerticalAlignment="Top" Direction="Left"/>
-        <Labels:DetailsLabel ComponentName="450-TANK" DetailsPageName="D450" Canvas.Left="404" Canvas.Top="740" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DetailsLabel ComponentName="443-DCE" DetailsPageName="D443" Canvas.Left="1047" Canvas.Top="378" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DetailsLabel ComponentName="455-DCE" DetailsPageName="D455" Canvas.Left="1265" Canvas.Top="75" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Machines:DRY_HeatingBattery Height="50" Width="52" Canvas.Left="1135" Canvas.Top="581" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DetailsLabel ComponentName="445-DRY" DetailsPageName="D445" Canvas.Left="1165" Canvas.Top="636" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Machines:V01_VS_Airlock Canvas.Left="1196" Canvas.Top="503" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50"/>
-        <Labels:DeviceLabel ComponentName="444-01-MA1" Canvas.Left="1248" Canvas.Top="503" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Machines:V01_VS_Airlock Canvas.Left="1291" Canvas.Top="645" Height="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="448-01-MA1" Canvas.Left="1343" Canvas.Top="645" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="448-71-ES1" Canvas.Left="1269" Canvas.Top="745" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Rectangle Height="2" Stroke="Black" Width="44" RenderTransformOrigin="0.5,0.5" Canvas.Left="1298" Canvas.Top="728" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Machines:External Height="50" Width="50" RenderTransformOrigin="0.5,0.5" Canvas.Left="1338" Canvas.Top="704" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Machines:External.RenderTransform>
@@ -233,6 +220,29 @@
                 </TransformGroup>
             </Machines:External.RenderTransform>
         </Machines:External>
+        <Labels:JumpLabel JumpFromLabel="455-DCE" JumpToLabel="460-01-MA1" Canvas.Left="1419" Canvas.Top="111" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:JumpLabel JumpFromLabel="430-01-MA1" JumpToLabel="380-DCE" Canvas.Left="17" Canvas.Top="93" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:JumpLabel JumpFromLabel="444-01-MA1" JumpToLabel="970-FILTER" Canvas.Left="1419" Canvas.Top="552" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:JumpLabel JumpFromLabel="433-32-CV1" JumpToLabel="477-01-MA1" Canvas.Left="405" Canvas.Top="390" HorizontalAlignment="Left" VerticalAlignment="Top" Direction="Left"/>
+        <Labels:JumpLabel JumpFromLabel="440-01-MA1" JumpToLabel="467-01-MA1" Canvas.Left="758" Canvas.Top="666" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DetailsLabel ComponentName="430-SEP" DetailsPageName="D430" Canvas.Left="437" Canvas.Top="65" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DetailsLabel ComponentName="450-TANK" DetailsPageName="D450" Canvas.Left="404" Canvas.Top="740" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DetailsLabel ComponentName="443-DCE" DetailsPageName="D443" Canvas.Left="1047" Canvas.Top="378" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DetailsLabel ComponentName="455-DCE" DetailsPageName="D455" Canvas.Left="1265" Canvas.Top="75" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DetailsLabel ComponentName="445-DRY" DetailsPageName="D445" Canvas.Left="1165" Canvas.Top="636" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="433-31-CV1" Canvas.Left="657" Canvas.Top="472" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="430-41-LT1" Canvas.Left="335" Canvas.Top="188" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="430-PADDLES" Canvas.Left="335" Canvas.Top="65" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="453-01-MA1" Canvas.Left="194" Canvas.Top="695" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="440-01-MA1" Canvas.Left="588" Canvas.Top="641" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="453-44-FT1" Canvas.Left="85" Canvas.Top="695" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="432-01-MA1" Canvas.Left="662" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="28"/>
+        <Labels:DeviceLabel ComponentName="431-01-MA1" Canvas.Left="657" Canvas.Top="213" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="433-01-MA1" Canvas.Left="805" Canvas.Top="460" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="433-32-CV1" Canvas.Left="516" Canvas.Top="350" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="444-01-MA1" Canvas.Left="1248" Canvas.Top="503" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="448-01-MA1" Canvas.Left="1343" Canvas.Top="645" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="448-71-ES1" Canvas.Left="1269" Canvas.Top="745" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
     </Canvas>
 </UserControl>
