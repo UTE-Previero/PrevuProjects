@@ -8,8 +8,9 @@
              xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings" 
              xmlns:lex="http://wpflocalizeextension.codeplex.com" 
              x:Class="Prevu.Synoptics.P288" mc:Ignorable="d"
-             Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
-    <Canvas Margin="0,-5,0,5" >
+             Height="847" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas>
+        <Machines:V01_PSP_Pit_wAgitator Canvas.Left="919" Canvas.Top="86" Height="70" Width="144" HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="081-41-LT1"/>
         <Labels:Pipe Color="Water" Width="114" RenderTransformOrigin="0.5,0.5" StatusComponent="085-01-MA1" Canvas.Left="778" Canvas.Top="92" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -17,7 +18,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Color="Water" Width="20" StatusComponent="297-01-MA1" Canvas.Left="718" Canvas.Top="642" VisibilitySignal="297-34-ZS1" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Labels:Pipe Color="Water" Width="20" StatusComponent="297-01-MA1" Canvas.Left="718" Canvas.Top="642" VisibilitySignal="LS-OPEN" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" VisibilityComponent="297-34-CV1">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -27,7 +28,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Color="Water" Width="18" StatusComponent="297-01-MA1" Canvas.Left="719" Canvas.Top="601" VisibilitySignal="297-34-ZS1" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+        <Labels:Pipe Color="Water" Width="18" StatusComponent="297-01-MA1" Canvas.Left="719" Canvas.Top="601" VisibilitySignal="LS-OPEN" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" VisibilityComponent="297-34-CV1">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -37,10 +38,10 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Color="Water" Width="128" StatusComponent="297-01-MA1" Canvas.Left="726" Canvas.Top="724" VisibilitySignal="297-34-ZS1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:Pipe Color="Water" Width="51" StatusComponent="297-01-MA1" Canvas.Left="679" Canvas.Top="594" VisibilitySignal="297-34-ZS1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:Pipe Color="Water" Width="147" StatusComponent="297-01-MA1" Canvas.Left="628" Canvas.Top="751" VisibilitySignal="297-33-ZS1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:Pipe Color="Water" Width="53" StatusComponent="297-01-MA1" Canvas.Left="801" Canvas.Top="751" VisibilitySignal="297-33-ZS1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:Pipe Color="Water" Width="128" StatusComponent="297-01-MA1" Canvas.Left="726" Canvas.Top="724" VisibilitySignal="LS-OPEN" HorizontalAlignment="Center" VerticalAlignment="Top" VisibilityComponent="297-34-CV1"/>
+        <Labels:Pipe Color="Water" Width="51" StatusComponent="297-01-MA1" Canvas.Left="679" Canvas.Top="594" VisibilitySignal="LS-OPEN" HorizontalAlignment="Left" VerticalAlignment="Center" VisibilityComponent="297-34-CV1"/>
+        <Labels:Pipe Color="Water" Width="147" StatusComponent="297-01-MA1" Canvas.Left="628" Canvas.Top="751" VisibilitySignal="LS-OPEN" HorizontalAlignment="Center" VerticalAlignment="Top" VisibilityComponent="297-33-CV1"/>
+        <Labels:Pipe Color="Water" Width="53" StatusComponent="297-01-MA1" Canvas.Left="801" Canvas.Top="751" VisibilitySignal="LS-OPEN" HorizontalAlignment="Center" VerticalAlignment="Top" VisibilityComponent="297-33-CV1"/>
         <Labels:Pipe Color="Water" Width="50" StatusComponent="297-01-MA1" Canvas.Left="885" Canvas.Top="272" VisibilitySignal="297-31-ZS1" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
@@ -51,7 +52,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Color="Water" Width="66" StatusComponent="297-01-MA1" Canvas.Left="1034" Canvas.Top="751" HorizontalAlignment="Center" VerticalAlignment="Top" VisibilitySignal="297-32-ZS1"/>
+        <Labels:Pipe Color="Water" Width="66" StatusComponent="297-01-MA1" Canvas.Left="1034" Canvas.Top="751" HorizontalAlignment="Center" VerticalAlignment="Top" VisibilitySignal="297-32-ZS1" VisibilityComponent="297-32-CV1"/>
         <Labels:Pipe Color="Water" Width="49" StatusComponent="297-01-MA1" Canvas.Left="1129" Canvas.Top="778" HorizontalAlignment="Center" VerticalAlignment="Top" VisibilitySignal="297-31-ZS1"/>
         <Labels:Pipe Color="Water" Width="63" StatusComponent="297-01-MA1" Canvas.Left="1034" Canvas.Top="778" HorizontalAlignment="Center" VerticalAlignment="Top" VisibilitySignal="297-31-ZS1"/>
         <Labels:Pipe Color="Water" Width="179" StatusComponent="297-01-MA1" Canvas.Left="1129" Canvas.Top="751" HorizontalAlignment="Center" VerticalAlignment="Top" VisibilitySignal="297-32-ZS1"/>
@@ -422,68 +423,6 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Canvas x:Name="svg36" Width="76" Height="48" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="1411" Canvas.Top="255">
-            <Canvas.Resources>
-                <RectangleGeometry  x:Key="clip0_1207_137" Rect="0, 0, 195, 148"/>
-            </Canvas.Resources>
-            <Canvas.RenderTransform>
-                <TranslateTransform X="0" Y="0"/>
-            </Canvas.RenderTransform>
-            <!--Unknown tag: sodipodi:namedview-->
-            <Canvas x:Name="g12" Clip="{StaticResource clip0_1207_137}">
-                <Path x:Name="path4" Fill="#FF808080" HorizontalAlignment="Left" Canvas.Left="41.5" Stretch="Fill" VerticalAlignment="Top" Width="31" Height="19">
-                    <Path.Data>
-                        <PathGeometry Figures="M125 15C125 13.8954 125.895 13 127 13H193C194.105 13 195 13.8954 195 15V22.7096C195 23.5372 194.49 24.2793 193.718 24.5764L127.718 49.9549C126.408 50.4587 125 49.4917 125 48.0882V15Z" FillRule="NonZero"/>
-                    </Path.Data>
-                </Path>
-                <Path x:Name="path2" Fill="#FF808080" Effect="{StaticResource MaterialDesignElevationShadow1}" Height="57" Stretch="Fill" Width="77" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="8">
-                    <Path.Data>
-                        <PathGeometry Figures="M0 18.4091C0 15.4217 2.42173 13 5.40909 13H126.591C129.578 13 132 15.4217 132 18.4091V117.318V142.591C132 145.578 129.578 148 126.591 148H28.4131C26.6498 148 24.9972 147.141 23.9847 145.697L0.980643 112.898C0.342408 111.988 0 110.904 0 109.792V18.4091Z" FillRule="NonZero"/>
-                    </Path.Data>
-                </Path>
-                <Canvas x:Name="g8" Effect="{StaticResource MaterialDesignElevationShadow1}">
-                    <Path x:Name="path6" Fill="#FF292929" HorizontalAlignment="Center" Height="19" Stretch="Fill" VerticalAlignment="Center" Canvas.Left="65.153" Canvas.Top="-0.502" Width="2">
-                        <Path.Data>
-                            <PathGeometry Figures="M23 1.5C23 0.671571 23.6716 0 24.5 0V0C25.3284 0 26 0.671573 26 1.5V90.2806C26 90.5748 25.9135 90.8626 25.7512 91.108V91.108C25.1581 92.0048 23.8419 92.0048 23.2488 91.108V91.108C23.0865 90.8626 23 90.5748 23 90.2806L23 1.5Z" FillRule="NonZero"/>
-                        </Path.Data>
-                    </Path>
-                    <Path x:Name="path6_Copy" Fill="#FF292929" Height="19" Stretch="Fill" Canvas.Left="-206.497" Canvas.Top="218.165" Width="2" HorizontalAlignment="Left" VerticalAlignment="Top">
-                        <Path.Data>
-                            <PathGeometry Figures="M23 1.5C23 0.671571 23.6716 0 24.5 0V0C25.3284 0 26 0.671573 26 1.5V90.2806C26 90.5748 25.9135 90.8626 25.7512 91.108V91.108C25.1581 92.0048 23.8419 92.0048 23.2488 91.108V91.108C23.0865 90.8626 23 90.5748 23 90.2806L23 1.5Z" FillRule="NonZero"/>
-                        </Path.Data>
-                    </Path>
-                    <Path x:Name="path6_Copy1" Fill="#FF292929" Height="19" Stretch="Fill" Canvas.Left="-196.997" Canvas.Top="218.165" Width="2" HorizontalAlignment="Left" VerticalAlignment="Top">
-                        <Path.Data>
-                            <PathGeometry Figures="M23 1.5C23 0.671571 23.6716 0 24.5 0V0C25.3284 0 26 0.671573 26 1.5V90.2806C26 90.5748 25.9135 90.8626 25.7512 91.108V91.108C25.1581 92.0048 23.8419 92.0048 23.2488 91.108V91.108C23.0865 90.8626 23 90.5748 23 90.2806L23 1.5Z" FillRule="NonZero"/>
-                        </Path.Data>
-                    </Path>
-                </Canvas>
-                <Path x:Name="path10" Fill="#FF292929" HorizontalAlignment="Center" Canvas.Left="54.82" Canvas.Top="15.167" Height="9" Stretch="Fill" VerticalAlignment="Center" Width="23">
-                    <Path.Data>
-                        <PathGeometry Figures="M14.8454 84.8036C12.5529 83.2832 9.46232 83.9052 7.93642 86.194V86.194C7.69043 86.563 7.49473 86.9632 7.3545 87.3839L6.99029 88.4765C6.34748 90.4049 6.34748 92.4898 6.99029 94.4182L7.35444 95.5107C7.49471 95.9315 7.69046 96.3317 7.93652 96.7008V96.7008C9.4625 98.9898 12.553 99.6122 14.8461 98.0925L19.5994 94.9422C22.7453 92.8572 26.8336 92.8572 29.9795 94.9422L34.7328 98.0925C37.0259 99.6122 40.1164 98.9898 41.6424 96.7008V96.7008C41.8885 96.3317 42.0842 95.9315 42.2245 95.5107L42.5887 94.4182C43.2315 92.4898 43.2315 90.4049 42.5887 88.4765L42.2244 87.3839C42.0842 86.9632 41.8885 86.563 41.6425 86.194V86.194C40.1166 83.9052 37.026 83.2832 34.7335 84.8036L29.9819 87.9548C26.8349 90.0419 22.7441 90.0419 19.597 87.9548L14.8454 84.8036Z" FillRule="NonZero"/>
-                    </Path.Data>
-                </Path>
-                <Rectangle Height="32" Stroke="Black" Width="2" Canvas.Left="367" Canvas.Top="708" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Rectangle.RenderTransform>
-                        <TransformGroup>
-                            <RotateTransform Angle="90"/>
-                        </TransformGroup>
-                    </Rectangle.RenderTransform>
-                </Rectangle>
-            </Canvas>
-        </Canvas>
-        <Machines:WaterPump Height="27" Width="31" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="1426" Canvas.Top="284" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Machines:WaterPump.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="270"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Machines:WaterPump.RenderTransform>
-        </Machines:WaterPump>
-        <Labels:DeviceLabel ComponentName="085-02-MA1" Canvas.Left="1430" Canvas.Top="315" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel ComponentName="085-41-LT1" RenderTransformOrigin="0.5,0.5" Canvas.Left="1325" Canvas.Top="255" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DeviceLabel ComponentName="277-02-MA1" Canvas.Left="674" Canvas.Top="285" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Path x:Name="path10_Copy" Fill="#FF292929" Canvas.Left="1000" Canvas.Top="311.25" Height="8" Stretch="Fill" Width="22" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Path.Data>
@@ -495,65 +434,14 @@
                 <PathGeometry Figures="M23 1.5C23 0.671571 23.6716 0 24.5 0V0C25.3284 0 26 0.671573 26 1.5V90.2806C26 90.5748 25.9135 90.8626 25.7512 91.108V91.108C25.1581 92.0048 23.8419 92.0048 23.2488 91.108V91.108C23.0865 90.8626 23 90.5748 23 90.2806L23 1.5Z" FillRule="NonZero"/>
             </Path.Data>
         </Path>
-        <Labels:DeviceLabel ComponentName="085-03-MA1" Canvas.Left="1450" Canvas.Top="202" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:Pipe Color="Water" Width="246" RenderTransformOrigin="0.5,0.5" StatusComponent="085-01-MA1" Canvas.Left="1319" Canvas.Top="159" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <Labels:Pipe Color="Water" Width="80" RenderTransformOrigin="0.5,0.5" StatusComponent="081-01-MA1" Canvas.Left="949" Canvas.Top="97" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Canvas x:Name="svg36_Copy" Width="76" Height="48" Canvas.Left="1202" Canvas.Top="168" HorizontalAlignment="Center" VerticalAlignment="Top">
-            <Canvas.Resources>
-                <RectangleGeometry  x:Key="clip0_1207_137" Rect="0, 0, 195, 148"/>
-            </Canvas.Resources>
-            <Canvas.RenderTransform>
-                <TranslateTransform X="0" Y="0"/>
-            </Canvas.RenderTransform>
-            <!--Unknown tag: sodipodi:namedview-->
-            <Canvas x:Name="g1" Clip="{StaticResource clip0_1207_137}">
-                <Path x:Name="path1" Fill="#FF808080" HorizontalAlignment="Center" Canvas.Left="41.5" Stretch="Fill" VerticalAlignment="Top" Width="31" Height="19" Canvas.Top="13">
-                    <Path.Data>
-                        <PathGeometry Figures="M125 15C125 13.8954 125.895 13 127 13H193C194.105 13 195 13.8954 195 15V22.7096C195 23.5372 194.49 24.2793 193.718 24.5764L127.718 49.9549C126.408 50.4587 125 49.4917 125 48.0882V15Z" FillRule="NonZero"/>
-                    </Path.Data>
-                </Path>
-                <Path x:Name="path3" Fill="#FF808080" Effect="{StaticResource MaterialDesignElevationShadow1}" Height="57" Stretch="Fill" Width="77" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="8" Canvas.Top="13">
-                    <Path.Data>
-                        <PathGeometry Figures="M0 18.4091C0 15.4217 2.42173 13 5.40909 13H126.591C129.578 13 132 15.4217 132 18.4091V117.318V142.591C132 145.578 129.578 148 126.591 148H28.4131C26.6498 148 24.9972 147.141 23.9847 145.697L0.980643 112.898C0.342408 111.988 0 110.904 0 109.792V18.4091Z" FillRule="NonZero"/>
-                    </Path.Data>
-                </Path>
-                <Canvas x:Name="g2" Effect="{StaticResource MaterialDesignElevationShadow1}">
-                    <Path x:Name="path5" Fill="#FF292929" HorizontalAlignment="Center" Height="19" Stretch="Fill" VerticalAlignment="Top" Canvas.Left="65.153" Canvas.Top="12.498" Width="2">
-                        <Path.Data>
-                            <PathGeometry Figures="M23 1.5C23 0.671571 23.6716 0 24.5 0V0C25.3284 0 26 0.671573 26 1.5V90.2806C26 90.5748 25.9135 90.8626 25.7512 91.108V91.108C25.1581 92.0048 23.8419 92.0048 23.2488 91.108V91.108C23.0865 90.8626 23 90.5748 23 90.2806L23 1.5Z" FillRule="NonZero"/>
-                        </Path.Data>
-                    </Path>
-                    <Path x:Name="path6_Copy3" Fill="#FF292929" Height="19" Stretch="Fill" Canvas.Left="-176.497" Canvas.Top="226.165" Width="2" HorizontalAlignment="Center" VerticalAlignment="Top">
-                        <Path.Data>
-                            <PathGeometry Figures="M23 1.5C23 0.671571 23.6716 0 24.5 0V0C25.3284 0 26 0.671573 26 1.5V90.2806C26 90.5748 25.9135 90.8626 25.7512 91.108V91.108C25.1581 92.0048 23.8419 92.0048 23.2488 91.108V91.108C23.0865 90.8626 23 90.5748 23 90.2806L23 1.5Z" FillRule="NonZero"/>
-                        </Path.Data>
-                    </Path>
-                    <Path x:Name="path6_Copy4" Fill="#FF292929" Height="19" Stretch="Fill" Canvas.Left="-166.997" Canvas.Top="226.165" Width="2" HorizontalAlignment="Center" VerticalAlignment="Top">
-                        <Path.Data>
-                            <PathGeometry Figures="M23 1.5C23 0.671571 23.6716 0 24.5 0V0C25.3284 0 26 0.671573 26 1.5V90.2806C26 90.5748 25.9135 90.8626 25.7512 91.108V91.108C25.1581 92.0048 23.8419 92.0048 23.2488 91.108V91.108C23.0865 90.8626 23 90.5748 23 90.2806L23 1.5Z" FillRule="NonZero"/>
-                        </Path.Data>
-                    </Path>
-                </Canvas>
-                <Path x:Name="path7" Fill="#FF292929" HorizontalAlignment="Center" Canvas.Left="54.82" Canvas.Top="28.167" Height="9" Stretch="Fill" VerticalAlignment="Top" Width="23">
-                    <Path.Data>
-                        <PathGeometry Figures="M14.8454 84.8036C12.5529 83.2832 9.46232 83.9052 7.93642 86.194V86.194C7.69043 86.563 7.49473 86.9632 7.3545 87.3839L6.99029 88.4765C6.34748 90.4049 6.34748 92.4898 6.99029 94.4182L7.35444 95.5107C7.49471 95.9315 7.69046 96.3317 7.93652 96.7008V96.7008C9.4625 98.9898 12.553 99.6122 14.8461 98.0925L19.5994 94.9422C22.7453 92.8572 26.8336 92.8572 29.9795 94.9422L34.7328 98.0925C37.0259 99.6122 40.1164 98.9898 41.6424 96.7008V96.7008C41.8885 96.3317 42.0842 95.9315 42.2245 95.5107L42.5887 94.4182C43.2315 92.4898 43.2315 90.4049 42.5887 88.4765L42.2244 87.3839C42.0842 86.9632 41.8885 86.563 41.6425 86.194V86.194C40.1166 83.9052 37.026 83.2832 34.7335 84.8036L29.9819 87.9548C26.8349 90.0419 22.7441 90.0419 19.597 87.9548L14.8454 84.8036Z" FillRule="NonZero"/>
-                    </Path.Data>
-                </Path>
-                <Rectangle Height="32" Stroke="Black" Width="2" Canvas.Left="367" Canvas.Top="708" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Rectangle.RenderTransform>
-                        <TransformGroup>
-                            <RotateTransform Angle="90"/>
-                        </TransformGroup>
-                    </Rectangle.RenderTransform>
-                </Rectangle>
-            </Canvas>
-        </Canvas>
-        <Machines:WaterPump Height="27" Width="31" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="1217" Canvas.Top="208" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Machines:WaterPump Height="27" Width="31" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="973" Canvas.Top="128" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Machines:WaterPump.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -563,92 +451,10 @@
                 </TransformGroup>
             </Machines:WaterPump.RenderTransform>
         </Machines:WaterPump>
-        <Labels:DeviceLabel ComponentName="083-02-MA1" Canvas.Left="1218" Canvas.Top="241" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel ComponentName="083-41-LT1" RenderTransformOrigin="0.5,0.5" Canvas.Left="1116" Canvas.Top="179" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="083-03-MA1" Canvas.Left="1291" Canvas.Top="180" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:Pipe Color="Water" Width="160" RenderTransformOrigin="0.5,0.5" StatusComponent="083-01-MA1" Canvas.Left="1153" Canvas.Top="126" HorizontalAlignment="Center" VerticalAlignment="Top">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <RotateTransform Angle="90"/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
-        <Canvas x:Name="svg36_Copy1" Width="76" Height="48" Canvas.Left="1011" Canvas.Top="95" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Canvas.Resources>
-                <RectangleGeometry  x:Key="clip0_1207_137" Rect="0, 0, 195, 148"/>
-            </Canvas.Resources>
-            <Canvas.RenderTransform>
-                <TranslateTransform X="0" Y="0"/>
-            </Canvas.RenderTransform>
-            <!--Unknown tag: sodipodi:namedview-->
-            <Canvas x:Name="g3" Clip="{StaticResource clip0_1207_137}">
-                <Path x:Name="path8" Fill="#FF808080" HorizontalAlignment="Left" Canvas.Left="29.5" Stretch="Fill" VerticalAlignment="Center" Width="31" Height="19">
-                    <Path.Data>
-                        <PathGeometry Figures="M125 15C125 13.8954 125.895 13 127 13H193C194.105 13 195 13.8954 195 15V22.7096C195 23.5372 194.49 24.2793 193.718 24.5764L127.718 49.9549C126.408 50.4587 125 49.4917 125 48.0882V15Z" FillRule="NonZero"/>
-                    </Path.Data>
-                </Path>
-                <Path x:Name="path9" Fill="#FF808080" Effect="{StaticResource MaterialDesignElevationShadow1}" Height="57" Stretch="Fill" Width="77" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="-4">
-                    <Path.Data>
-                        <PathGeometry Figures="M0 18.4091C0 15.4217 2.42173 13 5.40909 13H126.591C129.578 13 132 15.4217 132 18.4091V117.318V142.591C132 145.578 129.578 148 126.591 148H28.4131C26.6498 148 24.9972 147.141 23.9847 145.697L0.980643 112.898C0.342408 111.988 0 110.904 0 109.792V18.4091Z" FillRule="NonZero"/>
-                    </Path.Data>
-                </Path>
-                <Canvas x:Name="g4" Effect="{StaticResource MaterialDesignElevationShadow1}">
-                    <Path x:Name="path11" Fill="#FF292929" HorizontalAlignment="Left" Height="19" Stretch="Fill" VerticalAlignment="Center" Canvas.Left="53.153" Canvas.Top="-0.502" Width="2">
-                        <Path.Data>
-                            <PathGeometry Figures="M23 1.5C23 0.671571 23.6716 0 24.5 0V0C25.3284 0 26 0.671573 26 1.5V90.2806C26 90.5748 25.9135 90.8626 25.7512 91.108V91.108C25.1581 92.0048 23.8419 92.0048 23.2488 91.108V91.108C23.0865 90.8626 23 90.5748 23 90.2806L23 1.5Z" FillRule="NonZero"/>
-                        </Path.Data>
-                    </Path>
-                    <Path x:Name="path6_Copy5" Fill="#FF292929" Height="19" Stretch="Fill" Canvas.Left="-206.497" Canvas.Top="218.165" Width="2" HorizontalAlignment="Left" VerticalAlignment="Top">
-                        <Path.Data>
-                            <PathGeometry Figures="M23 1.5C23 0.671571 23.6716 0 24.5 0V0C25.3284 0 26 0.671573 26 1.5V90.2806C26 90.5748 25.9135 90.8626 25.7512 91.108V91.108C25.1581 92.0048 23.8419 92.0048 23.2488 91.108V91.108C23.0865 90.8626 23 90.5748 23 90.2806L23 1.5Z" FillRule="NonZero"/>
-                        </Path.Data>
-                    </Path>
-                    <Path x:Name="path6_Copy6" Fill="#FF292929" Height="19" Stretch="Fill" Canvas.Left="-196.997" Canvas.Top="218.165" Width="2" HorizontalAlignment="Left" VerticalAlignment="Top">
-                        <Path.Data>
-                            <PathGeometry Figures="M23 1.5C23 0.671571 23.6716 0 24.5 0V0C25.3284 0 26 0.671573 26 1.5V90.2806C26 90.5748 25.9135 90.8626 25.7512 91.108V91.108C25.1581 92.0048 23.8419 92.0048 23.2488 91.108V91.108C23.0865 90.8626 23 90.5748 23 90.2806L23 1.5Z" FillRule="NonZero"/>
-                        </Path.Data>
-                    </Path>
-                </Canvas>
-                <Path x:Name="path12" Fill="#FF292929" HorizontalAlignment="Left" Canvas.Left="42.82" Canvas.Top="15.167" Height="9" Stretch="Fill" VerticalAlignment="Center" Width="23">
-                    <Path.Data>
-                        <PathGeometry Figures="M14.8454 84.8036C12.5529 83.2832 9.46232 83.9052 7.93642 86.194V86.194C7.69043 86.563 7.49473 86.9632 7.3545 87.3839L6.99029 88.4765C6.34748 90.4049 6.34748 92.4898 6.99029 94.4182L7.35444 95.5107C7.49471 95.9315 7.69046 96.3317 7.93652 96.7008V96.7008C9.4625 98.9898 12.553 99.6122 14.8461 98.0925L19.5994 94.9422C22.7453 92.8572 26.8336 92.8572 29.9795 94.9422L34.7328 98.0925C37.0259 99.6122 40.1164 98.9898 41.6424 96.7008V96.7008C41.8885 96.3317 42.0842 95.9315 42.2245 95.5107L42.5887 94.4182C43.2315 92.4898 43.2315 90.4049 42.5887 88.4765L42.2244 87.3839C42.0842 86.9632 41.8885 86.563 41.6425 86.194V86.194C40.1166 83.9052 37.026 83.2832 34.7335 84.8036L29.9819 87.9548C26.8349 90.0419 22.7441 90.0419 19.597 87.9548L14.8454 84.8036Z" FillRule="NonZero"/>
-                    </Path.Data>
-                </Path>
-                <Rectangle Height="32" Stroke="Black" Width="2" Canvas.Left="367" Canvas.Top="708" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Rectangle.RenderTransform>
-                        <TransformGroup>
-                            <RotateTransform Angle="90"/>
-                        </TransformGroup>
-                    </Rectangle.RenderTransform>
-                </Rectangle>
-            </Canvas>
-        </Canvas>
-        <Machines:WaterPump Height="27" Width="31" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="1014" Canvas.Top="124" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Machines:WaterPump.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="270"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Machines:WaterPump.RenderTransform>
-        </Machines:WaterPump>
-        <Labels:DeviceLabel ComponentName="081-02-MA1" Canvas.Left="1017" Canvas.Top="155" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel ComponentName="081-41-LT1" RenderTransformOrigin="0.5,0.5" Canvas.Left="917" Canvas.Top="95" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel ComponentName="081-03-MA1" Canvas.Left="1088" Canvas.Top="95" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:Pipe Color="Water" Width="64" RenderTransformOrigin="0.5,0.5" StatusComponent="081-01-MA1" Canvas.Left="998" Canvas.Top="90" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Labels:Pipe.RenderTransform>
-                <TransformGroup>
-                    <RotateTransform Angle="90"/>
-                </TransformGroup>
-            </Labels:Pipe.RenderTransform>
-        </Labels:Pipe>
-        <Labels:Pipe Width="181" StatusComponent="081-01-MA1" Color="Water" Canvas.Left="851" Canvas.Top="59" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:Pipe Width="392" StatusComponent="083-01-MA1" Color="Water" Canvas.Left="842" Canvas.Top="48" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:Pipe Width="611" StatusComponent="085-01-MA1" Color="Water" Canvas.Left="833" Canvas.Top="37" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <TextBlock Canvas.Top="128" TextWrapping="Wrap" TextAlignment="Right" Canvas.Left="1048" FontSize="14" d:Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="9.053,3.055"><Run Text="PIT "/><Run Language="it-it" Text="1"/></TextBlock>
-        <TextBlock Canvas.Top="212" TextWrapping="Wrap" TextAlignment="Right" Canvas.Left="1252" FontSize="14" d:Foreground="White" RenderTransformOrigin="9.053,3.055" HorizontalAlignment="Center" VerticalAlignment="Top"><Run Text="PIT "/><Run Language="it-it" Text="2"/></TextBlock>
-        <TextBlock Canvas.Top="288" TextWrapping="Wrap" TextAlignment="Right" Canvas.Left="1461" FontSize="14" d:Foreground="White" RenderTransformOrigin="9.053,3.055" HorizontalAlignment="Left" VerticalAlignment="Center"><Run Text="PIT "/><Run Language="it-it" Text="3"/></TextBlock>
+        <Labels:Pipe Width="140" StatusComponent="081-01-MA1" Color="Water" Canvas.Left="851" Canvas.Top="59" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:Pipe Width="262" StatusComponent="083-01-MA1" Color="Water" Canvas.Left="842" Canvas.Top="48" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:Pipe Width="385" StatusComponent="085-01-MA1" Color="Water" Canvas.Left="833" Canvas.Top="37" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Canvas.Top="106" TextWrapping="Wrap" TextAlignment="Right" Canvas.Left="1010" d:Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="9.053,3.055"><Run Text="PIT "/><Run Language="it-it" Text="1"/></TextBlock>
         <Labels:DeviceLabel ComponentName="280-01-MA1" Canvas.Left="221" Canvas.Top="620" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Path x:Name="path10_Copy1" Fill="#FF292929" Canvas.Left="254.25" Canvas.Top="692" Height="8" Stretch="Fill" Width="22" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Path.Data>
@@ -709,7 +515,7 @@
             </Rectangle.RenderTransform>
         </Rectangle>
         <Labels:DeviceLabel ComponentName="297-33-CV1" Canvas.Left="744" Canvas.Top="767" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:Pipe Color="Water" Width="57" StatusComponent="297-01-MA1" Canvas.Left="700" Canvas.Top="698" VisibilitySignal="297-34-ZS1" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <Labels:Pipe Color="Water" Width="57" StatusComponent="297-01-MA1" Canvas.Left="700" Canvas.Top="698" VisibilitySignal="LS-OPEN" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center" VisibilityComponent="297-34-CV1">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -729,8 +535,46 @@
                 </TransformGroup>
             </Machines:External.RenderTransform>
         </Machines:External>
-        <Labels:DeviceLabel ComponentName="081-01-MA1" Canvas.Left="922" Canvas.Top="155" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel ComponentName="083-01-MA1" Canvas.Left="1123" Canvas.Top="241" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel ComponentName="085-01-MA1" Canvas.Left="1336" Canvas.Top="315" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DetailsLabel Canvas.Left="957" Canvas.Top="158" ComponentName="081-PIT" DetailsPageName="D081" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:V01_PSP_Pit_wAgitator Canvas.Left="1032" Canvas.Top="86" Height="70" Width="144" HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="083-41-LT1" TrendName="LEVEL"/>
+        <TextBlock Canvas.Top="106" TextWrapping="Wrap" TextAlignment="Right" Canvas.Left="1123" d:Foreground="White" RenderTransformOrigin="9.053,3.055" HorizontalAlignment="Left" VerticalAlignment="Center"><Run Text="PIT "/><Run Language="it-it" Text="2"/></TextBlock>
+        <Labels:DetailsLabel Canvas.Left="1070" Canvas.Top="158" ComponentName="083-PIT" DetailsPageName="D081" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:V01_PSP_Pit_wAgitator Canvas.Left="1146" Canvas.Top="86" Height="70" Width="144" HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="085-41-LT1" TrendName="LEVEL"/>
+        <TextBlock Canvas.Top="106" TextWrapping="Wrap" TextAlignment="Right" Canvas.Left="1237" d:Foreground="White" RenderTransformOrigin="9.053,3.055" HorizontalAlignment="Left" VerticalAlignment="Center"><Run Text="PIT "/><Run Language="it-it" Text="3"/></TextBlock>
+        <Labels:DetailsLabel Canvas.Left="1184" Canvas.Top="158" ComponentName="085-PIT" DetailsPageName="D081" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:Pipe Color="Water" Width="86" RenderTransformOrigin="0.5,0.5" StatusComponent="083-01-MA1" Canvas.Left="1059" Canvas.Top="89" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Machines:WaterPump Height="27" Width="31" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="1086" Canvas.Top="128" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Machines:WaterPump.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="270"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Machines:WaterPump.RenderTransform>
+        </Machines:WaterPump>
+        <Labels:Pipe Color="Water" Width="104" RenderTransformOrigin="0.5,0.5" StatusComponent="085-01-MA1" Canvas.Left="1164" Canvas.Top="88" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Machines:WaterPump Height="27" Width="31" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="1200" Canvas.Top="128" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Machines:WaterPump.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="270"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Machines:WaterPump.RenderTransform>
+        </Machines:WaterPump>
     </Canvas>
 </UserControl>
