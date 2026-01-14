@@ -18,9 +18,9 @@ namespace Prevu.Synoptics
   /// <summary>
   /// Interaction logic for D083xaml
   /// </summary>
-  public partial class D083 : UserControl
+  public partial class D085 : UserControl
     {
-        public D083()
+        public D085()
         {
             InitializeComponent();
         }
