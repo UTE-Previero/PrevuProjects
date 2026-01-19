@@ -1,0 +1,52 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+             xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             xmlns:lex="http://wpflocalizeextension.codeplex.com"
+             lex:ResxLocalizationProvider.DefaultAssembly="Prevu.Localization"
+                x:Class="Prevu.Synoptics.PlantView"
+             lex:ResxLocalizationProvider.DefaultDictionary="Resources"             
+             mc:Ignorable="d" d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Height="640" Width="1392">
+        <Machines:QX_LongElectricalCabinet Width="188" Height="74" Canvas.Left="405" Canvas.Top="134" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:QX_ShortElectricalCabinet Width="54" Height="64" Canvas.Top="277" RenderTransformOrigin="0.5,0.5" Canvas.Left="110" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:QX_LongElectricalCabinet Width="188" Height="76" Canvas.Left="639" Canvas.Top="133" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:QX_LongElectricalCabinet Width="188" Height="76" Canvas.Left="874" Canvas.Top="133" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:QX_LongElectricalCabinet Width="188" Height="76" Canvas.Left="1109" Canvas.Top="133" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:QX_HMI Height="66" Width="56" Canvas.Left="265" Canvas.Top="201" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:QX_HMI Height="66" Width="56" Canvas.Left="264" Canvas.Top="399" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="810" Canvas.Left="1171" Canvas.Top="291" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="880" Canvas.Left="1171" Canvas.Top="366" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="330" Canvas.Left="933" Canvas.Top="291" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="020" Canvas.Left="467" Canvas.Top="295" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="350" Canvas.Left="933" Canvas.Top="366" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="230" Canvas.Left="701" Canvas.Top="295" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="288" Canvas.Left="701" Canvas.Top="366" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="ESTOP-AREA-01" Canvas.Left="92" Canvas.Top="132" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q21" Canvas.Left="398" Canvas.Top="71" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q01" Canvas.Left="92" Canvas.Top="221" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="S210" Canvas.Left="454" Canvas.Top="220" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="S910" Canvas.Left="1158" Canvas.Top="220" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="S510" Canvas.Left="920" Canvas.Top="220" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="HMI-01" Canvas.Left="249" Canvas.Top="150" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="HMI-02" Canvas.Left="248" Canvas.Top="348" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="S410" Canvas.Left="688" Canvas.Top="220" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q41" Canvas.Left="632" Canvas.Top="71" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q51" Canvas.Left="867" Canvas.Top="71" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q91" Canvas.Left="1102" Canvas.Top="71" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="100" Canvas.Left="467" Canvas.Top="366" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="140" Canvas.Left="466" Canvas.Top="439" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="430" Canvas.Left="933" Canvas.Top="439" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:GroupLabel GroupName="530" Canvas.Left="933" Canvas.Top="512" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="OEE-WATER" Canvas.Left="92" Canvas.Top="400" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q21-POWER" Canvas.Left="510" Canvas.Top="71" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q41-POWER" Canvas.Left="744" Canvas.Top="71" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q51-POWER" Canvas.Left="979" Canvas.Top="71" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="Q91-POWER" Canvas.Left="1214" Canvas.Top="71" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="OEE-POWER" Canvas.Left="92" Canvas.Top="470" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    </Canvas>
+</UserControl>
