@@ -1,0 +1,18 @@
+﻿<UserControl 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             mc:Ignorable="d" 
+             d:Background="{DynamicResource MaterialDesignPaper}"
+             x:Class="Prevu.Synoptics.D588">
+    <Canvas Height="344" Width="368">
+        <Machines:V01_BBF_SingleBag Canvas.Left="10" Canvas.Top="10" Height="320" Width="343" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:SignalLabel ComponentName="588-BAG" SignalName="LSHA" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="146" Canvas.Top="72"/>
+        <Labels:SignalLabel ComponentName="588-BAG" SignalName="SEL" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="148" Canvas.Top="214"/>
+        <Labels:DeviceLabel ComponentName="588-BAG" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="136" Canvas.Top="154"/>
+    </Canvas>
+</UserControl>
