@@ -18,17 +18,17 @@ using System.Windows.Shapes;
 namespace Prevu.Drawings.Machines
 {
   /// <summary>
-  /// Logica di interazione per V01_NT_BufferBelt_wDrum.xaml
+  /// Logica di interazione per V01_NT_BufferBelt.xaml
   /// </summary>
-  public partial class V01_NT_BufferBelt_wDrum : UserControl
+  public partial class V01_NT_BufferBelt : UserControl
   {
 
-    public static readonly DependencyProperty ComponentNameProperty =
-      DependencyProperty.Register(nameof(ComponentName), typeof(string), typeof(V01_NT_BufferBelt_wDrum),
+    public static readonly DependencyProperty ComponentNameProperty = 
+      DependencyProperty.Register(nameof(ComponentName), typeof(string), typeof(V01_NT_BufferBelt),
       new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.AffectsRender, ComponentNameChangedCallback));
 
     private static void ComponentNameChangedCallback(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
-      => ((V01_NT_BufferBelt_wDrum)dependencyObject).Update();
+      => ((V01_NT_BufferBelt)dependencyObject).Update();
 
     [Description("Name of the water level component"), Category("_PV")]
     public string ComponentName
@@ -38,11 +38,11 @@ namespace Prevu.Drawings.Machines
     }
 
     public static readonly DependencyProperty TrendNameProperty =
-      DependencyProperty.Register(nameof(TrendName), typeof(string), typeof(V01_NT_BufferBelt_wDrum),
+      DependencyProperty.Register(nameof(TrendName), typeof(string), typeof(V01_NT_BufferBelt),
         new FrameworkPropertyMetadata(default(string), FrameworkPropertyMetadataOptions.AffectsRender, TrendNamePropertyChangedCallback));
 
     private static void TrendNamePropertyChangedCallback(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
-      => ((V01_NT_BufferBelt_wDrum)dependencyObject).Update();
+      => ((V01_NT_BufferBelt)dependencyObject).Update();
 
     [Description("Name of the level trend, percentage only"), Category("_PV")]
     public string TrendName
@@ -55,11 +55,11 @@ namespace Prevu.Drawings.Machines
     #region Color
 
     public static readonly DependencyProperty ColorProperty =
-    DependencyProperty.Register(nameof(Color), typeof(FillColor), typeof(V01_NT_BufferBelt_wDrum),
+    DependencyProperty.Register(nameof(Color), typeof(FillColor), typeof(V01_NT_BufferBelt),
       new FrameworkPropertyMetadata(FillColor.Water, FrameworkPropertyMetadataOptions.AffectsRender, LevelColorChanged));
 
     private static void LevelColorChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e)
-      => ((V01_NT_BufferBelt_wDrum)dependencyObject).Update();
+      => ((V01_NT_BufferBelt)dependencyObject).Update();
 
     [Description("Color of the level"), Category("_PV")]
     public FillColor Color
@@ -69,8 +69,7 @@ namespace Prevu.Drawings.Machines
     }
     #endregion
 
-
-    public V01_NT_BufferBelt_wDrum()
+    public V01_NT_BufferBelt()
     {
       InitializeComponent();
     }

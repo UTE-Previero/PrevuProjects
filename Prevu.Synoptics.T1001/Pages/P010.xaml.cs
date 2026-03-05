@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -13,16 +11,18 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Drawings.Machines
+namespace Prevu.Synoptics
 {
     /// <summary>
-    /// Logica di interazione per V01_NT_NastroBuffer.xaml
+    /// Interaction logic for GR1.xaml
     /// </summary>
-    public partial class V01_NT_NastroBuffer : UserControl
+    public partial class P010 : UserControl
     {
-        public V01_NT_NastroBuffer()
+        public P010()
         {
             InitializeComponent();
         }
+
+       
     }
 }
