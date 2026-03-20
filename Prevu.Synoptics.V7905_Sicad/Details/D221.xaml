@@ -1,0 +1,53 @@
+﻿<UserControl 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             mc:Ignorable="d" 
+             d:Background="{DynamicResource MaterialDesignPaper}"
+             x:Class="Prevu.Synoptics.D221">
+    <Canvas Height="345" Width="383">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Top" Color="Oil" Width="120" RenderTransformOrigin="0.5,0.5" StatusComponent="221-22-CV1" Canvas.Left="280" Canvas.Top="207">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Top" Color="Oil" Width="110" RenderTransformOrigin="0.5,0.5" StatusComponent="221-01-MA1" Canvas.Left="-26" Canvas.Top="203">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Top" Color="Oil" Width="214" RenderTransformOrigin="0.5,0.5" StatusComponent="221-01-MA1" Canvas.Left="27" Canvas.Top="150"/>
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Top" Color="Oil" Width="58" RenderTransformOrigin="0.5,0.5" StatusComponent="221-01-MA1" Canvas.Left="157" Canvas.Top="122">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Color="Oil" Width="78" RenderTransformOrigin="0.5,0.5" StatusComponent="221-22-CV1" Canvas.Left="264" Canvas.Top="149" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Machines:V01_CV_Valve Canvas.Left="235" Canvas.Top="137" Height="30" Width="36" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Machines:V01_WaterPump Canvas.Left="88" Canvas.Top="118" Height="66" Width="48" Color="Oil" RenderTransformOrigin="0.5,0.5"/>
+        <Machines:V01_AuxHydraulicOilTank Canvas.Left="13" Canvas.Top="249" Height="88" Width="358" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_SCW_ScrewConveyor_straight Canvas.Left="255" Canvas.Top="280" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.5,0.5">
+            <Machines:V01_SCW_ScrewConveyor_straight.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Machines:V01_SCW_ScrewConveyor_straight.RenderTransform>
+        </Machines:V01_SCW_ScrewConveyor_straight>
+        <Machines:V01_CV_ValveDouble Canvas.Left="167" Canvas.Top="69" Height="33" Width="38" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="221-01-MA1" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="67" Canvas.Top="184"/>
+        <Labels:DeviceLabel ComponentName="221-11-R1" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="187" Canvas.Top="268" />
+        <Labels:DeviceLabel ComponentName="221-22-CV2" HorizontalAlignment="Left" VerticalAlignment="Top"  Canvas.Left="141" Canvas.Top="14"/>
+        <Labels:DeviceLabel ComponentName="221-22-CV1" HorizontalAlignment="Left" VerticalAlignment="Top"  Canvas.Left="208" Canvas.Top="184"/>
+        <Labels:DeviceLabel ComponentName="221-41-TT1" HorizontalAlignment="Left" VerticalAlignment="Top"  Canvas.Left="67" Canvas.Top="267"/>
+    </Canvas>
+</UserControl>
