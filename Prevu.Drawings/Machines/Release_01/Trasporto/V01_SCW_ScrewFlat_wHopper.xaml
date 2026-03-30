@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Prevu.Drawings.Machines"
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Viewbox Stretch="Uniform">
@@ -21,6 +22,12 @@
                         <PathGeometry Figures="M157 67H122C121.448 67 121 66.5523 121 66V6C121 3.23858 118.761 1 116 1H5C2.79086 1 1 2.79086 1 5V81C1 83.7614 3.23857 86 6 86H145V87C145 89.7614 147.239 92 150 92H157C159.209 92 161 90.2091 161 88V71C161 68.7909 159.209 67 157 67Z" FillRule="NonZero"/>
                     </Path.Data>
                 </Path>
+                <Labels:WaterLevel x:Name="MaterialLevel" Background="Transparent" d:Background="lightblue" Height="91" Width="160" 
+         HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Top="1" d:Opacity=".6" Canvas.Left="1">
+                    <Labels:WaterLevel.OpacityMask>
+                        <VisualBrush Visual="{Binding ElementName=path2}" />
+                    </Labels:WaterLevel.OpacityMask>
+                </Labels:WaterLevel>
                 <Canvas Name="g6" Effect="{StaticResource MaterialDesignElevationShadow1}">
                     <Path  Name="path4" StrokeThickness="2" Stroke="#FF292929" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round">
                         <Path.Data>
