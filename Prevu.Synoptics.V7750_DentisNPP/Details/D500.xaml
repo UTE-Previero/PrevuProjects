@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Prevu.Synoptics.D500"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             mc:Ignorable="d" 
+             d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Height="253" Width="351" >
+        <Machines:V01_STC_3InLineReactor Canvas.Left="13" Canvas.Top="41" Height="209" Width="319" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="500-01-MA1" Canvas.Left="24" Canvas.Top="9" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="500-02-MA1" Canvas.Left="132" Canvas.Top="9" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="500-03-MA1" Canvas.Left="242" Canvas.Top="9" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="500-41-LS1" Canvas.Left="24" Canvas.Top="128" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Canvas>
+</UserControl>

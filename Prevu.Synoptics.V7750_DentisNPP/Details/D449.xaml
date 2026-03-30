@@ -1,0 +1,54 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             x:Class="Prevu.Synoptics.D449" 
+             mc:Ignorable="d" 
+             
+             d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Height="440" Width="289">
+        <Labels:Pipe Width="48" RenderTransformOrigin="0.5,0.5" StatusComponent="412-01-MA1" Canvas.Left="47" Canvas.Top="397" Color="ByProduct" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Width="68" RenderTransformOrigin="0.5,0.5" StatusComponent="412-01-MA1" Canvas.Left="37" Canvas.Top="327" Color="ByProduct" HorizontalAlignment="Left" VerticalAlignment="Top" >
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Width="178" RenderTransformOrigin="0.5,0.5" StatusComponent="448-01-MA1" Color="ByProduct" Canvas.Left="80" Canvas.Top="156" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:Pipe Width="68" RenderTransformOrigin="0.5,0.5" StatusComponent="412-01-MA1" Canvas.Left="37" Canvas.Top="127" Color="ByProduct" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Width="46" RenderTransformOrigin="0.5,0.5" StatusComponent="412-01-MA1" Canvas.Left="48" Canvas.Top="43" Color="ByProduct" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Machines:V01_SA_Elutriator Canvas.Left="33" Canvas.Top="133" Height="182" Width="76" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Machines:V01_VT_CMM_Blower_Air_Compressor Canvas.Left="165" Canvas.Top="134" Height="50" Width="50" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:V01_VS_Airlock Canvas.Left="48" Canvas.Top="345" Height="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_VS_Airlock Canvas.Left="48" Canvas.Top="55" Height="50" Width="46" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Rectangle Height="6" Stroke="Black" Width="30" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="56" Canvas.Top="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Rectangle Height="30" Stroke="Black" Width="2" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="256" Canvas.Top="144" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Rectangle Height="2" Stroke="Black" Width="30" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="56" Canvas.Top="422" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="447-01-MA1" Canvas.Left="100" Canvas.Top="55" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="448-01-MA1" Canvas.Left="145" Canvas.Top="189" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Labels:DeviceLabel ComponentName="452-01-MA1" Canvas.Left="100" Canvas.Top="347" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    </Canvas>
+</UserControl>
