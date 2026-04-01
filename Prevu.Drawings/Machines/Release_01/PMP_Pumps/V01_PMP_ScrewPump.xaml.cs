@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Prevu.Drawings.Machines.Release_01.PMP_Pumps
+namespace Prevu.Drawings.Machines
 {
   /// <summary>
   /// Interaction logic for V01_PMP_ScrewPump.xaml
