@@ -1,0 +1,29 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             xmlns:lex="http://wpflocalizeextension.codeplex.com" 
+             x:Class="Prevu.Synoptics.T1_D285" 
+             mc:Ignorable="d" 
+             
+             d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Height="237" Width="254">
+        <Labels:Pipe Color="Chemicals" Width="62" RenderTransformOrigin="0.5,0.5" StatusComponent="T1+332-01-ME1" Canvas.Top="47" Canvas.Left="62" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Width="139" Canvas.Top="18" StatusComponent="T1+332-01-ME1" RenderTransformOrigin="0.5,0.5" Canvas.Left="92" Color="Chemicals" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_IBC Canvas.Left="11" Canvas.Top="64" Height="165" Width="164" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Rectangle Height="30" Stroke="Black" Width="6" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="228" Canvas.Top="5" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel Canvas.Top="87" Canvas.Left="108" ComponentName="T1+285-41-LEV" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:SignalLabel Canvas.Left="23" Canvas.Top="153" HorizontalAlignment="Center" VerticalAlignment="Top" SignalName="LSL" ComponentName="T1+285-41-LEV"/>
+        <Labels:SignalLabel Canvas.Left="23" Canvas.Top="189" HorizontalAlignment="Center" VerticalAlignment="Top" SignalName="LSLA" ComponentName="T1+285-41-LEV"/>
+    </Canvas>
+</UserControl>

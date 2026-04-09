@@ -1,0 +1,18 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             x:Class="Prevu.Synoptics.T1_D240" 
+             mc:Ignorable="d" 
+             
+             d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Height="169" Width="269">
+        <Machines:V01_VRC_WaterTank Canvas.Left="14" Canvas.Top="25" Height="132" Width="244" HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="T1+240-41-LT1" TrendName="LEVEL"/>
+        <Labels:DeviceLabel ComponentName="T1+240-45-CT1" Canvas.Left="140" Canvas.Top="66" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="T1+240-41-LT1" Canvas.Left="40" Canvas.Top="66" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    </Canvas>
+</UserControl>

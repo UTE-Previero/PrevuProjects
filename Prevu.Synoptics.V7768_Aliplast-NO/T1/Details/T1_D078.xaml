@@ -1,0 +1,22 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             x:Class="Prevu.Synoptics.T1_D078" 
+             mc:Ignorable="d" 
+             
+             d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Height="232" Width="496">
+        <Labels:Pipe Width="45" Color="Air" StatusComponent="T1+078-31-CV1" Canvas.Left="308" Canvas.Top="126" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Machines:V01_FP_FiltroPressa Canvas.Left="83" Canvas.Top="11" Height="215" Width="241" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Machines:V01_CV_Valve_wColor Canvas.Left="350" Canvas.Top="108" HorizontalAlignment="Left" Height="42" VerticalAlignment="Top" Width="39" Color="Air"/>
+        <Labels:DeviceLabel ComponentName="T1+078-01-MA1" Canvas.Top="100" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="10"/>
+        <Labels:DeviceLabel ComponentName="T1+078-31-CV3" Canvas.Left="389" Canvas.Top="137" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="T1+078-31-CV1" Canvas.Left="389" Canvas.Top="69" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="T1+078-41-LS1" Canvas.Left="158" Canvas.Top="25" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    </Canvas>
+</UserControl>
