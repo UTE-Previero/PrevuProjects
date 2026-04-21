@@ -14016,4 +14016,52 @@ Note: If this mode is activated, upstream production may be suspended.</value>
     <value>The hot wash reactor utilizes hot water, chemical agents and mechanical friction to clean incoming dirty flakes via a batched material washing sequence.  The washed flakes are transferred to the downstream process flow during the washing cycle.</value>
     <comment>FDS Machine Description</comment>
   </data>
+  <data name="FDS_AG_001" xml:space="preserve">
+    <value>The agitator is used to keep material in suspension within the vessel during material processing.</value>
+    <comment>FDS Machine Description</comment>
+  </data>
+  <data name="FDS_FLUID_PROCESS_WATER" xml:space="preserve">
+    <value>Recycled Process Water</value>
+    <comment>FDS Fluid Description</comment>
+  </data>
+  <data name="FDS_FLUID_CLEAN_WET_FLAKES" xml:space="preserve">
+    <value>Clean Wet Flakes</value>
+    <comment>FDS Fluid Description</comment>
+  </data>
+  <data name="FDS_FLUID_CHEMICAL_ANTIFOAM" xml:space="preserve">
+    <value>Antifoaming Agent</value>
+    <comment>FDS Fluid Description</comment>
+  </data>
+  <data name="FDS_HW_VLV_FILL_001" xml:space="preserve">
+    <value>This valve fills the reactor with hot process water to be used during different process cycles</value>
+    <comment>FDS Machine Description</comment>
+  </data>
+  <data name="FDS_HW_VLV_DISCH_001" xml:space="preserve">
+    <value>This valve empties the reactor of process water and flakes during different process cycles</value>
+    <comment>FDS Machine Description</comment>
+  </data>
+  <data name="FDS_HW_LEV_001" xml:space="preserve">
+    <value>The level of the hot wash reactor is measured via this transducer to manage the level during different process cycles</value>
+    <comment>FDS Machine Description</comment>
+  </data>
+  <data name="FDS_HW_PMP_DISCH_001" xml:space="preserve">
+    <value>This pump is used to extract process material from the reactor via the discharge valve and send it to the the downstream process material flow</value>
+    <comment>FDS Machine Description</comment>
+  </data>
+  <data name="FDS_HW_PMP_ANTIFOAM_001" xml:space="preserve">
+    <value>This pump is used to add an antifoaming agent to the reactor to reduce accumulation of foaming during the different process cycles</value>
+    <comment>FDS Machine Description</comment>
+  </data>
+  <data name="FDS_HW_CYC_001" xml:space="preserve">
+    <value>The hot wash reactor preparation cycle is used to Empty any residual process material and water from the reactor, preheat the reactor walls with new hot process water and finally refill the reactor preparing it for the next wash cycle with material.</value>
+    <comment>FDS Process Cycle Description</comment>
+  </data>
+  <data name="FDS_HW_CYC_002" xml:space="preserve">
+    <value>The hot wash reactor wash cycle is used to load new requested process material into the reactor, wash the new material, empty the reactor and finally refill the with hot water preparing it for the next wash cycle.</value>
+    <comment>FDS Process Cycle Description</comment>
+  </data>
+  <data name="FDS_HW_CYC_003" xml:space="preserve">
+    <value>The hot wash reactor empty cycle is used to refill the reactor with new hot process water to restore any lost reactor walls temperature after a prolonged time since the last wash cycle.  The cycle restores the reactor mechanical temperature preparing it for the next wash cycle.</value>
+    <comment>FDS Process Cycle Description</comment>
+  </data>
 </root>
