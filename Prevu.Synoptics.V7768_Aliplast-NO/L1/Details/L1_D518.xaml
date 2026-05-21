@@ -10,23 +10,23 @@
              mc:Ignorable="d" 
              
              d:Background="{DynamicResource MaterialDesignPaper}">
-    <Canvas Height="258" Width="160">
-        <Labels:Pipe Width="38" Color="Water" StatusComponent="L1+518-21-CV1" RenderTransformOrigin="0.5,0.5" Canvas.Left="14" Canvas.Top="106" HorizontalAlignment="Center" VerticalAlignment="Top">
+    <Canvas Height="353" Width="160">
+        <Labels:Pipe Width="38" Color="Water" StatusComponent="L1+518-21-CV1" RenderTransformOrigin="0.5,0.5" Canvas.Left="14" Canvas.Top="166" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="46" Color="Water" StatusComponent="L1+518-21-CV1" RenderTransformOrigin="0.5,0.5" Canvas.Left="10" Canvas.Top="31" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Labels:Pipe Width="106" Color="Water" StatusComponent="L1+518-21-CV1" RenderTransformOrigin="0.5,0.5" Canvas.Left="-20" Canvas.Top="61" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Machines:V01_VRC_WaterTank Canvas.Left="13" Canvas.Top="121" Width="126" Height="126" ComponentName="L1+518-41-LT1" TrendName="LEVEL" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Machines:V01_CV_Valve Canvas.Left="8" Canvas.Top="45" RenderTransformOrigin="0.5,0.5" Height="50" Width="50" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Machines:V01_VRC_WaterTank Canvas.Left="13" Canvas.Top="181" Width="126" Height="126" ComponentName="L1+518-41-LT1" TrendName="LEVEL" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_CV_Valve Canvas.Left="8" Canvas.Top="105" RenderTransformOrigin="0.5,0.5" Height="50" Width="50" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Machines:V01_CV_Valve.RenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
@@ -34,7 +34,10 @@
             </Machines:V01_CV_Valve.RenderTransform>
         </Machines:V01_CV_Valve>
         <Rectangle Height="6" Stroke="Black" Width="30" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="18" Canvas.Top="7" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="L1+518-41-LT1" Canvas.Left="31" Canvas.Top="160" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Labels:DeviceLabel ComponentName="L1+518-21-CV1" Canvas.Left="56" Canvas.Top="45" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Rectangle Height="2" Stroke="Black" Width="30" Canvas.Left="37" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Ellipse Height="16" Stroke="#FFBDBDBD" Width="16" OpacityMask="#FFBDBDBD" Fill="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" Canvas.Left="25" Canvas.Top="54" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:DeviceLabel ComponentName="L1+518-41-LT1" Canvas.Left="31" Canvas.Top="220" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="L1+518-21-CV1" Canvas.Left="56" Canvas.Top="105" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="L1+518-44-FT1" Canvas.Left="56" Canvas.Top="38" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>
