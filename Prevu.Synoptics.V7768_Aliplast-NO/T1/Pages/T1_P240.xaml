@@ -9,6 +9,15 @@
              x:Class="Prevu.Synoptics.T1_P240" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
+        <Labels:Pipe Color="Water" Width="88" RenderTransformOrigin="0.5,0.5" StatusComponent="T1+624-01-MA1" Canvas.Left="642" Canvas.Top="751" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Labels:Pipe.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Labels:Pipe.RenderTransform>
+        </Labels:Pipe>
+        <Labels:Pipe Width="35" Color="Water" StatusComponent="T1+624-01-MA1" Canvas.Left="684" Canvas.Top="709" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
         <Labels:Pipe Width="296" Color="Water" StatusComponent="T1+244-01-MA1" Canvas.Left="919" Canvas.Top="354" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:Pipe Color="Chemicals" Width="244" RenderTransformOrigin="0.5,0.5" StatusComponent="T1+682-01-ME1" Canvas.Top="163" Canvas.Left="746" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Labels:Pipe.RenderTransform>
@@ -58,28 +67,29 @@
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
         <Labels:Pipe Width="367" Canvas.Top="282" StatusComponent="T1+240-TANK" RenderTransformOrigin="0.5,0.5" Canvas.Left="403" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:Pipe Width="194" Color="Water" StatusComponent="T1+624-01-MA1" Canvas.Left="480" Canvas.Top="794" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:Pipe Color="Water" Width="110" RenderTransformOrigin="0.5,0.5" StatusComponent="T1+622-01-MA1" Canvas.Left="476" Canvas.Top="730" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <Labels:Pipe Width="235" Color="Water" StatusComponent="T1+624-01-MA1" Canvas.Left="480" Canvas.Top="794" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:Pipe Color="Water" Width="148" RenderTransformOrigin="0.5,0.5" StatusComponent="T1+622-01-MA1" Canvas.Left="457" Canvas.Top="711" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="190" Color="Water" StatusComponent="T1+622-01-MA1" Canvas.Left="529" Canvas.Top="676" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:Pipe Color="Water" Width="204" RenderTransformOrigin="0.5,0.5" StatusComponent="T1+622-01-MA1" Canvas.Left="584" Canvas.Top="576" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <Labels:Pipe Width="276" Color="Water" StatusComponent="T1+622-01-MA1" Canvas.Left="529" Canvas.Top="639" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:Pipe Color="Water" Width="138" RenderTransformOrigin="0.5,0.5" StatusComponent="T1+622-01-MA1" Canvas.Left="617" Canvas.Top="571" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe Width="77" Color="Water" StatusComponent="T1+622-01-MA1" Canvas.Left="684" Canvas.Top="611" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:Pipe Width="68" Canvas.Top="784" StatusComponent="T1+622-01-MA1" RenderTransformOrigin="0.5,0.5" Canvas.Left="465" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:Pipe Width="50" Color="Water" StatusComponent="T1+622-01-MA1" Canvas.Left="735" Canvas.Top="676" HorizontalAlignment="Left" VerticalAlignment="Center" VisibilityComponent="T1+622-31-CV1" VisibilitySignal="LS_OPEN"/>
-        <Labels:Pipe Width="93" Color="Water" StatusComponent="T1+624-01-MA1" Canvas.Left="691" Canvas.Top="794" HorizontalAlignment="Left" VerticalAlignment="Center" VisibilityComponent="T1+624-31-CV1"/>
-        <Labels:Pipe Width="91" Color="Water" StatusComponent="T1+622-01-MA1" Canvas.Left="684" Canvas.Top="544" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:Pipe Width="91" Color="Water" StatusComponent="T1+622-01-MA1" Canvas.Left="684" Canvas.Top="476" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:Pipe Width="76" Color="Water" StatusComponent="T1+624-01-MA1" Canvas.Left="735" Canvas.Top="709" HorizontalAlignment="Left" VerticalAlignment="Center" VisibilityComponent="T1+624-32-CV1" VisibilitySignal="LS_OPEN"/>
+        <Labels:Pipe Width="93" Color="Water" StatusComponent="T1+624-01-MA1" Canvas.Left="734" Canvas.Top="793" HorizontalAlignment="Left" VerticalAlignment="Top" VisibilityComponent="T1+624-31-CV1"/>
+        <Labels:Pipe Width="141" Color="Water" StatusComponent="T1+622-01-MA1" Canvas.Left="684" Canvas.Top="572" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:Pipe Width="116" Color="Water" StatusComponent="T1+622-01-MA1" Canvas.Left="684" Canvas.Top="504" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:Pipe Width="43" Color="Water" StatusComponent="T1+622-21-CV1" Canvas.Left="645" Canvas.Top="504" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Labels:Pipe Width="67" Canvas.Top="504" StatusComponent="T1+840-44-FT1" RenderTransformOrigin="0.5,0.5" Canvas.Left="562" Color="Water" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Machines:WaterPump Height="44" Width="46" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="1027" Canvas.Top="334" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Machines:V01_VRC_WaterTank Canvas.Left="743" Canvas.Top="272" Height="106" Width="186" ComponentName="T1+240-41-LT1" TrendName="LEVEL" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <Machines:V01_IBC Canvas.Left="695" Canvas.Top="65" Height="90" Width="88" HorizontalAlignment="Left" VerticalAlignment="Center"/>
@@ -87,30 +97,33 @@
         <Machines:V01_FTT_PaperFilter Canvas.Left="303" Canvas.Top="674" Height="139" Width="198" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Machines:WaterPump Height="44" Width="46" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="1027" Canvas.Top="216" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Machines:WaterPump Height="44" Width="46" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="588" Canvas.Top="774" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Machines:WaterPump Height="44" Width="46" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="588" Canvas.Top="656" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Rectangle Height="36" Canvas.Left="742" Stroke="Black" Canvas.Top="779" Width="2" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Machines:External Height="50" Width="50" RenderTransformOrigin="0.5,0.5" Canvas.Left="718" Canvas.Top="734" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Rectangle Height="36" Canvas.Left="742" Stroke="Black" Canvas.Top="779" Width="2" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Machines:External Height="50" Width="50" RenderTransformOrigin="0.5,0.5" Canvas.Left="718" Canvas.Top="734" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Machines:CV_Valve_001 Height="34" Width="34" RenderTransformOrigin="0.51,0.539" Canvas.Left="712" Canvas.Top="661" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Machines:CV_Valve_001 Height="34" Width="34" RenderTransformOrigin="0.51,0.539" Canvas.Left="669" Canvas.Top="780" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:WaterPump Height="44" Width="46" RenderTransformOrigin="0.5,0.5" Color="Water" Canvas.Left="588" Canvas.Top="619" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:CV_Valve_001 Height="34" Width="34" RenderTransformOrigin="0.51,0.539" Canvas.Left="622" Canvas.Top="489" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Ellipse Height="16" Stroke="#FFBDBDBD" Width="16" OpacityMask="#FFBDBDBD" Fill="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" Canvas.Left="580" Canvas.Top="498" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle Height="30" Stroke="Black" Width="2" Canvas.Left="562" Canvas.Top="492" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle Height="36" Canvas.Left="774" Stroke="Black" Canvas.Top="779" Width="2" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:External Height="50" Width="50" RenderTransformOrigin="0.5,0.5" Canvas.Left="750" Canvas.Top="734" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Rectangle Height="36" Canvas.Left="774" Stroke="Black" Canvas.Top="779" Width="2" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Machines:External Height="50" Width="50" RenderTransformOrigin="0.5,0.5" Canvas.Left="750" Canvas.Top="734" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Machines:CV_Valve_001 Height="34" Width="34" RenderTransformOrigin="0.51,0.539" Canvas.Left="712" Canvas.Top="694" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:CV_Valve_001 Height="34" Width="34" RenderTransformOrigin="0.51,0.539" Canvas.Left="712" Canvas.Top="779" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Labels:JumpLabel JumpFromLabel="T1+244-PUMP" JumpToLabel="L1+450-TANK" Canvas.Left="1161" Canvas.Top="322" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <Labels:JumpLabel JumpFromLabel="T1+240-TANK" JumpToLabel="T1+230-SED" Canvas.Left="547" Canvas.Top="196" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <Labels:JumpLabel JumpFromLabel="T1+242-PUMP" JumpToLabel="L1+282-TANK" Canvas.Left="1161" Canvas.Top="204" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <Labels:JumpLabel JumpFromLabel="T1+242-PUMP" JumpToLabel="L1+210-STIRRER" Canvas.Left="1143" Canvas.Top="137" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Labels:JumpLabel JumpFromLabel="T1+622-PUMP" JumpToLabel="T1+200-PIT" Canvas.Left="766" Canvas.Top="644" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Labels:JumpLabel JumpFromLabel="T1+622-PUMP" JumpToLabel="T1+070-MICROFLT" Canvas.Left="749" Canvas.Top="578" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Labels:JumpLabel JumpFromLabel="T1+622-PUMP" JumpToLabel="L1+528-TANK" Canvas.Left="766" Canvas.Top="511" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Labels:JumpLabel JumpFromLabel="T1+624-PUMP" JumpToLabel="T1+200-PIT" Canvas.Left="798" Canvas.Top="676" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Labels:JumpLabel JumpFromLabel="T1+622-PUMP" JumpToLabel="T1+070-MICROFLT" Canvas.Left="781" Canvas.Top="605" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Labels:JumpLabel JumpFromLabel="T1+622-PUMP" JumpToLabel="L1+528-TANK" Canvas.Left="798" Canvas.Top="538" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Labels:JumpLabel JumpFromLabel="T1+622-PUMP" JumpToLabel="T1+850-01-ME1" Canvas.Left="781" Canvas.Top="471" HorizontalAlignment="Left" VerticalAlignment="Top" />
         <Labels:DetailsLabel ComponentName="T1+244-PUMP" DetailsPageName="T1_D244" Canvas.Left="1008" Canvas.Top="278" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DetailsLabel ComponentName="T1+240-TANK" DetailsPageName="T1_D240" Canvas.Left="795" Canvas.Top="300" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DetailsLabel ComponentName="T1+682-CHEMICALS" DetailsPageName="T1_D682" Canvas.Left="739" Canvas.Top="85" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DetailsLabel ComponentName="T1+242-PUMP" DetailsPageName="T1_D242" Canvas.Left="1007" Canvas.Top="160" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DetailsLabel ComponentName="T1+620-FTT" DetailsPageName="T1_D620" Canvas.Left="365" Canvas.Top="739" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:DetailsLabel ComponentName="T1+624-PUMP" DetailsPageName="T1_D624" Canvas.Left="569" Canvas.Top="718" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DetailsLabel ComponentName="T1+622-PUMP" DetailsPageName="T1_D622" Canvas.Left="569" Canvas.Top="600" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel ComponentName="T1+624-71-ES1" Canvas.Left="766" Canvas.Top="771" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Labels:DetailsLabel ComponentName="T1+622-PUMP" DetailsPageName="T1_D622" Canvas.Left="569" Canvas.Top="563" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="T1+624-71-ES1" Canvas.Left="798" Canvas.Top="771" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="20" d:Foreground="White" Text="{lex:Loc Hydrogen Peroxide}" Canvas.Left="667" Canvas.Top="153" Height="60" Width="156" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:JumpLabel JumpFromLabel="T1+622-PUMP" JumpToLabel="T1+850-01-ME1" Canvas.Left="749" Canvas.Top="444" HorizontalAlignment="Left" VerticalAlignment="Center" />
 
     </Canvas>
 </UserControl>
