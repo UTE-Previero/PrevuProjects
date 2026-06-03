@@ -16,15 +16,14 @@ using System.Windows.Shapes;
 namespace Prevu.Synoptics
 {
   /// <summary>
-  /// Interaction logic for D880.xaml
+  /// Interaction logic for D380.xaml
   /// </summary>
-  public partial class D920 : UserControl
+  public partial class D473 : UserControl
   {
-    public D920()
+    public D473()
     {
       InitializeComponent();
     }
 
-       
-    }
+  }
 }
