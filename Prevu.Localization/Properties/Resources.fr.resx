@@ -11873,7 +11873,7 @@ Remarque : Si ce mode est activé, la production en amont peut être suspendue.
     <value>Traitement de l'eau OK pour recevoir (signal externe)</value>
   </data>
   <data name="VAR MIN LEVEL (EXTERNAL SIGNAL)" xml:space="preserve">
-    <value>Var Min Niveau (Signal externe)</value>
+    <value>VAR Min Niveau (Signal externe)</value>
   </data>
   <data name="COLLECTING TANK NO MAXIMUM LEVEL" xml:space="preserve">
     <value>Réservoir de collecte sans niveau maximum</value>
@@ -13266,5 +13266,125 @@ Remarque : Si ce mode est activé, la production en amont peut être suspendue.
   </data>
   <data name="SubZone - WT" xml:space="preserve">
     <value>SubZone - WT</value>
+  </data>
+  <data name="FDS_WCE_001" xml:space="preserve">
+    <value>La centrifugeuse est une unité de séparation solide-liquide à grande vitesse. Son rôle est de déshydrater le matériau entrant et d'éliminer les fines particules résiduelles dont la taille est inférieure à celle des trous du tamis de confinement grâce aux forces centrifuges appliquées par les pales du rotor.</value>
+  </data>
+  <data name="FDS_HW_001" xml:space="preserve">
+    <value>Le réacteur de lavage à chaud utilise de l'eau chaude, des agents chimiques et la friction mécanique pour nettoyer les flocons sales entrants par un procédé de lavage par lots. Les flocons lavés sont ensuite transférés vers le flux de traitement en aval pendant le cycle de lavage.</value>
+  </data>
+  <data name="FDS_AG_001" xml:space="preserve">
+    <value>L'agitateur sert à maintenir le matériau en suspension dans la cuve pendant le traitement du matériau.</value>
+  </data>
+  <data name="FDS_FLUID_PROCESS_WATER" xml:space="preserve">
+    <value>Eau de procédé recyclée</value>
+  </data>
+  <data name="FDS_FLUID_CLEAN_WET_FLAKES" xml:space="preserve">
+    <value>Flocons humides propres</value>
+  </data>
+  <data name="FDS_FLUID_CHEMICAL_ANTIFOAM" xml:space="preserve">
+    <value>Agent antimousse</value>
+  </data>
+  <data name="FDS_HW_VLV_FILL_001" xml:space="preserve">
+    <value>Cette vanne remplit le réacteur d'eau chaude de procédé qui sera utilisée lors de différents cycles de traitement.</value>
+  </data>
+  <data name="FDS_HW_VLV_DISCH_001" xml:space="preserve">
+    <value>Cette vanne vide le réacteur de l'eau de procédé et des flocons au cours des différents cycles de traitement.</value>
+  </data>
+  <data name="FDS_HW_LEV_001" xml:space="preserve">
+    <value>Le niveau du réacteur de lavage à chaud est mesuré par ce transducteur afin de le réguler lors des différents cycles de traitement.</value>
+  </data>
+  <data name="FDS_HW_PMP_DISCH_001" xml:space="preserve">
+    <value>Cette pompe sert à extraire le matériau de traitement du réacteur via la vanne de refoulement et à l'envoyer vers le flux de matériau de traitement en aval.</value>
+  </data>
+  <data name="FDS_HW_PMP_ANTIFOAM_001" xml:space="preserve">
+    <value>Cette pompe est utilisée pour ajouter un agent antimousse au réacteur afin de réduire l'accumulation de mousse au cours des différents cycles de traitement.</value>
+  </data>
+  <data name="FDS_HW_CYC_001" xml:space="preserve">
+    <value>Le cycle de préparation du réacteur à lavage à chaud sert à vider le réacteur de tout matériau de traitement résiduel et d'eau, à préchauffer les parois du réacteur avec de l'eau de traitement chaude neuve et enfin à remplir le réacteur en vue du prochain cycle de lavage avec du matériau.</value>
+  </data>
+  <data name="FDS_HW_CYC_002" xml:space="preserve">
+    <value>Le cycle de lavage à chaud du réacteur est utilisé pour charger le nouveau matériau de traitement demandé dans le réacteur, laver ce nouveau matériau, vider le réacteur et enfin le remplir d'eau chaude en le préparant pour le cycle de lavage suivant.</value>
+  </data>
+  <data name="FDS_HW_CYC_003" xml:space="preserve">
+    <value>Le cycle de vidange du réacteur à chaud permet de remplir ce dernier avec de l'eau chaude neuve afin de rétablir la température des parois après un laps de temps prolongé depuis le dernier cycle de lavage. Ce cycle rétablit la température mécanique du réacteur, le préparant ainsi pour le cycle de lavage suivant.</value>
+  </data>
+  <data name="INFO_OPEN_TIME" xml:space="preserve">
+    <value>La durée d'ouverture de la vanne a dépassé la limite maximale définie. Recherchez les causes sur le terrain, en vous référant également aux enregistrements des données de processus.</value>
+  </data>
+  <data name="INFO_POS_TIMOUT" xml:space="preserve">
+    <value>La position cible n'a pas été atteinte dans le délai imparti. Vérifiez les causes sur le terrain ou, le cas échéant, dans les paramètres IHM correspondants.</value>
+  </data>
+  <data name="INFO_COOL_6" xml:space="preserve">
+    <value>Activez la ventilation de l'armoire pour un fonctionnement continu de l'appareil.</value>
+  </data>
+  <data name="INFO_AMP_15" xml:space="preserve">
+    <value>La présence de courant à l'arrêt indique un court-circuit du SCR ou un blocage du bypass. Coupez immédiatement l'alimentation, car le moteur pourrait être sous tension. Inspectez le démarreur progressif avant toute tentative de redémarrage.</value>
+  </data>
+  <data name="INFO_LEVEL_21" xml:space="preserve">
+    <value>Défaut du signal du capteur de niveau. Vérifiez l'intégrité de l'appareil, le câblage de terrain et, pour les configurations analogiques, les bornes de l'armoire et la carte d'entrée de l'automate. Pour les capteurs IO-Link, vérifiez les voyants d'état du port maître et les diagnostics du chemin de communication.</value>
+  </data>
+  <data name="INFO_EXT_MTR" xml:space="preserve">
+    <value>Le moteur externe n'a pas répondu à la demande de démarrage. Veuillez vérifier si le moteur est alimenté, en mode local, ou s'il y a une défaillance du signal de retour.</value>
+  </data>
+  <data name="P_ESTIM_PMP_FLOWRATE" xml:space="preserve">
+    <value>Saisissez le débit de la pompe mesuré directement. Réglez la pression d'air à l'entrée de la pompe à 5 bars avant sa mise en marche. Ce champ est utilisé par le système pour estimer la consommation de produits chimiques.</value>
+  </data>
+  <data name="P_PREV_CONSUMPTION" xml:space="preserve">
+    <value>Ce champ affiche la consommation de produits chimiques prévue à pleine capacité de production, en fonction des paramètres actuels.</value>
+  </data>
+  <data name="P_ESTIM_VLV_FLOWRATE" xml:space="preserve">
+    <value>Saisissez le débit de la vanne mesuré directement. Ce champ est utilisé par le système pour estimer la consommation d'eau.</value>
+  </data>
+  <data name="P_ACT_CURRENT" xml:space="preserve">
+    <value>Affiche le courant moteur en temps réel en pourcentage de son intensité nominale. Exemple : pour une intensité nominale de 120 A, une valeur de 33 % indique une consommation de courant de 40 A.</value>
+  </data>
+  <data name="P_STOP_MAT_CURRENT" xml:space="preserve">
+    <value>Lorsque le courant du moteur atteint ce seuil, le système interrompt le flux de matière en amont après le délai spécifié dans le champ suivant.</value>
+  </data>
+  <data name="P_STOP_MAT_CURRENT_DELAY" xml:space="preserve">
+    <value>Ce délai sert d'hystérésis pour la limitation de courant. Lorsque le courant du moteur dépasse la limite fixée, le temporisateur se déclenche et reste actif tant que le courant demeure au-dessus du seuil. Si le courant reste au-dessus de la limite pendant toute la durée du temporisateur, le flux de matière en amont est interrompu.</value>
+  </data>
+  <data name="P_START_MAT_CURRENT" xml:space="preserve">
+    <value>Lorsque le courant du moteur descend en dessous de ce seuil, le système reprend le flux de matière en amont après le délai spécifié dans le champ suivant.</value>
+  </data>
+  <data name="P_START_MAT_CURRENT_DELAY" xml:space="preserve">
+    <value>Ce délai sert d'hystérésis pour le seuil de redémarrage. Lorsque le courant du moteur descend en dessous de cette limite, le temporisateur se déclenche et reste actif tant que le courant demeure inférieur au seuil. Si le courant reste inférieur à la limite pendant toute la durée du temporisateur, le flux de matière en amont reprend.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MAX" xml:space="preserve">
+    <value>Lorsque le courant du moteur atteint ce seuil, le système déclenche une alarme signalant une anomalie potentielle du moteur après le délai spécifié dans le champ suivant.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MAX_DELAY" xml:space="preserve">
+    <value>Ce délai sert d'hystérésis au seuil d'alarme. Lorsque le courant moteur dépasse cette limite, le temporisateur se déclenche et continue de fonctionner tant que le courant reste supérieur au seuil. Si le courant demeure supérieur à la limite pendant toute la durée du temporisateur, une alarme d'anomalie moteur est déclenchée.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MIN" xml:space="preserve">
+    <value>Lorsque le courant du moteur descend en dessous de ce seuil, le système déclenche une alarme signalant une anomalie potentielle du moteur après le délai spécifié dans le champ suivant.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MIN_DELAY" xml:space="preserve">
+    <value>Ce délai sert d'hystérésis au seuil d'alarme. Lorsque le courant du moteur descend en dessous de cette limite, le temporisateur se déclenche et continue de fonctionner tant que le courant reste inférieur au seuil. Si le courant demeure inférieur à la limite pendant toute la durée du temporisateur, une alarme d'anomalie moteur est déclenchée.</value>
+  </data>
+  <data name="P_SPEED_DEMAND" xml:space="preserve">
+    <value>Affiche la demande de vitesse actuelle fournie à l'onduleur du moteur.</value>
+  </data>
+  <data name="P_SPEED_IN_PROD" xml:space="preserve">
+    <value>Consigne de vitesse fournie au moteur lorsque la zone de traitement est en mode Production.</value>
+  </data>
+  <data name="P_SPEED_IN_MAINT" xml:space="preserve">
+    <value>Consigne de vitesse fournie au moteur lorsque la zone de traitement est en mode Maintenance.</value>
+  </data>
+  <data name="P_ACT_SPEED_FBK" xml:space="preserve">
+    <value>Affiche en temps réel les informations relatives à la vitesse du moteur reçues du contrôleur d'onduleur.</value>
+  </data>
+  <data name="P_ACT_SPEED_FREQ" xml:space="preserve">
+    <value>Affiche la fréquence de sortie en temps réel fournie par l'onduleur au moteur.</value>
+  </data>
+  <data name="P_SPEED_IN_PROD_REV" xml:space="preserve">
+    <value>Point de consigne de vitesse du moteur utilisé lorsque la zone de traitement est en mode Production et que le sens de rotation est réglé sur Inversé.</value>
+  </data>
+  <data name="P_SPEED_IN_PROD_CONSTANT_MODE" xml:space="preserve">
+    <value>Point de consigne de vitesse du moteur utilisé lorsque la zone de traitement est en mode Production et que la modulation de vitesse n'est pas sélectionnée.</value>
+  </data>
+  <data name="P_SPEED_HIGH_x_TANK_REFILL" xml:space="preserve">
+    <value>Augmentation du seuil de vitesse de la pompe pour faciliter le remplissage du réservoir en cas de pénurie d'eau.</value>
   </data>
 </root>

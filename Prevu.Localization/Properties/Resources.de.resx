@@ -11875,7 +11875,7 @@ Hinweis: Bei Aktivierung dieses Modus kann die vorgelagerte Produktion unterbroc
     <value>Wasseraufbereitung OK zum Empfangen (externes Signal)</value>
   </data>
   <data name="VAR MIN LEVEL (EXTERNAL SIGNAL)" xml:space="preserve">
-    <value>Var Min Level (externes Signal)</value>
+    <value>VAR Min Level (externes Signal)</value>
   </data>
   <data name="COLLECTING TANK NO MAXIMUM LEVEL" xml:space="preserve">
     <value>Sammelbehälter Kein Maximalfüllstand</value>
@@ -13268,5 +13268,125 @@ Hinweis: Bei Aktivierung dieses Modus kann die vorgelagerte Produktion unterbroc
   </data>
   <data name="SubZone - WT" xml:space="preserve">
     <value>SubZone - WT</value>
+  </data>
+  <data name="FDS_WCE_001" xml:space="preserve">
+    <value>Die Zentrifuge ist eine Hochgeschwindigkeits-Feststoff-Flüssigkeits-Trennanlage. Ihre Aufgabe ist es, das einlaufende Material zu entwässern und Restpartikel, deren Größe kleiner als die Sieböffnungen ist, durch die von den Rotorblättern erzeugten Zentrifugalkräfte abzutrennen.</value>
+  </data>
+  <data name="FDS_HW_001" xml:space="preserve">
+    <value>Der Heißwaschreaktor nutzt heißes Wasser, chemische Reinigungsmittel und mechanische Reibung, um die eingehenden, verschmutzten Flocken in einem chargenweisen Waschvorgang zu reinigen. Die gewaschenen Flocken werden während des Waschzyklus dem nachgelagerten Prozess zugeführt.</value>
+  </data>
+  <data name="FDS_AG_001" xml:space="preserve">
+    <value>Der Rührer dient dazu, das Material während der Materialverarbeitung im Behälter in Suspension zu halten.</value>
+  </data>
+  <data name="FDS_FLUID_PROCESS_WATER" xml:space="preserve">
+    <value>Recyceltes Prozesswasser</value>
+  </data>
+  <data name="FDS_FLUID_CLEAN_WET_FLAKES" xml:space="preserve">
+    <value>Saubere, feuchte Flocken</value>
+  </data>
+  <data name="FDS_FLUID_CHEMICAL_ANTIFOAM" xml:space="preserve">
+    <value>Antischaummittel</value>
+  </data>
+  <data name="FDS_HW_VLV_FILL_001" xml:space="preserve">
+    <value>Dieses Ventil füllt den Reaktor mit heißem Prozesswasser, das in verschiedenen Prozesszyklen verwendet wird.</value>
+  </data>
+  <data name="FDS_HW_VLV_DISCH_001" xml:space="preserve">
+    <value>Dieses Ventil entleert den Reaktor während verschiedener Prozesszyklen von Prozesswasser und Flocken.</value>
+  </data>
+  <data name="FDS_HW_LEV_001" xml:space="preserve">
+    <value>Der Füllstand des Heißwaschreaktors wird mittels dieses Messumformers gemessen, um den Füllstand während der verschiedenen Prozesszyklen zu regeln.</value>
+  </data>
+  <data name="FDS_HW_PMP_DISCH_001" xml:space="preserve">
+    <value>Diese Pumpe dient dazu, Prozessmaterial über das Auslassventil aus dem Reaktor zu entnehmen und es dem nachgelagerten Prozessmaterialstrom zuzuführen.</value>
+  </data>
+  <data name="FDS_HW_PMP_ANTIFOAM_001" xml:space="preserve">
+    <value>Diese Pumpe dient dazu, dem Reaktor ein Antischaummittel zuzuführen, um die Schaumbildung während der verschiedenen Prozesszyklen zu reduzieren.</value>
+  </data>
+  <data name="FDS_HW_CYC_001" xml:space="preserve">
+    <value>Der Heißwaschreaktor-Vorbereitungszyklus dient dazu, etwaige Reststoffe und Wasser aus dem Reaktor zu entfernen, die Reaktorwände mit neuem heißem Prozesswasser vorzuwärmen und den Reaktor schließlich wieder mit Material zu befüllen, um ihn für den nächsten Waschzyklus vorzubereiten.</value>
+  </data>
+  <data name="FDS_HW_CYC_002" xml:space="preserve">
+    <value>Der Waschzyklus des Heißwaschreaktors dient dazu, neues, angefordertes Prozessmaterial in den Reaktor einzufüllen, das neue Material zu waschen, den Reaktor zu entleeren und ihn schließlich mit heißem Wasser wieder zu befüllen, um ihn für den nächsten Waschzyklus vorzubereiten.</value>
+  </data>
+  <data name="FDS_HW_CYC_003" xml:space="preserve">
+    <value>Der Leerzyklus des Heißwaschreaktors dient dazu, den Reaktor mit neuem, heißem Prozesswasser zu befüllen und so die nach längerer Zeit seit dem letzten Waschzyklus entstandene Temperaturabsenkung der Reaktorwände wiederherzustellen. Der Zyklus stellt die mechanische Temperatur des Reaktors wieder her und bereitet ihn so auf den nächsten Waschzyklus vor.</value>
+  </data>
+  <data name="INFO_OPEN_TIME" xml:space="preserve">
+    <value>Die Ventilöffnungszeit hat den maximal eingestellten Grenzwert überschritten. Untersuchen Sie die Ursachen vor Ort und berücksichtigen Sie dabei auch die Prozessdatenprotokolle.</value>
+  </data>
+  <data name="INFO_POS_TIMOUT" xml:space="preserve">
+    <value>Zielposition wurde innerhalb des Zeitlimits nicht erreicht. Überprüfen Sie die Ursachen vor Ort oder, falls verfügbar, in den entsprechenden HMI-Einstellungen.</value>
+  </data>
+  <data name="INFO_COOL_6" xml:space="preserve">
+    <value>Für einen kontinuierlichen Gerätebetrieb die Gehäusebelüftung sicherstellen.</value>
+  </data>
+  <data name="INFO_AMP_15" xml:space="preserve">
+    <value>Der im Stillstand gemessene Strom deutet auf einen Kurzschluss im Thyristor oder einen klemmenden Bypass hin. Schalten Sie die Stromzufuhr sofort ab, da der Motor unter Spannung stehen könnte. Überprüfen Sie die Sanftanlaufvorrichtung, bevor Sie einen Neustart versuchen.</value>
+  </data>
+  <data name="INFO_LEVEL_21" xml:space="preserve">
+    <value>Fehler im Füllstandssensorsignal. Überprüfen Sie die Geräteintegrität, die Feldverdrahtung und, bei analogen Anlagen, die Schaltschrankklemmen und die SPS-Eingangskarte. Bei IO-Link-Sensoren überprüfen Sie die Status-LEDs des Master-Ports und die Diagnose des Kommunikationspfads.</value>
+  </data>
+  <data name="INFO_EXT_MTR" xml:space="preserve">
+    <value>Der externe Motor hat nicht auf die Startanforderung reagiert. Bitte prüfen Sie, ob der Motor mit Strom versorgt wird, im lokalen Modus läuft oder ob ein Fehler im Rückmeldesignal vorliegt.</value>
+  </data>
+  <data name="P_ESTIM_PMP_FLOWRATE" xml:space="preserve">
+    <value>Geben Sie die durch direkte Messung ermittelte Pumpenfördermenge ein. Stellen Sie den Lufteinlassdruck der Pumpe vor dem Start auf 5 bar ein. Dieses Feld wird vom System zur Schätzung des Chemikalienverbrauchs verwendet.</value>
+  </data>
+  <data name="P_PREV_CONSUMPTION" xml:space="preserve">
+    <value>Dieses Feld zeigt den prognostizierten Chemikalienverbrauch bei voller Produktionskapazität auf Basis der aktuellen Parametereinstellungen an.</value>
+  </data>
+  <data name="P_ESTIM_VLV_FLOWRATE" xml:space="preserve">
+    <value>Geben Sie den durch direkte Messung ermittelten Durchfluss des Ventils ein. Dieses Feld wird vom System zur Schätzung des Wasserverbrauchs verwendet.</value>
+  </data>
+  <data name="P_ACT_CURRENT" xml:space="preserve">
+    <value>Zeigt den aktuellen Motorstrom als Prozentsatz der Nennleistung an. Beispiel: Bei einer Nennleistung von 120 A entspricht ein Wert von 33 % einem Stromverbrauch von 40 A.</value>
+  </data>
+  <data name="P_STOP_MAT_CURRENT" xml:space="preserve">
+    <value>Wenn der Motorstrom diesen Schwellenwert erreicht, stoppt das System den vorgelagerten Materialfluss nach der im folgenden Feld angegebenen Verzögerung.</value>
+  </data>
+  <data name="P_STOP_MAT_CURRENT_DELAY" xml:space="preserve">
+    <value>Diese Verzögerung dient als Hysterese für die Strombegrenzung. Sobald der Motorstrom den oben genannten Grenzwert überschreitet, startet der Timer und läuft so lange, wie der Strom über dem Schwellenwert bleibt. Bleibt der Strom während der gesamten Laufzeit über dem Grenzwert, wird der Materialfluss vorgelagert gestoppt.</value>
+  </data>
+  <data name="P_START_MAT_CURRENT" xml:space="preserve">
+    <value>Wenn der Motorstrom unter diesen Schwellenwert fällt, nimmt das System den vorgelagerten Materialfluss nach der im folgenden Feld angegebenen Verzögerung wieder auf.</value>
+  </data>
+  <data name="P_START_MAT_CURRENT_DELAY" xml:space="preserve">
+    <value>Diese Verzögerung dient als Hysterese für die Wiederanlaufschwelle. Sobald der Motorstrom unter diesen Grenzwert fällt, startet der Timer und läuft so lange, wie der Strom unterhalb des Schwellenwerts bleibt. Bleibt der Strom während der gesamten Dauer unterhalb des Grenzwerts, wird der Materialfluss vorgelagert wieder aufgenommen.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MAX" xml:space="preserve">
+    <value>Wenn der Motorstrom diesen Schwellenwert erreicht, löst das System nach der im folgenden Feld angegebenen Verzögerung einen Alarm aus, der auf eine mögliche Motoranomalie hinweist.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MAX_DELAY" xml:space="preserve">
+    <value>Diese Verzögerung dient als Hysterese für den Alarmschwellenwert. Sobald der Motorstrom diesen Grenzwert überschreitet, startet der Timer und läuft so lange, wie der Strom über dem Schwellenwert bleibt. Bleibt der Strom während der gesamten Dauer über dem Grenzwert, wird ein Motoranomaliealarm ausgelöst.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MIN" xml:space="preserve">
+    <value>Wenn der Motorstrom unter diesen Schwellenwert fällt, löst das System nach der im folgenden Feld angegebenen Verzögerung einen Alarm aus, der auf eine mögliche Motoranomalie hinweist.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MIN_DELAY" xml:space="preserve">
+    <value>Diese Verzögerung dient als Hysterese für die Alarmschwelle. Sobald der Motorstrom unter diesen Grenzwert fällt, startet der Timer und läuft so lange, wie der Strom unterhalb des Schwellenwerts bleibt. Bleibt der Strom während der gesamten Dauer unterhalb des Grenzwerts, wird ein Motoranomaliealarm ausgelöst.</value>
+  </data>
+  <data name="P_SPEED_DEMAND" xml:space="preserve">
+    <value>Zeigt die aktuelle Drehzahlanforderung an, die dem Frequenzumrichter des Motors bereitgestellt wird.</value>
+  </data>
+  <data name="P_SPEED_IN_PROD" xml:space="preserve">
+    <value>Die dem Motor vorgegebene Drehzahl wird angezeigt, wenn sich der Prozessbereich im Produktionsmodus befindet.</value>
+  </data>
+  <data name="P_SPEED_IN_MAINT" xml:space="preserve">
+    <value>Die dem Motor vorgegebene Drehzahl wird angezeigt, wenn sich der Prozessbereich im Wartungsmodus befindet.</value>
+  </data>
+  <data name="P_ACT_SPEED_FBK" xml:space="preserve">
+    <value>Zeigt die vom Wechselrichterregler empfangene Echtzeit-Rückmeldung der Motordrehzahl an.</value>
+  </data>
+  <data name="P_ACT_SPEED_FREQ" xml:space="preserve">
+    <value>Zeigt die vom Wechselrichter an den Motor gelieferte Echtzeit-Ausgangsfrequenz an.</value>
+  </data>
+  <data name="P_SPEED_IN_PROD_REV" xml:space="preserve">
+    <value>Sollwert für die Motordrehzahl, der verwendet wird, wenn sich der Prozessbereich im Produktionsmodus befindet und die Drehrichtung auf Rückwärts eingestellt ist.</value>
+  </data>
+  <data name="P_SPEED_IN_PROD_CONSTANT_MODE" xml:space="preserve">
+    <value>Die Motordrehzahl-Sollwertvorgabe wird verwendet, wenn sich der Prozessbereich im Produktionsmodus befindet und keine Drehzahlmodulation ausgewählt ist.</value>
+  </data>
+  <data name="P_SPEED_HIGH_x_TANK_REFILL" xml:space="preserve">
+    <value>Erhöhte Pumpendrehzahl zur Erleichterung der Tankbefüllung bei Wasserknappheit.</value>
   </data>
 </root>

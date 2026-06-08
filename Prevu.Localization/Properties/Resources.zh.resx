@@ -13266,4 +13266,124 @@
   <data name="SubZone - WT" xml:space="preserve">
     <value>子区域 - WT</value>
   </data>
+  <data name="FDS_WCE_001" xml:space="preserve">
+    <value>离心机是一种高速固液分离装置。它的作用是利用转子叶片产生的离心力，对进料进行脱水，并去除尺寸小于筛孔的残留细颗粒。</value>
+  </data>
+  <data name="FDS_HW_001" xml:space="preserve">
+    <value>热洗反应器利用热水、化学试剂和机械摩擦，通过分批式物料清洗流程，对进料的脏污片状物料进行清洗。清洗后的片状物料在清洗循环期间被输送到下游工艺流程中。</value>
+  </data>
+  <data name="FDS_AG_001" xml:space="preserve">
+    <value>搅拌器用于在物料加工过程中使物料在容器内保持悬浮状态。</value>
+  </data>
+  <data name="FDS_FLUID_PROCESS_WATER" xml:space="preserve">
+    <value>循环工艺用水</value>
+  </data>
+  <data name="FDS_FLUID_CLEAN_WET_FLAKES" xml:space="preserve">
+    <value>干净湿润的薄片</value>
+  </data>
+  <data name="FDS_FLUID_CHEMICAL_ANTIFOAM" xml:space="preserve">
+    <value>消泡剂</value>
+  </data>
+  <data name="FDS_HW_VLV_FILL_001" xml:space="preserve">
+    <value>该阀门用于向反应器内注入高温工艺用水，这些工艺用水将在不同的工艺循环中使用。</value>
+  </data>
+  <data name="FDS_HW_VLV_DISCH_001" xml:space="preserve">
+    <value>该阀门在不同的工艺循环中排出反应器中的工艺用水和颗粒物。</value>
+  </data>
+  <data name="FDS_HW_LEV_001" xml:space="preserve">
+    <value>通过该传感器测量热洗反应器的液位，以便在不同的工艺循环中控制液位。</value>
+  </data>
+  <data name="FDS_HW_PMP_DISCH_001" xml:space="preserve">
+    <value>该泵用于通过排放阀从反应器中抽取工艺物料，并将其送至下游工艺物料流。</value>
+  </data>
+  <data name="FDS_HW_PMP_ANTIFOAM_001" xml:space="preserve">
+    <value>该泵用于向反应器中添加消泡剂，以减少不同工艺循环过程中泡沫的积累。</value>
+  </data>
+  <data name="FDS_HW_CYC_001" xml:space="preserve">
+    <value>热洗反应器准备循环用于清空反应器中残留的工艺物料和水，用新的热工艺水预热反应器壁，最后将反应器重新装满物料，为下一个洗涤循环做好准备。</value>
+  </data>
+  <data name="FDS_HW_CYC_002" xml:space="preserve">
+    <value>热洗反应器清洗循环用于将新所需的工艺物料装入反应器，清洗新物料，清空反应器，最后重新注入热水，为下一个清洗循环做好准备。</value>
+  </data>
+  <data name="FDS_HW_CYC_003" xml:space="preserve">
+    <value>热清洗反应器空循环用于向反应器内注入新的热工艺水，以恢复上次清洗循环后长时间未清洗导致的反应器壁温度下降。该循环可恢复反应器的机械温度，使其为下一次清洗循环做好准备。</value>
+  </data>
+  <data name="INFO_OPEN_TIME" xml:space="preserve">
+    <value>阀门开启时间已超过设定的最大值。请现场调查原因，并参考过程数据日志。</value>
+  </data>
+  <data name="INFO_POS_TIMOUT" xml:space="preserve">
+    <value>超时时间内未到达目标位置。请在现场或在相应的 HMI 设置（如有）中核实原因。</value>
+  </data>
+  <data name="INFO_COOL_6" xml:space="preserve">
+    <value>启用机柜通风系统，以确保设备持续运行。</value>
+  </data>
+  <data name="INFO_AMP_15" xml:space="preserve">
+    <value>停止运行时检测到电流表明可控硅整流器短路或旁路卡滞。立即切断电源，因为电机可能已通电。尝试重新启动前，请检查软启动器硬件。</value>
+  </data>
+  <data name="INFO_LEVEL_21" xml:space="preserve">
+    <value>液位传感器信号故障。检查设备完整性、现场接线，对于模拟量程传感器，还需检查控制柜端子和PLC输入卡。对于IO-Link传感器，检查主端口状态指示灯和通信路径诊断信息。</value>
+  </data>
+  <data name="INFO_EXT_MTR" xml:space="preserve">
+    <value>外部电机未响应启动请求。请检查电机是否已通电、是否处于本地模式，或是否存在反馈信号故障。</value>
+  </data>
+  <data name="P_ESTIM_PMP_FLOWRATE" xml:space="preserve">
+    <value>输入通过直接测量检测到的泵流量。启动泵前，将泵入口气压设置为 5 bar。系统使用此参数来估算化学品消耗量。</value>
+  </data>
+  <data name="P_PREV_CONSUMPTION" xml:space="preserve">
+    <value>该字段显示根据当前参数设置，满负荷生产时预测的化学品消耗量。</value>
+  </data>
+  <data name="P_ESTIM_VLV_FLOWRATE" xml:space="preserve">
+    <value>输入通过直接测量检测到的阀门流量。系统会使用此字段来估算用水量。</value>
+  </data>
+  <data name="P_ACT_CURRENT" xml:space="preserve">
+    <value>以额定电流的百分比显示实时电机电流。例如：额定电流为 120 A 时，33% 的值表示电流消耗为 40 A。</value>
+  </data>
+  <data name="P_STOP_MAT_CURRENT" xml:space="preserve">
+    <value>当电机电流达到此阈值时，系统会在以下字段中指定的延迟时间后停止上游物料流动。</value>
+  </data>
+  <data name="P_STOP_MAT_CURRENT_DELAY" xml:space="preserve">
+    <value>此延迟起到限流滞后的作用。当电机电流超过上述限值时，计时器启动，只要电流保持在阈值以上，计时器就会持续运行。如果电流在整个持续时间内都超过限值，则上游物料流停止。</value>
+  </data>
+  <data name="P_START_MAT_CURRENT" xml:space="preserve">
+    <value>当电机电流低于此阈值时，系统将在以下字段中指定的延迟后恢复上游物料流。</value>
+  </data>
+  <data name="P_START_MAT_CURRENT_DELAY" xml:space="preserve">
+    <value>此延迟起到重启阈值滞后的作用。当电机电流低于此限值时，计时器启动，并在电流保持在阈值以下期间持续运行。如果电流在整个持续时间内都保持在限值以下，则恢复上游物料流动。</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MAX" xml:space="preserve">
+    <value>当电机电流达到此阈值时，系统会在以下字段中指定的延迟后触发警报，指示可能存在电机异常。</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MAX_DELAY" xml:space="preserve">
+    <value>此延迟起到报警阈值滞后的作用。当电机电流超过此限值时，计时器启动，只要电流保持在阈值以上，计时器就会持续运行。如果电流在整个持续时间内都超过限值，则会触发电机异常报警。</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MIN" xml:space="preserve">
+    <value>当电机电流低于此阈值时，系统会在以下字段中指定的延迟后触发警报，指示可能存在电机异常。</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MIN_DELAY" xml:space="preserve">
+    <value>此延迟起到报警阈值滞后的作用。当电机电流低于此限值时，计时器启动，并在电流保持在阈值以下期间持续运行。如果电流在整个持续时间内始终低于限值，则会触发电机异常报警。</value>
+  </data>
+  <data name="P_SPEED_DEMAND" xml:space="preserve">
+    <value>显示当前提供给电机变频器的速度需求。</value>
+  </data>
+  <data name="P_SPEED_IN_PROD" xml:space="preserve">
+    <value>当工艺区域处于生产模式时，为电机提供速度设定值。</value>
+  </data>
+  <data name="P_SPEED_IN_MAINT" xml:space="preserve">
+    <value>当工艺区域处于维护模式时，为电机提供速度设定值。</value>
+  </data>
+  <data name="P_ACT_SPEED_FBK" xml:space="preserve">
+    <value>显示从逆变器控制器接收到的实时电机转速反馈。</value>
+  </data>
+  <data name="P_ACT_SPEED_FREQ" xml:space="preserve">
+    <value>显示逆变器向电机提供的实时输出频率。</value>
+  </data>
+  <data name="P_SPEED_IN_PROD_REV" xml:space="preserve">
+    <value>当工艺区域处于生产模式且方向设置为反转时使用的电机速度设定值。</value>
+  </data>
+  <data name="P_SPEED_IN_PROD_CONSTANT_MODE" xml:space="preserve">
+    <value>当工艺区域处于生产模式且未选择速度调节时，使用的电机速度设定值。</value>
+  </data>
+  <data name="P_SPEED_HIGH_x_TANK_REFILL" xml:space="preserve">
+    <value>提高水泵转速设定值，以便在检测到缺水时加快水箱注水速度。</value>
+  </data>
 </root>

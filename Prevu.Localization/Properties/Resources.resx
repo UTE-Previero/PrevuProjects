@@ -12315,7 +12315,7 @@ Note: If this mode is activated, upstream production may be suspended.</value>
     <value>Water Treatment Ok To Receive (External Signal)</value>
   </data>
   <data name="VAR MIN LEVEL (EXTERNAL SIGNAL)" xml:space="preserve">
-    <value>Var Min Level (External Signal)</value>
+    <value>VAR Min Level (External Signal)</value>
   </data>
   <data name="COLLECTING TANK NO MAXIMUM LEVEL" xml:space="preserve">
     <value>Collecting Tank No Maximum Level</value>
@@ -14009,7 +14009,7 @@ Note: If this mode is activated, upstream production may be suspended.</value>
     <value>SubZone - WT</value>
   </data>
   <data name="FDS_WCE_001" xml:space="preserve">
-    <value>The centrifuge is a high-speed, solids-liquid separation unit. Its role is to dewater incoming material and remove residual fines with a size smaller than the containment screen holes through centrifugal forces applied by the rotor blades.</value>
+    <value>The centrifuge is a high-speed, solids-liquid separation unit. IBM role is to dewater incoming material and remove residual fines with a size smaller than the containment screen holes through centrifugal forces applied by the rotor blades.</value>
     <comment>FDS Machine Description</comment>
   </data>
   <data name="FDS_HW_001" xml:space="preserve">
@@ -14063,5 +14063,109 @@ Note: If this mode is activated, upstream production may be suspended.</value>
   <data name="FDS_HW_CYC_003" xml:space="preserve">
     <value>The hot wash reactor empty cycle is used to refill the reactor with new hot process water to restore any lost reactor walls temperature after a prolonged time since the last wash cycle.  The cycle restores the reactor mechanical temperature preparing it for the next wash cycle.</value>
     <comment>FDS Process Cycle Description</comment>
+  </data>
+  <data name="INFO_OPEN_TIME" xml:space="preserve">
+    <value>The valve opening time has exceeded the maximum set limit. Investigate the causes in the field, also referring to the process data logs</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_POS_TIMOUT" xml:space="preserve">
+    <value>Target position not reached within the timeout period. Verify the causes in the field or, if available, in the corresponding HMI settings.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_COOL_6" xml:space="preserve">
+    <value>Enable cabinet ventilation for continuous device operation.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_AMP_15" xml:space="preserve">
+    <value>Current detected while stopped suggests a shorted SCR or stuck bypass. Isolate power immediately as the motor may be energized. Inspect the softstarter hardware before attempting a restart.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_LEVEL_21" xml:space="preserve">
+    <value>Level sensor signal fault. Check device integrity, field wiring and, for analog setups, cabinet terminals and PLC input card. For IO-Link sensors, check the Master port status LEDs and communication path diagnostics.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="INFO_EXT_MTR" xml:space="preserve">
+    <value>The external motor did not respond to the start request. Please verify if the motor is powered, in local mode, or if there is a feedback signal failure.</value>
+    <comment>InfoText Fault</comment>
+  </data>
+  <data name="P_ESTIM_PMP_FLOWRATE" xml:space="preserve">
+    <value>Input the pump flow rate detected through direct measurement. Set the pump inlet air pressure to 5 bar before pump start-up. This field is used by the system to estimate chemical consumption.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_PREV_CONSUMPTION" xml:space="preserve">
+    <value>This field displays the predicted chemical consumption at full production capacity, based on the current parameter settings.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_ESTIM_VLV_FLOWRATE" xml:space="preserve">
+    <value>Input the valve flow rate detected through direct measurement. This field is used by the system to estimate water consumption.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_ACT_CURRENT" xml:space="preserve">
+    <value>Displays the real-time motor current as a percentage of the nominal rating. Example: at a 120 A rating, a 33% value indicates a current consumption of 40 A.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_STOP_MAT_CURRENT" xml:space="preserve">
+    <value>When the motor current reaches this threshold, the system halts the upstream material flow after the delay specified in the following field.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_STOP_MAT_CURRENT_DELAY" xml:space="preserve">
+    <value>This delay acts as a hysteresis for the current limit. When the motor current exceeds the above limit, the timer starts and continues as long as the current remains above the threshold. If the current stays over the limit for the entire duration, the upstream material flow is stopped.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_START_MAT_CURRENT" xml:space="preserve">
+    <value>When the motor current falls below this threshold, the system resumes the upstream material flow after the delay specified in the following field.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_START_MAT_CURRENT_DELAY" xml:space="preserve">
+    <value>This delay acts as a hysteresis for the restart threshold. When the motor current falls below this limit, the timer starts and continues as long as the current remains below the threshold. If the current stays below the limit for the entire duration, upstream material flow is resumed.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MAX" xml:space="preserve">
+    <value>When the motor current reaches this threshold, the system triggers an alarm indicating a potential motor anomaly after the delay specified in the following field.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MAX_DELAY" xml:space="preserve">
+    <value>This delay acts as a hysteresis for the alarm threshold. When the motor current exceeds this limit, the timer starts and continues as long as the current remains above the threshold. If the current stays over the limit for the entire duration, a motor anomaly alarm is triggered.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MIN" xml:space="preserve">
+    <value>When the motor current falls below this threshold, the system triggers an alarm indicating a potential motor anomaly after the delay specified in the following field.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MIN_DELAY" xml:space="preserve">
+    <value>This delay acts as a hysteresis for the alarm threshold. When the motor current falls below this limit, the timer starts and continues as long as the current remains below the threshold. If the current stays below the limit for the entire duration, a motor anomaly alarm is triggered.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_SPEED_DEMAND" xml:space="preserve">
+    <value>Displays the current speed demand provided to the Inverter of the motor.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_SPEED_IN_PROD" xml:space="preserve">
+    <value>Speed setpoint provided to the motor when the process area is in Production mode.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_SPEED_IN_MAINT" xml:space="preserve">
+    <value>Speed setpoint provided to the motor when the process area is in Maintenance mode.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_ACT_SPEED_FBK" xml:space="preserve">
+    <value>Displays the real-time motor speed feedback received from the inverter controller.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_ACT_SPEED_FREQ" xml:space="preserve">
+    <value>Displays the real-time output frequency provided by the inverter to the motor.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_SPEED_IN_PROD_REV" xml:space="preserve">
+    <value>Motor speed setpoint used when the process area is in Production mode and the direction is set to Reverse.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_SPEED_IN_PROD_CONSTANT_MODE" xml:space="preserve">
+    <value>Motor speed setpoint used when the process area is in Production mode and speed modulation is not selected.</value>
+    <comment>InfoText Parameter</comment>
+  </data>
+  <data name="P_SPEED_HIGH_x_TANK_REFILL" xml:space="preserve">
+    <value>Increased pump speed setpoint to facilitate tank refilling when a water shortage is detected.</value>
+    <comment>InfoText Parameter</comment>
   </data>
 </root>

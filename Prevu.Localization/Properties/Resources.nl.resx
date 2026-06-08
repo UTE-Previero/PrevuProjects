@@ -11872,7 +11872,7 @@ Opmerking: Als deze modus is geactiveerd, kan de upstream-productie worden opges
     <value>Waterbehandeling OK om te ontvangen (extern signaal)</value>
   </data>
   <data name="VAR MIN LEVEL (EXTERNAL SIGNAL)" xml:space="preserve">
-    <value>Var Min-niveau (extern signaal)</value>
+    <value>VAR Min-niveau (extern signaal)</value>
   </data>
   <data name="COLLECTING TANK NO MAXIMUM LEVEL" xml:space="preserve">
     <value>Verzameltank Geen maximaal niveau</value>
@@ -13265,5 +13265,125 @@ Opmerking: Als deze modus is geactiveerd, kan de upstream-productie worden opges
   </data>
   <data name="SubZone - WT" xml:space="preserve">
     <value>Subzone - WT</value>
+  </data>
+  <data name="FDS_WCE_001" xml:space="preserve">
+    <value>De centrifuge is een hogesnelheidseenheid voor het scheiden van vaste stoffen en vloeistoffen. De functie ervan is het ontwateren van het binnenkomende materiaal en het verwijderen van resterende fijne deeltjes met een afmeting kleiner dan de gaten in het filter door middel van centrifugale krachten die worden uitgeoefend door de rotorbladen.</value>
+  </data>
+  <data name="FDS_HW_001" xml:space="preserve">
+    <value>De hete wasreactor gebruikt heet water, chemische middelen en mechanische wrijving om binnenkomende vervuilde vlokken te reinigen via een batchgewijs wasproces. De gewassen vlokken worden tijdens de wascyclus naar de volgende processtroom getransporteerd.</value>
+  </data>
+  <data name="FDS_AG_001" xml:space="preserve">
+    <value>De roerder wordt gebruikt om het materiaal tijdens de verwerking in suspensie te houden in het vat.</value>
+  </data>
+  <data name="FDS_FLUID_PROCESS_WATER" xml:space="preserve">
+    <value>Gerecycled proceswater</value>
+  </data>
+  <data name="FDS_FLUID_CLEAN_WET_FLAKES" xml:space="preserve">
+    <value>Schone, natte vlokken</value>
+  </data>
+  <data name="FDS_FLUID_CHEMICAL_ANTIFOAM" xml:space="preserve">
+    <value>Antischuimmiddel</value>
+  </data>
+  <data name="FDS_HW_VLV_FILL_001" xml:space="preserve">
+    <value>Deze klep vult de reactor met heet proceswater dat tijdens verschillende procescycli wordt gebruikt.</value>
+  </data>
+  <data name="FDS_HW_VLV_DISCH_001" xml:space="preserve">
+    <value>Deze klep voert het proceswater en de deeltjes uit de reactor af tijdens verschillende procescycli.</value>
+  </data>
+  <data name="FDS_HW_LEV_001" xml:space="preserve">
+    <value>Het niveau in de hete wasreactor wordt via deze transducer gemeten om het niveau tijdens verschillende procescycli te regelen.</value>
+  </data>
+  <data name="FDS_HW_PMP_DISCH_001" xml:space="preserve">
+    <value>Deze pomp wordt gebruikt om procesmateriaal uit de reactor te halen via de afvoerklep en het naar de stroomafwaartse procesmateriaalstroom te transporteren.</value>
+  </data>
+  <data name="FDS_HW_PMP_ANTIFOAM_001" xml:space="preserve">
+    <value>Deze pomp wordt gebruikt om een ​​antischuimmiddel aan de reactor toe te voegen om schuimvorming tijdens de verschillende procescycli te verminderen.</value>
+  </data>
+  <data name="FDS_HW_CYC_001" xml:space="preserve">
+    <value>De voorbereidingscyclus van de hete wasreactor wordt gebruikt om eventueel resterend procesmateriaal en water uit de reactor te verwijderen, de reactorwanden voor te verwarmen met nieuw heet proceswater en de reactor vervolgens opnieuw te vullen met materiaal ter voorbereiding op de volgende wascyclus.</value>
+  </data>
+  <data name="FDS_HW_CYC_002" xml:space="preserve">
+    <value>De wascyclus van de hete reactor wordt gebruikt om nieuw, gewenst procesmateriaal in de reactor te laden, het nieuwe materiaal te wassen, de reactor te legen en deze vervolgens opnieuw met heet water te vullen ter voorbereiding op de volgende wascyclus.</value>
+  </data>
+  <data name="FDS_HW_CYC_003" xml:space="preserve">
+    <value>De hete wascyclus voor de lege reactor wordt gebruikt om de reactor opnieuw te vullen met heet proceswater. Dit herstelt de temperatuur van de reactorwanden, die na een lange periode sinds de laatste wascyclus weer is opgelopen. De cyclus herstelt de mechanische temperatuur van de reactor, waardoor deze klaar is voor de volgende wascyclus.</value>
+  </data>
+  <data name="INFO_OPEN_TIME" xml:space="preserve">
+    <value>De openingstijd van de klep heeft de ingestelde maximumlimiet overschreden. Onderzoek de oorzaken ter plaatse en raadpleeg daarbij ook de procesgegevenslogboeken.</value>
+  </data>
+  <data name="INFO_POS_TIMOUT" xml:space="preserve">
+    <value>Doelpositie niet bereikt binnen de ingestelde tijd. Controleer de oorzaken ter plaatse of, indien beschikbaar, in de bijbehorende HMI-instellingen.</value>
+  </data>
+  <data name="INFO_COOL_6" xml:space="preserve">
+    <value>Schakel kastventilatie in voor continue werking van het apparaat.</value>
+  </data>
+  <data name="INFO_AMP_15" xml:space="preserve">
+    <value>Stroomdetectie tijdens stilstand duidt op een kortgesloten SCR of een vastgelopen bypass. Schakel de stroom onmiddellijk uit, aangezien de motor mogelijk nog onder spanning staat. Controleer de softstarter voordat u een herstart probeert.</value>
+  </data>
+  <data name="INFO_LEVEL_21" xml:space="preserve">
+    <value>Storing in het signaal van de niveausensor. Controleer de integriteit van het apparaat, de veldbedrading en, bij analoge configuraties, de kastaansluitingen en de PLC-ingangskaart. Controleer bij IO-Link-sensoren de status-LED's van de masterpoort en de diagnose van het communicatiepad.</value>
+  </data>
+  <data name="INFO_EXT_MTR" xml:space="preserve">
+    <value>De externe motor reageerde niet op het startverzoek. Controleer of de motor is ingeschakeld, in de lokale modus staat of dat er een storing is in het terugkoppelsignaal.</value>
+  </data>
+  <data name="P_ESTIM_PMP_FLOWRATE" xml:space="preserve">
+    <value>Voer de gemeten pompdebiet in. Stel de inlaatluchtdruk van de pomp in op 5 bar voordat de pomp wordt gestart. Dit veld wordt door het systeem gebruikt om het chemicaliënverbruik te schatten.</value>
+  </data>
+  <data name="P_PREV_CONSUMPTION" xml:space="preserve">
+    <value>Dit veld toont het voorspelde chemicaliënverbruik bij volledige productiecapaciteit, gebaseerd op de huidige parameterinstellingen.</value>
+  </data>
+  <data name="P_ESTIM_VLV_FLOWRATE" xml:space="preserve">
+    <value>Voer de door middel van directe meting gedetecteerde klepdoorstroom in. Dit veld wordt door het systeem gebruikt om het waterverbruik te schatten.</value>
+  </data>
+  <data name="P_ACT_CURRENT" xml:space="preserve">
+    <value>Geeft de actuele motorstroom weer als percentage van de nominale waarde. Bijvoorbeeld: bij een nominale stroom van 120 A geeft een waarde van 33% een stroomverbruik van 40 A aan.</value>
+  </data>
+  <data name="P_STOP_MAT_CURRENT" xml:space="preserve">
+    <value>Wanneer de motorstroom deze drempelwaarde bereikt, stopt het systeem de materiaalstroom stroomopwaarts na de vertraging die in het volgende veld is gespecificeerd.</value>
+  </data>
+  <data name="P_STOP_MAT_CURRENT_DELAY" xml:space="preserve">
+    <value>Deze vertraging fungeert als hysteresis voor de stroombegrenzing. Wanneer de motorstroom de bovengenoemde limiet overschrijdt, start de timer en blijft deze lopen zolang de stroom boven de drempelwaarde blijft. Als de stroom gedurende de gehele timerduur boven de limiet blijft, wordt de materiaalstroom stroomopwaarts gestopt.</value>
+  </data>
+  <data name="P_START_MAT_CURRENT" xml:space="preserve">
+    <value>Wanneer de motorstroom onder deze drempelwaarde zakt, hervat het systeem de materiaalstroom stroomopwaarts na de vertraging die in het volgende veld is gespecificeerd.</value>
+  </data>
+  <data name="P_START_MAT_CURRENT_DELAY" xml:space="preserve">
+    <value>Deze vertraging fungeert als hysterese voor de herstartdrempel. Wanneer de motorstroom onder deze limiet zakt, start de timer en blijft deze actief zolang de stroom onder de drempel blijft. Als de stroom gedurende de gehele duur onder de limiet blijft, wordt de materiaalstroom stroomopwaarts hervat.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MAX" xml:space="preserve">
+    <value>Wanneer de motorstroom deze drempelwaarde bereikt, activeert het systeem een ​​alarm dat een mogelijke motorafwijking aangeeft, na de vertraging die in het volgende veld is gespecificeerd.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MAX_DELAY" xml:space="preserve">
+    <value>Deze vertraging fungeert als hysterese voor de alarmdrempel. Wanneer de motorstroom deze limiet overschrijdt, start de timer en blijft deze lopen zolang de stroom boven de drempel blijft. Als de stroom gedurende de gehele timerduur boven de limiet blijft, wordt een alarm voor een motorstoring geactiveerd.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MIN" xml:space="preserve">
+    <value>Wanneer de motorstroom onder deze drempelwaarde zakt, activeert het systeem een ​​alarm dat een mogelijke motorafwijking aangeeft, na de vertraging die in het volgende veld is gespecificeerd.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MIN_DELAY" xml:space="preserve">
+    <value>Deze vertraging fungeert als hysterese voor de alarmdrempel. Wanneer de motorstroom onder deze limiet komt, start de timer en blijft deze lopen zolang de stroom onder de drempel blijft. Als de stroom gedurende de gehele timerduur onder de limiet blijft, wordt een alarm voor een motorstoring geactiveerd.</value>
+  </data>
+  <data name="P_SPEED_DEMAND" xml:space="preserve">
+    <value>Geeft de actuele snelheidsvraag weer die aan de frequentieregelaar van de motor wordt geleverd.</value>
+  </data>
+  <data name="P_SPEED_IN_PROD" xml:space="preserve">
+    <value>Het ingestelde toerental wordt aan de motor doorgegeven wanneer het procesgebied in productiemodus is.</value>
+  </data>
+  <data name="P_SPEED_IN_MAINT" xml:space="preserve">
+    <value>Het ingestelde toerental wordt aan de motor doorgegeven wanneer het procesgebied in de onderhoudsmodus staat.</value>
+  </data>
+  <data name="P_ACT_SPEED_FBK" xml:space="preserve">
+    <value>Geeft de realtime feedback van de motorsnelheid weer, ontvangen van de frequentieregelaar.</value>
+  </data>
+  <data name="P_ACT_SPEED_FREQ" xml:space="preserve">
+    <value>Geeft de realtime uitgangsfrequentie weer die de omvormer aan de motor levert.</value>
+  </data>
+  <data name="P_SPEED_IN_PROD_REV" xml:space="preserve">
+    <value>Het ingestelde motortoerental wordt gebruikt wanneer het procesgebied in productiemodus staat en de draairichting is ingesteld op achteruit.</value>
+  </data>
+  <data name="P_SPEED_IN_PROD_CONSTANT_MODE" xml:space="preserve">
+    <value>Het ingestelde motortoerental wordt gebruikt wanneer het procesgebied in productiemodus staat en snelheidsmodulatie niet is geselecteerd.</value>
+  </data>
+  <data name="P_SPEED_HIGH_x_TANK_REFILL" xml:space="preserve">
+    <value>Verhoogde pompsnelheid om het bijvullen van de tank te vergemakkelijken wanneer een watertekort wordt geconstateerd.</value>
   </data>
 </root>

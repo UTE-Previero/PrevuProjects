@@ -11872,7 +11872,7 @@ Observação: Se este modo estiver ativado, a produção a montante poderá ser 
     <value>Tratamento de Água Ok para Receber (Sinal Externo)</value>
   </data>
   <data name="VAR MIN LEVEL (EXTERNAL SIGNAL)" xml:space="preserve">
-    <value>Nível Var Min (Sinal Externo)</value>
+    <value>Nível VAR Min (Sinal Externo)</value>
   </data>
   <data name="COLLECTING TANK NO MAXIMUM LEVEL" xml:space="preserve">
     <value>Tanque de coleta sem nível máximo</value>
@@ -13265,5 +13265,125 @@ Observação: Se este modo estiver ativado, a produção a montante poderá ser 
   </data>
   <data name="SubZone - WT" xml:space="preserve">
     <value>Subzona - WT</value>
+  </data>
+  <data name="FDS_WCE_001" xml:space="preserve">
+    <value>A centrífuga é uma unidade de separação sólido-líquido de alta velocidade. Sua função é desidratar o material de entrada e remover partículas finas residuais com tamanho inferior aos orifícios da tela de contenção por meio de forças centrífugas aplicadas pelas pás do rotor.</value>
+  </data>
+  <data name="FDS_HW_001" xml:space="preserve">
+    <value>O reator de lavagem a quente utiliza água quente, agentes químicos e fricção mecânica para limpar flocos sujos que chegam através de uma sequência de lavagem de material em lotes. Os flocos lavados são transferidos para o fluxo do processo subsequente durante o ciclo de lavagem.</value>
+  </data>
+  <data name="FDS_AG_001" xml:space="preserve">
+    <value>O agitador é utilizado para manter o material em suspensão dentro do recipiente durante o processamento do material.</value>
+  </data>
+  <data name="FDS_FLUID_PROCESS_WATER" xml:space="preserve">
+    <value>Água de processo reciclada</value>
+  </data>
+  <data name="FDS_FLUID_CLEAN_WET_FLAKES" xml:space="preserve">
+    <value>Flocos úmidos e limpos</value>
+  </data>
+  <data name="FDS_FLUID_CHEMICAL_ANTIFOAM" xml:space="preserve">
+    <value>Agente antiespumante</value>
+  </data>
+  <data name="FDS_HW_VLV_FILL_001" xml:space="preserve">
+    <value>Esta válvula enche o reator com água quente de processo para ser usada durante os diferentes ciclos do processo.</value>
+  </data>
+  <data name="FDS_HW_VLV_DISCH_001" xml:space="preserve">
+    <value>Esta válvula esvazia o reator da água de processo e dos flocos durante os diferentes ciclos do processo.</value>
+  </data>
+  <data name="FDS_HW_LEV_001" xml:space="preserve">
+    <value>O nível do reator de lavagem a quente é medido por meio deste transdutor para controlar o nível durante os diferentes ciclos do processo.</value>
+  </data>
+  <data name="FDS_HW_PMP_DISCH_001" xml:space="preserve">
+    <value>Esta bomba é utilizada para extrair o material do processo do reator através da válvula de descarga e enviá-lo para o fluxo de material do processo a jusante.</value>
+  </data>
+  <data name="FDS_HW_PMP_ANTIFOAM_001" xml:space="preserve">
+    <value>Esta bomba é utilizada para adicionar um agente antiespumante ao reator, a fim de reduzir o acúmulo de espuma durante os diferentes ciclos do processo.</value>
+  </data>
+  <data name="FDS_HW_CYC_001" xml:space="preserve">
+    <value>O ciclo de preparação do reator de lavagem a quente é utilizado para remover qualquer material residual do processo e água do reator, pré-aquecer as paredes do reator com nova água quente do processo e, finalmente, reabastecer o reator, preparando-o para o próximo ciclo de lavagem com material.</value>
+  </data>
+  <data name="FDS_HW_CYC_002" xml:space="preserve">
+    <value>O ciclo de lavagem do reator de lavagem a quente é utilizado para carregar o novo material de processo solicitado no reator, lavar o novo material, esvaziar o reator e, finalmente, enchê-lo novamente com água quente, preparando-o para o próximo ciclo de lavagem.</value>
+  </data>
+  <data name="FDS_HW_CYC_003" xml:space="preserve">
+    <value>O ciclo de esvaziamento do reator de lavagem a quente é utilizado para reabastecer o reator com água de processo quente, restaurando a temperatura das paredes do reator, que havia caído após um longo período desde o último ciclo de lavagem. O ciclo restaura a temperatura mecânica do reator, preparando-o para o próximo ciclo de lavagem.</value>
+  </data>
+  <data name="INFO_OPEN_TIME" xml:space="preserve">
+    <value>O tempo de abertura da válvula excedeu o limite máximo definido. Investigue as causas em campo, consultando também os registros de dados do processo.</value>
+  </data>
+  <data name="INFO_POS_TIMOUT" xml:space="preserve">
+    <value>A posição alvo não foi alcançada dentro do período de tempo limite. Verifique as causas em campo ou, se disponíveis, nas configurações correspondentes da IHM (Interface Homem-Máquina).</value>
+  </data>
+  <data name="INFO_COOL_6" xml:space="preserve">
+    <value>Ative a ventilação do gabinete para operação contínua do dispositivo.</value>
+  </data>
+  <data name="INFO_AMP_15" xml:space="preserve">
+    <value>A detecção de corrente com o motor parado sugere um curto-circuito no SCR ou um bypass travado. Desligue a alimentação imediatamente, pois o motor pode estar energizado. Inspecione o soft starter antes de tentar reiniciar o motor.</value>
+  </data>
+  <data name="INFO_LEVEL_21" xml:space="preserve">
+    <value>Falha no sinal do sensor de nível. Verifique a integridade do dispositivo, a fiação de campo e, para configurações analógicas, os terminais do painel e a placa de entrada do CLP. Para sensores IO-Link, verifique os LEDs de status da porta Master e o diagnóstico do caminho de comunicação.</value>
+  </data>
+  <data name="INFO_EXT_MTR" xml:space="preserve">
+    <value>O motor externo não respondeu à solicitação de inicialização. Verifique se o motor está energizado, em modo local ou se há alguma falha no sinal de feedback.</value>
+  </data>
+  <data name="P_ESTIM_PMP_FLOWRATE" xml:space="preserve">
+    <value>Insira a vazão da bomba detectada por meio de medição direta. Ajuste a pressão de entrada de ar da bomba para 5 bar antes de ligá-la. Este campo é usado pelo sistema para estimar o consumo de produtos químicos.</value>
+  </data>
+  <data name="P_PREV_CONSUMPTION" xml:space="preserve">
+    <value>Este campo exibe o consumo previsto de produtos químicos em plena capacidade de produção, com base nas configurações de parâmetros atuais.</value>
+  </data>
+  <data name="P_ESTIM_VLV_FLOWRATE" xml:space="preserve">
+    <value>Insira a vazão da válvula detectada por meio de medição direta. Este campo é usado pelo sistema para estimar o consumo de água.</value>
+  </data>
+  <data name="P_ACT_CURRENT" xml:space="preserve">
+    <value>Exibe a corrente do motor em tempo real como uma porcentagem da corrente nominal. Exemplo: para uma corrente nominal de 120 A, um valor de 33% indica um consumo de corrente de 40 A.</value>
+  </data>
+  <data name="P_STOP_MAT_CURRENT" xml:space="preserve">
+    <value>Quando a corrente do motor atinge esse limite, o sistema interrompe o fluxo de material a montante após o atraso especificado no campo seguinte.</value>
+  </data>
+  <data name="P_STOP_MAT_CURRENT_DELAY" xml:space="preserve">
+    <value>Esse atraso funciona como uma histerese para o limite de corrente. Quando a corrente do motor excede o limite acima, o temporizador inicia e continua enquanto a corrente permanecer acima do limite. Se a corrente permanecer acima do limite durante toda a duração, o fluxo de material a montante é interrompido.</value>
+  </data>
+  <data name="P_START_MAT_CURRENT" xml:space="preserve">
+    <value>Quando a corrente do motor cai abaixo desse limite, o sistema retoma o fluxo de material a montante após o atraso especificado no campo seguinte.</value>
+  </data>
+  <data name="P_START_MAT_CURRENT_DELAY" xml:space="preserve">
+    <value>Esse atraso funciona como uma histerese para o limite de reinicialização. Quando a corrente do motor cai abaixo desse limite, o temporizador inicia e continua enquanto a corrente permanecer abaixo do limite. Se a corrente permanecer abaixo do limite durante toda a duração, o fluxo de material a montante é retomado.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MAX" xml:space="preserve">
+    <value>Quando a corrente do motor atinge esse limite, o sistema dispara um alarme indicando uma possível anomalia no motor após o atraso especificado no campo seguinte.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MAX_DELAY" xml:space="preserve">
+    <value>Esse atraso funciona como uma histerese para o limite de alarme. Quando a corrente do motor excede esse limite, o temporizador inicia e continua enquanto a corrente permanecer acima do limite. Se a corrente permanecer acima do limite durante toda a duração, um alarme de anomalia do motor é acionado.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MIN" xml:space="preserve">
+    <value>Quando a corrente do motor cai abaixo desse limite, o sistema dispara um alarme indicando uma possível anomalia no motor após o atraso especificado no campo seguinte.</value>
+  </data>
+  <data name="P_IN_RANGE_CURRENT_MIN_DELAY" xml:space="preserve">
+    <value>Esse atraso funciona como uma histerese para o limite de alarme. Quando a corrente do motor cai abaixo desse limite, o temporizador inicia e continua enquanto a corrente permanecer abaixo do limite. Se a corrente permanecer abaixo do limite durante toda a duração, um alarme de anomalia do motor é acionado.</value>
+  </data>
+  <data name="P_SPEED_DEMAND" xml:space="preserve">
+    <value>Exibe a demanda de velocidade atual fornecida ao inversor do motor.</value>
+  </data>
+  <data name="P_SPEED_IN_PROD" xml:space="preserve">
+    <value>Ponto de ajuste de velocidade fornecido ao motor quando a área de processo está em modo de produção.</value>
+  </data>
+  <data name="P_SPEED_IN_MAINT" xml:space="preserve">
+    <value>Ponto de ajuste de velocidade fornecido ao motor quando a área de processo está em modo de manutenção.</value>
+  </data>
+  <data name="P_ACT_SPEED_FBK" xml:space="preserve">
+    <value>Exibe o feedback da velocidade do motor em tempo real recebido do controlador do inversor.</value>
+  </data>
+  <data name="P_ACT_SPEED_FREQ" xml:space="preserve">
+    <value>Exibe a frequência de saída em tempo real fornecida pelo inversor ao motor.</value>
+  </data>
+  <data name="P_SPEED_IN_PROD_REV" xml:space="preserve">
+    <value>Ponto de ajuste da velocidade do motor utilizado quando a área de processo está no modo de Produção e a direção está definida como Inversa.</value>
+  </data>
+  <data name="P_SPEED_IN_PROD_CONSTANT_MODE" xml:space="preserve">
+    <value>O ponto de ajuste da velocidade do motor é utilizado quando a área de processo está no modo de Produção e a modulação de velocidade não está selecionada.</value>
+  </data>
+  <data name="P_SPEED_HIGH_x_TANK_REFILL" xml:space="preserve">
+    <value>Aumento da velocidade de ajuste da bomba para facilitar o reabastecimento do tanque quando for detectada falta de água.</value>
   </data>
 </root>
