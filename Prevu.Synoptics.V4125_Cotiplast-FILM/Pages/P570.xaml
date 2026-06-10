@@ -15,7 +15,7 @@
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="248" StatusComponent="544-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Canvas.Left="520" Canvas.Top="252">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="248" StatusComponent="544-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Canvas.Left="520" Canvas.Top="252" VisibilitySignal="LS-OPEN" VisibilityComponent="540-21-CV1">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
@@ -30,16 +30,16 @@
             </Machines:V01_NT_BufferBelt.RenderTransform>
         </Machines:V01_NT_BufferBelt>
         <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="250" StatusComponent="570-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Canvas.Left="944" Canvas.Top="654" Direction="DirectionOne"/>
-        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="180" StatusComponent="544-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Canvas.Left="468" Canvas.Top="131"/>
-        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="372" StatusComponent="570-21-CV1" Color="Air" Canvas.Left="496" Canvas.Top="271"/>
-        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="89" StatusComponent="570-21-CV1" Color="Air" RenderTransformOrigin="0.5,0.5" Canvas.Left="557" Canvas.Top="314">
+        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="180" StatusComponent="544-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Canvas.Left="468" Canvas.Top="131" VisibilitySignal="LS-OPEN" VisibilityComponent="540-21-CV1"/>
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Center" Width="141" StatusComponent="570-21-CV1" Color="Air" Canvas.Left="496" Canvas.Top="271"/>
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="65" StatusComponent="570-21-CV1" Color="Air" RenderTransformOrigin="0.5,0.5" Canvas.Left="569" Canvas.Top="302">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Labels:Pipe HorizontalAlignment="Left" VerticalAlignment="Center" Width="89" StatusComponent="570-21-CV1" Color="Air" RenderTransformOrigin="0.5,0.5" Canvas.Left="821" Canvas.Top="313">
+        <Labels:Pipe HorizontalAlignment="Center" VerticalAlignment="Top" Width="63" StatusComponent="570-21-CV1" Color="Air" RenderTransformOrigin="0.5,0.5" Canvas.Left="834" Canvas.Top="300">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
@@ -88,5 +88,6 @@
         <Labels:DeviceLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="570-41-LT2" Canvas.Left="820" Canvas.Top="376"/>
         <Labels:DeviceLabel ComponentName="570-BUFFER" Canvas.Left="410" Canvas.Top="354" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:JumpLabel HorizontalAlignment="Left" VerticalAlignment="Center" JumpFromLabel="570-01-MA1" JumpToLabel="544-01-MA1" Canvas.Left="427" Canvas.Top="101"/>
+        <Labels:Pipe Width="217" StatusComponent="570-21-CV1" Color="Air" Canvas.Left="651" Canvas.Top="271" HorizontalAlignment="Left" VerticalAlignment="Center"/>
     </Canvas>
 </UserControl>
