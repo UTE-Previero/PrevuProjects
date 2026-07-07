@@ -6,6 +6,7 @@
              xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents"
              xmlns:Misc="clr-namespace:Prevu.Drawings.Machines.Misc;assembly=Prevu.Drawings"
+             xmlns:lex="http://wpflocalizeextension.codeplex.com"
              x:Class="Prevu.Synoptics.P460" mc:Ignorable="d" 
              Height="850" Width="1550" d:Background="{DynamicResource MaterialDesignPaper}">
     <Canvas>
@@ -193,7 +194,6 @@
         </Machines:CV_Valve_001>
         <Labels:JumpLabel JumpFromLabel="467-01-MA1" JumpToLabel="352-01-MA1" Canvas.Left="747" Canvas.Top="380" HorizontalAlignment="Left" VerticalAlignment="Center" Direction="Left"/>
         <Labels:JumpLabel HorizontalAlignment="Left" VerticalAlignment="Center" JumpFromLabel="460-01-MA1" JumpToLabel="455-DCE" Canvas.Top="79" Canvas.Left="20"/>
-        <Labels:JumpLabel JumpFromLabel="477-01-MA1" JumpToLabel="283-01-MA1" Canvas.Left="1137" Canvas.Top="727" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:JumpLabel JumpFromLabel="467-01-MA1" JumpToLabel="440-01-MA1" Canvas.Left="714" Canvas.Top="470" Direction="Left" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Labels:JumpLabel JumpFromLabel="548-TRP" JumpToLabel="556-HOPPER" Canvas.Left="1439" Canvas.Top="583" HorizontalAlignment="Left" VerticalAlignment="Top" />
         <Labels:DeviceLabel ComponentName="467-01-MA1" Canvas.Left="505" Canvas.Top="548" HorizontalAlignment="Left" VerticalAlignment="Center"/>
@@ -211,5 +211,6 @@
         <Labels:DetailsLabel ComponentName="548-TRP" DetailsPageName="D548" Canvas.Left="1265" Canvas.Top="534" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="530-01-MA1" Canvas.Left="1187" Canvas.Top="399" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Labels:DeviceLabel ComponentName="532-01-MA1"  Canvas.Left="1285" Canvas.Top="213" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Rectangle Height="40" Stroke="Black" Width="4" Canvas.Left="1165" Canvas.Top="742" RenderTransformOrigin="0.5,0.5" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>
