@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="Prevu.Drawings.Machines.V01_Cyclon"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Drawings.Machines"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Viewbox xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform" Name="V01_Cyclon_xaml">
+        <Canvas UseLayoutRounding="False" Width="114.0" Height="138.0">
+            <Canvas.Clip>
+                <RectangleGeometry Rect="0.0,0.0,114.0,138.0"/>
+            </Canvas.Clip>
+            <Canvas UseLayoutRounding="False" RenderTransform="1.0,0.0,0.0,1.0,1.0711514,0.17852523">
+                <Canvas.Clip>
+                    <RectangleGeometry Rect="0.0,0.0,114.0,138.0"/>
+                </Canvas.Clip>
+                <Path Fill="#ff808080">
+                    <Path.Data>
+                        <PathGeometry Figures="M 2 2 H 112 V 43.5 L 73 136 H 41 L 2 43.5 Z" FillRule="Nonzero"/>
+                    </Path.Data>
+                </Path>
+                <Canvas UseLayoutRounding="False">
+                    <Path Fill="#ff808080" Effect="{StaticResource MaterialDesignElevationShadow1}">
+                        <Path.Data>
+                            <PathGeometry Figures="m 7.00049 42.3936 c 2e-05 0.0666 0.01316 0.1329 0.03906 0.1943 L 45.8042 134.528 L 46.4243 136 H 40.9976 L 2.43213 44.5303 C 2.14703 43.854 2.00051 43.1274 2.00049 42.3936 V 2 h 5 z M 112 42.3867 c 0 0.7421 -0.15 1.4767 -0.441 2.1592 L 72.5054 136 H 67.0688 L 67.7017 134.519 L 106.96 42.583 C 106.987 42.5211 107 42.454 107 42.3867 V 2 h 5 z" FillRule="Nonzero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Viewbox>
+</UserControl>
