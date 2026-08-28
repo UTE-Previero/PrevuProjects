@@ -1,0 +1,20 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             x:Class="Prevu.Synoptics.D078" 
+             mc:Ignorable="d" 
+             
+             d:Background="{DynamicResource MaterialDesignPaper}">
+    <Canvas Height="243" Width="297">
+        <Machines:V01_VRC_WaterTank Canvas.Left="21" Canvas.Top="82" Height="132" Width="244" ComponentName="078-41-LT1" TrendName="LEVEL" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Rectangle Height="109" Stroke="Black" Width="2" RenderTransformOrigin="0.5,0.5" Canvas.Left="73" Canvas.Top="51" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Machines:V01_Agitator Canvas.Left="47" Canvas.Top="149" Height="22" Width="52" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="078-41-LT1" Canvas.Left="135" Canvas.Top="121" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="078-01-MA1" Canvas.Left="29" Canvas.Top="26" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    </Canvas>
+</UserControl>
