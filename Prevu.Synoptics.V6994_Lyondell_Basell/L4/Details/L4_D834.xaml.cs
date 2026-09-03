@@ -18,9 +18,9 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for D380.xaml
     /// </summary>
-    public partial class L4_D904 : UserControl
+    public partial class L4_D834 : UserControl
     {
-        public L4_D904()
+        public L4_D834()
         {
             InitializeComponent();
         }

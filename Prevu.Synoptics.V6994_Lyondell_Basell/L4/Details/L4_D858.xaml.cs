@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,11 +14,11 @@ using System.Windows.Shapes;
 namespace Prevu.Synoptics
 {
     /// <summary>
-    /// Interaction logic for D380.xaml
+    /// Interaction logic for GR1.xaml
     /// </summary>
-    public partial class L4_D904 : UserControl
+    public partial class L4_D858 : UserControl
     {
-        public L4_D904()
+        public L4_D858()
         {
             InitializeComponent();
         }

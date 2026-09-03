@@ -16,21 +16,12 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for GR1.xaml
     /// </summary>
-    public partial class L4_P955 : UserControl
+    public partial class L4_D892 : UserControl
     {
-        public L4_P955()
+        public L4_D892()
         {
             InitializeComponent();
         }
 
-        private void Pipe_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Pipe_Loaded_1(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

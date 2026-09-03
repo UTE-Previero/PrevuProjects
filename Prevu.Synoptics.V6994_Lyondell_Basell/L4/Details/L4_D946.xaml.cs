@@ -16,11 +16,12 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for GR1.xaml
     /// </summary>
-    public partial class L4_P893 : UserControl
+    public partial class L4_D946 : UserControl
     {
-        public L4_P893()
+        public L4_D946()
         {
             InitializeComponent();
         }
+
     }
 }

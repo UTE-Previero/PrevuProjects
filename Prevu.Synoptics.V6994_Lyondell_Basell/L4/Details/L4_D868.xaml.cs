@@ -16,21 +16,12 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for GR1.xaml
     /// </summary>
-    public partial class L4_D834 : UserControl
+    public partial class L4_D868 : UserControl
     {
-        public L4_D834()
+        public L4_D868()
         {
             InitializeComponent();
         }
 
-        private void Pipe_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void DetailsLabel_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
