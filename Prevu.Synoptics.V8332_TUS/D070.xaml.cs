@@ -18,9 +18,9 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for D380.xaml
     /// </summary>
-    public partial class D170 : UserControl
+    public partial class D070 : UserControl
     {
-        public D170()
+        public D070()
         {
             InitializeComponent();
         }

@@ -1,0 +1,21 @@
+﻿<UserControl 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             mc:Ignorable="d"  
+             d:Background="{DynamicResource MaterialDesignPaper}"
+             x:Class="Prevu.Synoptics.D070">
+    <Canvas Height="233" Width="259">
+        <Labels:Pipe StatusComponent="L1+544-01-MA1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="153" Color="Air" Canvas.Left="74" Canvas.Top="114" Height="5"/>
+        <Rectangle HorizontalAlignment="Left" Height="39" Stroke="Black" VerticalAlignment="Center" Width="2" Canvas.Left="159" Canvas.Top="80"/>
+        <Rectangle HorizontalAlignment="Left" Height="34" Stroke="Black" VerticalAlignment="Center" Width="6" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="221" Canvas.Top="99"/>
+        <Ellipse HorizontalAlignment="Left" Height="18" Stroke="#FFBDBDBD" VerticalAlignment="Center" Width="18" OpacityMask="#FFBDBDBD" Fill="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" Canvas.Left="151" Canvas.Top="107"/>
+        <Machines:V01_DRY_HeatingBattery Canvas.Left="35" Canvas.Top="88" Height="56" Width="62" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="070-42-TT1" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="115" Canvas.Top="30"/>
+        <Labels:DeviceLabel ComponentName="070-11-R1" VerticalAlignment="Top" Canvas.Left="21" Canvas.Top="156" HorizontalAlignment="Left"/>
+    </Canvas>
+</UserControl>

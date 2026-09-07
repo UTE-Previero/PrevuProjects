@@ -16,31 +16,12 @@ namespace Prevu.Synoptics
     /// <summary>
     /// Interaction logic for GR1.xaml
     /// </summary>
-    public partial class P230 : UserControl
+    public partial class P010 : UserControl
     {
-        public P230()
+        public P010()
         {
             InitializeComponent();
         }
 
-    private void Pipe_Loaded(object sender, RoutedEventArgs e)
-    {
-
-        }
-
-        private void V01_STR_WashingReactor_wBottomScraper_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void STR_Washing_reactor_A_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Pipe_Loaded_1(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
