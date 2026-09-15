@@ -8,37 +8,26 @@
              xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
              mc:Ignorable="d" 
              d:Background="{DynamicResource MaterialDesignPaper}">
-    <Canvas Height="523" Width="490">
-        <Labels:Pipe Width="96" StatusComponent="L1+466-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Canvas.Left="83" Canvas.Top="367" HorizontalAlignment="Center" VerticalAlignment="Top">
+    <Canvas Height="489" Width="569">
+        <Labels:Pipe Width="96" StatusComponent="L1+466-01-MA1" PipeHeight="Medium" RenderTransformOrigin="0.5,0.5" Canvas.Left="127" Canvas.Top="353" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Labels:Pipe.RenderTransform>
                 <TransformGroup>
                     <RotateTransform Angle="90"/>
                 </TransformGroup>
             </Labels:Pipe.RenderTransform>
         </Labels:Pipe>
-        <Machines:SCW_ScrewConveyor_straight RenderTransformOrigin="0.5,0.5" Width="111" Height="18" Canvas.Left="167" Canvas.Top="418" HorizontalAlignment="Left" VerticalAlignment="Center" >
-            <Machines:SCW_ScrewConveyor_straight.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="2" ScaleY="1.95"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Machines:SCW_ScrewConveyor_straight.RenderTransform>
-        </Machines:SCW_ScrewConveyor_straight>
-
-        <Machines:V01_SLX_MixingSiloScrew Height="442" Width="323" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="134" Canvas.Top="27" Color="DryMaterial" ComponentName="810-46-WT1" TrendName="WEIGHT" d:IsLocked="True"/>
-        <Rectangle Height="2" Stroke="Black" Width="31" Canvas.Left="101" Canvas.Top="369" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Ellipse Height="16" Stroke="#FFBDBDBD" Width="16" OpacityMask="#FFBDBDBD" Fill="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" Canvas.Left="123" Canvas.Top="362" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel ComponentName="L1+809-01-MA1" Canvas.Left="86" Canvas.Top="452" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel ComponentName="L1+809-41-LS1" Canvas.Left="18" Canvas.Top="345" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:SignalLabel HorizontalAlignment="Left" VerticalAlignment="Center" ComponentName="L1+810-46-WT1" SignalName="LSHA" Canvas.Left="193" Canvas.Top="81"/>
-        <Labels:DeviceLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="L1+810-01-MA1" Canvas.Left="250" Canvas.Top="10"/>
-        <Labels:DeviceLabel ComponentName="L1+810-41-LEV" Canvas.Left="372" Canvas.Top="124" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:SignalLabel ComponentName="L1+810-41-LEV" SignalName="LSH" Canvas.Left="193" Canvas.Top="133" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:SignalLabel ComponentName="L1+810-41-LEV" SignalName="LSL" Canvas.Left="193" Canvas.Top="224" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:SignalLabel ComponentName="L1+810-41-LEV" SignalName="LSLA" Canvas.Left="263" Canvas.Top="331" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Labels:DeviceLabel ComponentName="L1+810-46-WT1" Canvas.Left="372" Canvas.Top="190" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Rectangle Height="6" Stroke="Black" Width="36" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="113" Canvas.Top="321" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Machines:V01_SLX_MixingSiloScrew_BottomLoading Canvas.Left="124" Canvas.Top="28" Height="459" HorizontalAlignment="Center" VerticalAlignment="Top" Width="415"/>
+        <Rectangle Height="2" Stroke="Black" Width="31" Canvas.Left="143" Canvas.Top="355" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Ellipse Height="16" Stroke="#FFBDBDBD" Width="16" OpacityMask="#FFBDBDBD" Fill="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}" Canvas.Left="167" Canvas.Top="348" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="L1+809-01-MA1" Canvas.Left="29" Canvas.Top="413" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="L1+809-41-LS1" Canvas.Left="62" Canvas.Top="331" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:SignalLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="L1+810-46-WT1" SignalName="LSHA" Canvas.Left="243" Canvas.Top="83"/>
+        <Labels:DeviceLabel HorizontalAlignment="Center" VerticalAlignment="Top" ComponentName="L1+810-01-MA1" Canvas.Left="329" Canvas.Top="20"/>
+        <Labels:DeviceLabel ComponentName="L1+810-41-LEV" Canvas.Left="444" Canvas.Top="144" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:SignalLabel ComponentName="L1+810-41-LEV" SignalName="LSH" Canvas.Left="243" Canvas.Top="153" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:SignalLabel ComponentName="L1+810-41-LEV" SignalName="LSL" Canvas.Left="243" Canvas.Top="226" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:SignalLabel ComponentName="L1+810-41-LEV" SignalName="LSLA" Canvas.Left="306" Canvas.Top="325" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Rectangle Height="6" Stroke="Black" Width="36" Fill="#FFBDBDBD" RenderTransformOrigin="0.5,0.5" Canvas.Left="157" Canvas.Top="307" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="L1+810-46-WT1" Canvas.Left="444" Canvas.Top="208" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>
