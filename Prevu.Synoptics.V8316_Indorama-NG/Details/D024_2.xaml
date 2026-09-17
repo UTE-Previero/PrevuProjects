@@ -1,0 +1,20 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prevu.Synoptics"
+			 xmlns:Machines="clr-namespace:Prevu.Drawings.Machines;assembly=Prevu.Drawings" 
+             xmlns:Labels="clr-namespace:Prevu.UIComponents.Labels;assembly=Prevu.UIComponents" 
+             x:Class="Prevu.Synoptics.D024_2" 
+             mc:Ignorable="d" 
+             
+             d:Background="{DynamicResource MaterialDesignPaper}" >
+    <Canvas Height="184" Width="329">
+        <Machines:Buffer_belt Height="115" Width="251" Canvas.Left="47" Canvas.Top="59" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Machines:Radar Height="36" Width="30" Canvas.Left="51" Canvas.Top="77" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Machines:Radar Height="36" Width="30" Canvas.Left="161" Canvas.Top="77" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="024-41-LT2" Canvas.Left="21" Canvas.Top="23" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Labels:DeviceLabel ComponentName="024-41-LT1" Canvas.Left="131" Canvas.Top="23" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    </Canvas>
+</UserControl>
