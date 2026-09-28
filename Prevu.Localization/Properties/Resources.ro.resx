@@ -13386,4 +13386,868 @@ Notă: Dacă acest mod este activat, producția din amonte poate fi suspendată.
   <data name="P_SPEED_HIGH_x_TANK_REFILL" xml:space="preserve">
     <value>Valoare de referință crescută a vitezei pompei pentru a facilita reumplerea rezervorului atunci când se detectează o lipsă de apă.</value>
   </data>
+  <data name="P_SINGLE_MIX_FLOW_SP" xml:space="preserve">
+    <value>Debitul de umplere țintă pentru un singur mixer. PLC-ul va înmulți automat această valoare cu numărul de mixere care solicită apă simultan.</value>
+  </data>
+  <data name="P_RECIRC_FLOW_SP" xml:space="preserve">
+    <value>Valoarea de referință a debitului utilizată în timpul fazei de recirculare a rezervorului, când celelalte valve sunt închise.</value>
+  </data>
+  <data name="P_ACT_FLOW_SP" xml:space="preserve">
+    <value>Afișează valoarea de referință a debitului activă în prezent și utilizată de sistem pentru reglarea pompei.</value>
+  </data>
+  <data name="P_NO_LOAD_AMP" xml:space="preserve">
+    <value>Calcul automat al curentului motorului în gol. Calculează media curentului motorului și a componentelor mecanice pe ultimele 10 porniri (proces oprit).</value>
+  </data>
+  <data name="P_CALCULATED_FILLING" xml:space="preserve">
+    <value>Calculul automat al umplerii medii a mașinii. Sistemul integrează continuu curentul rotorului în timp pentru a estima umplerea mașinii și a preveni supraîncărcarea cu material.</value>
+  </data>
+  <data name="P_AMP_x_INT_CLEAN" xml:space="preserve">
+    <value>Când curentul atinge această valoare, sistemul declanșează un ciclu intern de curățare pentru a elimina toate reziduurile și a reduce curentul motorului (dacă este activat) după expirarea întârzierii specificate în câmpul următor.</value>
+  </data>
+  <data name="P_AMP_x_INT_CLEAN_DELAY" xml:space="preserve">
+    <value>Această întârziere acționează ca o histerezis pentru limita de curent. Când curentul motorului depășește limita de mai sus, temporizatorul pornește și continuă atâta timp cât curentul rămâne peste prag. Dacă curentul rămâne peste limită pe întreaga durată, se solicită începerea curățării (dacă este activată).</value>
+  </data>
+  <data name="P_AMP_x_INT_CLEAN_ENAB" xml:space="preserve">
+    <value>Dacă acest flag este activ, ciclul de curățare este activat să înceapă atunci când curentul motorului atinge pragul desemnat și rămâne peste acesta pentru timpul de întârziere setat.</value>
+  </data>
+  <data name="P_SPEED_x_DOWNSTR_EMPTY" xml:space="preserve">
+    <value>Viteză mai mare utilizată pentru a reduce timpul inițial de umplere a liniei atunci când transportorul este gol.</value>
+  </data>
+  <data name="P_ACC_TIME" xml:space="preserve">
+    <value>Ajustează timpul de accelerare a motorului în funcție de setările invertorului sau ale soft starterului.</value>
+  </data>
+  <data name="P_FAN_OBSTRUCTION_AMP" xml:space="preserve">
+    <value>Când curentul motorului scade sub acest prag, sistemul declanșează o alarmă care indică o potențială obstrucție a ventilatorului după întârzierea specificată în câmpul următor.</value>
+  </data>
+  <data name="P_FAN_OBSTRUCTION_DELAY" xml:space="preserve">
+    <value>Această întârziere acționează ca o histerezis pentru pragul de alarmă. Când curentul motorului scade sub această limită, temporizatorul pornește și continuă atâta timp cât curentul rămâne sub prag. Dacă curentul rămâne sub limită pe întreaga durată, se declanșează alarma de obstrucție a ventilatorului.</value>
+  </data>
+  <data name="INFO_TEMPER_14" xml:space="preserve">
+    <value>Temperatură ridicată detectată pe teren. Verificați condițiile de mediu și de proces. Reduceți sarcina termică pentru a preveni deteriorarea echipamentului.</value>
+  </data>
+  <data name="INFO_STATC_01" xml:space="preserve">
+    <value>Verificați contactorul static și sarcina acestuia. Asigurați-vă că calibrarea limitei de curent a dispozitivului corespunde cerințelor de sarcină.</value>
+  </data>
+  <data name="INFO_STATC_02" xml:space="preserve">
+    <value>Niciun feedback de la contactorul static după comanda de pornire. Verificați cablajul de control și starea contactorului.</value>
+  </data>
+  <data name="INFO_AMP_16" xml:space="preserve">
+    <value>Curentul detectat în timp ce motorul este oprit sugerează un scurtcircuit SCR. Izolați imediat alimentarea, deoarece motorul ar putea fi alimentat. Verificați componentele contactorului static înainte de a încerca o repornire.</value>
+  </data>
+  <data name="INFO_SAFETY_5" xml:space="preserve">
+    <value>Timp de așteptare pentru siguranțe: resetează circuitul de siguranță pentru a restabili viteza completă de producție.</value>
+  </data>
+  <data name="M_INFO_EXT_CHEM_SYS" xml:space="preserve">
+    <value>Verificați sistemul extern de dozare chimică</value>
+  </data>
+  <data name="M_INFO_OHM_1" xml:space="preserve">
+    <value>Verificați pompa chimică, condițiile de proces și reglajul de configurare, dacă este necesar.</value>
+  </data>
+  <data name="M_INFO_OHM_2" xml:space="preserve">
+    <value>Verificați pompa chimică, condițiile de proces și reglajul de configurare, dacă este necesar.</value>
+  </data>
+  <data name="M_INFO_PH_1" xml:space="preserve">
+    <value>pH ridicat - Soluție caustică! Verificați condițiile de proces și ajustați reglajul de configurare, dacă este necesar.</value>
+  </data>
+  <data name="M_INFO_PH_2" xml:space="preserve">
+    <value>pH scăzut - Soluție acidă! Verificați condițiile de proces și ajustați reglajul de configurare, dacă este necesar.</value>
+  </data>
+  <data name="M_INFO_DOWNSTR_NOT_RUN" xml:space="preserve">
+    <value>Sistemul din aval nu funcționează în prezent, ceea ce poate cauza o întrerupere a producției. Vă rugăm să verificați starea echipamentului din aval și să îl porniți dacă este necesar pentru a asigura un flux continuu de produse.</value>
+  </data>
+  <data name="PET BOTTLE WASHING PLANT" xml:space="preserve">
+    <value>Instalație de spălare a sticlelor PET</value>
+  </data>
+  <data name="MAX CURRENT LIMIT SWITCH" xml:space="preserve">
+    <value>Întrerupător de limitare a curentului maxim</value>
+  </data>
+  <data name="SAFETY BARRIERS RESET REQUEST" xml:space="preserve">
+    <value>Cerere de resetare a barierelor de siguranță</value>
+  </data>
+  <data name="SAFETY BARRIERS RESET REQUEST PUSH-BUTTON" xml:space="preserve">
+    <value>Buton de solicitare resetare bariere de siguranță</value>
+  </data>
+  <data name="INVERTER SAFE STATUS FEEDBACK" xml:space="preserve">
+    <value>Feedback privind starea de siguranță a invertorului</value>
+  </data>
+  <data name="F-INPUT - PULL-CORD SAFETIES" xml:space="preserve">
+    <value>F-INPUT - Siguranțe cu cablu de tragere</value>
+  </data>
+  <data name="F-INPUT - SAFETY BARRIERS" xml:space="preserve">
+    <value>F-INPUT - Bariere de siguranță</value>
+  </data>
+  <data name="F-INPUT DIAGNOSTIC - PULL-CORD SAFETIES" xml:space="preserve">
+    <value>Diagnosticare intrare F - Siguranțe cu cablu de tragere</value>
+  </data>
+  <data name="F-INPUT DIAGNOSTIC - SAFETY BARRIERS" xml:space="preserve">
+    <value>Diagnosticare intrare F - Bariere de siguranță</value>
+  </data>
+  <data name="CHARGING CONVEYOR - SAFETY KEY" xml:space="preserve">
+    <value>Bandă transportoare de încărcare - Cheie de siguranță</value>
+  </data>
+  <data name="CHARGING CONVEYOR - LEFT LUBRIF." xml:space="preserve">
+    <value>Bandă transportoare de încărcare - Lubrif. stânga.</value>
+  </data>
+  <data name="CHARGING CONVEYOR - RIGHT LUBRIF." xml:space="preserve">
+    <value>Bandă transportoare de încărcare - Lubrif. dreapta.</value>
+  </data>
+  <data name="CHARGING CONVEYOR - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>Bandă transportoare de încărcare - Ciclu de întreținere</value>
+  </data>
+  <data name="CHARGING CONVEYOR - LUBRIFICATION" xml:space="preserve">
+    <value>Bandă transportoare de încărcare - Lubrifiere</value>
+  </data>
+  <data name="DEBALER - MAIN PUMP" xml:space="preserve">
+    <value>Debalator - Pompă principală</value>
+  </data>
+  <data name="OIL SHUTOFF VALVE OPEN" xml:space="preserve">
+    <value>Supapă de închidere a uleiului deschisă</value>
+  </data>
+  <data name="OUTPUT CONTACTORS FEEDBACK" xml:space="preserve">
+    <value>Contactoare de ieșire Feedback</value>
+  </data>
+  <data name="OIL SHUTOFF VALVE NOT OPEN" xml:space="preserve">
+    <value>Supapa de închidere a uleiului nu este deschisă</value>
+  </data>
+  <data name="DEBALER - SAFETY UNLOCK REELS" xml:space="preserve">
+    <value>Debalator - Role cu deblocare de siguranță</value>
+  </data>
+  <data name="DEBALER - AUXILIARY HYDRAULIC UNIT" xml:space="preserve">
+    <value>Debalator - Unitate hidraulică auxiliară</value>
+  </data>
+  <data name="DEBALER - COOLING PUMP" xml:space="preserve">
+    <value>Debalator - Pompă de răcire</value>
+  </data>
+  <data name="DEBALER - COOLING BLOWER" xml:space="preserve">
+    <value>Debaler - Suflantă de răcire</value>
+  </data>
+  <data name="DEBALER - THERMAL HEATER" xml:space="preserve">
+    <value>Debalator - Încălzitor termic</value>
+  </data>
+  <data name="DEBALER - HYDRAULIC SHAFT" xml:space="preserve">
+    <value>Debalator - Arbore hidraulic</value>
+  </data>
+  <data name="DEBALER - HOPPER LEVEL" xml:space="preserve">
+    <value>Debalator - Nivel buncăr</value>
+  </data>
+  <data name="DEBALER - OIL TEMPERATURE" xml:space="preserve">
+    <value>Debalator - Temperatura uleiului</value>
+  </data>
+  <data name="DEBALER - HYDRAULIC BYPASS" xml:space="preserve">
+    <value>Debalator - Bypass hidraulic</value>
+  </data>
+  <data name="DEBALER - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>Debalator - Ciclu de întreținere</value>
+  </data>
+  <data name="DEBALER - MANAGER" xml:space="preserve">
+    <value>Debaler - Manager</value>
+  </data>
+  <data name="DEBALER - HYDRAULICS" xml:space="preserve">
+    <value>Debalator - Hidraulică</value>
+  </data>
+  <data name="DRY TROMMEL - SAFETY DOOR UNLOCK SIDE" xml:space="preserve">
+    <value>Trommel uscat - Deblocare laterală a ușii de siguranță</value>
+  </data>
+  <data name="MAINTENANCE PROCEDURE - OPEN SIDE" xml:space="preserve">
+    <value>Procedura de întreținere - Partea deschisă</value>
+  </data>
+  <data name="MOTOR TEMPERATURE (OPTIONAL)" xml:space="preserve">
+    <value>Temperatura motorului (opțional)</value>
+  </data>
+  <data name="MOTOR OVERHEAT (OPTIONAL)" xml:space="preserve">
+    <value>Supraîncălzirea motorului (opțional)</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR" xml:space="preserve">
+    <value>Tampon metalic - transportor</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR SAFETY KEY" xml:space="preserve">
+    <value>Cheie de siguranță pentru transportorul tampon metalic</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR LEFT LUBRIF." xml:space="preserve">
+    <value>Tampon metalic - Lubrifiant stânga transportor.</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR RIGHT LUBRIF." xml:space="preserve">
+    <value>Tampon metalic - Lubrifiant transportor dreapta.</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR HOPPER LEVEL" xml:space="preserve">
+    <value>Tampon metalic - Nivelul pâlniei transportorului</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR MAINTENANCE CYCLE" xml:space="preserve">
+    <value>Ciclul de întreținere a benzii transportoare - Metal tampon</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR LUBRIFICATION" xml:space="preserve">
+    <value>Metal tampon - Lubrifiere transportor</value>
+  </data>
+  <data name="WET TROMMEL" xml:space="preserve">
+    <value>Trommel umed</value>
+  </data>
+  <data name="ESTIMATED FLOWRATE" xml:space="preserve">
+    <value>Debit estimat</value>
+  </data>
+  <data name="DECANTER - STEAM" xml:space="preserve">
+    <value>Decantor - Abur</value>
+  </data>
+  <data name="DECANTER - DISCHARGE" xml:space="preserve">
+    <value>Decantor - Descărcare</value>
+  </data>
+  <data name="PUMP - MOTOR" xml:space="preserve">
+    <value>Pompă - Motor</value>
+  </data>
+  <data name="PUMP - WATER FLOWRATE" xml:space="preserve">
+    <value>Pompă - Debit de apă</value>
+  </data>
+  <data name="PUMP - WATER CONDUCTIVITY" xml:space="preserve">
+    <value>Pompă - Conductivitatea apei</value>
+  </data>
+  <data name="DISK SEPARATOR - WATER CLEANING" xml:space="preserve">
+    <value>Separator cu disc - Curățare cu apă</value>
+  </data>
+  <data name="MAXIMUM OPEN TIME" xml:space="preserve">
+    <value>TIMP MAXIM DE DESCHIDERE</value>
+  </data>
+  <data name="MAXIMUM OPEN TIME (0 = CONTROL BYPASS)" xml:space="preserve">
+    <value>Timp maxim de deschidere (0 = Bypass de control)</value>
+  </data>
+  <data name="DISK SEPARATOR - AIR CLEANING" xml:space="preserve">
+    <value>Separator cu disc - Purificarea aerului</value>
+  </data>
+  <data name="DISK SEPARATOR - CLEANING CYCLE" xml:space="preserve">
+    <value>Separator de discuri - Ciclu de curățare</value>
+  </data>
+  <data name="DISK SEPARATOR - BOTTOM RINSE CYCLE" xml:space="preserve">
+    <value>Separator cu disc - Ciclu de clătire inferioară</value>
+  </data>
+  <data name="DISK SEPARATOR CLEANING MANAGER" xml:space="preserve">
+    <value>Manager de curățare a separatorului de discuri</value>
+  </data>
+  <data name="SAD RUNNING" xml:space="preserve">
+    <value>ALERGAREA TRISTĂ</value>
+  </data>
+  <data name="SAD NOT RUNNING" xml:space="preserve">
+    <value>SAD nu rulează</value>
+  </data>
+  <data name="CLEANING ON TIME" xml:space="preserve">
+    <value>Curățare la timp</value>
+  </data>
+  <data name="CAUSTIC PUMP" xml:space="preserve">
+    <value>Pompă caustică</value>
+  </data>
+  <data name="PREDICTED MAXIMUM CONSUMPTION" xml:space="preserve">
+    <value>Consumul maxim prevăzut</value>
+  </data>
+  <data name="BOTTLE SORTER - ACCELERATION BELT" xml:space="preserve">
+    <value>Sortator de sticle - Bandă de accelerare</value>
+  </data>
+  <data name="VBPS ERROR" xml:space="preserve">
+    <value>Eroare VBPS</value>
+  </data>
+  <data name="AIR PRESSURE FAULT" xml:space="preserve">
+    <value>Defecțiune a presiunii aerului</value>
+  </data>
+  <data name="SORTING UNIT - VALVE BLOCK IN SERVICE MODE" xml:space="preserve">
+    <value>UNITATE DE SORTARE - BLOC DE VALVE ÎN MOD DE SERVICE</value>
+  </data>
+  <data name="METAL SEPARATOR - CONVEYOR BELT" xml:space="preserve">
+    <value>Separator de metale - Bandă transportoare</value>
+  </data>
+  <data name="METAL SEPARATOR" xml:space="preserve">
+    <value>Separator de metale</value>
+  </data>
+  <data name="METAL SEPARATOR - METAL DETECTOR" xml:space="preserve">
+    <value>Separator de metale - Detector de metale</value>
+  </data>
+  <data name="METAL SEPARATOR - DIVERTER" xml:space="preserve">
+    <value>Separator de metale - Deviator</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - BREAKER RELEASE COIL" xml:space="preserve">
+    <value>Diagnosticare ieșire F - Bobină de declanșare întrerupător</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND LINE" xml:space="preserve">
+    <value>Diagnosticare ieșire F - Linie de comandă</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND DELTA" xml:space="preserve">
+    <value>Diagnosticare ieșire F - Comandă Delta</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND STAR" xml:space="preserve">
+    <value>Diagnosticare ieșire F - Command Star</value>
+  </data>
+  <data name="CABINET BREAKER RELEASE COIL" xml:space="preserve">
+    <value>Bobină de declanșare a întrerupătorului dulapului</value>
+  </data>
+  <data name="F-OUTPUT - CABINET BREAKER RELEASE COIL" xml:space="preserve">
+    <value>F-OUTPUT - Bobină de declanșare întrerupător dulap</value>
+  </data>
+  <data name="F-INPUT - ROTOR STOPPED" xml:space="preserve">
+    <value>INTRARE F - Rotor oprit</value>
+  </data>
+  <data name="F-INPUT DIAGNOSTIC - ROTOR STOPPED" xml:space="preserve">
+    <value>Diagnosticare intrare F - Rotor oprit</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND KEY RELEASE" xml:space="preserve">
+    <value>Diagnosticare ieșire F - Eliberare tastă comandă</value>
+  </data>
+  <data name="COMMAND KEY RELEASE" xml:space="preserve">
+    <value>Eliberarea tastei de comandă</value>
+  </data>
+  <data name="ROTOR STOPPED - HARDWARE FAULT (INPUT PASSIVATION)" xml:space="preserve">
+    <value>ROTOR OPRIT - EROARE HARDWARE (PASSIVARE INTRARE)</value>
+  </data>
+  <data name="UNLOCK COMMAND - HARDWARE FAULT (OUTPUT PASSIVATION)" xml:space="preserve">
+    <value>COMANDĂ DE DEBLOCARE - EROARE HARDWARE (PASSIVARE IEȘIRE)</value>
+  </data>
+  <data name="HIGH LEVEL TIMEOUT" xml:space="preserve">
+    <value>EXPIRARE NIVEL RIDICAT</value>
+  </data>
+  <data name="TRANSPORT" xml:space="preserve">
+    <value>Transport</value>
+  </data>
+  <data name="MICROFILTER - CLEANING WATER FLOW RATE" xml:space="preserve">
+    <value>Microfiltru - Debitul apei de curățare</value>
+  </data>
+  <data name="CLEANING BY LEVEL ENABLED" xml:space="preserve">
+    <value>CURĂȚARE DUPĂ NIVEL ACTIVATĂ</value>
+  </data>
+  <data name="WATER HIGH LEVEL CLEANING NOT ENABLED" xml:space="preserve">
+    <value>Curățarea cu apă la nivel înalt nu este activată</value>
+  </data>
+  <data name="NO CLEANING REQUESTED" xml:space="preserve">
+    <value>NU SE CER CURĂȚENIE</value>
+  </data>
+  <data name="CLEANING IN PROGRESS FOR OPERATOR REQUEST" xml:space="preserve">
+    <value>Curățare în curs la cererea operatorului</value>
+  </data>
+  <data name="CLEANING WATER ON TIME (0=DISABLED)" xml:space="preserve">
+    <value>Timpul de activare a apei de curățare (0=Dezactivat)</value>
+  </data>
+  <data name="DECANTER - SOREMA REQUEST WATER" xml:space="preserve">
+    <value>Decantor - Sorema Request Water</value>
+  </data>
+  <data name="DECANTER - WATER FLOW RATE" xml:space="preserve">
+    <value>Decantor - Debit de apă</value>
+  </data>
+  <data name="PUMP - WATER FLOWRATE TO GRINDER" xml:space="preserve">
+    <value>Pompă - Debit de apă către râșniță</value>
+  </data>
+  <data name="DISCHARGE PUMP TO PREWASH" xml:space="preserve">
+    <value>Pompă de refulare către pre-spălare</value>
+  </data>
+  <data name="SCREW CONVEYOR -MIN LEVEL" xml:space="preserve">
+    <value>Transportor elicoidal - Nivel minim</value>
+  </data>
+  <data name="MINIMUM LEVEL NOT REACHED" xml:space="preserve">
+    <value>Nivel minim neatins</value>
+  </data>
+  <data name="NO MINIMUM LEVEL" xml:space="preserve">
+    <value>FĂRĂ NIVEL MINIM</value>
+  </data>
+  <data name="MINIMUM LEVEL REACHED" xml:space="preserve">
+    <value>Nivel minim atins</value>
+  </data>
+  <data name="SILO MIXER - MOTOR" xml:space="preserve">
+    <value>Malaxor siloz - Motor</value>
+  </data>
+  <data name="(1&gt;=HIGH)" xml:space="preserve">
+    <value>(1&gt;=RIDICAT)</value>
+  </data>
+  <data name="FILLED SILO" xml:space="preserve">
+    <value>Siloz umplut</value>
+  </data>
+  <data name="NOT WAITING FOR LOW LEVEL" xml:space="preserve">
+    <value>NU AȘTEPTĂM NIVEL SCĂZUT</value>
+  </data>
+  <data name="WAITING FOR MATERIAL BELOW LOW LEVEL" xml:space="preserve">
+    <value>Se așteaptă material sub nivelul scăzut</value>
+  </data>
+  <data name="TRANSFER TANK LEVEL" xml:space="preserve">
+    <value>NIVELUL REZERVORULUI DE TRANSFER</value>
+  </data>
+  <data name="TRANSFER TANK LEVEL NOT OK FOR MIXERS DISCHARGE" xml:space="preserve">
+    <value>Nivelul rezervorului de transfer nu este în regulă pentru descărcarea mixerelor</value>
+  </data>
+  <data name="INLET WATER FLOWRATE" xml:space="preserve">
+    <value>DEBIT DE APĂ LA INTRARE</value>
+  </data>
+  <data name="INLET WATER FLOWRATE NOT OK" xml:space="preserve">
+    <value>Debitul apei de intrare nu este în regulă</value>
+  </data>
+  <data name="OUTLET STEAM PRESSURE NOT OK" xml:space="preserve">
+    <value>Presiunea aburului la ieșire nu este în regulă</value>
+  </data>
+  <data name="WATER TANK - WATER TO RECIRCULATION" xml:space="preserve">
+    <value>Rezervor de apă - Apă pentru recirculare</value>
+  </data>
+  <data name="WATER TANK - WATER TO PREWASH" xml:space="preserve">
+    <value>Rezervor de apă - Apă pentru pre-spălare</value>
+  </data>
+  <data name="DISCHARGE TIME ABOVE ZERO" xml:space="preserve">
+    <value>TIMP DE DESCĂRCARE PESTE ZERO</value>
+  </data>
+  <data name="TANK DISCHARGE TIME IS SET TO ZERO" xml:space="preserve">
+    <value>Timpul de descărcare a rezervorului este setat la ZERO</value>
+  </data>
+  <data name="WATER TANK" xml:space="preserve">
+    <value>Rezervor de apă</value>
+  </data>
+  <data name="BOWL FILLING POSITION NOT OK" xml:space="preserve">
+    <value>POZIȚIA DE UMPLERE A BOLULUI NU ESTE INCORRECTĂ</value>
+  </data>
+  <data name="CAUSTIC MAXIMUM HOURLY USAGE EXCEEDED" xml:space="preserve">
+    <value>Utilizarea maximă orară a causticii a fost depășită</value>
+  </data>
+  <data name="INFO_PST_6" xml:space="preserve">
+    <value>INFO_PST_6</value>
+  </data>
+  <data name="DETERGENT MAXIMUM HOURLY USAGE EXCEEDED" xml:space="preserve">
+    <value>Consumul maxim orar de detergent a fost depășit</value>
+  </data>
+  <data name="CHEMICALS HOURLY USAGE" xml:space="preserve">
+    <value>UTILIZARE ORARĂ A SUBSTANȚELOR CHIMICE</value>
+  </data>
+  <data name="CAUSTIC HOURLY USAGE" xml:space="preserve">
+    <value>Utilizare orară caustică</value>
+  </data>
+  <data name="DETERGENT HOURLY USAGE" xml:space="preserve">
+    <value>Consumul orar de detergent</value>
+  </data>
+  <data name="CONSTANT SPEED" xml:space="preserve">
+    <value>VITEZĂ CONSTANTĂ</value>
+  </data>
+  <data name="SPEED MODULATION IN PROGRESS" xml:space="preserve">
+    <value>Modulație de viteză în curs</value>
+  </data>
+  <data name="RECIRCULATION SPEED (IN CONSTANT MODE)" xml:space="preserve">
+    <value>Viteză de recirculare (în mod constant)</value>
+  </data>
+  <data name="PROCESS LOOP SP" xml:space="preserve">
+    <value>BUCLA DE PROCES SP</value>
+  </data>
+  <data name="THE SHORT LOOP FLOWRATE SETPOINT IS ACTIVE" xml:space="preserve">
+    <value>Valoarea de referință a debitului în bucla scurtă este activă</value>
+  </data>
+  <data name="SETPOINT FOR THE SHORT RECIRCULATION LOOP" xml:space="preserve">
+    <value>Punct de referință pentru bucla scurtă de recirculare</value>
+  </data>
+  <data name="WCE - MOTOR" xml:space="preserve">
+    <value>WCE - Motor</value>
+  </data>
+  <data name="WCE - FRESH WATER CLEANING" xml:space="preserve">
+    <value>WCE - Curățare cu apă dulce</value>
+  </data>
+  <data name="WCE - STEAM CLEANING" xml:space="preserve">
+    <value>WCE - Curățare cu abur</value>
+  </data>
+  <data name="WCE - CLEANING WATER FLOW RATE" xml:space="preserve">
+    <value>WCE - Debitul apei de curățare</value>
+  </data>
+  <data name="WCE - CLEANING MANAGER" xml:space="preserve">
+    <value>WCE - Manager de curățenie</value>
+  </data>
+  <data name="WCE RUNNING" xml:space="preserve">
+    <value>WCE RUNNING</value>
+  </data>
+  <data name="CENTRIFUGE NOT RUNNING" xml:space="preserve">
+    <value>Centrifuga nu funcționează</value>
+  </data>
+  <data name="STEAM TIME NO ZERO" xml:space="preserve">
+    <value>TIMP ABUR FĂRĂ ZERO</value>
+  </data>
+  <data name="STEAM ON TIME IS SET TO ZERO" xml:space="preserve">
+    <value>Timpul de pornire pentru abur este setat la ZERO</value>
+  </data>
+  <data name="WATER TIME NO ZERO" xml:space="preserve">
+    <value>TIMP APĂ FĂRĂ ZERO</value>
+  </data>
+  <data name="WATER ON TIME IS SET TO ZERO" xml:space="preserve">
+    <value>Timpul de pornire a apei este setat la ZERO</value>
+  </data>
+  <data name="NO STEAM CLEANING" xml:space="preserve">
+    <value>FĂRĂ CURĂȚARE CU ABUR</value>
+  </data>
+  <data name="STEAM CLEANING" xml:space="preserve">
+    <value>Curățare cu abur</value>
+  </data>
+  <data name="NO WATER RINSING" xml:space="preserve">
+    <value>FĂRĂ CLĂTIRE CU APĂ</value>
+  </data>
+  <data name="WATER RINSING" xml:space="preserve">
+    <value>Clătire cu apă</value>
+  </data>
+  <data name="CLEANING STEAM ON TIME" xml:space="preserve">
+    <value>Timpul de pornire pentru curățarea cu abur</value>
+  </data>
+  <data name="(CONFIGURABLE)" xml:space="preserve">
+    <value>(Configurabil)</value>
+  </data>
+  <data name="LEVEL OVERLOAD (OPTIONAL)" xml:space="preserve">
+    <value>Suprasarcină de nivel (opțional)</value>
+  </data>
+  <data name="GREEN LAMP" xml:space="preserve">
+    <value>Lampă verde</value>
+  </data>
+  <data name="BAG OK FOR PROCESS LAMP" xml:space="preserve">
+    <value>Geantă OK pentru lampa de proces</value>
+  </data>
+  <data name="NO DISCHARGE FOR PREPARATION IN PROGRESS" xml:space="preserve">
+    <value>Fără descărcare de gestiune pentru pregătire în curs</value>
+  </data>
+  <data name="EXCHANGE WATER PAUSE TIME IS SET TO ZERO" xml:space="preserve">
+    <value>Timpul de pauză pentru schimbul de apă este setat la ZERO</value>
+  </data>
+  <data name="WATER EXCHANGE TIME IS SET TO ZERO (NO EXCHANGE)" xml:space="preserve">
+    <value>Timpul de schimb de apă este setat la ZERO (fără schimb)</value>
+  </data>
+  <data name="SEPARATION TANK REFILL SPEED (IN CONSTANT MODE)" xml:space="preserve">
+    <value>Viteza de reumplere a rezervorului de separare (în modul constant)</value>
+  </data>
+  <data name="PROCESS SP" xml:space="preserve">
+    <value>PROCES SP</value>
+  </data>
+  <data name="TANK REFILL FLOWRATE SETPOINT IS ACTIVE" xml:space="preserve">
+    <value>Valoarea de referință a debitului de umplere a rezervorului este activă</value>
+  </data>
+  <data name="SETPOINT FOR SEPARATION TANK REFILL" xml:space="preserve">
+    <value>Punct de referință pentru reumplerea rezervorului de separare</value>
+  </data>
+  <data name="METAL SEPARATOR - VIBRATING TABLE" xml:space="preserve">
+    <value>Separator de metale - Masă vibratoare</value>
+  </data>
+  <data name="METAL SEPARATOR - MAGNETIC ROLL" xml:space="preserve">
+    <value>Separator de metale - Rolă magnetică</value>
+  </data>
+  <data name="NOT OK FOR PROCESS - AWAITING THE LOW LEVEL" xml:space="preserve">
+    <value>Nu este OK pentru proces - Se așteaptă nivelul scăzut</value>
+  </data>
+  <data name="NOT EMPTY" xml:space="preserve">
+    <value>NU GOL</value>
+  </data>
+  <data name="THE SILO IS BELOW THE MINIMUM LEVEL" xml:space="preserve">
+    <value>Silozul este sub nivelul minim</value>
+  </data>
+  <data name="BULK DENSITY" xml:space="preserve">
+    <value>Densitate în vrac</value>
+  </data>
+  <data name="ESTIMATED MATERIAL BULK DENSITY" xml:space="preserve">
+    <value>Densitatea estimată a materialului în vrac</value>
+  </data>
+  <data name="TOTALIZED OUTPUT" xml:space="preserve">
+    <value>Producție totalizată</value>
+  </data>
+  <data name="SILO DISCHARGE ANOMALY (MATERIAL BRIDGE?)" xml:space="preserve">
+    <value>ANOMALIA DESCARCĂRII SILOZULUI (POD DE MATERIAL?)</value>
+  </data>
+  <data name="TOMRA - RECOVERY CHANNEL" xml:space="preserve">
+    <value>TOMRA - Canal de recuperare</value>
+  </data>
+  <data name="TOMRA - MAIN CONTROL" xml:space="preserve">
+    <value>TOMRA - Control principal</value>
+  </data>
+  <data name="(1=POWERED ON)" xml:space="preserve">
+    <value>(1=Pornit)</value>
+  </data>
+  <data name="SORTER MESSAGE PRESENT" xml:space="preserve">
+    <value>Mesaj sortator prezent</value>
+  </data>
+  <data name="(1=MESSAGE)" xml:space="preserve">
+    <value>(1=Mesaj)</value>
+  </data>
+  <data name="SORTER FAULT PRESENT" xml:space="preserve">
+    <value>Defecțiune sortator prezentă</value>
+  </data>
+  <data name="SORTING UNIT CONTROL NOT READY" xml:space="preserve">
+    <value>UNITATEA DE SORTARE NU ESTE PREGĂTITĂ</value>
+  </data>
+  <data name="LOCAL MESSAGE PRESENT" xml:space="preserve">
+    <value>MESAJ LOCAL PREZENT</value>
+  </data>
+  <data name="TOMRA INNOSORT - FLAKES SORTER" xml:space="preserve">
+    <value>TOMRA INNOSORT - Sortator de fulgi</value>
+  </data>
+  <data name="FLAKES SORTER HOPPER" xml:space="preserve">
+    <value>Buncăr de sortare a fulgilor</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND UP" xml:space="preserve">
+    <value>Diagnosticare ieșire F - Comandă UP</value>
+  </data>
+  <data name="F-OUTPUT - COMMAND UP" xml:space="preserve">
+    <value>F-OUTPUT - Comandă SUS</value>
+  </data>
+  <data name="SAFETY BARRIERS RESET PB" xml:space="preserve">
+    <value>Resetare bariere de siguranță PB</value>
+  </data>
+  <data name="F-INPUT SAFETY BARRIERS" xml:space="preserve">
+    <value>Bariere de siguranță F-INPUT</value>
+  </data>
+  <data name="SPECIFIC ENERGY" xml:space="preserve">
+    <value>Energie specifică</value>
+  </data>
+  <data name="WATER FOOTPRINT" xml:space="preserve">
+    <value>Amprenta de apă</value>
+  </data>
+  <data name="OVERALL CHEMICALS CONSUMPTION" xml:space="preserve">
+    <value>Consumul total de substanțe chimice</value>
+  </data>
+  <data name="DETERGENT INTENSITY" xml:space="preserve">
+    <value>Intensitatea detergentului</value>
+  </data>
+  <data name="CAUSTIC INTENSITY" xml:space="preserve">
+    <value>Intensitatea caustică</value>
+  </data>
+  <data name="ESTIMATED ANTIFOAM INTENSITY" xml:space="preserve">
+    <value>Intensitatea estimată a antispumei</value>
+  </data>
+  <data name="ESTIMATED OTHER ADDITIVES INTENSITY" xml:space="preserve">
+    <value>Intensitatea estimată a altor aditivi</value>
+  </data>
+  <data name="CONTROL ELECTRICAL CABINET" xml:space="preserve">
+    <value>Dulap electric de control</value>
+  </data>
+  <data name="COOLING SYSTEM HEALTHY" xml:space="preserve">
+    <value>Sistem de răcire sănătos</value>
+  </data>
+  <data name="STATUS OK OF CONTROL MODULE" xml:space="preserve">
+    <value>Starea modulului de control este în regulă</value>
+  </data>
+  <data name="FAULT RESET OF CONTROL MODULE" xml:space="preserve">
+    <value>Resetare defecțiune a modulului de control</value>
+  </data>
+  <data name="SYS - RESET OF CONTROL MODULE" xml:space="preserve">
+    <value>SYS - Resetarea modulului de control</value>
+  </data>
+  <data name="F-INPUT - SYS - EMERGENCY PUSH BUTTON" xml:space="preserve">
+    <value>F-INPUT - SYS - Buton de urgență</value>
+  </data>
+  <data name="F-INPUT - SYS - EMERGENCY PUSH BUTTON (FORESEEN X CAB OR MANAGED ON HMI)" xml:space="preserve">
+    <value>F-INPUT - SYS - Buton de urgență (prevăzut x CAB sau gestionat pe HMI)</value>
+  </data>
+  <data name="OVERLOAD (IN Q01)" xml:space="preserve">
+    <value>SUPRASARCINĂ (În Q01)</value>
+  </data>
+  <data name="MATERIAL PRESENT" xml:space="preserve">
+    <value>MATERIAL PREZENT</value>
+  </data>
+  <data name="NO MATERIAL IN THE SUBZONE" xml:space="preserve">
+    <value>Niciun material în subzonă</value>
+  </data>
+  <data name="NO MAINTENANCE" xml:space="preserve">
+    <value>FĂRĂ ÎNTREȚINERE</value>
+  </data>
+  <data name="NO PREPARATION" xml:space="preserve">
+    <value>FĂRĂ PREGĂTIRE</value>
+  </data>
+  <data name="SUBZONE IN PREPARATION MODE" xml:space="preserve">
+    <value>Subzonă în modul de pregătire</value>
+  </data>
+  <data name="NO PRODUCTION" xml:space="preserve">
+    <value>FĂRĂ PRODUCȚIE</value>
+  </data>
+  <data name="SUBZONE IN PRODUCTION MODE" xml:space="preserve">
+    <value>Subzonă în modul de producție</value>
+  </data>
+  <data name="NO STOP PENDING" xml:space="preserve">
+    <value>FĂRĂ STOP ÎN AȘTEPTARE</value>
+  </data>
+  <data name="SUBZONE IS WAITING FOR UPSTRAM TO STOP" xml:space="preserve">
+    <value>Subzona așteaptă ca Upstram să se oprească</value>
+  </data>
+  <data name="NO STOP CYCLE" xml:space="preserve">
+    <value>CICLU FĂRĂ OPRIRE</value>
+  </data>
+  <data name="SUBZONE IN STOP CYCLE" xml:space="preserve">
+    <value>Subzonă în ciclul de oprire</value>
+  </data>
+  <data name="MATERIAL PRESENCE" xml:space="preserve">
+    <value>Prezența materială</value>
+  </data>
+  <data name="FORCE TEMPORARY MATERIAL PRESENCE" xml:space="preserve">
+    <value>Forțarea prezenței materiale temporare</value>
+  </data>
+  <data name="DEBALER" xml:space="preserve">
+    <value>Debaler</value>
+  </data>
+  <data name="WHTANK" xml:space="preserve">
+    <value>Rezervorul alb</value>
+  </data>
+  <data name="SAFETY CHAINS" xml:space="preserve">
+    <value>Lanțuri de siguranță</value>
+  </data>
+  <data name="EXTERNAL SILO" xml:space="preserve">
+    <value>Siloz extern</value>
+  </data>
+  <data name="DEBALER -  COOLING PUMP" xml:space="preserve">
+    <value>Debalator - Pompă de răcire</value>
+  </data>
+  <data name="BUFFER BELT - CONVEYOR" xml:space="preserve">
+    <value>Bandă tampon - transportor</value>
+  </data>
+  <data name="CONTAINER READY" xml:space="preserve">
+    <value>Container pregătit</value>
+  </data>
+  <data name="EXTERNAL MIXING SILOS AREA" xml:space="preserve">
+    <value>Zona silozurilor de amestecare externe</value>
+  </data>
+  <data name="PN COMMUNICATION WITH EXTERNAL DEVICES" xml:space="preserve">
+    <value>Comunicarea PN cu dispozitive externe</value>
+  </data>
+  <data name="BYPASS OF NETWORK COMMUNICATION" xml:space="preserve">
+    <value>Ocolirea comunicării în rețea</value>
+  </data>
+  <data name="COMMUNICATION ALARM" xml:space="preserve">
+    <value>Alarmă de comunicare</value>
+  </data>
+  <data name="FORCE ALL EXTERNAL SIGNALS TO ALLOW PRODUCTION" xml:space="preserve">
+    <value>Forțați toate semnalele externe pentru a permite producția</value>
+  </data>
+  <data name="MAXIMUM TIME OF COMMUNICATION LOSS" xml:space="preserve">
+    <value>Timpul maxim de pierdere a comunicării</value>
+  </data>
+  <data name="MAXIMUM LEVEL CONTROL" xml:space="preserve">
+    <value>Controlul nivelului maxim</value>
+  </data>
+  <data name="OVERFLOW MODE CONTROL ADVANCED" xml:space="preserve">
+    <value>Control avansat al modului de supraîncărcare</value>
+  </data>
+  <data name="ABB-ACS580" xml:space="preserve">
+    <value>ABB-ACS580</value>
+  </data>
+  <data name="RIGHT LOCKING PIN" xml:space="preserve">
+    <value>Știftul de blocare dreapta</value>
+  </data>
+  <data name="RIGHT PIN" xml:space="preserve">
+    <value>Pinul drept</value>
+  </data>
+  <data name="LEFT LOCKING PIN" xml:space="preserve">
+    <value>Știftul de blocare stâng</value>
+  </data>
+  <data name="LEFT PIN" xml:space="preserve">
+    <value>Pinul stâng</value>
+  </data>
+  <data name="LOCKING PINS BOTH CLOSED" xml:space="preserve">
+    <value>AMBELE ȘTIVI DE BLOCARE SUNT ÎNCHISI</value>
+  </data>
+  <data name="LOCKING PINS NOT CLOSED" xml:space="preserve">
+    <value>Știfturile de blocare nu sunt închise</value>
+  </data>
+  <data name="(1=DWN)" xml:space="preserve">
+    <value>(1=DWN)</value>
+  </data>
+  <data name="UP" xml:space="preserve">
+    <value>SUS</value>
+  </data>
+  <data name="DOWN" xml:space="preserve">
+    <value>JOS</value>
+  </data>
+  <data name="CONTAINER" xml:space="preserve">
+    <value>CONTAINER</value>
+  </data>
+  <data name="WATER TO 230" xml:space="preserve">
+    <value>Apă până la 230</value>
+  </data>
+  <data name="WATER TO 240" xml:space="preserve">
+    <value>Apă până la 240</value>
+  </data>
+  <data name="GRINDER RUNNING" xml:space="preserve">
+    <value>RĂȘNIȚĂ ÎN FUNCȚIUNE</value>
+  </data>
+  <data name="GRINDER STOPPED" xml:space="preserve">
+    <value>Râșnița s-a oprit</value>
+  </data>
+  <data name="DISABLE GRINDER230" xml:space="preserve">
+    <value>Dezactivați Grinder230</value>
+  </data>
+  <data name="DISABLE GRINDER240" xml:space="preserve">
+    <value>Dezactivați Grinder240</value>
+  </data>
+  <data name="EMPTY CURRENT OF GRINDER230" xml:space="preserve">
+    <value>Curentul gol al râșniței 230</value>
+  </data>
+  <data name="EMPTY CURRENT OF GRINDER240" xml:space="preserve">
+    <value>Curentul gol al râșniței 240</value>
+  </data>
+  <data name="LONG AVERAGE CURRENT OF GRINDER230" xml:space="preserve">
+    <value>Curent mediu lung al râșniței 230</value>
+  </data>
+  <data name="LONG AVERAGE CURRENT OF GRINDER240" xml:space="preserve">
+    <value>Curent mediu lung al râșniței 240</value>
+  </data>
+  <data name="AT LEAST 1 SILO AVAILABLE" xml:space="preserve">
+    <value>CEL PUȚIN 1 SILOU DISPONIBIL</value>
+  </data>
+  <data name="NO SILOS AVAILABLE FOR FILLING" xml:space="preserve">
+    <value>Nu sunt disponibile silozuri pentru umplere</value>
+  </data>
+  <data name="EXTERNAL TRANSPORT SYSTEM RUN REQUEST" xml:space="preserve">
+    <value>Cerere de rulare a sistemului de transport extern</value>
+  </data>
+  <data name="SYSTEM READY (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Sistem pregătit (semnal extern)</value>
+  </data>
+  <data name="(1=EXT SYSTEM READY)" xml:space="preserve">
+    <value>(1=SISTEM EXT. PREGĂTIT)</value>
+  </data>
+  <data name="SOREMA REQUEST" xml:space="preserve">
+    <value>Cerere Sorema</value>
+  </data>
+  <data name="(1=SOREMA REQUEST)" xml:space="preserve">
+    <value>(1=CERERE SOREMA)</value>
+  </data>
+  <data name="EXTERNAL SYSTEM READY" xml:space="preserve">
+    <value>PREGĂTIT PENTRU SISTEM EXTERN</value>
+  </data>
+  <data name="EXTERNAL SYSTEM IS NOT READY" xml:space="preserve">
+    <value>Sistemul extern nu este pregătit</value>
+  </data>
+  <data name="PN COMMUNICATION" xml:space="preserve">
+    <value>COMUNICARE PN</value>
+  </data>
+  <data name="VALUE OF MEASURE IS FROZEN FOR NO COMMUNICATION !" xml:space="preserve">
+    <value>Valoarea măsurii este înghețată din cauza lipsei de comunicare!</value>
+  </data>
+  <data name="NO FILLING" xml:space="preserve">
+    <value>FĂRĂ UMPLUTURĂ</value>
+  </data>
+  <data name="NO DISCHARGE" xml:space="preserve">
+    <value>FĂRĂ DESCĂRCARE</value>
+  </data>
+  <data name="NO FILL AND DISCHARGE" xml:space="preserve">
+    <value>FĂRĂ UMPLERE ȘI DESCĂRCARE</value>
+  </data>
+  <data name="UPSTREAM READY OR GIVING MATERIAL (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Material pregătit în amonte sau care oferă (semnal extern)</value>
+  </data>
+  <data name="(1=EXT UPSTREAM OK TO GIVE MATERIAL)" xml:space="preserve">
+    <value>(1=EXT AMONT OK PENTRU A FURNIZA MATERIAL)</value>
+  </data>
+  <data name="EXTERNAL PLANT IS NOT GIVING MATERIAL" xml:space="preserve">
+    <value>Planta externă nu dă material</value>
+  </data>
+  <data name="EXTERNAL BIG BAG STATION" xml:space="preserve">
+    <value>Stație externă Big Bag</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER GENERAL START" xml:space="preserve">
+    <value>Sortator de fulgi BUHLER Pornire generală</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER MAIN STREAM " xml:space="preserve">
+    <value>Sortator de fulgi BUHLER pentru flux principal</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER RECYCLING STREAM" xml:space="preserve">
+    <value>Sortator de fulgi BUHLER pentru reciclare</value>
+  </data>
+  <data name="UNISENSOR FLAKES SORTER GENERAL START" xml:space="preserve">
+    <value>Sortator de fulgi UNISENSOR Pornire generală</value>
+  </data>
+  <data name="UNISENSOR FLAKES SORTER MAIN STREAM" xml:space="preserve">
+    <value>Sortator de fulgi UNISENSOR Flux principal</value>
+  </data>
+  <data name="OEE - OVERALL PLANT ELECTRICAL CONSUMPTION" xml:space="preserve">
+    <value>OEE - Consumul total de energie electrică al instalației</value>
+  </data>
+  <data name="OEE - OVERALL PLANT WATER CONSUMPTION" xml:space="preserve">
+    <value>OEE - Consumul total de apă al instalației</value>
+  </data>
+  <data name="ELECTRICAL CONTROL CABINET" xml:space="preserve">
+    <value>Dulap de control electric</value>
+  </data>
+  <data name="WASTE MANAGEMENT ELETRICAL CABINET" xml:space="preserve">
+    <value>Dulap electric pentru gestionarea deșeurilor</value>
+  </data>
 </root>

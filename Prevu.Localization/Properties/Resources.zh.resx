@@ -13386,4 +13386,868 @@
   <data name="P_SPEED_HIGH_x_TANK_REFILL" xml:space="preserve">
     <value>提高水泵转速设定值，以便在检测到缺水时加快水箱注水速度。</value>
   </data>
+  <data name="P_SINGLE_MIX_FLOW_SP" xml:space="preserve">
+    <value>单个搅拌机的目标注水流量。PLC 会自动将此值乘以同时请求水的搅拌机数量。</value>
+  </data>
+  <data name="P_RECIRC_FLOW_SP" xml:space="preserve">
+    <value>在储罐循环阶段（其他阀门关闭时）使用的流量设定点。</value>
+  </data>
+  <data name="P_ACT_FLOW_SP" xml:space="preserve">
+    <value>显示系统当前正在使用的流量设定值，用于调节水泵。</value>
+  </data>
+  <data name="P_NO_LOAD_AMP" xml:space="preserve">
+    <value>自动计算电机空载电流。它取最近 10 次启动中电机和机械部件电流的平均值（过程已停止）。</value>
+  </data>
+  <data name="P_CALCULATED_FILLING" xml:space="preserve">
+    <value>自动计算平均机器填充量。该系统持续积分转子电流随时间的变化，以估算机器填充量并防止物料过载。</value>
+  </data>
+  <data name="P_AMP_x_INT_CLEAN" xml:space="preserve">
+    <value>当电流达到此值时，系统会触发内部清洁循环，以冲洗掉所有残留物，并在以下字段中指定的延迟到期时降低电机电流（如果启用）。</value>
+  </data>
+  <data name="P_AMP_x_INT_CLEAN_DELAY" xml:space="preserve">
+    <value>此延迟起到限流滞后的作用。当电机电流超过上述限值时，计时器启动，只要电流保持在阈值以上，计时器就会持续运行。如果电流在整个持续时间内都保持在限值以上，则会请求启动清洁功能（如果已启用）。</value>
+  </data>
+  <data name="P_AMP_x_INT_CLEAN_ENAB" xml:space="preserve">
+    <value>如果此标志处于激活状态，则当电机电流达到指定阈值并在设定的延迟时间内保持高于该阈值时，清洁循环将启动。</value>
+  </data>
+  <data name="P_SPEED_x_DOWNSTR_EMPTY" xml:space="preserve">
+    <value>当传送带为空时，提高速度可以减少初始填充时间。</value>
+  </data>
+  <data name="P_ACC_TIME" xml:space="preserve">
+    <value>根据逆变器或软启动器的设置调整电机加速时间。</value>
+  </data>
+  <data name="P_FAN_OBSTRUCTION_AMP" xml:space="preserve">
+    <value>当电机电流低于此阈值时，系统会在以下字段中指定的延迟时间后发出警报，指示风扇可能存在堵塞。</value>
+  </data>
+  <data name="P_FAN_OBSTRUCTION_DELAY" xml:space="preserve">
+    <value>此延迟起到报警阈值滞后的作用。当电机电流低于此限值时，计时器启动，并在电流保持在阈值以下期间持续运行。如果电流在整个持续时间内都保持在限值以下，则会触发风扇阻塞报警。</value>
+  </data>
+  <data name="INFO_TEMPER_14" xml:space="preserve">
+    <value>现场检测到高温。检查环境和工艺条件。降低热负荷以防止设备损坏。</value>
+  </data>
+  <data name="INFO_STATC_01" xml:space="preserve">
+    <value>检查静态接触器及其负载。确保设备的电流限制校准与负载要求相符。</value>
+  </data>
+  <data name="INFO_STATC_02" xml:space="preserve">
+    <value>启动指令发出后，静态接触器无反馈。请检查控制线路和接触器状态。</value>
+  </data>
+  <data name="INFO_AMP_16" xml:space="preserve">
+    <value>停止运行时检测到电流表明可控硅整流器短路。立即切断电源，因为电机可能已经通电。尝试重新启动前，请检查静态接触器硬件。</value>
+  </data>
+  <data name="INFO_SAFETY_5" xml:space="preserve">
+    <value>安全超时：重置安全电路以恢复全部生产速度。</value>
+  </data>
+  <data name="M_INFO_EXT_CHEM_SYS" xml:space="preserve">
+    <value>检查外部化学加药系统</value>
+  </data>
+  <data name="M_INFO_OHM_1" xml:space="preserve">
+    <value>必要时检查化学泵、工艺条件和设置规程。</value>
+  </data>
+  <data name="M_INFO_OHM_2" xml:space="preserve">
+    <value>必要时检查化学泵、工艺条件和设置规程。</value>
+  </data>
+  <data name="M_INFO_PH_1" xml:space="preserve">
+    <value>高pH值——腐蚀性溶液！检查工艺条件，必要时调整设置。</value>
+  </data>
+  <data name="M_INFO_PH_2" xml:space="preserve">
+    <value>低pH值——酸性溶液！检查工艺条件，必要时调整设置。</value>
+  </data>
+  <data name="M_INFO_DOWNSTR_NOT_RUN" xml:space="preserve">
+    <value>下游系统目前未运行，这可能会导致生产中断。请检查下游设备状态，如有必要，请启动设备以确保产品持续供应。</value>
+  </data>
+  <data name="PET BOTTLE WASHING PLANT" xml:space="preserve">
+    <value>PET瓶清洗厂</value>
+  </data>
+  <data name="MAX CURRENT LIMIT SWITCH" xml:space="preserve">
+    <value>最大电流限位开关</value>
+  </data>
+  <data name="SAFETY BARRIERS RESET REQUEST" xml:space="preserve">
+    <value>安全屏障重置请求</value>
+  </data>
+  <data name="SAFETY BARRIERS RESET REQUEST PUSH-BUTTON" xml:space="preserve">
+    <value>安全护栏复位请求按钮</value>
+  </data>
+  <data name="INVERTER SAFE STATUS FEEDBACK" xml:space="preserve">
+    <value>逆变器安全状态反馈</value>
+  </data>
+  <data name="F-INPUT - PULL-CORD SAFETIES" xml:space="preserve">
+    <value>F-INPUT - 拉绳安全装置</value>
+  </data>
+  <data name="F-INPUT - SAFETY BARRIERS" xml:space="preserve">
+    <value>F-INPUT - 安全护栏</value>
+  </data>
+  <data name="F-INPUT DIAGNOSTIC - PULL-CORD SAFETIES" xml:space="preserve">
+    <value>F型输入诊断 - 拉绳安全装置</value>
+  </data>
+  <data name="F-INPUT DIAGNOSTIC - SAFETY BARRIERS" xml:space="preserve">
+    <value>F-输入诊断 - 安全屏障</value>
+  </data>
+  <data name="CHARGING CONVEYOR - SAFETY KEY" xml:space="preserve">
+    <value>充电输送机 - 安全钥匙</value>
+  </data>
+  <data name="CHARGING CONVEYOR - LEFT LUBRIF." xml:space="preserve">
+    <value>充电输送机 - 左侧 Lubrif。</value>
+  </data>
+  <data name="CHARGING CONVEYOR - RIGHT LUBRIF." xml:space="preserve">
+    <value>充电输送机 - 右侧 Lubrif。</value>
+  </data>
+  <data name="CHARGING CONVEYOR - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>充电输送机 - 维护周期</value>
+  </data>
+  <data name="CHARGING CONVEYOR - LUBRIFICATION" xml:space="preserve">
+    <value>充电输送机 - 润滑</value>
+  </data>
+  <data name="DEBALER - MAIN PUMP" xml:space="preserve">
+    <value>脱捆机 - 主泵</value>
+  </data>
+  <data name="OIL SHUTOFF VALVE OPEN" xml:space="preserve">
+    <value>油切断阀已打开</value>
+  </data>
+  <data name="OUTPUT CONTACTORS FEEDBACK" xml:space="preserve">
+    <value>输出接触器反馈</value>
+  </data>
+  <data name="OIL SHUTOFF VALVE NOT OPEN" xml:space="preserve">
+    <value>油切断阀未打开</value>
+  </data>
+  <data name="DEBALER - SAFETY UNLOCK REELS" xml:space="preserve">
+    <value>卸包机 - 安全解锁卷轴</value>
+  </data>
+  <data name="DEBALER - AUXILIARY HYDRAULIC UNIT" xml:space="preserve">
+    <value>脱包机 - 辅助液压装置</value>
+  </data>
+  <data name="DEBALER - COOLING PUMP" xml:space="preserve">
+    <value>脱包机 - 冷却泵</value>
+  </data>
+  <data name="DEBALER - COOLING BLOWER" xml:space="preserve">
+    <value>脱包机 - 冷却风机</value>
+  </data>
+  <data name="DEBALER - THERMAL HEATER" xml:space="preserve">
+    <value>脱包机 - 热加热器</value>
+  </data>
+  <data name="DEBALER - HYDRAULIC SHAFT" xml:space="preserve">
+    <value>脱包机 - 液压轴</value>
+  </data>
+  <data name="DEBALER - HOPPER LEVEL" xml:space="preserve">
+    <value>脱包机 - 料斗液位</value>
+  </data>
+  <data name="DEBALER - OIL TEMPERATURE" xml:space="preserve">
+    <value>脱粒机 - 油温</value>
+  </data>
+  <data name="DEBALER - HYDRAULIC BYPASS" xml:space="preserve">
+    <value>脱包机 - 液压旁路</value>
+  </data>
+  <data name="DEBALER - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>脱包机 - 维护周期</value>
+  </data>
+  <data name="DEBALER - MANAGER" xml:space="preserve">
+    <value>脱包机 - 经理</value>
+  </data>
+  <data name="DEBALER - HYDRAULICS" xml:space="preserve">
+    <value>脱粒机 - 液压</value>
+  </data>
+  <data name="DRY TROMMEL - SAFETY DOOR UNLOCK SIDE" xml:space="preserve">
+    <value>干式滚筒筛 - 安全门解锁侧</value>
+  </data>
+  <data name="MAINTENANCE PROCEDURE - OPEN SIDE" xml:space="preserve">
+    <value>维护程序 - 开侧</value>
+  </data>
+  <data name="MOTOR TEMPERATURE (OPTIONAL)" xml:space="preserve">
+    <value>电机温度（可选）</value>
+  </data>
+  <data name="MOTOR OVERHEAT (OPTIONAL)" xml:space="preserve">
+    <value>电机过热保护（可选）</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR" xml:space="preserve">
+    <value>缓冲金属 - 输送机</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR SAFETY KEY" xml:space="preserve">
+    <value>缓冲金属 - 输送机安全钥匙</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR LEFT LUBRIF." xml:space="preserve">
+    <value>缓冲金属 - 输送机左侧润滑剂。</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR RIGHT LUBRIF." xml:space="preserve">
+    <value>缓冲金属 - 输送机右侧润滑剂。</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR HOPPER LEVEL" xml:space="preserve">
+    <value>缓冲金属 - 输送机料斗液位</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR MAINTENANCE CYCLE" xml:space="preserve">
+    <value>缓冲金属 - 输送机维护周期</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR LUBRIFICATION" xml:space="preserve">
+    <value>缓冲金属 - 输送机润滑</value>
+  </data>
+  <data name="WET TROMMEL" xml:space="preserve">
+    <value>湿式滚筒筛</value>
+  </data>
+  <data name="ESTIMATED FLOWRATE" xml:space="preserve">
+    <value>预计流量</value>
+  </data>
+  <data name="DECANTER - STEAM" xml:space="preserve">
+    <value>醒酒器 - 蒸汽</value>
+  </data>
+  <data name="DECANTER - DISCHARGE" xml:space="preserve">
+    <value>滗析器 - 出料</value>
+  </data>
+  <data name="PUMP - MOTOR" xml:space="preserve">
+    <value>水泵电机</value>
+  </data>
+  <data name="PUMP - WATER FLOWRATE" xml:space="preserve">
+    <value>水泵 - 水流量</value>
+  </data>
+  <data name="PUMP - WATER CONDUCTIVITY" xml:space="preserve">
+    <value>水泵 - 水传导率</value>
+  </data>
+  <data name="DISK SEPARATOR - WATER CLEANING" xml:space="preserve">
+    <value>圆盘分离器 - 水洗</value>
+  </data>
+  <data name="MAXIMUM OPEN TIME" xml:space="preserve">
+    <value>最长营业时间</value>
+  </data>
+  <data name="MAXIMUM OPEN TIME (0 = CONTROL BYPASS)" xml:space="preserve">
+    <value>最大开启时间（0 = 控制旁路）</value>
+  </data>
+  <data name="DISK SEPARATOR - AIR CLEANING" xml:space="preserve">
+    <value>圆盘分离器 - 空气清洁</value>
+  </data>
+  <data name="DISK SEPARATOR - CLEANING CYCLE" xml:space="preserve">
+    <value>磁盘分离器 - 清洁周期</value>
+  </data>
+  <data name="DISK SEPARATOR - BOTTOM RINSE CYCLE" xml:space="preserve">
+    <value>圆盘分离器 - 底部冲洗循环</value>
+  </data>
+  <data name="DISK SEPARATOR CLEANING MANAGER" xml:space="preserve">
+    <value>磁盘分离器清洁管理器</value>
+  </data>
+  <data name="SAD RUNNING" xml:space="preserve">
+    <value>悲伤的奔跑</value>
+  </data>
+  <data name="SAD NOT RUNNING" xml:space="preserve">
+    <value>SAD 未运行</value>
+  </data>
+  <data name="CLEANING ON TIME" xml:space="preserve">
+    <value>按时清洁</value>
+  </data>
+  <data name="CAUSTIC PUMP" xml:space="preserve">
+    <value>腐蚀泵</value>
+  </data>
+  <data name="PREDICTED MAXIMUM CONSUMPTION" xml:space="preserve">
+    <value>预测最大消耗量</value>
+  </data>
+  <data name="BOTTLE SORTER - ACCELERATION BELT" xml:space="preserve">
+    <value>瓶子分拣机 - 加速带</value>
+  </data>
+  <data name="VBPS ERROR" xml:space="preserve">
+    <value>VBPS 错误</value>
+  </data>
+  <data name="AIR PRESSURE FAULT" xml:space="preserve">
+    <value>气压故障</value>
+  </data>
+  <data name="SORTING UNIT - VALVE BLOCK IN SERVICE MODE" xml:space="preserve">
+    <value>分拣单元 - 阀块处于运行模式</value>
+  </data>
+  <data name="METAL SEPARATOR - CONVEYOR BELT" xml:space="preserve">
+    <value>金属分离器 - 传送带</value>
+  </data>
+  <data name="METAL SEPARATOR" xml:space="preserve">
+    <value>金属分离器</value>
+  </data>
+  <data name="METAL SEPARATOR - METAL DETECTOR" xml:space="preserve">
+    <value>金属分离器 - 金属探测器</value>
+  </data>
+  <data name="METAL SEPARATOR - DIVERTER" xml:space="preserve">
+    <value>金属分离器 - 分流器</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - BREAKER RELEASE COIL" xml:space="preserve">
+    <value>F-输出诊断 - 断路器释放线圈</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND LINE" xml:space="preserve">
+    <value>F-输出诊断 - 命令行</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND DELTA" xml:space="preserve">
+    <value>F-输出诊断 - 命令增量</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND STAR" xml:space="preserve">
+    <value>F-输出诊断 - 指令星</value>
+  </data>
+  <data name="CABINET BREAKER RELEASE COIL" xml:space="preserve">
+    <value>柜式断路器释放线圈</value>
+  </data>
+  <data name="F-OUTPUT - CABINET BREAKER RELEASE COIL" xml:space="preserve">
+    <value>F-输出 - 柜式断路器释放线圈</value>
+  </data>
+  <data name="F-INPUT - ROTOR STOPPED" xml:space="preserve">
+    <value>F-输入 - 转子停止</value>
+  </data>
+  <data name="F-INPUT DIAGNOSTIC - ROTOR STOPPED" xml:space="preserve">
+    <value>F-输入诊断 - 转子停止</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND KEY RELEASE" xml:space="preserve">
+    <value>F-输出诊断 - 命令键释放</value>
+  </data>
+  <data name="COMMAND KEY RELEASE" xml:space="preserve">
+    <value>命令密钥发布</value>
+  </data>
+  <data name="ROTOR STOPPED - HARDWARE FAULT (INPUT PASSIVATION)" xml:space="preserve">
+    <value>转子停止运转 - 硬件故障（输入钝化）</value>
+  </data>
+  <data name="UNLOCK COMMAND - HARDWARE FAULT (OUTPUT PASSIVATION)" xml:space="preserve">
+    <value>解锁命令 - 硬件故障（输出钝化）</value>
+  </data>
+  <data name="HIGH LEVEL TIMEOUT" xml:space="preserve">
+    <value>高级超时</value>
+  </data>
+  <data name="TRANSPORT" xml:space="preserve">
+    <value>运输</value>
+  </data>
+  <data name="MICROFILTER - CLEANING WATER FLOW RATE" xml:space="preserve">
+    <value>微滤器 - 清洗水流速</value>
+  </data>
+  <data name="CLEANING BY LEVEL ENABLED" xml:space="preserve">
+    <value>已启用按层级清洁功能</value>
+  </data>
+  <data name="WATER HIGH LEVEL CLEANING NOT ENABLED" xml:space="preserve">
+    <value>高水位清洗功能未启用。</value>
+  </data>
+  <data name="NO CLEANING REQUESTED" xml:space="preserve">
+    <value>无需清洁服务</value>
+  </data>
+  <data name="CLEANING IN PROGRESS FOR OPERATOR REQUEST" xml:space="preserve">
+    <value>应操作员要求，正在进行清洁工作</value>
+  </data>
+  <data name="CLEANING WATER ON TIME (0=DISABLED)" xml:space="preserve">
+    <value>清洁用水开启时间（0=关闭）</value>
+  </data>
+  <data name="DECANTER - SOREMA REQUEST WATER" xml:space="preserve">
+    <value>醒酒器 - Sorema 请求水</value>
+  </data>
+  <data name="DECANTER - WATER FLOW RATE" xml:space="preserve">
+    <value>滗析器 - 水流速</value>
+  </data>
+  <data name="PUMP - WATER FLOWRATE TO GRINDER" xml:space="preserve">
+    <value>水泵 - 研磨机水流量</value>
+  </data>
+  <data name="DISCHARGE PUMP TO PREWASH" xml:space="preserve">
+    <value>排污泵至预洗</value>
+  </data>
+  <data name="SCREW CONVEYOR -MIN LEVEL" xml:space="preserve">
+    <value>螺旋输送机 - 最低液位</value>
+  </data>
+  <data name="MINIMUM LEVEL NOT REACHED" xml:space="preserve">
+    <value>未达到最低水平</value>
+  </data>
+  <data name="NO MINIMUM LEVEL" xml:space="preserve">
+    <value>无最低要求</value>
+  </data>
+  <data name="MINIMUM LEVEL REACHED" xml:space="preserve">
+    <value>已达到最低水平</value>
+  </data>
+  <data name="SILO MIXER - MOTOR" xml:space="preserve">
+    <value>筒仓搅拌机 - 电机</value>
+  </data>
+  <data name="(1&gt;=HIGH)" xml:space="preserve">
+    <value>（1&gt;=高）</value>
+  </data>
+  <data name="FILLED SILO" xml:space="preserve">
+    <value>已填满的筒仓</value>
+  </data>
+  <data name="NOT WAITING FOR LOW LEVEL" xml:space="preserve">
+    <value>不等待低级别</value>
+  </data>
+  <data name="WAITING FOR MATERIAL BELOW LOW LEVEL" xml:space="preserve">
+    <value>等待低层以下材料</value>
+  </data>
+  <data name="TRANSFER TANK LEVEL" xml:space="preserve">
+    <value>输送罐液位</value>
+  </data>
+  <data name="TRANSFER TANK LEVEL NOT OK FOR MIXERS DISCHARGE" xml:space="preserve">
+    <value>输送罐液位不符合搅拌机排放要求</value>
+  </data>
+  <data name="INLET WATER FLOWRATE" xml:space="preserve">
+    <value>进水流量</value>
+  </data>
+  <data name="INLET WATER FLOWRATE NOT OK" xml:space="preserve">
+    <value>进水流量不正常</value>
+  </data>
+  <data name="OUTLET STEAM PRESSURE NOT OK" xml:space="preserve">
+    <value>出口蒸汽压力异常</value>
+  </data>
+  <data name="WATER TANK - WATER TO RECIRCULATION" xml:space="preserve">
+    <value>水箱 - 水循环</value>
+  </data>
+  <data name="WATER TANK - WATER TO PREWASH" xml:space="preserve">
+    <value>水箱 - 预洗用水</value>
+  </data>
+  <data name="DISCHARGE TIME ABOVE ZERO" xml:space="preserve">
+    <value>放电时间高于零</value>
+  </data>
+  <data name="TANK DISCHARGE TIME IS SET TO ZERO" xml:space="preserve">
+    <value>储罐卸料时间设置为零</value>
+  </data>
+  <data name="WATER TANK" xml:space="preserve">
+    <value>水箱</value>
+  </data>
+  <data name="BOWL FILLING POSITION NOT OK" xml:space="preserve">
+    <value>碗装水位置不正确</value>
+  </data>
+  <data name="CAUSTIC MAXIMUM HOURLY USAGE EXCEEDED" xml:space="preserve">
+    <value>腐蚀性物质每小时最大使用量已超标</value>
+  </data>
+  <data name="INFO_PST_6" xml:space="preserve">
+    <value>INFO_PST_6</value>
+  </data>
+  <data name="DETERGENT MAXIMUM HOURLY USAGE EXCEEDED" xml:space="preserve">
+    <value>洗涤剂每小时最大用量已超标</value>
+  </data>
+  <data name="CHEMICALS HOURLY USAGE" xml:space="preserve">
+    <value>化学品每小时用量</value>
+  </data>
+  <data name="CAUSTIC HOURLY USAGE" xml:space="preserve">
+    <value>腐蚀性物质每小时用量</value>
+  </data>
+  <data name="DETERGENT HOURLY USAGE" xml:space="preserve">
+    <value>洗涤剂每小时用量</value>
+  </data>
+  <data name="CONSTANT SPEED" xml:space="preserve">
+    <value>恒速</value>
+  </data>
+  <data name="SPEED MODULATION IN PROGRESS" xml:space="preserve">
+    <value>速度调节进行中</value>
+  </data>
+  <data name="RECIRCULATION SPEED (IN CONSTANT MODE)" xml:space="preserve">
+    <value>循环速度（恒定模式）</value>
+  </data>
+  <data name="PROCESS LOOP SP" xml:space="preserve">
+    <value>处理循环 SP</value>
+  </data>
+  <data name="THE SHORT LOOP FLOWRATE SETPOINT IS ACTIVE" xml:space="preserve">
+    <value>短回路流量设定点已激活</value>
+  </data>
+  <data name="SETPOINT FOR THE SHORT RECIRCULATION LOOP" xml:space="preserve">
+    <value>短循环回路的设定点</value>
+  </data>
+  <data name="WCE - MOTOR" xml:space="preserve">
+    <value>WCE - 电机</value>
+  </data>
+  <data name="WCE - FRESH WATER CLEANING" xml:space="preserve">
+    <value>WCE - 淡水清洁</value>
+  </data>
+  <data name="WCE - STEAM CLEANING" xml:space="preserve">
+    <value>WCE - 蒸汽清洁</value>
+  </data>
+  <data name="WCE - CLEANING WATER FLOW RATE" xml:space="preserve">
+    <value>WCE - 清洗水流量</value>
+  </data>
+  <data name="WCE - CLEANING MANAGER" xml:space="preserve">
+    <value>WCE - 清洁经理</value>
+  </data>
+  <data name="WCE RUNNING" xml:space="preserve">
+    <value>WCE 运行</value>
+  </data>
+  <data name="CENTRIFUGE NOT RUNNING" xml:space="preserve">
+    <value>离心机未运行</value>
+  </data>
+  <data name="STEAM TIME NO ZERO" xml:space="preserve">
+    <value>蒸汽时间不为零</value>
+  </data>
+  <data name="STEAM ON TIME IS SET TO ZERO" xml:space="preserve">
+    <value>Steam 开启时间已设置为零</value>
+  </data>
+  <data name="WATER TIME NO ZERO" xml:space="preserve">
+    <value>水时间不为零</value>
+  </data>
+  <data name="WATER ON TIME IS SET TO ZERO" xml:space="preserve">
+    <value>开水时间设置为零</value>
+  </data>
+  <data name="NO STEAM CLEANING" xml:space="preserve">
+    <value>禁止蒸汽清洗</value>
+  </data>
+  <data name="STEAM CLEANING" xml:space="preserve">
+    <value>蒸汽清洁</value>
+  </data>
+  <data name="NO WATER RINSING" xml:space="preserve">
+    <value>无需水冲洗</value>
+  </data>
+  <data name="WATER RINSING" xml:space="preserve">
+    <value>水冲洗</value>
+  </data>
+  <data name="CLEANING STEAM ON TIME" xml:space="preserve">
+    <value>按时进行清洁蒸汽</value>
+  </data>
+  <data name="(CONFIGURABLE)" xml:space="preserve">
+    <value>（可配置）</value>
+  </data>
+  <data name="LEVEL OVERLOAD (OPTIONAL)" xml:space="preserve">
+    <value>电平过载（可选）</value>
+  </data>
+  <data name="GREEN LAMP" xml:space="preserve">
+    <value>绿灯</value>
+  </data>
+  <data name="BAG OK FOR PROCESS LAMP" xml:space="preserve">
+    <value>工艺灯的袋子没问题</value>
+  </data>
+  <data name="NO DISCHARGE FOR PREPARATION IN PROGRESS" xml:space="preserve">
+    <value>准备工作正在进行中，暂无出院安排</value>
+  </data>
+  <data name="EXCHANGE WATER PAUSE TIME IS SET TO ZERO" xml:space="preserve">
+    <value>换水暂停时间设置为零</value>
+  </data>
+  <data name="WATER EXCHANGE TIME IS SET TO ZERO (NO EXCHANGE)" xml:space="preserve">
+    <value>水交换时间设置为零（不交换）</value>
+  </data>
+  <data name="SEPARATION TANK REFILL SPEED (IN CONSTANT MODE)" xml:space="preserve">
+    <value>分离罐补水速度（恒定模式下）</value>
+  </data>
+  <data name="PROCESS SP" xml:space="preserve">
+    <value>流程 SP</value>
+  </data>
+  <data name="TANK REFILL FLOWRATE SETPOINT IS ACTIVE" xml:space="preserve">
+    <value>水箱补水流量设定点已激活</value>
+  </data>
+  <data name="SETPOINT FOR SEPARATION TANK REFILL" xml:space="preserve">
+    <value>分离罐补水设定点</value>
+  </data>
+  <data name="METAL SEPARATOR - VIBRATING TABLE" xml:space="preserve">
+    <value>金属分离器 - 振动台</value>
+  </data>
+  <data name="METAL SEPARATOR - MAGNETIC ROLL" xml:space="preserve">
+    <value>金属分离器 - 磁辊</value>
+  </data>
+  <data name="NOT OK FOR PROCESS - AWAITING THE LOW LEVEL" xml:space="preserve">
+    <value>流程不合格 - 等待低级别</value>
+  </data>
+  <data name="NOT EMPTY" xml:space="preserve">
+    <value>不为空</value>
+  </data>
+  <data name="THE SILO IS BELOW THE MINIMUM LEVEL" xml:space="preserve">
+    <value>筒仓低于最低液位</value>
+  </data>
+  <data name="BULK DENSITY" xml:space="preserve">
+    <value>堆积密度</value>
+  </data>
+  <data name="ESTIMATED MATERIAL BULK DENSITY" xml:space="preserve">
+    <value>估算材料堆积密度</value>
+  </data>
+  <data name="TOTALIZED OUTPUT" xml:space="preserve">
+    <value>总产出</value>
+  </data>
+  <data name="SILO DISCHARGE ANOMALY (MATERIAL BRIDGE?)" xml:space="preserve">
+    <value>筒仓卸料异常（物料架桥？）</value>
+  </data>
+  <data name="TOMRA - RECOVERY CHANNEL" xml:space="preserve">
+    <value>TOMRA - 恢复频道</value>
+  </data>
+  <data name="TOMRA - MAIN CONTROL" xml:space="preserve">
+    <value>TOMRA - 主控系统</value>
+  </data>
+  <data name="(1=POWERED ON)" xml:space="preserve">
+    <value>（1=已开机）</value>
+  </data>
+  <data name="SORTER MESSAGE PRESENT" xml:space="preserve">
+    <value>排序器消息呈现</value>
+  </data>
+  <data name="(1=MESSAGE)" xml:space="preserve">
+    <value>（1=消息）</value>
+  </data>
+  <data name="SORTER FAULT PRESENT" xml:space="preserve">
+    <value>分拣机故障</value>
+  </data>
+  <data name="SORTING UNIT CONTROL NOT READY" xml:space="preserve">
+    <value>分拣单元控制尚未就绪</value>
+  </data>
+  <data name="LOCAL MESSAGE PRESENT" xml:space="preserve">
+    <value>本地消息呈现</value>
+  </data>
+  <data name="TOMRA INNOSORT - FLAKES SORTER" xml:space="preserve">
+    <value>TOMRA INNOSORT - 薄片分选机</value>
+  </data>
+  <data name="FLAKES SORTER HOPPER" xml:space="preserve">
+    <value>片状分拣料斗</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND UP" xml:space="preserve">
+    <value>F-输出诊断 - 命令向上</value>
+  </data>
+  <data name="F-OUTPUT - COMMAND UP" xml:space="preserve">
+    <value>F-OUTPUT - 命令向上</value>
+  </data>
+  <data name="SAFETY BARRIERS RESET PB" xml:space="preserve">
+    <value>安全护栏重置 PB</value>
+  </data>
+  <data name="F-INPUT SAFETY BARRIERS" xml:space="preserve">
+    <value>F-INPUT 安全护栏</value>
+  </data>
+  <data name="SPECIFIC ENERGY" xml:space="preserve">
+    <value>比能量</value>
+  </data>
+  <data name="WATER FOOTPRINT" xml:space="preserve">
+    <value>水足迹</value>
+  </data>
+  <data name="OVERALL CHEMICALS CONSUMPTION" xml:space="preserve">
+    <value>化学品总消耗量</value>
+  </data>
+  <data name="DETERGENT INTENSITY" xml:space="preserve">
+    <value>洗涤剂强度</value>
+  </data>
+  <data name="CAUSTIC INTENSITY" xml:space="preserve">
+    <value>腐蚀强度</value>
+  </data>
+  <data name="ESTIMATED ANTIFOAM INTENSITY" xml:space="preserve">
+    <value>预计消泡强度</value>
+  </data>
+  <data name="ESTIMATED OTHER ADDITIVES INTENSITY" xml:space="preserve">
+    <value>估计其他添加剂强度</value>
+  </data>
+  <data name="CONTROL ELECTRICAL CABINET" xml:space="preserve">
+    <value>控制电气柜</value>
+  </data>
+  <data name="COOLING SYSTEM HEALTHY" xml:space="preserve">
+    <value>冷却系统健康</value>
+  </data>
+  <data name="STATUS OK OF CONTROL MODULE" xml:space="preserve">
+    <value>控制模块状态正常</value>
+  </data>
+  <data name="FAULT RESET OF CONTROL MODULE" xml:space="preserve">
+    <value>控制模块故障复位</value>
+  </data>
+  <data name="SYS - RESET OF CONTROL MODULE" xml:space="preserve">
+    <value>SYS - 控制模块重置</value>
+  </data>
+  <data name="F-INPUT - SYS - EMERGENCY PUSH BUTTON" xml:space="preserve">
+    <value>F-INPUT - SYS - 紧急按钮</value>
+  </data>
+  <data name="F-INPUT - SYS - EMERGENCY PUSH BUTTON (FORESEEN X CAB OR MANAGED ON HMI)" xml:space="preserve">
+    <value>F-INPUT - SYS - 紧急按钮（预先设定在驾驶室或通过人机界面管理）</value>
+  </data>
+  <data name="OVERLOAD (IN Q01)" xml:space="preserve">
+    <value>过载（Q01）</value>
+  </data>
+  <data name="MATERIAL PRESENT" xml:space="preserve">
+    <value>现有材料</value>
+  </data>
+  <data name="NO MATERIAL IN THE SUBZONE" xml:space="preserve">
+    <value>子区域内无物质</value>
+  </data>
+  <data name="NO MAINTENANCE" xml:space="preserve">
+    <value>无需维护</value>
+  </data>
+  <data name="NO PREPARATION" xml:space="preserve">
+    <value>无需准备</value>
+  </data>
+  <data name="SUBZONE IN PREPARATION MODE" xml:space="preserve">
+    <value>子区域处于准备模式</value>
+  </data>
+  <data name="NO PRODUCTION" xml:space="preserve">
+    <value>无生产</value>
+  </data>
+  <data name="SUBZONE IN PRODUCTION MODE" xml:space="preserve">
+    <value>生产模式下的子区域</value>
+  </data>
+  <data name="NO STOP PENDING" xml:space="preserve">
+    <value>无停止待处理</value>
+  </data>
+  <data name="SUBZONE IS WAITING FOR UPSTRAM TO STOP" xml:space="preserve">
+    <value>子区域正在等待上游停止</value>
+  </data>
+  <data name="NO STOP CYCLE" xml:space="preserve">
+    <value>不间断循环</value>
+  </data>
+  <data name="SUBZONE IN STOP CYCLE" xml:space="preserve">
+    <value>停止循环中的子区域</value>
+  </data>
+  <data name="MATERIAL PRESENCE" xml:space="preserve">
+    <value>物质存在</value>
+  </data>
+  <data name="FORCE TEMPORARY MATERIAL PRESENCE" xml:space="preserve">
+    <value>强制临时材料存在</value>
+  </data>
+  <data name="DEBALER" xml:space="preserve">
+    <value>脱包机</value>
+  </data>
+  <data name="WHTANK" xml:space="preserve">
+    <value>水箱</value>
+  </data>
+  <data name="SAFETY CHAINS" xml:space="preserve">
+    <value>安全链</value>
+  </data>
+  <data name="EXTERNAL SILO" xml:space="preserve">
+    <value>外部筒仓</value>
+  </data>
+  <data name="DEBALER -  COOLING PUMP" xml:space="preserve">
+    <value>脱包机 - 冷却泵</value>
+  </data>
+  <data name="BUFFER BELT - CONVEYOR" xml:space="preserve">
+    <value>缓冲带 - 输送机</value>
+  </data>
+  <data name="CONTAINER READY" xml:space="preserve">
+    <value>集装箱已准备就绪</value>
+  </data>
+  <data name="EXTERNAL MIXING SILOS AREA" xml:space="preserve">
+    <value>外部混合筒仓区域</value>
+  </data>
+  <data name="PN COMMUNICATION WITH EXTERNAL DEVICES" xml:space="preserve">
+    <value>PN 与外部设备通信</value>
+  </data>
+  <data name="BYPASS OF NETWORK COMMUNICATION" xml:space="preserve">
+    <value>绕过网络通信</value>
+  </data>
+  <data name="COMMUNICATION ALARM" xml:space="preserve">
+    <value>通讯报警</value>
+  </data>
+  <data name="FORCE ALL EXTERNAL SIGNALS TO ALLOW PRODUCTION" xml:space="preserve">
+    <value>强制所有外部信号以允许生产</value>
+  </data>
+  <data name="MAXIMUM TIME OF COMMUNICATION LOSS" xml:space="preserve">
+    <value>通信中断的最长时间</value>
+  </data>
+  <data name="MAXIMUM LEVEL CONTROL" xml:space="preserve">
+    <value>最大液位控制</value>
+  </data>
+  <data name="OVERFLOW MODE CONTROL ADVANCED" xml:space="preserve">
+    <value>溢出模式控制高级</value>
+  </data>
+  <data name="ABB-ACS580" xml:space="preserve">
+    <value>ABB-ACS580</value>
+  </data>
+  <data name="RIGHT LOCKING PIN" xml:space="preserve">
+    <value>右侧锁定销</value>
+  </data>
+  <data name="RIGHT PIN" xml:space="preserve">
+    <value>右针</value>
+  </data>
+  <data name="LEFT LOCKING PIN" xml:space="preserve">
+    <value>左侧锁定销</value>
+  </data>
+  <data name="LEFT PIN" xml:space="preserve">
+    <value>左图钉</value>
+  </data>
+  <data name="LOCKING PINS BOTH CLOSED" xml:space="preserve">
+    <value>两个锁销均已闭合</value>
+  </data>
+  <data name="LOCKING PINS NOT CLOSED" xml:space="preserve">
+    <value>锁定销未闭合</value>
+  </data>
+  <data name="(1=DWN)" xml:space="preserve">
+    <value>（1=DWN）</value>
+  </data>
+  <data name="UP" xml:space="preserve">
+    <value>向上</value>
+  </data>
+  <data name="DOWN" xml:space="preserve">
+    <value>向下</value>
+  </data>
+  <data name="CONTAINER" xml:space="preserve">
+    <value>容器</value>
+  </data>
+  <data name="WATER TO 230" xml:space="preserve">
+    <value>水至230</value>
+  </data>
+  <data name="WATER TO 240" xml:space="preserve">
+    <value>水至240</value>
+  </data>
+  <data name="GRINDER RUNNING" xml:space="preserve">
+    <value>研磨机运转中</value>
+  </data>
+  <data name="GRINDER STOPPED" xml:space="preserve">
+    <value>研磨机停止运转</value>
+  </data>
+  <data name="DISABLE GRINDER230" xml:space="preserve">
+    <value>禁用 Grinder230</value>
+  </data>
+  <data name="DISABLE GRINDER240" xml:space="preserve">
+    <value>禁用 Grinder240</value>
+  </data>
+  <data name="EMPTY CURRENT OF GRINDER230" xml:space="preserve">
+    <value>研磨机230的空电流</value>
+  </data>
+  <data name="EMPTY CURRENT OF GRINDER240" xml:space="preserve">
+    <value>Grinder240 的空电流</value>
+  </data>
+  <data name="LONG AVERAGE CURRENT OF GRINDER230" xml:space="preserve">
+    <value>研磨机230的长期平均电流</value>
+  </data>
+  <data name="LONG AVERAGE CURRENT OF GRINDER240" xml:space="preserve">
+    <value>研磨机240的长期平均电流</value>
+  </data>
+  <data name="AT LEAST 1 SILO AVAILABLE" xml:space="preserve">
+    <value>至少有一个筒仓可用</value>
+  </data>
+  <data name="NO SILOS AVAILABLE FOR FILLING" xml:space="preserve">
+    <value>没有可用于灌装的筒仓。</value>
+  </data>
+  <data name="EXTERNAL TRANSPORT SYSTEM RUN REQUEST" xml:space="preserve">
+    <value>外部传输系统运行请求</value>
+  </data>
+  <data name="SYSTEM READY (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>系统就绪（外部信号）</value>
+  </data>
+  <data name="(1=EXT SYSTEM READY)" xml:space="preserve">
+    <value>（1=外部系统就绪）</value>
+  </data>
+  <data name="SOREMA REQUEST" xml:space="preserve">
+    <value>索雷玛请求</value>
+  </data>
+  <data name="(1=SOREMA REQUEST)" xml:space="preserve">
+    <value>（1=SOREMA 请求）</value>
+  </data>
+  <data name="EXTERNAL SYSTEM READY" xml:space="preserve">
+    <value>外部系统已准备就绪</value>
+  </data>
+  <data name="EXTERNAL SYSTEM IS NOT READY" xml:space="preserve">
+    <value>外部系统尚未就绪。</value>
+  </data>
+  <data name="PN COMMUNICATION" xml:space="preserve">
+    <value>PN通信</value>
+  </data>
+  <data name="VALUE OF MEASURE IS FROZEN FOR NO COMMUNICATION !" xml:space="preserve">
+    <value>由于缺乏沟通，该指标值已被冻结！</value>
+  </data>
+  <data name="NO FILLING" xml:space="preserve">
+    <value>无需填充</value>
+  </data>
+  <data name="NO DISCHARGE" xml:space="preserve">
+    <value>无排放</value>
+  </data>
+  <data name="NO FILL AND DISCHARGE" xml:space="preserve">
+    <value>无需填充和排放</value>
+  </data>
+  <data name="UPSTREAM READY OR GIVING MATERIAL (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>上游准备就绪或提供材料（外部信号）</value>
+  </data>
+  <data name="(1=EXT UPSTREAM OK TO GIVE MATERIAL)" xml:space="preserve">
+    <value>（1=上游外部允许提供材料）</value>
+  </data>
+  <data name="EXTERNAL PLANT IS NOT GIVING MATERIAL" xml:space="preserve">
+    <value>外部工厂未提供材料</value>
+  </data>
+  <data name="EXTERNAL BIG BAG STATION" xml:space="preserve">
+    <value>外部大袋站</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER GENERAL START" xml:space="preserve">
+    <value>布勒片状分拣机总启动</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER MAIN STREAM " xml:space="preserve">
+    <value>布勒片状分选机主流</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER RECYCLING STREAM" xml:space="preserve">
+    <value>布勒片状分拣机回收流</value>
+  </data>
+  <data name="UNISENSOR FLAKES SORTER GENERAL START" xml:space="preserve">
+    <value>UNISENSOR 薄片分拣机 通用启动</value>
+  </data>
+  <data name="UNISENSOR FLAKES SORTER MAIN STREAM" xml:space="preserve">
+    <value>UNISENSOR 片状分选机主流</value>
+  </data>
+  <data name="OEE - OVERALL PLANT ELECTRICAL CONSUMPTION" xml:space="preserve">
+    <value>OEE - 整体工厂用电量</value>
+  </data>
+  <data name="OEE - OVERALL PLANT WATER CONSUMPTION" xml:space="preserve">
+    <value>OEE - 工厂整体用水量</value>
+  </data>
+  <data name="ELECTRICAL CONTROL CABINET" xml:space="preserve">
+    <value>电气控制柜</value>
+  </data>
+  <data name="WASTE MANAGEMENT ELETRICAL CABINET" xml:space="preserve">
+    <value>废物管理电气柜</value>
+  </data>
 </root>

@@ -13392,4 +13392,868 @@
   <data name="P_SPEED_HIGH_x_TANK_REFILL" xml:space="preserve">
     <value>زيادة نقطة ضبط سرعة المضخة لتسهيل إعادة ملء الخزان عند اكتشاف نقص في المياه.</value>
   </data>
+  <data name="P_SINGLE_MIX_FLOW_SP" xml:space="preserve">
+    <value>معدل تدفق التعبئة المستهدف لخلاط واحد. سيقوم جهاز التحكم المنطقي القابل للبرمجة (PLC) تلقائيًا بضرب هذه القيمة في عدد الخلاطات التي تطلب الماء في وقت واحد.</value>
+  </data>
+  <data name="P_RECIRC_FLOW_SP" xml:space="preserve">
+    <value>نقطة ضبط معدل التدفق المستخدمة أثناء مرحلة إعادة تدوير الخزان، عندما تكون الصمامات الأخرى مغلقة.</value>
+  </data>
+  <data name="P_ACT_FLOW_SP" xml:space="preserve">
+    <value>يعرض نقطة ضبط معدل التدفق النشطة حاليًا والتي يستخدمها النظام لتنظيم المضخة.</value>
+  </data>
+  <data name="P_NO_LOAD_AMP" xml:space="preserve">
+    <value>حساب تلقائي لتيار المحرك بدون حمل. يقوم بحساب متوسط ​​تيار المحرك والأجزاء الميكانيكية فقط خلال آخر 10 عمليات تشغيل (تم إيقاف العملية).</value>
+  </data>
+  <data name="P_CALCULATED_FILLING" xml:space="preserve">
+    <value>حساب تلقائي لمتوسط ​​تعبئة الماكينة. يقوم النظام بدمج تيار الدوار باستمرار مع مرور الوقت لتقدير تعبئة الماكينة ومنع التحميل الزائد للمواد.</value>
+  </data>
+  <data name="P_AMP_x_INT_CLEAN" xml:space="preserve">
+    <value>عندما يصل التيار إلى هذه القيمة، يقوم النظام بتشغيل دورة تنظيف داخلية لطرد جميع البقايا وخفض تيار المحرك (إذا تم تمكينه) عند انتهاء التأخير المحدد في الحقل التالي.</value>
+  </data>
+  <data name="P_AMP_x_INT_CLEAN_DELAY" xml:space="preserve">
+    <value>يعمل هذا التأخير كآلية تباطؤ للحد الأقصى للتيار. عندما يتجاوز تيار المحرك الحد المذكور، يبدأ المؤقت بالعمل ويستمر طالما بقي التيار أعلى من الحد المسموح به. إذا ظل التيار أعلى من الحد طوال المدة، يُطلب بدء عملية التنظيف (إذا كانت مُفعّلة).</value>
+  </data>
+  <data name="P_AMP_x_INT_CLEAN_ENAB" xml:space="preserve">
+    <value>إذا كان هذا العلم نشطًا، فسيتم تمكين دورة التنظيف للبدء عندما يصل تيار المحرك إلى العتبة المحددة ويبقى فوقها لفترة التأخير المحددة.</value>
+  </data>
+  <data name="P_SPEED_x_DOWNSTR_EMPTY" xml:space="preserve">
+    <value>تُستخدم السرعة العالية لتقليل وقت ملء الخط الأولي عندما يكون الناقل فارغًا.</value>
+  </data>
+  <data name="P_ACC_TIME" xml:space="preserve">
+    <value>يقوم بضبط وقت تسارع المحرك بناءً على إعدادات العاكس أو بادئ التشغيل الناعم.</value>
+  </data>
+  <data name="P_FAN_OBSTRUCTION_AMP" xml:space="preserve">
+    <value>عندما ينخفض ​​تيار المحرك عن هذا الحد، يقوم النظام بتشغيل إنذار يشير إلى احتمال وجود عائق في المروحة بعد التأخير المحدد في الحقل التالي.</value>
+  </data>
+  <data name="P_FAN_OBSTRUCTION_DELAY" xml:space="preserve">
+    <value>يعمل هذا التأخير كفترة تباطؤ لعتبة الإنذار. عندما ينخفض ​​تيار المحرك عن هذا الحد، يبدأ المؤقت بالعمل ويستمر طالما بقي التيار دون العتبة. إذا بقي التيار دون الحد طوال المدة، يتم تفعيل إنذار انسداد المروحة.</value>
+  </data>
+  <data name="INFO_TEMPER_14" xml:space="preserve">
+    <value>تم رصد ارتفاع في درجة الحرارة في الموقع. يرجى فحص ظروف البيئة والعملية. خفّض الحمل الحراري لمنع تلف المعدات.</value>
+  </data>
+  <data name="INFO_STATC_01" xml:space="preserve">
+    <value>افحص الموصل الثابت وحمله. تأكد من أن معايرة حد التيار للجهاز تتطابق مع متطلبات الحمل.</value>
+  </data>
+  <data name="INFO_STATC_02" xml:space="preserve">
+    <value>لم يصدر أي رد فعل من الموصل الثابت بعد أمر التشغيل. تحقق من أسلاك التحكم وحالة الموصل.</value>
+  </data>
+  <data name="INFO_AMP_16" xml:space="preserve">
+    <value>يشير وجود تيار كهربائي أثناء التوقف إلى وجود قصر في دائرة SCR. افصل التيار الكهربائي فورًا لأن المحرك قد يكون موصولًا بالتيار. افحص مكونات الموصل الثابت قبل محاولة إعادة التشغيل.</value>
+  </data>
+  <data name="INFO_SAFETY_5" xml:space="preserve">
+    <value>مهلة الأمان: أعد ضبط دائرة الأمان لاستعادة سرعة الإنتاج الكاملة.</value>
+  </data>
+  <data name="M_INFO_EXT_CHEM_SYS" xml:space="preserve">
+    <value>فحص نظام الجرعات الكيميائية الخارجية</value>
+  </data>
+  <data name="M_INFO_OHM_1" xml:space="preserve">
+    <value>تحقق من مضخة المواد الكيميائية وظروف العملية وإعدادات النظام إذا لزم الأمر.</value>
+  </data>
+  <data name="M_INFO_OHM_2" xml:space="preserve">
+    <value>تحقق من مضخة المواد الكيميائية وظروف العملية وإعدادات النظام إذا لزم الأمر.</value>
+  </data>
+  <data name="M_INFO_PH_1" xml:space="preserve">
+    <value>درجة حموضة عالية - محلول كاوٍ! تحقق من ظروف العملية واضبط إعدادات النظام إذا لزم الأمر.</value>
+  </data>
+  <data name="M_INFO_PH_2" xml:space="preserve">
+    <value>انخفاض درجة الحموضة - محلول حمضي! تحقق من ظروف العملية واضبط إعدادات النظام إذا لزم الأمر.</value>
+  </data>
+  <data name="M_INFO_DOWNSTR_NOT_RUN" xml:space="preserve">
+    <value>النظام الفرعي متوقف حاليًا، مما قد يتسبب في توقف الإنتاج. يرجى التحقق من حالة المعدات الفرعية وتشغيلها إذا لزم الأمر لضمان استمرار تدفق المنتج.</value>
+  </data>
+  <data name="PET BOTTLE WASHING PLANT" xml:space="preserve">
+    <value>مصنع غسيل زجاجات البولي إيثيلين تيريفثالات</value>
+  </data>
+  <data name="MAX CURRENT LIMIT SWITCH" xml:space="preserve">
+    <value>مفتاح تحديد الحد الأقصى للتيار</value>
+  </data>
+  <data name="SAFETY BARRIERS RESET REQUEST" xml:space="preserve">
+    <value>طلب إعادة ضبط حواجز الأمان</value>
+  </data>
+  <data name="SAFETY BARRIERS RESET REQUEST PUSH-BUTTON" xml:space="preserve">
+    <value>زر طلب إعادة ضبط حواجز الأمان</value>
+  </data>
+  <data name="INVERTER SAFE STATUS FEEDBACK" xml:space="preserve">
+    <value>ملاحظات حول حالة أمان العاكس</value>
+  </data>
+  <data name="F-INPUT - PULL-CORD SAFETIES" xml:space="preserve">
+    <value>مدخل F - أمان سلك السحب</value>
+  </data>
+  <data name="F-INPUT - SAFETY BARRIERS" xml:space="preserve">
+    <value>المدخل F - حواجز السلامة</value>
+  </data>
+  <data name="F-INPUT DIAGNOSTIC - PULL-CORD SAFETIES" xml:space="preserve">
+    <value>تشخيص مدخل F - أمان سلك السحب</value>
+  </data>
+  <data name="F-INPUT DIAGNOSTIC - SAFETY BARRIERS" xml:space="preserve">
+    <value>التشخيص عبر المدخلات الأمامية - حواجز السلامة</value>
+  </data>
+  <data name="CHARGING CONVEYOR - SAFETY KEY" xml:space="preserve">
+    <value>ناقل الشحن - مفتاح الأمان</value>
+  </data>
+  <data name="CHARGING CONVEYOR - LEFT LUBRIF." xml:space="preserve">
+    <value>ناقل الشحن - تشحيم يساري.</value>
+  </data>
+  <data name="CHARGING CONVEYOR - RIGHT LUBRIF." xml:space="preserve">
+    <value>ناقل الشحن - تشحيم يمين.</value>
+  </data>
+  <data name="CHARGING CONVEYOR - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>ناقل الشحن - دورة الصيانة</value>
+  </data>
+  <data name="CHARGING CONVEYOR - LUBRIFICATION" xml:space="preserve">
+    <value>ناقل الشحن - التشحيم</value>
+  </data>
+  <data name="DEBALER - MAIN PUMP" xml:space="preserve">
+    <value>فاصل الضغط - المضخة الرئيسية</value>
+  </data>
+  <data name="OIL SHUTOFF VALVE OPEN" xml:space="preserve">
+    <value>صمام إيقاف الزيت مفتوح</value>
+  </data>
+  <data name="OUTPUT CONTACTORS FEEDBACK" xml:space="preserve">
+    <value>تغذية راجعة لموصلات الإخراج</value>
+  </data>
+  <data name="OIL SHUTOFF VALVE NOT OPEN" xml:space="preserve">
+    <value>صمام إيقاف الزيت غير مفتوح</value>
+  </data>
+  <data name="DEBALER - SAFETY UNLOCK REELS" xml:space="preserve">
+    <value>فكّ البكرات - بكرات فتح الأمان</value>
+  </data>
+  <data name="DEBALER - AUXILIARY HYDRAULIC UNIT" xml:space="preserve">
+    <value>وحدة هيدروليكية مساعدة - وحدة إزالة البالات</value>
+  </data>
+  <data name="DEBALER - COOLING PUMP" xml:space="preserve">
+    <value>ديبالر - مضخة تبريد</value>
+  </data>
+  <data name="DEBALER - COOLING BLOWER" xml:space="preserve">
+    <value>منفاخ تبريد - مزيل للرصاص</value>
+  </data>
+  <data name="DEBALER - THERMAL HEATER" xml:space="preserve">
+    <value>ديبالر - سخان حراري</value>
+  </data>
+  <data name="DEBALER - HYDRAULIC SHAFT" xml:space="preserve">
+    <value>عمود هيدروليكي - تفكيك</value>
+  </data>
+  <data name="DEBALER - HOPPER LEVEL" xml:space="preserve">
+    <value>جهاز تفريغ البالونات - مستوى القادوس</value>
+  </data>
+  <data name="DEBALER - OIL TEMPERATURE" xml:space="preserve">
+    <value>ديبالر - درجة حرارة الزيت</value>
+  </data>
+  <data name="DEBALER - HYDRAULIC BYPASS" xml:space="preserve">
+    <value>جهاز إزالة الحصى - نظام التجاوز الهيدروليكي</value>
+  </data>
+  <data name="DEBALER - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>دورة صيانة جهاز إزالة البالونات</value>
+  </data>
+  <data name="DEBALER - MANAGER" xml:space="preserve">
+    <value>مدير قسم تفكيك البالات</value>
+  </data>
+  <data name="DEBALER - HYDRAULICS" xml:space="preserve">
+    <value>جهاز إزالة البالونات - هيدروليكي</value>
+  </data>
+  <data name="DRY TROMMEL - SAFETY DOOR UNLOCK SIDE" xml:space="preserve">
+    <value>غربال جاف - جانب فتح باب الأمان</value>
+  </data>
+  <data name="MAINTENANCE PROCEDURE - OPEN SIDE" xml:space="preserve">
+    <value>إجراءات الصيانة - الجانب المفتوح</value>
+  </data>
+  <data name="MOTOR TEMPERATURE (OPTIONAL)" xml:space="preserve">
+    <value>درجة حرارة المحرك (اختياري)</value>
+  </data>
+  <data name="MOTOR OVERHEAT (OPTIONAL)" xml:space="preserve">
+    <value>ارتفاع درجة حرارة المحرك (اختياري)</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR" xml:space="preserve">
+    <value>معدن عازل - ناقل</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR SAFETY KEY" xml:space="preserve">
+    <value>معدن عازل - مفتاح أمان ناقل الحركة</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR LEFT LUBRIF." xml:space="preserve">
+    <value>معدن عازل - تشحيم ناقل الحركة الأيسر.</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR RIGHT LUBRIF." xml:space="preserve">
+    <value>معدن عازل - تشحيم ناقل الحركة الأيمن.</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR HOPPER LEVEL" xml:space="preserve">
+    <value>معدن عازل - مستوى قادوس ناقل</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR MAINTENANCE CYCLE" xml:space="preserve">
+    <value>المعدن العازل - دورة صيانة الناقل</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR LUBRIFICATION" xml:space="preserve">
+    <value>معدن عازل - تزييت السيور الناقلة</value>
+  </data>
+  <data name="WET TROMMEL" xml:space="preserve">
+    <value>غربال رطب</value>
+  </data>
+  <data name="ESTIMATED FLOWRATE" xml:space="preserve">
+    <value>معدل التدفق المقدر</value>
+  </data>
+  <data name="DECANTER - STEAM" xml:space="preserve">
+    <value>إبريق بخاري</value>
+  </data>
+  <data name="DECANTER - DISCHARGE" xml:space="preserve">
+    <value>قارورة - تفريغ</value>
+  </data>
+  <data name="PUMP - MOTOR" xml:space="preserve">
+    <value>مضخة - محرك</value>
+  </data>
+  <data name="PUMP - WATER FLOWRATE" xml:space="preserve">
+    <value>معدل تدفق الماء في المضخة</value>
+  </data>
+  <data name="PUMP - WATER CONDUCTIVITY" xml:space="preserve">
+    <value>مضخة - موصلية الماء</value>
+  </data>
+  <data name="DISK SEPARATOR - WATER CLEANING" xml:space="preserve">
+    <value>فاصل الأقراص - التنظيف بالماء</value>
+  </data>
+  <data name="MAXIMUM OPEN TIME" xml:space="preserve">
+    <value>أقصى وقت للفتح</value>
+  </data>
+  <data name="MAXIMUM OPEN TIME (0 = CONTROL BYPASS)" xml:space="preserve">
+    <value>أقصى وقت فتح (0 = تجاوز التحكم)</value>
+  </data>
+  <data name="DISK SEPARATOR - AIR CLEANING" xml:space="preserve">
+    <value>فاصل الأقراص - تنقية الهواء</value>
+  </data>
+  <data name="DISK SEPARATOR - CLEANING CYCLE" xml:space="preserve">
+    <value>فاصل الأقراص - دورة التنظيف</value>
+  </data>
+  <data name="DISK SEPARATOR - BOTTOM RINSE CYCLE" xml:space="preserve">
+    <value>فاصل الأقراص - دورة الشطف السفلي</value>
+  </data>
+  <data name="DISK SEPARATOR CLEANING MANAGER" xml:space="preserve">
+    <value>مدير تنظيف فواصل الأقراص</value>
+  </data>
+  <data name="SAD RUNNING" xml:space="preserve">
+    <value>جري حزين</value>
+  </data>
+  <data name="SAD NOT RUNNING" xml:space="preserve">
+    <value>SAD لا يعمل</value>
+  </data>
+  <data name="CLEANING ON TIME" xml:space="preserve">
+    <value>التنظيف في الوقت المحدد</value>
+  </data>
+  <data name="CAUSTIC PUMP" xml:space="preserve">
+    <value>مضخة الصودا الكاوية</value>
+  </data>
+  <data name="PREDICTED MAXIMUM CONSUMPTION" xml:space="preserve">
+    <value>الحد الأقصى المتوقع للاستهلاك</value>
+  </data>
+  <data name="BOTTLE SORTER - ACCELERATION BELT" xml:space="preserve">
+    <value>فرز الزجاجات - حزام التسارع</value>
+  </data>
+  <data name="VBPS ERROR" xml:space="preserve">
+    <value>خطأ VBPS</value>
+  </data>
+  <data name="AIR PRESSURE FAULT" xml:space="preserve">
+    <value>عطل في ضغط الهواء</value>
+  </data>
+  <data name="SORTING UNIT - VALVE BLOCK IN SERVICE MODE" xml:space="preserve">
+    <value>وحدة الفرز - كتلة الصمامات في وضع الخدمة</value>
+  </data>
+  <data name="METAL SEPARATOR - CONVEYOR BELT" xml:space="preserve">
+    <value>فاصل معدني - سير ناقل</value>
+  </data>
+  <data name="METAL SEPARATOR" xml:space="preserve">
+    <value>فاصل معدني</value>
+  </data>
+  <data name="METAL SEPARATOR - METAL DETECTOR" xml:space="preserve">
+    <value>فاصل المعادن - كاشف المعادن</value>
+  </data>
+  <data name="METAL SEPARATOR - DIVERTER" xml:space="preserve">
+    <value>فاصل المعادن - محول</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - BREAKER RELEASE COIL" xml:space="preserve">
+    <value>تشخيص خرج F - ملف تحرير القاطع</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND LINE" xml:space="preserve">
+    <value>تشخيص مخرجات F - سطر الأوامر</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND DELTA" xml:space="preserve">
+    <value>تشخيص مخرجات F - فرق الأوامر</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND STAR" xml:space="preserve">
+    <value>تشخيص مخرجات F - Command Star</value>
+  </data>
+  <data name="CABINET BREAKER RELEASE COIL" xml:space="preserve">
+    <value>ملف تحرير قاطع الدائرة الكهربائية</value>
+  </data>
+  <data name="F-OUTPUT - CABINET BREAKER RELEASE COIL" xml:space="preserve">
+    <value>مخرج F - ملف تحرير قاطع الدائرة الكهربائية للخزانة</value>
+  </data>
+  <data name="F-INPUT - ROTOR STOPPED" xml:space="preserve">
+    <value>مدخل F - توقف الدوار</value>
+  </data>
+  <data name="F-INPUT DIAGNOSTIC - ROTOR STOPPED" xml:space="preserve">
+    <value>تشخيص مدخل F - توقف الدوار</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND KEY RELEASE" xml:space="preserve">
+    <value>تشخيص مخرجات F - تحرير مفتاح الأوامر</value>
+  </data>
+  <data name="COMMAND KEY RELEASE" xml:space="preserve">
+    <value>تحرير مفتاح الأوامر</value>
+  </data>
+  <data name="ROTOR STOPPED - HARDWARE FAULT (INPUT PASSIVATION)" xml:space="preserve">
+    <value>توقف الدوار - عطل في الجهاز (تخميل المدخلات)</value>
+  </data>
+  <data name="UNLOCK COMMAND - HARDWARE FAULT (OUTPUT PASSIVATION)" xml:space="preserve">
+    <value>أمر فتح القفل - عطل في الجهاز (تعطيل الإخراج)</value>
+  </data>
+  <data name="HIGH LEVEL TIMEOUT" xml:space="preserve">
+    <value>مهلة عالية المستوى</value>
+  </data>
+  <data name="TRANSPORT" xml:space="preserve">
+    <value>ينقل</value>
+  </data>
+  <data name="MICROFILTER - CLEANING WATER FLOW RATE" xml:space="preserve">
+    <value>معدل تدفق مياه التنظيف - المرشح الدقيق</value>
+  </data>
+  <data name="CLEANING BY LEVEL ENABLED" xml:space="preserve">
+    <value>تم تفعيل خاصية التنظيف حسب المستوى</value>
+  </data>
+  <data name="WATER HIGH LEVEL CLEANING NOT ENABLED" xml:space="preserve">
+    <value>خاصية التنظيف بالماء عالي المستوى غير مفعلة</value>
+  </data>
+  <data name="NO CLEANING REQUESTED" xml:space="preserve">
+    <value>لا حاجة للتنظيف</value>
+  </data>
+  <data name="CLEANING IN PROGRESS FOR OPERATOR REQUEST" xml:space="preserve">
+    <value>عملية التنظيف جارية بناءً على طلب المشغل</value>
+  </data>
+  <data name="CLEANING WATER ON TIME (0=DISABLED)" xml:space="preserve">
+    <value>تنظيف المياه في الوقت المحدد (0 = معطل)</value>
+  </data>
+  <data name="DECANTER - SOREMA REQUEST WATER" xml:space="preserve">
+    <value>إبريق - طلب ماء سوريما</value>
+  </data>
+  <data name="DECANTER - WATER FLOW RATE" xml:space="preserve">
+    <value>معدل تدفق الماء في جهاز التصفية</value>
+  </data>
+  <data name="PUMP - WATER FLOWRATE TO GRINDER" xml:space="preserve">
+    <value>المضخة - معدل تدفق الماء إلى المطحنة</value>
+  </data>
+  <data name="DISCHARGE PUMP TO PREWASH" xml:space="preserve">
+    <value>مضخة التفريغ للغسيل المسبق</value>
+  </data>
+  <data name="SCREW CONVEYOR -MIN LEVEL" xml:space="preserve">
+    <value>ناقل لولبي - الحد الأدنى للمستوى</value>
+  </data>
+  <data name="MINIMUM LEVEL NOT REACHED" xml:space="preserve">
+    <value>لم يتم الوصول إلى الحد الأدنى</value>
+  </data>
+  <data name="NO MINIMUM LEVEL" xml:space="preserve">
+    <value>لا يوجد حد أدنى للمستوى</value>
+  </data>
+  <data name="MINIMUM LEVEL REACHED" xml:space="preserve">
+    <value>تم الوصول إلى الحد الأدنى</value>
+  </data>
+  <data name="SILO MIXER - MOTOR" xml:space="preserve">
+    <value>خلاط صومعة - محرك</value>
+  </data>
+  <data name="(1&gt;=HIGH)" xml:space="preserve">
+    <value>(1&gt;=مرتفع)</value>
+  </data>
+  <data name="FILLED SILO" xml:space="preserve">
+    <value>صومعة ممتلئة</value>
+  </data>
+  <data name="NOT WAITING FOR LOW LEVEL" xml:space="preserve">
+    <value>لا تنتظر المستوى المنخفض</value>
+  </data>
+  <data name="WAITING FOR MATERIAL BELOW LOW LEVEL" xml:space="preserve">
+    <value>انتظار المواد أسفل المستوى المنخفض</value>
+  </data>
+  <data name="TRANSFER TANK LEVEL" xml:space="preserve">
+    <value>مستوى خزان النقل</value>
+  </data>
+  <data name="TRANSFER TANK LEVEL NOT OK FOR MIXERS DISCHARGE" xml:space="preserve">
+    <value>مستوى خزان النقل غير مناسب لتفريغ الخلاطات</value>
+  </data>
+  <data name="INLET WATER FLOWRATE" xml:space="preserve">
+    <value>معدل تدفق المياه الداخلة</value>
+  </data>
+  <data name="INLET WATER FLOWRATE NOT OK" xml:space="preserve">
+    <value>معدل تدفق المياه الداخلة غير مناسب</value>
+  </data>
+  <data name="OUTLET STEAM PRESSURE NOT OK" xml:space="preserve">
+    <value>ضغط البخار الخارج غير مناسب</value>
+  </data>
+  <data name="WATER TANK - WATER TO RECIRCULATION" xml:space="preserve">
+    <value>خزان المياه - إعادة تدوير المياه</value>
+  </data>
+  <data name="WATER TANK - WATER TO PREWASH" xml:space="preserve">
+    <value>خزان المياه - مياه الغسيل المسبق</value>
+  </data>
+  <data name="DISCHARGE TIME ABOVE ZERO" xml:space="preserve">
+    <value>زمن التفريغ فوق الصفر</value>
+  </data>
+  <data name="TANK DISCHARGE TIME IS SET TO ZERO" xml:space="preserve">
+    <value>تم ضبط وقت تفريغ الخزان على الصفر</value>
+  </data>
+  <data name="WATER TANK" xml:space="preserve">
+    <value>خزان المياه</value>
+  </data>
+  <data name="BOWL FILLING POSITION NOT OK" xml:space="preserve">
+    <value>وضع ملء الوعاء غير صحيح</value>
+  </data>
+  <data name="CAUSTIC MAXIMUM HOURLY USAGE EXCEEDED" xml:space="preserve">
+    <value>تجاوز الحد الأقصى للاستخدام الساعي للمواد الكاوية</value>
+  </data>
+  <data name="INFO_PST_6" xml:space="preserve">
+    <value>INFO_PST_6</value>
+  </data>
+  <data name="DETERGENT MAXIMUM HOURLY USAGE EXCEEDED" xml:space="preserve">
+    <value>تم تجاوز الحد الأقصى للاستخدام الساعي للمنظفات</value>
+  </data>
+  <data name="CHEMICALS HOURLY USAGE" xml:space="preserve">
+    <value>معدل استخدام المواد الكيميائية بالساعة</value>
+  </data>
+  <data name="CAUSTIC HOURLY USAGE" xml:space="preserve">
+    <value>الاستخدام الساعي للمواد الكاوية</value>
+  </data>
+  <data name="DETERGENT HOURLY USAGE" xml:space="preserve">
+    <value>معدل استخدام المنظفات بالساعة</value>
+  </data>
+  <data name="CONSTANT SPEED" xml:space="preserve">
+    <value>سرعة ثابتة</value>
+  </data>
+  <data name="SPEED MODULATION IN PROGRESS" xml:space="preserve">
+    <value>تعديل السرعة قيد التنفيذ</value>
+  </data>
+  <data name="RECIRCULATION SPEED (IN CONSTANT MODE)" xml:space="preserve">
+    <value>سرعة إعادة التدوير (في الوضع الثابت)</value>
+  </data>
+  <data name="PROCESS LOOP SP" xml:space="preserve">
+    <value>حلقة المعالجة SP</value>
+  </data>
+  <data name="THE SHORT LOOP FLOWRATE SETPOINT IS ACTIVE" xml:space="preserve">
+    <value>نقطة ضبط معدل التدفق للحلقة القصيرة نشطة</value>
+  </data>
+  <data name="SETPOINT FOR THE SHORT RECIRCULATION LOOP" xml:space="preserve">
+    <value>نقطة الضبط لحلقة إعادة التدوير القصيرة</value>
+  </data>
+  <data name="WCE - MOTOR" xml:space="preserve">
+    <value>محرك WCE</value>
+  </data>
+  <data name="WCE - FRESH WATER CLEANING" xml:space="preserve">
+    <value>WCE - التنظيف بالماء العذب</value>
+  </data>
+  <data name="WCE - STEAM CLEANING" xml:space="preserve">
+    <value>WCE - التنظيف بالبخار</value>
+  </data>
+  <data name="WCE - CLEANING WATER FLOW RATE" xml:space="preserve">
+    <value>معدل تدفق مياه التنظيف (WCE)</value>
+  </data>
+  <data name="WCE - CLEANING MANAGER" xml:space="preserve">
+    <value>مدير النظافة - WCE</value>
+  </data>
+  <data name="WCE RUNNING" xml:space="preserve">
+    <value>الجري WCE</value>
+  </data>
+  <data name="CENTRIFUGE NOT RUNNING" xml:space="preserve">
+    <value>جهاز الطرد المركزي لا يعمل</value>
+  </data>
+  <data name="STEAM TIME NO ZERO" xml:space="preserve">
+    <value>ستيم تايم نو زيرو</value>
+  </data>
+  <data name="STEAM ON TIME IS SET TO ZERO" xml:space="preserve">
+    <value>تم ضبط وقت تشغيل Steam على الصفر</value>
+  </data>
+  <data name="WATER TIME NO ZERO" xml:space="preserve">
+    <value>وقت الماء لا صفر</value>
+  </data>
+  <data name="WATER ON TIME IS SET TO ZERO" xml:space="preserve">
+    <value>تم ضبط وقت تشغيل الماء على الصفر</value>
+  </data>
+  <data name="NO STEAM CLEANING" xml:space="preserve">
+    <value>لا يُنصح بالتنظيف بالبخار</value>
+  </data>
+  <data name="STEAM CLEANING" xml:space="preserve">
+    <value>التنظيف بالبخار</value>
+  </data>
+  <data name="NO WATER RINSING" xml:space="preserve">
+    <value>لا حاجة للشطف بالماء</value>
+  </data>
+  <data name="WATER RINSING" xml:space="preserve">
+    <value>شطف بالماء</value>
+  </data>
+  <data name="CLEANING STEAM ON TIME" xml:space="preserve">
+    <value>التنظيف بالبخار في الوقت المحدد</value>
+  </data>
+  <data name="(CONFIGURABLE)" xml:space="preserve">
+    <value>(قابل للتكوين)</value>
+  </data>
+  <data name="LEVEL OVERLOAD (OPTIONAL)" xml:space="preserve">
+    <value>زيادة مستوى التحميل (اختياري)</value>
+  </data>
+  <data name="GREEN LAMP" xml:space="preserve">
+    <value>المصباح الأخضر</value>
+  </data>
+  <data name="BAG OK FOR PROCESS LAMP" xml:space="preserve">
+    <value>الكيس مناسب لمصباح المعالجة</value>
+  </data>
+  <data name="NO DISCHARGE FOR PREPARATION IN PROGRESS" xml:space="preserve">
+    <value>لا يُسمح بالخروج أثناء التحضيرات الجارية</value>
+  </data>
+  <data name="EXCHANGE WATER PAUSE TIME IS SET TO ZERO" xml:space="preserve">
+    <value>تم ضبط وقت توقف تبادل المياه على الصفر</value>
+  </data>
+  <data name="WATER EXCHANGE TIME IS SET TO ZERO (NO EXCHANGE)" xml:space="preserve">
+    <value>تم ضبط وقت تبديل المياه على الصفر (لا يوجد تبديل)</value>
+  </data>
+  <data name="SEPARATION TANK REFILL SPEED (IN CONSTANT MODE)" xml:space="preserve">
+    <value>سرعة إعادة تعبئة خزان الفصل (في الوضع الثابت)</value>
+  </data>
+  <data name="PROCESS SP" xml:space="preserve">
+    <value>عملية SP</value>
+  </data>
+  <data name="TANK REFILL FLOWRATE SETPOINT IS ACTIVE" xml:space="preserve">
+    <value>نقطة ضبط معدل تدفق إعادة تعبئة الخزان نشطة</value>
+  </data>
+  <data name="SETPOINT FOR SEPARATION TANK REFILL" xml:space="preserve">
+    <value>نقطة ضبط إعادة تعبئة خزان الفصل</value>
+  </data>
+  <data name="METAL SEPARATOR - VIBRATING TABLE" xml:space="preserve">
+    <value>فاصل معدني - طاولة اهتزازية</value>
+  </data>
+  <data name="METAL SEPARATOR - MAGNETIC ROLL" xml:space="preserve">
+    <value>فاصل معدني - بكرة مغناطيسية</value>
+  </data>
+  <data name="NOT OK FOR PROCESS - AWAITING THE LOW LEVEL" xml:space="preserve">
+    <value>غير مناسب للعملية - في انتظار المستوى المنخفض</value>
+  </data>
+  <data name="NOT EMPTY" xml:space="preserve">
+    <value>غير فارغ</value>
+  </data>
+  <data name="THE SILO IS BELOW THE MINIMUM LEVEL" xml:space="preserve">
+    <value>الصومعة أقل من المستوى الأدنى</value>
+  </data>
+  <data name="BULK DENSITY" xml:space="preserve">
+    <value>الكثافة الظاهرية</value>
+  </data>
+  <data name="ESTIMATED MATERIAL BULK DENSITY" xml:space="preserve">
+    <value>الكثافة الظاهرية المقدرة للمادة</value>
+  </data>
+  <data name="TOTALIZED OUTPUT" xml:space="preserve">
+    <value>الناتج الإجمالي</value>
+  </data>
+  <data name="SILO DISCHARGE ANOMALY (MATERIAL BRIDGE?)" xml:space="preserve">
+    <value>شذوذ تفريغ الصوامع (جسر المواد؟)</value>
+  </data>
+  <data name="TOMRA - RECOVERY CHANNEL" xml:space="preserve">
+    <value>تومرا - قناة التعافي</value>
+  </data>
+  <data name="TOMRA - MAIN CONTROL" xml:space="preserve">
+    <value>تومرا - غرفة التحكم الرئيسية</value>
+  </data>
+  <data name="(1=POWERED ON)" xml:space="preserve">
+    <value>(1=تشغيل الطاقة)</value>
+  </data>
+  <data name="SORTER MESSAGE PRESENT" xml:space="preserve">
+    <value>رسالة الفرز موجودة</value>
+  </data>
+  <data name="(1=MESSAGE)" xml:space="preserve">
+    <value>(1=رسالة)</value>
+  </data>
+  <data name="SORTER FAULT PRESENT" xml:space="preserve">
+    <value>عطل في الفرز موجود</value>
+  </data>
+  <data name="SORTING UNIT CONTROL NOT READY" xml:space="preserve">
+    <value>وحدة التحكم في الفرز غير جاهزة</value>
+  </data>
+  <data name="LOCAL MESSAGE PRESENT" xml:space="preserve">
+    <value>عرض الرسالة المحلية</value>
+  </data>
+  <data name="TOMRA INNOSORT - FLAKES SORTER" xml:space="preserve">
+    <value>TOMRA INNOSORT - فارز الرقائق</value>
+  </data>
+  <data name="FLAKES SORTER HOPPER" xml:space="preserve">
+    <value>قادوس فرز الرقائق</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND UP" xml:space="preserve">
+    <value>تشخيص مخرجات F - الأمر لأعلى</value>
+  </data>
+  <data name="F-OUTPUT - COMMAND UP" xml:space="preserve">
+    <value>مخرج F - أمر لأعلى</value>
+  </data>
+  <data name="SAFETY BARRIERS RESET PB" xml:space="preserve">
+    <value>إعادة ضبط حواجز الأمان PB</value>
+  </data>
+  <data name="F-INPUT SAFETY BARRIERS" xml:space="preserve">
+    <value>حواجز الأمان F-INPUT</value>
+  </data>
+  <data name="SPECIFIC ENERGY" xml:space="preserve">
+    <value>الطاقة النوعية</value>
+  </data>
+  <data name="WATER FOOTPRINT" xml:space="preserve">
+    <value>البصمة المائية</value>
+  </data>
+  <data name="OVERALL CHEMICALS CONSUMPTION" xml:space="preserve">
+    <value>إجمالي استهلاك المواد الكيميائية</value>
+  </data>
+  <data name="DETERGENT INTENSITY" xml:space="preserve">
+    <value>قوة المنظفات</value>
+  </data>
+  <data name="CAUSTIC INTENSITY" xml:space="preserve">
+    <value>شدة الصودا الكاوية</value>
+  </data>
+  <data name="ESTIMATED ANTIFOAM INTENSITY" xml:space="preserve">
+    <value>الكثافة التقديرية لمضاد الرغوة</value>
+  </data>
+  <data name="ESTIMATED OTHER ADDITIVES INTENSITY" xml:space="preserve">
+    <value>الكثافة التقديرية للمواد المضافة الأخرى</value>
+  </data>
+  <data name="CONTROL ELECTRICAL CABINET" xml:space="preserve">
+    <value>لوحة التحكم الكهربائية</value>
+  </data>
+  <data name="COOLING SYSTEM HEALTHY" xml:space="preserve">
+    <value>نظام التبريد سليم</value>
+  </data>
+  <data name="STATUS OK OF CONTROL MODULE" xml:space="preserve">
+    <value>حالة وحدة التحكم جيدة</value>
+  </data>
+  <data name="FAULT RESET OF CONTROL MODULE" xml:space="preserve">
+    <value>إعادة ضبط وحدة التحكم في حالة العطل</value>
+  </data>
+  <data name="SYS - RESET OF CONTROL MODULE" xml:space="preserve">
+    <value>SYS - إعادة ضبط وحدة التحكم</value>
+  </data>
+  <data name="F-INPUT - SYS - EMERGENCY PUSH BUTTON" xml:space="preserve">
+    <value>F-INPUT - SYS - زر ضغط الطوارئ</value>
+  </data>
+  <data name="F-INPUT - SYS - EMERGENCY PUSH BUTTON (FORESEEN X CAB OR MANAGED ON HMI)" xml:space="preserve">
+    <value>F-INPUT - SYS - زر ضغط الطوارئ (متوقع في الكابينة أو مُدار على واجهة المستخدم الرسومية)</value>
+  </data>
+  <data name="OVERLOAD (IN Q01)" xml:space="preserve">
+    <value>الحمل الزائد (في الربع الأول)</value>
+  </data>
+  <data name="MATERIAL PRESENT" xml:space="preserve">
+    <value>المواد المعروضة</value>
+  </data>
+  <data name="NO MATERIAL IN THE SUBZONE" xml:space="preserve">
+    <value>لا توجد مواد في المنطقة الفرعية</value>
+  </data>
+  <data name="NO MAINTENANCE" xml:space="preserve">
+    <value>لا يحتاج إلى صيانة</value>
+  </data>
+  <data name="NO PREPARATION" xml:space="preserve">
+    <value>لا حاجة للتحضير</value>
+  </data>
+  <data name="SUBZONE IN PREPARATION MODE" xml:space="preserve">
+    <value>المنطقة الفرعية في وضع التحضير</value>
+  </data>
+  <data name="NO PRODUCTION" xml:space="preserve">
+    <value>لا إنتاج</value>
+  </data>
+  <data name="SUBZONE IN PRODUCTION MODE" xml:space="preserve">
+    <value>المنطقة الفرعية في وضع الإنتاج</value>
+  </data>
+  <data name="NO STOP PENDING" xml:space="preserve">
+    <value>لا يوجد إيقاف معلق</value>
+  </data>
+  <data name="SUBZONE IS WAITING FOR UPSTRAM TO STOP" xml:space="preserve">
+    <value>المنطقة الفرعية تنتظر توقف التيار الصاعد</value>
+  </data>
+  <data name="NO STOP CYCLE" xml:space="preserve">
+    <value>دورة بدون توقف</value>
+  </data>
+  <data name="SUBZONE IN STOP CYCLE" xml:space="preserve">
+    <value>المنطقة الفرعية في دورة الإيقاف</value>
+  </data>
+  <data name="MATERIAL PRESENCE" xml:space="preserve">
+    <value>الوجود المادي</value>
+  </data>
+  <data name="FORCE TEMPORARY MATERIAL PRESENCE" xml:space="preserve">
+    <value>فرض وجود مادي مؤقت</value>
+  </data>
+  <data name="DEBALER" xml:space="preserve">
+    <value>ديبالر</value>
+  </data>
+  <data name="WHTANK" xml:space="preserve">
+    <value>خزان المياه</value>
+  </data>
+  <data name="SAFETY CHAINS" xml:space="preserve">
+    <value>سلاسل الأمان</value>
+  </data>
+  <data name="EXTERNAL SILO" xml:space="preserve">
+    <value>صومعة خارجية</value>
+  </data>
+  <data name="DEBALER -  COOLING PUMP" xml:space="preserve">
+    <value>ديبالر - مضخة تبريد</value>
+  </data>
+  <data name="BUFFER BELT - CONVEYOR" xml:space="preserve">
+    <value>حزام عازل - ناقل</value>
+  </data>
+  <data name="CONTAINER READY" xml:space="preserve">
+    <value>جاهز للاستخدام في الحاويات</value>
+  </data>
+  <data name="EXTERNAL MIXING SILOS AREA" xml:space="preserve">
+    <value>منطقة صوامع الخلط الخارجية</value>
+  </data>
+  <data name="PN COMMUNICATION WITH EXTERNAL DEVICES" xml:space="preserve">
+    <value>اتصال الشبكة الشخصية بالأجهزة الخارجية</value>
+  </data>
+  <data name="BYPASS OF NETWORK COMMUNICATION" xml:space="preserve">
+    <value>تجاوز اتصال الشبكة</value>
+  </data>
+  <data name="COMMUNICATION ALARM" xml:space="preserve">
+    <value>جهاز إنذار الاتصال</value>
+  </data>
+  <data name="FORCE ALL EXTERNAL SIGNALS TO ALLOW PRODUCTION" xml:space="preserve">
+    <value>فرض جميع الإشارات الخارجية للسماح بالإنتاج</value>
+  </data>
+  <data name="MAXIMUM TIME OF COMMUNICATION LOSS" xml:space="preserve">
+    <value>أقصى مدة لانقطاع الاتصال</value>
+  </data>
+  <data name="MAXIMUM LEVEL CONTROL" xml:space="preserve">
+    <value>أقصى تحكم في المستوى</value>
+  </data>
+  <data name="OVERFLOW MODE CONTROL ADVANCED" xml:space="preserve">
+    <value>التحكم المتقدم في وضع تجاوز السعة</value>
+  </data>
+  <data name="ABB-ACS580" xml:space="preserve">
+    <value>ABB-ACS580</value>
+  </data>
+  <data name="RIGHT LOCKING PIN" xml:space="preserve">
+    <value>دبوس القفل الأيمن</value>
+  </data>
+  <data name="RIGHT PIN" xml:space="preserve">
+    <value>الدبوس الأيمن</value>
+  </data>
+  <data name="LEFT LOCKING PIN" xml:space="preserve">
+    <value>دبوس القفل الأيسر</value>
+  </data>
+  <data name="LEFT PIN" xml:space="preserve">
+    <value>الدبوس الأيسر</value>
+  </data>
+  <data name="LOCKING PINS BOTH CLOSED" xml:space="preserve">
+    <value>كلا دبابيس القفل مغلقة</value>
+  </data>
+  <data name="LOCKING PINS NOT CLOSED" xml:space="preserve">
+    <value>دبابيس القفل غير مغلقة</value>
+  </data>
+  <data name="(1=DWN)" xml:space="preserve">
+    <value>(1=للأسفل)</value>
+  </data>
+  <data name="UP" xml:space="preserve">
+    <value>أعلى</value>
+  </data>
+  <data name="DOWN" xml:space="preserve">
+    <value>تحت</value>
+  </data>
+  <data name="CONTAINER" xml:space="preserve">
+    <value>حاوية</value>
+  </data>
+  <data name="WATER TO 230" xml:space="preserve">
+    <value>الماء حتى 230</value>
+  </data>
+  <data name="WATER TO 240" xml:space="preserve">
+    <value>الماء حتى 240</value>
+  </data>
+  <data name="GRINDER RUNNING" xml:space="preserve">
+    <value>تشغيل المطحنة</value>
+  </data>
+  <data name="GRINDER STOPPED" xml:space="preserve">
+    <value>توقفت المطحنة</value>
+  </data>
+  <data name="DISABLE GRINDER230" xml:space="preserve">
+    <value>تعطيل المطحنة 230</value>
+  </data>
+  <data name="DISABLE GRINDER240" xml:space="preserve">
+    <value>تعطيل المطحنة 240</value>
+  </data>
+  <data name="EMPTY CURRENT OF GRINDER230" xml:space="preserve">
+    <value>تيار فارغ للمطحنة 230</value>
+  </data>
+  <data name="EMPTY CURRENT OF GRINDER240" xml:space="preserve">
+    <value>تيار فارغ لطاحونة 240</value>
+  </data>
+  <data name="LONG AVERAGE CURRENT OF GRINDER230" xml:space="preserve">
+    <value>متوسط ​​التيار الطويل للمطحنة 230</value>
+  </data>
+  <data name="LONG AVERAGE CURRENT OF GRINDER240" xml:space="preserve">
+    <value>متوسط ​​التيار الطويل للمطحنة 240</value>
+  </data>
+  <data name="AT LEAST 1 SILO AVAILABLE" xml:space="preserve">
+    <value>يتوفر صومعة واحدة على الأقل</value>
+  </data>
+  <data name="NO SILOS AVAILABLE FOR FILLING" xml:space="preserve">
+    <value>لا توجد صوامع متاحة للتعبئة</value>
+  </data>
+  <data name="EXTERNAL TRANSPORT SYSTEM RUN REQUEST" xml:space="preserve">
+    <value>طلب تشغيل نظام النقل الخارجي</value>
+  </data>
+  <data name="SYSTEM READY (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>النظام جاهز (إشارة خارجية)</value>
+  </data>
+  <data name="(1=EXT SYSTEM READY)" xml:space="preserve">
+    <value>(1=نظام خارجي جاهز)</value>
+  </data>
+  <data name="SOREMA REQUEST" xml:space="preserve">
+    <value>طلب سوريما</value>
+  </data>
+  <data name="(1=SOREMA REQUEST)" xml:space="preserve">
+    <value>(1=طلب سوريما)</value>
+  </data>
+  <data name="EXTERNAL SYSTEM READY" xml:space="preserve">
+    <value>النظام الخارجي جاهز</value>
+  </data>
+  <data name="EXTERNAL SYSTEM IS NOT READY" xml:space="preserve">
+    <value>النظام الخارجي غير جاهز</value>
+  </data>
+  <data name="PN COMMUNICATION" xml:space="preserve">
+    <value>اتصالات PN</value>
+  </data>
+  <data name="VALUE OF MEASURE IS FROZEN FOR NO COMMUNICATION !" xml:space="preserve">
+    <value>تم تجميد قيمة المقياس لعدم وجود أي تواصل!</value>
+  </data>
+  <data name="NO FILLING" xml:space="preserve">
+    <value>بدون حشو</value>
+  </data>
+  <data name="NO DISCHARGE" xml:space="preserve">
+    <value>لا يوجد إفرازات</value>
+  </data>
+  <data name="NO FILL AND DISCHARGE" xml:space="preserve">
+    <value>ممنوع التعبئة والتفريغ</value>
+  </data>
+  <data name="UPSTREAM READY OR GIVING MATERIAL (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>جاهزية المصدر أو إرسال المواد (إشارة خارجية)</value>
+  </data>
+  <data name="(1=EXT UPSTREAM OK TO GIVE MATERIAL)" xml:space="preserve">
+    <value>(1=موافقة الطرفية على إعطاء المواد)</value>
+  </data>
+  <data name="EXTERNAL PLANT IS NOT GIVING MATERIAL" xml:space="preserve">
+    <value>لا يقوم المصنع الخارجي بتوفير المواد</value>
+  </data>
+  <data name="EXTERNAL BIG BAG STATION" xml:space="preserve">
+    <value>محطة خارجية للأكياس الكبيرة</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER GENERAL START" xml:space="preserve">
+    <value>بداية عامة لفرز رقائق بوهلر</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER MAIN STREAM " xml:space="preserve">
+    <value>فرز رقائق بوهلر الرئيسي</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER RECYCLING STREAM" xml:space="preserve">
+    <value>فرز رقائق بوهلر - تيار إعادة التدوير</value>
+  </data>
+  <data name="UNISENSOR FLAKES SORTER GENERAL START" xml:space="preserve">
+    <value>بدء تشغيل جهاز فرز الرقائق UNISENSOR</value>
+  </data>
+  <data name="UNISENSOR FLAKES SORTER MAIN STREAM" xml:space="preserve">
+    <value>فرز الرقائق الرئيسي من UNISENSOR</value>
+  </data>
+  <data name="OEE - OVERALL PLANT ELECTRICAL CONSUMPTION" xml:space="preserve">
+    <value>OEE - إجمالي استهلاك الطاقة الكهربائية للمصنع</value>
+  </data>
+  <data name="OEE - OVERALL PLANT WATER CONSUMPTION" xml:space="preserve">
+    <value>OEE - إجمالي استهلاك المياه في المصنع</value>
+  </data>
+  <data name="ELECTRICAL CONTROL CABINET" xml:space="preserve">
+    <value>خزانة التحكم الكهربائية</value>
+  </data>
+  <data name="WASTE MANAGEMENT ELETRICAL CABINET" xml:space="preserve">
+    <value>خزانة كهربائية لإدارة النفايات</value>
+  </data>
 </root>

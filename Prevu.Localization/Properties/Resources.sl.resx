@@ -13386,4 +13386,868 @@ Opomba: če je ta način aktiviran, je proizvodnja na zgornjem delu verige lahko
   <data name="P_SPEED_HIGH_x_TANK_REFILL" xml:space="preserve">
     <value>Povečana nastavljena vrednost hitrosti črpalke za lažje polnjenje rezervoarja, ko se zazna pomanjkanje vode.</value>
   </data>
+  <data name="P_SINGLE_MIX_FLOW_SP" xml:space="preserve">
+    <value>Ciljni pretok polnjenja za en sam mešalnik. PLC bo to vrednost samodejno pomnožil s številom mešalnikov, ki hkrati zahtevajo vodo.</value>
+  </data>
+  <data name="P_RECIRC_FLOW_SP" xml:space="preserve">
+    <value>Nastavljena vrednost pretoka, ki se uporablja med fazo recirkulacije rezervoarja, ko so drugi ventili zaprti.</value>
+  </data>
+  <data name="P_ACT_FLOW_SP" xml:space="preserve">
+    <value>Prikazuje trenutno aktivno nastavljeno vrednost pretoka, ki jo sistem uporablja za regulacijo črpalke.</value>
+  </data>
+  <data name="P_NO_LOAD_AMP" xml:space="preserve">
+    <value>Samodejni izračun toka motorja v prostem teku. Povpreči tok motorja in mehanike v zadnjih 10 zagonih (postopek zaustavljen).</value>
+  </data>
+  <data name="P_CALCULATED_FILLING" xml:space="preserve">
+    <value>Samodejni izračun povprečnega polnjenja stroja. Sistem neprekinjeno integrira tok rotorja skozi čas, da oceni polnjenje stroja in prepreči preobremenitev materiala.</value>
+  </data>
+  <data name="P_AMP_x_INT_CLEAN" xml:space="preserve">
+    <value>Ko tok doseže to vrednost, sistem sproži notranji cikel čiščenja, da izpere vse ostanke in zniža tok motorja (če je omogočen), ko poteče zakasnitev, določena v naslednjem polju.</value>
+  </data>
+  <data name="P_AMP_x_INT_CLEAN_DELAY" xml:space="preserve">
+    <value>Ta zakasnitev deluje kot histereza za omejitev toka. Ko tok motorja preseže zgornjo omejitev, se časovnik zažene in deluje, dokler tok ostane nad pragom. Če tok ostane nad omejitvijo ves čas delovanja, se sproži zahteva za začetek čiščenja (če je omogočeno).</value>
+  </data>
+  <data name="P_AMP_x_INT_CLEAN_ENAB" xml:space="preserve">
+    <value>Če je ta zastavica aktivna, se čistilni cikel zažene, ko tok motorja doseže določeni prag in ostane nad njim za nastavljeni čas zakasnitve.</value>
+  </data>
+  <data name="P_SPEED_x_DOWNSTR_EMPTY" xml:space="preserve">
+    <value>Višja hitrost se uporablja za skrajšanje začetnega časa polnjenja linije, ko je transporter prazen.</value>
+  </data>
+  <data name="P_ACC_TIME" xml:space="preserve">
+    <value>Prilagodi čas pospeševanja motorja glede na nastavitve pretvornika ali mehkega zaganjalnika.</value>
+  </data>
+  <data name="P_FAN_OBSTRUCTION_AMP" xml:space="preserve">
+    <value>Ko tok motorja pade pod ta prag, sistem po zakasnitvi, določeni v naslednjem polju, sproži alarm, ki opozarja na morebitno blokado ventilatorja.</value>
+  </data>
+  <data name="P_FAN_OBSTRUCTION_DELAY" xml:space="preserve">
+    <value>Ta zakasnitev deluje kot histereza za prag alarma. Ko tok motorja pade pod to mejo, se časovnik zažene in deluje, dokler tok ostane pod pragom. Če tok ostane pod mejo ves čas delovanja, se sproži alarm za oviranje ventilatorja.</value>
+  </data>
+  <data name="INFO_TEMPER_14" xml:space="preserve">
+    <value>Na terenu je bila zaznana visoka temperatura. Preverite okoljske in procesne pogoje. Zmanjšajte toplotno obremenitev, da preprečite poškodbe opreme.</value>
+  </data>
+  <data name="INFO_STATC_01" xml:space="preserve">
+    <value>Preverite statični kontaktor in njegovo obremenitev. Prepričajte se, da se umerjanje omejitve toka naprave ujema z zahtevami obremenitve.</value>
+  </data>
+  <data name="INFO_STATC_02" xml:space="preserve">
+    <value>Po zagonskem ukazu ni povratne informacije od statičnega kontaktorja. Preverite krmilno ožičenje in stanje kontaktorja.</value>
+  </data>
+  <data name="INFO_AMP_16" xml:space="preserve">
+    <value>Zaznan tok med ustavljanjem kaže na kratek stik SCR. Takoj izklopite napajanje, saj je motor lahko pod napetostjo. Pred ponovnim zagonom preverite strojno opremo statičnega kontaktorja.</value>
+  </data>
+  <data name="INFO_SAFETY_5" xml:space="preserve">
+    <value>Časovna omejitev varnostnih ukrepov: ponastavite varnostni tokokrog za obnovitev polne proizvodne hitrosti.</value>
+  </data>
+  <data name="M_INFO_EXT_CHEM_SYS" xml:space="preserve">
+    <value>Preverite zunanji sistem za doziranje kemikalij</value>
+  </data>
+  <data name="M_INFO_OHM_1" xml:space="preserve">
+    <value>Po potrebi preverite kemično črpalko, procesne pogoje in nastavitev regulacije.</value>
+  </data>
+  <data name="M_INFO_OHM_2" xml:space="preserve">
+    <value>Po potrebi preverite kemično črpalko, procesne pogoje in nastavitev regulacije.</value>
+  </data>
+  <data name="M_INFO_PH_1" xml:space="preserve">
+    <value>Visok pH - Kaustična raztopina! Preverite procesne pogoje in po potrebi prilagodite nastavitev.</value>
+  </data>
+  <data name="M_INFO_PH_2" xml:space="preserve">
+    <value>Nizek pH - kisla raztopina! Preverite procesne pogoje in po potrebi prilagodite nastavitev regulacije.</value>
+  </data>
+  <data name="M_INFO_DOWNSTR_NOT_RUN" xml:space="preserve">
+    <value>Sistem v spodnjem delu sistema trenutno ne deluje, kar lahko povzroči zastoj v proizvodnji. Preverite stanje opreme v spodnjem delu sistema in jo po potrebi zaženite, da zagotovite neprekinjen pretok izdelkov.</value>
+  </data>
+  <data name="PET BOTTLE WASHING PLANT" xml:space="preserve">
+    <value>Pralnica PET steklenic</value>
+  </data>
+  <data name="MAX CURRENT LIMIT SWITCH" xml:space="preserve">
+    <value>Omejitveno stikalo maksimalnega toka</value>
+  </data>
+  <data name="SAFETY BARRIERS RESET REQUEST" xml:space="preserve">
+    <value>Zahteva za ponastavitev varnostnih ograj</value>
+  </data>
+  <data name="SAFETY BARRIERS RESET REQUEST PUSH-BUTTON" xml:space="preserve">
+    <value>Zahteva za ponastavitev varnostnih ograj - pritisni gumb</value>
+  </data>
+  <data name="INVERTER SAFE STATUS FEEDBACK" xml:space="preserve">
+    <value>Povratne informacije o varnem stanju pretvornika</value>
+  </data>
+  <data name="F-INPUT - PULL-CORD SAFETIES" xml:space="preserve">
+    <value>F-VHOD - Varnostne naprave z vrvico</value>
+  </data>
+  <data name="F-INPUT - SAFETY BARRIERS" xml:space="preserve">
+    <value>F-VHOD - Varnostne ovire</value>
+  </data>
+  <data name="F-INPUT DIAGNOSTIC - PULL-CORD SAFETIES" xml:space="preserve">
+    <value>Diagnostika vhoda F - varnostne naprave z vlečno vrvico</value>
+  </data>
+  <data name="F-INPUT DIAGNOSTIC - SAFETY BARRIERS" xml:space="preserve">
+    <value>Diagnostika F-vhoda - varnostne pregrade</value>
+  </data>
+  <data name="CHARGING CONVEYOR - SAFETY KEY" xml:space="preserve">
+    <value>Polnilni transporter - varnostni ključ</value>
+  </data>
+  <data name="CHARGING CONVEYOR - LEFT LUBRIF." xml:space="preserve">
+    <value>Polnilni transporter - levi Lubrif.</value>
+  </data>
+  <data name="CHARGING CONVEYOR - RIGHT LUBRIF." xml:space="preserve">
+    <value>Polnilni transporter - desni Lubrif.</value>
+  </data>
+  <data name="CHARGING CONVEYOR - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>Polnilni transporter - vzdrževalni cikel</value>
+  </data>
+  <data name="CHARGING CONVEYOR - LUBRIFICATION" xml:space="preserve">
+    <value>Polnilni transporter - mazanje</value>
+  </data>
+  <data name="DEBALER - MAIN PUMP" xml:space="preserve">
+    <value>Debaler - glavna črpalka</value>
+  </data>
+  <data name="OIL SHUTOFF VALVE OPEN" xml:space="preserve">
+    <value>Odprt zaporni ventil za olje</value>
+  </data>
+  <data name="OUTPUT CONTACTORS FEEDBACK" xml:space="preserve">
+    <value>Povratne informacije o izhodnih kontaktorjih</value>
+  </data>
+  <data name="OIL SHUTOFF VALVE NOT OPEN" xml:space="preserve">
+    <value>Zaporni ventil za olje ni odprt</value>
+  </data>
+  <data name="DEBALER - SAFETY UNLOCK REELS" xml:space="preserve">
+    <value>Debaler - Varnostno odklepanje kolutov</value>
+  </data>
+  <data name="DEBALER - AUXILIARY HYDRAULIC UNIT" xml:space="preserve">
+    <value>Debaler - pomožna hidravlična enota</value>
+  </data>
+  <data name="DEBALER - COOLING PUMP" xml:space="preserve">
+    <value>Debaler - hladilna črpalka</value>
+  </data>
+  <data name="DEBALER - COOLING BLOWER" xml:space="preserve">
+    <value>Debaler - hladilni ventilator</value>
+  </data>
+  <data name="DEBALER - THERMAL HEATER" xml:space="preserve">
+    <value>Debaler - termični grelec</value>
+  </data>
+  <data name="DEBALER - HYDRAULIC SHAFT" xml:space="preserve">
+    <value>Debalerjev - hidravlična gred</value>
+  </data>
+  <data name="DEBALER - HOPPER LEVEL" xml:space="preserve">
+    <value>Debalirnik - nivo lijaka</value>
+  </data>
+  <data name="DEBALER - OIL TEMPERATURE" xml:space="preserve">
+    <value>Debaler - temperatura olja</value>
+  </data>
+  <data name="DEBALER - HYDRAULIC BYPASS" xml:space="preserve">
+    <value>Debaler - hidravlični obvod</value>
+  </data>
+  <data name="DEBALER - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>Debaler - vzdrževalni cikel</value>
+  </data>
+  <data name="DEBALER - MANAGER" xml:space="preserve">
+    <value>Debaler - Vodja</value>
+  </data>
+  <data name="DEBALER - HYDRAULICS" xml:space="preserve">
+    <value>Debaler - Hidravlika</value>
+  </data>
+  <data name="DRY TROMMEL - SAFETY DOOR UNLOCK SIDE" xml:space="preserve">
+    <value>Suhi bubanj - stransko odklepanje varnostnih vrat</value>
+  </data>
+  <data name="MAINTENANCE PROCEDURE - OPEN SIDE" xml:space="preserve">
+    <value>Postopek vzdrževanja - odprta stran</value>
+  </data>
+  <data name="MOTOR TEMPERATURE (OPTIONAL)" xml:space="preserve">
+    <value>Temperatura motorja (neobvezno)</value>
+  </data>
+  <data name="MOTOR OVERHEAT (OPTIONAL)" xml:space="preserve">
+    <value>Pregrevanje motorja (neobvezno)</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR" xml:space="preserve">
+    <value>Kovinski transporter za vmesne dele</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR SAFETY KEY" xml:space="preserve">
+    <value>Buffer Metal - Varnostni ključ transporterja</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR LEFT LUBRIF." xml:space="preserve">
+    <value>Kovinski odbojnik - mazivo levega transporterja.</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR RIGHT LUBRIF." xml:space="preserve">
+    <value>Kovinski odbojnik - mazivo desnega transporterja.</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR HOPPER LEVEL" xml:space="preserve">
+    <value>Buffer Metal - nivo tekočega lijaka</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR MAINTENANCE CYCLE" xml:space="preserve">
+    <value>Vzdrževalni cikel transporterja Buffer Metal</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR LUBRIFICATION" xml:space="preserve">
+    <value>Buffer Metal - Mazanje transporterja</value>
+  </data>
+  <data name="WET TROMMEL" xml:space="preserve">
+    <value>Mokri bubanj</value>
+  </data>
+  <data name="ESTIMATED FLOWRATE" xml:space="preserve">
+    <value>Ocenjeni pretok</value>
+  </data>
+  <data name="DECANTER - STEAM" xml:space="preserve">
+    <value>Dekanter - Para</value>
+  </data>
+  <data name="DECANTER - DISCHARGE" xml:space="preserve">
+    <value>Dekanter - Izpust</value>
+  </data>
+  <data name="PUMP - MOTOR" xml:space="preserve">
+    <value>Črpalka - Motor</value>
+  </data>
+  <data name="PUMP - WATER FLOWRATE" xml:space="preserve">
+    <value>Črpalka - pretok vode</value>
+  </data>
+  <data name="PUMP - WATER CONDUCTIVITY" xml:space="preserve">
+    <value>Črpalka - prevodnost vode</value>
+  </data>
+  <data name="DISK SEPARATOR - WATER CLEANING" xml:space="preserve">
+    <value>Ločevalnik diskov - čiščenje z vodo</value>
+  </data>
+  <data name="MAXIMUM OPEN TIME" xml:space="preserve">
+    <value>NAJDALJŠI ODPRTI ČAS</value>
+  </data>
+  <data name="MAXIMUM OPEN TIME (0 = CONTROL BYPASS)" xml:space="preserve">
+    <value>Najdaljši čas odprtja (0 = obvod krmiljenja)</value>
+  </data>
+  <data name="DISK SEPARATOR - AIR CLEANING" xml:space="preserve">
+    <value>Separator diskov - čiščenje zraka</value>
+  </data>
+  <data name="DISK SEPARATOR - CLEANING CYCLE" xml:space="preserve">
+    <value>Ločevalnik diskov - cikel čiščenja</value>
+  </data>
+  <data name="DISK SEPARATOR - BOTTOM RINSE CYCLE" xml:space="preserve">
+    <value>Ločevalnik diskov - cikel spodnjega izpiranja</value>
+  </data>
+  <data name="DISK SEPARATOR CLEANING MANAGER" xml:space="preserve">
+    <value>Upravitelj čiščenja ločevalnika diskov</value>
+  </data>
+  <data name="SAD RUNNING" xml:space="preserve">
+    <value>ŽALOSTEN TEČ</value>
+  </data>
+  <data name="SAD NOT RUNNING" xml:space="preserve">
+    <value>SAD se ne izvaja</value>
+  </data>
+  <data name="CLEANING ON TIME" xml:space="preserve">
+    <value>Čas vklopa čiščenja</value>
+  </data>
+  <data name="CAUSTIC PUMP" xml:space="preserve">
+    <value>Kavstična črpalka</value>
+  </data>
+  <data name="PREDICTED MAXIMUM CONSUMPTION" xml:space="preserve">
+    <value>Predvidena največja poraba</value>
+  </data>
+  <data name="BOTTLE SORTER - ACCELERATION BELT" xml:space="preserve">
+    <value>Sortirka steklenic - pospeševalni pas</value>
+  </data>
+  <data name="VBPS ERROR" xml:space="preserve">
+    <value>Napaka VBPS</value>
+  </data>
+  <data name="AIR PRESSURE FAULT" xml:space="preserve">
+    <value>Napaka zračnega tlaka</value>
+  </data>
+  <data name="SORTING UNIT - VALVE BLOCK IN SERVICE MODE" xml:space="preserve">
+    <value>SORTIRNA ENOTA - VENTILSKI BLOK V SERVISNEM NAČINU</value>
+  </data>
+  <data name="METAL SEPARATOR - CONVEYOR BELT" xml:space="preserve">
+    <value>Separator kovin - transportni trak</value>
+  </data>
+  <data name="METAL SEPARATOR" xml:space="preserve">
+    <value>Kovinski separator</value>
+  </data>
+  <data name="METAL SEPARATOR - METAL DETECTOR" xml:space="preserve">
+    <value>Separator kovin - detektor kovin</value>
+  </data>
+  <data name="METAL SEPARATOR - DIVERTER" xml:space="preserve">
+    <value>Separator kovin - preusmerjevalnik</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - BREAKER RELEASE COIL" xml:space="preserve">
+    <value>Diagnostika izhoda F - tuljava za sprostitev odklopnika</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND LINE" xml:space="preserve">
+    <value>Diagnostika F-izhoda - ukazna vrstica</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND DELTA" xml:space="preserve">
+    <value>Diagnostika izhoda F – ukaz Delta</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND STAR" xml:space="preserve">
+    <value>Diagnostika izhoda F – Command Star</value>
+  </data>
+  <data name="CABINET BREAKER RELEASE COIL" xml:space="preserve">
+    <value>Tuljava za sprostitev odklopnika omare</value>
+  </data>
+  <data name="F-OUTPUT - CABINET BREAKER RELEASE COIL" xml:space="preserve">
+    <value>F-IZHOD - Tuljava za sprostitev odklopnika omare</value>
+  </data>
+  <data name="F-INPUT - ROTOR STOPPED" xml:space="preserve">
+    <value>F-VHOD - Rotor se je ustavil</value>
+  </data>
+  <data name="F-INPUT DIAGNOSTIC - ROTOR STOPPED" xml:space="preserve">
+    <value>Diagnostika vhoda F - rotor se je ustavil</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND KEY RELEASE" xml:space="preserve">
+    <value>Diagnostika izhoda F - sprostitev ukazne tipke</value>
+  </data>
+  <data name="COMMAND KEY RELEASE" xml:space="preserve">
+    <value>Sprostitev tipke Command</value>
+  </data>
+  <data name="ROTOR STOPPED - HARDWARE FAULT (INPUT PASSIVATION)" xml:space="preserve">
+    <value>ROTOR USTAVLJEN - NAPAKA STROJNE OPREME (PASIVACIJA VHODA)</value>
+  </data>
+  <data name="UNLOCK COMMAND - HARDWARE FAULT (OUTPUT PASSIVATION)" xml:space="preserve">
+    <value>UKAZ ZA ODKLEPANJE - NAPAKA STROJNE OPREME (PASIVIZACIJA IZHODA)</value>
+  </data>
+  <data name="HIGH LEVEL TIMEOUT" xml:space="preserve">
+    <value>ČASOVNA OMEJITEV VISOKE RAVNI</value>
+  </data>
+  <data name="TRANSPORT" xml:space="preserve">
+    <value>Prevoz</value>
+  </data>
+  <data name="MICROFILTER - CLEANING WATER FLOW RATE" xml:space="preserve">
+    <value>Mikrofilter - pretok vode za čiščenje</value>
+  </data>
+  <data name="CLEANING BY LEVEL ENABLED" xml:space="preserve">
+    <value>ČIŠČENJE PO NIVOJIH OMOGOČENO</value>
+  </data>
+  <data name="WATER HIGH LEVEL CLEANING NOT ENABLED" xml:space="preserve">
+    <value>Čiščenje z visoko stopnjo vode ni omogočeno</value>
+  </data>
+  <data name="NO CLEANING REQUESTED" xml:space="preserve">
+    <value>ČIŠČENJE NI POTREBNO</value>
+  </data>
+  <data name="CLEANING IN PROGRESS FOR OPERATOR REQUEST" xml:space="preserve">
+    <value>Čiščenje v teku na zahtevo operaterja</value>
+  </data>
+  <data name="CLEANING WATER ON TIME (0=DISABLED)" xml:space="preserve">
+    <value>Čas vklopa čiščenja vode (0 = onemogočeno)</value>
+  </data>
+  <data name="DECANTER - SOREMA REQUEST WATER" xml:space="preserve">
+    <value>Dekanter - Sorema Request Water</value>
+  </data>
+  <data name="DECANTER - WATER FLOW RATE" xml:space="preserve">
+    <value>Dekanter - pretok vode</value>
+  </data>
+  <data name="PUMP - WATER FLOWRATE TO GRINDER" xml:space="preserve">
+    <value>Črpalka - pretok vode v mlinček</value>
+  </data>
+  <data name="DISCHARGE PUMP TO PREWASH" xml:space="preserve">
+    <value>Izpustna črpalka za predpranje</value>
+  </data>
+  <data name="SCREW CONVEYOR -MIN LEVEL" xml:space="preserve">
+    <value>Polžni transporter - Min. nivo</value>
+  </data>
+  <data name="MINIMUM LEVEL NOT REACHED" xml:space="preserve">
+    <value>Minimalna raven ni dosežena</value>
+  </data>
+  <data name="NO MINIMUM LEVEL" xml:space="preserve">
+    <value>BREZ MINIMALNE RAVNI</value>
+  </data>
+  <data name="MINIMUM LEVEL REACHED" xml:space="preserve">
+    <value>Dosežena minimalna raven</value>
+  </data>
+  <data name="SILO MIXER - MOTOR" xml:space="preserve">
+    <value>Mešalnik silosa - motor</value>
+  </data>
+  <data name="(1&gt;=HIGH)" xml:space="preserve">
+    <value>(1&gt;=VISOKO)</value>
+  </data>
+  <data name="FILLED SILO" xml:space="preserve">
+    <value>Napolnjen silos</value>
+  </data>
+  <data name="NOT WAITING FOR LOW LEVEL" xml:space="preserve">
+    <value>NE ČAKAM NA NIZKO RAVEN</value>
+  </data>
+  <data name="WAITING FOR MATERIAL BELOW LOW LEVEL" xml:space="preserve">
+    <value>Čakanje na material pod nizko ravnjo</value>
+  </data>
+  <data name="TRANSFER TANK LEVEL" xml:space="preserve">
+    <value>NIVO V PRENOSNI REZERVOARJU</value>
+  </data>
+  <data name="TRANSFER TANK LEVEL NOT OK FOR MIXERS DISCHARGE" xml:space="preserve">
+    <value>Nivo v prenosnem rezervoarju ni v redu za praznjenje mešalnikov</value>
+  </data>
+  <data name="INLET WATER FLOWRATE" xml:space="preserve">
+    <value>PRETOK VHODNE VODE</value>
+  </data>
+  <data name="INLET WATER FLOWRATE NOT OK" xml:space="preserve">
+    <value>Pretok dovodne vode ni v redu</value>
+  </data>
+  <data name="OUTLET STEAM PRESSURE NOT OK" xml:space="preserve">
+    <value>Izhodni tlak pare ni v redu</value>
+  </data>
+  <data name="WATER TANK - WATER TO RECIRCULATION" xml:space="preserve">
+    <value>Rezervoar za vodo - voda za recirkulacijo</value>
+  </data>
+  <data name="WATER TANK - WATER TO PREWASH" xml:space="preserve">
+    <value>Rezervoar za vodo - voda za predpranje</value>
+  </data>
+  <data name="DISCHARGE TIME ABOVE ZERO" xml:space="preserve">
+    <value>ČAS PRAZNJENJA NAD NIČLO</value>
+  </data>
+  <data name="TANK DISCHARGE TIME IS SET TO ZERO" xml:space="preserve">
+    <value>Čas praznjenja rezervoarja je nastavljen na NIČ</value>
+  </data>
+  <data name="WATER TANK" xml:space="preserve">
+    <value>Rezervoar za vodo</value>
+  </data>
+  <data name="BOWL FILLING POSITION NOT OK" xml:space="preserve">
+    <value>POLOŽAJ ZA POLNJENJE POSODE NI V REDU</value>
+  </data>
+  <data name="CAUSTIC MAXIMUM HOURLY USAGE EXCEEDED" xml:space="preserve">
+    <value>Presežena največja urna poraba kavstične kisline</value>
+  </data>
+  <data name="INFO_PST_6" xml:space="preserve">
+    <value>INFO_PST_6</value>
+  </data>
+  <data name="DETERGENT MAXIMUM HOURLY USAGE EXCEEDED" xml:space="preserve">
+    <value>Presežena največja urna poraba detergenta</value>
+  </data>
+  <data name="CHEMICALS HOURLY USAGE" xml:space="preserve">
+    <value>URNA PORABA KEMIKALIJ</value>
+  </data>
+  <data name="CAUSTIC HOURLY USAGE" xml:space="preserve">
+    <value>Kavstična urna uporaba</value>
+  </data>
+  <data name="DETERGENT HOURLY USAGE" xml:space="preserve">
+    <value>Urna poraba detergenta</value>
+  </data>
+  <data name="CONSTANT SPEED" xml:space="preserve">
+    <value>KONSTANTNA HITROST</value>
+  </data>
+  <data name="SPEED MODULATION IN PROGRESS" xml:space="preserve">
+    <value>Modulacija hitrosti v teku</value>
+  </data>
+  <data name="RECIRCULATION SPEED (IN CONSTANT MODE)" xml:space="preserve">
+    <value>Hitrost recirkulacije (v konstantnem načinu)</value>
+  </data>
+  <data name="PROCESS LOOP SP" xml:space="preserve">
+    <value>PROCESNA ZANKA SP</value>
+  </data>
+  <data name="THE SHORT LOOP FLOWRATE SETPOINT IS ACTIVE" xml:space="preserve">
+    <value>Nastavljena vrednost pretoka kratke zanke je aktivna</value>
+  </data>
+  <data name="SETPOINT FOR THE SHORT RECIRCULATION LOOP" xml:space="preserve">
+    <value>Nastavljena vrednost za kratko recirkulacijsko zanko</value>
+  </data>
+  <data name="WCE - MOTOR" xml:space="preserve">
+    <value>WCE - Motor</value>
+  </data>
+  <data name="WCE - FRESH WATER CLEANING" xml:space="preserve">
+    <value>WCE - Čiščenje sladke vode</value>
+  </data>
+  <data name="WCE - STEAM CLEANING" xml:space="preserve">
+    <value>WCE - Čiščenje s paro</value>
+  </data>
+  <data name="WCE - CLEANING WATER FLOW RATE" xml:space="preserve">
+    <value>WCE - Pretok čistilne vode</value>
+  </data>
+  <data name="WCE - CLEANING MANAGER" xml:space="preserve">
+    <value>WCE - Vodja čiščenja</value>
+  </data>
+  <data name="WCE RUNNING" xml:space="preserve">
+    <value>TEČENJE WCE</value>
+  </data>
+  <data name="CENTRIFUGE NOT RUNNING" xml:space="preserve">
+    <value>Centrifuga ne deluje</value>
+  </data>
+  <data name="STEAM TIME NO ZERO" xml:space="preserve">
+    <value>ČAS ZA PARO BREZ NIČLE</value>
+  </data>
+  <data name="STEAM ON TIME IS SET TO ZERO" xml:space="preserve">
+    <value>Čas vklopa pare je nastavljen na NIČ</value>
+  </data>
+  <data name="WATER TIME NO ZERO" xml:space="preserve">
+    <value>ČAS ZA VODO BREZ NIČLE</value>
+  </data>
+  <data name="WATER ON TIME IS SET TO ZERO" xml:space="preserve">
+    <value>Čas vklopa vode je nastavljen na NIČ</value>
+  </data>
+  <data name="NO STEAM CLEANING" xml:space="preserve">
+    <value>BREZ ČIŠČENJA S PARO</value>
+  </data>
+  <data name="STEAM CLEANING" xml:space="preserve">
+    <value>Čiščenje s paro</value>
+  </data>
+  <data name="NO WATER RINSING" xml:space="preserve">
+    <value>BREZ IZPIRANJA Z VODO</value>
+  </data>
+  <data name="WATER RINSING" xml:space="preserve">
+    <value>Izpiranje z vodo</value>
+  </data>
+  <data name="CLEANING STEAM ON TIME" xml:space="preserve">
+    <value>Čas vklopa čiščenja s paro</value>
+  </data>
+  <data name="(CONFIGURABLE)" xml:space="preserve">
+    <value>(Nastavljivo)</value>
+  </data>
+  <data name="LEVEL OVERLOAD (OPTIONAL)" xml:space="preserve">
+    <value>Preobremenitev nivoja (neobvezno)</value>
+  </data>
+  <data name="GREEN LAMP" xml:space="preserve">
+    <value>Zelena svetilka</value>
+  </data>
+  <data name="BAG OK FOR PROCESS LAMP" xml:space="preserve">
+    <value>Vrečka je v redu za procesno svetilko</value>
+  </data>
+  <data name="NO DISCHARGE FOR PREPARATION IN PROGRESS" xml:space="preserve">
+    <value>Ni razrešnice za pripravo v teku</value>
+  </data>
+  <data name="EXCHANGE WATER PAUSE TIME IS SET TO ZERO" xml:space="preserve">
+    <value>Čas premora za menjavo vode je nastavljen na NIČ</value>
+  </data>
+  <data name="WATER EXCHANGE TIME IS SET TO ZERO (NO EXCHANGE)" xml:space="preserve">
+    <value>Čas izmenjave vode je nastavljen na NIČ (brez izmenjave)</value>
+  </data>
+  <data name="SEPARATION TANK REFILL SPEED (IN CONSTANT MODE)" xml:space="preserve">
+    <value>Hitrost polnjenja ločevalne posode (v konstantnem načinu)</value>
+  </data>
+  <data name="PROCESS SP" xml:space="preserve">
+    <value>PROCES SP</value>
+  </data>
+  <data name="TANK REFILL FLOWRATE SETPOINT IS ACTIVE" xml:space="preserve">
+    <value>Nastavljena vrednost pretoka polnjenja rezervoarja je aktivna</value>
+  </data>
+  <data name="SETPOINT FOR SEPARATION TANK REFILL" xml:space="preserve">
+    <value>Nastavljena vrednost za ponovno polnjenje ločevalne posode</value>
+  </data>
+  <data name="METAL SEPARATOR - VIBRATING TABLE" xml:space="preserve">
+    <value>Separator kovin - Vibracijska miza</value>
+  </data>
+  <data name="METAL SEPARATOR - MAGNETIC ROLL" xml:space="preserve">
+    <value>Kovinski separator - magnetni valj</value>
+  </data>
+  <data name="NOT OK FOR PROCESS - AWAITING THE LOW LEVEL" xml:space="preserve">
+    <value>Ni v redu za postopek - čakanje na nizko raven</value>
+  </data>
+  <data name="NOT EMPTY" xml:space="preserve">
+    <value>NI PRAZNO</value>
+  </data>
+  <data name="THE SILO IS BELOW THE MINIMUM LEVEL" xml:space="preserve">
+    <value>Silos je pod minimalno ravnijo</value>
+  </data>
+  <data name="BULK DENSITY" xml:space="preserve">
+    <value>Gostota v razsutem stanju</value>
+  </data>
+  <data name="ESTIMATED MATERIAL BULK DENSITY" xml:space="preserve">
+    <value>Ocenjena gostota materiala v razsutem stanju</value>
+  </data>
+  <data name="TOTALIZED OUTPUT" xml:space="preserve">
+    <value>Sešteti izhod</value>
+  </data>
+  <data name="SILO DISCHARGE ANOMALY (MATERIAL BRIDGE?)" xml:space="preserve">
+    <value>ANOMALIJA PRI PRAZNJENJU SILOSA (MATERIALOV MOST?)</value>
+  </data>
+  <data name="TOMRA - RECOVERY CHANNEL" xml:space="preserve">
+    <value>TOMRA - kanal za okrevanje</value>
+  </data>
+  <data name="TOMRA - MAIN CONTROL" xml:space="preserve">
+    <value>TOMRA - Glavni nadzor</value>
+  </data>
+  <data name="(1=POWERED ON)" xml:space="preserve">
+    <value>(1=VKLOPLJENO)</value>
+  </data>
+  <data name="SORTER MESSAGE PRESENT" xml:space="preserve">
+    <value>Sporočilo razvrščevalnika je prisotno</value>
+  </data>
+  <data name="(1=MESSAGE)" xml:space="preserve">
+    <value>(1=Sporočilo)</value>
+  </data>
+  <data name="SORTER FAULT PRESENT" xml:space="preserve">
+    <value>Prisotna je napaka sortirnika</value>
+  </data>
+  <data name="SORTING UNIT CONTROL NOT READY" xml:space="preserve">
+    <value>KRMILJENJE SORTIRNE ENOTE NI PRIPRAVLJENO</value>
+  </data>
+  <data name="LOCAL MESSAGE PRESENT" xml:space="preserve">
+    <value>LOKALNO SPOROČILO PREDSTAVLJA</value>
+  </data>
+  <data name="TOMRA INNOSORT - FLAKES SORTER" xml:space="preserve">
+    <value>TOMRA INNOSORT - Razvrščevalnik kosmičev</value>
+  </data>
+  <data name="FLAKES SORTER HOPPER" xml:space="preserve">
+    <value>Lijak za sortiranje kosmičev</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND UP" xml:space="preserve">
+    <value>Diagnostika izhoda F - ukaz GOR</value>
+  </data>
+  <data name="F-OUTPUT - COMMAND UP" xml:space="preserve">
+    <value>F-IZHOD - Ukaz GOR</value>
+  </data>
+  <data name="SAFETY BARRIERS RESET PB" xml:space="preserve">
+    <value>Varnostne ovire Ponastavi PB</value>
+  </data>
+  <data name="F-INPUT SAFETY BARRIERS" xml:space="preserve">
+    <value>Varnostne ovire F-INPUT</value>
+  </data>
+  <data name="SPECIFIC ENERGY" xml:space="preserve">
+    <value>Specifična energija</value>
+  </data>
+  <data name="WATER FOOTPRINT" xml:space="preserve">
+    <value>Vodni odtis</value>
+  </data>
+  <data name="OVERALL CHEMICALS CONSUMPTION" xml:space="preserve">
+    <value>Skupna poraba kemikalij</value>
+  </data>
+  <data name="DETERGENT INTENSITY" xml:space="preserve">
+    <value>Intenzivnost detergenta</value>
+  </data>
+  <data name="CAUSTIC INTENSITY" xml:space="preserve">
+    <value>Kavstična intenzivnost</value>
+  </data>
+  <data name="ESTIMATED ANTIFOAM INTENSITY" xml:space="preserve">
+    <value>Ocenjena intenzivnost protipenilnega sredstva</value>
+  </data>
+  <data name="ESTIMATED OTHER ADDITIVES INTENSITY" xml:space="preserve">
+    <value>Ocenjena intenzivnost drugih dodatkov</value>
+  </data>
+  <data name="CONTROL ELECTRICAL CABINET" xml:space="preserve">
+    <value>Krmilna električna omarica</value>
+  </data>
+  <data name="COOLING SYSTEM HEALTHY" xml:space="preserve">
+    <value>Hladilni sistem je zdrav</value>
+  </data>
+  <data name="STATUS OK OF CONTROL MODULE" xml:space="preserve">
+    <value>Stanje krmilnega modula v redu</value>
+  </data>
+  <data name="FAULT RESET OF CONTROL MODULE" xml:space="preserve">
+    <value>Ponastavitev napake krmilnega modula</value>
+  </data>
+  <data name="SYS - RESET OF CONTROL MODULE" xml:space="preserve">
+    <value>SYS - Ponastavitev krmilnega modula</value>
+  </data>
+  <data name="F-INPUT - SYS - EMERGENCY PUSH BUTTON" xml:space="preserve">
+    <value>F-VHOD - SYS - Tipka za nujne primere</value>
+  </data>
+  <data name="F-INPUT - SYS - EMERGENCY PUSH BUTTON (FORESEEN X CAB OR MANAGED ON HMI)" xml:space="preserve">
+    <value>F-VHOD - SYS - Gumb za nujne primere (predviden x CAB ali upravljan na HMI)</value>
+  </data>
+  <data name="OVERLOAD (IN Q01)" xml:space="preserve">
+    <value>PREOBREMENITEV (v Q01)</value>
+  </data>
+  <data name="MATERIAL PRESENT" xml:space="preserve">
+    <value>PRISOTEN MATERIAL</value>
+  </data>
+  <data name="NO MATERIAL IN THE SUBZONE" xml:space="preserve">
+    <value>V podconi ni materiala</value>
+  </data>
+  <data name="NO MAINTENANCE" xml:space="preserve">
+    <value>BREZ VZDRŽEVANJA</value>
+  </data>
+  <data name="NO PREPARATION" xml:space="preserve">
+    <value>BREZ PRIPRAVE</value>
+  </data>
+  <data name="SUBZONE IN PREPARATION MODE" xml:space="preserve">
+    <value>Podcona v načinu priprave</value>
+  </data>
+  <data name="NO PRODUCTION" xml:space="preserve">
+    <value>BREZ PROIZVODNJE</value>
+  </data>
+  <data name="SUBZONE IN PRODUCTION MODE" xml:space="preserve">
+    <value>Podcona v produkcijskem načinu</value>
+  </data>
+  <data name="NO STOP PENDING" xml:space="preserve">
+    <value>NI ČAKAJOČEGA USTAVITVE</value>
+  </data>
+  <data name="SUBZONE IS WAITING FOR UPSTRAM TO STOP" xml:space="preserve">
+    <value>Podzona čaka, da se Upstram ustavi</value>
+  </data>
+  <data name="NO STOP CYCLE" xml:space="preserve">
+    <value>BREZ USTAVITVE CIKELA</value>
+  </data>
+  <data name="SUBZONE IN STOP CYCLE" xml:space="preserve">
+    <value>Podcona v ciklu zaustavitve</value>
+  </data>
+  <data name="MATERIAL PRESENCE" xml:space="preserve">
+    <value>Prisotnost materiala</value>
+  </data>
+  <data name="FORCE TEMPORARY MATERIAL PRESENCE" xml:space="preserve">
+    <value>Vsili začasno prisotnost materiala</value>
+  </data>
+  <data name="DEBALER" xml:space="preserve">
+    <value>Debaler</value>
+  </data>
+  <data name="WHTANK" xml:space="preserve">
+    <value>WHTank</value>
+  </data>
+  <data name="SAFETY CHAINS" xml:space="preserve">
+    <value>Varnostne verige</value>
+  </data>
+  <data name="EXTERNAL SILO" xml:space="preserve">
+    <value>Zunanji silos</value>
+  </data>
+  <data name="DEBALER -  COOLING PUMP" xml:space="preserve">
+    <value>Debaler - hladilna črpalka</value>
+  </data>
+  <data name="BUFFER BELT - CONVEYOR" xml:space="preserve">
+    <value>Vmesni trak - transportni trak</value>
+  </data>
+  <data name="CONTAINER READY" xml:space="preserve">
+    <value>Pripravljen zabojnik</value>
+  </data>
+  <data name="EXTERNAL MIXING SILOS AREA" xml:space="preserve">
+    <value>Območje zunanjih mešalnih silosov</value>
+  </data>
+  <data name="PN COMMUNICATION WITH EXTERNAL DEVICES" xml:space="preserve">
+    <value>Komunikacija PN z zunanjimi napravami</value>
+  </data>
+  <data name="BYPASS OF NETWORK COMMUNICATION" xml:space="preserve">
+    <value>Obhod omrežne komunikacije</value>
+  </data>
+  <data name="COMMUNICATION ALARM" xml:space="preserve">
+    <value>Komunikacijski alarm</value>
+  </data>
+  <data name="FORCE ALL EXTERNAL SIGNALS TO ALLOW PRODUCTION" xml:space="preserve">
+    <value>Vsili vse zunanje signale, da omogoči produkcijo</value>
+  </data>
+  <data name="MAXIMUM TIME OF COMMUNICATION LOSS" xml:space="preserve">
+    <value>Najdaljši čas izgube komunikacije</value>
+  </data>
+  <data name="MAXIMUM LEVEL CONTROL" xml:space="preserve">
+    <value>Nadzor najvišje ravni</value>
+  </data>
+  <data name="OVERFLOW MODE CONTROL ADVANCED" xml:space="preserve">
+    <value>Napredno upravljanje načina prelivanja</value>
+  </data>
+  <data name="ABB-ACS580" xml:space="preserve">
+    <value>ABB-ACS580</value>
+  </data>
+  <data name="RIGHT LOCKING PIN" xml:space="preserve">
+    <value>Desni zaklepni zatič</value>
+  </data>
+  <data name="RIGHT PIN" xml:space="preserve">
+    <value>Desni zatič</value>
+  </data>
+  <data name="LEFT LOCKING PIN" xml:space="preserve">
+    <value>Levi zaklepni zatič</value>
+  </data>
+  <data name="LEFT PIN" xml:space="preserve">
+    <value>Levi zatič</value>
+  </data>
+  <data name="LOCKING PINS BOTH CLOSED" xml:space="preserve">
+    <value>ZAKLEPNA ZATIČA OBA ZAPRTA</value>
+  </data>
+  <data name="LOCKING PINS NOT CLOSED" xml:space="preserve">
+    <value>Zaklepni zatiči niso zaprti</value>
+  </data>
+  <data name="(1=DWN)" xml:space="preserve">
+    <value>(1=DWN)</value>
+  </data>
+  <data name="UP" xml:space="preserve">
+    <value>GOR</value>
+  </data>
+  <data name="DOWN" xml:space="preserve">
+    <value>DOL</value>
+  </data>
+  <data name="CONTAINER" xml:space="preserve">
+    <value>POSODA</value>
+  </data>
+  <data name="WATER TO 230" xml:space="preserve">
+    <value>Voda do 230</value>
+  </data>
+  <data name="WATER TO 240" xml:space="preserve">
+    <value>Voda do 240</value>
+  </data>
+  <data name="GRINDER RUNNING" xml:space="preserve">
+    <value>MLINČEK DELUJE</value>
+  </data>
+  <data name="GRINDER STOPPED" xml:space="preserve">
+    <value>Mlinček se je ustavil</value>
+  </data>
+  <data name="DISABLE GRINDER230" xml:space="preserve">
+    <value>Onemogoči Grinder230</value>
+  </data>
+  <data name="DISABLE GRINDER240" xml:space="preserve">
+    <value>Onemogoči Grinder240</value>
+  </data>
+  <data name="EMPTY CURRENT OF GRINDER230" xml:space="preserve">
+    <value>Prazen tok mlinčka 230</value>
+  </data>
+  <data name="EMPTY CURRENT OF GRINDER240" xml:space="preserve">
+    <value>Prazen tok mlinčka 240</value>
+  </data>
+  <data name="LONG AVERAGE CURRENT OF GRINDER230" xml:space="preserve">
+    <value>Dolg povprečni tok mlinčka 230</value>
+  </data>
+  <data name="LONG AVERAGE CURRENT OF GRINDER240" xml:space="preserve">
+    <value>Dolg povprečni tok mlinčka 240</value>
+  </data>
+  <data name="AT LEAST 1 SILO AVAILABLE" xml:space="preserve">
+    <value>NA VOLJO JE VSAM 1 SILOS</value>
+  </data>
+  <data name="NO SILOS AVAILABLE FOR FILLING" xml:space="preserve">
+    <value>Ni silosov za polnjenje</value>
+  </data>
+  <data name="EXTERNAL TRANSPORT SYSTEM RUN REQUEST" xml:space="preserve">
+    <value>Zahteva za zagon zunanjega transportnega sistema</value>
+  </data>
+  <data name="SYSTEM READY (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Sistem pripravljen (zunanji signal)</value>
+  </data>
+  <data name="(1=EXT SYSTEM READY)" xml:space="preserve">
+    <value>(1=ZUNANJI SISTEM PRIPRAVLJEN)</value>
+  </data>
+  <data name="SOREMA REQUEST" xml:space="preserve">
+    <value>Zahteva za Soremo</value>
+  </data>
+  <data name="(1=SOREMA REQUEST)" xml:space="preserve">
+    <value>(1=ZAHTEVEK ZA SOREMO)</value>
+  </data>
+  <data name="EXTERNAL SYSTEM READY" xml:space="preserve">
+    <value>ZUNANJI SISTEM PRIPRAVLJEN</value>
+  </data>
+  <data name="EXTERNAL SYSTEM IS NOT READY" xml:space="preserve">
+    <value>Zunanji sistem ni pripravljen</value>
+  </data>
+  <data name="PN COMMUNICATION" xml:space="preserve">
+    <value>PN KOMUNIKACIJA</value>
+  </data>
+  <data name="VALUE OF MEASURE IS FROZEN FOR NO COMMUNICATION !" xml:space="preserve">
+    <value>Vrednost mere je zamrznjena zaradi brez komunikacije!</value>
+  </data>
+  <data name="NO FILLING" xml:space="preserve">
+    <value>BREZ POLNIL</value>
+  </data>
+  <data name="NO DISCHARGE" xml:space="preserve">
+    <value>BREZ IZPUŠČANJA</value>
+  </data>
+  <data name="NO FILL AND DISCHARGE" xml:space="preserve">
+    <value>BREZ POLNJENJA IN PRAZNJENJA</value>
+  </data>
+  <data name="UPSTREAM READY OR GIVING MATERIAL (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Pripravljen ali dobavljiv material (zunanji signal)</value>
+  </data>
+  <data name="(1=EXT UPSTREAM OK TO GIVE MATERIAL)" xml:space="preserve">
+    <value>(1=ZUNANJI VODNIK JE DOVOLJEN ZA DAJANJE GRADIVA)</value>
+  </data>
+  <data name="EXTERNAL PLANT IS NOT GIVING MATERIAL" xml:space="preserve">
+    <value>Zunanja rastlina ne daje snovi</value>
+  </data>
+  <data name="EXTERNAL BIG BAG STATION" xml:space="preserve">
+    <value>Zunanja postaja za velike vreče</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER GENERAL START" xml:space="preserve">
+    <value>Splošni zagon sortirnika kosmičev BUHLER</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER MAIN STREAM " xml:space="preserve">
+    <value>Glavni tok sortirnika kosmičev BUHLER</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER RECYCLING STREAM" xml:space="preserve">
+    <value>Reciklirni tok sortirnika kosmičev BUHLER</value>
+  </data>
+  <data name="UNISENSOR FLAKES SORTER GENERAL START" xml:space="preserve">
+    <value>Splošni zagon sortirnika kosmičev UNISENSOR</value>
+  </data>
+  <data name="UNISENSOR FLAKES SORTER MAIN STREAM" xml:space="preserve">
+    <value>Glavni tok sortirnika kosmičev UNISENSOR</value>
+  </data>
+  <data name="OEE - OVERALL PLANT ELECTRICAL CONSUMPTION" xml:space="preserve">
+    <value>OEE - Skupna poraba električne energije v obratu</value>
+  </data>
+  <data name="OEE - OVERALL PLANT WATER CONSUMPTION" xml:space="preserve">
+    <value>OEE - Skupna poraba vode v obratu</value>
+  </data>
+  <data name="ELECTRICAL CONTROL CABINET" xml:space="preserve">
+    <value>Električna krmilna omarica</value>
+  </data>
+  <data name="WASTE MANAGEMENT ELETRICAL CABINET" xml:space="preserve">
+    <value>Električna omarica za ravnanje z odpadki</value>
+  </data>
 </root>

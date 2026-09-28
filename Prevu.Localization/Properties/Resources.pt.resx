@@ -13386,4 +13386,868 @@ Observação: Se este modo estiver ativado, a produção a montante poderá ser 
   <data name="P_SPEED_HIGH_x_TANK_REFILL" xml:space="preserve">
     <value>Aumento da velocidade de ajuste da bomba para facilitar o reabastecimento do tanque quando for detectada falta de água.</value>
   </data>
+  <data name="P_SINGLE_MIX_FLOW_SP" xml:space="preserve">
+    <value>Taxa de fluxo de enchimento alvo para um único misturador. O CLP multiplicará automaticamente esse valor pelo número de misturadores que solicitam água simultaneamente.</value>
+  </data>
+  <data name="P_RECIRC_FLOW_SP" xml:space="preserve">
+    <value>Ponto de ajuste da vazão utilizado durante a fase de recirculação do tanque, quando as outras válvulas estão fechadas.</value>
+  </data>
+  <data name="P_ACT_FLOW_SP" xml:space="preserve">
+    <value>Exibe o valor de ajuste da vazão atualmente ativo e em uso pelo sistema para regular a bomba.</value>
+  </data>
+  <data name="P_NO_LOAD_AMP" xml:space="preserve">
+    <value>Cálculo automático da corrente de vazio do motor. Calcula a média da corrente do motor e da mecânica isoladamente nas últimas 10 partidas (processo parado).</value>
+  </data>
+  <data name="P_CALCULATED_FILLING" xml:space="preserve">
+    <value>Cálculo automático do enchimento médio da máquina. O sistema integra continuamente a corrente do rotor ao longo do tempo para estimar o enchimento da máquina e evitar sobrecarga de material.</value>
+  </data>
+  <data name="P_AMP_x_INT_CLEAN" xml:space="preserve">
+    <value>Quando a corrente atinge esse valor, o sistema aciona um ciclo de limpeza interno para eliminar todos os resíduos e reduzir a corrente do motor (se ativado) após o término do atraso especificado no campo seguinte.</value>
+  </data>
+  <data name="P_AMP_x_INT_CLEAN_DELAY" xml:space="preserve">
+    <value>Esse atraso funciona como uma histerese para o limite de corrente. Quando a corrente do motor excede o limite acima, o temporizador inicia e continua enquanto a corrente permanecer acima do limite. Se a corrente permanecer acima do limite durante toda a duração, a limpeza é solicitada para iniciar (se habilitada).</value>
+  </data>
+  <data name="P_AMP_x_INT_CLEAN_ENAB" xml:space="preserve">
+    <value>Se essa opção estiver ativa, o ciclo de limpeza será habilitado para iniciar quando a corrente do motor atingir o limite predefinido e permanecer acima dele durante o tempo de atraso definido.</value>
+  </data>
+  <data name="P_SPEED_x_DOWNSTR_EMPTY" xml:space="preserve">
+    <value>A maior velocidade é utilizada para reduzir o tempo inicial de enchimento da linha quando a esteira está vazia.</value>
+  </data>
+  <data name="P_ACC_TIME" xml:space="preserve">
+    <value>Ajusta o tempo de aceleração do motor com base nas configurações do inversor ou do soft starter.</value>
+  </data>
+  <data name="P_FAN_OBSTRUCTION_AMP" xml:space="preserve">
+    <value>Quando a corrente do motor cai abaixo desse limite, o sistema aciona um alarme indicando uma possível obstrução do ventilador após o atraso especificado no campo seguinte.</value>
+  </data>
+  <data name="P_FAN_OBSTRUCTION_DELAY" xml:space="preserve">
+    <value>Esse atraso funciona como uma histerese para o limite de alarme. Quando a corrente do motor cai abaixo desse limite, o temporizador inicia e continua enquanto a corrente permanecer abaixo do limite. Se a corrente permanecer abaixo do limite durante toda a duração, o alarme de obstrução do ventilador é acionado.</value>
+  </data>
+  <data name="INFO_TEMPER_14" xml:space="preserve">
+    <value>Alta temperatura detectada em campo. Verifique as condições ambientais e do processo. Reduza a carga térmica para evitar danos ao equipamento.</value>
+  </data>
+  <data name="INFO_STATC_01" xml:space="preserve">
+    <value>Verifique o contator estático e sua carga. Certifique-se de que a calibração do limite de corrente do dispositivo corresponda aos requisitos da carga.</value>
+  </data>
+  <data name="INFO_STATC_02" xml:space="preserve">
+    <value>Sem retorno do contator estático após o comando de partida. Verifique a fiação de controle e o estado do contator.</value>
+  </data>
+  <data name="INFO_AMP_16" xml:space="preserve">
+    <value>A detecção de corrente com o motor parado sugere um curto-circuito no SCR. Desligue a alimentação imediatamente, pois o motor pode estar energizado. Inspecione o contator estático antes de tentar reiniciá-lo.</value>
+  </data>
+  <data name="INFO_SAFETY_5" xml:space="preserve">
+    <value>Tempo limite de segurança: reinicie o circuito de segurança para restaurar a velocidade total de produção.</value>
+  </data>
+  <data name="M_INFO_EXT_CHEM_SYS" xml:space="preserve">
+    <value>Verifique o sistema externo de dosagem de produtos químicos.</value>
+  </data>
+  <data name="M_INFO_OHM_1" xml:space="preserve">
+    <value>Verifique a bomba química, as condições do processo e a regulagem da configuração, se necessário.</value>
+  </data>
+  <data name="M_INFO_OHM_2" xml:space="preserve">
+    <value>Verifique a bomba química, as condições do processo e a regulagem da configuração, se necessário.</value>
+  </data>
+  <data name="M_INFO_PH_1" xml:space="preserve">
+    <value>pH elevado - Solução cáustica! Verifique as condições do processo e ajuste os parâmetros de regulagem, se necessário.</value>
+  </data>
+  <data name="M_INFO_PH_2" xml:space="preserve">
+    <value>pH baixo - Solução ácida! Verifique as condições do processo e ajuste a regulagem, se necessário.</value>
+  </data>
+  <data name="M_INFO_DOWNSTR_NOT_RUN" xml:space="preserve">
+    <value>O sistema a jusante encontra-se atualmente inoperante, o que pode causar uma interrupção na produção. Verifique o estado do equipamento a jusante e ligue-o, se necessário, para garantir o fluxo contínuo do produto.</value>
+  </data>
+  <data name="PET BOTTLE WASHING PLANT" xml:space="preserve">
+    <value>Fábrica de lavagem de garrafas PET</value>
+  </data>
+  <data name="MAX CURRENT LIMIT SWITCH" xml:space="preserve">
+    <value>Interruptor de limite de corrente máxima</value>
+  </data>
+  <data name="SAFETY BARRIERS RESET REQUEST" xml:space="preserve">
+    <value>Solicitação de reinicialização das barreiras de segurança</value>
+  </data>
+  <data name="SAFETY BARRIERS RESET REQUEST PUSH-BUTTON" xml:space="preserve">
+    <value>Botão de solicitação de reinicialização das barreiras de segurança</value>
+  </data>
+  <data name="INVERTER SAFE STATUS FEEDBACK" xml:space="preserve">
+    <value>Feedback do status de segurança do inversor</value>
+  </data>
+  <data name="F-INPUT - PULL-CORD SAFETIES" xml:space="preserve">
+    <value>F-INPUT - Dispositivos de segurança com cordão de acionamento</value>
+  </data>
+  <data name="F-INPUT - SAFETY BARRIERS" xml:space="preserve">
+    <value>F-INPUT - Barreiras de Segurança</value>
+  </data>
+  <data name="F-INPUT DIAGNOSTIC - PULL-CORD SAFETIES" xml:space="preserve">
+    <value>Diagnóstico de entrada F - Seguranças do cordão de acionamento</value>
+  </data>
+  <data name="F-INPUT DIAGNOSTIC - SAFETY BARRIERS" xml:space="preserve">
+    <value>Diagnóstico de entrada F - Barreiras de segurança</value>
+  </data>
+  <data name="CHARGING CONVEYOR - SAFETY KEY" xml:space="preserve">
+    <value>Esteira de carregamento - Chave de segurança</value>
+  </data>
+  <data name="CHARGING CONVEYOR - LEFT LUBRIF." xml:space="preserve">
+    <value>Esteira de carregamento - Lubrificação à esquerda.</value>
+  </data>
+  <data name="CHARGING CONVEYOR - RIGHT LUBRIF." xml:space="preserve">
+    <value>Esteira de carregamento - Lubrificação correta.</value>
+  </data>
+  <data name="CHARGING CONVEYOR - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>Ciclo de manutenção da esteira transportadora de carregamento</value>
+  </data>
+  <data name="CHARGING CONVEYOR - LUBRIFICATION" xml:space="preserve">
+    <value>Esteira de carregamento - Lubrificação</value>
+  </data>
+  <data name="DEBALER - MAIN PUMP" xml:space="preserve">
+    <value>Desbaldeador - Bomba Principal</value>
+  </data>
+  <data name="OIL SHUTOFF VALVE OPEN" xml:space="preserve">
+    <value>Válvula de corte de óleo aberta</value>
+  </data>
+  <data name="OUTPUT CONTACTORS FEEDBACK" xml:space="preserve">
+    <value>Feedback dos contatores de saída</value>
+  </data>
+  <data name="OIL SHUTOFF VALVE NOT OPEN" xml:space="preserve">
+    <value>Válvula de corte de óleo não está aberta</value>
+  </data>
+  <data name="DEBALER - SAFETY UNLOCK REELS" xml:space="preserve">
+    <value>Desbalador - Bobinas de destravamento de segurança</value>
+  </data>
+  <data name="DEBALER - AUXILIARY HYDRAULIC UNIT" xml:space="preserve">
+    <value>Desbaldeador - Unidade Hidráulica Auxiliar</value>
+  </data>
+  <data name="DEBALER - COOLING PUMP" xml:space="preserve">
+    <value>Desbalador - Bomba de Refrigeração</value>
+  </data>
+  <data name="DEBALER - COOLING BLOWER" xml:space="preserve">
+    <value>Desbaldeador - Soprador de Resfriamento</value>
+  </data>
+  <data name="DEBALER - THERMAL HEATER" xml:space="preserve">
+    <value>Desbalador - Aquecedor Térmico</value>
+  </data>
+  <data name="DEBALER - HYDRAULIC SHAFT" xml:space="preserve">
+    <value>Desbaldeador - Eixo Hidráulico</value>
+  </data>
+  <data name="DEBALER - HOPPER LEVEL" xml:space="preserve">
+    <value>Desbalador - Nível da tremonha</value>
+  </data>
+  <data name="DEBALER - OIL TEMPERATURE" xml:space="preserve">
+    <value>Desbalador - Temperatura do óleo</value>
+  </data>
+  <data name="DEBALER - HYDRAULIC BYPASS" xml:space="preserve">
+    <value>Desbaldeador - Bypass Hidráulico</value>
+  </data>
+  <data name="DEBALER - MAINTENANCE CYCLE" xml:space="preserve">
+    <value>Desbaldeador - Ciclo de Manutenção</value>
+  </data>
+  <data name="DEBALER - MANAGER" xml:space="preserve">
+    <value>Desbalador - Gerente</value>
+  </data>
+  <data name="DEBALER - HYDRAULICS" xml:space="preserve">
+    <value>Desbaldeador - Hidráulico</value>
+  </data>
+  <data name="DRY TROMMEL - SAFETY DOOR UNLOCK SIDE" xml:space="preserve">
+    <value>Trommel Seco - Lado de Destravamento da Porta de Segurança</value>
+  </data>
+  <data name="MAINTENANCE PROCEDURE - OPEN SIDE" xml:space="preserve">
+    <value>Procedimento de manutenção - Lateral aberta</value>
+  </data>
+  <data name="MOTOR TEMPERATURE (OPTIONAL)" xml:space="preserve">
+    <value>Temperatura do motor (opcional)</value>
+  </data>
+  <data name="MOTOR OVERHEAT (OPTIONAL)" xml:space="preserve">
+    <value>Superaquecimento do motor (opcional)</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR" xml:space="preserve">
+    <value>Metal de amortecimento - Transportador</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR SAFETY KEY" xml:space="preserve">
+    <value>Chave de segurança para transportador com amortecedor metálico</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR LEFT LUBRIF." xml:space="preserve">
+    <value>Amortecedor Metálico - Lubrificação da Esteira Transportadora Esquerda.</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR RIGHT LUBRIF." xml:space="preserve">
+    <value>Amortecedor Metálico - Lubrificação Direita da Esteira Transportadora.</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR HOPPER LEVEL" xml:space="preserve">
+    <value>Metal de amortecimento - Nível da tremonha da esteira transportadora</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR MAINTENANCE CYCLE" xml:space="preserve">
+    <value>Ciclo de manutenção do transportador com metal de amortecimento</value>
+  </data>
+  <data name="BUFFER METAL - CONVEYOR LUBRIFICATION" xml:space="preserve">
+    <value>Metal de amortecimento - Lubrificação de transportadores</value>
+  </data>
+  <data name="WET TROMMEL" xml:space="preserve">
+    <value>Trommel úmido</value>
+  </data>
+  <data name="ESTIMATED FLOWRATE" xml:space="preserve">
+    <value>Vazão estimada</value>
+  </data>
+  <data name="DECANTER - STEAM" xml:space="preserve">
+    <value>Decantador - Vapor</value>
+  </data>
+  <data name="DECANTER - DISCHARGE" xml:space="preserve">
+    <value>Decantador - Descarga</value>
+  </data>
+  <data name="PUMP - MOTOR" xml:space="preserve">
+    <value>Bomba - Motor</value>
+  </data>
+  <data name="PUMP - WATER FLOWRATE" xml:space="preserve">
+    <value>Bomba - Vazão de água</value>
+  </data>
+  <data name="PUMP - WATER CONDUCTIVITY" xml:space="preserve">
+    <value>Bomba - Condutividade da Água</value>
+  </data>
+  <data name="DISK SEPARATOR - WATER CLEANING" xml:space="preserve">
+    <value>Separador de discos - Limpeza com água</value>
+  </data>
+  <data name="MAXIMUM OPEN TIME" xml:space="preserve">
+    <value>TEMPO MÁXIMO DE ABERTURA</value>
+  </data>
+  <data name="MAXIMUM OPEN TIME (0 = CONTROL BYPASS)" xml:space="preserve">
+    <value>Tempo máximo de abertura (0 = Desvio de controle)</value>
+  </data>
+  <data name="DISK SEPARATOR - AIR CLEANING" xml:space="preserve">
+    <value>Separador de discos - Limpeza de ar</value>
+  </data>
+  <data name="DISK SEPARATOR - CLEANING CYCLE" xml:space="preserve">
+    <value>Separador de discos - Ciclo de limpeza</value>
+  </data>
+  <data name="DISK SEPARATOR - BOTTOM RINSE CYCLE" xml:space="preserve">
+    <value>Separador de discos - Ciclo de enxágue inferior</value>
+  </data>
+  <data name="DISK SEPARATOR CLEANING MANAGER" xml:space="preserve">
+    <value>Gerenciador de limpeza do separador de discos</value>
+  </data>
+  <data name="SAD RUNNING" xml:space="preserve">
+    <value>CORRIDA TRISTE</value>
+  </data>
+  <data name="SAD NOT RUNNING" xml:space="preserve">
+    <value>SAD Não Funcionando</value>
+  </data>
+  <data name="CLEANING ON TIME" xml:space="preserve">
+    <value>Limpeza no horário</value>
+  </data>
+  <data name="CAUSTIC PUMP" xml:space="preserve">
+    <value>Bomba cáustica</value>
+  </data>
+  <data name="PREDICTED MAXIMUM CONSUMPTION" xml:space="preserve">
+    <value>Consumo máximo previsto</value>
+  </data>
+  <data name="BOTTLE SORTER - ACCELERATION BELT" xml:space="preserve">
+    <value>Classificadora de Garrafas - Correia de Aceleração</value>
+  </data>
+  <data name="VBPS ERROR" xml:space="preserve">
+    <value>Erro VBPS</value>
+  </data>
+  <data name="AIR PRESSURE FAULT" xml:space="preserve">
+    <value>Falha na pressão do ar</value>
+  </data>
+  <data name="SORTING UNIT - VALVE BLOCK IN SERVICE MODE" xml:space="preserve">
+    <value>UNIDADE DE CLASSIFICAÇÃO - BLOCO DE VÁLVULAS EM MODO DE SERVIÇO</value>
+  </data>
+  <data name="METAL SEPARATOR - CONVEYOR BELT" xml:space="preserve">
+    <value>Separador de metais - Correia transportadora</value>
+  </data>
+  <data name="METAL SEPARATOR" xml:space="preserve">
+    <value>Separador de metal</value>
+  </data>
+  <data name="METAL SEPARATOR - METAL DETECTOR" xml:space="preserve">
+    <value>Separador de metais - Detector de metais</value>
+  </data>
+  <data name="METAL SEPARATOR - DIVERTER" xml:space="preserve">
+    <value>Separador de metais - Desviador</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - BREAKER RELEASE COIL" xml:space="preserve">
+    <value>Diagnóstico de saída F - Bobina de liberação do disjuntor</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND LINE" xml:space="preserve">
+    <value>Diagnóstico de saída F - Linha de comando</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND DELTA" xml:space="preserve">
+    <value>Diagnóstico de saída F - Delta de comando</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND STAR" xml:space="preserve">
+    <value>Diagnóstico de saída F - Command Star</value>
+  </data>
+  <data name="CABINET BREAKER RELEASE COIL" xml:space="preserve">
+    <value>Bobina de liberação do disjuntor do painel</value>
+  </data>
+  <data name="F-OUTPUT - CABINET BREAKER RELEASE COIL" xml:space="preserve">
+    <value>F-OUTPUT - Bobina de Liberação do Disjuntor do Painel</value>
+  </data>
+  <data name="F-INPUT - ROTOR STOPPED" xml:space="preserve">
+    <value>F-INPUT - Rotor parado</value>
+  </data>
+  <data name="F-INPUT DIAGNOSTIC - ROTOR STOPPED" xml:space="preserve">
+    <value>Diagnóstico de entrada F - Rotor parado</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND KEY RELEASE" xml:space="preserve">
+    <value>Diagnóstico de saída F - Liberação da tecla de comando</value>
+  </data>
+  <data name="COMMAND KEY RELEASE" xml:space="preserve">
+    <value>Liberação da tecla de comando</value>
+  </data>
+  <data name="ROTOR STOPPED - HARDWARE FAULT (INPUT PASSIVATION)" xml:space="preserve">
+    <value>ROTOR PARADO - FALHA DE HARDWARE (PASSIVAÇÃO DE ENTRADA)</value>
+  </data>
+  <data name="UNLOCK COMMAND - HARDWARE FAULT (OUTPUT PASSIVATION)" xml:space="preserve">
+    <value>COMANDO DE DESBLOQUEIO - FALHA DE HARDWARE (PASSIVAÇÃO DE SAÍDA)</value>
+  </data>
+  <data name="HIGH LEVEL TIMEOUT" xml:space="preserve">
+    <value>TEMPO LIMITE DE ALTO NÍVEL</value>
+  </data>
+  <data name="TRANSPORT" xml:space="preserve">
+    <value>Transporte</value>
+  </data>
+  <data name="MICROFILTER - CLEANING WATER FLOW RATE" xml:space="preserve">
+    <value>Microfiltro - Taxa de fluxo de água de limpeza</value>
+  </data>
+  <data name="CLEANING BY LEVEL ENABLED" xml:space="preserve">
+    <value>LIMPEZA POR NÍVEL ATIVADA</value>
+  </data>
+  <data name="WATER HIGH LEVEL CLEANING NOT ENABLED" xml:space="preserve">
+    <value>Limpeza de alto nível de água não ativada</value>
+  </data>
+  <data name="NO CLEANING REQUESTED" xml:space="preserve">
+    <value>Não é necessária limpeza.</value>
+  </data>
+  <data name="CLEANING IN PROGRESS FOR OPERATOR REQUEST" xml:space="preserve">
+    <value>Limpeza em andamento a pedido do operador.</value>
+  </data>
+  <data name="CLEANING WATER ON TIME (0=DISABLED)" xml:space="preserve">
+    <value>Limpeza da água ON Tempo (0=Desativado)</value>
+  </data>
+  <data name="DECANTER - SOREMA REQUEST WATER" xml:space="preserve">
+    <value>Decantador - Sorema Solicitar Água</value>
+  </data>
+  <data name="DECANTER - WATER FLOW RATE" xml:space="preserve">
+    <value>Decantador - Vazão de água</value>
+  </data>
+  <data name="PUMP - WATER FLOWRATE TO GRINDER" xml:space="preserve">
+    <value>Bomba - Vazão de água para o triturador</value>
+  </data>
+  <data name="DISCHARGE PUMP TO PREWASH" xml:space="preserve">
+    <value>Bomba de descarga para pré-lavagem</value>
+  </data>
+  <data name="SCREW CONVEYOR -MIN LEVEL" xml:space="preserve">
+    <value>Transportador helicoidal - Nível mínimo</value>
+  </data>
+  <data name="MINIMUM LEVEL NOT REACHED" xml:space="preserve">
+    <value>Nível mínimo não atingido</value>
+  </data>
+  <data name="NO MINIMUM LEVEL" xml:space="preserve">
+    <value>SEM NÍVEL MÍNIMO</value>
+  </data>
+  <data name="MINIMUM LEVEL REACHED" xml:space="preserve">
+    <value>Nível mínimo atingido</value>
+  </data>
+  <data name="SILO MIXER - MOTOR" xml:space="preserve">
+    <value>Misturador de silo - Motor</value>
+  </data>
+  <data name="(1&gt;=HIGH)" xml:space="preserve">
+    <value>(1&gt;=ALTO)</value>
+  </data>
+  <data name="FILLED SILO" xml:space="preserve">
+    <value>Silo cheio</value>
+  </data>
+  <data name="NOT WAITING FOR LOW LEVEL" xml:space="preserve">
+    <value>NÃO ESPERE POR NÍVEIS BAIXOS</value>
+  </data>
+  <data name="WAITING FOR MATERIAL BELOW LOW LEVEL" xml:space="preserve">
+    <value>Aguardando material abaixo do nível mais baixo</value>
+  </data>
+  <data name="TRANSFER TANK LEVEL" xml:space="preserve">
+    <value>NÍVEL DO TANQUE DE TRANSFERÊNCIA</value>
+  </data>
+  <data name="TRANSFER TANK LEVEL NOT OK FOR MIXERS DISCHARGE" xml:space="preserve">
+    <value>Nível do tanque de transferência inadequado para descarga de misturadores</value>
+  </data>
+  <data name="INLET WATER FLOWRATE" xml:space="preserve">
+    <value>VAZÃO DE ÁGUA DE ENTRADA</value>
+  </data>
+  <data name="INLET WATER FLOWRATE NOT OK" xml:space="preserve">
+    <value>A vazão de água na entrada não está correta.</value>
+  </data>
+  <data name="OUTLET STEAM PRESSURE NOT OK" xml:space="preserve">
+    <value>Pressão de vapor na saída não está OK</value>
+  </data>
+  <data name="WATER TANK - WATER TO RECIRCULATION" xml:space="preserve">
+    <value>Reservatório de água - Água para recirculação</value>
+  </data>
+  <data name="WATER TANK - WATER TO PREWASH" xml:space="preserve">
+    <value>Reservatório de água - Água para pré-lavagem</value>
+  </data>
+  <data name="DISCHARGE TIME ABOVE ZERO" xml:space="preserve">
+    <value>TEMPO DE DESCARGA ACIMA DE ZERO</value>
+  </data>
+  <data name="TANK DISCHARGE TIME IS SET TO ZERO" xml:space="preserve">
+    <value>O tempo de descarga do tanque está definido como ZERO.</value>
+  </data>
+  <data name="WATER TANK" xml:space="preserve">
+    <value>Reservatório de água</value>
+  </data>
+  <data name="BOWL FILLING POSITION NOT OK" xml:space="preserve">
+    <value>A posição de enchimento da tigela não está correta.</value>
+  </data>
+  <data name="CAUSTIC MAXIMUM HOURLY USAGE EXCEEDED" xml:space="preserve">
+    <value>Consumo máximo por hora de soda cáustica excedido.</value>
+  </data>
+  <data name="INFO_PST_6" xml:space="preserve">
+    <value>INFO_PST_6</value>
+  </data>
+  <data name="DETERGENT MAXIMUM HOURLY USAGE EXCEEDED" xml:space="preserve">
+    <value>Uso máximo de detergente por hora excedido.</value>
+  </data>
+  <data name="CHEMICALS HOURLY USAGE" xml:space="preserve">
+    <value>USO HORÁRIO DE PRODUTOS QUÍMICOS</value>
+  </data>
+  <data name="CAUSTIC HOURLY USAGE" xml:space="preserve">
+    <value>Uso horário de produtos cáusticos</value>
+  </data>
+  <data name="DETERGENT HOURLY USAGE" xml:space="preserve">
+    <value>Uso de detergente por hora</value>
+  </data>
+  <data name="CONSTANT SPEED" xml:space="preserve">
+    <value>VELOCIDADE CONSTANTE</value>
+  </data>
+  <data name="SPEED MODULATION IN PROGRESS" xml:space="preserve">
+    <value>Modulação de velocidade em andamento</value>
+  </data>
+  <data name="RECIRCULATION SPEED (IN CONSTANT MODE)" xml:space="preserve">
+    <value>Velocidade de recirculação (no modo constante)</value>
+  </data>
+  <data name="PROCESS LOOP SP" xml:space="preserve">
+    <value>LOOP DE PROCESSO SP</value>
+  </data>
+  <data name="THE SHORT LOOP FLOWRATE SETPOINT IS ACTIVE" xml:space="preserve">
+    <value>O ponto de ajuste da vazão do circuito curto está ativo.</value>
+  </data>
+  <data name="SETPOINT FOR THE SHORT RECIRCULATION LOOP" xml:space="preserve">
+    <value>Ponto de ajuste para o circuito de recirculação curto</value>
+  </data>
+  <data name="WCE - MOTOR" xml:space="preserve">
+    <value>WCE - Motor</value>
+  </data>
+  <data name="WCE - FRESH WATER CLEANING" xml:space="preserve">
+    <value>WCE - Limpeza com Água Doce</value>
+  </data>
+  <data name="WCE - STEAM CLEANING" xml:space="preserve">
+    <value>WCE - Limpeza a Vapor</value>
+  </data>
+  <data name="WCE - CLEANING WATER FLOW RATE" xml:space="preserve">
+    <value>WCE - Taxa de fluxo de água de limpeza</value>
+  </data>
+  <data name="WCE - CLEANING MANAGER" xml:space="preserve">
+    <value>WCE - Gerente de Limpeza</value>
+  </data>
+  <data name="WCE RUNNING" xml:space="preserve">
+    <value>WCE CORRIDA</value>
+  </data>
+  <data name="CENTRIFUGE NOT RUNNING" xml:space="preserve">
+    <value>Centrífuga não está funcionando</value>
+  </data>
+  <data name="STEAM TIME NO ZERO" xml:space="preserve">
+    <value>HORA DO VAPOR SEM ZERO</value>
+  </data>
+  <data name="STEAM ON TIME IS SET TO ZERO" xml:space="preserve">
+    <value>O tempo de ativação do Steam está definido como ZERO.</value>
+  </data>
+  <data name="WATER TIME NO ZERO" xml:space="preserve">
+    <value>HORA DA ÁGUA SEM ZERO</value>
+  </data>
+  <data name="WATER ON TIME IS SET TO ZERO" xml:space="preserve">
+    <value>O tempo de funcionamento da água está definido como ZERO.</value>
+  </data>
+  <data name="NO STEAM CLEANING" xml:space="preserve">
+    <value>SEM LIMPEZA A VAPOR</value>
+  </data>
+  <data name="STEAM CLEANING" xml:space="preserve">
+    <value>Limpeza a vapor</value>
+  </data>
+  <data name="NO WATER RINSING" xml:space="preserve">
+    <value>SEM ENXAGUAR COM ÁGUA</value>
+  </data>
+  <data name="WATER RINSING" xml:space="preserve">
+    <value>Enxágue com água</value>
+  </data>
+  <data name="CLEANING STEAM ON TIME" xml:space="preserve">
+    <value>Limpeza a vapor no horário</value>
+  </data>
+  <data name="(CONFIGURABLE)" xml:space="preserve">
+    <value>(Configurável)</value>
+  </data>
+  <data name="LEVEL OVERLOAD (OPTIONAL)" xml:space="preserve">
+    <value>Sobrecarga de nível (opcional)</value>
+  </data>
+  <data name="GREEN LAMP" xml:space="preserve">
+    <value>Lâmpada Verde</value>
+  </data>
+  <data name="BAG OK FOR PROCESS LAMP" xml:space="preserve">
+    <value>A bolsa é adequada para lâmpadas de processo.</value>
+  </data>
+  <data name="NO DISCHARGE FOR PREPARATION IN PROGRESS" xml:space="preserve">
+    <value>Sem alta para preparação em andamento.</value>
+  </data>
+  <data name="EXCHANGE WATER PAUSE TIME IS SET TO ZERO" xml:space="preserve">
+    <value>O tempo de pausa para troca de água está definido como ZERO.</value>
+  </data>
+  <data name="WATER EXCHANGE TIME IS SET TO ZERO (NO EXCHANGE)" xml:space="preserve">
+    <value>O tempo de troca de água está definido como ZERO (sem troca).</value>
+  </data>
+  <data name="SEPARATION TANK REFILL SPEED (IN CONSTANT MODE)" xml:space="preserve">
+    <value>Velocidade de reabastecimento do tanque de separação (no modo constante)</value>
+  </data>
+  <data name="PROCESS SP" xml:space="preserve">
+    <value>PROCESSO SP</value>
+  </data>
+  <data name="TANK REFILL FLOWRATE SETPOINT IS ACTIVE" xml:space="preserve">
+    <value>A taxa de reabastecimento do tanque está configurada como definida como ativa.</value>
+  </data>
+  <data name="SETPOINT FOR SEPARATION TANK REFILL" xml:space="preserve">
+    <value>Ponto de ajuste para reabastecimento do tanque de separação</value>
+  </data>
+  <data name="METAL SEPARATOR - VIBRATING TABLE" xml:space="preserve">
+    <value>Separador de metais - Mesa vibratória</value>
+  </data>
+  <data name="METAL SEPARATOR - MAGNETIC ROLL" xml:space="preserve">
+    <value>Separador de metais - Rolo magnético</value>
+  </data>
+  <data name="NOT OK FOR PROCESS - AWAITING THE LOW LEVEL" xml:space="preserve">
+    <value>Processo não está OK - Aguardando o nível baixo.</value>
+  </data>
+  <data name="NOT EMPTY" xml:space="preserve">
+    <value>NÃO VAZIO</value>
+  </data>
+  <data name="THE SILO IS BELOW THE MINIMUM LEVEL" xml:space="preserve">
+    <value>O silo está abaixo do nível mínimo.</value>
+  </data>
+  <data name="BULK DENSITY" xml:space="preserve">
+    <value>Densidade aparente</value>
+  </data>
+  <data name="ESTIMATED MATERIAL BULK DENSITY" xml:space="preserve">
+    <value>Densidade aparente estimada do material</value>
+  </data>
+  <data name="TOTALIZED OUTPUT" xml:space="preserve">
+    <value>Produção totalizada</value>
+  </data>
+  <data name="SILO DISCHARGE ANOMALY (MATERIAL BRIDGE?)" xml:space="preserve">
+    <value>ANOMALIA NA DESCARGA DO SILO (PONTE DE MATERIAL?)</value>
+  </data>
+  <data name="TOMRA - RECOVERY CHANNEL" xml:space="preserve">
+    <value>TOMRA - Canal de Recuperação</value>
+  </data>
+  <data name="TOMRA - MAIN CONTROL" xml:space="preserve">
+    <value>TOMRA - Controle Principal</value>
+  </data>
+  <data name="(1=POWERED ON)" xml:space="preserve">
+    <value>(1=Ligado)</value>
+  </data>
+  <data name="SORTER MESSAGE PRESENT" xml:space="preserve">
+    <value>Mensagem do Classificador Presente</value>
+  </data>
+  <data name="(1=MESSAGE)" xml:space="preserve">
+    <value>(1=Mensagem)</value>
+  </data>
+  <data name="SORTER FAULT PRESENT" xml:space="preserve">
+    <value>Falha no classificador presente</value>
+  </data>
+  <data name="SORTING UNIT CONTROL NOT READY" xml:space="preserve">
+    <value>CONTROLE DA UNIDADE DE CLASSIFICAÇÃO NÃO ESTÁ PRONTO</value>
+  </data>
+  <data name="LOCAL MESSAGE PRESENT" xml:space="preserve">
+    <value>MENSAGEM LOCAL PRESENTE</value>
+  </data>
+  <data name="TOMRA INNOSORT - FLAKES SORTER" xml:space="preserve">
+    <value>TOMRA INNOSORT - Classificador de Flocos</value>
+  </data>
+  <data name="FLAKES SORTER HOPPER" xml:space="preserve">
+    <value>Tremonha de triagem de flocos</value>
+  </data>
+  <data name="F-OUTPUT DIAGNOSTIC - COMMAND UP" xml:space="preserve">
+    <value>Diagnóstico de saída F - Comando UP</value>
+  </data>
+  <data name="F-OUTPUT - COMMAND UP" xml:space="preserve">
+    <value>F-OUTPUT - Comando UP</value>
+  </data>
+  <data name="SAFETY BARRIERS RESET PB" xml:space="preserve">
+    <value>Barreiras de segurança Reinicializadas PB</value>
+  </data>
+  <data name="F-INPUT SAFETY BARRIERS" xml:space="preserve">
+    <value>Barreiras de segurança F-INPUT</value>
+  </data>
+  <data name="SPECIFIC ENERGY" xml:space="preserve">
+    <value>Energia específica</value>
+  </data>
+  <data name="WATER FOOTPRINT" xml:space="preserve">
+    <value>Pegada hídrica</value>
+  </data>
+  <data name="OVERALL CHEMICALS CONSUMPTION" xml:space="preserve">
+    <value>Consumo total de produtos químicos</value>
+  </data>
+  <data name="DETERGENT INTENSITY" xml:space="preserve">
+    <value>Intensidade do detergente</value>
+  </data>
+  <data name="CAUSTIC INTENSITY" xml:space="preserve">
+    <value>Intensidade cáustica</value>
+  </data>
+  <data name="ESTIMATED ANTIFOAM INTENSITY" xml:space="preserve">
+    <value>Intensidade estimada do antiespumante</value>
+  </data>
+  <data name="ESTIMATED OTHER ADDITIVES INTENSITY" xml:space="preserve">
+    <value>Intensidade estimada de outros aditivos</value>
+  </data>
+  <data name="CONTROL ELECTRICAL CABINET" xml:space="preserve">
+    <value>Painel Elétrico de Controle</value>
+  </data>
+  <data name="COOLING SYSTEM HEALTHY" xml:space="preserve">
+    <value>Sistema de refrigeração saudável</value>
+  </data>
+  <data name="STATUS OK OF CONTROL MODULE" xml:space="preserve">
+    <value>Status OK do módulo de controle</value>
+  </data>
+  <data name="FAULT RESET OF CONTROL MODULE" xml:space="preserve">
+    <value>Reinicialização de falha do módulo de controle</value>
+  </data>
+  <data name="SYS - RESET OF CONTROL MODULE" xml:space="preserve">
+    <value>SYS - Reinicialização do Módulo de Controle</value>
+  </data>
+  <data name="F-INPUT - SYS - EMERGENCY PUSH BUTTON" xml:space="preserve">
+    <value>F-INPUT - SYS - Botão de Emergência</value>
+  </data>
+  <data name="F-INPUT - SYS - EMERGENCY PUSH BUTTON (FORESEEN X CAB OR MANAGED ON HMI)" xml:space="preserve">
+    <value>F-INPUT - SYS - Botão de Emergência (Previsto no CAB ou gerenciado na IHM)</value>
+  </data>
+  <data name="OVERLOAD (IN Q01)" xml:space="preserve">
+    <value>SOBRECARGA (Em Q01)</value>
+  </data>
+  <data name="MATERIAL PRESENT" xml:space="preserve">
+    <value>PRESENTE MATERIAL</value>
+  </data>
+  <data name="NO MATERIAL IN THE SUBZONE" xml:space="preserve">
+    <value>Nenhum material na subzona</value>
+  </data>
+  <data name="NO MAINTENANCE" xml:space="preserve">
+    <value>SEM MANUTENÇÃO</value>
+  </data>
+  <data name="NO PREPARATION" xml:space="preserve">
+    <value>SEM PREPARAÇÃO</value>
+  </data>
+  <data name="SUBZONE IN PREPARATION MODE" xml:space="preserve">
+    <value>Subzona em modo de preparação</value>
+  </data>
+  <data name="NO PRODUCTION" xml:space="preserve">
+    <value>SEM PRODUÇÃO</value>
+  </data>
+  <data name="SUBZONE IN PRODUCTION MODE" xml:space="preserve">
+    <value>Subzona em modo de produção</value>
+  </data>
+  <data name="NO STOP PENDING" xml:space="preserve">
+    <value>SEM PARADA PENDENTE</value>
+  </data>
+  <data name="SUBZONE IS WAITING FOR UPSTRAM TO STOP" xml:space="preserve">
+    <value>A subzona está aguardando a parada do fluxo ascendente.</value>
+  </data>
+  <data name="NO STOP CYCLE" xml:space="preserve">
+    <value>CICLO SEM PARADA</value>
+  </data>
+  <data name="SUBZONE IN STOP CYCLE" xml:space="preserve">
+    <value>Subzona no ciclo de parada</value>
+  </data>
+  <data name="MATERIAL PRESENCE" xml:space="preserve">
+    <value>Presença Material</value>
+  </data>
+  <data name="FORCE TEMPORARY MATERIAL PRESENCE" xml:space="preserve">
+    <value>Forçar presença material temporária</value>
+  </data>
+  <data name="DEBALER" xml:space="preserve">
+    <value>Desbaleador</value>
+  </data>
+  <data name="WHTANK" xml:space="preserve">
+    <value>WHTank</value>
+  </data>
+  <data name="SAFETY CHAINS" xml:space="preserve">
+    <value>Correntes de segurança</value>
+  </data>
+  <data name="EXTERNAL SILO" xml:space="preserve">
+    <value>Silo externo</value>
+  </data>
+  <data name="DEBALER -  COOLING PUMP" xml:space="preserve">
+    <value>Desbalador - Bomba de Refrigeração</value>
+  </data>
+  <data name="BUFFER BELT - CONVEYOR" xml:space="preserve">
+    <value>Correia amortecedora - Transportador</value>
+  </data>
+  <data name="CONTAINER READY" xml:space="preserve">
+    <value>Contêiner pronto</value>
+  </data>
+  <data name="EXTERNAL MIXING SILOS AREA" xml:space="preserve">
+    <value>Área dos silos de mistura externa</value>
+  </data>
+  <data name="PN COMMUNICATION WITH EXTERNAL DEVICES" xml:space="preserve">
+    <value>Comunicação PN com dispositivos externos</value>
+  </data>
+  <data name="BYPASS OF NETWORK COMMUNICATION" xml:space="preserve">
+    <value>Desvio da comunicação de rede</value>
+  </data>
+  <data name="COMMUNICATION ALARM" xml:space="preserve">
+    <value>Alarme de comunicação</value>
+  </data>
+  <data name="FORCE ALL EXTERNAL SIGNALS TO ALLOW PRODUCTION" xml:space="preserve">
+    <value>Forçar todos os sinais externos para permitir a produção</value>
+  </data>
+  <data name="MAXIMUM TIME OF COMMUNICATION LOSS" xml:space="preserve">
+    <value>Tempo máximo de perda de comunicação</value>
+  </data>
+  <data name="MAXIMUM LEVEL CONTROL" xml:space="preserve">
+    <value>Controle de nível máximo</value>
+  </data>
+  <data name="OVERFLOW MODE CONTROL ADVANCED" xml:space="preserve">
+    <value>Controle avançado do modo de transbordamento</value>
+  </data>
+  <data name="ABB-ACS580" xml:space="preserve">
+    <value>ABB-ACS580</value>
+  </data>
+  <data name="RIGHT LOCKING PIN" xml:space="preserve">
+    <value>Pino de travamento direito</value>
+  </data>
+  <data name="RIGHT PIN" xml:space="preserve">
+    <value>Pino direito</value>
+  </data>
+  <data name="LEFT LOCKING PIN" xml:space="preserve">
+    <value>Pino de travamento esquerdo</value>
+  </data>
+  <data name="LEFT PIN" xml:space="preserve">
+    <value>Pino esquerdo</value>
+  </data>
+  <data name="LOCKING PINS BOTH CLOSED" xml:space="preserve">
+    <value>PINOS DE TRAVAMENTO FECHADOS</value>
+  </data>
+  <data name="LOCKING PINS NOT CLOSED" xml:space="preserve">
+    <value>Pinos de travamento não fechados</value>
+  </data>
+  <data name="(1=DWN)" xml:space="preserve">
+    <value>(1=BAIXO)</value>
+  </data>
+  <data name="UP" xml:space="preserve">
+    <value>ACIMA</value>
+  </data>
+  <data name="DOWN" xml:space="preserve">
+    <value>ABAIXO</value>
+  </data>
+  <data name="CONTAINER" xml:space="preserve">
+    <value>RECIPIENTE</value>
+  </data>
+  <data name="WATER TO 230" xml:space="preserve">
+    <value>Água até 230</value>
+  </data>
+  <data name="WATER TO 240" xml:space="preserve">
+    <value>Água até 240</value>
+  </data>
+  <data name="GRINDER RUNNING" xml:space="preserve">
+    <value>MOEDOR EM FUNCIONAMENTO</value>
+  </data>
+  <data name="GRINDER STOPPED" xml:space="preserve">
+    <value>Moedor parou</value>
+  </data>
+  <data name="DISABLE GRINDER230" xml:space="preserve">
+    <value>Desativar Grinder230</value>
+  </data>
+  <data name="DISABLE GRINDER240" xml:space="preserve">
+    <value>Desativar Grinder240</value>
+  </data>
+  <data name="EMPTY CURRENT OF GRINDER230" xml:space="preserve">
+    <value>Corrente Vazia do Grinder230</value>
+  </data>
+  <data name="EMPTY CURRENT OF GRINDER240" xml:space="preserve">
+    <value>Corrente Vazia do Grinder240</value>
+  </data>
+  <data name="LONG AVERAGE CURRENT OF GRINDER230" xml:space="preserve">
+    <value>Corrente média de longo prazo do Grinder230</value>
+  </data>
+  <data name="LONG AVERAGE CURRENT OF GRINDER240" xml:space="preserve">
+    <value>Corrente média de longo prazo do Grinder240</value>
+  </data>
+  <data name="AT LEAST 1 SILO AVAILABLE" xml:space="preserve">
+    <value>PELO MENOS 1 SILO DISPONÍVEL</value>
+  </data>
+  <data name="NO SILOS AVAILABLE FOR FILLING" xml:space="preserve">
+    <value>Não há silos disponíveis para enchimento.</value>
+  </data>
+  <data name="EXTERNAL TRANSPORT SYSTEM RUN REQUEST" xml:space="preserve">
+    <value>Solicitação de execução do sistema de transporte externo</value>
+  </data>
+  <data name="SYSTEM READY (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Sistema pronto (sinal externo)</value>
+  </data>
+  <data name="(1=EXT SYSTEM READY)" xml:space="preserve">
+    <value>(1=SISTEMA EXT PRONTO)</value>
+  </data>
+  <data name="SOREMA REQUEST" xml:space="preserve">
+    <value>Pedido de Sorema</value>
+  </data>
+  <data name="(1=SOREMA REQUEST)" xml:space="preserve">
+    <value>(1=SOLICITAÇÃO SOREMA)</value>
+  </data>
+  <data name="EXTERNAL SYSTEM READY" xml:space="preserve">
+    <value>SISTEMA EXTERNO PRONTO</value>
+  </data>
+  <data name="EXTERNAL SYSTEM IS NOT READY" xml:space="preserve">
+    <value>O sistema externo não está pronto.</value>
+  </data>
+  <data name="PN COMMUNICATION" xml:space="preserve">
+    <value>PN COMUNICAÇÃO</value>
+  </data>
+  <data name="VALUE OF MEASURE IS FROZEN FOR NO COMMUNICATION !" xml:space="preserve">
+    <value>O valor da medida está congelado por falta de comunicação!</value>
+  </data>
+  <data name="NO FILLING" xml:space="preserve">
+    <value>SEM RECHEIO</value>
+  </data>
+  <data name="NO DISCHARGE" xml:space="preserve">
+    <value>SEM DESCARGA</value>
+  </data>
+  <data name="NO FILL AND DISCHARGE" xml:space="preserve">
+    <value>SEM ENCHER E DESCARREGAR</value>
+  </data>
+  <data name="UPSTREAM READY OR GIVING MATERIAL (EXTERNAL SIGNAL)" xml:space="preserve">
+    <value>Material pronto ou disponível a montante (sinal externo)</value>
+  </data>
+  <data name="(1=EXT UPSTREAM OK TO GIVE MATERIAL)" xml:space="preserve">
+    <value>(1=EXT A JUSANTE OK PARA FORNECER MATERIAL)</value>
+  </data>
+  <data name="EXTERNAL PLANT IS NOT GIVING MATERIAL" xml:space="preserve">
+    <value>A planta externa não está fornecendo material.</value>
+  </data>
+  <data name="EXTERNAL BIG BAG STATION" xml:space="preserve">
+    <value>Estação externa para big bags</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER GENERAL START" xml:space="preserve">
+    <value>Classificador de Flocos BUHLER - Início Geral</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER MAIN STREAM " xml:space="preserve">
+    <value>Classificador de Flocos BUHLER - Fluxo Principal</value>
+  </data>
+  <data name="BUHLER FLAKES SORTER RECYCLING STREAM" xml:space="preserve">
+    <value>Fluxo de reciclagem do separador de flocos BUHLER</value>
+  </data>
+  <data name="UNISENSOR FLAKES SORTER GENERAL START" xml:space="preserve">
+    <value>Classificador de Flocos UNISENSOR Início Geral</value>
+  </data>
+  <data name="UNISENSOR FLAKES SORTER MAIN STREAM" xml:space="preserve">
+    <value>Classificador de Flocos UNISENSOR - Fluxo Principal</value>
+  </data>
+  <data name="OEE - OVERALL PLANT ELECTRICAL CONSUMPTION" xml:space="preserve">
+    <value>OEE - Consumo Elétrico Total da Usina</value>
+  </data>
+  <data name="OEE - OVERALL PLANT WATER CONSUMPTION" xml:space="preserve">
+    <value>OEE - Consumo total de água da planta</value>
+  </data>
+  <data name="ELECTRICAL CONTROL CABINET" xml:space="preserve">
+    <value>Painel de Controle Elétrico</value>
+  </data>
+  <data name="WASTE MANAGEMENT ELETRICAL CABINET" xml:space="preserve">
+    <value>Armário Elétrico para Gestão de Resíduos</value>
+  </data>
 </root>
