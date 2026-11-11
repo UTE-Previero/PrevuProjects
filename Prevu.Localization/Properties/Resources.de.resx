@@ -14266,7 +14266,7 @@ Hinweis: Bei Aktivierung dieses Modus kann die vorgelagerte Produktion unterbroc
     <comment>CURRENT_PHASE_2</comment>
   </data>
   <data name="RECIRCULATE" xml:space="preserve">
-    <value>Umwälzen</value>
+    <value>REKURVIEREN</value>
   </data>
   <data name="OUTLINE" xml:space="preserve">
     <value>Gliederung</value>
@@ -14413,7 +14413,7 @@ Hinweis: Bei Aktivierung dieses Modus kann die vorgelagerte Produktion unterbroc
     <value>F-Eingang – Zweimanuelle Sicherheitsüberbrückung PB</value>
   </data>
   <data name="F-INPUT DIAGNOSTIC - SAFETY BYPASS PB" xml:space="preserve">
-    <value>F-Eingangsdiagnose - Sicherheitsbypass PB</value>
+    <value>F-Eingangsdiagnose – Sicherheitsbypass-PB</value>
   </data>
   <data name="MICROFILTER - SLUDGE LEVEL" xml:space="preserve">
     <value>Mikrofilter - Schlammpegel</value>
@@ -14443,7 +14443,7 @@ Hinweis: Bei Aktivierung dieses Modus kann die vorgelagerte Produktion unterbroc
     <value>Momentaner Wasserdurchfluss</value>
   </data>
   <data name="WATER TANK - PH" xml:space="preserve">
-    <value>Wassertank - PH</value>
+    <value>Wassertank - pH-Wert</value>
   </data>
   <data name="PH TRANSDUCER NOT OK" xml:space="preserve">
     <value>pH-WANDLER NICHT OK</value>
@@ -14455,10 +14455,10 @@ Hinweis: Bei Aktivierung dieses Modus kann die vorgelagerte Produktion unterbroc
     <value>MINDEST-pH-WERT NICHT OK</value>
   </data>
   <data name="HIGH PH WARNING" xml:space="preserve">
-    <value>Warnung vor hohem pH-Wert</value>
+    <value>WARNUNG VOR HOHER PH-WERTSTOFF</value>
   </data>
   <data name="LOW PH WARNING" xml:space="preserve">
-    <value>Warnung vor niedrigem pH-Wert</value>
+    <value>WARNUNG VOR NIEDRIGEM PH-WERT</value>
   </data>
   <data name="ACTUAL PH" xml:space="preserve">
     <value>Tatsächlicher pH-Wert</value>
@@ -14521,7 +14521,7 @@ Hinweis: Bei Aktivierung dieses Modus kann die vorgelagerte Produktion unterbroc
     <value>Silomischer - Hoher Füllstand</value>
   </data>
   <data name="NO MATERIAL" xml:space="preserve">
-    <value>Kein Material</value>
+    <value>KEIN MATERIAL</value>
   </data>
   <data name="MATERIAL DETECTED" xml:space="preserve">
     <value>Material entdeckt</value>
@@ -14638,7 +14638,7 @@ Hinweis: Bei Aktivierung dieses Modus kann die vorgelagerte Produktion unterbroc
     <value>Vorzeitiger Stopp der Materialzufuhr aufgrund von Rührwerksstrom nicht in Ordnung</value>
   </data>
   <data name="WASHING TIME NO FROZEN" xml:space="preserve">
-    <value>Waschzeit: Nicht eingefroren</value>
+    <value>WASCHANLAGE NICHT GEFROREN</value>
   </data>
   <data name="WASHING SUSPENDED FOR PROCESS CONDITIONS NOT OK" xml:space="preserve">
     <value>Waschvorgang aufgrund nicht akzeptabler Prozessbedingungen ausgesetzt</value>
@@ -14695,7 +14695,7 @@ Hinweis: Bei Aktivierung dieses Modus kann die vorgelagerte Produktion unterbroc
     <value>Nach Gewicht</value>
   </data>
   <data name="BY TIME" xml:space="preserve">
-    <value>Nach Zeit</value>
+    <value>Bis zum Ende</value>
   </data>
   <data name="WATER TRANSFER TANK - AGITATOR" xml:space="preserve">
     <value>Wasserübergabetank - Rührwerk</value>
@@ -14773,7 +14773,7 @@ Hinweis: Bei Aktivierung dieses Modus kann die vorgelagerte Produktion unterbroc
     <value>Wasserübergabetank</value>
   </data>
   <data name="F-OUTPUT DIAGNOSTIC - COMMAND DIR" xml:space="preserve">
-    <value>F-AUSGABE DIAGNOSE - Befehl DIR</value>
+    <value>F-Ausgabediagnose - Befehl DIR</value>
   </data>
   <data name="F-OUTPUT - COMMAND ON" xml:space="preserve">
     <value>F-AUSGANG - Befehl EIN</value>
@@ -14849,5 +14849,455 @@ Hinweis: Bei Aktivierung dieses Modus kann die vorgelagerte Produktion unterbroc
   </data>
   <data name="ENERGY SAVING MODE ON" xml:space="preserve">
     <value>Energiesparmodus EIN</value>
+  </data>
+  <data name="REPORTS" xml:space="preserve">
+    <value>Berichte</value>
+  </data>
+  <data name="SHOW" xml:space="preserve">
+    <value>Zeigen</value>
+  </data>
+  <data name="DISMISS" xml:space="preserve">
+    <value>Zurückweisen</value>
+  </data>
+  <data name="SCHEDULED REPORTS WITH ERRORS" xml:space="preserve">
+    <value>Geplante Berichte mit Fehlern</value>
+  </data>
+  <data name="EDITOR" xml:space="preserve">
+    <value>Editor</value>
+  </data>
+  <data name="DELETE THIS REPORT?" xml:space="preserve">
+    <value>Diesen Bericht löschen?</value>
+  </data>
+  <data name="SHOW THE USERS WITHOUT AN EMAIL ADDRESS" xml:space="preserve">
+    <value>Zeige die Benutzer ohne E-Mail-Adresse an</value>
+  </data>
+  <data name="OTHER EMAIL ADDRESS" xml:space="preserve">
+    <value>Andere E-Mail-Adresse</value>
+  </data>
+  <data name="ARCHIVE" xml:space="preserve">
+    <value>Archiv</value>
+  </data>
+  <data name="GENERATE REPORT" xml:space="preserve">
+    <value>Bericht generieren</value>
+  </data>
+  <data name="REPORT" xml:space="preserve">
+    <value>Bericht</value>
+  </data>
+  <data name="PERIOD OF A SCHEDULE" xml:space="preserve">
+    <value>Zeitraum eines Zeitplans</value>
+  </data>
+  <data name="END DATE" xml:space="preserve">
+    <value>Enddatum</value>
+  </data>
+  <data name="GENERATE" xml:space="preserve">
+    <value>ERZEUGEN</value>
+  </data>
+  <data name="DATA AS GENERATED" xml:space="preserve">
+    <value>Daten wie generiert</value>
+  </data>
+  <data name="SHOW THE REPORT WITH THE DATA IN THE LOGS NOW" xml:space="preserve">
+    <value>Zeigen Sie jetzt den Bericht mit den Daten in den Protokollen an.</value>
+  </data>
+  <data name="REBUILD FROM LOGS" xml:space="preserve">
+    <value>Aus Protokollen neu erstellen</value>
+  </data>
+  <data name="REBUILT FROM THE LOGS" xml:space="preserve">
+    <value>Aus den Protokollen neu erstellt</value>
+  </data>
+  <data name="SEND BY EMAIL" xml:space="preserve">
+    <value>Per E-Mail senden</value>
+  </data>
+  <data name="EXPORT PDF" xml:space="preserve">
+    <value>PDF exportieren</value>
+  </data>
+  <data name="EXPORT TO PDF" xml:space="preserve">
+    <value>Als PDF exportieren</value>
+  </data>
+  <data name="THE TEMPLATE OF THIS REPORT IS MISSING" xml:space="preserve">
+    <value>Die Vorlage für diesen Bericht fehlt.</value>
+  </data>
+  <data name="SELECT A REPORT OR GENERATE A NEW ONE" xml:space="preserve">
+    <value>Wählen Sie einen Bericht aus oder erstellen Sie einen neuen.</value>
+  </data>
+  <data name="SCHEDULES" xml:space="preserve">
+    <value>Zeitpläne</value>
+  </data>
+  <data name="CALCULATED VALUES" xml:space="preserve">
+    <value>Berechnete Werte</value>
+  </data>
+  <data name="NEW" xml:space="preserve">
+    <value>NEU</value>
+  </data>
+  <data name="NO CALCULATED VALUES YET" xml:space="preserve">
+    <value>Noch keine berechneten Werte.</value>
+  </data>
+  <data name="UNDO CHANGES" xml:space="preserve">
+    <value>ÄNDERUNGEN RÜCKGÄNGIG MACHEN</value>
+  </data>
+  <data name="DUPLICATE" xml:space="preserve">
+    <value>Duplikat</value>
+  </data>
+  <data name="UNIT" xml:space="preserve">
+    <value>Einheit</value>
+  </data>
+  <data name="EXPRESSION" xml:space="preserve">
+    <value>Ausdruck</value>
+  </data>
+  <data name="THE EXPRESSION IS VALID" xml:space="preserve">
+    <value>Der Ausdruck ist gültig</value>
+  </data>
+  <data name="DECIMALS" xml:space="preserve">
+    <value>Dezimalzahlen</value>
+  </data>
+  <data name="ADDS UP OVER TIME" xml:space="preserve">
+    <value>Das summiert sich mit der Zeit</value>
+  </data>
+  <data name="REFRESH" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="LAST 24 HOURS" xml:space="preserve">
+    <value>Letzte 24 Stunden</value>
+  </data>
+  <data name="VALUES" xml:space="preserve">
+    <value>Werte</value>
+  </data>
+  <data name="DOUBLE CLICK TO INSERT AT THE CURSOR" xml:space="preserve">
+    <value>Doppelklicken Sie, um an der Cursorposition einzufügen</value>
+  </data>
+  <data name="FUNCTIONS" xml:space="preserve">
+    <value>Funktionen</value>
+  </data>
+  <data name="SELECT A CALCULATED VALUE OR CREATE A NEW ONE" xml:space="preserve">
+    <value>Wählen Sie einen berechneten Wert aus oder erstellen Sie einen neuen.</value>
+  </data>
+  <data name="EMAIL SETTINGS" xml:space="preserve">
+    <value>E-Mail-Einstellungen</value>
+  </data>
+  <data name="THE MAIL SERVER THE REPORTS ARE SENT FROM" xml:space="preserve">
+    <value>Der Mailserver, von dem die Berichte gesendet werden</value>
+  </data>
+  <data name="MAIL SERVER" xml:space="preserve">
+    <value>Mailserver</value>
+  </data>
+  <data name="PORT" xml:space="preserve">
+    <value>Hafen</value>
+  </data>
+  <data name="SECURITY" xml:space="preserve">
+    <value>Sicherheit</value>
+  </data>
+  <data name="EMPTY IF THE SERVER NEEDS NO LOGIN" xml:space="preserve">
+    <value>Leeren Sie dieses Feld, wenn der Server keine Anmeldung benötigt.</value>
+  </data>
+  <data name="SENDER ADDRESS" xml:space="preserve">
+    <value>Absenderadresse</value>
+  </data>
+  <data name="SENDER NAME" xml:space="preserve">
+    <value>Absendername</value>
+  </data>
+  <data name="SEND TEST" xml:space="preserve">
+    <value>Test senden</value>
+  </data>
+  <data name="SEND A TEST EMAIL TO" xml:space="preserve">
+    <value>Senden Sie eine Test-E-Mail an</value>
+  </data>
+  <data name="REMEMBER THIS PERIOD" xml:space="preserve">
+    <value>Erinnere dich an diese Zeit</value>
+  </data>
+  <data name="PREVIEW PERIOD" xml:space="preserve">
+    <value>Vorschauzeitraum</value>
+  </data>
+  <data name="EVERY REPORT OPENS ON THIS PERIOD, ALSO NEXT TIME (ON THIS PC)" xml:space="preserve">
+    <value>Jeder Bericht wird in diesem Zeitraum geöffnet, auch beim nächsten Mal (auf diesem PC).</value>
+  </data>
+  <data name="NO DATA LOGGED IN THIS PERIOD" xml:space="preserve">
+    <value>In diesem Zeitraum wurden keine Daten protokolliert.</value>
+  </data>
+  <data name="GO TO LAST DATA" xml:space="preserve">
+    <value>Zu den letzten Daten springen</value>
+  </data>
+  <data name="NEW REPORT" xml:space="preserve">
+    <value>Neuer Bericht</value>
+  </data>
+  <data name="REDO" xml:space="preserve">
+    <value>Wiederholen</value>
+  </data>
+  <data name="RENAME" xml:space="preserve">
+    <value>Umbenennen</value>
+  </data>
+  <data name="EXPORT" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="IMPORT" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="PASTE WIDGET" xml:space="preserve">
+    <value>Widget einfügen</value>
+  </data>
+  <data name="SELECT SCHEDULE" xml:space="preserve">
+    <value>Zeitplan auswählen</value>
+  </data>
+  <data name="RECIPIENTS" xml:space="preserve">
+    <value>Empfänger</value>
+  </data>
+  <data name="EMAILED EACH TIME A SCHEDULE GENERATES THE REPORT" xml:space="preserve">
+    <value>Wird jedes Mal per E-Mail versendet, wenn ein Zeitplan den Bericht generiert.</value>
+  </data>
+  <data name="THE SCHEDULER IS NOT RUNNING SO SCHEDULED REPORTS ARE NOT GENERATED" xml:space="preserve">
+    <value>Der Scheduler läuft nicht, daher werden keine geplanten Berichte erstellt.</value>
+  </data>
+  <data name="DATA MISSING" xml:space="preserve">
+    <value>Daten fehlen</value>
+  </data>
+  <data name="CHOOSE THE VALUES IN THE EDITOR" xml:space="preserve">
+    <value>Wählen Sie die Werte im Editor aus.</value>
+  </data>
+  <data name="LINE CHART WIDGET" xml:space="preserve">
+    <value>Liniendiagramm-Widget</value>
+  </data>
+  <data name="BAR CHART WIDGET" xml:space="preserve">
+    <value>Balkendiagramm-Widget</value>
+  </data>
+  <data name="MOST FREQUENT FAULTS BY NUMBER" xml:space="preserve">
+    <value>Häufigste Fehler nach Anzahl</value>
+  </data>
+  <data name="MOST FREQUENT FAULTS BY TIME" xml:space="preserve">
+    <value>Häufigste Fehler nach Zeit</value>
+  </data>
+  <data name="TOTAL ACTIVE ENERGY" xml:space="preserve">
+    <value>Gesamte aktive Energie</value>
+  </data>
+  <data name="CHANGE" xml:space="preserve">
+    <value>Ändern</value>
+  </data>
+  <data name="TOTAL WATER" xml:space="preserve">
+    <value>Gesamtwasser</value>
+  </data>
+  <data name="FAULTS WIDGET" xml:space="preserve">
+    <value>Fehler-Widget</value>
+  </data>
+  <data name="MESSAGES WIDGET" xml:space="preserve">
+    <value>Nachrichten-Widget</value>
+  </data>
+  <data name="GAUGE WIDGET" xml:space="preserve">
+    <value>Messinstrument</value>
+  </data>
+  <data name="PIE CHART WIDGET" xml:space="preserve">
+    <value>Tortendiagramm-Widget</value>
+  </data>
+  <data name="AVAILABILITY WIDGET" xml:space="preserve">
+    <value>Verfügbarkeits-Widget</value>
+  </data>
+  <data name="CONSUMPTION WIDGET" xml:space="preserve">
+    <value>Verbrauchs-Widget</value>
+  </data>
+  <data name="TABLE WIDGET" xml:space="preserve">
+    <value>Tabellen-Widget</value>
+  </data>
+  <data name="PARAMETERS WIDGET" xml:space="preserve">
+    <value>Parameter-Widget</value>
+  </data>
+  <data name="PAGE BREAK" xml:space="preserve">
+    <value>Seitenumbruch</value>
+  </data>
+  <data name="NOTES WIDGET" xml:space="preserve">
+    <value>Notizen-Widget</value>
+  </data>
+  <data name="HALF WIDTH" xml:space="preserve">
+    <value>Halbe Breite</value>
+  </data>
+  <data name="TWO HALF WIDTH WIDGETS IN A ROW GO SIDE BY SIDE" xml:space="preserve">
+    <value>Zwei Widgets mit halber Breite werden nebeneinander angeordnet.</value>
+  </data>
+  <data name="HEIGHT" xml:space="preserve">
+    <value>Höhe</value>
+  </data>
+  <data name="CONTINUE ON THE NEXT PAGES" xml:space="preserve">
+    <value>Weiter auf den nächsten Seiten</value>
+  </data>
+  <data name="ROWS THAT DO NOT FIT GO ON THE NEXT PAGES WITH THE TITLE REPEATED" xml:space="preserve">
+    <value>Zeilen, die nicht passen, werden auf den nächsten Seiten mit wiederholtem Titel fortgesetzt.</value>
+  </data>
+  <data name="MOVE UP" xml:space="preserve">
+    <value>Aufsteigen</value>
+  </data>
+  <data name="MOVE DOWN" xml:space="preserve">
+    <value>Nach unten schieben</value>
+  </data>
+  <data name="MOVE TO NEXT PAGE" xml:space="preserve">
+    <value>Weiter zur nächsten Seite</value>
+  </data>
+  <data name="CLONE" xml:space="preserve">
+    <value>Klon</value>
+  </data>
+  <data name="COPY" xml:space="preserve">
+    <value>Kopie</value>
+  </data>
+  <data name="CHANGE TO" xml:space="preserve">
+    <value>Ändern zu</value>
+  </data>
+  <data name="RELOAD DATA" xml:space="preserve">
+    <value>Daten neu laden</value>
+  </data>
+  <data name="CHART WIDGET" xml:space="preserve">
+    <value>Diagramm-Widget</value>
+  </data>
+  <data name="DRAG TO REORDER" xml:space="preserve">
+    <value>Zum Neuanordnen ziehen</value>
+  </data>
+  <data name="REMOVE" xml:space="preserve">
+    <value>Entfernen</value>
+  </data>
+  <data name="LIMITS OF THE SIGNAL" xml:space="preserve">
+    <value>Grenzen des Signals</value>
+  </data>
+  <data name="SHOW AXIS" xml:space="preserve">
+    <value>Achse anzeigen</value>
+  </data>
+  <data name="CHANGE VARIABLE" xml:space="preserve">
+    <value>Variable ändern</value>
+  </data>
+  <data name="BAR WIDGET" xml:space="preserve">
+    <value>Leisten-Widget</value>
+  </data>
+  <data name="GROUP BY" xml:space="preserve">
+    <value>Gruppieren nach</value>
+  </data>
+  <data name="CREATE SCHEDULES FIRST (E.G. ONE PER SHIFT)" xml:space="preserve">
+    <value>Erstellen Sie zuerst die Dienstpläne (z. B. einen pro Schicht).</value>
+  </data>
+  <data name="MOST FREQUENT MESSAGES BY NUMBER" xml:space="preserve">
+    <value>Häufigste Nachrichten nach Nummer</value>
+  </data>
+  <data name="MOST FREQUENT MESSAGES BY TIME" xml:space="preserve">
+    <value>Häufigste Nachrichten nach Zeit</value>
+  </data>
+  <data name="GAUGES" xml:space="preserve">
+    <value>Messgeräte</value>
+  </data>
+  <data name="PIE WIDGET" xml:space="preserve">
+    <value>Torten-Widget</value>
+  </data>
+  <data name="EACH VALUE" xml:space="preserve">
+    <value>Jeder Wert</value>
+  </data>
+  <data name="TITLE" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="SUBTITLE" xml:space="preserve">
+    <value>Untertitel</value>
+  </data>
+  <data name="TIMELINE" xml:space="preserve">
+    <value>Zeitleiste</value>
+  </data>
+  <data name="WHEN EACH STATE OCCURRED, INSTEAD OF HOW LONG" xml:space="preserve">
+    <value>Wann jeder Zustand eintrat, anstatt wie lange er dauerte</value>
+  </data>
+  <data name="LINES" xml:space="preserve">
+    <value>Linien</value>
+  </data>
+  <data name="THE AVERAGE OF ALL THE LINE SUBZONES" xml:space="preserve">
+    <value>Der Durchschnitt aller Linienunterzonen</value>
+  </data>
+  <data name="NONE" xml:space="preserve">
+    <value>Keiner</value>
+  </data>
+  <data name="SUBZONES" xml:space="preserve">
+    <value>Unterzonen</value>
+  </data>
+  <data name="AVAILABILITY" xml:space="preserve">
+    <value>Verfügbarkeit</value>
+  </data>
+  <data name="TECHNICAL" xml:space="preserve">
+    <value>Technisch</value>
+  </data>
+  <data name="PERFORMANCE" xml:space="preserve">
+    <value>Leistung</value>
+  </data>
+  <data name="CHOOSE THE LINES OR SUBZONES IN THE EDITOR" xml:space="preserve">
+    <value>Wählen Sie die Zeilen oder Unterzonen im Editor aus.</value>
+  </data>
+  <data name="STANDARD" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="START FROM THE STANDARD FORMULA? IT IS ADDED TO THE CALCULATED VALUES, WHERE YOU CAN CHANGE IT." xml:space="preserve">
+    <value>Ausgehend von der Standardformel? Sie wird zu den berechneten Werten addiert, wo Sie sie ändern können.</value>
+  </data>
+  <data name="CHOOSE A CALCULATED VALUE" xml:space="preserve">
+    <value>Wählen Sie einen berechneten Wert.</value>
+  </data>
+  <data name="USE THE STANDARD FORMULA" xml:space="preserve">
+    <value>Verwenden Sie die Standardformel</value>
+  </data>
+  <data name="CALCULATED VALUE" xml:space="preserve">
+    <value>Berechneter Wert</value>
+  </data>
+  <data name="PRODUCTION VARIABLE" xml:space="preserve">
+    <value>Produktionsvariable</value>
+  </data>
+  <data name="TARGET RATE" xml:space="preserve">
+    <value>Zielrate</value>
+  </data>
+  <data name="MODIFIED PARAMETERS" xml:space="preserve">
+    <value>Geänderte Parameter</value>
+  </data>
+  <data name="TIME" xml:space="preserve">
+    <value>Zeit</value>
+  </data>
+  <data name="COMPONENT" xml:space="preserve">
+    <value>Komponente</value>
+  </data>
+  <data name="OLD - NEW" xml:space="preserve">
+    <value>Alt - Neu</value>
+  </data>
+  <data name="PARAMETER" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="UPLOADED RECIPES" xml:space="preserve">
+    <value>Hochgeladene Rezepte</value>
+  </data>
+  <data name="RECIPE" xml:space="preserve">
+    <value>Rezept</value>
+  </data>
+  <data name="REPORT GENERATED SUCCESSFULLY" xml:space="preserve">
+    <value>Bericht erfolgreich erstellt</value>
+  </data>
+  <data name="SCHEDULE AND GENERATION TIME" xml:space="preserve">
+    <value>Zeitplan und Generierungszeit</value>
+  </data>
+  <data name="DATA STORED AT GENERATION" xml:space="preserve">
+    <value>Daten, die bei der Generation gespeichert wurden</value>
+  </data>
+  <data name="TREND DATA OLDER THAN ONE YEAR IS NO LONGER AVAILABLE" xml:space="preserve">
+    <value>Trenddaten, die älter als ein Jahr sind, sind nicht mehr verfügbar.</value>
+  </data>
+  <data name="DAY OF THE MONTH" xml:space="preserve">
+    <value>Tag des Monats</value>
+  </data>
+  <data name="WHOLE PREVIOUS MONTH" xml:space="preserve">
+    <value>Gesamter Vormonat</value>
+  </data>
+  <data name="REPORT SAVED SUCCESSFULLY" xml:space="preserve">
+    <value>Bericht erfolgreich gespeichert</value>
+  </data>
+  <data name="L1 AVAILABILITY" xml:space="preserve">
+    <value>L1-Verfügbarkeit</value>
+  </data>
+  <data name="WATER TANK - MAXIMUM LEVEL OF SLUDGE " xml:space="preserve">
+    <value>Wassertank – Maximaler Schlammstand</value>
+  </data>
+  <data name="WATER TO TANK 537" xml:space="preserve">
+    <value>Wasser zum Tank 537</value>
+  </data>
+  <data name="WATER TO TANK 480" xml:space="preserve">
+    <value>Wasser zum Tank 480</value>
+  </data>
+  <data name="DISCHARGE WATER FLOW RATE" xml:space="preserve">
+    <value>Abflusswassermenge</value>
+  </data>
+  <data name="WATER TANK - HARD WELL WATER" xml:space="preserve">
+    <value>Wassertank - Hartes Brunnenwasser</value>
+  </data>
+  <data name="HARD WELL WATER - REQUEST" xml:space="preserve">
+    <value>Hartes Brunnenwasser - Anfrage</value>
   </data>
 </root>
